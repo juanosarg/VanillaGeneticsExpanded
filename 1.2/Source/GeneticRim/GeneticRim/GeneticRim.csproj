@@ -300,6 +300,7 @@
   <ItemGroup>
     <Compile Include="Comps\CompDraftable.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Draftable.cs" />
+    <Compile Include="Defs\DraftableAnimalDef.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />
     <Compile Include="Endgame\ArchotechUtility.cs" />
     <Compile Include="Endgame\Building_ArchotechComputerCore.cs" />
