@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<MVCF.ModDef>
+		<defName>GR_VanillaGeneticRimExpanded</defName>
+		<label>Vanilla Genetic Rim Expanded</label>
+		<description>Adding animal ranged attacks for Vanilla Genetic Rim Expanded creatures</description>
+		<Features>
+			<RangedAnimals>true</RangedAnimals>
+			<HediffVerbs>true</HediffVerbs>
+			<IntegratedToggle>true</IntegratedToggle>
+		</Features>
+	</MVCF.ModDef>
+
+
+
+
+
+
+</Defs>

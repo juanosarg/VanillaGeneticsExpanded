@@ -1,0 +1,111 @@
+<ModMetaData>
+	<name>Vanilla Genetic Rim Expanded</name>
+	<author>Sarg, Oskar Potocki, Luizi</author>
+	<supportedVersions>
+      <li>1.0</li>
+      <li>1.1</li>
+	  <li>1.2</li>
+	  
+   </supportedVersions>
+    <modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<packageId>sarg.vanillageneticrimexpanded</packageId>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>brrainz.harmony</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	   <li>vanillaexpanded.achievements</li>
+	   <li>erdelf.HumanoidAlienRaces</li>    
+    </loadAfter>
+	<description>Extract DNA from animals and hybridize them to create new, exotic species!
+
+&lt;size=24&gt;Features&lt;/size&gt;
+
+- Hybridization: Extract genes from Bears, Cats, Chickens, Boomalopes, Muffalos, Wolves, Rodents, Reptiles, Insectoids, Mechanoids and Thrumbos, and create hybrids of these species. Some combinations can go both ways, so for example a bearalope is different from a boombear, and you will get one at random. A total of 77 new creatures for you to play with. Some very useful, others... less so.
+
+- Hybrid implants: The Growth Vat can be used to create either animal or human implants. Using different animal genes, you can create implants such as Thrumbo Legs, or Chitinous Hearts, and turn your scientific aberrations into even more bizarre creatures. By using humanoid genes, you can mix them with animal genes and create several hybrid implants to improve your colonists.
+
+- Paragon Creatures: With the Animal Enrichment research, you can turn regular animals into Paragons, more evolved versions of the base creature. A total of 14 new creatures for you to play with.
+
+- Animal Control: With the Animal Control research, you can directly control your animals. Draft them and move them at will! It also gives special abilities depending on the creature, so wolf hybrids can use Adrenaline Rush, thrumbo hybrids can stampede, and so on. 11 new abilities, and any combinations of them, open up fascinating new tactical possibilities.
+
+- The Archotech Project: Genetic Rim adds a new win condition for the game. Instead of building a spaceship and leaving the planet, you can research how to integrate and control an archotech AI inside a bio-mechanical body. Why would you leave when you can stay and kill all your enemies?
+
+&lt;size=24&gt;Issues&lt;/size&gt;
+Some of the biggest animals might flicker. This is to be expected, since a few of them are bigger than Thrumbos!
+The animal control research uses Harmony, so expect all kinds of bugs because I touched things that I maybe shouldn't have. Please report any bugs!
+
+&lt;size=24&gt;Notes&lt;/size&gt;
+How do I progress? Here is a mini-guide:
+- First, research the genetic engineering tech.
+- Build a Pulper or a Recycler to get organic pulp from wood or corpses (the Recycler needs a Pulper first, though), and a Genetic Extraction Table to get DNA from animals and to build empty incubators.
+- Kill the animals to extract their genes.
+- Build the Gene Pod to mix the genes of different animals, and fill an empty incubator with the mixture.
+- The incubator will hatch in a day. Keep it warm! The creature will be born tamed.
+- Results are sometimes random! If you mix Bear and Chicken, you might get a Bearchicken or a Chickenbear. Or the experiment can also go wrong...
+- Finally, research the Insectoid Genome, Reptilian Genome and the Advanced genetic engineering techs, build the Advanced Gene Pod and experiment with Insectoids, Reptiles and Thrumbos to get the strongest creatures in the game. The advanced mechanite bio-integration is end-game, and unlocks mechanoid experimentation.
+- On a different path, you can research humanoid genetic engineering, and develop hybrid implants to modify your colonists. Yeah, you can create a colonist that lays chicken eggs twice a day. It's hilarious and disgusting.
+- On yet another different path, you can research animal enrichment, which allow you to create Paragon animals with the Paragon serum extraction table and the animal enrichment center.
+- Researching animal control gives you access to fascinating new abilities in all your hybrids and paragons. Just build the Animal Control Hub.
+- Finally, the age drugs tech allows you to mature your animals much faster!
+- You can win the game by starting the Archotech Project!
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+- Plant-like creatures
+- Hybrids with creatures from other animal mods
+
+&lt;size=24&gt;Compatibility&lt;/size&gt;
+Super compatible with Giddy-Up. Saddles included for all big enough hybrids and paragons
+Compatible with Animal Collab Project, Alpha Animals, Vanilla Animals Extended (all modules), Spidercamp's Dog Pack, Mechanoids Extraordinaire, TropickAPP, More Mechanoids, Let's Have a Cat! and Polarisbloc - Mechenemy for gene extraction
+Compatible with A Dog Said for implants on hybrids and paragons
+Compatible with Rim of Madness - Bones for extraction of organic pulp from bones
+Aesthetically compatible with the High Tech Laboratory Facilities mod
+Uses Nightinggale's Modcheck mod (no need to download) (only 1.0)
+Uses Harmony (no need to download)
+
+&lt;size=24&gt;Credit&lt;/size&gt;
+Some sounds by Mike Koenig, SoundBible.com 
+Some building textures modified from Textures by Pixel Art World, http://yms.main.jp
+Some building textures modified from Textures in the High Tech Laboratory Facilities mod
+
+&lt;size=24&gt;Changelog&lt;/size&gt;
+v5.204: Added 32 achievements for Vanilla Achievements Expanded (15/11/20)
+v5.02: Updated to RimWorld 1.1 (19/02/20)
+v4.506: Added Vanilla Animals Expanded — Desert and Extreme Desert compatibility (31/08/19)
+v4.505: Added Vanilla Animals Expanded — Arib Shrubland compatibility. Fixed Compound Eyes humanoid implant (23/08/19)
+v4.504: Added Vanilla Animals Expanded — Cats and Dogs compatibility. Added Compound Eyes humanoid implant. Modified the way the Boombeetles chemical sac works to make it more useful (works as improved vanilla grenades now) (31/05/19)
+v4.503: Updated Modcheck to work with latest RW version (31/05/19)
+v4.502: Added Spidercamp's Dog Pack gene extraction compatibility (18/05/19)
+v4.5: New win condition for the game. TropickAPP compat. Human implant medicine use fixes (09/05/19)
+v4.3: New animal family: cats. Added non-specialized genes to extract from any animal. Added genetrainers (29/03/19)
+v4.2: New saddles for Giddy-Up. New mechanoid hybrid balance. Tons of new humanoid implants (26/02/19)
+v4.101: Added five new rodent hybrids (31/01/19)
+v4.1: New building graphics. New options screen for legless creatures. Alphas renamed to Paragons (28/1/19)
+v4.05: Quick fix to mechanoid hybrids to make them properly produce milk and wool (16/12/18)
+v4.04: Added several functions for the upcoming Megafauna patch (14/12/18)
+v4.03: Disabled exotic wools on vendors, added gene extraction capabilities for several mods (15/11/18)
+v4.0: Rimworld 1.0 version (17/10/18)
+v3.203: Re-added patches for A Dog Said and Animal Collab Project (16/09/18)
+v3.2: Added Mechanoid Hybrids, several new animal implants, fixed the mad scientist merchant. Full Changelog can be seen on GitHub (13/09/18)
+v3.101: Added special ability for eldritch hybrids using the Animal Control research. The Boombeetles ranged attacks work again! Also some light bugfixing (31/08/18)
+v3.1: LOTS of hybrid implants to modify your creatures added! You can now create implants that only work on hybrids and alphas, giving you a wide selection to improve your creatures. Also, there is no longer a need to have third party mods (30/08/18)
+v3.04: B19 Version (29/08/18)
+v3.0: Initial stages of updating to RimWorld B19 Version (18/06/18)
+v2.0: Updated for Beta 18. Added possible compatibility with other mods by adding prefixes to defnames (18/11/17)
+v1.0: Release (17/8/17)
+
+
+		</description>
+</ModMetaData>

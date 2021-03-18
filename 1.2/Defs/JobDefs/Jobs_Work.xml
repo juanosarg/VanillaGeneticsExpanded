@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <JobDef>
+    <defName>GR_AttackMeleeOnceAndChickenRimPox</defName>
+    <driverClass>GeneticRim.JobDriver_AttackMeleeOnceAndChickenRimPox</driverClass>
+    <reportString>inflicting chicken rimpox on TargetA.</reportString>
+  </JobDef>
+   
+  <JobDef>
+    <defName>GR_UseHybridInjector</defName>
+    <driverClass>JobDriver_UseItem</driverClass>
+    <reportString>using hybrid genes injector.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+</Defs>
