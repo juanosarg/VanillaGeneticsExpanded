@@ -9,7 +9,7 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <tickerType>Rare</tickerType>
     <graphicData>
-      <texPath>Things/Item/RoyalJelly</texPath>
+      <texPath>Things/Item/GR_RoyalJelly</texPath>
      <graphicClass>Graphic_Single</graphicClass>
 
     </graphicData>

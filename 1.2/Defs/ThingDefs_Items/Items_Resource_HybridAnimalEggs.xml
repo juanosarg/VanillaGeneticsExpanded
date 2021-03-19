@@ -42,7 +42,7 @@
     <description>Unfertilized paragon emu egg. It can be eaten raw, but it's much, much better cooked. This thing is huge.</description>
 	<tradeability>Sellable</tradeability>
     <graphicData>
-	  <texPath>Things/Item/EggLarge</texPath>
+	  <texPath>Things/Item/GR_EggLarge</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
     <statBases>
@@ -59,7 +59,7 @@
     <description>Fertilized paragon emu egg. It can be eaten raw, but it's much, much better cooked. This thing is huge. If all goes well, it should hatch into a paragon emu.</description>
 	<tradeability>None</tradeability>
     <graphicData>
-	  <texPath>Things/Item/EggLarge</texPath>
+	  <texPath>Things/Item/GR_EggLarge</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
     <statBases>
@@ -83,7 +83,7 @@
     <description>Unfertilized paragon ostrich egg. It can be eaten raw, but it's much, much better cooked. This thing is huge.</description>
 	<tradeability>Sellable</tradeability>
     <graphicData>
-	  <texPath>Things/Item/EggHuge</texPath>
+	  <texPath>Things/Item/GR_EggHuge</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>0.7</drawSize>
 	</graphicData>
@@ -101,7 +101,7 @@
     <description>Fertilized paragon ostrich egg. It can be eaten raw, but it's much, much better cooked. This thing is huge. If all goes well, it should hatch into a paragon ostrich.</description>
 	<tradeability>None</tradeability>
     <graphicData>
-	  <texPath>Things/Item/EggHuge</texPath>
+	  <texPath>Things/Item/GR_EggHuge</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
 	  <drawSize>0.7</drawSize>
 	</graphicData>
@@ -570,7 +570,7 @@
     <label>thrumbochicken egg (unfert.)</label>
     <description>Unfertilized Thrumbochicken egg. It can be eaten raw, but it's much, much better cooked.</description>
     <graphicData>
-	  <texPath>Things/Item/EggHuge</texPath>
+	  <texPath>Things/Item/GR_EggHuge</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<tradeability>Sellable</tradeability>
@@ -587,7 +587,7 @@
     <label>thrumbochicken egg (fert.)</label>
     <description>Fertilized Thrumbochicken egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
     <graphicData>
-	  <texPath>Things/Item/EggHuge</texPath>
+	  <texPath>Things/Item/GR_EggHuge</texPath>
 	  <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	    <stackLimit>1</stackLimit>

@@ -7,7 +7,7 @@
     <description>This huge egg is filled with unstable chemicals. It is going to explode!</description>
 	<tradeability>None</tradeability>
     <graphicData>
-      <texPath>Things/Item/EggBomb</texPath>
+      <texPath>Things/Item/GR_EggBomb</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>

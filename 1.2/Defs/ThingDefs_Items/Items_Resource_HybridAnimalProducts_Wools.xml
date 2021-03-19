@@ -180,7 +180,7 @@
 		<label>chickenspider silk</label>
 		<description>Fabric spun from fibers extracted from chickenspiders. Resists blunt and sharp damage easily, but provides almost no protection against extreme heat.</description>
 		<graphicData>
-			<texPath>Things/Item/SpunSilk</texPath>
+			<texPath>Things/Item/GR_SpunSilk</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<color>(218,201,168)</color>
 
@@ -215,7 +215,7 @@
 		<label>spidersnake silk</label>
 		<description>Fabric spun from fibers extracted from spidersnakes. A balanced fabric to make apparel from.</description>
 		<graphicData>
-			<texPath>Things/Item/SpunSilk</texPath>
+			<texPath>Things/Item/GR_SpunSilk</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tradeability>Sellable</tradeability>
@@ -252,7 +252,7 @@
 		<tradeability>Sellable</tradeability>
 
 		<graphicData>
-			<texPath>Things/Item/MuffalopedeChitin</texPath>
+			<texPath>Things/Item/GR_MuffalopedeChitin</texPath>
 
 		</graphicData>
 		<statBases>
@@ -274,7 +274,7 @@
 		<label>wolfsnake skin</label>
 		<description>Shed skin from a wolfsnake. Light, strong, and insulates well.</description>
 		<graphicData>
-			<texPath>Things/Item/ScalySkin</texPath>
+			<texPath>Things/Item/GR_ScalySkin</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tradeability>Sellable</tradeability>

@@ -8,7 +8,7 @@
     <label>virulent poison</label>
     <description>This tiny vial is filled with a small amount of Thrumbolizard venom. When ingested, the whole system of the victim shuts down, akin to an anaphylactic reaction. There is no antidote, and no way to survive the poison.</description>
     <graphicData>
-      <texPath>Things/Item/PoisonAmpoule</texPath>
+      <texPath>Things/Item/GR_PoisonAmpoule</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>

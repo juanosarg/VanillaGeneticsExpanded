@@ -158,7 +158,7 @@
 		<label>muffalochicken milk</label>
 		<description>This lumpy milk seems to have concentrated protein chunks, tasting like chicken nuggets. Disgusting, but colonists seem to like it.</description>
 		<graphicData>
-			<texPath>Things/Item/LumpyMilk</texPath>
+			<texPath>Things/Item/GR_LumpyMilk</texPath>
 		</graphicData>
 		<tradeability>Sellable</tradeability>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -228,7 +228,7 @@
     <label>muffalobear milk</label>
     <description>A delicious milk with roasted overtones. Very pleasurable to eat, but not very nutritious.</description>
     <graphicData>
-      <texPath>Things/Item/BrownMilk</texPath>
+      <texPath>Things/Item/GR_BrownMilk</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<tradeability>Sellable</tradeability>
@@ -262,7 +262,7 @@
     <label>wolffalo milk</label>
     <description>This milk seems to be filled with strands of grey wool. Disgusting, and quite hard to drink...</description>
     <graphicData>
-      <texPath>Things/Item/WoolMilk</texPath>
+      <texPath>Things/Item/GR_WoolMilk</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<tradeability>Sellable</tradeability>

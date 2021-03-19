@@ -6,7 +6,7 @@
     <label>featherdust joint</label>
     <description>Bearchicken feathers can be gathered and processed into a fine powder, which produces a mild euphoric sensation when burned and inhaled. Featherdust use can produce a dependency.</description>
     <graphicData>
-      <texPath>Things/Item/FeatherJoint</texPath>
+      <texPath>Things/Item/GR_FeatherdustJoint</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>

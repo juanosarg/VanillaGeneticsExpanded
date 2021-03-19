@@ -10,7 +10,7 @@
 		<label>explosive sac</label>
 		<description>This organic sac is filled with an unstable chemical that will explode on contact.</description>
 		<graphicData>
-			<texPath>Things/Item/ThrownSac</texPath>
+			<texPath>Things/Item/GR_ThrownSac</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>

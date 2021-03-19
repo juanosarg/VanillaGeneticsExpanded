@@ -48,7 +48,7 @@
     <label>poison ampoule</label>
     <description>This tiny vial is filled with a concentrated solution of Muffalokomodo saliva, which acts as a powerful neuromuscular-blocking drug. This effectively paralyses anyone foolish enough to drink it, though it is not lethal. Useful for prisoner control.</description>
     <graphicData>
-      <texPath>Things/Item/PoisonAmpoule</texPath>
+      <texPath>Things/Item/GR_PoisonAmpoule</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <rotatable>false</rotatable>
