@@ -7,6 +7,8 @@ namespace GeneticRim
         public float hatcherDaystoHatch = 1f;
 
         public PawnKindDef hatcherPawn;
+        public PawnKindDef hatcherPawnSecondary = null;
+
 
         public CompProperties_Incubator()
         {

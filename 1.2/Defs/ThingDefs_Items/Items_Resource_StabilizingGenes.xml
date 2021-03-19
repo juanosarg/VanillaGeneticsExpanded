@@ -44,7 +44,7 @@
     <description>This genetic cocktail hasn't differentiated yet.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-	  <texPath>Things/Item/AlphaSerum</texPath>
+	  <texPath>Things/Item/GR_ParagonSerum</texPath>
     </graphicData>
 	<tradeability>None</tradeability>
     <statBases>

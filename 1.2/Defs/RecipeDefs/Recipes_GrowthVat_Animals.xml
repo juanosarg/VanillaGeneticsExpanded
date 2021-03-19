@@ -251,7 +251,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -261,7 +261,7 @@
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>Steel</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -349,7 +349,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -359,7 +359,7 @@
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>GR_InsectoidGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -439,7 +439,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -449,7 +449,7 @@
 			<thingDefs>
 				<li>GR_ImplantSteelWireMesh</li>
 				<li>Silver</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -829,7 +829,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -839,7 +839,7 @@
 			<thingDefs>
 				<li>GR_ImplantSteelWireMesh</li>
 				<li>WoodLog</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -991,7 +991,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1000,7 +1000,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -1080,7 +1080,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1090,7 +1090,7 @@
 			<thingDefs>
 				<li>GR_ImplantSteelWireMesh</li>
 				<li>Silver</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -1127,7 +1127,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1137,7 +1137,7 @@
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>Silver</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -1441,7 +1441,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1450,7 +1450,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>GR_ImplantSteelWireMesh</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

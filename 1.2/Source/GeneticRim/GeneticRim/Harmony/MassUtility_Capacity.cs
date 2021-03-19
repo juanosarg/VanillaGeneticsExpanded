@@ -26,7 +26,7 @@ namespace GeneticRim
 
         {
             bool flagIsCreatureMine = p.Faction != null && p.Faction.IsPlayer;
-            bool flagIsCreatureDraftable = (p.TryGetComp<CompDraftable>() != null);
+            bool flagIsCreatureDraftable = DraftingList.draftable_animals.ContainsKey(p);
             bool flagCanCreatureCarryMore = false;
 
             if (flagIsCreatureDraftable)
@@ -43,8 +43,8 @@ namespace GeneticRim
                             Thing mindcontrolhub = t as Thing;
                             if (t != null)
                             {
-                                flagCanCreatureCarryMore = p.TryGetComp<CompDraftable>().GetCanCarryMore;
-                                //if (flagCanCreatureCarryMore) { Log.Message("Creature " + p.kindDef.ToString() + " should carry more now"); }
+                                flagCanCreatureCarryMore = DraftingList.draftable_animals[p][3];
+                                if (flagCanCreatureCarryMore) { Log.Message("Creature " + p.kindDef.ToString() + " should carry more now"); }
                             }
 
 

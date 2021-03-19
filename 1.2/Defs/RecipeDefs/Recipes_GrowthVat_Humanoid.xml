@@ -224,7 +224,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -235,7 +235,7 @@
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>GR_HumanoidGenetic</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 
@@ -535,7 +535,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -545,7 +545,7 @@
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>GR_HumanoidGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -578,7 +578,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -588,7 +588,7 @@
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>GR_HumanoidGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -631,7 +631,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -643,7 +643,7 @@
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>GR_HumanoidGenetic</li>
 				<li>GR_RodentGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 
@@ -1076,7 +1076,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1086,10 +1086,10 @@
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>GR_HumanoidGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<products>
 			<GR_VenomousFangs>1</GR_VenomousFangs>
 		</products>
@@ -1120,7 +1120,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1130,10 +1130,10 @@
 			<thingDefs>
 				<li>GR_ImplantPlasteelWireMesh</li>
 				<li>GR_HumanoidGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<products>
 			<GR_IguanaScales>1</GR_IguanaScales>
 		</products>

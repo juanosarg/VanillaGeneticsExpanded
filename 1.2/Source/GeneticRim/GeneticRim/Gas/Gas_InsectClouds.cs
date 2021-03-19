@@ -28,9 +28,9 @@ namespace GeneticRim
                                 bool flag = (pawn != null);
                                 if (flag)
                                 {
-                                    if (pawn.TryGetComp<CompDraftable>() != null)
+                                    if (DraftingList.draftable_animals.ContainsKey(pawn))
                                     {
-                                        if (!pawn.TryGetComp<CompDraftable>().GetCanDoInsectClouds)
+                                        if (!DraftingList.draftable_animals[pawn][5])
                                         {
                                             pawn.TakeDamage(new DamageInfo(DamageDefOf.Cut, 1,0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
                                         } 

@@ -23,13 +23,13 @@
 					<thingDefs>
 						<li>GR_RodentGenetic</li>
 						<li>GR_BearGenetic</li>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 						<li>GR_BoomalopeGenetic</li>
 						<li>GR_MuffaloGenetic</li>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 						<li>GR_FelineGenetic</li>
 						<li>GR_InsectoidGenetic</li>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 						<li>GR_HumanoidGenetic</li>
 						<li>GR_ThrumboGenetic</li>
 						<li>GR_NonSpecializedGenetic</li>
@@ -43,13 +43,13 @@
 			<thingDefs>
 						<li>GR_RodentGenetic</li>			
 						<li>GR_BearGenetic</li>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 						<li>GR_BoomalopeGenetic</li>
 						<li>GR_MuffaloGenetic</li>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 						<li>GR_FelineGenetic</li>
 						<li>GR_InsectoidGenetic</li>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 						<li>GR_HumanoidGenetic</li>
 						<li>GR_ThrumboGenetic</li>
 						<li>GR_NonSpecializedGenetic</li>

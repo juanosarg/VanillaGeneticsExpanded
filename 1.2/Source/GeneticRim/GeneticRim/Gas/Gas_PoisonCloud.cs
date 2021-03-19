@@ -29,9 +29,9 @@ namespace GeneticRim
                             bool flag = (pawn != null);
                             if (flag)
                             {
-                                if (pawn.TryGetComp<CompDraftable>() != null)
+                                if (DraftingList.draftable_animals.ContainsKey(pawn))
                                 {
-                                    if (!pawn.TryGetComp<CompDraftable>().GetCanDoPoisonousCloud)
+                                    if (!DraftingList.draftable_animals[pawn][7])
                                     {
                                         pawn.health.AddHediff(HediffDefOf.ToxicBuildup);
                                         this.Destroy();

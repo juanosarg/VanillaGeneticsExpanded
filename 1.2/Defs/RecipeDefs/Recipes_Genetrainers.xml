@@ -107,10 +107,10 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_CraftCatGenetrainer</defName>
-		<label>craft hybrid cat genes genetrainer</label>
-		<description>Craft hybrid cat genes genetrainer. Genetrainers are implants that do not take the place of any given organ. This will require the repurposing of any mech serum.</description>
-		<jobString>Craft hybrid cat genes genetrainer.</jobString>
+		<defName>GR_CraftFelineGenetrainer</defName>
+		<label>craft hybrid feline genes genetrainer</label>
+		<description>Craft hybrid feline genes genetrainer. Genetrainers are implants that do not take the place of any given organ. This will require the repurposing of any mech serum.</description>
+		<jobString>Craft hybrid feline genes genetrainer.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>300</workAmount>
@@ -151,7 +151,7 @@
 		</fixedIngredientFilter>
 		
 		<products>
-			<GR_HybridCatGenesGenetrainer>1</GR_HybridCatGenesGenetrainer>
+			<GR_HybridFelineGenesGenetrainer>1</GR_HybridFelineGenesGenetrainer>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -159,10 +159,10 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_CraftChickenGenetrainer</defName>
-		<label>craft hybrid chicken genes genetrainer</label>
-		<description>Craft hybrid chicken genes genetrainer. Genetrainers are implants that do not take the place of any given organ. This will require the repurposing of any mech serum.</description>
-		<jobString>Craft hybrid chicken genes genetrainer.</jobString>
+		<defName>GR_CraftBirdGenetrainer</defName>
+		<label>craft hybrid bird genes genetrainer</label>
+		<description>Craft hybrid bird genes genetrainer. Genetrainers are implants that do not take the place of any given organ. This will require the repurposing of any mech serum.</description>
+		<jobString>Craft hybrid bird genes genetrainer.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>300</workAmount>
@@ -177,7 +177,7 @@
 			<li>
 				<filter>
 				  <thingDefs>
-					<li>GR_ChickenGenetic</li>
+					<li>GR_BirdGenetic</li>
 				  </thingDefs>
 				</filter>
 				<count>1</count>
@@ -195,7 +195,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 				
 				<li>MechSerumHealer</li>
 				<li>MechSerumResurrector</li>
@@ -203,7 +203,7 @@
 		</fixedIngredientFilter>
 		
 		<products>
-			<GR_HybridChickenGenesGenetrainer>1</GR_HybridChickenGenesGenetrainer>
+			<GR_HybridBirdGenesGenetrainer>1</GR_HybridBirdGenesGenetrainer>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -314,10 +314,10 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GR_CraftWolfGenetrainer</defName>
-		<label>craft hybrid wolf genes genetrainer</label>
-		<description>Craft hybrid wolf genes genetrainer. Genetrainers are implants that do not take the place of any given organ. This will require the repurposing of any mech serum.</description>
-		<jobString>Craft hybrid wolf genes genetrainer.</jobString>
+		<defName>GR_CraftCanineGenetrainer</defName>
+		<label>craft hybrid canine genes genetrainer</label>
+		<description>Craft hybrid canine genes genetrainer. Genetrainers are implants that do not take the place of any given organ. This will require the repurposing of any mech serum.</description>
+		<jobString>Craft hybrid canine genes genetrainer.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>300</workAmount>
@@ -332,7 +332,7 @@
 			<li>
 				<filter>
 				  <thingDefs>
-					<li>GR_WolfGenetic</li>
+					<li>GR_CanineGenetic</li>
 				  </thingDefs>
 				</filter>
 				<count>1</count>
@@ -350,7 +350,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 				
 				<li>MechSerumHealer</li>
 				<li>MechSerumResurrector</li>
@@ -358,7 +358,7 @@
 		</fixedIngredientFilter>
 		
 		<products>
-			<GR_HybridWolfGenesGenetrainer>1</GR_HybridWolfGenesGenetrainer>
+			<GR_HybridCanineGenesGenetrainer>1</GR_HybridCanineGenesGenetrainer>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -384,7 +384,7 @@
 			<li>
 				<filter>
 				  <thingDefs>
-					<li>GR_ReptilianGenetic</li>
+					<li>GR_ReptileGenetic</li>
 				  </thingDefs>
 				</filter>
 				<count>1</count>
@@ -402,7 +402,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 				
 				<li>MechSerumHealer</li>
 				<li>MechSerumResurrector</li>
@@ -412,7 +412,7 @@
 		<products>
 			<GR_HybridReptileGenesGenetrainer>1</GR_HybridReptileGenesGenetrainer>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>

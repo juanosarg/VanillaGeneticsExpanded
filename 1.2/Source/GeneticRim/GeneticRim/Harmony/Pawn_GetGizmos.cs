@@ -35,9 +35,8 @@ namespace GeneticRim
             // First two flags detect if the pawn is mine, and if it is 
            
             bool flagIsCreatureMine = pawn.Faction != null && pawn.Faction.IsPlayer;
-            bool flagIsCreatureDraftable = (pawn.TryGetComp<CompDraftable>() != null);
-            /* I check these flags only inside flagIsCreatureDraftable true to avoid errors due to pawn.TryGetComp<CompDraftable>() being null in most pawns. The code inside
-             * the conditional only executes if it isn't*/
+            bool flagIsCreatureDraftable = DraftingList.draftable_animals.ContainsKey(pawn);
+            /* I check these flags only inside flagIsCreatureDraftable true*/
             bool flagIsCreatureRageable = false;
             bool flagIsCreatureExplodable = false;
             bool flagIsCreatureChickenRimPox = false;
@@ -52,9 +51,7 @@ namespace GeneticRim
             bool flagCanMechaBlast = false;
             bool flagCanKeenSenses = false;
             bool flagCanCatReflexes = false;
-
-
-
+            bool flagOrbitalStrike = false;
 
 
             bool flagIsMindControlBuildingPresent = false;
@@ -69,44 +66,29 @@ namespace GeneticRim
                     Thing mindcontrolhub = t as Thing;
                     if (t != null)
                     {
-                        flagIsCreatureRageable = pawn.TryGetComp<CompDraftable>().GetRage;
-                        flagIsCreatureExplodable = pawn.TryGetComp<CompDraftable>().GetExplodable;
-                        flagIsCreatureChickenRimPox = pawn.TryGetComp<CompDraftable>().GetChickenRimPox;
-                        flagCanCreatureCarryMore = pawn.TryGetComp<CompDraftable>().GetCanCarryMore;
-                        flagCanCreatureAdrenalineBurst = pawn.TryGetComp<CompDraftable>().GetAdrenalineBurst;
-                        flagCanCanDoInsectClouds = pawn.TryGetComp<CompDraftable>().GetCanDoInsectClouds;
-                        flagCanStampede = pawn.TryGetComp<CompDraftable>().GetCanStampede;
-                        flagCanDoPoisonousCloud = pawn.TryGetComp<CompDraftable>().GetCanDoPoisonousCloud;
-                        flagCanBurrow = pawn.TryGetComp<CompDraftable>().GetCanBurrow;
-                        flagCanStamina = pawn.TryGetComp<CompDraftable>().HasDinoStamina;
-                        flagCanHorrorize = pawn.TryGetComp<CompDraftable>().GetHorror;
-                        flagCanMechaBlast = pawn.TryGetComp<CompDraftable>().GetMechablast;
-                        flagCanKeenSenses = pawn.TryGetComp<CompDraftable>().GetKeenSenses;
-                        flagCanCatReflexes = pawn.TryGetComp<CompDraftable>().GetCatReflexes;
+
+                        flagIsCreatureRageable = DraftingList.draftable_animals[pawn][0];
+                        flagIsCreatureExplodable = DraftingList.draftable_animals[pawn][1];
+                        flagIsCreatureChickenRimPox = DraftingList.draftable_animals[pawn][2]; 
+                        flagCanCreatureCarryMore = DraftingList.draftable_animals[pawn][3];
+                        flagCanCreatureAdrenalineBurst = DraftingList.draftable_animals[pawn][4];
+                        flagCanCanDoInsectClouds = DraftingList.draftable_animals[pawn][5];
+                        flagCanStampede = DraftingList.draftable_animals[pawn][6];
+                        flagCanDoPoisonousCloud = DraftingList.draftable_animals[pawn][7];
+                        flagCanBurrow = DraftingList.draftable_animals[pawn][8];
+                        flagCanStamina = DraftingList.draftable_animals[pawn][9];
+                        flagCanHorrorize = DraftingList.draftable_animals[pawn][10];
+                        flagCanMechaBlast = DraftingList.draftable_animals[pawn][11];
+                        flagCanKeenSenses = DraftingList.draftable_animals[pawn][12];
+                        flagCanCatReflexes = DraftingList.draftable_animals[pawn][13];
 
 
                         flagIsMindControlBuildingPresent = true;
                     }
                 }
             }
-
+              
             
-            /*Is the creature part of the colony, and draftable (the custom comp class)? Then display the drafting gizmo, called
-             * Mind Control. It's action is just calling on toggle the Drafted method in the pawn's drafter, which
-             * we initialized in the first Harmony Postfix
-            */
-            /*if ((pawn.drafter != null) && flagIsCreatureMine && flagIsCreatureDraftable && flagIsMindControlBuildingPresent || pawn.def.defName == "GR_ArchotechCentipede")
-            {
-                Command_Action GR_Gizmo_MindControl = new Command_Action();
-                GR_Gizmo_MindControl.action = delegate
-                {
-                    pawn.drafter.Drafted = !pawn.drafter.Drafted;
-                };
-                GR_Gizmo_MindControl.defaultLabel = "GR_CreatureMindControl".Translate();
-                GR_Gizmo_MindControl.defaultDesc = "GR_CreatureMindControlDesc".Translate();
-                GR_Gizmo_MindControl.icon = ContentFinder<Texture2D>.Get("ui/commands/GR_ControlAnimal", true);
-                gizmos.Insert(0, GR_Gizmo_MindControl);
-            }*/
             /*If the creature is draftable, drafted at the moment and the rage property (which is passed through XML and the custom comp class) is true,
              * we add a second gizmo, which copies the code from melee attacks, and thus allows targeting melee attacks
            */
@@ -141,7 +123,7 @@ namespace GeneticRim
             }
             /*This adds a gizmo that makes the creature attack once, and then cause a Hediff disease (GR_ChickenRimPox), then cancels the draft. I used a custom Jobdriver class for that
             */
-            if ((pawn.drafter != null) && flagIsCreatureChickenRimPox && flagIsCreatureMine && pawn.drafter.Drafted && flagIsMindControlBuildingPresent || pawn.def.defName == "GR_ArchotechCentipede")
+            if ((pawn.drafter != null) && flagIsCreatureChickenRimPox && flagIsCreatureMine && pawn.drafter.Drafted && flagIsMindControlBuildingPresent)
             {
                 Command_Target GR_Gizmo_AttackPox = new Command_Target();
                 GR_Gizmo_AttackPox.defaultLabel = "GR_InflictChickenRimPox".Translate();
@@ -202,7 +184,7 @@ namespace GeneticRim
             }
             /*This gizmo applies a Hediff that makes the pawn move faster for a while
             */
-            if ((pawn.drafter != null) && flagCanCreatureAdrenalineBurst && flagIsCreatureMine  && flagIsMindControlBuildingPresent || pawn.def.defName == "GR_ArchotechCentipede")
+            if ((pawn.drafter != null) && flagCanCreatureAdrenalineBurst && flagIsCreatureMine  && flagIsMindControlBuildingPresent)
             {
                 Command_Action GR_Gizmo_AdrenalineBurst = new Command_Action();
                 GR_Gizmo_AdrenalineBurst.defaultLabel = "GR_StartAdrenalineBurst".Translate();
@@ -249,7 +231,7 @@ namespace GeneticRim
             }
             /*This gizmo applies a Hediff that makes the pawn generate stampede clouds for a while
             */
-            if ((pawn.drafter != null) && flagCanStampede && flagIsCreatureMine && flagIsMindControlBuildingPresent || pawn.def.defName == "GR_ArchotechCentipede")
+            if ((pawn.drafter != null) && flagCanStampede && flagIsCreatureMine && flagIsMindControlBuildingPresent)
             {
                 Command_Action GR_Gizmo_Stampede = new Command_Action();
                 GR_Gizmo_Stampede.defaultLabel = "GR_StartStampede".Translate();
@@ -323,7 +305,7 @@ namespace GeneticRim
             }
             /*This gizmo puts the creature into burrowing mode
            */
-            if ((pawn.drafter != null) && flagCanBurrow && flagIsCreatureMine && flagIsMindControlBuildingPresent || pawn.def.defName == "GR_ArchotechCentipede")
+            if ((pawn.drafter != null) && flagCanBurrow && flagIsCreatureMine && flagIsMindControlBuildingPresent)
             {
                 Command_Action GR_Gizmo_Burrowing = new Command_Action();
                 GR_Gizmo_Burrowing.action = delegate
@@ -387,7 +369,7 @@ namespace GeneticRim
 
             /*This gizmo activates cat reflexes, improving melee combat
        */
-            if ((pawn.drafter != null) && flagCanCatReflexes && flagIsCreatureMine && flagIsMindControlBuildingPresent || pawn.def.defName == "GR_ArchotechCentipede")
+            if ((pawn.drafter != null) && flagCanCatReflexes && flagIsCreatureMine && flagIsMindControlBuildingPresent)
             {
                 Command_Action GR_Gizmo_CatReflexes = new Command_Action();
                 GR_Gizmo_CatReflexes.action = delegate
@@ -458,7 +440,7 @@ namespace GeneticRim
 
             /*This gizmo makes the animal release a burning explosion
           */
-            if ((pawn.drafter != null) && flagCanMechaBlast && flagIsCreatureMine && flagIsMindControlBuildingPresent || pawn.def.defName == "GR_ArchotechCentipede")
+            if ((pawn.drafter != null) && flagCanMechaBlast && flagIsCreatureMine && flagIsMindControlBuildingPresent)
             {
                 Command_Action GR_Gizmo_MechaBlast = new Command_Action();
                 GR_Gizmo_MechaBlast.action = delegate
@@ -487,7 +469,7 @@ namespace GeneticRim
 
             /*This gizmo activates the orbital beam
          */
-            if ((pawn.drafter != null) &&flagIsCreatureMine && pawn.def.defName=="GR_ArchotechCentipede")
+            if ((pawn.drafter != null) && flagIsCreatureMine && flagOrbitalStrike)
             {
                 Command_Target GR_Gizmo_Orbital = new Command_Target();
                 GR_Gizmo_Orbital.defaultLabel = "GR_Orbital".Translate();

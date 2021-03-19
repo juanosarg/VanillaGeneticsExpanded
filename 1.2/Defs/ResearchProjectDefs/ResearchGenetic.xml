@@ -32,11 +32,11 @@
   </ResearchProjectDef>
   
   <ResearchProjectDef>
-    <defName>GR_ReptilianGenome</defName>
-    <label>reptilian genome</label>
+    <defName>GR_ReptileGenome</defName>
+    <label>reptile genome</label>
     <tab>GR_GeneticReseach</tab>
     <techLevel>Industrial</techLevel>
-    <description>Research ways to extract genetic material from reptiles. This opens up experimenting with reptilian hybrids (tier 2).</description>
+    <description>Research ways to extract genetic material from reptiles. This opens up experimenting with reptile hybrids (tier 2).</description>
     <baseCost>1500</baseCost>
     <prerequisites>
       <li>GR_GeneticEngineering</li>

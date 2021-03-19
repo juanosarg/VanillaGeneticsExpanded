@@ -300,7 +300,7 @@
   <ItemGroup>
     <Compile Include="Comps\CompDraftable.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Draftable.cs" />
-    <Compile Include="Defs\DraftableAnimalDef.cs" />
+    <Compile Include="DraftingList\DraftingList.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />
     <Compile Include="Endgame\ArchotechUtility.cs" />
     <Compile Include="Endgame\Building_ArchotechComputerCore.cs" />
@@ -354,9 +354,7 @@
     <Compile Include="Hediff Comps\HediffComp_Milker.cs" />
     <Compile Include="Hediff Comps\HediffComp_Hatcher.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_Hatcher.cs" />
-    <Compile Include="Comps\CompHatcherRandomizer.cs" />
     <Compile Include="Comps\CompIncubator.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_HatcherRandomizer.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Incubator.cs" />
     <Compile Include="Hediffs\Hediff_HumanHybrids.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

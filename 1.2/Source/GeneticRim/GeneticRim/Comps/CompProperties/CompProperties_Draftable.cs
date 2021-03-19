@@ -19,6 +19,7 @@ namespace GeneticRim
         public bool mechablast = false;
         public bool keensenses = false;
         public bool catreflexes = false;
+        public bool orbitalstrike = false;
 
 
 

@@ -29,9 +29,9 @@ namespace GeneticRim
         {           
             //These two flags detect if the creature is part of the colony and if it has the custom class
             bool flagIsCreatureMine = pawn.Faction != null && pawn.Faction.IsPlayer;
-            bool flagIsCreatureDraftable = (pawn.TryGetComp<CompDraftable>() != null);
+            bool flagIsCreatureDraftable = DraftingList.draftable_animals.ContainsKey(pawn);
 
-                 
+
             if (flagIsCreatureMine && flagIsCreatureDraftable)
             {
                 //Log.Message("Patching "+ pawn.kindDef.ToString() + " with a draft controller and equipment tracker");

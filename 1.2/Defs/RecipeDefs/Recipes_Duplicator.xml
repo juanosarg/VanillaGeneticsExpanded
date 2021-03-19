@@ -102,8 +102,8 @@
 	
 	<RecipeDef>
 		<defName>GR_DuplicateFeline</defName>
-		<label>duplicate cat genes</label>
-		<description>Duplicate cat genetic material in exchange for a lot of organic pulp.</description>
+		<label>duplicate feline genes</label>
+		<description>Duplicate feline genetic material in exchange for a lot of organic pulp.</description>
 		<jobString>Duplicating Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -150,9 +150,9 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_DuplicateChicken</defName>
-		<label>duplicate chicken genes</label>
-		<description>Duplicate chicken genetic material in exchange for a lot of organic pulp.</description>
+		<defName>GR_DuplicateBird</defName>
+		<label>duplicate bird genes</label>
+		<description>Duplicate bird genetic material in exchange for a lot of organic pulp.</description>
 		<jobString>Duplicating Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -166,7 +166,7 @@
 				<filter>
 					<thingDefs>
 						
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 						
 					</thingDefs>
 				</filter>
@@ -186,12 +186,12 @@
 		<fixedIngredientFilter>		
 			<thingDefs>
 								
-						<li>GR_ChickenGenetic</li>						
+						<li>GR_BirdGenetic</li>						
 						<li>GR_OrganicPulp</li>
 					</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_ChickenGenetic>2</GR_ChickenGenetic>
+			<GR_BirdGenetic>2</GR_BirdGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -297,9 +297,9 @@
 	</RecipeDef>
 
 <RecipeDef>
-		<defName>GR_DuplicateWolf</defName>
-		<label>duplicate wolf genes</label>
-		<description>Duplicate wolf genetic material in exchange for a lot of organic pulp.</description>
+		<defName>GR_DuplicateCanine</defName>
+		<label>duplicate canine genes</label>
+		<description>Duplicate canine genetic material in exchange for a lot of organic pulp.</description>
 		<jobString>Duplicating Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -313,7 +313,7 @@
 				<filter>
 					<thingDefs>
 						
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 						
 					</thingDefs>
 				</filter>
@@ -333,12 +333,12 @@
 		<fixedIngredientFilter>		
 			<thingDefs>
 								
-						<li>GR_WolfGenetic</li>						
+						<li>GR_CanineGenetic</li>						
 						<li>GR_OrganicPulp</li>
 					</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_WolfGenetic>2</GR_WolfGenetic>
+			<GR_CanineGenetic>2</GR_CanineGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -394,9 +394,9 @@
 	</RecipeDef>	
 
 <RecipeDef>
-		<defName>GR_DuplicateReptilian</defName>
-		<label>duplicate reptilian genes</label>
-		<description>Duplicate reptilian genetic material in exchange for a lot of organic pulp.</description>
+		<defName>GR_DuplicateReptile</defName>
+		<label>duplicate reptile genes</label>
+		<description>Duplicate reptile genetic material in exchange for a lot of organic pulp.</description>
 		<jobString>Duplicating Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -410,7 +410,7 @@
 				<filter>
 					<thingDefs>
 						
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 						
 					</thingDefs>
 				</filter>
@@ -430,12 +430,12 @@
 		<fixedIngredientFilter>		
 			<thingDefs>
 								
-						<li>GR_ReptilianGenetic</li>						
+						<li>GR_ReptileGenetic</li>						
 						<li>GR_OrganicPulp</li>
 					</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_ReptilianGenetic>2</GR_ReptilianGenetic>
+			<GR_ReptileGenetic>2</GR_ReptileGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>

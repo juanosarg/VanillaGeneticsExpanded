@@ -52,7 +52,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BearBoomalopePre>1</GR_BearBoomalopePre>
+			<GR_BearBoomalopeIncubator>1</GR_BearBoomalopeIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -60,9 +60,9 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GR_CreateBearChickenIncubator</defName>
-		<label>bear / chicken incubator</label>
-		<description>Fill an incubator with genes from a bear and a chicken</description>
+		<defName>GR_CreateBearBirdIncubator</defName>
+		<label>bear / bird incubator</label>
+		<description>Fill an incubator with genes from a bear and a bird</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -91,7 +91,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -102,11 +102,11 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_BearGenetic</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BearChickenPre>1</GR_BearChickenPre>
+			<GR_BearBirdIncubator>1</GR_BearBirdIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -160,7 +160,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BearMuffaloPre>1</GR_BearMuffaloPre>
+			<GR_BearMuffaloIncubator>1</GR_BearMuffaloIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -169,8 +169,8 @@
 
 	<RecipeDef>
 		<defName>GR_CreateBearWolfIncubator</defName>
-		<label>bear / wolf incubator</label>
-		<description>Fill an incubator with genes from a bear and a wolf</description>
+		<label>bear / canine incubator</label>
+		<description>Fill an incubator with genes from a bear and a canine</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -199,7 +199,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -210,11 +210,11 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_BearGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BearWolfPre>1</GR_BearWolfPre>
+			<GR_BearCanineIncubator>1</GR_BearCanineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -222,7 +222,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_CreateBearCatIncubator</defName>
+		<defName>GR_CreateBearFelineIncubator</defName>
 		<label>bear / feline incubator</label>
 		<description>Fill an incubator with genes from a bear and a feline</description>
 		<jobString>Filling Incubator</jobString>
@@ -268,15 +268,15 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BearCatPre>1</GR_BearCatPre>
+			<GR_BearFelineIncubator>1</GR_BearFelineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	
-		<RecipeDef>
-		<defName>GR_CreateBearmoleIncubator</defName>
+	<RecipeDef>
+		<defName>GR_CreateBearRodentIncubator</defName>
 		<label>bear / rodent incubator</label>
 		<description>Fill an incubator with genes from a bear and a rodent</description>
 		<jobString>Filling Incubator</jobString>
@@ -322,7 +322,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BearRodentPre>1</GR_BearRodentPre>
+			<GR_BearRodentIncubator>1</GR_BearRodentIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -332,9 +332,9 @@
 	<!-- Boomalopes -->
 	
 	<RecipeDef>
-		<defName>GR_CreateBoomalopeChickenIncubator</defName>
-		<label>boomalope / chicken incubator</label>
-		<description>Fill an incubator with genes from a boomalope and a chicken</description>
+		<defName>GR_CreateBoomalopeBirdIncubator</defName>
+		<label>boomalope / bird incubator</label>
+		<description>Fill an incubator with genes from a boomalope and a bird</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -355,7 +355,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -374,11 +374,11 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_BoomalopeGenetic</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BoomalopeChickenPre>1</GR_BoomalopeChickenPre>
+			<GR_BoomalopeBirdIncubator>1</GR_BoomalopeBirdIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -432,7 +432,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BoomalopeMuffaloPre>1</GR_BoomalopeMuffaloPre>
+			<GR_BoomalopeMuffaloIncubator>1</GR_BoomalopeMuffaloIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -440,9 +440,9 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GR_CreateBoomalopeWolfIncubator</defName>
-		<label>boomalope / wolf incubator</label>
-		<description>Fill an incubator with genes from a boomalope and a wolf</description>
+		<defName>GR_CreateBoomalopeCanineIncubator</defName>
+		<label>boomalope / canine incubator</label>
+		<description>Fill an incubator with genes from a boomalope and a canine</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -463,7 +463,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -482,11 +482,11 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_BoomalopeGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BoomalopeWolfPre>1</GR_BoomalopeWolfPre>
+			<GR_BoomalopeCanineIncubator>1</GR_BoomalopeCanineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -494,7 +494,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_CreateBoomalopeCatIncubator</defName>
+		<defName>GR_CreateBoomalopeFelineIncubator</defName>
 		<label>boomalope / feline incubator</label>
 		<description>Fill an incubator with genes from a boomalope and a feline</description>
 		<jobString>Filling Incubator</jobString>
@@ -540,7 +540,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BoomalopeCatPre>1</GR_BoomalopeCatPre>
+			<GR_BoomalopeFelineIncubator>1</GR_BoomalopeFelineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -594,19 +594,19 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BoomalopeRodentPre>1</GR_BoomalopeRodentPre>
+			<GR_BoomalopeRodentIncubator>1</GR_BoomalopeRodentIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	
-	<!-- Chicken -->
+	<!-- Birds -->
 
 	<RecipeDef>
-		<defName>GR_CreateChickenMuffaloIncubator</defName>
-		<label>chicken / muffalo incubator</label>
-		<description>Fill an incubator with genes from a chicken and a muffalo</description>
+		<defName>GR_CreateBirdMuffaloIncubator</defName>
+		<label>bird / muffalo incubator</label>
+		<description>Fill an incubator with genes from a bird and a muffalo</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -627,7 +627,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -645,12 +645,12 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 				<li>GR_MuffaloGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_ChickenMuffaloPre>1</GR_ChickenMuffaloPre>
+			<GR_BirdMuffaloIncubator>1</GR_BirdMuffaloIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -658,9 +658,9 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GR_CreateChickenWolfIncubator</defName>
-		<label>chicken / wolf incubator</label>
-		<description>Fill an incubator with genes from a chicken and a wolf</description>
+		<defName>GR_CreateBirdCanineIncubator</defName>
+		<label>bird / canine incubator</label>
+		<description>Fill an incubator with genes from a bird and a canine</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -681,7 +681,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -689,7 +689,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -699,12 +699,12 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_ChickenGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_BirdGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_ChickenWolfPre>1</GR_ChickenWolfPre>
+			<GR_BirdCanineIncubator>1</GR_BirdCanineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -712,9 +712,9 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_CreateChickenCatIncubator</defName>
-		<label>chicken / feline incubator</label>
-		<description>Fill an incubator with genes from a chicken and a feline</description>
+		<defName>GR_CreateBirdFelineIncubator</defName>
+		<label>bird / feline incubator</label>
+		<description>Fill an incubator with genes from a bird and a feline</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -735,7 +735,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -753,12 +753,12 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 				<li>GR_FelineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_ChickenCatPre>1</GR_ChickenCatPre>
+			<GR_BirdFelineIncubator>1</GR_BirdFelineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -766,9 +766,9 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_CreateChickenrabbitIncubator</defName>
-		<label>chicken / leporid incubator</label>
-		<description>Fill an incubator with genes from a chicken and a leporid</description>
+		<defName>GR_CreateBirdLeporidIncubator</defName>
+		<label>bird / leporid incubator</label>
+		<description>Fill an incubator with genes from a bird and a leporid</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -789,7 +789,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -807,12 +807,12 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 				<li>GR_RodentGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_ChickenRodentPre>1</GR_ChickenRodentPre>
+			<GR_BirdLeporidIncubator>1</GR_BirdLeporidIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -822,9 +822,9 @@
 	<!-- Muffalos -->
 
 	<RecipeDef>
-		<defName>GR_CreateMuffaloWolfIncubator</defName>
-		<label>muffalo / wolf incubator</label>
-		<description>Fill an incubator with genes from a muffalo and a wolf</description>
+		<defName>GR_CreateMuffaloCanineIncubator</defName>
+		<label>muffalo / canine incubator</label>
+		<description>Fill an incubator with genes from a muffalo and a canine</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -853,7 +853,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -864,11 +864,11 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_MuffaloGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_MuffaloWolfPre>1</GR_MuffaloWolfPre>
+			<GR_MuffaloCanineIncubator>1</GR_MuffaloCanineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -876,7 +876,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_CreateMuffaloCatIncubator</defName>
+		<defName>GR_CreateMuffaloFelineIncubator</defName>
 		<label>muffalo / feline incubator</label>
 		<description>Fill an incubator with genes from a muffalo and a feline</description>
 		<jobString>Filling Incubator</jobString>
@@ -922,7 +922,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_MuffaloCatPre>1</GR_MuffaloCatPre>
+			<GR_MuffaloFelineIncubator>1</GR_MuffaloFelineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -930,7 +930,7 @@
 	</RecipeDef>
 	
 	<RecipeDef>
-		<defName>GR_CreateMuffaloratIncubator</defName>
+		<defName>GR_CreateMuffaloRodentIncubator</defName>
 		<label>muffalo / rodent incubator</label>
 		<description>Fill an incubator with genes from a muffalo and a rodent</description>
 		<jobString>Filling Incubator</jobString>
@@ -976,19 +976,19 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_MuffaloRodentPre>1</GR_MuffaloRodentPre>
+			<GR_MuffaloRodentIncubator>1</GR_MuffaloRodentIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	
-	<!-- Wolves -->
+	<!-- Canines -->
 
 	<RecipeDef>
-		<defName>GR_CreateWolfCatIncubator</defName>
-		<label>wolf / feline incubator</label>
-		<description>Fill an incubator with genes from a wolf and a feline</description>
+		<defName>GR_CreateCanineFelineIncubator</defName>
+		<label>canine / feline incubator</label>
+		<description>Fill an incubator with genes from a canine and a feline</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1009,7 +1009,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1027,12 +1027,12 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 				<li>GR_FelineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_WolfCatPre>1</GR_WolfCatPre>
+			<GR_CanineFelineIncubator>1</GR_CanineFelineIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -1040,9 +1040,9 @@
 	</RecipeDef>	
 	
 	<RecipeDef>
-		<defName>GR_CreateWolfbeaverIncubator</defName>
-		<label>wolf / rodent incubator</label>
-		<description>Fill an incubator with genes from a wolf and a rodent</description>
+		<defName>GR_CreateCanineRodentIncubator</defName>
+		<label>canine / rodent incubator</label>
+		<description>Fill an incubator with genes from a canine and a rodent</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1063,7 +1063,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1081,12 +1081,12 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 				<li>GR_RodentGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_WolfRodentPre>1</GR_WolfRodentPre>
+			<GR_CanineRodentIncubator>1</GR_CanineRodentIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -1096,9 +1096,9 @@
 	<!-- Rodents -->
 
 	<RecipeDef>
-		<defName>GR_CreateRodentCatIncubator</defName>
-		<label>feline / rodent incubator</label>
-		<description>Fill an incubator with genes from a feline and a rodent</description>
+		<defName>GR_CreateFelineLeporidIncubator</defName>
+		<label>feline / leporid incubator</label>
+		<description>Fill an incubator with genes from a feline and a leporid</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1142,7 +1142,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_CatRodentPre>1</GR_CatRodentPre>
+			<GR_FelineLeporidIncubator>1</GR_FelineLeporidIncubator>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -1261,9 +1261,9 @@
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef>
-		<defName>CreateChickenspiderIncubator</defName>
-		<label>insectoid / chicken incubator</label>
-		<description>Fill an incubator with genes from an insectoid and a chicken</description>
+		<defName>GR_CreateChickenspiderIncubator</defName>
+		<label>insectoid / bird incubator</label>
+		<description>Fill an incubator with genes from an insectoid and a bird</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1293,7 +1293,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1304,7 +1304,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_InsectoidGenetic</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -1372,8 +1372,8 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>GR_CreateWolfscarabIncubator</defName>
-		<label>insectoid / wolf incubator</label>
-		<description>Fill an incubator with genes from an insectoid and a wolf</description>
+		<label>insectoid / canine incubator</label>
+		<description>Fill an incubator with genes from an insectoid and a canine</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1403,7 +1403,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1414,7 +1414,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_InsectoidGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -1538,7 +1538,7 @@
 		
 	</RecipeDef>
 		
-<!-- Reptilian Tier Incubators -->
+<!-- Reptile Tier Incubators -->
 	
 	<RecipeDef>
 		<defName>GR_CreateBearodileIncubator</defName>
@@ -1572,7 +1572,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1583,13 +1583,13 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_BearGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<GR_BearodileIncubator>1</GR_BearodileIncubator>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>
@@ -1626,7 +1626,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1637,21 +1637,21 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_BoomalopeGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<GR_BoomsnakeIncubator>1</GR_BoomsnakeIncubator>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef>
 		<defName>GR_CreateChickenlizardIncubator</defName>
-		<label>reptile / chicken incubator</label>
-		<description>Fill an incubator with genes from a reptile and a chicken</description>
+		<label>reptile / bird incubator</label>
+		<description>Fill an incubator with genes from a reptile and a bird</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1672,7 +1672,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1680,7 +1680,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1690,14 +1690,14 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_ChickenGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_BirdGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<GR_ChickenlizardIncubator>1</GR_ChickenlizardIncubator>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>
@@ -1734,7 +1734,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1745,13 +1745,13 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_MuffaloGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<GR_MuffalokomodoIncubator>1</GR_MuffalokomodoIncubator>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>
@@ -1788,7 +1788,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1799,13 +1799,13 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_InsectoidGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<GR_SpidersnakeIncubator>1</GR_SpidersnakeIncubator>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>
@@ -1842,7 +1842,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1853,21 +1853,21 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_FelineGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<GR_SnakecatIncubator>1</GR_SnakecatIncubator>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 		<RecipeDef>
 		<defName>GR_CreateWolfsnakeIncubator</defName>
-		<label>reptile / wolf incubator</label>
-		<description>Fill an incubator with genes from a reptile and a wolf</description>
+		<label>reptile / canine incubator</label>
+		<description>Fill an incubator with genes from a reptile and a canine</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -1888,7 +1888,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1896,7 +1896,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1906,14 +1906,14 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_WolfGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_CanineGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<GR_WolfsnakeIncubator>1</GR_WolfsnakeIncubator>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>
@@ -1949,7 +1949,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1960,7 +1960,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_ThrumboGenetic</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -2032,8 +2032,8 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>GR_CreateThrumbochickenIncubator</defName>
-		<label>thrumbo / chicken incubator</label>
-		<description>Fill an incubator with genes from a thrumbo and a chicken</description>
+		<label>thrumbo / bird incubator</label>
+		<description>Fill an incubator with genes from a thrumbo and a bird</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -2062,7 +2062,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2073,7 +2073,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_ThrumboGenetic</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -2194,8 +2194,8 @@
 	</RecipeDef>
 		<RecipeDef>
 		<defName>GR_CreateThrumboWolfIncubator</defName>
-		<label>thrumbo / wolf incubator</label>
-		<description>Fill an incubator with genes from a thrumbo and a wolf</description>
+		<label>thrumbo / canine incubator</label>
+		<description>Fill an incubator with genes from a thrumbo and a canine</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -2224,7 +2224,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2235,7 +2235,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_ThrumboGenetic</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -2551,8 +2551,8 @@
 	
 	<RecipeDef>
 		<defName>GR_CreateMechachickenIncubator</defName>
-		<label>mechanoid / chicken incubator</label>
-		<description>Fill an incubator with genes from a chicken and active mechanites</description>
+		<label>mechanoid / bird incubator</label>
+		<description>Fill an incubator with genes from a bird and active mechanites</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -2573,7 +2573,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ChickenGenetic</li>
+						<li>GR_BirdGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2599,7 +2599,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_ChickenGenetic</li>
+				<li>GR_BirdGenetic</li>
 				<li>GR_MechanoidGenetic</li>
 				<li>GR_MechanoidInterfaceChip</li>
 			</thingDefs>
@@ -2615,8 +2615,8 @@
 	
 	<RecipeDef>
 		<defName>GR_CreateMechawolfIncubator</defName>
-		<label>mechanoid / wolf incubator</label>
-		<description>Fill an incubator with genes from a wolf and active mechanites</description>
+		<label>mechanoid / canine incubator</label>
+		<description>Fill an incubator with genes from a canine and active mechanites</description>
 		<jobString>Filling Incubator</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -2637,7 +2637,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_WolfGenetic</li>
+						<li>GR_CanineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2663,7 +2663,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_WolfGenetic</li>
+				<li>GR_CanineGenetic</li>
 				<li>GR_MechanoidGenetic</li>
 				<li>GR_MechanoidInterfaceChip</li>
 			</thingDefs>
@@ -2886,7 +2886,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_ReptilianGenetic</li>
+						<li>GR_ReptileGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2912,7 +2912,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_ReptilianGenetic</li>
+				<li>GR_ReptileGenetic</li>
 				<li>GR_MechanoidGenetic</li>
 				<li>GR_MechanoidInterfaceChip</li>
 			</thingDefs>

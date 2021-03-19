@@ -44,11 +44,11 @@
     
   </ThingDef>
   <ThingDef ParentName="GR_GeneticsBase">
-    <defName>GR_ChickenGenetic</defName>
-    <label>chicken genetic material</label>
+    <defName>GR_BirdGenetic</defName>
+    <label>bird genetic material</label>
     <description>A vial of genetic material extracted from a chicken's corpse.</description>
     <graphicData>
-		<texPath>Things/Item/GR_GeneticMaterials_Chicken</texPath>
+		<texPath>Things/Item/GR_GeneticMaterials_Bird</texPath>
 	</graphicData>
     
   </ThingDef>
@@ -71,11 +71,11 @@
     
   </ThingDef>
   <ThingDef ParentName="GR_GeneticsBase">
-    <defName>GR_WolfGenetic</defName>
-    <label>wolf genetic material</label>
-    <description>A vial of genetic material extracted from a wolf's corpse.</description>
+    <defName>GR_CanineGenetic</defName>
+    <label>canine genetic material</label>
+    <description>A vial of genetic material extracted from a canine's corpse.</description>
     <graphicData>
-		<texPath>Things/Item/GR_GeneticMaterials_Wolf</texPath>
+		<texPath>Things/Item/GR_GeneticMaterials_Canine</texPath>
 	</graphicData>
     
   </ThingDef>
@@ -111,14 +111,14 @@
     
   </ThingDef>
   <ThingDef ParentName="GR_GeneticsBase">
-    <defName>GR_ReptilianGenetic</defName>
-    <label>reptilian genetic material</label>
-    <description>A vial of genetic material extracted from a reptilian corpse.</description>
+    <defName>GR_ReptileGenetic</defName>
+    <label>reptile genetic material</label>
+    <description>A vial of genetic material extracted from a reptile's corpse.</description>
     <statBases>
        <MarketValue>45</MarketValue>
     </statBases>
     <graphicData>
-      <texPath>Things/Item/GR_GeneticMaterials_Reptilian</texPath>
+      <texPath>Things/Item/GR_GeneticMaterials_Reptile</texPath>
     </graphicData>
     
   </ThingDef>
@@ -177,7 +177,7 @@
     
     
     <graphicData>
-      <texPath>Things/Item/AlphaSerum</texPath>
+      <texPath>Things/Item/GR_ParagonSerum</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
@@ -193,7 +193,7 @@
 		<tradeability>None</tradeability>
 
     <thingCategories>
-      <li>GR_AlphaSerums</li>
+      <li>GR_ParagonSerums</li>
     </thingCategories>
     <tickerType>Rare</tickerType>
     <comps>
@@ -337,7 +337,7 @@
     <label>organic pulp</label>
     <description>This organic pulp can be used as an organic growth compound to accelerate some of the genetic processes. Needed to upgrade the Gene Pod and to build many of Genetic Rim's buildings.</description>
     <graphicData>
-      <texPath>Things/Item/OrganicPulp</texPath>
+      <texPath>Things/Item/GR_OrganicPulp</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 			<tradeability>Sellable</tradeability>
@@ -429,7 +429,7 @@
 		<tickerType>Normal</tickerType>
     <graphicData>
 
-      <texPath>Things/Item/Cryofuel</texPath>
+      <texPath>Things/Item/GR_Cryofuel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 				<tradeability>Sellable</tradeability>

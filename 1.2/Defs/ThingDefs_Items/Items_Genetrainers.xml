@@ -88,9 +88,9 @@
   </ThingDef>
   
        <ThingDef ParentName="GR_GenetrainerBase">
-    <defName>GR_HybridCatGenesGenetrainer</defName>
-    <label>hybrid cat genes genetrainer</label>
-    <description>Injects hybrid cat genes in an humanoid. This genetrainer gives the keen sight ability, increasing shooting accuracy.\n\nGenetrainers are implants that do not take the place of any given organ. Only one can be "installed" at a time. Using a second genetrainer will have no effect and the genetrainer will be wasted. Bear in mind that a genetrainer modifies the genes of the human subject, and only death will get rid of its effects.</description>
+    <defName>GR_HybridFelineGenesGenetrainer</defName>
+    <label>hybrid feline genes genetrainer</label>
+    <description>Injects hybrid feline genes in an humanoid. This genetrainer gives the keen sight ability, increasing shooting accuracy.\n\nGenetrainers are implants that do not take the place of any given organ. Only one can be "installed" at a time. Using a second genetrainer will have no effect and the genetrainer will be wasted. Bear in mind that a genetrainer modifies the genes of the human subject, and only death will get rid of its effects.</description>
     <graphicData>
       <texPath>Things/Item/GR_HybridGenesInjector</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -104,13 +104,13 @@
     <comps>
       <li Class="CompProperties_Usable">
         <useJob>GR_UseHybridInjector</useJob>
-        <useLabel>Use hybrid cat genes genetrainer</useLabel>
+        <useLabel>Use hybrid feline genes genetrainer</useLabel>
 		<useDuration>600</useDuration>
 
       </li>
       <li Class="GeneticRim.CompProperties_HybridGenesUseEffect">
         <compClass>GeneticRim.CompUseEffect_ApplyHediff</compClass>
-		<genes>GR_CatHybridGenes</genes>
+		<genes>GR_FelineHybridGenes</genes>
 		
       </li>
       <li Class="CompProperties_UseEffect">
@@ -121,9 +121,9 @@
   </ThingDef>
   
      <ThingDef ParentName="GR_GenetrainerBase">
-    <defName>GR_HybridChickenGenesGenetrainer</defName>
-    <label>hybrid chicken genes genetrainer</label>
-    <description>Injects hybrid chicken genes in an humanoid. This genetrainer gives the birdlike curiosity ability, increasing global learning speed.\n\nGenetrainers are implants that do not take the place of any given organ. Only one can be "installed" at a time. Using a second genetrainer will have no effect and the genetrainer will be wasted. Bear in mind that a genetrainer modifies the genes of the human subject, and only death will get rid of its effects.</description>
+    <defName>GR_HybridBirdGenesGenetrainer</defName>
+    <label>hybrid bird genes genetrainer</label>
+    <description>Injects hybrid bird genes in an humanoid. This genetrainer gives the birdlike curiosity ability, increasing global learning speed.\n\nGenetrainers are implants that do not take the place of any given organ. Only one can be "installed" at a time. Using a second genetrainer will have no effect and the genetrainer will be wasted. Bear in mind that a genetrainer modifies the genes of the human subject, and only death will get rid of its effects.</description>
     <graphicData>
       <texPath>Things/Item/GR_HybridGenesInjector</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -137,13 +137,13 @@
     <comps>
       <li Class="CompProperties_Usable">
         <useJob>GR_UseHybridInjector</useJob>
-        <useLabel>Use hybrid chicken genes genetrainer</useLabel>
+        <useLabel>Use hybrid bird genes genetrainer</useLabel>
 		<useDuration>600</useDuration>
 
       </li>
       <li Class="GeneticRim.CompProperties_HybridGenesUseEffect">
         <compClass>GeneticRim.CompUseEffect_ApplyHediff</compClass>
-		<genes>GR_ChickenHybridGenes</genes>
+		<genes>GR_BirdHybridGenes</genes>
 		
       </li>
       <li Class="CompProperties_UseEffect">
@@ -220,9 +220,9 @@
   </ThingDef>
   
     <ThingDef ParentName="GR_GenetrainerBase">
-    <defName>GR_HybridWolfGenesGenetrainer</defName>
-    <label>hybrid wolf genes genetrainer</label>
-    <description>Injects hybrid wolf genes in an humanoid. This genetrainer gives the wolf speed ability, increasing movement speed, eating speed and immunity gain speed.\n\nGenetrainers are implants that do not take the place of any given organ. Only one can be "installed" at a time. Using a second genetrainer will have no effect and the genetrainer will be wasted. Bear in mind that a genetrainer modifies the genes of the human subject, and only death will get rid of its effects.</description>
+    <defName>GR_HybridCanineGenesGenetrainer</defName>
+    <label>hybrid canine genes genetrainer</label>
+    <description>Injects hybrid canine genes in an humanoid. This genetrainer gives the canine speed ability, increasing movement speed, eating speed and immunity gain speed.\n\nGenetrainers are implants that do not take the place of any given organ. Only one can be "installed" at a time. Using a second genetrainer will have no effect and the genetrainer will be wasted. Bear in mind that a genetrainer modifies the genes of the human subject, and only death will get rid of its effects.</description>
     <graphicData>
       <texPath>Things/Item/GR_HybridGenesInjector</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -236,13 +236,13 @@
     <comps>
       <li Class="CompProperties_Usable">
         <useJob>GR_UseHybridInjector</useJob>
-        <useLabel>Use hybrid wolf genes genetrainer</useLabel>
+        <useLabel>Use hybrid canine genes genetrainer</useLabel>
 		<useDuration>600</useDuration>
 
       </li>
       <li Class="GeneticRim.CompProperties_HybridGenesUseEffect">
         <compClass>GeneticRim.CompUseEffect_ApplyHediff</compClass>
-		<genes>GR_WolfHybridGenes</genes>
+		<genes>GR_CanineHybridGenes</genes>
 		
       </li>
       <li Class="CompProperties_UseEffect">

@@ -24,7 +24,7 @@ namespace GeneticRim
         [HarmonyPostfix]
         static void AddAnimalAsColonist(Pawn __instance, ref bool __result)
         {
-            bool flagIsCreatureDraftable = (__instance.TryGetComp<CompDraftable>() != null);
+            bool flagIsCreatureDraftable = DraftingList.draftable_animals.ContainsKey(__instance);
             if (flagIsCreatureDraftable) {
                 foreach (Thing t in __instance.Map.listerThings.ThingsOfDef(ThingDef.Named("GR_AnimalControlHub")))
                 {

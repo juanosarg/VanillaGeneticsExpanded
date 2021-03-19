@@ -94,7 +94,7 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GR_ExtractGenesChicken</defName>
+		<defName>GR_ExtractGenesBird</defName>
 		<label>extract genes from a bird</label>
 		<description>Extract genetic material from any bird corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
@@ -136,7 +136,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_ChickenGenetic>1</GR_ChickenGenetic>
+			<GR_BirdGenetic>1</GR_BirdGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -222,9 +222,9 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GR_ExtractGenesWolf</defName>
-		<label>extract genes from a canid</label>
-		<description>Extract genetic material from a wolf, warg or dog corpse.</description>
+		<defName>GR_ExtractGenesCanine</defName>
+		<label>extract genes from a canine</label>
+		<description>Extract genetic material from a wolf, warg, dog or any other canine's corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -267,7 +267,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_WolfGenetic>1</GR_WolfGenetic>
+			<GR_CanineGenetic>1</GR_CanineGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -421,7 +421,7 @@
 	</RecipeDef>
 
 	<RecipeDef>
-		<defName>GR_ExtractGenesReptilian</defName>
+		<defName>GR_ExtractGenesReptile</defName>
 		<label>extract genes from a reptile</label>
 		<description>Extract genetic material from a reptile.</description>
 		<jobString>Extracting Genetic Material</jobString>
@@ -458,9 +458,9 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_ReptilianGenetic>1</GR_ReptilianGenetic>
+			<GR_ReptileGenetic>1</GR_ReptileGenetic>
 		</products>
-		<researchPrerequisite>GR_ReptilianGenome</researchPrerequisite>
+		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
 		</skillRequirements>

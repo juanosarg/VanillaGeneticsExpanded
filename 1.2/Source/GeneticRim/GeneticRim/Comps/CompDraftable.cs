@@ -5,7 +5,24 @@ namespace GeneticRim
 {
     class CompDraftable : ThingComp
     {
-        
+        /*
+        Reference for the abilities array:
+        GetRage -> 0 
+        GetExplodable -> 1 
+        GetChickenRimPox -> 2 
+        GetCanCarryMore -> 3
+        GetAdrenalineBurst -> 4
+        GetCanDoInsectClouds -> 5
+        GetCanStampede -> 6
+        GetCanDoPoisonousCloud -> 7
+        GetCanBurrow -> 8
+        HasDinoStamina -> 9
+        GetHorror -> 10
+        GetMechablast -> 11
+        GetKeenSenses -> 12
+        GetCatReflexes -> 13
+        GetOrbitalStrike -> 14
+        */
 
         public CompProperties_Draftable Props
         {
@@ -13,6 +30,25 @@ namespace GeneticRim
             {
                 return (CompProperties_Draftable)this.props;
             }
+        }
+       
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            
+            DraftingList.AddAnimalToList(this.parent, new bool[] { GetRage, GetExplodable, GetChickenRimPox, GetCanCarryMore,
+                GetAdrenalineBurst, GetCanDoInsectClouds,GetCanStampede,GetCanDoPoisonousCloud,GetCanBurrow,HasDinoStamina,
+            GetHorror,GetMechablast,GetKeenSenses,GetCatReflexes,GetOrbitalStrike});
+            
+        }
+
+        public override void PostDeSpawn(Map map)
+        {
+            DraftingList.RemoveAnimalFromList(this.parent);
+        }
+
+        public override void PostDestroy(DestroyMode mode, Map previousMap)
+        {
+            DraftingList.RemoveAnimalFromList(this.parent);
         }
 
         public bool GetExplodable
@@ -118,6 +154,14 @@ namespace GeneticRim
             get
             {
                 return this.Props.catreflexes;
+            }
+        }
+
+        public bool GetOrbitalStrike
+        {
+            get
+            {
+                return this.Props.orbitalstrike;
             }
         }
     }

@@ -26,7 +26,7 @@ namespace GeneticRim
 
         {
             bool flagIsCreatureMine = pawn.Faction != null && pawn.Faction.IsPlayer;
-            bool flagIsCreatureDraftable = (pawn.TryGetComp<CompDraftable>() != null);
+            bool flagIsCreatureDraftable = DraftingList.draftable_animals.ContainsKey(pawn);
 
             if (flagIsCreatureDraftable && flagIsCreatureMine)
             {

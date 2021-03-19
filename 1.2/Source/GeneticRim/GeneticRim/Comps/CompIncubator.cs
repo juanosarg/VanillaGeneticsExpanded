@@ -2,6 +2,7 @@
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
+using System;
 
 
 
@@ -20,7 +21,8 @@ namespace GeneticRim
 
         public Faction hatcheeFaction;
         private PawnGenerationRequest request;
-        private System.Random rand = new System.Random();
+        System.Random randFailure = new System.Random();
+        System.Random randSpawn = new System.Random();
 
         public bool WasMutant = false;
 
@@ -84,10 +86,17 @@ namespace GeneticRim
 
                 for (int i = 0; i < this.parent.stackCount; i++)
                 {
-                    //Log.Message("Failure rate set to "+ GeneticRim_Settings.failureRate);
-                    if (rand.NextDouble() < (1 - (GeneticRim_Settings.failureRate / 100)))
+                    
+                    if (randFailure.NextDouble() < (1 - (GeneticRim_Settings.failureRate / 100)))
                     {
-                        request = new PawnGenerationRequest(this.Props.hatcherPawn, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false);
+                        if (randSpawn.NextDouble() > 0.5 || Props.hatcherPawnSecondary == null)
+                        {
+                            request = new PawnGenerationRequest(this.Props.hatcherPawn, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false);
+                        }
+                        else
+                        {
+                            request = new PawnGenerationRequest(this.Props.hatcherPawnSecondary, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false);
+                        }
                     }
                     else
                     {

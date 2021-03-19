@@ -29,9 +29,9 @@ namespace GeneticRim
                             bool flag = (pawn != null);
                             if (flag)
                             {
-                                if (pawn.TryGetComp<CompDraftable>() != null)
+                                if (DraftingList.draftable_animals.ContainsKey(pawn))
                                 {
-                                    if (!pawn.TryGetComp<CompDraftable>().GetHorror)
+                                    if (!DraftingList.draftable_animals[pawn][10])
                                     {
                                         //pawn.health.AddHediff(HediffDef.Named("ROM_SanityLoss"));
                                         HealthUtility.AdjustSeverity(pawn, HediffDef.Named("ROM_SanityLoss"), (float)0.10);

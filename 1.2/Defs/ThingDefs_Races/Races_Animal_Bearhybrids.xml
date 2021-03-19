@@ -354,7 +354,7 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 
-		<defName>GR_BearchickenKind</defName>
+		<defName>GR_Bearchicken</defName>
 		<label>bearchicken</label>
 		<race>GR_Bearchicken</race>
 		<combatPower>40</combatPower>

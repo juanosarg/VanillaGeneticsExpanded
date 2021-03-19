@@ -67,9 +67,9 @@ namespace GeneticRim
             }
             else if (randomNumber == 10)
             {
-                if (ResearchProjectDef.Named("GR_ReptilianGenome").IsFinished)
+                if (ResearchProjectDef.Named("GR_ReptileGenome").IsFinished)
                 {
-                    GenSpawn.Spawn(ThingDef.Named("GR_ReptilianGenetic"), this.parent.Position, this.parent.Map);
+                    GenSpawn.Spawn(ThingDef.Named("GR_ReptileGenetic"), this.parent.Position, this.parent.Map);
                 }
                 else
                 {
@@ -101,7 +101,7 @@ namespace GeneticRim
             }
             else if (randomNumber == 5)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_ChickenGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(ThingDef.Named("GR_BirdGenetic"), this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 4)
             {
@@ -113,7 +113,7 @@ namespace GeneticRim
             }
             else if (randomNumber == 2)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_WolfGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(ThingDef.Named("GR_CanineGenetic"), this.parent.Position, this.parent.Map);
             }
             else
             {
@@ -141,7 +141,7 @@ namespace GeneticRim
             }
             else if (randomNumber == 5)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_ChickenGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(ThingDef.Named("GR_BirdGenetic"), this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 4)
             {
@@ -153,7 +153,7 @@ namespace GeneticRim
             }
             else if (randomNumber == 2)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_WolfGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(ThingDef.Named("GR_CanineGenetic"), this.parent.Position, this.parent.Map);
             }
             else
             {

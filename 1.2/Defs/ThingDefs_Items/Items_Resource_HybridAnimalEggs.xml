@@ -234,7 +234,7 @@
     <comps>
       <li Class="CompProperties_Hatcher">
         <hatcherDaystoHatch>7</hatcherDaystoHatch>
-        <hatcherPawn>GR_BearchickenKind</hatcherPawn>
+        <hatcherPawn>GR_Bearchicken</hatcherPawn>
       </li>
     </comps>
   </ThingDef>
