@@ -25,7 +25,7 @@
 		<label>thrown sac</label>
 		<thingClass>Projectile_Explosive</thingClass>
 		<graphicData>
-			<texPath>Things/Item/ThrownSac</texPath>
+			<texPath>Things/Item/GR_ThrownSac</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile>

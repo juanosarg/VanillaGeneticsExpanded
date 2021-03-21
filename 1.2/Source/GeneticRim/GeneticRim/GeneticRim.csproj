@@ -298,7 +298,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompAnimalControlHub.cs" />
     <Compile Include="Comps\CompDraftable.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_AnimalControlHub.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Draftable.cs" />
     <Compile Include="DraftingList\DraftingList.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />
@@ -311,6 +313,8 @@
     <Compile Include="Gas\Gas_InsanityCloud.cs" />
     <Compile Include="Gas\Gas_InsectClouds.cs" />
     <Compile Include="Gas\Gas_PoisonCloud.cs" />
+    <Compile Include="Harmony\Bill_PawnAllowedToStartAnew.cs" />
+    <Compile Include="Harmony\FloatMenuMakerMap_AddUndraftedOrders.cs" />
     <Compile Include="Harmony\Pawn_IsColonistPlayerControlled.cs" />
     <Compile Include="Harmony\Root_Play_Update.cs" />
     <Compile Include="Harmony\MapParent_RecalculateHibernatableIncidentTargets.cs" />
@@ -318,6 +322,8 @@
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\PawnComponentsUtility_AddAndRemoveDynamicComponents.cs" />
     <Compile Include="Harmony\FloatMenuMakerMap_CanTakeOrder.cs" />
+    <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_Draftable.cs" />
+    <Compile Include="Hediff Comps\HediffComp_Draftable.cs" />
     <Compile Include="Hediffs\Hediff_Burrowing.cs" />
     <Compile Include="Hediffs\Hediff_InsectClouds.cs" />
     <Compile Include="Hediffs\Hediff_StampedeClouds.cs" />

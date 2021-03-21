@@ -25,22 +25,11 @@ namespace GeneticRim
         static void AddAnimalAsColonist(Pawn __instance, ref bool __result)
         {
             bool flagIsCreatureDraftable = DraftingList.draftable_animals.ContainsKey(__instance);
-            if (flagIsCreatureDraftable) {
-                foreach (Thing t in __instance.Map.listerThings.ThingsOfDef(ThingDef.Named("GR_AnimalControlHub")))
-                {
-                    Thing mindcontrolhub = t as Thing;
-                    if (t != null)
-                    {
-                        __result = __instance.Spawned && __instance.HostFaction == null;
-                        break;
-                    }
-                }
-                
+            bool flagIsMindControlBuildingPresent = DraftingList.numberOfAnimalControlHubsBuilt > 0;
+            if (flagIsCreatureDraftable && flagIsMindControlBuildingPresent)
+            {
+                __result = __instance.Spawned && __instance.HostFaction == null;
             }
-            
         }
     }
-
-
-
 }

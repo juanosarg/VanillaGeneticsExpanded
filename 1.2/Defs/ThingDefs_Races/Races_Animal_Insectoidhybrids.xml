@@ -192,7 +192,7 @@
 				<forcedMissRadius>2</forcedMissRadius>
 				<soundCast>Pawn_BigInsect_Call</soundCast>
 				<muzzleFlashScale>2</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
+				<label>explosive sac</label>
 				<commonality>0.75</commonality>
 			</li>
 
@@ -908,7 +908,7 @@
 				<range>22</range>
 				<soundCast>Bow_Recurve</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<!--Commanility determines how frequent this range verb is chosen.-->
+				<label>hairballs</label>
 				<commonality>0.6</commonality>
 			</li>
 

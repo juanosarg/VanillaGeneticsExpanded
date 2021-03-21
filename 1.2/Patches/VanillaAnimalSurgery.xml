@@ -11,6 +11,7 @@
 			<li Class="PatchOperationAdd"> 
 				<xpath>/Defs/ThingDef[@Name="AnimalThingBase"]/recipes</xpath>
 				<value>
+					<li>GR_InstallAnimalControlImplant</li>
 					<li>GR_InstallBearLeg</li>
 					<li>GR_InstallLizardLeg</li>
 					<li>GR_InstallThrumboLeg</li>

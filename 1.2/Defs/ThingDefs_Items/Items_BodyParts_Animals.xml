@@ -18,6 +18,22 @@
 		</statBases>
 	</ThingDef>
 	
+	<!--=============== Torso ====================-->
+	
+	<ThingDef ParentName="GR_AnimalImplantBase">
+		<defName>GR_AnimalControlImplant</defName>
+		<label>animal Implant: animal mind controller</label>
+		<description>An animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player. Note that you will need to build an Animal Control Hub anywhere on the planet for this to work.</description>		
+		<statBases>
+			<MarketValue>150</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	
 	
 	<!--=============== Legs ====================-->
 

@@ -14,7 +14,7 @@ namespace GeneticRim
 
         public CompProperties_Exploder()
         {
-            //Messages.Message("Patataaa", MessageSound.Standard);
+            
             this.compClass = typeof(CompExploder);
         }
     }

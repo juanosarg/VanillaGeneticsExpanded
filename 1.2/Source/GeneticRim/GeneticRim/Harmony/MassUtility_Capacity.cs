@@ -27,32 +27,12 @@ namespace GeneticRim
         {
             bool flagIsCreatureMine = p.Faction != null && p.Faction.IsPlayer;
             bool flagIsCreatureDraftable = DraftingList.draftable_animals.ContainsKey(p);
+            bool flagIsAnimalControlHubBuilt = DraftingList.numberOfAnimalControlHubsBuilt > 0;
             bool flagCanCreatureCarryMore = false;
 
-            if (flagIsCreatureDraftable)
-            {
-
-                List<Map> maps = Find.Maps;
-
-                for (int i = 0; i < maps.Count; i++)
-                {
-                    if (maps[i].IsPlayerHome)
-                    {
-                        foreach (Thing t in maps[i].listerThings.ThingsOfDef(ThingDef.Named("GR_AnimalControlHub")))
-                        {
-                            Thing mindcontrolhub = t as Thing;
-                            if (t != null)
-                            {
-                                flagCanCreatureCarryMore = DraftingList.draftable_animals[p][3];
-                                if (flagCanCreatureCarryMore) { Log.Message("Creature " + p.kindDef.ToString() + " should carry more now"); }
-                            }
-
-
-                        }
-                    }
-                }
-
-
+            if (flagIsCreatureDraftable && flagIsAnimalControlHubBuilt)
+            {             
+                  flagCanCreatureCarryMore = DraftingList.draftable_animals[p][3];                              
             }
 
             if (flagIsCreatureDraftable && flagIsCreatureMine && flagCanCreatureCarryMore)

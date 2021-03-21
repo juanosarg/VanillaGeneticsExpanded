@@ -3,6 +3,14 @@
 	<!--=============== Animal Hybrid Implants ====================-->
 
 
+	<RecipeDef Name="GR_TorsoImplants" Abstract="True" ParentName="SurgeryFlesh">
+		<workAmount>2000</workAmount>		
+		<appliedOnFixedBodyParts>
+			<li>Body</li>								
+			<li>SnakeBody</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+	
 	<RecipeDef Name="GR_LegImplants" Abstract="True" ParentName="SurgeryFlesh">
 		<workAmount>2000</workAmount>
 		
@@ -121,6 +129,44 @@
 		</appliedOnFixedBodyParts>
 	</RecipeDef>
 
+	<!--=============== Animal Control Implant ====================-->
+	
+	<RecipeDef ParentName="GR_TorsoImplants">
+		<defName>GR_InstallAnimalControlImplant</defName>
+		<label>&lt;color=#E89D1B&gt;install animal Implant: animal mind controller&lt;/color&gt;</label>
+		<description>Installs animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player. Note that you will need to build an Animal Control Hub anywhere on the planet for this to work.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing animal mind controller.</jobString>		
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_AnimalControlImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>GR_AnimalControlImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<addsHediff>GR_AnimalControlImplant</addsHediff>
+	</RecipeDef>
+	
 	<!--=============== Legs ====================-->
 
 

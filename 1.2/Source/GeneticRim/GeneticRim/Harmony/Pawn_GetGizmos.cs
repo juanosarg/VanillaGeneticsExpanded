@@ -33,7 +33,7 @@ namespace GeneticRim
             var pawn = __instance;
             var gizmos = __result.ToList();
             // First two flags detect if the pawn is mine, and if it is 
-           
+
             bool flagIsCreatureMine = pawn.Faction != null && pawn.Faction.IsPlayer;
             bool flagIsCreatureDraftable = DraftingList.draftable_animals.ContainsKey(pawn);
             /* I check these flags only inside flagIsCreatureDraftable true*/
@@ -61,34 +61,28 @@ namespace GeneticRim
                 /*Inside here, I check if the Building is present in the map. I only want to do the check for 
                  *hybrids, or it will do this iterator for every creature in the map 
                  */
-                foreach (Thing t in pawn.Map.listerThings.ThingsOfDef(ThingDef.Named("GR_AnimalControlHub")))
+                flagIsMindControlBuildingPresent = DraftingList.numberOfAnimalControlHubsBuilt > 0;
+                if (flagIsMindControlBuildingPresent)
                 {
-                    Thing mindcontrolhub = t as Thing;
-                    if (t != null)
-                    {
-
-                        flagIsCreatureRageable = DraftingList.draftable_animals[pawn][0];
-                        flagIsCreatureExplodable = DraftingList.draftable_animals[pawn][1];
-                        flagIsCreatureChickenRimPox = DraftingList.draftable_animals[pawn][2]; 
-                        flagCanCreatureCarryMore = DraftingList.draftable_animals[pawn][3];
-                        flagCanCreatureAdrenalineBurst = DraftingList.draftable_animals[pawn][4];
-                        flagCanCanDoInsectClouds = DraftingList.draftable_animals[pawn][5];
-                        flagCanStampede = DraftingList.draftable_animals[pawn][6];
-                        flagCanDoPoisonousCloud = DraftingList.draftable_animals[pawn][7];
-                        flagCanBurrow = DraftingList.draftable_animals[pawn][8];
-                        flagCanStamina = DraftingList.draftable_animals[pawn][9];
-                        flagCanHorrorize = DraftingList.draftable_animals[pawn][10];
-                        flagCanMechaBlast = DraftingList.draftable_animals[pawn][11];
-                        flagCanKeenSenses = DraftingList.draftable_animals[pawn][12];
-                        flagCanCatReflexes = DraftingList.draftable_animals[pawn][13];
-
-
-                        flagIsMindControlBuildingPresent = true;
-                    }
+                    flagIsCreatureRageable = DraftingList.draftable_animals[pawn][0];
+                    flagIsCreatureExplodable = DraftingList.draftable_animals[pawn][1];
+                    flagIsCreatureChickenRimPox = DraftingList.draftable_animals[pawn][2];
+                    flagCanCreatureCarryMore = DraftingList.draftable_animals[pawn][3];
+                    flagCanCreatureAdrenalineBurst = DraftingList.draftable_animals[pawn][4];
+                    flagCanCanDoInsectClouds = DraftingList.draftable_animals[pawn][5];
+                    flagCanStampede = DraftingList.draftable_animals[pawn][6];
+                    flagCanDoPoisonousCloud = DraftingList.draftable_animals[pawn][7];
+                    flagCanBurrow = DraftingList.draftable_animals[pawn][8];
+                    flagCanStamina = DraftingList.draftable_animals[pawn][9];
+                    flagCanHorrorize = DraftingList.draftable_animals[pawn][10];
+                    flagCanMechaBlast = DraftingList.draftable_animals[pawn][11];
+                    flagCanKeenSenses = DraftingList.draftable_animals[pawn][12];
+                    flagCanCatReflexes = DraftingList.draftable_animals[pawn][13];
+                   
                 }
             }
-              
-            
+
+
             /*If the creature is draftable, drafted at the moment and the rage property (which is passed through XML and the custom comp class) is true,
              * we add a second gizmo, which copies the code from melee attacks, and thus allows targeting melee attacks
            */
@@ -175,7 +169,7 @@ namespace GeneticRim
                 Command_Action GR_Gizmo_Carry = new Command_Action();
                 GR_Gizmo_Carry.action = delegate
                 {
-                   
+
                 };
                 GR_Gizmo_Carry.defaultLabel = "GR_CarryMore".Translate();
                 GR_Gizmo_Carry.defaultDesc = "GR_CarryMoreDesc".Translate();
@@ -184,7 +178,7 @@ namespace GeneticRim
             }
             /*This gizmo applies a Hediff that makes the pawn move faster for a while
             */
-            if ((pawn.drafter != null) && flagCanCreatureAdrenalineBurst && flagIsCreatureMine  && flagIsMindControlBuildingPresent)
+            if ((pawn.drafter != null) && flagCanCreatureAdrenalineBurst && flagIsCreatureMine && flagIsMindControlBuildingPresent)
             {
                 Command_Action GR_Gizmo_AdrenalineBurst = new Command_Action();
                 GR_Gizmo_AdrenalineBurst.defaultLabel = "GR_StartAdrenalineBurst".Translate();
@@ -193,9 +187,11 @@ namespace GeneticRim
 
                 GR_Gizmo_AdrenalineBurst.action = delegate
                 {
-                    if (!pawn.health.hediffSet.HasHediff(HediffDef.Named("GR_AdrenalineBurst"))) {
+                    if (!pawn.health.hediffSet.HasHediff(HediffDef.Named("GR_AdrenalineBurst")))
+                    {
                         pawn.health.AddHediff(HediffDef.Named("GR_AdrenalineBurst"));
-                    } else
+                    }
+                    else
                     {
                         Messages.Message("GR_AbilityRecharging".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
 
@@ -220,7 +216,8 @@ namespace GeneticRim
                     {
                         pawn.health.AddHediff(HediffDef.Named("GR_InsectClouds"));
 
-                    } else
+                    }
+                    else
                     {
                         Messages.Message("GR_AbilityRecharging".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
                     }
@@ -244,7 +241,8 @@ namespace GeneticRim
                     {
                         pawn.health.AddHediff(HediffDef.Named("GR_Stampeding"));
 
-                    } else
+                    }
+                    else
                     {
                         Messages.Message("GR_AbilityRecharging".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
                     }
@@ -294,7 +292,8 @@ namespace GeneticRim
                             }
 
                         }
-                    } else
+                    }
+                    else
                     {
                         Messages.Message("GR_AbilityRecharging".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
                     }
@@ -313,7 +312,8 @@ namespace GeneticRim
                     if (!pawn.health.hediffSet.HasHediff(HediffDef.Named("GR_Burrowing")))
                     {
                         pawn.health.AddHediff(HediffDef.Named("GR_Burrowing"));
-                    } else
+                    }
+                    else
                     {
                         Messages.Message("GR_AbilityRecharging".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
                     }
@@ -334,7 +334,8 @@ namespace GeneticRim
                     if (!pawn.health.hediffSet.HasHediff(HediffDef.Named("GR_Stamina")))
                     {
                         pawn.health.AddHediff(HediffDef.Named("GR_Stamina"));
-                    } else
+                    }
+                    else
                     {
                         Messages.Message("GR_AbilityRecharging".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
                     }
@@ -452,7 +453,7 @@ namespace GeneticRim
                         {
                             GenExplosion.DoExplosion(c, pawn.Map, (float)0.25, DamageDefOf.Flame, pawn, 25, 5, null, null, null, null, ThingDef.Named("Filth_Ash"), .7f, 1, false, null, 0f, 1);
                         }
-                       
+
 
                         pawn.health.AddHediff(HediffDef.Named("GR_VentedExhaust"));
                     }
@@ -499,7 +500,7 @@ namespace GeneticRim
                         Messages.Message("GR_AbilityRecharging".Translate(), pawn, MessageTypeDefOf.NeutralEvent);
                     }
 
-                    
+
 
                 };
                 gizmos.Insert(1, GR_Gizmo_Orbital);
@@ -511,11 +512,11 @@ namespace GeneticRim
         }
 
 
-        
 
 
-         
+
+
     }
 
-    
+
 }
