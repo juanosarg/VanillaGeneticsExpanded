@@ -184,6 +184,9 @@
           <li>GR_NutrientVat</li>
         </linkableFacilities>
       </li>
+	  
+	  
+	  
     </comps>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>

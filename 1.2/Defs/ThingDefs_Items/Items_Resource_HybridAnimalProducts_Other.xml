@@ -153,11 +153,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>GR_AlphaBoarTusks</defName>
+		<defName>GR_ParagonBoarTusks</defName>
 		<label>paragon boar tusks</label>
 		<description>These boar tusks are hard and could probably be carved into a sculpture by someone artistically inclined in a stonecutter's table.</description>
 		<graphicData>
-			<texPath>Things/Item/GR_AlphaBoarTusks</texPath>
+			<texPath>Things/Item/GR_ParagonBoarTusks</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>

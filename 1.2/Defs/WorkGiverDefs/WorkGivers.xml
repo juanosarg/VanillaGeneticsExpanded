@@ -183,8 +183,8 @@
 		<fixedBillGiverDefs>
 			<li>GR_AnimalEnrichmentCenter</li>
 		</fixedBillGiverDefs>
-		<verb>mixing alpha serum</verb>
-		<gerund>mixing alpha serum at</gerund>
+		<verb>mixing paragon serum</verb>
+		<gerund>mixing paragon serum at</gerund>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>

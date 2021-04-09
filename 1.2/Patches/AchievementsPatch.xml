@@ -317,59 +317,59 @@
 							<tracker Class="AchievementsExpanded.KindDefTracker">
 								<kindDefs>
 									<li>
-										<key>GR_AlphaBear</key>
+										<key>GR_ParagonBear</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaWildBoar</key>
+										<key>GR_ParagonWildBoar</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaBoomalope</key>
+										<key>GR_ParagonBoomalope</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaChicken</key>
+										<key>GR_ParagonChicken</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaEmu</key>
+										<key>GR_ParagonEmu</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaMuffalo</key>
+										<key>GR_ParagonMuffalo</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaOstrich</key>
+										<key>GR_ParagonOstrich</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaRhinoceros</key>
+										<key>GR_ParagonRhinoceros</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaWolfTimber</key>
+										<key>GR_ParagonTimberWolf</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaHare</key>
+										<key>GR_ParagonHare</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaIguana</key>
+										<key>GR_ParagonIguana</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaPig</key>
+										<key>GR_ParagonPig</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaRat</key>
+										<key>GR_ParagonRat</key>
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_AlphaTortoise</key>
+										<key>GR_ParagonTortoise</key>
 										<value>1</value>
 									</li>
 								</kindDefs>

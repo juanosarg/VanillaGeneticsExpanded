@@ -60,7 +60,7 @@
 				<filter>
 				
 					<thingDefs>
-						<li>GR_AlphaBoarTusks</li>
+						<li>GR_ParagonBoarTusks</li>
 					
 					</thingDefs>
 				</filter>
@@ -71,7 +71,7 @@
 		<fixedIngredientFilter>
 		
 			<thingDefs>
-				<li>GR_AlphaBoarTusks</li>
+				<li>GR_ParagonBoarTusks</li>
 				
 			</thingDefs>
 		</fixedIngredientFilter>

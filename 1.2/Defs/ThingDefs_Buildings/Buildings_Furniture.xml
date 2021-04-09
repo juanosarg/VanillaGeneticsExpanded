@@ -197,7 +197,7 @@
       <li>ITab_Art</li>
     </inspectorTabs>
 	<costList>
-      <GR_AlphaBoarTusks>2</GR_AlphaBoarTusks>	
+      <GR_ParagonBoarTusks>2</GR_ParagonBoarTusks>	
     </costList>
    
   </ThingDef>

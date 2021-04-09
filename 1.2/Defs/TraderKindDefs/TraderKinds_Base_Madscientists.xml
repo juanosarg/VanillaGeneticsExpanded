@@ -106,7 +106,7 @@
         <thingDef>GR_VerySmallTeeth</thingDef>
       </li>
 	  <li Class="StockGenerator_BuySingleDef">
-        <thingDef>GR_AlphaBoarTusks</thingDef>
+        <thingDef>GR_ParagonBoarTusks</thingDef>
       </li>
 	  <li Class="StockGenerator_BuySingleDef">
         <thingDef>GR_HugeRhinoHorn</thingDef>
