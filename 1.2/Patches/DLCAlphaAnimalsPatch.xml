@@ -1,0 +1,3801 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Animals</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+
+						<ResearchProjectDef>
+							<defName>GR_AlphaAnimalGeneticEngineering</defName>
+							<label>alpha genetic engineering</label>
+							<tab>GR_GeneticReseach</tab>
+							<techLevel>Industrial</techLevel>
+							<description>This research allows you to recover DNA from alien creatures from Alpha Animals, allowing the creation of powerful hybrids.</description>
+							<baseCost>1000</baseCost>
+							<prerequisites>
+								<li>GR_GeneticEngineering</li>
+							</prerequisites>
+							<researchViewX>7</researchViewX>
+							<researchViewY>0</researchViewY>
+						</ResearchProjectDef>
+
+						<ThingDef ParentName="BuildingBase">
+							<defName>GR_AlphaGenePod</defName>
+							<label>alpha genePod</label>
+							<thingClass>Building_WorkTable</thingClass>
+							<canOverlapZones>false</canOverlapZones>
+							<minifiedDef>MinifiedThing</minifiedDef>
+							<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+							<thingCategories>
+								<li>BuildingsProduction</li>
+							</thingCategories>
+							<description>Alpha Animal genetic material samples are combined and grown in this laboratory.</description>
+							<graphicData>
+								<texPath>Things/Building/GR_AlphaGenePod</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<drawSize>(3.5,3.5)</drawSize>
+
+							</graphicData>
+							<castEdgeShadows>false</castEdgeShadows>
+							<costList>
+								<Steel>200</Steel>
+								<ComponentIndustrial>4</ComponentIndustrial>
+							</costList>
+							<altitudeLayer>Building</altitudeLayer>
+							<fillPercent>0.5</fillPercent>
+							<useHitPoints>True</useHitPoints>
+							<statBases>
+								<Mass>75</Mass>
+
+								<WorkToBuild>2000</WorkToBuild>
+								<MaxHitPoints>180</MaxHitPoints>
+								<Flammability>1.0</Flammability>
+							</statBases>
+							<size>(2,2)</size>
+							<passability>PassThroughOnly</passability>
+							<pathCost>70</pathCost>
+							<hasInteractionCell>True</hasInteractionCell>
+							<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+							<surfaceType>Item</surfaceType>
+
+							<inspectorTabs>
+								<li>ITab_Bills</li>
+							</inspectorTabs>
+							<building>
+								<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+							</building>
+							<comps>
+								<li Class="CompProperties_Power">
+									<compClass>CompPowerTrader</compClass>
+									<shortCircuitInRain>true</shortCircuitInRain>
+									<basePowerConsumption>210</basePowerConsumption>
+								</li>
+								<li Class="CompProperties_Flickable"/>
+								<li Class="CompProperties_AffectedByFacilities">
+									<linkableFacilities>
+										<li>GR_NutrientVat</li>
+									</linkableFacilities>
+								</li>
+							</comps>
+							<researchPrerequisites>
+								<li>GR_AlphaAnimalGeneticEngineering</li>
+							</researchPrerequisites>
+							<designationCategory>GR_GeneticsTab</designationCategory>
+
+						</ThingDef>
+
+						<RecipeDef>
+							<defName>GR_ExtractAlphaGenes</defName>
+							<label>extract genes from an alpha animal</label>
+							<description>Extract genetic material from an alpha animal.</description>
+							<jobString>Extracting Genetic Material</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<workSkill>Intellectual</workSkill>
+							<recipeUsers>
+								<li>GR_GeneticExtractionTable</li>	  
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+
+										<thingDefs>
+											<li>Corpse_AA_Aerofleet</li>
+											<li>Corpse_AA_ColossalAerofleet</li>
+											<li>Corpse_AA_BlackScarab</li>
+											<li>Corpse_AA_BlackSpelopede</li>
+											<li>Corpse_AA_BlackSpider</li>
+											<li>Corpse_AA_ArcticLion</li>
+											<li>Corpse_AA_Barbslinger</li>
+											<li>Corpse_AA_Blizzarisk</li>
+											<li>Corpse_AA_BoulderMit</li>
+											<li>Corpse_AA_Cactipine</li>
+											<li>Corpse_AA_DevilSheep</li>
+											<li>Corpse_AA_Dunealisk</li>
+											<li>Corpse_AA_Feralisk</li>
+											<li>Corpse_AA_Frostmite</li>
+											<li>Corpse_AA_Gallatross</li>
+											<li>Corpse_AA_Groundrunner</li>
+											<li>Corpse_AA_IronhuskBeetle</li>
+											<li>Corpse_AA_Lockjaw</li>
+											<li>Corpse_AA_MammothWorm</li>
+											<li>Corpse_AA_MeadowAve</li>
+											<li>Corpse_AA_MegaLouse</li>
+											<li>Corpse_AA_Needlepost</li>
+											<li>Corpse_AA_Nightling</li>
+											<li>Corpse_AA_RaptorShrimp</li>
+											<li>Corpse_AA_TetraSlug</li>
+											<li>Corpse_AA_Wildpod</li>
+											<li>Corpse_AA_Wildpawn</li>
+											<li>Corpse_AA_BedBug</li>
+											<li>Corpse_AA_Needleroll</li>
+											<li>Corpse_AA_AnimusVox</li>
+											<li>Corpse_AA_PebbleMit</li>
+											<li>Corpse_AA_Bumbledrone</li>
+											<li>Corpse_AA_BumbledroneQueen</li>
+											<li>Corpse_AA_Thermadon</li>
+											<li>Corpse_AA_SandSquid</li>
+											<li>Corpse_AA_OvergrownColossus</li>
+											<li>Corpse_AA_GreatDevourer</li>
+											<li>Corpse_AA_BlizzariskClutchMother</li>					
+											<li>Corpse_AA_FeraliskClutchMother</li>
+											<li>Corpse_AA_DunealiskClutchMother</li>
+											<li>Corpse_AA_SummitCrab</li>
+											<li>Corpse_AA_DecayDrake</li>
+											<li>Corpse_AA_FissionMouse</li>
+											<li>Corpse_AA_FissionMouseSecond</li>
+											<li>Corpse_AA_FissionMouseThird</li>
+											<li>Corpse_AA_ShockGoat</li>
+											<li>Corpse_AA_OcularJelly</li>
+											<li>Corpse_AA_Skyeel</li>
+											<li>Corpse_AA_Radyak</li>
+											<li>Corpse_AA_SandLion</li>
+											<li>Corpse_AA_Mantrap</li>
+											<li>Corpse_AA_Gigantelope</li>
+											<li>Corpse_AA_InfectedAerofleet</li>
+											<li>Corpse_AA_RedGoo</li>
+											<li>Corpse_AA_GreenGoo</li>
+											<li>Corpse_AA_RedSpore</li>
+											<li>Corpse_AA_Junglelisk</li>
+											<li>Corpse_AA_MycoidColossus</li>
+											<li>Corpse_AA_Agaripod</li>
+											<li>Corpse_AA_FrostboundBehemoth</li>
+											<li>Corpse_AA_Frostling</li>
+											<li>Corpse_AA_NightRam</li>
+											<li>Corpse_AA_NightMule</li>
+											<li>Corpse_AA_CrepuscularBeetle</li>
+											<li>Corpse_AA_DuskRat</li>
+											<li>Corpse_AA_DesertAve</li>
+											<li>Corpse_AA_FrostAve</li>
+											<li>Corpse_AA_NightAve</li>
+											<li>Corpse_AA_RoyalAve</li>
+											<li>Corpse_AA_ChameleonYak</li>
+											<li>Corpse_AA_BloodShrimp</li>
+											<li>Corpse_AA_Cinderlisk</li>
+											<li>Corpse_AA_CrystalMit</li>
+											<li>Corpse_AA_Helixien</li>
+											<li>Corpse_AA_Razorjack</li>
+											<li>Corpse_AA_RipperHound</li>
+											<li>Corpse_AA_RoughPlatedMonitor</li>
+											<li>Corpse_AA_Swarmling</li>
+											<li>Corpse_AA_Agaripawn</li>
+											<li>Corpse_AA_BumbledroneHierophant</li>
+											<li>Corpse_AA_TarGuzzler</li>
+											<li>Corpse_AA_Atispec</li>
+											<li>Corpse_AA_Plasmorph</li>
+											<li>Corpse_AA_FireWasp</li>
+											<li>Corpse_AA_ChemfuelMyrmidon</li>
+											<li>Corpse_AA_SpinedGow</li>
+											<li>Corpse_AA_Metallovore</li>
+											<li>Corpse_AA_AngelMoth</li>
+											<li>Corpse_AA_RayHound</li>
+											<li>Corpse_AA_AcanthamoebaGiganteaSmall</li>
+											<li>Corpse_AA_AcanthamoebaGiganteaLarge</li>
+											<li>Corpse_AA_AcanthamoebaGiganteaHuge</li>
+											<li>Corpse_AA_Animalisk</li>
+											<li>Corpse_AA_DrainerLarva</li>
+											<li>Corpse_AA_Drainer</li>
+											<li>Corpse_AA_PhoenixOwlcat</li>
+											<li>Corpse_AA_MatureFleshbeast</li>
+											<li>Corpse_AA_SandProwler</li>
+											<li>Corpse_AA_FlamingoPhoenix</li>
+											<li>Corpse_AA_Terramorph</li>
+											<li>Corpse_AA_LuciferBug</li>
+											<li>Corpse_AA_Mime</li>
+											<li>Corpse_AA_FungalHusk</li>
+											<li>Corpse_AA_CrescendoAnole</li>
+											<li>Corpse_AA_AnimaColossus</li>
+											<li>Corpse_AA_Thunderbeast</li>
+											<li>Corpse_AA_GreyCoatedMouflon</li>
+											<li>Corpse_AA_CrystallineCaracal</li>
+											<li>Corpse_AA_Erin</li>
+											<li>Corpse_AA_Darkbeast</li>
+											<li>Corpse_AA_Skiphound</li>
+											<li>Corpse_AA_PedigreedRaptor</li>
+											<li>Corpse_AA_WaywardMobileAssembler</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>Corpse_AA_Aerofleet</li>
+									<li>Corpse_AA_ColossalAerofleet</li>
+									<li>Corpse_AA_BlackScarab</li>
+									<li>Corpse_AA_BlackSpelopede</li>
+									<li>Corpse_AA_BlackSpider</li>
+									<li>Corpse_AA_ArcticLion</li>
+									<li>Corpse_AA_Barbslinger</li>
+									<li>Corpse_AA_Blizzarisk</li>
+									<li>Corpse_AA_BoulderMit</li>
+									<li>Corpse_AA_Cactipine</li>
+									<li>Corpse_AA_DevilSheep</li>
+									<li>Corpse_AA_Dunealisk</li>
+									<li>Corpse_AA_Feralisk</li>
+									<li>Corpse_AA_Frostmite</li>
+									<li>Corpse_AA_Gallatross</li>
+									<li>Corpse_AA_Groundrunner</li>
+									<li>Corpse_AA_IronhuskBeetle</li>
+									<li>Corpse_AA_Lockjaw</li>
+									<li>Corpse_AA_MammothWorm</li>
+									<li>Corpse_AA_MeadowAve</li>
+									<li>Corpse_AA_MegaLouse</li>
+									<li>Corpse_AA_Needlepost</li>
+									<li>Corpse_AA_Nightling</li>
+									<li>Corpse_AA_RaptorShrimp</li>
+									<li>Corpse_AA_TetraSlug</li>
+									<li>Corpse_AA_Wildpod</li>
+									<li>Corpse_AA_Wildpawn</li>
+									<li>Corpse_AA_BedBug</li>
+									<li>Corpse_AA_Needleroll</li>
+									<li>Corpse_AA_AnimusVox</li>
+									<li>Corpse_AA_PebbleMit</li>
+									<li>Corpse_AA_Bumbledrone</li>
+									<li>Corpse_AA_BumbledroneQueen</li>
+									<li>Corpse_AA_Thermadon</li>
+									<li>Corpse_AA_SandSquid</li>
+									<li>Corpse_AA_OvergrownColossus</li>
+									<li>Corpse_AA_GreatDevourer</li>
+									<li>Corpse_AA_BlizzariskClutchMother</li>					
+									<li>Corpse_AA_FeraliskClutchMother</li>
+									<li>Corpse_AA_DunealiskClutchMother</li>
+									<li>Corpse_AA_SummitCrab</li>
+									<li>Corpse_AA_DecayDrake</li>
+									<li>Corpse_AA_FissionMouse</li>
+									<li>Corpse_AA_FissionMouseSecond</li>
+									<li>Corpse_AA_FissionMouseThird</li>
+									<li>Corpse_AA_ShockGoat</li>
+									<li>Corpse_AA_OcularJelly</li>
+									<li>Corpse_AA_Skyeel</li>
+									<li>Corpse_AA_Radyak</li>
+									<li>Corpse_AA_SandLion</li>
+									<li>Corpse_AA_Mantrap</li>
+									<li>Corpse_AA_Gigantelope</li>
+									<li>Corpse_AA_InfectedAerofleet</li>
+									<li>Corpse_AA_RedGoo</li>
+									<li>Corpse_AA_GreenGoo</li>
+									<li>Corpse_AA_RedSpore</li>
+									<li>Corpse_AA_Junglelisk</li>
+									<li>Corpse_AA_MycoidColossus</li>
+									<li>Corpse_AA_Agaripod</li>
+									<li>Corpse_AA_FrostboundBehemoth</li>
+									<li>Corpse_AA_Frostling</li>
+									<li>Corpse_AA_NightRam</li>
+									<li>Corpse_AA_NightMule</li>
+									<li>Corpse_AA_CrepuscularBeetle</li>
+									<li>Corpse_AA_DuskRat</li>
+									<li>Corpse_AA_DesertAve</li>
+									<li>Corpse_AA_FrostAve</li>
+									<li>Corpse_AA_NightAve</li>
+									<li>Corpse_AA_RoyalAve</li>
+									<li>Corpse_AA_ChameleonYak</li>
+									<li>Corpse_AA_BloodShrimp</li>
+									<li>Corpse_AA_Cinderlisk</li>
+									<li>Corpse_AA_CrystalMit</li>
+									<li>Corpse_AA_Helixien</li>
+									<li>Corpse_AA_Razorjack</li>
+									<li>Corpse_AA_RipperHound</li>
+									<li>Corpse_AA_RoughPlatedMonitor</li>
+									<li>Corpse_AA_Swarmling</li>
+									<li>Corpse_AA_Agaripawn</li>
+									<li>Corpse_AA_BumbledroneHierophant</li>
+									<li>Corpse_AA_TarGuzzler</li>
+									<li>Corpse_AA_Atispec</li>
+									<li>Corpse_AA_Plasmorph</li>
+									<li>Corpse_AA_FireWasp</li>
+									<li>Corpse_AA_ChemfuelMyrmidon</li>
+									<li>Corpse_AA_SpinedGow</li>
+									<li>Corpse_AA_Metallovore</li>
+									<li>Corpse_AA_AngelMoth</li>
+									<li>Corpse_AA_RayHound</li>
+									<li>Corpse_AA_AcanthamoebaGiganteaSmall</li>
+									<li>Corpse_AA_AcanthamoebaGiganteaLarge</li>
+									<li>Corpse_AA_AcanthamoebaGiganteaHuge</li>
+									<li>Corpse_AA_Animalisk</li>
+									<li>Corpse_AA_DrainerLarva</li>
+									<li>Corpse_AA_Drainer</li>
+									<li>Corpse_AA_PhoenixOwlcat</li>
+									<li>Corpse_AA_MatureFleshbeast</li>
+									<li>Corpse_AA_SandProwler</li>
+									<li>Corpse_AA_FlamingoPhoenix</li>
+									<li>Corpse_AA_Terramorph</li>
+									<li>Corpse_AA_LuciferBug</li>
+									<li>Corpse_AA_Mime</li>
+									<li>Corpse_AA_FungalHusk</li>
+									<li>Corpse_AA_CrescendoAnole</li>
+									<li>Corpse_AA_AnimaColossus</li>
+									<li>Corpse_AA_Thunderbeast</li>
+									<li>Corpse_AA_GreyCoatedMouflon</li>
+									<li>Corpse_AA_CrystallineCaracal</li>
+									<li>Corpse_AA_Erin</li>
+									<li>Corpse_AA_Darkbeast</li>
+									<li>Corpse_AA_Skiphound</li>
+									<li>Corpse_AA_PedigreedRaptor</li>
+									<li>Corpse_AA_WaywardMobileAssembler</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_AlphaGenetic>1</GR_AlphaGenetic>
+							</products>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>GR_CreateBearBugIncubator</defName>
+							<label>bear bug incubator</label>
+							<description>Fill an incubator with genes from a bear and a bed bug</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_BearGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_BearGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_BearBugIncubator>1</GR_BearBugIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>GR_CreateBoomaliskIncubator</defName>
+							<label>boomalisk incubator</label>
+							<description>Fill an incubator with genes from a boomalope and a dunealisk</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_BoomalopeGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_BoomalopeGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_BoomaliskIncubator>1</GR_BoomaliskIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>GR_CreateNeedlechickenIncubator</defName>
+							<label>needlechicken incubator</label>
+							<description>Fill an incubator with genes from a bird and a needlepost</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_BirdGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_BirdGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_NeedlechickenIncubator>1</GR_NeedlechickenIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>	
+
+						<RecipeDef>
+							<defName>GR_CreateBeetlefleetIncubator</defName>
+							<label>beetlefleet incubator</label>
+							<description>Fill an incubator with genes from an insectoid and an aerofleet</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_InsectoidGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_InsectoidGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_BeetlefleetIncubator>1</GR_BeetlefleetIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>		
+
+						<RecipeDef>
+							<defName>GR_CreateGroundfalloIncubator</defName>
+							<label>groundfallo incubator</label>
+							<description>Fill an incubator with genes from a muffalo and a groundrunner</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_MuffaloGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_MuffaloGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_GroundfalloIncubator>1</GR_GroundfalloIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>		
+
+						<RecipeDef>
+							<defName>GR_CreateMeadowLizardIncubator</defName>
+							<label>meadow lizard incubator</label>
+							<description>Fill an incubator with genes from a reptile and a meadow ave</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_ReptileGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_ReptileGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_MeadowLizardIncubator>1</GR_MeadowLizardIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>	
+
+						<RecipeDef>
+							<defName>GR_CreateAnimusHareIncubator</defName>
+							<label>animus hare incubator</label>
+							<description>Fill an incubator with genes from a rodent and an animus vox</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_RodentGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_RodentGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_AnimusHareIncubator>1</GR_AnimusHareIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>GR_CreateNighthrumboIncubator</defName>
+							<label>nighthrumbo incubator</label>
+							<description>Fill an incubator with genes from a thrumbo and a nightling</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_ThrumboGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_ThrumboGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_NighthrumboIncubator>1</GR_NighthrumboIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>		
+
+						<RecipeDef>
+							<defName>GR_CreateWolfShrimpIncubator</defName>
+							<label>wolf shrimp incubator</label>
+							<description>Fill an incubator with genes from a canine and a mantis shrimp</description>
+							<jobString>Filling Incubator</jobString>
+							<effectWorking>Cremate</effectWorking>
+							<soundWorking>Recipe_Cremate</soundWorking>
+							<workAmount>500</workAmount>
+							<recipeUsers>
+
+								<li>GR_AlphaGenePod</li>				
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_EmptyIncubator</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_CanineGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GR_AlphaGenetic</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+
+								<thingDefs>
+									<li>GR_EmptyIncubator</li>
+									<li>GR_CanineGenetic</li>
+									<li>GR_AlphaGenetic</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<GR_WolfShrimpIncubator>1</GR_WolfShrimpIncubator>
+							</products>
+							<researchPrerequisite>GR_AlphaAnimalGeneticEngineering</researchPrerequisite>
+							<skillRequirements>
+								<Intellectual>8</Intellectual>
+							</skillRequirements>
+						</RecipeDef>
+
+						<ThingDef Abstract="True" Name="GR_IncubatorsBaseAlpha" ParentName="GR_IncubatorsBase">
+							<graphicData>
+								<texPath>Things/Item/GR_AlphaIncubator</texPath>
+							</graphicData>
+						</ThingDef>
+
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_BearBugIncubator</defName>
+							<label>bear bug incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a bear-bed bug hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_BearBug</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_BoomaliskIncubator</defName>
+							<label>boomalisk incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a boomalope-dunealisk hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_Boomalisk</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_NeedlechickenIncubator</defName>
+							<label>needlechicken incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a chicken-Needlepost hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_Needlechicken</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_BeetlefleetIncubator</defName>
+							<label>beetlefleet incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a megascarab-aerofleet hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_Beetlefleet</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_GroundfalloIncubator</defName>
+							<label>groundfallo incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a muffalo-groundrunner hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_Groundfallo</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_MeadowLizardIncubator</defName>
+							<label>meadow lizard incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a lizard-meadow ave hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_MeadowLizard</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_AnimusHareIncubator</defName>
+							<label>animus hare incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a hare-animus vox hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_AnimusHare</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_NighthrumboIncubator</defName>
+							<label>nighthrumbo incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a thrumbo-nightling hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_Nighthrumbo</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="GR_IncubatorsBaseAlpha">
+							<defName>GR_WolfShrimpIncubator</defName>
+							<label>wolf shrimp incubator</label>
+							<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a wolf-raptor shrimp hybrid</description>
+							<comps>
+								<li Class="GeneticRim.CompProperties_Incubator">
+									<hatcherDaystoHatch>1</hatcherDaystoHatch>
+									<hatcherPawn>GR_WolfShrimp</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<!-- Bear bug Egg -->
+						<ThingDef ParentName="EggUnfertBase">
+							<defName>GR_BearBugEggUnfertilized</defName>
+							<label>bear bug egg (unfert.)</label>
+							<description>Unfertilized bear bug egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way...</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+								<color>(99,45,40)</color>
+								<drawSize>1.2</drawSize>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<MarketValue>9.0</MarketValue>
+
+							</statBases>
+
+						</ThingDef>
+
+						<ThingDef ParentName="EggFertBase">
+							<defName>GR_BearBugEggFertilized</defName>
+							<label>bear bug egg (fert.)</label>
+							<description>Fertilized bear bug egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way... If all goes well, it should hatch into a bear bug.</description>
+							<tradeability>None</tradeability>
+							<statBases>
+								<MarketValue>9.0</MarketValue>
+
+							</statBases>
+							<graphicData>
+								<texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+								<color>(99,45,40)</color>
+								<drawSize>1.2</drawSize>
+							</graphicData>
+
+							<comps>
+								<li Class="CompProperties_Hatcher">
+									<hatcherDaystoHatch>16</hatcherDaystoHatch>
+									<hatcherPawn>GR_BearBug</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+
+
+
+
+
+						<!-- Boomalisk Egg -->
+						<ThingDef ParentName="EggUnfertBase">
+							<defName>GR_BoomaliskEggUnfertilized</defName>
+							<label>boomalisk egg (unfert.)</label>
+							<description>Unfertilized boomalisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+								<color>(208,207,162)</color>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<MarketValue>9.0</MarketValue>
+
+							</statBases>
+
+						</ThingDef>
+
+						<ThingDef ParentName="AA_EggFertBaseHot">
+							<defName>GR_BoomaliskEggFertilized</defName>
+							<label>boomalisk egg (fert.)</label>
+							<description>Fertilized boomalisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a boomalisk.</description>
+							<tradeability>None</tradeability>
+							<statBases>
+								<MarketValue>9.0</MarketValue>
+
+							</statBases>
+							<graphicData>
+								<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+								<color>(208,207,162)</color>
+							</graphicData>
+
+							<comps>
+								<li Class="CompProperties_Hatcher">
+									<hatcherDaystoHatch>18</hatcherDaystoHatch>
+									<hatcherPawn>GR_Boomalisk</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<!-- Needlechicken Egg -->
+						<ThingDef ParentName="EggUnfertBase">
+							<defName>GR_NeedlechickenEggUnfertilized</defName>
+							<label>needlechicken egg (unfert.)</label>
+							<description>An unfertilized needlechicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+								<color>(212,239,192)</color>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<MarketValue>9.0</MarketValue>
+
+							</statBases>
+
+						</ThingDef>
+
+						<ThingDef ParentName="EggFertBase">
+							<defName>GR_NeedlechickenEggFertilized</defName>
+							<label>needlechicken egg (fert.)</label>
+							<description>A fertilized needlechicken egg. If all goes well, it should hatch into a needlechick. It can be eaten raw, but it's much better cooked.</description>
+							<tradeability>None</tradeability>
+							<statBases>
+								<MarketValue>9.0</MarketValue>
+
+							</statBases>
+							<graphicData>
+								<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+								<color>(212,239,192)</color>
+							</graphicData>
+
+							<comps>
+								<li Class="CompProperties_Hatcher">
+									<hatcherDaystoHatch>3</hatcherDaystoHatch>
+									<hatcherPawn>GR_Needlechicken</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+
+
+
+
+						<!-- =============== Nighthrumbo Egg =============== -->
+
+						<ThingDef ParentName="EggFertBase">
+							<defName>GR_EggNighthrumboFertilized</defName>
+							<label>nighthrumbo egg (fert.)</label>
+							<description>Fertilized nighthrumbo egg. If all goes well, it should hatch into a baby nighthrumbo. It can be eaten raw, but it's much better cooked.</description>
+							<graphicData>
+								<texPath>Things/Item/Resource/AnimalProductRaw/AA_EggNightling</texPath>
+								<drawSize>1.2</drawSize>
+							</graphicData>
+							<statBases>
+								<MarketValue>100</MarketValue>
+							</statBases>
+							<comps>
+								<li Class="CompProperties_Hatcher">
+									<hatcherDaystoHatch>15</hatcherDaystoHatch>
+									<hatcherPawn>GR_Nighthrumbo</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<!-- =============== Meadow Lizard Egg =============== -->
+
+
+						<ThingDef ParentName="EggFertBase">
+							<defName>GR_EggMeadowLizardFertilized</defName>
+							<label>meadow lizard egg (fert.)</label>
+							<description>Fertilized meadow lizard egg. If all goes well, it should hatch into a baby meadow lizard. It can be eaten raw, but it's much better cooked.</description>
+							<graphicData>
+								<color>(67,88,20)</color>
+								<drawSize>1.2</drawSize>
+							</graphicData>
+							<statBases>
+								<MarketValue>19.0</MarketValue>
+							</statBases>
+							<comps>
+								<li Class="CompProperties_Hatcher">
+									<hatcherDaystoHatch>7</hatcherDaystoHatch>
+									<hatcherPawn>GR_MeadowLizard</hatcherPawn>
+								</li>
+							</comps>
+						</ThingDef>
+
+						<ThingDef ParentName="ResourceBase">
+							<defName>GR_GroundfalloHorn</defName>
+							<label>groundfallo horn</label>
+							<description>This horn could probably be used as an improvised melee weapon. Some merchant might be interested in acquiring it too.</description>
+							<graphicData>
+								<texPath>Things/Item/GR_GroundfalloHorn</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<equippedAngleOffset>-20</equippedAngleOffset>
+
+							<resourceReadoutPriority>Middle</resourceReadoutPriority>
+							<stackLimit>50</stackLimit>
+							<useHitPoints>true</useHitPoints>
+							<statBases>
+								<MarketValue>250</MarketValue>
+								<MaxHitPoints>10</MaxHitPoints>
+								<Mass>1</Mass>
+
+								<Flammability>0.4</Flammability>
+								<DeteriorationRate>0.5</DeteriorationRate>
+
+							</statBases>
+							<tools>
+								<li>
+									<label>point</label>
+									<capacities>
+										<li>Scratch</li>
+										<li>Stab</li>
+									</capacities>
+									<power>16</power>
+									<cooldownTime>2.6</cooldownTime>
+								</li>
+								<li>
+									<label>base</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2</cooldownTime>
+								</li>
+							</tools>
+							<tradeability>Sellable</tradeability>
+							<thingCategories>
+								<li>ResourcesRaw</li>
+							</thingCategories>
+							<tradeTags>
+								<li>ExoticMisc</li>
+							</tradeTags>
+						</ThingDef>
+						<ThingDef ParentName="GR_GeneticsBase">
+							<defName>GR_AlphaGenetic</defName>
+							<label>alpha genetic material</label>
+							<description>A vial of genetic material extracted from an alpha animal.</description>
+
+							<graphicData>
+								<texPath>Things/Item/GR_geneticmaterialspurple</texPath>
+
+							</graphicData>
+							<statBases>
+								<MarketValue>45</MarketValue>
+							</statBases>
+
+						</ThingDef>
+
+						<ThingDef ParentName="ResourceBase">
+							<defName>GR_Boomthread</defName>
+							<label>boomthread</label>
+							<description>This silk is as strong as synthread, but it is also an excellent thermal insulator</description>
+							<graphicData>
+								<texPath>Things/Item/GR_Boomthread</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<statBases>
+								<MaxHitPoints>150</MaxHitPoints>
+								<MarketValue>4</MarketValue>
+								<Mass>0.025</Mass>
+								<Flammability>0.2</Flammability>
+								<DeteriorationRate>3</DeteriorationRate>
+								<StuffPower_Armor_Sharp>0.94</StuffPower_Armor_Sharp>
+								<StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt>
+								<StuffPower_Armor_Heat>1.2</StuffPower_Armor_Heat>
+								<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+								<StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
+							</statBases>
+							<stuffProps>
+								<categories>
+									<li>Fabric</li>
+								</categories>
+								<commonality>0</commonality>
+								<color>(208,207,162)</color>
+								<statFactors>
+									<Flammability>0.2</Flammability>
+									<MaxHitPoints>1.3</MaxHitPoints>
+								</statFactors>
+							</stuffProps>
+							<thingCategories>
+								<li>Textiles</li>
+							</thingCategories>
+						</ThingDef>
+
+						<ThingDef ParentName="BaseBullet">
+							<defName>AA_ExplodingWeb</defName>
+							<label>exploding web</label>
+
+							<graphicData>
+								<texPath>Things/Projectiles/AA_Web</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2</drawSize>
+							</graphicData>
+							<projectile>
+								<flyOverhead>false</flyOverhead>
+								<damageDef>Stun</damageDef>
+								<damageAmountBase>15</damageAmountBase>
+								<speed>15</speed>
+							</projectile>
+						</ThingDef>
+
+						<ThingDef ParentName="BaseBullet">
+							<defName>AA_Bullet_TinyVenomBarb</defName>
+							<label>tiny venomous barb</label>
+							<graphicData>
+								<texPath>Things/Projectiles/AA_Barb</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<color>(174,188,98)</color>
+								<drawSize>0.75</drawSize>
+							</graphicData>
+							<projectile>
+								<flyOverhead>false</flyOverhead>
+								<damageDef>AA_ToxicSting</damageDef>
+								<damageAmountBase>2</damageAmountBase>
+								<speed>35</speed>
+							</projectile>
+						</ThingDef>
+
+						<ThingDef ParentName="BaseBullet">
+							<defName>AA_HugeQuill</defName>
+							<label>huge quill</label>
+
+							<graphicData>
+								<texPath>Things/Projectiles/AA_Quill</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>1.5</drawSize>
+							</graphicData>
+							<projectile>
+								<flyOverhead>false</flyOverhead>
+								<damageDef>AA_ToxicSting</damageDef>
+								<damageAmountBase>40</damageAmountBase>
+								<speed>20</speed>
+							</projectile>
+						</ThingDef>
+
+						<!-- Bear -->
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_BearBug</defName>
+							<label>bear bug</label>
+							<description>This tardigrade-like creature is basically a huge bed bug infused with bear genes. It consumes a large amount of food, but its paralysing attacks combined with its resilience can be very useful in a combat situation.\n\nUseful abilities: Bear bugs produce a powerful neurotoxin that can paralyse their prey, leaving them completely unable to defend themselves.</description>
+
+
+							<statBases>
+								<MoveSpeed>3.5</MoveSpeed>
+								<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+								<MarketValue>350</MarketValue>
+								<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+								<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+							</statBases>
+							<tools>
+								<li>
+									<label>mandibles</label>
+									<capacities>
+										<li>AA_ParalysingBite</li>
+									</capacities>
+									<power>15</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+								</li>
+								<li>
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>6</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+								</li>
+							</tools>
+
+							<comps>
+
+
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<rage>true</rage>
+									<dinostamina>true</dinostamina>
+								</li>
+								<li Class="CompProperties_EggLayer">
+									<eggUnfertilizedDef>GR_BearBugEggUnfertilized</eggUnfertilizedDef>
+									<eggFertilizedDef>GR_BearBugEggFertilized</eggFertilizedDef>
+									<eggFertilizationCountMax>1</eggFertilizationCountMax>
+									<eggLayIntervalDays>25</eggLayIntervalDays>
+									<eggCountRange>1</eggCountRange>
+								</li>
+							</comps>
+							<race>
+								<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+								<herdAnimal>false</herdAnimal>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+								<predator>true</predator>
+								<body>BeetleLike</body>
+								<baseHungerRate>1.2</baseHungerRate>
+								<baseBodySize>2</baseBodySize>
+								<baseHealthScale>2.5</baseHealthScale>
+								<foodType>CarnivoreAnimal</foodType>
+								<fleshType>GR_Normal</fleshType>
+								<packAnimal>false</packAnimal>
+								<wildness>0.75</wildness>
+								<lifeExpectancy>14</lifeExpectancy>
+								<trainability>Intermediate</trainability>
+								<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+								<manhunterOnDamageChance>1</manhunterOnDamageChance>
+								<useLeatherFrom>AA_BedBug</useLeatherFrom>
+								<useMeatFrom>Bear_Grizzly</useMeatFrom>
+
+
+								<litterSizeCurve>
+									<points>
+										<li>(0.5, 0)</li>
+										<li>(1, 1)</li>
+										<li>(2, 1.7)</li>
+										<li>(3, 0.7)</li>
+										<li>(3.5, 0)</li>
+									</points>
+								</litterSizeCurve>
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.1</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>0.4</minAge>
+										<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+										<soundDeath>Pawn_Megascarab_Death</soundDeath>
+										<soundCall>Pawn_Megascarab_Call</soundCall>
+										<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+							</race>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+							</tradeTags>
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBase">
+							<defName>GR_BearBug</defName>
+							<label>bear bug</label>
+							<race>GR_BearBug</race>
+							<combatPower>200</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<ecoSystemWeight>1</ecoSystemWeight>
+
+
+							<lifeStages>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Bear/GR_BearBug</texPath>
+										<drawSize>1.8</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Bear/GR_Dessicated_BearBug</texPath>
+										<drawSize>1.8</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Bear/GR_BearBug</texPath>
+										<drawSize>2.5</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Bear/GR_Dessicated_BearBug</texPath>
+										<drawSize>2.5</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Bear/GR_BearBug</texPath>
+										<drawSize>3</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Bear/GR_Dessicated_BearBug</texPath>
+										<drawSize>3</drawSize>
+									</dessicatedBodyGraphicData>
+
+								</li>
+
+							</lifeStages>
+						</PawnKindDef>
+
+						<!-- Boomalope -->
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_Boomalisk</defName>
+							<label>boomalisk</label>
+							<description>The boomalisk is a boomalope / dunealisk hybrid that produces a weird spider silk know as boomthread. This silk is as strong as synthread, but it is also an excellent thermal insulator. Boomalisks also catch their prey with exploding webs, which... sounds dangerous.\n\nUseful abilities: Produces chemfuel, boomthread and attacks with explosive webs.</description>
+
+
+							<statBases>
+								<MoveSpeed>4</MoveSpeed>
+								<ComfyTemperatureMin>10</ComfyTemperatureMin>
+								<MarketValue>600</MarketValue>
+								<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+								<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+								<ArmorRating_Heat>0.6</ArmorRating_Heat>
+
+							</statBases>
+							<tools>
+								<li>
+									<label>left first leg</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>6</power>
+									<cooldownTime>1.5</cooldownTime>
+									<linkedBodyPartsGroup>LegAttackTool</linkedBodyPartsGroup>
+								</li>
+								<li>
+									<label>right first leg</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>6</power>
+									<cooldownTime>1.5</cooldownTime>
+									<linkedBodyPartsGroup>LegAttackTool</linkedBodyPartsGroup>
+								</li>
+								<li>
+									<capacities>
+										<li>AA_ToxicSting</li>
+									</capacities>
+									<power>10</power>
+									<cooldownTime>1.65</cooldownTime>
+									<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>15</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>10</power>
+									<cooldownTime>1.65</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.2</chanceFactor>
+								</li>
+							</tools>
+							<verbs>
+								<li>
+									<verbClass>Verb_Shoot</verbClass>
+									<accuracyTouch>1</accuracyTouch>
+									<accuracyShort>1</accuracyShort>
+									<accuracyMedium>1</accuracyMedium>
+									<accuracyLong>1</accuracyLong>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>AA_ExplodingWeb</defaultProjectile>
+									<warmupTime>3</warmupTime>
+									<burstShotCount>3</burstShotCount>
+									<minRange>1</minRange>
+									<range>20</range>
+									<soundCast>AA_Throw</soundCast>
+									<muzzleFlashScale>0</muzzleFlashScale>
+									<label>exploding web</label>
+									<commonality>.8</commonality>
+								</li>
+
+
+							</verbs>
+
+							<comps>
+								<li Class="CompProperties_Milkable">
+									<milkDef>Chemfuel</milkDef>
+									<milkIntervalDays>2</milkIntervalDays>
+									<milkAmount>15</milkAmount>
+									<milkFemaleOnly>false</milkFemaleOnly>
+								</li>
+								
+								<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+									<resourceDef>GR_Boomthread</resourceDef>
+									<gatheringIntervalDays>16</gatheringIntervalDays>
+									<resourceAmount>33</resourceAmount>
+									<customResourceString>BoomthreadDesc</customResourceString>
+
+								</li>
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<dinostamina>true</dinostamina>
+									<explodable>true</explodable>
+								</li>
+								<li Class="CompProperties_EggLayer">
+									<eggUnfertilizedDef>GR_BoomaliskEggUnfertilized</eggUnfertilizedDef>
+									<eggFertilizedDef>GR_BoomaliskEggFertilized</eggFertilizedDef>
+									<eggFertilizationCountMax>1</eggFertilizationCountMax>
+									<eggLayIntervalDays>20</eggLayIntervalDays>
+									<eggCountRange>1</eggCountRange>
+								</li>
+							</comps>
+							<race>
+								<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+
+								<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+								<executionRange>6</executionRange>
+								<herdAnimal>true</herdAnimal>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+								<fleshType>GR_Normal</fleshType>
+
+								<predator>true</predator>
+								<body>AA_Arachnid</body>
+								<baseHungerRate>0.3</baseHungerRate>
+								<baseBodySize>2</baseBodySize>
+								<baseHealthScale>1.9</baseHealthScale>
+								<foodType>OmnivoreAnimal, AnimalProduct</foodType>
+								<packAnimal>false</packAnimal>
+								<wildness>0.90</wildness>
+								<lifeExpectancy>15</lifeExpectancy>
+								<trainability>Intermediate</trainability>
+								<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+								<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
+								<useLeatherFrom>AA_Dunealisk</useLeatherFrom>
+								<useMeatFrom>Boomalope</useMeatFrom>
+								<litterSizeCurve>
+									<points>
+										<li>(0.5, 0)</li>
+										<li>(1, 1)</li>
+										<li>(2, 1.7)</li>
+										<li>(3, 0.7)</li>
+										<li>(3.5, 0)</li>
+									</points>
+								</litterSizeCurve>
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.3</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>1.20</minAge>
+										<soundWounded>Pawn_Feralisk_Wounded</soundWounded>
+										<soundDeath>Pawn_Feralisk_Death</soundDeath>
+										<soundCall>Pawn_Feralisk_Call</soundCall>
+										<soundAngry>Pawn_Feralisk_Angry</soundAngry>
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+							</race>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+							</tradeTags>
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBase">
+							<defName>GR_Boomalisk</defName>
+							<label>boomalisk</label>
+							<race>GR_Boomalisk</race>
+							<combatPower>300</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<ecoSystemWeight>1</ecoSystemWeight>
+
+
+							<lifeStages>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Boomalope/GR_Boomalisk</texPath>
+										<drawSize>0.7</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Boomalope/GR_Dessicated_Boomalisk</texPath>
+										<drawSize>0.7</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Boomalope/GR_Boomalisk</texPath>
+										<drawSize>1.8</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Boomalope/GR_Dessicated_Boomalisk</texPath>
+										<drawSize>1.8</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Boomalope/GR_Boomalisk</texPath>
+										<drawSize>2.5</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Boomalope/GR_Dessicated_Boomalisk</texPath>
+										<drawSize>2.5</drawSize>
+									</dessicatedBodyGraphicData>
+
+								</li>
+
+							</lifeStages>
+						</PawnKindDef>
+
+						<!-- Chicken -->
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_Needlechicken</defName>
+							<label>needlechicken</label>
+							<description>This abomination is part chicken, part sentient cactus. If cactus nuggets weren't a thing, they are now. You can think of them as solar-powered egg layers.\n\nUseful abilities: Needlechicken are decent egg layers. They can defend themselves with tiny poison barb attacks, and they almost don't need sustenance (except for a large amount of sunlight).</description>
+
+
+							<statBases>
+								<MoveSpeed>2</MoveSpeed>
+								<ComfyTemperatureMin>0</ComfyTemperatureMin>
+								<MarketValue>120</MarketValue>
+								<MeatAmount>0</MeatAmount>
+								<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+							</statBases>
+							<tools>
+								<li>
+									<label>stings</label>
+									<capacities>
+										<li>AA_ToxicSting</li>
+									</capacities>
+									<power>6</power>
+									<cooldownTime>1.35</cooldownTime>
+								</li>
+								<li>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>3</power>
+									<cooldownTime>1.35</cooldownTime>
+									<linkedBodyPartsGroup>AA_Mouth</linkedBodyPartsGroup>
+								</li>
+								<li>
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.1</chanceFactor>
+								</li>
+							</tools>
+
+							<verbs>
+								<li>
+									<verbClass>Verb_Shoot</verbClass>
+									<accuracyTouch>1</accuracyTouch>
+									<accuracyShort>1</accuracyShort>
+									<accuracyMedium>1</accuracyMedium>
+									<accuracyLong>1</accuracyLong>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>AA_Bullet_TinyVenomBarb</defaultProjectile>
+									<warmupTime>2</warmupTime>
+									<burstShotCount>12</burstShotCount>
+									<minRange>2</minRange>
+									<range>20</range>
+									<soundCast>AA_DartSound</soundCast>
+									<muzzleFlashScale>0</muzzleFlashScale>
+									<label>tiny venomous barb</label>
+									<commonality>.99</commonality>
+								</li>
+
+
+							</verbs>
+
+							<comps>
+								<li Class="AnimalBehaviours.CompProperties_LightSustenance">
+
+								</li>
+
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<dinostamina>true</dinostamina>
+									<chickenRimPox>true</chickenRimPox>
+								</li>
+								<li Class="CompProperties_EggLayer">
+									<eggUnfertilizedDef>GR_NeedlechickenEggUnfertilized</eggUnfertilizedDef>
+									<eggFertilizedDef>GR_NeedlechickenEggFertilized</eggFertilizedDef>
+									<eggFertilizationCountMax>1</eggFertilizationCountMax>
+									<eggLayIntervalDays>3</eggLayIntervalDays>
+									<eggCountRange>1</eggCountRange>
+								</li>
+							</comps>
+							<race>
+								<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+
+								<herdAnimal>true</herdAnimal>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+
+								<predator>false</predator>
+								<body>AA_SentientPlant</body>
+								<baseHungerRate>0.005</baseHungerRate>
+								<baseBodySize>0.25</baseBodySize>
+								<baseHealthScale>0.75</baseHealthScale>
+								<foodType>VegetarianRoughAnimal</foodType>
+								<fleshType>GR_Normal</fleshType>
+
+								<packAnimal>false</packAnimal>
+								<wildness>0.6</wildness>
+								<lifeExpectancy>5</lifeExpectancy>
+								<trainability>Intermediate</trainability>
+								<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+								<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+								<useLeatherFrom>AA_Needlepost</useLeatherFrom>
+
+
+								<litterSizeCurve>
+									<points>
+										<li>(0.99, 0)</li>
+										<li>(1, 1)</li>
+										<li>(1.01, 0)</li>
+									</points>
+								</litterSizeCurve>
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.12</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>0.6</minAge>
+										<soundWounded>Pawn_Needlepost_Wounded</soundWounded>
+										<soundDeath>Pawn_Needlepost_Death</soundDeath>
+										<soundCall>Pawn_Needlepost_Call</soundCall>
+										<soundAngry>Pawn_Needlepost_Angry</soundAngry>
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+							</race>
+							<butcherProducts>
+								<AA_CactusMeat>2</AA_CactusMeat>
+							</butcherProducts>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+							</tradeTags>
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBase">
+							<defName>GR_Needlechicken</defName>
+							<label>needlechicken</label>
+							<race>GR_Needlechicken</race>
+							<combatPower>90</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<ecoSystemWeight>1</ecoSystemWeight>
+
+
+							<lifeStages>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Chicken/GR_Needlechicken</texPath>
+										<drawSize>0.55</drawSize>
+
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+										<drawSize>0.35</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Chicken/GR_Needlechicken</texPath>
+										<drawSize>1</drawSize>
+
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+										<drawSize>0.8</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Chicken/GR_Needlechicken</texPath>
+										<drawSize>1.5</drawSize>
+										<shadowData>
+											<volume>(0.3, 0.4, 0.3)</volume>
+											<offset>(0,0,-0.05)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+										<drawSize>1</drawSize>
+									</dessicatedBodyGraphicData>
+
+								</li>
+
+							</lifeStages>
+						</PawnKindDef>
+
+						<!-- Insect -->
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_Beetlefleet</defName>
+							<label>beetlefleet</label>
+
+							<description>A chitinous, floating, hydrogen-filled monstruosity. The beetlefleet wanders the land bouncing off objects in its path, seeking prey to consume.\n\nUseful abilities: Beetlefleet produce insect jelly, explode on death violently, and reproduce asexually.</description>
+
+
+							<statBases>
+								<MoveSpeed>2.5</MoveSpeed>
+								<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+								<ComfyTemperatureMax>30</ComfyTemperatureMax>
+								<MarketValue>175</MarketValue>
+
+
+							</statBases>
+							<tools>
+								<li>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>7</power>
+									<cooldownTime>2.5</cooldownTime>
+									<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+								</li>
+								<li>
+									<label>tentacles</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>12</power>
+									<cooldownTime>1.65</cooldownTime>
+									<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+
+								</li>
+							</tools>
+
+							<comps>
+
+
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<dinostamina>true</dinostamina>
+									<insectclouds>true</insectclouds>
+								</li>
+
+								<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+									<resourceDef>InsectJelly</resourceDef>
+									<gatheringIntervalDays>3</gatheringIntervalDays>
+									<resourceAmount>8</resourceAmount>
+									<customResourceString>VanillaJellyGrowth</customResourceString>
+									<hasAditional>true</hasAditional>
+									<additionalItemsProb>100</additionalItemsProb>
+									<additionalItemsNumber>6</additionalItemsNumber>
+									<additionalItems><li>AA_BlueGel</li></additionalItems>
+
+								</li>
+								
+								<li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
+
+									<reproductionIntervalDays>9</reproductionIntervalDays>
+									<customString>Asexual fission in: </customString>
+
+								</li>
+							</comps>
+							<race>
+								<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
+								<executionRange>2</executionRange>
+								<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+
+								<herdAnimal>true</herdAnimal>
+								<predator>true</predator>
+								<canBePredatorPrey>false</canBePredatorPrey>
+
+								<body>AA_JellyfishBody</body>
+								<baseHungerRate>0.3</baseHungerRate>
+								<baseBodySize>0.3</baseBodySize>
+								<baseHealthScale>0.5</baseHealthScale>
+								<foodType>OmnivoreAnimal, AnimalProduct</foodType>
+								<packAnimal>false</packAnimal>
+								<hasGenders>false</hasGenders>
+								<wildness>0.70</wildness>
+								<lifeExpectancy>9</lifeExpectancy>
+								<trainability>Intermediate</trainability>
+								<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+								<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+								<useLeatherFrom>AA_Aerofleet</useLeatherFrom>
+								<useMeatFrom>Megaspider</useMeatFrom>
+								<fleshType>GR_Insectoid</fleshType>
+
+
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.15</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>0.30</minAge>
+										<soundWounded>Pawn_Rodent_Wounded</soundWounded>
+										<soundDeath>Pawn_Rodent_Death</soundDeath>
+										<soundCall>Pawn_Rodent_Call</soundCall>
+										<soundAngry>Pawn_Rodent_Angry</soundAngry>
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+							</race>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+							</tradeTags>
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBase">
+							<defName>GR_Beetlefleet</defName>
+							<label>beetlefleet</label>
+							<race>GR_Beetlefleet</race>
+							<combatPower>35</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<ecoSystemWeight>1</ecoSystemWeight>
+
+
+							<lifeStages>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Insectoid/GR_Beetlefleet</texPath>
+										<drawSize>0.5</drawSize>
+
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Insectoid/GR_Dessicated_Beetlefleet</texPath>
+										<drawSize>0.5</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Insectoid/GR_Beetlefleet</texPath>
+										<drawSize>1</drawSize>
+
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Insectoid/GR_Dessicated_Beetlefleet</texPath>
+										<drawSize>1</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Insectoid/GR_Beetlefleet</texPath>
+										<drawSize>1.5</drawSize>
+
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Insectoid/GR_Dessicated_Beetlefleet</texPath>
+										<drawSize>1.5</drawSize>
+									</dessicatedBodyGraphicData>
+
+								</li>
+
+							</lifeStages>
+						</PawnKindDef>
+
+						<!-- Muffalo -->
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_Groundfallo</defName>
+							<label>groundfallo</label>
+							<description>The horned groundfallo is a great pack beast (albeit a bit slow) capable of producing milk and wool, as well as mining for your colony. Compared to a Groundrunner it won't be as efficient on its mining work, but the other characteristics make up for this.\n\nUseful abilities: Produces wool, milk, acts as a pack beast and  mines rocks and minerals.</description>
+
+
+							<statBases>
+								<MoveSpeed>3</MoveSpeed>
+								<ComfyTemperatureMin>-60</ComfyTemperatureMin>
+								<MarketValue>350</MarketValue>
+								<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+
+
+
+							</statBases>
+							<tools>
+								<li>
+									<label>left claw</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>13</power>
+									<cooldownTime>2.0</cooldownTime>
+									<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>15</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>right claw</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>13</power>
+									<cooldownTime>2.0</cooldownTime>
+									<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>15</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>horns</label>
+									<capacities>
+										<li>Scratch</li>
+										<li>Stab</li>
+									</capacities>
+									<power>15</power>
+									<cooldownTime>2.2</cooldownTime>
+									<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+								</li>
+								<li>
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>15</power>
+									<cooldownTime>2.2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.2</chanceFactor>
+								</li>
+							</tools>
+
+							<comps>
+
+
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<dinostamina>true</dinostamina>
+									<carrymore>true</carrymore>
+								</li>
+
+								<li Class="CompProperties_Milkable">
+									<milkDef>Milk</milkDef>
+									<milkIntervalDays>1</milkIntervalDays>
+									<milkAmount>12</milkAmount>
+								</li>
+								<li Class="CompProperties_Shearable">
+									<woolDef>WoolMuffalo</woolDef>
+									<shearIntervalDays>25</shearIntervalDays>
+									<woolAmount>90</woolAmount>
+								</li>
+							</comps>
+							<race>
+								<thinkTreeMain>GR_AnimalDiggerDraftable</thinkTreeMain>
+								<thinkTreeConstant>AA_AnimalDiggerConstant</thinkTreeConstant>
+								<herdAnimal>true</herdAnimal>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+
+								<predator>false</predator>
+								<body>GR_QuadrupedAnimalWithPawsHornAndTail</body>
+								<baseHungerRate>1.8</baseHungerRate>
+								<baseBodySize>3</baseBodySize>
+								<baseHealthScale>3</baseHealthScale>
+								<foodType>VegetarianRoughAnimal</foodType>
+								<gestationPeriodDays>40</gestationPeriodDays>
+								<packAnimal>true</packAnimal>
+								<wildness>0.60</wildness>
+								<lifeExpectancy>18</lifeExpectancy>
+								<trainability>Advanced</trainability>
+								<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+								<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+								<useLeatherFrom>Muffalo</useLeatherFrom>
+								<useMeatFrom>Muffalo</useMeatFrom>
+								<fleshType>GR_Normal</fleshType>
+
+
+								<litterSizeCurve>
+									<points>
+										<li>(0.5, 0)</li>
+										<li>(1, 1)</li>
+										<li>(2, 1.7)</li>
+										<li>(3, 0.7)</li>
+										<li>(3.5, 0)</li>
+									</points>
+								</litterSizeCurve>
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.5</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>1.5</minAge>
+										<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+										<soundDeath>Pawn_Muffalo_Death</soundDeath>
+										<soundCall>Pawn_Muffalo_Call</soundCall>
+										<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+							</race>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+							</tradeTags>
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBase">
+							<defName>GR_Groundfallo</defName>
+							<label>groundfallo</label>
+							<race>GR_Groundfallo</race>
+							<combatPower>325</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<ecoSystemWeight>1</ecoSystemWeight>
+
+
+							<lifeStages>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Muffalo/GR_Groundfallo</texPath>
+										<drawSize>2</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Muffalo/GR_Dessicated_Groundfallo</texPath>
+										<drawSize>2</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Muffalo/GR_Groundfallo</texPath>
+										<drawSize>2.5</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Muffalo/GR_Dessicated_Groundfallo</texPath>
+										<drawSize>2.5</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Muffalo/GR_Groundfallo</texPath>
+										<drawSize>4</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Muffalo/GR_Dessicated_Groundfallo</texPath>
+										<drawSize>4</drawSize>
+									</dessicatedBodyGraphicData>
+									<butcherBodyPart>
+										<bodyPartGroup>HornAttackTool</bodyPartGroup>
+										<thing>GR_GroundfalloHorn</thing>
+										<allowFemale>true</allowFemale>
+									</butcherBodyPart>
+
+								</li>
+
+							</lifeStages>
+						</PawnKindDef>
+
+						<!-- Reptile -->
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_MeadowLizard</defName>
+							<label>meadow lizard</label>
+							<description>The meadow lizard is a beast bred for speed. Even though they are naturally slower than meadow aves, they can be trained to be incredibly fast mounts.\n\nUseful abilities: if properly trained they can be ridden into battle at incredible speeds (this interaction needs the Giddy-Up, combat mounts mod, and it will make the Meadow Lizards move 100% faster when used as mounts). They are also venomous.</description>
+
+
+							<statBases>
+								<MoveSpeed>6</MoveSpeed>
+								<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+								<MarketValue>450</MarketValue>
+
+
+							</statBases>
+							<tools>
+								<li>
+									<label>claws</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>12</power>
+									<cooldownTime>1.55</cooldownTime>
+									<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>15</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<capacities>
+										<li>AA_ToxicSting</li>
+									</capacities>
+									<power>8</power>
+									<cooldownTime>1.85</cooldownTime>
+									<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>13</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>3</power>
+									<cooldownTime>1.65</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.2</chanceFactor>
+								</li>
+							</tools>
+
+							<comps>
+
+
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<dinostamina>true</dinostamina>
+									<poisonouscloud>true</poisonouscloud>
+								</li>
+								<li Class="CompProperties_EggLayer">
+									<eggFertilizedDef>GR_EggMeadowLizardFertilized</eggFertilizedDef>
+									<eggFertilizationCountMax>1</eggFertilizationCountMax>
+									<eggLayIntervalDays>23</eggLayIntervalDays>
+									<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+									<eggCountRange>1</eggCountRange>
+								</li>
+
+							</comps>
+							<race>
+								<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+								<herdAnimal>true</herdAnimal>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+								<fleshType>GR_Normal</fleshType>
+
+								<predator>true</predator>
+								<body>Bird</body>
+								<baseHungerRate>0.55</baseHungerRate>
+								<baseBodySize>1.5</baseBodySize>
+								<baseHealthScale>1.5</baseHealthScale>
+								<foodType>OmnivoreAnimal, AnimalProduct</foodType>
+								<gestationPeriodDays>24</gestationPeriodDays>
+								<packAnimal>false</packAnimal>
+								<wildness>0.75</wildness>
+								<lifeExpectancy>50</lifeExpectancy>
+								<trainability>Advanced</trainability>
+								<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+								<manhunterOnDamageChance>1</manhunterOnDamageChance>
+								<useLeatherFrom>AA_MeadowAve</useLeatherFrom>
+								<useMeatFrom>Iguana</useMeatFrom>
+
+								<litterSizeCurve>
+									<points>
+										<li>(0.99, 0)</li>
+										<li>(1, 1)</li>
+										<li>(1.01, 0)</li>
+									</points>
+								</litterSizeCurve>
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.2</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>0.5</minAge>
+
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+							</race>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+							</tradeTags>
+
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBase">
+							<defName>GR_MeadowLizard</defName>
+							<label>meadow lizard</label>
+							<race>GR_MeadowLizard</race>
+							<combatPower>70</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<ecoSystemWeight>1</ecoSystemWeight>
+
+
+							<lifeStages>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Reptile/GR_MeadowLizard</texPath>
+										<drawSize>0.85</drawSize>
+
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Reptile/GR_Dessicated_MeadowLizard</texPath>
+										<drawSize>0.85</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Reptile/GR_MeadowLizard</texPath>
+										<drawSize>2.1</drawSize>
+										<shadowData>
+											<volume>(0.3, 0.3, 0.3)</volume>
+											<offset>(0,0,-0.3)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Reptile/GR_Dessicated_MeadowLizard</texPath>
+										<drawSize>2.1</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Reptile/GR_MeadowLizard</texPath>
+										<drawSize>3</drawSize>
+										<shadowData>
+											<volume>(0.4, 0.4, 0.4)</volume>
+											<offset>(0,0,-0.2)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Reptile/GR_Dessicated_MeadowLizard</texPath>
+										<drawSize>3</drawSize>
+									</dessicatedBodyGraphicData>
+
+
+								</li>
+
+							</lifeStages>
+						</PawnKindDef>
+
+						<!-- Rodent -->
+
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_AnimusHare</defName>
+							<label>animus hare</label>
+
+							<description>The Animus Hare is a small leporid with latent psionic abilities. Quite intelligent for an animal, but not intelligent enough to properly use psionics. It will however quickly bond with human beings and reach with his mind to make happy everyone that treats it well.\n\nUseful abilities: they will often use a psionic nuzzle on colonists, keeping everyone happier. They also breed very fast.</description>
+
+							<statBases>
+								<MoveSpeed>3.5</MoveSpeed>
+								<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+								<ComfyTemperatureMax>40</ComfyTemperatureMax>
+								<MarketValue>250</MarketValue>
+							</statBases>
+							<tools>
+								<li>
+									<label>left claw</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>6</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>right claw</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>4</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>6</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>2</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+									<chanceFactor>0.9</chanceFactor>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>4</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>1</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+									<chanceFactor>0.2</chanceFactor>
+								</li>
+							</tools>
+
+							<comps>
+
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<dinostamina>true</dinostamina>
+									<burrowing>true</burrowing>
+								</li>
+
+
+							</comps>
+
+							<race>
+								<thinkTreeMain>AA_AnimalNuzzlerDraftable</thinkTreeMain>
+								<body>QuadrupedAnimalWithPawsAndTail</body>
+								<predator>false</predator>
+								<baseBodySize>0.35</baseBodySize>
+								<baseHungerRate>0.1</baseHungerRate>
+								<baseHealthScale>0.3</baseHealthScale>
+								<foodType>VegetarianRoughAnimal</foodType>
+								<herdAnimal>false</herdAnimal>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+								<trainability>Intermediate</trainability>
+								<wildness>0.65</wildness>
+								<nuzzleMtbHours>16</nuzzleMtbHours>
+								<gestationPeriodDays>10</gestationPeriodDays>
+								<mateMtbHours>8</mateMtbHours>
+								<useLeatherFrom>Hare</useLeatherFrom>
+								<useMeatFrom>Hare</useMeatFrom>
+								<fleshType>GR_Normal</fleshType>
+
+								<litterSizeCurve>
+									<points>
+										<li>(1.0, 0)</li>
+										<li>(1.5, 1)</li>
+										<li>(2.0, 1)</li>
+										<li>(2.5, 0)</li>
+									</points>
+								</litterSizeCurve>
+								<lifeExpectancy>9</lifeExpectancy>
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.1</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>0.3</minAge>
+										<soundWounded>Pawn_Hare_Wounded</soundWounded>
+										<soundDeath>Pawn_Hare_Death</soundDeath>
+										<soundCall>Pawn_Hare_Call</soundCall>
+										<soundAngry>Pawn_Hare_Angry</soundAngry>
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+							</race>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+
+							</tradeTags>
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBaseFox">
+							<defName>GR_AnimusHare</defName>
+							<label>animus hare</label>
+							<combatPower>70</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<race>GR_AnimusHare</race>
+							<lifeStages>
+								<li>
+
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Rodent/GR_AnimusHare</texPath>
+										<drawSize>0.9</drawSize>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+										<drawSize>0.9</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Rodent/GR_AnimusHare</texPath>
+										<drawSize>1.25</drawSize>
+
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+										<drawSize>1.25</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Rodent/GR_AnimusHare</texPath>
+										<drawSize>1.5</drawSize>
+
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+										<drawSize>1.5</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+							</lifeStages>
+						</PawnKindDef>
+
+						<!-- Thrumbo -->
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_Nighthrumbo</defName>
+							<label>nighthrumbo</label>
+							<description>The nighthrumbo is a fearsome predator. Armed with strong jaws and its horn, as well as ranged quill attacks, it will make quick work of any prey it decides to attack. It is also a nocturnal animal, sleeping during the day and being active at night.\n\nUseful abilities: Ranged quill attacks.</description>
+
+
+							<statBases>
+								<MoveSpeed>5</MoveSpeed>
+								<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+								<MarketValue>1500</MarketValue>			
+								<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+								<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+
+							</statBases>
+							<tools>
+								<li>
+									<label>horn</label>
+									<capacities>
+										<li>Scratch</li>
+										<li>Stab</li>
+									</capacities>
+									<power>18</power>
+									<cooldownTime>1</cooldownTime>
+									<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+								</li>
+								<li>
+									<label>left claw</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>15</power>
+									<cooldownTime>1.5</cooldownTime>
+									<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>20</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>right claw</label>
+									<capacities>
+										<li>Scratch</li>
+									</capacities>
+									<power>15</power>
+									<cooldownTime>1.5</cooldownTime>
+									<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>20</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<capacities>
+										<li>ToxicBite</li>
+									</capacities>
+									<power>20</power>
+									<cooldownTime>2.0</cooldownTime>
+									<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>25</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>3</power>
+									<cooldownTime>1.65</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.2</chanceFactor>
+								</li>
+							</tools>
+
+							<verbs>
+								<li>
+									<verbClass>Verb_Shoot</verbClass>
+									<accuracyTouch>1</accuracyTouch>
+									<accuracyShort>1</accuracyShort>
+									<accuracyMedium>1</accuracyMedium>
+									<accuracyLong>1</accuracyLong>
+									<hasStandardCommand>true</hasStandardCommand>
+									<defaultProjectile>AA_HugeQuill</defaultProjectile>
+									<warmupTime>3</warmupTime>
+									<burstShotCount>1</burstShotCount>
+									<minRange>2</minRange>
+									<range>20</range>
+									<soundCast>AA_DartSound</soundCast>
+									<muzzleFlashScale>0</muzzleFlashScale>
+									<label>huge quill</label>
+									<commonality>.8</commonality>
+								</li>
+
+
+							</verbs>
+							<comps>
+
+
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<dinostamina>true</dinostamina>
+									<stampede>true</stampede>
+								</li>
+								<li Class="CompProperties_EggLayer">
+									<eggFertilizedDef>GR_EggNighthrumboFertilized</eggFertilizedDef>
+									<eggFertilizationCountMax>1</eggFertilizationCountMax>
+									<eggLayIntervalDays>45</eggLayIntervalDays>
+									<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+									<eggCountRange>1</eggCountRange>
+								</li>
+
+							</comps>
+							<race>
+								<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+
+								<herdAnimal>false</herdAnimal>
+								<predator>true</predator>
+								<body>GR_QuadrupedAnimalWithPawsHornAndTailThrumbo</body>
+								<baseHungerRate>2</baseHungerRate>
+								<baseBodySize>3</baseBodySize>
+								<baseHealthScale>9</baseHealthScale>
+								<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+								<packAnimal>false</packAnimal>
+								<wildness>0.80</wildness>
+								<lifeExpectancy>150</lifeExpectancy>
+								<trainability>Advanced</trainability>
+								<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+								<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
+								<useLeatherFrom>AA_Nightling</useLeatherFrom>
+								<useMeatFrom>Thrumbo</useMeatFrom>
+								<fleshType>GR_Normal</fleshType>
+
+								<nuzzleMtbHours>50</nuzzleMtbHours>
+								<litterSizeCurve>
+									<points>
+										<li>(0.5, 0)</li>
+										<li>(1, 1)</li>
+										<li>(2, 1.7)</li>
+										<li>(3, 0.7)</li>
+										<li>(3.5, 0)</li>
+									</points>
+								</litterSizeCurve>
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.6</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>1</minAge>
+										<soundCall>Pawn_Thrumbo_Call</soundCall>
+										<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+										<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+										<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+							</race>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+							</tradeTags>
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBase">
+							<defName>GR_Nighthrumbo</defName>
+							<label>nighthrumbo</label>
+							<race>GR_Nighthrumbo</race>
+							<combatPower>525</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<ecoSystemWeight>1</ecoSystemWeight>
+
+
+							<lifeStages>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Thrumbo/GR_Nighthrumbo</texPath>
+										<drawSize>2.5</drawSize>
+										<shadowData>
+											<volume>(0.6, 0.45, 0.45)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Thrumbo/GR_Dessicated_Nighthrumbo</texPath>
+										<drawSize>2.5</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Thrumbo/GR_Nighthrumbo</texPath>
+										<drawSize>3.5</drawSize>
+										<shadowData>
+											<volume>(0.8, 0.6, 0.6)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Thrumbo/GR_Dessicated_Nighthrumbo</texPath>
+										<drawSize>3.5</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Thrumbo/GR_Nighthrumbo</texPath>
+										<drawSize>4.3</drawSize>
+										<shadowData>
+											<volume>(0.8, 0.6, 0.6)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Thrumbo/GR_Dessicated_Nighthrumbo</texPath>
+										<drawSize>4.3</drawSize>
+									</dessicatedBodyGraphicData>
+									<butcherBodyPart>
+										<bodyPartGroup>HornAttackTool</bodyPartGroup>
+										<thing>ThrumboHorn</thing>
+									</butcherBodyPart>
+
+								</li>
+
+							</lifeStages>
+						</PawnKindDef>
+
+						<!-- Wolf -->
+						<ThingDef ParentName="AnimalThingBase">
+							<defName>GR_WolfShrimp</defName>
+							<label>wolf shrimp</label>
+							<description>A terrifyingly alien creature, the wolf shrimp is keenly intelligent like its wolf forefather, slithering in blinding speed towards its prey.\n\nUseful abilities: Extremely fast regenerative capabilities.</description>
+
+
+							<statBases>
+								<MoveSpeed>9</MoveSpeed>
+								<ComfyTemperatureMin>0</ComfyTemperatureMin>
+								<MarketValue>850</MarketValue>
+								<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+
+							</statBases>
+							<tools>
+								<li>
+									<label>head</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>6</power>
+									<cooldownTime>1.65</cooldownTime>
+									<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+									<chanceFactor>0.1</chanceFactor>
+								</li>
+								<li>
+									<capacities>
+										<li>Bite</li>
+									</capacities>
+									<power>18</power>
+									<cooldownTime>2</cooldownTime>
+									<linkedBodyPartsGroup>AA_Mouth</linkedBodyPartsGroup>
+								</li>
+								<li>
+									<label>left blade</label>
+									<capacities>
+										<li>AA_Pierce</li>
+									</capacities>
+									<power>13</power>
+									<cooldownTime>1.55</cooldownTime>
+									<linkedBodyPartsGroup>AA_BladeAttackTool</linkedBodyPartsGroup>
+									<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>16</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+								<li>
+									<label>right blade</label>
+									<capacities>
+										<li>AA_Pierce</li>
+									</capacities>
+									<power>13</power>
+									<cooldownTime>1.55</cooldownTime>
+									<linkedBodyPartsGroup>AA_BladeAttackTool</linkedBodyPartsGroup>
+									<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+									<surpriseAttack>
+										<extraMeleeDamages>
+											<li>
+												<def>Stun</def>
+												<amount>16</amount>
+											</li>
+										</extraMeleeDamages>
+									</surpriseAttack>
+								</li>
+							</tools>
+							<comps>
+
+
+								<li Class="GeneticRim.CompProperties_Draftable">
+									<dinostamina>true</dinostamina>
+									<adrenalineburst>true</adrenalineburst>
+								</li>
+								<li Class="AnimalBehaviours.CompProperties_Regeneration">
+									<rateInTicks>20</rateInTicks>
+
+								</li>
+
+
+							</comps>
+							<race>
+								<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+								<herdAnimal>false</herdAnimal>
+								<herdMigrationAllowed>false</herdMigrationAllowed>
+								<predator>true</predator>
+								<body>AA_SnakeWithTwoLimbs</body>
+								<baseHungerRate>0.55</baseHungerRate>
+								<baseBodySize>2</baseBodySize>
+								<baseHealthScale>2.5</baseHealthScale>
+								<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+								<gestationPeriodDays>30</gestationPeriodDays>
+								<packAnimal>false</packAnimal>
+								<wildness>0.9</wildness>
+								<lifeExpectancy>25</lifeExpectancy>
+								<trainability>Advanced</trainability>
+								<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+								<manhunterOnDamageChance>1</manhunterOnDamageChance>
+								<useLeatherFrom>AA_RaptorShrimp</useLeatherFrom>
+								<useMeatFrom>Wolf_Timber</useMeatFrom>
+								<fleshType>GR_Normal</fleshType>
+
+								<litterSizeCurve>
+									<points>
+										<li>(0.5, 0)</li>
+										<li>(1, 1)</li>
+										<li>(2, 1.7)</li>
+										<li>(3, 0.7)</li>
+										<li>(3.5, 0)</li>
+									</points>
+								</litterSizeCurve>
+								<lifeStageAges>
+									<li>
+										<def>AnimalBaby</def>
+										<minAge>0</minAge>
+									</li>
+									<li>
+										<def>AnimalJuvenile</def>
+										<minAge>0.3</minAge>
+									</li>
+									<li>
+										<def>AnimalAdult</def>
+										<minAge>0.8</minAge>
+										<soundWounded>Pawn_RaptorShrimp_Wounded</soundWounded>
+										<soundDeath>Pawn_RaptorShrimp_Death</soundDeath>
+										<soundCall>Pawn_RaptorShrimp_Call</soundCall>
+										<soundAngry>Pawn_RaptorShrimp_Angry</soundAngry>
+
+									</li>
+								</lifeStageAges>
+								<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+								<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+								<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+							</race>
+							<tradeTags>
+								<li>AnimalGenetic</li>
+							</tradeTags>
+						</ThingDef>
+
+						<PawnKindDef ParentName="AnimalKindBase">
+							<defName>GR_WolfShrimp</defName>
+							<label>wolf shrimp</label>
+							<race>GR_WolfShrimp</race>
+							<combatPower>300</combatPower>
+							<canArriveManhunter>false</canArriveManhunter>
+							<ecoSystemWeight>1</ecoSystemWeight>
+
+
+							<lifeStages>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Wolf/GR_WolfShrimp</texPath>
+										<drawSize>1.3</drawSize>
+										<shadowData>
+											<volume>(0.25, 0.3, 0.25)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Wolf/GR_Dessicated_WolfShrimp</texPath>
+										<drawSize>1.3</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Wolf/GR_WolfShrimp</texPath>
+										<drawSize>2.3</drawSize>
+										<shadowData>
+											<volume>(0.3, 0.4, 0.3)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Wolf/GR_Dessicated_WolfShrimp</texPath>
+										<drawSize>2.3</drawSize>
+									</dessicatedBodyGraphicData>
+								</li>
+								<li>
+									<bodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Wolf/GR_WolfShrimp</texPath>
+										<drawSize>3</drawSize>
+										<shadowData>
+											<volume>(0.3, 0.4, 0.3)</volume>
+											<offset>(0,0,-0.15)</offset>
+										</shadowData>
+									</bodyGraphicData>
+									<dessicatedBodyGraphicData>
+										<texPath>Things/Pawn/Animal/AlphaAnimals/Wolf/GR_Dessicated_WolfShrimp</texPath>
+										<drawSize>3</drawSize>
+									</dessicatedBodyGraphicData>
+
+
+								</li>
+
+							</lifeStages>
+						</PawnKindDef>
+
+						<WorkGiverDef>
+							<defName>GR_DoBillsAlphaGenePod</defName>
+							<label>works at alpha genepod</label>
+							<giverClass>WorkGiver_DoBill</giverClass>
+							<workType>Crafting</workType>
+							<priorityInType>100</priorityInType>
+							<fixedBillGiverDefs>
+								<li>GR_AlphaGenePod</li>
+							</fixedBillGiverDefs>
+							<verb>combining genetic materials</verb>
+							<gerund>combining genetic material at</gerund>
+							<requiredCapacities>
+								<li>Manipulation</li>
+							</requiredCapacities>
+							<prioritizeSustains>true</prioritizeSustains>
+						</WorkGiverDef>
+						<ThinkTreeDef>
+							<defName>GR_AnimalDiggerDraftable</defName>
+							<thinkRoot Class="ThinkNode_Priority">
+								<subNodes>
+									<!-- Keep lying down if we have to -->
+									<li Class="ThinkNode_ConditionalMustKeepLyingDown">
+										<subNodes>
+											<!-- Do a queued job if possible -->
+											<li Class="ThinkNode_QueuedJob">
+												<inBedOnly>true</inBedOnly>
+											</li>
+
+											<!-- Keep lying down -->
+											<li Class="JobGiver_KeepLyingDown" />
+										</subNodes>
+									</li>
+
+									<li Class="ThinkNode_Subtree">
+										<treeDef>Downed</treeDef>
+									</li>
+									<li Class="ThinkNode_Subtree">
+										<treeDef>BurningResponse</treeDef>
+									</li>
+									<li Class="ThinkNode_Subtree">
+										<treeDef>MentalStateCritical</treeDef>
+									</li>
+
+									<!-- React to close melee threat -->
+									<li Class="JobGiver_ReactToCloseMeleeThreat" />
+
+									<!-- Do a queued job -->
+									<li Class="ThinkNode_QueuedJob" />
+
+									<!-- Wild animals dig out if no path to map edge and starving -->
+									<li Class="ThinkNode_ConditionalHasFaction">
+										<invert>true</invert>
+										<subNodes>
+											<li Class="ThinkNode_ConditionalStarving">
+												<subNodes>
+													<li Class="ThinkNode_ConditionalBodySize">
+														<min>0.7</min>
+														<subNodes>
+															<li Class="ThinkNode_Subtree">
+																<treeDef>DigOutIfCannotReachMapEdge</treeDef>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Leave if timed out -->
+									<li Class="ThinkNode_ConditionalExitTimedOut">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>Misc</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_ExitMapRandom">
+														<defaultLocomotion>Walk</defaultLocomotion>     
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Mental state non critical -->
+									<li Class="ThinkNode_Subtree">
+										<treeDef>MentalStateNonCritical</treeDef>
+									</li>
+
+									<!-- Forced goto -->
+									<li Class="ThinkNode_ConditionalForcedGoto">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>Misc</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_ForcedGoto" />
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Wait if drafted -->
+									<li Class="ThinkNode_ConditionalOfPlayerFaction">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>DraftedOrder</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_Orders" />
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Lord directives -->
+									<li Class="ThinkNode_Subtree">
+										<treeDef>LordDuty</treeDef>
+									</li>
+
+									<!-- Insertion hook for modders -->
+									<li Class="ThinkNode_SubtreesByTag">
+										<insertTag>Animal_PreMain</insertTag>
+									</li>
+
+									<!-- Wild animals leave map in some conditions -->
+									<li Class="ThinkNode_ConditionalHasFaction">
+										<invert>true</invert>
+										<subNodes>
+											<li Class="ThinkNode_Subtree">
+												<treeDef>LeaveIfWrongSeason</treeDef>
+											</li>
+											<li Class="ThinkNode_Subtree">
+												<treeDef>LeaveIfStarving</treeDef>
+											</li>
+
+											<!-- Wild animals randomly leave map -->
+											<li Class="ThinkNode_ChancePerHour_Constant">
+												<mtbDays>60</mtbDays>
+												<subNodes>
+													<li Class="ThinkNode_Tagger">
+														<tagToGive>Misc</tagToGive>
+														<subNodes>
+															<li Class="JobGiver_ExitMapRandom">
+																<defaultLocomotion>Walk</defaultLocomotion>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Lay eggs you need to -->
+									<li Class="JobGiver_LayEgg" />
+
+									<!-- Tame animal -->
+									<li Class="ThinkNode_ConditionalOfPlayerFaction">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>TrainedAnimalBehavior</tagToGive>
+												<subNodes>
+													<!-- Trained behavior: obedience: Follow and defend master -->
+													<li Class="ThinkNode_ConditionalTrainableCompleted">
+														<trainable>Obedience</trainable>
+														<subNodes>
+															<li Class="ThinkNode_ConditionalShouldFollowMaster" >
+																<subNodes>
+																	<li Class="JobGiver_AIDefendMaster">
+																		<attackMeleeThreatEvenIfNotHostile>true</attackMeleeThreatEvenIfNotHostile>
+																	</li>
+																	<li Class="JobGiver_AIFollowMaster"/>
+																	<li Class="JobGiver_WanderNearMaster" />
+																</subNodes>
+															</li>
+														</subNodes>
+													</li>
+
+													<!-- Trained behavior: Rescue-->
+													<li Class="ThinkNode_ConditionalTrainableCompleted">
+														<trainable>Rescue</trainable>
+														<subNodes>
+															<li Class="JobGiver_RescueNearby">
+																<radius>30</radius>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+
+											<!-- Take care of critical needs (below rescue - so heroic!)-->
+
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>RestingForMedicalReasons</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_PatientGoToBed" />
+												</subNodes>
+											</li>
+
+											<li Class="JobGiver_SeekAllowedArea" />
+											<li Class="JobGiver_SeekSafeTemperature" />
+
+										</subNodes>
+									</li>
+
+									<!-- Eat random things out of curiosity -->
+									<li Class="ThinkNode_ChancePerHour_Constant">
+										<mtbDays>60</mtbDays>
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>SatisfyingNeeds</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_EatRandom"/>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Satisfy basic needs -->
+									<li Class="ThinkNode_Subtree">
+										<treeDef>SatisfyBasicNeeds</treeDef>
+									</li>
+
+									<!-- Tame animal: do useful things for the colony-->
+									<li Class="ThinkNode_ConditionalHasFaction">
+										<subNodes>
+
+											<!-- Try to mate -->
+											<li Class="ThinkNode_ChancePerHour_Mate">
+												<subNodes>
+													<li Class="ThinkNode_Tagger">
+														<tagToGive>SatisfyingNeeds</tagToGive>
+														<subNodes>
+															<li Class="JobGiver_Mate" />
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+
+											<!-- Nuzzle randoms -->
+											<li Class="ThinkNode_ChancePerHour_Nuzzle">
+												<subNodes>
+													<li Class="ThinkNode_Tagger">
+														<tagToGive>Misc</tagToGive>
+														<subNodes>
+															<li Class="JobGiver_Nuzzle" />
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+
+
+											<!-- Trained behavior: Mine-->
+											<li Class="ThinkNode_ChancePerHour_Constant">
+												<mtbHours>1.75</mtbHours>
+												<subNodes>
+													<li Class="ThinkNode_ConditionalTrainableCompleted">
+														<trainable>Obedience</trainable>
+														<subNodes>
+															<li Class="ThinkNode_Tagger">
+																<tagToGive>TrainedAnimalBehavior</tagToGive>
+																<subNodes>
+																	<li Class="AlphaBehavioursAndEvents.JobGiver_Mine" />
+																</subNodes>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+											<!-- Trained behavior: Haul-->
+											<li Class="ThinkNode_ChancePerHour_Constant">
+												<mtbHours>1.5</mtbHours>
+												<subNodes>
+													<li Class="ThinkNode_ConditionalTrainableCompleted">
+														<trainable>Haul</trainable>
+														<subNodes>
+															<li Class="ThinkNode_Tagger">
+																<tagToGive>TrainedAnimalBehavior</tagToGive>
+																<subNodes>
+																	<li Class="JobGiver_Haul" />
+																</subNodes>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Insertion hook for modders -->
+									<li Class="ThinkNode_SubtreesByTag">
+										<insertTag>Animal_PreWander</insertTag>
+									</li>
+
+									<!-- Tame animal: wander near colony if possible -->
+									<li Class="ThinkNode_ConditionalOfPlayerFaction">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>Idle</tagToGive>
+												<subNodes>
+													<!-- Wander near your current position if in hostile map -->
+													<li Class="ThinkNode_ConditionalAnyEnemyInHostileMap">
+														<subNodes>
+															<li Class="JobGiver_WanderAnywhere">
+																<maxDanger>None</maxDanger>
+																<ticksBetweenWandersRange>
+																	<min>120</min>
+																	<max>240</max>
+																</ticksBetweenWandersRange>
+															</li>
+														</subNodes>
+													</li>
+
+													<!-- Wander near colony -->
+													<li Class="JobGiver_WanderColony">
+														<maxDanger>None</maxDanger>
+														<ticksBetweenWandersRange>
+															<min>120</min>
+															<max>240</max>
+														</ticksBetweenWandersRange>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Of neutral faction: rest and then exit the map -->
+									<li Class="ThinkNode_ConditionalNonPlayerNonHostileFaction">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>RestingForMedicalReasons</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_PatientGoToBed" />
+												</subNodes>
+											</li>
+
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>Misc</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_ExitMapBest">
+														<defaultLocomotion>Walk</defaultLocomotion>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Wander -->
+									<li Class="ThinkNode_Tagger">
+										<tagToGive>Idle</tagToGive>
+										<subNodes>
+											<li Class="ThinkNode_ConditionalHerdAnimal">
+												<subNodes>
+													<li Class="JobGiver_WanderHerd">
+														<maxDanger>Deadly</maxDanger>
+														<ticksBetweenWandersRange>
+															<min>120</min>
+															<max>240</max>
+														</ticksBetweenWandersRange>
+													</li>
+												</subNodes>
+											</li>
+
+											<li Class="JobGiver_WanderAnywhere">
+												<maxDanger>Deadly</maxDanger>
+												<ticksBetweenWandersRange>
+													<min>120</min>
+													<max>240</max>
+												</ticksBetweenWandersRange>    
+											</li>
+										</subNodes>
+									</li>
+
+									<li Class="JobGiver_IdleError"/>
+								</subNodes>
+							</thinkRoot>
+						</ThinkTreeDef>
+
+						<ThinkTreeDef>
+							<defName>AA_AnimalNuzzlerDraftable</defName>
+							<thinkRoot Class="ThinkNode_Priority">
+								<subNodes>
+									<!-- Keep lying down if we have to -->
+									<li Class="ThinkNode_ConditionalMustKeepLyingDown">
+										<subNodes>
+											<!-- Do a queued job if possible -->
+											<li Class="ThinkNode_QueuedJob">
+												<inBedOnly>true</inBedOnly>
+											</li>
+
+											<!-- Keep lying down -->
+											<li Class="JobGiver_KeepLyingDown" />
+										</subNodes>
+									</li>
+
+									<li Class="ThinkNode_Subtree">
+										<treeDef>Downed</treeDef>
+									</li>
+									<li Class="ThinkNode_Subtree">
+										<treeDef>BurningResponse</treeDef>
+									</li>
+									<li Class="ThinkNode_Subtree">
+										<treeDef>MentalStateCritical</treeDef>
+									</li>
+
+									<!-- React to close melee threat -->
+									<li Class="JobGiver_ReactToCloseMeleeThreat" />
+
+									<!-- Do a queued job -->
+									<li Class="ThinkNode_QueuedJob" />
+
+									<!-- Wild animals dig out if no path to map edge and starving -->
+									<li Class="ThinkNode_ConditionalHasFaction">
+										<invert>true</invert>
+										<subNodes>
+											<li Class="ThinkNode_ConditionalStarving">
+												<subNodes>
+													<li Class="ThinkNode_ConditionalBodySize">
+														<min>0.7</min>
+														<subNodes>
+															<li Class="ThinkNode_Subtree">
+																<treeDef>DigOutIfCannotReachMapEdge</treeDef>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Leave if timed out -->
+									<li Class="ThinkNode_ConditionalExitTimedOut">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>Misc</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_ExitMapRandom">
+														<defaultLocomotion>Walk</defaultLocomotion>     
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Mental state non critical -->
+									<li Class="ThinkNode_Subtree">
+										<treeDef>MentalStateNonCritical</treeDef>
+									</li>
+
+									<!-- Forced goto -->
+									<li Class="ThinkNode_ConditionalForcedGoto">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>Misc</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_ForcedGoto" />
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Wait if drafted -->
+									<li Class="ThinkNode_ConditionalOfPlayerFaction">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>DraftedOrder</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_Orders" />
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Lord directives -->
+									<li Class="ThinkNode_Subtree">
+										<treeDef>LordDuty</treeDef>
+									</li>
+
+									<!-- Insertion hook for modders -->
+									<li Class="ThinkNode_SubtreesByTag">
+										<insertTag>Animal_PreMain</insertTag>
+									</li>
+
+									<!-- Wild animals leave map in some conditions -->
+									<li Class="ThinkNode_ConditionalHasFaction">
+										<invert>true</invert>
+										<subNodes>
+											<li Class="ThinkNode_Subtree">
+												<treeDef>LeaveIfWrongSeason</treeDef>
+											</li>
+											<li Class="ThinkNode_Subtree">
+												<treeDef>LeaveIfStarving</treeDef>
+											</li>
+
+											<!-- Wild animals randomly leave map -->
+											<li Class="ThinkNode_ChancePerHour_Constant">
+												<mtbDays>60</mtbDays>
+												<subNodes>
+													<li Class="ThinkNode_Tagger">
+														<tagToGive>Misc</tagToGive>
+														<subNodes>
+															<li Class="JobGiver_ExitMapRandom">
+																<defaultLocomotion>Walk</defaultLocomotion>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Lay eggs you need to -->
+									<li Class="JobGiver_LayEgg" />
+
+									<!-- Tame animal -->
+									<li Class="ThinkNode_ConditionalOfPlayerFaction">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>TrainedAnimalBehavior</tagToGive>
+												<subNodes>
+													<!-- Trained behavior: obedience: Follow and defend master -->
+													<li Class="ThinkNode_ConditionalTrainableCompleted">
+														<trainable>Obedience</trainable>
+														<subNodes>
+															<li Class="ThinkNode_ConditionalShouldFollowMaster" >
+																<subNodes>
+																	<li Class="JobGiver_AIDefendMaster">
+																		<attackMeleeThreatEvenIfNotHostile>true</attackMeleeThreatEvenIfNotHostile>
+																	</li>
+																	<li Class="JobGiver_AIFollowMaster"/>
+																	<li Class="JobGiver_WanderNearMaster" />
+																</subNodes>
+															</li>
+														</subNodes>
+													</li>
+
+													<!-- Trained behavior: Rescue-->
+													<li Class="ThinkNode_ConditionalTrainableCompleted">
+														<trainable>Rescue</trainable>
+														<subNodes>
+															<li Class="JobGiver_RescueNearby">
+																<radius>30</radius>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+
+											<!-- Take care of critical needs (below rescue - so heroic!)-->
+
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>RestingForMedicalReasons</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_PatientGoToBed" />
+												</subNodes>
+											</li>
+
+											<li Class="JobGiver_SeekAllowedArea" />
+											<li Class="JobGiver_SeekSafeTemperature" />
+
+										</subNodes>
+									</li>
+
+									<!-- Eat random things out of curiosity -->
+									<li Class="ThinkNode_ChancePerHour_Constant">
+										<mtbDays>60</mtbDays>
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>SatisfyingNeeds</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_EatRandom"/>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Satisfy basic needs -->
+									<li Class="ThinkNode_Subtree">
+										<treeDef>SatisfyBasicNeeds</treeDef>
+									</li>
+
+									<!-- Tame animal: do useful things for the colony-->
+									<li Class="ThinkNode_ConditionalHasFaction">
+										<subNodes>
+
+											<!-- Try to mate -->
+											<li Class="ThinkNode_ChancePerHour_Mate">
+												<subNodes>
+													<li Class="ThinkNode_Tagger">
+														<tagToGive>SatisfyingNeeds</tagToGive>
+														<subNodes>
+															<li Class="JobGiver_Mate" />
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+
+											<!-- Nuzzle randoms -->
+											<li Class="ThinkNode_ChancePerHour_Nuzzle">
+												<subNodes>
+													<li Class="ThinkNode_Tagger">
+														<tagToGive>Misc</tagToGive>
+														<subNodes>
+															<li Class="AlphaBehavioursAndEvents.JobGiver_PsionicNuzzle" />
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+
+											<!-- Trained behavior: Haul-->
+											<li Class="ThinkNode_ChancePerHour_Constant">
+												<mtbHours>1.5</mtbHours>
+												<subNodes>
+													<li Class="ThinkNode_ConditionalTrainableCompleted">
+														<trainable>Haul</trainable>
+														<subNodes>
+															<li Class="ThinkNode_Tagger">
+																<tagToGive>TrainedAnimalBehavior</tagToGive>
+																<subNodes>
+																	<li Class="JobGiver_Haul" />
+																</subNodes>
+															</li>
+														</subNodes>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Insertion hook for modders -->
+									<li Class="ThinkNode_SubtreesByTag">
+										<insertTag>Animal_PreWander</insertTag>
+									</li>
+
+									<!-- Tame animal: wander near colony if possible -->
+									<li Class="ThinkNode_ConditionalOfPlayerFaction">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>Idle</tagToGive>
+												<subNodes>
+													<!-- Wander near your current position if in hostile map -->
+													<li Class="ThinkNode_ConditionalAnyEnemyInHostileMap">
+														<subNodes>
+															<li Class="JobGiver_WanderAnywhere">
+																<maxDanger>None</maxDanger>
+																<ticksBetweenWandersRange>
+																	<min>120</min>
+																	<max>240</max>
+																</ticksBetweenWandersRange>
+															</li>
+														</subNodes>
+													</li>
+
+													<!-- Wander near colony -->
+													<li Class="JobGiver_WanderColony">
+														<maxDanger>None</maxDanger>
+														<ticksBetweenWandersRange>
+															<min>120</min>
+															<max>240</max>
+														</ticksBetweenWandersRange>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Of neutral faction: rest and then exit the map -->
+									<li Class="ThinkNode_ConditionalNonPlayerNonHostileFaction">
+										<subNodes>
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>RestingForMedicalReasons</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_PatientGoToBed" />
+												</subNodes>
+											</li>
+
+											<li Class="ThinkNode_Tagger">
+												<tagToGive>Misc</tagToGive>
+												<subNodes>
+													<li Class="JobGiver_ExitMapBest">
+														<defaultLocomotion>Walk</defaultLocomotion>
+													</li>
+												</subNodes>
+											</li>
+										</subNodes>
+									</li>
+
+									<!-- Wander -->
+									<li Class="ThinkNode_Tagger">
+										<tagToGive>Idle</tagToGive>
+										<subNodes>
+											<li Class="ThinkNode_ConditionalHerdAnimal">
+												<subNodes>
+													<li Class="JobGiver_WanderHerd">
+														<maxDanger>Deadly</maxDanger>
+														<ticksBetweenWandersRange>
+															<min>120</min>
+															<max>240</max>
+														</ticksBetweenWandersRange>
+													</li>
+												</subNodes>
+											</li>
+
+											<li Class="JobGiver_WanderAnywhere">
+												<maxDanger>Deadly</maxDanger>
+												<ticksBetweenWandersRange>
+													<min>120</min>
+													<max>240</max>
+												</ticksBetweenWandersRange>    
+											</li>
+										</subNodes>
+									</li>
+
+									<li Class="JobGiver_IdleError"/>
+								</subNodes>
+							</thinkRoot>
+						</ThinkTreeDef>
+
+
+
+
+
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
