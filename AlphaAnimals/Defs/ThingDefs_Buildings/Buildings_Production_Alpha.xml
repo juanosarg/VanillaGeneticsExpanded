@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+ 
+
+  
+<ThingDef ParentName="BuildingBase">
+    <defName>GR_AlphaGenePod</defName>
+    <label>alpha genePod</label>
+    <thingClass>Building_WorkTable</thingClass>
+	<canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <description>Alpha Animal genetic material samples are combined and grown in this laboratory.</description>
+    <graphicData>
+      <texPath>Things/Building/GR_AlphaGenePod</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,3.5)</drawSize>
+     
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+		<Mass>75</Mass>
+
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+   
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+	<comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>210</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>GR_NutrientVat</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites><li>GR_AlphaAnimalGeneticEngineering</li></researchPrerequisites>
+		<designationCategory>GR_GeneticsTab</designationCategory>
+
+</ThingDef>
+
+
+  
+</Defs>

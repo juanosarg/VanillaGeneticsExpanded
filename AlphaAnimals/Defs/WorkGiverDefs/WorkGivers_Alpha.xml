@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+
+	
+	<WorkGiverDef>
+		<defName>GR_DoBillsAlphaGenePod</defName>
+		<label>works at alpha genepod</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>GR_AlphaGenePod</li>
+		</fixedBillGiverDefs>
+		<verb>combining genetic materials</verb>
+		<gerund>combining genetic material at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	
+
+
+
+</Defs>

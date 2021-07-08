@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=============== Genetic Material ====================-->
+	<ThingDef ParentName="GR_GeneticsBase">
+		<defName>GR_AlphaGenetic</defName>
+		<label>alpha genetic material</label>
+		<description>A vial of genetic material extracted from an alpha animal.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_geneticmaterialspurple</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>45</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AA_ExplodingWeb</defName>
+		<label>exploding web</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AA_Web</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AA_Bullet_TinyVenomBarb</defName>
+		<label>tiny venomous barb</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AA_Barb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(174,188,98)</color>
+			<drawSize>0.75</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>AA_ToxicSting</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<speed>35</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>AA_HugeQuill</defName>
+		<label>huge quill</label>
+		<graphicData>
+			<texPath>Things/Projectiles/AA_Quill</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>AA_ToxicSting</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<speed>20</speed>
+		</projectile>
+	</ThingDef>
+</Defs>

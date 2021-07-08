@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+
+
+
+	
+		<!-- Bear bug Egg -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_BearBugEggUnfertilized</defName>
+		<label>bear bug egg (unfert.)</label>
+		<description>Unfertilized bear bug egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way...</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+			<color>(99,45,40)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_BearBugEggFertilized</defName>
+		<label>bear bug egg (fert.)</label>
+		<description>Fertilized bear bug egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way... If all goes well, it should hatch into a bear bug.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+			<color>(99,45,40)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>16</hatcherDaystoHatch>
+				<hatcherPawn>GR_BearBug</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+
+	<!-- Boomalisk Egg -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_BoomaliskEggUnfertilized</defName>
+		<label>boomalisk egg (unfert.)</label>
+		<description>Unfertilized boomalisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+      <color>(208,207,162)</color>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="AA_EggFertBaseHot">
+		<defName>GR_BoomaliskEggFertilized</defName>
+		<label>boomalisk egg (fert.)</label>
+		<description>Fertilized boomalisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a boomalisk.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+      <color>(208,207,162)</color>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>18</hatcherDaystoHatch>
+				<hatcherPawn>GR_Boomalisk</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	
+		<!-- Needlechicken Egg -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_NeedlechickenEggUnfertilized</defName>
+		<label>needlechicken egg (unfert.)</label>
+		<description>An unfertilized needlechicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+      <color>(212,239,192)</color>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_NeedlechickenEggFertilized</defName>
+		<label>needlechicken egg (fert.)</label>
+		<description>A fertilized needlechicken egg. If all goes well, it should hatch into a needlechick. It can be eaten raw, but it's much better cooked.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+
+		</statBases>
+		<graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+      <color>(212,239,192)</color>
+		</graphicData>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherPawn>GR_Needlechicken</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+
+	
+
+	<!-- =============== Nighthrumbo Egg =============== -->
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_EggNighthrumboFertilized</defName>
+		<label>nighthrumbo egg (fert.)</label>
+		<description>Fertilized nighthrumbo egg. If all goes well, it should hatch into a baby nighthrumbo. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/AA_EggNightling</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>GR_Nighthrumbo</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- =============== Meadow Lizard Egg =============== -->
+
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_EggMeadowLizardFertilized</defName>
+		<label>meadow lizard egg (fert.)</label>
+		<description>Fertilized meadow lizard egg. If all goes well, it should hatch into a baby meadow lizard. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(67,88,20)</color>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>19.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7</hatcherDaystoHatch>
+				<hatcherPawn>GR_MeadowLizard</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+</Defs>
