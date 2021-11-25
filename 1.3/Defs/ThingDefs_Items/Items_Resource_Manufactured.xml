@@ -39,7 +39,7 @@
 	<graphicData>
 		<texPath>Things/Item/GR_GeneticMaterials_Bear</texPath>
 	</graphicData>
-    <label>bear genetic material</label>
+    <label>ursine genetic material</label>
     <description>A vial of genetic material extracted from a bear's corpse.</description>
     
   </ThingDef>
