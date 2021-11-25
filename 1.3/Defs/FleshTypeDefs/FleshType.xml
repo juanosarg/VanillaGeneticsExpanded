@@ -4,7 +4,7 @@
   <FleshTypeDef>
     <defName>GR_Normal</defName>
     <corpseCategory>GR_Corpses</corpseCategory>
-    <wounds>
+    <genericWounds>
       <li>
         <texture>Things/Pawn/Wounds/WoundFleshA</texture>
       </li>
@@ -14,13 +14,13 @@
       <li>
         <texture>Things/Pawn/Wounds/WoundFleshC</texture>
       </li>
-    </wounds>
+    </genericWounds>
   </FleshTypeDef>
 
   <FleshTypeDef>
     <defName>GR_Mechanoid</defName>
     <corpseCategory>GR_Corpses</corpseCategory>
-    <wounds>
+    <genericWounds>
       <li>
         <texture>Things/Pawn/Wounds/WoundMechA</texture>
       </li>
@@ -30,7 +30,7 @@
       <li>
         <texture>Things/Pawn/Wounds/WoundMechC</texture>
       </li>
-    </wounds>
+    </genericWounds>
   </FleshTypeDef>
 
   <FleshTypeDef>
@@ -38,7 +38,7 @@
     <ateDirect>AteInsectMeatDirect</ateDirect>
     <ateAsIngredient>AteInsectMeatAsIngredient</ateAsIngredient>
     <corpseCategory>GR_Corpses</corpseCategory>
-    <wounds>
+    <genericWounds>
       <li>
         <texture>Things/Pawn/Wounds/WoundA</texture>
         <color>0.23,0.20,0.17</color>
@@ -51,6 +51,6 @@
         <texture>Things/Pawn/Wounds/WoundC</texture>
         <color>0.23,0.20,0.17</color>
       </li>
-    </wounds>
+    </genericWounds>
   </FleshTypeDef>
 </Defs>
