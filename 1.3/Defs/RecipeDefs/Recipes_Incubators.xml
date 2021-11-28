@@ -29,7 +29,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -47,7 +47,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 				<li>GR_BoomalopeGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -83,7 +83,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -91,7 +91,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -101,8 +101,8 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_UrsineGenetic</li>
+				<li>GR_AvianGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -137,7 +137,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -155,7 +155,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 				<li>GR_MuffaloGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -191,7 +191,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -209,7 +209,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -245,7 +245,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -263,7 +263,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 				<li>GR_FelineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -299,7 +299,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -317,7 +317,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 				<li>GR_RodentGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -355,7 +355,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -374,7 +374,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_BoomalopeGenetic</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -627,7 +627,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -645,7 +645,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 				<li>GR_MuffaloGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -681,7 +681,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -699,7 +699,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 				<li>GR_CanineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -735,7 +735,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -753,7 +753,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 				<li>GR_FelineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -789,7 +789,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -807,7 +807,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 				<li>GR_RodentGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -1175,7 +1175,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1193,7 +1193,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 				<li>GR_InsectoidGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -1293,7 +1293,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1304,7 +1304,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_InsectoidGenetic</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -1564,7 +1564,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1582,7 +1582,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -1672,7 +1672,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1690,7 +1690,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 				<li>GR_ReptileGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -2008,7 +2008,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2019,7 +2019,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_ThrumboGenetic</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -2062,7 +2062,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2073,7 +2073,7 @@
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
 				<li>GR_ThrumboGenetic</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -2381,7 +2381,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2407,7 +2407,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 				<li>GR_MechanoidGenetic</li>
 				<li>GR_MechanoidInterfaceChip</li>
 			</thingDefs>
@@ -2573,7 +2573,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -2599,7 +2599,7 @@
 
 			<thingDefs>
 				<li>GR_EmptyIncubator</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 				<li>GR_MechanoidGenetic</li>
 				<li>GR_MechanoidInterfaceChip</li>
 			</thingDefs>

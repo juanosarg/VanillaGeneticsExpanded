@@ -17,6 +17,7 @@
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>550</MarketValue>
 			<LeatherAmount>25</LeatherAmount>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -101,6 +102,7 @@
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
+			<maxPreyBodySize>2</maxPreyBodySize>
 			<body>QuadrupedAnimalWithPaws</body>
 			<baseHungerRate>0.35</baseHungerRate>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>

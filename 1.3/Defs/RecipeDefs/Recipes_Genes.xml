@@ -56,8 +56,8 @@
 	
 	<RecipeDef>
 		<defName>GR_ExtractGenesBear</defName>
-		<label>extract genes from a bear</label>
-		<description>Extract genetic material from a bear corpse.</description>
+		<label>extract genes from an ursine</label>
+		<description>Extract genetic material from an ursine corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -86,7 +86,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BearGenetic>1</GR_BearGenetic>
+			<GR_UrsineGenetic>1</GR_UrsineGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -95,8 +95,8 @@
 
 	<RecipeDef>
 		<defName>GR_ExtractGenesBird</defName>
-		<label>extract genes from a bird</label>
-		<description>Extract genetic material from any bird corpse.</description>
+		<label>extract genes from an avian</label>
+		<description>Extract genetic material from any avian corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -136,7 +136,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BirdGenetic>1</GR_BirdGenetic>
+			<GR_AvianGenetic>1</GR_AvianGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -145,8 +145,8 @@
 
 	<RecipeDef>
 		<defName>GR_ExtractGenesBoomalope</defName>
-		<label>extract genes from a boomalope</label>
-		<description>Extract genetic material from a boomalope corpse.</description>
+		<label>extract genes from a boom animal</label>
+		<description>Extract genetic material from a boom animal corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -183,7 +183,7 @@
 	<RecipeDef>
 		<defName>GR_ExtractGenesMuffalo</defName>
 		<label>extract genes from a muffalo</label>
-		<description>Extract genetic material from a muffalo corpse.</description>
+		<description>Extract genetic material from a muffalo, bison or yak corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
@@ -504,8 +504,8 @@
 
 	<RecipeDef>
 		<defName>GR_ExtractGenesThrumbo</defName>
-		<label>extract genes from a thrumbo</label>
-		<description>Extract genetic material from a thrumbo corpse.</description>
+		<label>extract genes from a colossal creature</label>
+		<description>Extract genetic material from a colossal creature's corpse.</description>
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>

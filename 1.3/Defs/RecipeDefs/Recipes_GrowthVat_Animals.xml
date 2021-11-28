@@ -254,7 +254,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -264,7 +264,7 @@
 			<thingDefs>
 				<li>GR_ImplantSteelWireMesh</li>
 				<li>WoodLog</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -1131,7 +1131,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1141,7 +1141,7 @@
 			<thingDefs>
 				<li>GR_ImplantSteelWireMesh</li>
 				<li>Silver</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -1451,7 +1451,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1460,7 +1460,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>GR_ImplantSteelWireMesh</li>
-				<li>GR_BearGenetic</li>
+				<li>GR_UrsineGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -1492,7 +1492,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -1501,7 +1501,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>GR_ImplantSteelWireMesh</li>
-				<li>GR_BirdGenetic</li>
+				<li>GR_AvianGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>

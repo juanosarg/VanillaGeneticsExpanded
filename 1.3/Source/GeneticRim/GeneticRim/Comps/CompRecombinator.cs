@@ -47,7 +47,7 @@ namespace GeneticRim
             {
                 if (ResearchProjectDef.Named("GR_AdvancedGeneticEngineering").IsFinished)
                 {
-                    GenSpawn.Spawn(ThingDef.Named("GR_ThrumboGenetic"), this.parent.Position, this.parent.Map);
+                    GenSpawn.Spawn(InternalDefOf.GR_ThrumboGenetic, this.parent.Position, this.parent.Map);
                 }
                 else
                 {
@@ -58,7 +58,7 @@ namespace GeneticRim
             {
                 if (ResearchProjectDef.Named("GR_HumanoidGeneticEngineering").IsFinished)
                 {
-                    GenSpawn.Spawn(ThingDef.Named("GR_HumanoidGenetic"), this.parent.Position, this.parent.Map);
+                    GenSpawn.Spawn(InternalDefOf.GR_HumanoidGenetic, this.parent.Position, this.parent.Map);
                 }
                 else
                 {
@@ -69,7 +69,7 @@ namespace GeneticRim
             {
                 if (ResearchProjectDef.Named("GR_ReptileGenome").IsFinished)
                 {
-                    GenSpawn.Spawn(ThingDef.Named("GR_ReptileGenetic"), this.parent.Position, this.parent.Map);
+                    GenSpawn.Spawn(InternalDefOf.GR_ReptileGenetic, this.parent.Position, this.parent.Map);
                 }
                 else
                 {
@@ -80,7 +80,7 @@ namespace GeneticRim
             {
                 if (ResearchProjectDef.Named("GR_InsectoidGenome").IsFinished)
                 {
-                    GenSpawn.Spawn(ThingDef.Named("GR_InsectoidGenetic"), this.parent.Position, this.parent.Map);
+                    GenSpawn.Spawn(InternalDefOf.GR_InsectoidGenetic, this.parent.Position, this.parent.Map);
                 }
                 else
                 {
@@ -89,35 +89,35 @@ namespace GeneticRim
             }
             else if (randomNumber == 8)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_FelineGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_FelineGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 7)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_RodentGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_RodentGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 6)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_BearGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_UrsineGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 5)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_BirdGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_AvianGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 4)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_BoomalopeGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_BoomalopeGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 3)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_MuffaloGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_MuffaloGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 2)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_CanineGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_CanineGenetic, this.parent.Position, this.parent.Map);
             }
             else
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_RuinedGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_RuinedGenetic, this.parent.Position, this.parent.Map);
             }
 
             this.parent.Destroy(DestroyMode.Vanish);
@@ -129,35 +129,35 @@ namespace GeneticRim
 
             if (randomNumber == 8)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_RodentGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_RodentGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 7)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_FelineGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_FelineGenetic, this.parent.Position, this.parent.Map);
             }
             else if(randomNumber == 6)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_BearGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_UrsineGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 5)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_BirdGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_AvianGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 4)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_BoomalopeGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_BoomalopeGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 3)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_MuffaloGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_MuffaloGenetic, this.parent.Position, this.parent.Map);
             }
             else if (randomNumber == 2)
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_CanineGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_CanineGenetic, this.parent.Position, this.parent.Map);
             }
             else
             {
-                GenSpawn.Spawn(ThingDef.Named("GR_RuinedGenetic"), this.parent.Position, this.parent.Map);
+                GenSpawn.Spawn(InternalDefOf.GR_RuinedGenetic, this.parent.Position, this.parent.Map);
             }
 
         }

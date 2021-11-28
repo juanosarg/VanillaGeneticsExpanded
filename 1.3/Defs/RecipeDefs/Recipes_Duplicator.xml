@@ -19,7 +19,7 @@
 				<filter>
 					<thingDefs>
 						
-						<li>GR_BearGenetic</li>
+						<li>GR_UrsineGenetic</li>
 						
 					</thingDefs>
 				</filter>
@@ -39,12 +39,12 @@
 		<fixedIngredientFilter>		
 			<thingDefs>
 								
-						<li>GR_BearGenetic</li>						
+						<li>GR_UrsineGenetic</li>						
 						<li>GR_OrganicPulp</li>
 					</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BearGenetic>2</GR_BearGenetic>
+			<GR_UrsineGenetic>2</GR_UrsineGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
@@ -166,7 +166,7 @@
 				<filter>
 					<thingDefs>
 						
-						<li>GR_BirdGenetic</li>
+						<li>GR_AvianGenetic</li>
 						
 					</thingDefs>
 				</filter>
@@ -186,12 +186,12 @@
 		<fixedIngredientFilter>		
 			<thingDefs>
 								
-						<li>GR_BirdGenetic</li>						
+						<li>GR_AvianGenetic</li>						
 						<li>GR_OrganicPulp</li>
 					</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<GR_BirdGenetic>2</GR_BirdGenetic>
+			<GR_AvianGenetic>2</GR_AvianGenetic>
 		</products>
 		<skillRequirements>
 			<Intellectual>5</Intellectual>

@@ -19,7 +19,7 @@ namespace GeneticRim
 
         public override void CompPostPostAdd(DamageInfo? dinfo)
         {
-            this.parent.pawn.ageTracker.DebugMake1YearOlder();
+            this.parent.pawn.ageTracker.DebugMakeOlder(3600000);
         }
 
         
