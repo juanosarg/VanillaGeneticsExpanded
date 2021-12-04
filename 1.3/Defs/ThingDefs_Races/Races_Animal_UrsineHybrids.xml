@@ -416,7 +416,7 @@
 		<description>A bear / muffalo hybrid. This hulking, wooly bear is a very temperamental pack animal, valued for its hardiness.\n\nUseful abilities: Produces specific high-quality milk and wool. Acts as a pack beast.</description>
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
-
+			 <FilthRate>12</FilthRate>
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
 			<MarketValue>500</MarketValue>
 		</statBases>
@@ -506,7 +506,6 @@
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
 			<predator>false</predator>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.80</wildness>
@@ -608,11 +607,13 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearwolf</defName>
 		<label>bearwolf</label>
+		 
 		<description>A bear / wolf hybrid. Strong like a bear, and fast like a wolf. Excellent as a rapid strike force, but their fast metabolism means they need a lot of food.\n\nUseful abilities: Good guard animal. Butchering gives Bearwolf Fangs, which can be sold.</description>
 		<statBases>
 			<MoveSpeed>4.75</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<MarketValue>370</MarketValue>
+			<FilthRate>2</FilthRate>
 		</statBases>
 		<comps>
 
@@ -802,6 +803,7 @@
 			<MoveSpeed>3.5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>270</MarketValue>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 
@@ -1073,6 +1075,7 @@
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
+			<maxPreyBodySize>2</maxPreyBodySize>
 			<fleshType>GR_Normal</fleshType>
 			<baseBodySize>1.75</baseBodySize>
 			<baseHungerRate>0.3</baseHungerRate>
@@ -1082,7 +1085,7 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<trainability>Advanced</trainability>
 			<wildness>0.8</wildness>
-			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Cougar</useLeatherFrom>

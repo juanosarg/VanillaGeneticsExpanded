@@ -8,7 +8,8 @@
 		<statBases>
 			<MoveSpeed>3.8</MoveSpeed>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
-			<MarketValue>250</MarketValue>
+			<MarketValue>375</MarketValue>
+			<FilthRate>16</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -43,7 +44,7 @@
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>Chemfuel</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
-				<resourceAmount>22</resourceAmount>
+				<resourceAmount>26</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
 			<li Class="GeneticRim.CompProperties_Draftable">
@@ -60,8 +61,8 @@
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
-			<baseBodySize>1.5</baseBodySize>
+			<roamMtbDays>4</roamMtbDays>
+			<baseBodySize>2.5</baseBodySize>
 			<baseHungerRate>1.2</baseHungerRate>
 			<baseHealthScale>0.85</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -167,6 +168,7 @@
 			<MoveSpeed>2.0</MoveSpeed>
 			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
 			<MarketValue>150</MarketValue>
+			<FilthRate>8</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -217,9 +219,9 @@
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
+			<trainability>Intermediate</trainability>
 			<baseBodySize>0.75</baseBodySize>
-			<baseHungerRate>1</baseHungerRate>
+			<baseHungerRate>0.535</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
@@ -282,7 +284,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomachicken/Boomachicken</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.8</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -291,13 +293,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomachicken/Dessicated_Boomachicken</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomachicken/Boomachicken</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -306,7 +308,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomachicken/Dessicated_Boomachicken</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -321,6 +323,7 @@
 			<MoveSpeed>3.15</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
 			<MarketValue>230</MarketValue>
+			<FilthRate>16</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -363,8 +366,8 @@
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
-			<baseBodySize>1.5</baseBodySize>
+			<roamMtbDays>2</roamMtbDays>
+			<baseBodySize>2.25</baseBodySize>
 			<baseHungerRate>1</baseHungerRate>
 			<baseHealthScale>0.65</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -467,6 +470,7 @@
 			<MoveSpeed>5.1</MoveSpeed>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
 			<MarketValue>250</MarketValue>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -510,21 +514,20 @@
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
-			<body>QuadrupedAnimalWithHoovesAndHump</body>
-			<predator>true</predator>
+			<body>QuadrupedAnimalWithHoovesAndHump</body>			
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_StunningExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
 			<baseBodySize>1.5</baseBodySize>
-			<baseHungerRate>1</baseHungerRate>
+			<baseHungerRate>0.535</baseHungerRate>
 			<baseHealthScale>0.65</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
+			<roamMtbDays>10</roamMtbDays>
+			<foodType>OmnivoreRoughAnimal</foodType>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
-			<trainability>Advanced</trainability>
+			<trainability>None</trainability>
 			<wildness>0.7</wildness>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<lifeExpectancy>13</lifeExpectancy>
@@ -584,7 +587,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomwolf/Boomwolf</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.8</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -593,13 +596,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomwolf/Dessicated_Boomwolf</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomwolf/Boomwolf</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -608,7 +611,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomwolf/Dessicated_Boomwolf</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -616,13 +619,16 @@
 	
 	<!-- Boomalope - Rodent -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Squirralope</defName>
-		<label>squirralope</label>
+		<defName>GR_Boomsquirrel</defName>
+		
+		<label>boomsquirrel</label>
+		
 		<description>A Boomalope / Squirrel hybrid. Slightly smaller than other boomalope hybrids. While lacking in size, it is faster moving, faster breeding and faster producing chemfuel than base boomalopes.\n\nUseful abilities: Explodes on death. Produces more chemfuel than regular boomalopes. Very fast breeding. Can be slaughtered for their horns.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<MarketValue>100</MarketValue>
+			<FilthRate>2</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -739,34 +745,37 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
+		
+		
+		
 			<li>
 
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Squirralope</texPath>
+					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Boomsquirrel</texPath>
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Dessicated_Squirralope</texPath>
+					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Dessicated_Boomsquirrel</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Squirralope</texPath>
-					<drawSize>2</drawSize>
+					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Boomsquirrel</texPath>
+					<drawSize>1.9</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Dessicated_Squirralope</texPath>
-					<drawSize>2</drawSize>
+					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Dessicated_Boomsquirrel</texPath>
+					<drawSize>1.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Squirralope</texPath>
+					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Boomsquirrel</texPath>
 					<drawSize>2.4</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -774,7 +783,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Dessicated_Squirralope</texPath>
+					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Dessicated_Boomsquirrel</texPath>
 					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

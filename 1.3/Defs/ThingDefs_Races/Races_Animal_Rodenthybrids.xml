@@ -200,14 +200,14 @@
 
 	<!-- Rodent - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Boomsquirrel</defName>
-		
-		<label>boomsquirrel</label>
+		<defName>GR_Squirralope</defName>
+		<label>squirralope</label>
 		<description>A Squirrel / Boomalope hybrid. This small and fast rodent has several nodules of chemical mixture in its back.\n\nUseful abilities: Explodes on death. Produces small amounts of chemfuel quite fast. Very fast breeding.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>125</MarketValue>
+			<FilthRate>2</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -271,13 +271,13 @@
 			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>0.25</baseHealthScale>
+			<roamMtbDays>2</roamMtbDays>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<mateMtbHours>4</mateMtbHours>
 			<gestationPeriodDays>7</gestationPeriodDays>
-			<wildness>0.5</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
-			<useLeatherFrom>Squirrel</useLeatherFrom>
-			<useMeatFrom>Squirrel</useMeatFrom>
+			<wildness>0.5</wildness>			
+			<useLeatherFrom>Boomalope</useLeatherFrom>
+			<useMeatFrom>Boomalope</useMeatFrom>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -324,44 +324,45 @@
 			<li>
 
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Boomsquirrel</texPath>
-					<drawSize>1</drawSize>
+					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Squirralope</texPath>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
-					<drawSize>1</drawSize>
+					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Dessicated_Squirralope</texPath>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Boomsquirrel</texPath>
-					<drawSize>1.25</drawSize>
+					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Squirralope</texPath>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Dessicated_Squirralope</texPath>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Boomsquirrel</texPath>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Squirralope</texPath>
+					<drawSize>2.4</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.15)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
-					<drawSize>1.95</drawSize>
+					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Dessicated_Squirralope</texPath>
+					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	
 
 	<!-- Rabbit - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">

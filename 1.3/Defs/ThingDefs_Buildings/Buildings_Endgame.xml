@@ -327,9 +327,9 @@
 			<ComponentSpacer>8</ComponentSpacer>
 			<Gold>4</Gold>
 			<GR_OrganicPulp>20</GR_OrganicPulp>
-			<GR_BearGenetic>1</GR_BearGenetic>
+			<GR_UrsineGenetic>1</GR_UrsineGenetic>
 			<GR_BoomalopeGenetic>1</GR_BoomalopeGenetic>
-			<GR_BirdGenetic>1</GR_BirdGenetic>
+			<GR_AvianGenetic>1</GR_AvianGenetic>
 			<GR_FelineGenetic>1</GR_FelineGenetic>
 			<GR_HumanoidGenetic>1</GR_HumanoidGenetic>
 			<GR_InsectoidGenetic>1</GR_InsectoidGenetic>
