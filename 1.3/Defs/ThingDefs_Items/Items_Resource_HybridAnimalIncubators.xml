@@ -220,7 +220,7 @@
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
-				<hatcherPawn>GR_Boomacat</hatcherPawn>
+				<hatcherPawn>GR_Boomcat</hatcherPawn>
 				<hatcherPawnSecondary>GR_Catalope</hatcherPawnSecondary>
 			</li>
 		</comps>

@@ -891,7 +891,7 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>0.6</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Alphabeaver</useLeatherFrom>
