@@ -9,6 +9,7 @@
 			<MoveSpeed>3.6</MoveSpeed>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 			<MarketValue>400</MarketValue>
+			<FilthRate>16</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -38,18 +39,17 @@
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>2.5</baseBodySize>
 			<baseHealthScale>1.95</baseHealthScale>
-			<baseHungerRate>0.98</baseHungerRate>
+			<baseHungerRate>0.7</baseHungerRate>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<foodType>VegetarianRoughAnimal</foodType>
-
+			<roamMtbDays>2</roamMtbDays>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>19</lifeExpectancy>
 			<lifeStageAges>
@@ -142,6 +142,7 @@
 			<MoveSpeed>3.2</MoveSpeed>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<MarketValue>350</MarketValue>
+			<FilthRate>16</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -183,19 +184,19 @@
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
+			<trainability>Intermediate</trainability>
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>2.0</baseBodySize>
 			<baseHealthScale>1.55</baseHealthScale>
-			<baseHungerRate>0.85</baseHungerRate>
+			<baseHungerRate>0.535</baseHungerRate>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>15</lifeExpectancy>
 			<lifeStageAges>
@@ -288,6 +289,7 @@
 			<MoveSpeed>3.2</MoveSpeed>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<MarketValue>250</MarketValue>
+			<FilthRate>8</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -340,17 +342,17 @@
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
+<trainability>Intermediate</trainability>
 			<body>GR_QuadrupedAnimalWithBeak</body>
 			<baseBodySize>1.8</baseBodySize>
 			<baseHealthScale>1.45</baseHealthScale>
-			<baseHungerRate>0.85</baseHungerRate>
+			<baseHungerRate>0.4</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<gestationPeriodDays>17</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>15</lifeExpectancy>
 			<lifeStageAges>
@@ -443,6 +445,7 @@
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>450</MarketValue>
+			<FilthRate>8</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -484,7 +487,7 @@
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+		<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>13</lifeExpectancy>
 			<lifeStageAges>
@@ -577,6 +580,7 @@
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>105</MarketValue>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -584,7 +588,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>17</power>
+				<power>8</power>
 				<cooldownTime>1.35</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
@@ -609,12 +613,12 @@
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-
+			<roamMtbDays>2</roamMtbDays>
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<baseBodySize>2.15</baseBodySize>
-			<baseHungerRate>0.85</baseHungerRate>
+			<baseBodySize>1.4</baseBodySize>
+			<baseHungerRate>0.35</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<mateMtbHours>3</mateMtbHours>
@@ -711,6 +715,7 @@
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<MarketValue>400</MarketValue>
+			<FilthRate>8</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -782,14 +787,15 @@
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>1.85</baseBodySize>
 			<baseHealthScale>1.75</baseHealthScale>
-			<baseHungerRate>0.8</baseHungerRate>
+			<baseHungerRate>0.535</baseHungerRate>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<trainability>Advanced</trainability>
+			<trainability>None</trainability>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<roamMtbDays>2</roamMtbDays>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>14</lifeExpectancy>
 			<lifeStageAges>

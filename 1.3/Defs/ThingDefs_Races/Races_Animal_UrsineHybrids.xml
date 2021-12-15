@@ -889,7 +889,7 @@
 			<mateMtbHours>3</mateMtbHours>
 			<gestationPeriodDays>8</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
-			<trainability>Advanced</trainability>
+			<trainability>None</trainability>
 			<wildness>0.6</wildness>
 			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>

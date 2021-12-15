@@ -91,7 +91,7 @@
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<maxPreyBodySize>0.5</maxPreyBodySize>
-			<baseBodySize>0.255</baseBodySize>
+			<baseBodySize>0.4</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -99,7 +99,7 @@
 			<useMeatFrom>Cat</useMeatFrom>
 			<wildness>0.36</wildness>
 			<trainability>Intermediate</trainability>
-			<nuzzleMtbHours>20</nuzzleMtbHours>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<gestationPeriodDays>24</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
@@ -260,10 +260,10 @@
 				<baseHealthScale>0.42</baseHealthScale>
 				<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 				<useLeatherFrom>Cat</useLeatherFrom>
-				<useMeatFrom>Boomalope</useMeatFrom>
+				<useMeatFrom>Cat</useMeatFrom>
 				<wildness>0.36</wildness>
 				<trainability>Intermediate</trainability>
-				<nuzzleMtbHours>20</nuzzleMtbHours>
+				<nuzzleMtbHours>8</nuzzleMtbHours>
 				<gestationPeriodDays>24</gestationPeriodDays>
 				<nameOnTameChance>1</nameOnTameChance>
 				<litterSizeCurve>
@@ -421,11 +421,11 @@
 			<baseHealthScale>0.35</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<useLeatherFrom>Cat</useLeatherFrom>
-			<useMeatFrom>Chicken</useMeatFrom>
+			<useMeatFrom>Cat</useMeatFrom>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.36</wildness>
-			<trainability>None</trainability>
-			<nuzzleMtbHours>20</nuzzleMtbHours>
+			<trainability>Intermediate</trainability>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<gestationPeriodDays>16</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
@@ -517,8 +517,8 @@
 	
 	<!-- Cat - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Catfallo</defName>
-		<label>catfallo</label>
+		<defName>GR_Catffalo</defName>
+		<label>catffalo</label>
 		<description>A cat / muffalo hybrid. The catfallo is slightly larger than other cat hybrids, and can be used as a miniature pack beast.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight, and a short nuzzle period. It produces milk and wool in small amounts.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
@@ -601,7 +601,7 @@
 			<wildness>0.36</wildness>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<trainability>Intermediate</trainability>
-			<nuzzleMtbHours>20</nuzzleMtbHours>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<gestationPeriodDays>24</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
@@ -643,17 +643,17 @@
 	</ThingDef>
 
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_Catfallo</defName>
-		<label>catfallo</label>
-		<race>GR_Catfallo</race>
+		<defName>GR_Catffalo</defName>
+		<label>catffalo</label>
+		<race>GR_Catffalo</race>
 		<combatPower>55</combatPower>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
-				<label>catfallo kitten</label>
+				<label>catffalo kitten</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catfallo/GR_Catfallo</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
 					<drawSize>2</drawSize>
 
 				</bodyGraphicData>
@@ -664,7 +664,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catfallo/GR_Catfallo</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
 					<drawSize>3</drawSize>
 
 				</bodyGraphicData>
@@ -675,7 +675,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catfallo/GR_Catfallo</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
 					<drawSize>3.5</drawSize>
 
 					<shadowData>
@@ -790,7 +790,7 @@
 			<wildness>0.36</wildness>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<trainability>Intermediate</trainability>
-			<nuzzleMtbHours>20</nuzzleMtbHours>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<mateMtbHours>1</mateMtbHours>
 			<gestationPeriodDays>5</gestationPeriodDays>			
 			<nameOnTameChance>1</nameOnTameChance>
@@ -980,7 +980,7 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.36</wildness>
 			<trainability>Advanced</trainability>
-			<nuzzleMtbHours>20</nuzzleMtbHours>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<gestationPeriodDays>24</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>

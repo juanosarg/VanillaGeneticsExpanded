@@ -9,6 +9,7 @@
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<MarketValue>370</MarketValue>
+			<FilthRate>3</FilthRate>
 		</statBases>
 		<tools>
 
@@ -88,14 +89,13 @@
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>1</baseBodySize>
-			<baseHungerRate>0.18</baseHungerRate>
+			<baseHungerRate>0.25</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<gestationPeriodDays>22.5</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
-			<wildness>0.75</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			<wildness>0.75</wildness>			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -202,6 +202,7 @@
 			<MoveSpeed>5.5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>370</MarketValue>
+			<FilthRate>8</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -286,6 +287,7 @@
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_EMPExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<predator>true</predator>
+			<maxPreyBodySize>2</maxPreyBodySize>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>0.85</baseBodySize>
@@ -296,7 +298,7 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
 			<wildness>0.75</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -397,6 +399,7 @@
 			<MoveSpeed>6</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>370</MarketValue>
+			<FilthRate>6</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -497,7 +500,7 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
 			<wildness>0.75</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -598,6 +601,7 @@
 			<MoveSpeed>5.2</MoveSpeed>
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
 			<MarketValue>370</MarketValue>
+			<FilthRate>10</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -670,14 +674,14 @@
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHungerRate>0.18</baseHungerRate>
+			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>0.89</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<gestationPeriodDays>15</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
-			<trainability>Advanced</trainability>
+			<trainability>None</trainability>
 			<wildness>0.75</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -783,6 +787,7 @@
 			<MoveSpeed>7.5</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
 			<MarketValue>275</MarketValue>
+			<FilthRate>2</FilthRate>
 		</statBases>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Draftable">
@@ -860,7 +865,7 @@
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<baseBodySize>0.85</baseBodySize>
-			<baseHungerRate>4</baseHungerRate>
+			<baseHungerRate>2</baseHungerRate>
 			<baseHealthScale>0.99</baseHealthScale>
 			<foodType>CarnivoreAnimal, DendrovoreAnimal</foodType>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -869,7 +874,7 @@
 			<gestationPeriodDays>6</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+		
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -966,6 +971,7 @@
 			<MoveSpeed>6.5</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<MarketValue>370</MarketValue>
+			<FilthRate>2</FilthRate>
 		</statBases>
 		<tools>
 
@@ -1049,7 +1055,7 @@
 			<fleshType>GR_Normal</fleshType>
 			<maxPreyBodySize>2.3</maxPreyBodySize>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<baseBodySize>1</baseBodySize>
 			<baseHungerRate>0.18</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
