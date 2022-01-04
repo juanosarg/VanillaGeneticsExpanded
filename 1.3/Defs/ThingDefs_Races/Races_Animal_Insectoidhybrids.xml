@@ -788,7 +788,7 @@
 			<lifeExpectancy>14</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<fleshType>GR_Insectoid</fleshType>
-			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<lifeStageAges>
 				<li>
 					<def>EusocialInsectLarva</def>
