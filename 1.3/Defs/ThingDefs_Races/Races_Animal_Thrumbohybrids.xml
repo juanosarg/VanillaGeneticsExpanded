@@ -1052,5 +1052,134 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
+	
+	<!-- Thrumbo - Insectoid -->
+	<ThingDef ParentName="GR_BaseInsect">
+		<defName>GR_Thrumbospider</defName>
+		<label>thrumbospider</label>
+		<description>A thrumbo / megaspider hybrid. The voracious appetite of the thrumbo, combined with the fast metabolism of the megaspider makes this creature very very difficult to maintain and take care of, but in combat power it is almost unbeatable, albeit slow. Unfortunately, they can't reproduce on their own.\n\nUseful abilities: If properly trained, this creature will utterly destroy your enemies.</description>
+		<statBases>
+			<MoveSpeed>2.25</MoveSpeed>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<MarketValue>2500</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="GeneticRim.CompProperties_Draftable">
+				<stampede>true</stampede>
+				<insectclouds>true</insectclouds>
+			</li>
+		</comps>
+		<race>
+			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			<body>BeetleLikeWithClaw</body>
+			<baseHungerRate>5.5</baseHungerRate>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<baseBodySize>4.5</baseBodySize>
+			<baseHealthScale>16</baseHealthScale>
+			<gestationPeriodDays>85</gestationPeriodDays>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<wildness>0.85</wildness>
+			<lifeExpectancy>120</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<fleshType>GR_Insectoid</fleshType>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Thrumbospider</defName>
+		<label>thrumbospider</label>
+		<race>GR_Thrumbospider</race>
+		<combatPower>700</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Thrumbospider</texPath>
+					<drawSize>2.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Dessicated_Thrumbospider</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Thrumbospider</texPath>
+					<drawSize>4</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Dessicated_Thrumbospider</texPath>
+					<drawSize>4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Thrumbospider</texPath>
+					<drawSize>4.8</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.5, 0.37)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Dessicated_Thrumbospider</texPath>
+					<drawSize>4.8</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
+					<thing>ThrumboHorn</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 
 </Defs>

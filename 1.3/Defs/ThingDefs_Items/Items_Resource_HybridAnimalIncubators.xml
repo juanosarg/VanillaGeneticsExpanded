@@ -326,7 +326,7 @@
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
 				<hatcherPawn>GR_Muffalocat</hatcherPawn>
-				<hatcherPawnSecondary>GR_Catfallo</hatcherPawnSecondary>
+				<hatcherPawnSecondary>GR_Catffalo</hatcherPawnSecondary>
 			</li>
 		</comps>
 	</ThingDef>
@@ -341,7 +341,7 @@
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
 				<hatcherPawn>GR_Muffalorat</hatcherPawn>
-				<hatcherPawnSecondary>GR_Ratfallo</hatcherPawnSecondary>
+				<hatcherPawnSecondary>GR_Ratffalo</hatcherPawnSecondary>
 			</li>
 		</comps>
 	</ThingDef>
