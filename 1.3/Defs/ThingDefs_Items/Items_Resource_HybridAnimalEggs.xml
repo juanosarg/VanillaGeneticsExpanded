@@ -2,6 +2,22 @@
 <Defs>
 
 
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_UnfertilizedHybridEgg</defName>
+		<label>hybrid egg (unfert.)</label>
+		<description>Unfertilized hybrid animal egg. Hybrids are sterile, and as such their eggs are not fertilized. They can be used as a food source, as an alternative to chicken eggs.</description>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+			<Nutrition>.25</Nutrition>
+
+		</statBases>
+
+	</ThingDef>
+
+
+
 	<!-- Paragon Chicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ParagonChickenEggUnfertilized</defName>
@@ -239,38 +255,7 @@
 		</comps>
 	</ThingDef>
 
-	<!-- Chicken / Bear Egg -->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>GR_ChickenbearEggUnfertilized</defName>
-		<label>chickenbear egg (unfert.)</label>
-		<description>Unfertilized Chickenbear egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<color>(0,125,35)</color>
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<statBases>
-			<MarketValue>7.0</MarketValue>
-		</statBases>
-	</ThingDef>
-
-	<ThingDef ParentName="EggFertBase">
-		<defName>GR_ChickenbearEggFertilized</defName>
-		<label>chickenbear egg (fert.)</label>
-		<description>Fertilized Chickenbear egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<color>(0,125,75)</color>
-		</graphicData>
-		<statBases>
-			<MarketValue>7.0</MarketValue>
-		</statBases>
-		<tradeability>None</tradeability>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>8</hatcherDaystoHatch>
-				<hatcherPawn>GR_Chickenbear</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
+	
 	<!-- Chicken / Boomalope Egg -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ChickenlopeEggUnfertilized</defName>

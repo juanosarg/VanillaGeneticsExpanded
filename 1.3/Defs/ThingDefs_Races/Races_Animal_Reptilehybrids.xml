@@ -3,14 +3,15 @@
 
 	<!-- Reptile - Bear -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Bearodile</defName>
-		
+		<defName>GR_Bearodile</defName>		
 		<label>bearodile</label>
 		<description>A reptile / bear hybrid. The reptilian genes used to generate this hybrid have given it some ancient reptilian characteristics, with an appearance similar to reptiles in the Permian Period on Earth. It has also developed a venomous bite.\n\nUseful abilities: Highly intelligent and venomous. Excellent base defender if properly trained.</description>
 		<statBases>
 			<MoveSpeed>4.8</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>400</MarketValue>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<comps>		
 			<li Class="GeneticRim.CompProperties_Draftable">
@@ -24,7 +25,7 @@
 				<capacities>
 					<li>GR_VeryToxicBite</li>
 				</capacities>
-				<power>17</power>
+				<power>13</power>
 				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -41,7 +42,7 @@
 				<capacities>
 					<li>GR_VeryToxicBite</li>
 				</capacities>
-				<power>17</power>
+				<power>13</power>
 				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -59,7 +60,7 @@
 				<capacities>
 					<li>GR_VeryToxicBite</li>
 				</capacities>
-				<power>15</power>
+				<power>12</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -85,13 +86,34 @@
 			</li>
 		</tools>
 
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>20</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
 
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<baseBodySize>2.5</baseBodySize>
+			<baseBodySize>3.5</baseBodySize>
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>2.75</baseHealthScale>
 			<lifeExpectancy>25</lifeExpectancy>
@@ -100,12 +122,9 @@
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
 			<wildness>0.80</wildness>  
-
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<intelligence>Animal</intelligence>
-
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-
 			<trainability>Advanced</trainability>
 			<lifeStageAges>
 
@@ -195,8 +214,10 @@
 		<description>A reptile / boomalope hybrid. The boomsnake is not a very strong or agile combatant. However, when it dies it explodes in a noxious cloud of venomous vapors, which can be strong enough to dissolve flesh.\n\nUseful abilities: Its toxic explosion can easily decimate an enemy raid if properly timed. Doesn't produce chemfuel.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>400</MarketValue>
+			<ToxicSensitivity>0</ToxicSensitivity>
 		</statBases>
 		<comps>		
 			<li Class="GeneticRim.CompProperties_Draftable">
@@ -233,17 +254,37 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
 
+
+		</verbs>
 
 		<race>
 			<fleshType>GR_Normal</fleshType>
-
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>Snake</body>
+			<trainability>Intermediate</trainability>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_ToxicExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHungerRate>1</baseHungerRate>
+			<baseHungerRate>0.535</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
 			<lifeExpectancy>25</lifeExpectancy>
 			<gestationPeriodDays>30</gestationPeriodDays>
@@ -254,7 +295,6 @@
 			<wildness>0.6</wildness>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<intelligence>Animal</intelligence>
-
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 
 			<lifeStageAges>
@@ -346,8 +386,11 @@
 		<description>A reptile / chicken hybrid. This reptilian chicken has a slightly venomous bite. Not very powerful, but considering how fast chickens breed, a horde of chickenlizards might be enough to overpower a much bigger creature with their venom.\n\nUseful abilities: Small, fast breeding, venomous chickens.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
 			<MarketValue>150</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
 			<li>
@@ -393,12 +436,34 @@
 				<chickenRimPox>true</chickenRimPox>
 			</li>
 		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>Bird</body>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>0.3</baseBodySize>
+			<roamMtbDays>7</roamMtbDays>
 			<baseHungerRate>.35</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
 			<lifeExpectancy>10</lifeExpectancy>
@@ -501,7 +566,9 @@
 		<description>A reptile / muffalo hybrid. This resilient beast can carry more weight than a regular muffalo, and has a powerful venomous bite.\n\nUseful abilities: Regularly produces enough venomous saliva to fill an ampoule with a powerful poison, which acts as a potent muscle paralysing agent.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<FilthRate>12</FilthRate>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>650</MarketValue>
 		</statBases>
 		<tools>
@@ -530,14 +597,34 @@
 				<carrymore>true</carrymore>
 			</li>
 		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
 
+
+		</verbs>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithHooves</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
+			<roamMtbDays>2</roamMtbDays>
 			<baseBodySize>3.5</baseBodySize>
 			<baseHungerRate>.85</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
@@ -551,8 +638,6 @@
 			<packAnimal>true</packAnimal>
 			<intelligence>Animal</intelligence>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
-
 			<lifeStageAges>
 
 				<li>
@@ -640,14 +725,36 @@
 		<label>spidersnake</label>
 		<description>A reptile / insectoid hybrid. This venomous, armoured snake, can be very dangerous in high enough numbers. Strangely, they don't seem particularly attracted to hugging any faces.\n\nUseful abilities: Regularly produces Spidersnake shed skin, which can be processed in a drug lab into small amounts of neutroamine.</description>
 		<statBases>
-			<MoveSpeed>4.8</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<MarketValue>650</MarketValue>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<MoveSpeed>4.8</MoveSpeed>			
+			<MarketValue>650</MarketValue>			
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<LeatherAmount>0</LeatherAmount>
 
 		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
 		<tools>
 			<li>
 				<capacities>
@@ -689,12 +796,7 @@
 				<customResourceString>SkinShed</customResourceString>
 
 			</li>
-			<!--<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-			<resourceDef>GR_SpidersnakeSilk</resourceDef>
-			<gatheringIntervalDays>1</gatheringIntervalDays>
-			<resourceAmount>40</resourceAmount>
-			<customResourceString>SilkGrowth</customResourceString>
-      </li>-->
+		
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<poisonouscloud>true</poisonouscloud>
 				<insectclouds>true</insectclouds>
@@ -814,188 +916,7 @@
 		</lifeStages>
 	</PawnKindDef>
 
-	<!-- Reptile - Thrumbo -->
-	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Thrumbolizard</defName>
-		<label>thrumbolizard</label>
-		<description>A reptile / thrumbo hybrid. A massive, crocodilian creature with incredibly powerful jaws and a rabid venom. \n\nUseful abilities: Regularly produces enough venom to fill small ampoules. Thrumbolizard poison is 100% lethal, and there is no antidote that could act fast enough.</description>
-		<statBases>
-			<MoveSpeed>5.25</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<MarketValue>4500</MarketValue>
-
-		</statBases>
-		<tools>
-			<li>
-				<label>horn</label>
-				<capacities>
-					<li>GR_VeryToxicBite</li>
-					<li>Stab</li>
-				</capacities>
-				<power>25</power>
-				<cooldownTime>1.85</cooldownTime>
-				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<capacities>
-					<li>GR_VeryToxicBite</li>
-				</capacities>
-				<power>20</power>
-				<cooldownTime>2.0</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>left foot</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>right foot</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-
-		<comps>
-
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_VirulentPoison</resourceDef>
-				<gatheringIntervalDays>10</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>PoisonGrowth</customResourceString>
-
-			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<stampede>true</stampede>
-			</li>
-		</comps>
-		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
-			<body>QuadrupedAnimalWithHoovesAndHorn</body>
-			<fleshType>GR_Normal</fleshType>
-
-			<herdAnimal>true</herdAnimal>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-
-			<baseBodySize>3.5</baseBodySize>
-			<baseHungerRate>4.5</baseHungerRate>
-			<baseHealthScale>13.0</baseHealthScale>
-			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
-			<useLeatherFrom>Thrumbo</useLeatherFrom>
-			<useMeatFrom>Thrumbo</useMeatFrom>
-			<trainability>Advanced</trainability>
-			<gestationPeriodDays>80</gestationPeriodDays>
-			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-			<wildness>0.8</wildness>
-			<lifeExpectancy>400</lifeExpectancy>
-
-			<lifeStageAges>
-
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.5</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalGenetic</li>
-		</tradeTags>
-	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-
-		<defName>GR_Thrumbolizard</defName>
-		<label>thrumbolizard</label>
-		<race>GR_Thrumbolizard</race>
-		<combatPower>650</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>1</ecoSystemWeight>
-		<lifeStages>
-			<li>
-				<label>thrumbolizard calf</label>
-				<labelPlural>thrumbolizard calves</labelPlural>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Thrumbolizard</texPath>
-					<drawSize>2.5</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.3, 0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Thrumbolizard</texPath>
-					<drawSize>4.0</drawSize>
-					<shadowData>
-						<volume>(0.7, 0.6, 0.4)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
-					<drawSize>4</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Thrumbolizard</texPath>
-					<drawSize>4.8</drawSize>
-					<shadowData>
-						<volume>(1, 0.8, 0.5)</volume>
-						<offset>(0,0,-0.5)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
-					<drawSize>4.8</drawSize>
-				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HornAttackTool</bodyPartGroup>
-					<thing>ThrumboHorn</thing>
-				</butcherBodyPart>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
+	
 
 	<!-- Reptile - Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -1004,8 +925,11 @@
 		<description>A reptile / wolf hybrid. These serpentine predators are fast as lightning, and armed with a powerful, venomous bite. \n\nSpeed and poison make for a very effective base defender. Sheds wolfsnake skin from time to time.</description>
 		<statBases>
 			<MoveSpeed>6.5</MoveSpeed>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			
 			<MarketValue>450</MarketValue>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
 
 		</statBases>
 		<tools>
@@ -1086,6 +1010,27 @@
 				<adrenalineburst>true</adrenalineburst>
 			</li>
 		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>20</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -1104,7 +1049,7 @@
 			<wildness>0.80</wildness>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -1159,17 +1104,17 @@
 				<labelPlural>wolfsnake puppies</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Wolfsnake</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Dessicated_Wolfsnake</texPath>
-					<drawSize>1.8</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Wolfsnake</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>1.75</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -1177,13 +1122,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Dessicated_Wolfsnake</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Wolfsnake</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -1191,7 +1136,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Dessicated_Wolfsnake</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -1204,7 +1149,9 @@
 		<description>A reptile / cat hybrid. The snakecat is like a furry snake with tiny legs. It has a venomous bite, and can be trained much further than other reptile hybrids.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
 			<MarketValue>400</MarketValue>
 		</statBases>
 		<comps>		
@@ -1246,6 +1193,27 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>20</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
 
 
 		<race>
@@ -1261,7 +1229,7 @@
 			<lifeExpectancy>25</lifeExpectancy>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
-			<nuzzleMtbHours>24</nuzzleMtbHours>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<useLeatherFrom>Cobra</useLeatherFrom>
 			<useMeatFrom>Cobra</useMeatFrom>
 			<wildness>0.6</wildness>
@@ -1307,44 +1275,44 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Snakecat</texPath>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Snakecat</texPath>
+					<drawSize>1.25</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Dessicated_Snakecat</texPath>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Dessicated_Snakecat</texPath>
+					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Snakecat</texPath>
-					<drawSize>1.9</drawSize>
+					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Snakecat</texPath>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Dessicated_Snakecat</texPath>
-					<drawSize>1.9</drawSize>
+					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Dessicated_Snakecat</texPath>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Snakecat</texPath>
-					<drawSize>2.5</drawSize>
+					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Snakecat</texPath>
+					<drawSize>1.75</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Dessicated_Snakecat</texPath>
-					<drawSize>2.5</drawSize>
+					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Dessicated_Snakecat</texPath>
+					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>

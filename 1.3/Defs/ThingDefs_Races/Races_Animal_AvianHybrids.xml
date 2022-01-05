@@ -45,8 +45,7 @@
 
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_ChickenbearEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_ChickenbearEggFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>GR_UnfertilizedHybridEgg</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1.9</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>

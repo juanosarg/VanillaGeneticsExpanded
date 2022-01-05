@@ -827,17 +827,17 @@
 				<label>spidercat kitten</label>
 				<labelPlural>spidercat kittens</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Spidercat</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Spidercat</texPath>
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Dessicated_Spidercat</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Dessicated_Spidercat</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Spidercat</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Spidercat</texPath>
 					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -845,13 +845,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Dessicated_Spidercat</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Dessicated_Spidercat</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Spidercat</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Spidercat</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -859,7 +859,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Dessicated_Spidercat</texPath>
+					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Dessicated_Spidercat</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
