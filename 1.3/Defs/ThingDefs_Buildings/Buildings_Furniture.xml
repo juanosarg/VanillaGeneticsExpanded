@@ -291,7 +291,7 @@
 
     </costList>
     
-    <designationCategory>GR_GeneticsTab</designationCategory>
+   
 	<researchPrerequisites><li>GR_GeneticEngineering</li></researchPrerequisites>
     <minifiedDef>MinifiedThing</minifiedDef>
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
