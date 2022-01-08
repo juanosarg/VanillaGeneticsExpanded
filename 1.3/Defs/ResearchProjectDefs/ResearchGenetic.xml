@@ -3,7 +3,7 @@
 
 	<ResearchProjectDef>
 		<defName>GR_GeneticEngineering</defName>
-		<label>genetic engineering</label>
+		<label>genetic creation</label>
 		<tab>GR_GeneticReseach</tab>
 		<techLevel>Industrial</techLevel>
 		<description>Research the basics of genetic engineering. With this research you can begin experimenting on the most basic creatures (tier 1), and breed hybrids to conquer the world. The Genetic Extraction Table allows you to extract genetic samples from creatures, and build empty incubators. The GenePod is where these samples are combined into filled incubators. Reptiles and Insectoids are tier 2, and need more research. Thrumbos and mechanoids are tier 3, and need even more advanced research.</description>

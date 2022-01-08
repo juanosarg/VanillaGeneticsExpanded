@@ -5,10 +5,10 @@
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_EmptyIncubator</defName>
-		<label>empty incubator</label>
-		<description>This animal incubator is empty. Use the Gene Pod and different genetic material vials to fill it.</description>
+		<label>empty growth cell</label>
+		<description>This animal growth cell is empty. Use the Gene Pod and different genetic material vials to fill it.</description>
 		<graphicData>
-			<texPath>Things/Item/GR_IncubatorCanister</texPath>
+			<texPath>Things/Item/GR_Growthcell</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<tradeability>Sellable</tradeability>
@@ -33,7 +33,7 @@
 	<ThingDef Abstract="True" Name="GR_IncubatorsBase" ParentName="ResourceBase">
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/GR_IncubatorCanister</texPath>
+			<texPath>Things/Item/GR_Growthcell</texPath>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>60</MaxHitPoints>
@@ -60,19 +60,19 @@
 
 	<ThingDef Abstract="True" Name="GR_IncubatorsBaseTier2" ParentName="GR_IncubatorsBase">
 		<graphicData>
-			<texPath>Things/Item/GR_IncubatorCanisterTier2</texPath>
+			<texPath>Things/Item/GR_Growthcell</texPath>
 		</graphicData>
 	</ThingDef>
 
 	<ThingDef Abstract="True" Name="GR_IncubatorsBaseTierInsectoids" ParentName="GR_IncubatorsBase">
 		<graphicData>
-			<texPath>Things/Item/GR_IncubatorCanisterTierInsectoids</texPath>
+			<texPath>Things/Item/GR_Growthcell</texPath>
 		</graphicData>
 	</ThingDef>
 
 	<ThingDef Abstract="True" Name="GR_IncubatorsBaseTierReptiles" ParentName="GR_IncubatorsBase">
 		<graphicData>
-			<texPath>Things/Item/GR_IncubatorCanisterTierReptilians</texPath>
+			<texPath>Things/Item/GR_Growthcell</texPath>
 		</graphicData>
 	</ThingDef>
 
@@ -80,8 +80,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BearBoomalopeIncubator</defName>
-		<label>bear / boomalope incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Boomalope / Bear or Bear / Boomalope hybrid</description>
+		<label>bear / boomalope growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Boomalope / Bear or Bear / Boomalope hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -95,8 +95,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BearBirdIncubator</defName>
-		<label>bear / bird incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Bear or Bear / Bird hybrid</description>
+		<label>bear / bird growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Bear or Bear / Bird hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -110,8 +110,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BearMuffaloIncubator</defName>
-		<label>bear / muffalo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Muffalo / Bear or Bear / Muffalo hybrid</description>
+		<label>bear / muffalo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Muffalo / Bear or Bear / Muffalo hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -125,8 +125,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BearCanineIncubator</defName>
-		<label>bear / canine incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Canine / Bear or Bear / Canine hybrid</description>
+		<label>bear / canine growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Canine / Bear or Bear / Canine hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -140,8 +140,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BearFelineIncubator</defName>
-		<label>bear / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Feline / Bear or Bear / Feline hybrid</description>
+		<label>bear / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Feline / Bear or Bear / Feline hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -155,8 +155,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BearRodentIncubator</defName>
-		<label>bear / rodent incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Bear / Rodent or Rodent / Bear hybrid</description>
+		<label>bear / rodent growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Bear / Rodent or Rodent / Bear hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -170,8 +170,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BoomalopeBirdIncubator</defName>
-		<label>boomalope / bird incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Boomalope or Boomalope / Bird hybrid</description>
+		<label>boomalope / bird growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Boomalope or Boomalope / Bird hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -185,8 +185,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BoomalopeMuffaloIncubator</defName>
-		<label>boomalope / muffalo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Muffalo / Boomalope or Boomalope / Muffalo hybrid</description>
+		<label>boomalope / muffalo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Muffalo / Boomalope or Boomalope / Muffalo hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -200,8 +200,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BoomalopeCanineIncubator</defName>
-		<label>boomalope / canine incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Canine / Boomalope or Boomalope / Canine hybrid</description>
+		<label>boomalope / canine growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Canine / Boomalope or Boomalope / Canine hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -215,8 +215,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BoomalopeFelineIncubator</defName>
-		<label>boomalope / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Feline / Boomalope or Boomalope / Feline hybrid</description>
+		<label>boomalope / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Feline / Boomalope or Boomalope / Feline hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -230,8 +230,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BoomalopeRodentIncubator</defName>
-		<label>boomalope / rodent incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Boomalope / Rodent or Rodent / Boomalope hybrid</description>
+		<label>boomalope / rodent growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Boomalope / Rodent or Rodent / Boomalope hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -245,8 +245,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BirdMuffaloIncubator</defName>
-		<label>bird / muffalo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Muffalo or Muffalo / Bird hybrid</description>
+		<label>bird / muffalo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Muffalo or Muffalo / Bird hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -260,8 +260,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BirdCanineIncubator</defName>
-		<label>bird / canine incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Canine or Canine / Bird hybrid</description>
+		<label>bird / canine growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Canine or Canine / Bird hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -275,8 +275,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BirdFelineIncubator</defName>
-		<label>bird / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Feline or Cat / Feline hybrid</description>
+		<label>bird / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Bird / Feline or Cat / Feline hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -290,8 +290,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_BirdLeporidIncubator</defName>
-		<label>bird / leporid incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Bird / Leporid or Leporid / Bird hybrid</description>
+		<label>bird / leporid growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Bird / Leporid or Leporid / Bird hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -305,8 +305,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_MuffaloCanineIncubator</defName>
-		<label>muffalo / canine incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Muffalo / Canine or Canine / Muffalo hybrid</description>
+		<label>muffalo / canine growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Muffalo / Canine or Canine / Muffalo hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -320,8 +320,8 @@
 	
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_MuffaloFelineIncubator</defName>
-		<label>muffalo / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Muffalo / Feline or Feline / Muffalo hybrid</description>
+		<label>muffalo / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo may develop into a Muffalo / Feline or Feline / Muffalo hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -335,8 +335,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_MuffaloRodentIncubator</defName>
-		<label>muffalo / rodent incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Muffalo / Rodent or Rodent / Muffalo hybrid</description>
+		<label>muffalo / rodent growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Muffalo / Rodent or Rodent / Muffalo hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -350,8 +350,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_CanineFelineIncubator</defName>
-		<label>canine / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Canine / Feline or Feline / Canine hybrid</description>
+		<label>canine / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Canine / Feline or Feline / Canine hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -365,8 +365,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_CanineRodentIncubator</defName>
-		<label>canine / rodent incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Canine / Rodent or Rodent / Canine hybrid</description>
+		<label>canine / rodent growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Canine / Rodent or Rodent / Canine hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -380,8 +380,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBase">
 		<defName>GR_FelineLeporidIncubator</defName>
-		<label>feline / leporid incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Feline / Leporid or Leporid / Feline hybrid</description>
+		<label>feline / leporid growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch. The embryo will develop into a Feline / Leporid or Leporid / Feline hybrid</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -395,8 +395,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTierInsectoids">
 		<defName>GR_BearscarabIncubator</defName>
-		<label>insectoid / bear incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>insectoid / bear growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -407,8 +407,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTierInsectoids">
 		<defName>GR_MuffalopedeIncubator</defName>
-		<label>insectoid / muffalo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>insectoid / muffalo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -419,8 +419,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTierInsectoids">
 		<defName>GR_BoombeetleIncubator</defName>
-		<label>insectoid / boomalope incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>insectoid / boomalope growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -431,8 +431,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTierInsectoids">
 		<defName>GR_ChickenspiderIncubator</defName>
-		<label>insectoid / bird incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>insectoid / bird growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -443,8 +443,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTierInsectoids">
 		<defName>GR_WolfscarabIncubator</defName>
-		<label>insectoid / canine incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>insectoid / canine growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -455,8 +455,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTierInsectoids">
 		<defName>GR_SpidercatIncubator</defName>
-		<label>insectoid / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>insectoid / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -467,8 +467,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTierInsectoids">
 		<defName>GR_ThrumbospiderIncubator</defName>
-		<label>insectoid / thrumbo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>insectoid / thrumbo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -482,8 +482,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTierReptiles">
 		<defName>GR_BearodileIncubator</defName>
-		<label>reptile / bear incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>reptile / bear growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -493,8 +493,8 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_IncubatorsBaseTierReptiles">
 		<defName>GR_BoomsnakeIncubator</defName>
-		<label>reptile / boomalope incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>reptile / boomalope growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -504,8 +504,8 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_IncubatorsBaseTierReptiles">
 		<defName>GR_ChickenlizardIncubator</defName>
-		<label>reptile / bird incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>reptile / bird growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -515,8 +515,8 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_IncubatorsBaseTierReptiles">
 		<defName>GR_MuffalokomodoIncubator</defName>
-		<label>reptile / muffalo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>reptile / muffalo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -526,8 +526,8 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_IncubatorsBaseTierReptiles">
 		<defName>GR_SpidersnakeIncubator</defName>
-		<label>reptile / insectoid incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>reptile / insectoid growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -537,8 +537,8 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_IncubatorsBaseTierReptiles">
 		<defName>GR_ThrumbolizardIncubator</defName>
-		<label>reptile / thrumbo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>reptile / thrumbo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -548,8 +548,8 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_IncubatorsBaseTierReptiles">
 		<defName>GR_WolfsnakeIncubator</defName>
-		<label>reptile / canine incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>reptile / canine growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -559,8 +559,8 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_IncubatorsBaseTierReptiles">
 		<defName>GR_SnakecatIncubator</defName>
-		<label>reptile / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>reptile / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -574,8 +574,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_ThrumbearIncubator</defName>
-		<label>thrumbo / bear incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>thrumbo / bear growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -586,8 +586,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_ThrumffaloIncubator</defName>
-		<label>thrumbo / muffalo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>thrumbo / muffalo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -598,8 +598,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_ThrumbalopeIncubator</defName>
-		<label>thrumbo / boomalope incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>thrumbo / boomalope growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -610,8 +610,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_ThrumbochickenIncubator</defName>
-		<label>thrumbo / bird incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>thrumbo / bird growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -622,8 +622,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_ThrumwolfIncubator</defName>
-		<label>thrumbo / canine incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>thrumbo / canine growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -634,8 +634,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_ThrumboratIncubator</defName>
-		<label>thrumbo / rodent incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>thrumbo / rodent growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -646,8 +646,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_ThrumbocatIncubator</defName>
-		<label>thrumbo / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>thrumbo / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -665,8 +665,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechabearIncubator</defName>
-		<label>mechanoid / bear incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / bear growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -677,8 +677,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechamuffaloIncubator</defName>
-		<label>mechanoid / muffalo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / muffalo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -689,8 +689,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechalopeIncubator</defName>
-		<label>mechanoid / boomalope incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / boomalope growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -701,8 +701,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechachickenIncubator</defName>
-		<label>mechanoid / bird incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / bird growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -713,8 +713,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechawolfIncubator</defName>
-		<label>mechanoid / canine incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / canine growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -725,8 +725,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MecharatIncubator</defName>
-		<label>mechanoid / rodent incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / rodent growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -737,8 +737,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechaspiderIncubator</defName>
-		<label>mechanoid / insectoid incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / insectoid growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -749,8 +749,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechaturtleIncubator</defName>
-		<label>mechanoid / reptilian incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / reptilian growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -761,8 +761,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechacatIncubator</defName>
-		<label>mechanoid / feline incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / feline growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
@@ -773,8 +773,8 @@
 
 	<ThingDef ParentName="GR_IncubatorsBaseTier2">
 		<defName>GR_MechathrumboIncubator</defName>
-		<label>mechanoid / thrumbo incubator</label>
-		<description>This incubator has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<label>mechanoid / thrumbo growth cell</label>
+		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Incubator">
 				<hatcherDaystoHatch>1</hatcherDaystoHatch>
