@@ -182,11 +182,11 @@
 		
 		<description>Desc-todo.</description>
 		<graphicData>
-			<texPath>Things/Building/Electrowombs/ElectrowombLarge_Base</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Building/TissueGrinder/TissueGrinder</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5,4)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Building/Electrowombs/ElectrowombLarge_MenuIcon</uiIconPath>
+		
 		<uiIconScale>0.75</uiIconScale>
 		<castEdgeShadows>false</castEdgeShadows>
 		<costList>
