@@ -45,7 +45,7 @@
 		<researchPrerequisites>
 			<li>GR_AnimalControl</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 
 

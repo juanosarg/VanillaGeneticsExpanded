@@ -42,7 +42,6 @@
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<size>(7,6)</size>
-		<designationCategory>GR_GeneticsTab</designationCategory>
 		
 		<costList>
 			<Steel>350</Steel>
@@ -150,7 +149,7 @@
     </statBases>
     <tickerType>Normal</tickerType>
     <size>(6,2)</size>
-    <designationCategory>GR_GeneticsTab</designationCategory>
+   
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTransmitter</compClass>
@@ -204,7 +203,7 @@
 		<tickerType>Normal</tickerType>
 		<size>(2,2)</size>
 
-		<designationCategory>GR_GeneticsTab</designationCategory>
+	
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTransmitter</compClass>
@@ -256,7 +255,7 @@
 		<tickerType>Normal</tickerType>
 		<size>(2,2)</size>
 
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTransmitter</compClass>
@@ -311,7 +310,7 @@
 		<tickerType>Normal</tickerType>
 		<size>(2,2)</size>
 
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTransmitter</compClass>
@@ -396,7 +395,7 @@
     <fillPercent>0.5</fillPercent>
    
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-    <designationCategory>GR_GeneticsTab</designationCategory>
+   
     <surfaceType>Item</surfaceType>
     <designationHotKey>Misc12</designationHotKey>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>

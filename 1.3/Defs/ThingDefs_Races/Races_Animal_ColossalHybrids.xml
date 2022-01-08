@@ -1074,7 +1074,7 @@
 			<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.30</ArmorRating_Heat>
 			<FilthRate>4</FilthRate>
-			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+			
 		</statBases>
 		<tools>
 			<li>
