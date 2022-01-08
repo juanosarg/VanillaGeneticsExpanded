@@ -241,7 +241,7 @@
 		<researchPrerequisites>
 			<li>GR_GeneticEngineering</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 	
 	
@@ -320,7 +320,7 @@
 		<researchPrerequisites>
 			<li>GR_AdvancedGeneticEngineering</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 	<ThingDef ParentName="BenchBase">
 		<defName>GR_Pulper</defName>
@@ -373,7 +373,7 @@
 		<researchPrerequisites>
 			<li>GR_GeneticEngineering</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+	
 	</ThingDef>
 	<ThingDef ParentName="BenchBase">
 		<defName>GR_PulpRecycler</defName>
@@ -427,7 +427,7 @@
 		<researchPrerequisites>
 			<li>GR_GeneticEngineering</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_GeneRecombinator</defName>
@@ -489,7 +489,7 @@
 		<researchPrerequisites>
 			<li>GR_GeneticEngineering</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+	
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_TissueGrowingVat</defName>
@@ -551,7 +551,7 @@
 		<researchPrerequisites>
 			<li>GR_GeneticEngineering</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_GeneDuplicator</defName>
@@ -613,7 +613,7 @@
 		<researchPrerequisites>
 			<li>GR_GeneDuplication</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 	<ThingDef ParentName="BenchBase">
 		<defName>GR_ParagonSerumExtractionTable</defName>
@@ -672,7 +672,7 @@
 		<researchPrerequisites>
 			<li>GR_AnimalEnrichment</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_AnimalEnrichmentCenter</defName>
@@ -733,7 +733,7 @@
 		<researchPrerequisites>
 			<li>GR_AnimalEnrichment</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 	<ThingDef ParentName="BenchBase">
 		<defName>GR_GenetrainerBench</defName>
@@ -793,6 +793,6 @@
 		<researchPrerequisites>
 			<li>GR_GenetrainerRepurposing</li>
 		</researchPrerequisites>
-		<designationCategory>GR_GeneticsTab</designationCategory>
+		
 	</ThingDef>
 </Defs>
