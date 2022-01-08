@@ -184,7 +184,7 @@
 		<graphicData>
 			<texPath>Things/Building/TissueGrinder/TissueGrinder</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5,4)</drawSize>
+			<drawSize>(3,2)</drawSize>
 		</graphicData>
 		
 		<uiIconScale>0.75</uiIconScale>
@@ -234,13 +234,13 @@
 
 	<ThingDef ParentName="BenchBase">
 		<defName>GR_GeneticExtractionTable</defName>
-		<label>genetic extraction table</label>
+		<label>genome extractor table</label>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>A genetic engineering workbench.</description>
+		<description>todo.</description>
 		<graphicData>
-			<texPath>Things/Building/GR_GeneticExtractionTable</texPath>
+			<texPath>Things/Building/TableGeneticExtraction/TableGeneticExtraction</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5,2)</drawSize>
+			<drawSize>(3,1.25)</drawSize>
 			<damageData>
 				<rect>(0.3,0,2.7,1)</rect>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -287,9 +287,9 @@
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
 		<researchPrerequisites>
-			<li>GR_GeneticEngineering</li>
+			<li>GR_GeneticAlteration</li>
 		</researchPrerequisites>
-		
+		<designationCategory>GR_GeneticsTab</designationCategory>
 	</ThingDef>
 	
 	
