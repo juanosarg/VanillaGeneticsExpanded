@@ -14,7 +14,7 @@
 		<graphicData>
 			<texPath>Things/Building/Genomorpher/Genomorpher</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5,5)</drawSize>
+			<drawSize>(7,7)</drawSize>
 		</graphicData>
 		<uiIconScale>0.75</uiIconScale>
 		<castEdgeShadows>false</castEdgeShadows>
@@ -70,7 +70,7 @@
 		<graphicData>
 			<texPath>Things/Building/Electrowombs/Electrowomb_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/Electrowombs/Electrowomb_MenuIcon</uiIconPath>
 		<uiIconScale>0.75</uiIconScale>
@@ -128,7 +128,7 @@
 		<graphicData>
 			<texPath>Things/Building/Electrowombs/ElectrowombLarge_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Building/Electrowombs/ElectrowombLarge_MenuIcon</uiIconPath>
 		<uiIconScale>0.75</uiIconScale>
@@ -172,14 +172,62 @@
 		</researchPrerequisites>
 		<designationCategory>GR_GeneticsTab</designationCategory>
 	</ThingDef>
-
-
-
-
-
-
-
-
+	
+	<ThingDef ParentName="BenchBase">
+		<defName>GR_TissueGrinder</defName>
+		<label>tissue grinder</label>		
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		
+		<description>Desc-todo.</description>
+		<graphicData>
+			<texPath>Things/Building/Electrowombs/ElectrowombLarge_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,4)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/Electrowombs/ElectrowombLarge_MenuIcon</uiIconPath>
+		<uiIconScale>0.75</uiIconScale>
+		<castEdgeShadows>false</castEdgeShadows>
+		<costList>
+			<Steel>110</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.25</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>35</Mass>
+			<WorkToBuild>1200</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+	
+		<size>(3,2)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>GR_NutrientVat</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>GR_GeneticAlteration</li>
+		</researchPrerequisites>
+		<designationCategory>GR_GeneticsTab</designationCategory>
+	</ThingDef>
 
 
 
