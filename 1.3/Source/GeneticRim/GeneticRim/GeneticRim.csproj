@@ -300,8 +300,13 @@
   <ItemGroup>
     <Compile Include="Comps\CompAnimalControlHub.cs" />
     <Compile Include="Comps\CompDraftable.cs" />
+    <Compile Include="Comps\CompElectroWomb.cs" />
+    <Compile Include="Comps\CompGrowthCell.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_AnimalControlHub.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Draftable.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_ElectroWomb.cs" />
+    <Compile Include="DefExtensions\DefExtension_Hybrid.cs" />
+    <Compile Include="DefExtensions\DefExtension_HybridChanceAlterer.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Dev Mode\SuperItemSpawner.cs" />
     <Compile Include="DraftingList\DraftingList.cs" />

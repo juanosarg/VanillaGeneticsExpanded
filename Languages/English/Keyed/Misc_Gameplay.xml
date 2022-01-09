@@ -21,7 +21,12 @@
   <ComponentIndustrialDesc>Industrial Component production</ComponentIndustrialDesc>
   <CastoreumProd>Castoreum production</CastoreumProd>
 
+  <!-- Growth Cell -->
 
+  <GR_GrowthCell_InspectDominant>Dominant Gene: {0}</GR_GrowthCell_InspectDominant>
+  <GR_GrowthCell_InspectSecondary>Secondary Gene: {0}</GR_GrowthCell_InspectSecondary>
+  <GR_GrowthCell_InspectGenoframe>Genoframe: {0}</GR_GrowthCell_InspectGenoframe>
+  <GR_GrowthCell_InspectBooster>Booster: {0}</GR_GrowthCell_InspectBooster>
 
   
   <!-- Gene Pods Control -->

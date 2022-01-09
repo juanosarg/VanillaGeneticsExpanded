@@ -25,6 +25,12 @@
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				<stability>5</stability>
+				<safety>10</safety>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_UrsineGenetic</defName>

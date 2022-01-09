@@ -108,6 +108,9 @@
 					<li>GR_NutrientVat</li>
 				</linkableFacilities>
 			</li>
+			<li Class="GeneticRim.CompProperties_ElectroWomb">
+				<maxBodySize>1</maxBodySize>
+			</li>
 		</comps>
 		<researchPrerequisites>
 			<li>GR_GeneticEngineering</li>
@@ -165,6 +168,8 @@
 				<linkableFacilities>
 					<li>GR_NutrientVat</li>
 				</linkableFacilities>
+			</li>
+			<li Class="GeneticRim.CompProperties_ElectroWomb">
 			</li>
 		</comps>
 		<researchPrerequisites>

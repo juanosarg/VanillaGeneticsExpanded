@@ -194,7 +194,12 @@
 				</dessicatedBodyGraphicData>
 
 			</li>
-
+			<modExtensions>
+				<li Class="GeneticRim.DefExtension_Hybrid">
+					<dominantGenome>GR_RodentGenetic</dominantGenome>
+					<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+				</li>
+			</modExtensions>
 		</lifeStages>
 	</PawnKindDef>
 
