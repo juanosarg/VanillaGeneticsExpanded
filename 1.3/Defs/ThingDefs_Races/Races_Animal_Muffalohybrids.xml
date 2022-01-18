@@ -22,7 +22,6 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_MuffalobearMilk</milkDef>
@@ -32,7 +31,7 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<rage>true</rage>
 				<carrymore>true</carrymore>
-			</li>      
+			</li>
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
@@ -49,7 +48,6 @@
 			<roamMtbDays>2</roamMtbDays>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>19</lifeExpectancy>
 			<lifeStageAges>
@@ -131,8 +129,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Muffalo - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalope</defName>
@@ -155,7 +158,6 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_MuffalopeMilk</milkDef>
@@ -172,12 +174,11 @@
 				<gatheringIntervalDays>3</gatheringIntervalDays>
 				<resourceAmount>55</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
-
 			</li>
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<explodable>true</explodable>
 				<carrymore>true</carrymore>
-			</li> 
+			</li>
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
@@ -196,7 +197,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>15</lifeExpectancy>
 			<lifeStageAges>
@@ -278,8 +278,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Muffalo - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalochicken</defName>
@@ -313,7 +318,6 @@
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_MuffalochickenMilk</milkDef>
@@ -335,14 +339,14 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<chickenRimPox>true</chickenRimPox>
 				<carrymore>true</carrymore>
-			</li> 
+			</li>
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-<trainability>Intermediate</trainability>
+			<trainability>Intermediate</trainability>
 			<body>GR_QuadrupedAnimalWithBeak</body>
 			<baseBodySize>1.8</baseBodySize>
 			<baseHealthScale>1.45</baseHealthScale>
@@ -352,7 +356,6 @@
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<gestationPeriodDays>17</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>15</lifeExpectancy>
 			<lifeStageAges>
@@ -434,8 +437,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Muffalo - Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalowolf</defName>
@@ -458,10 +466,7 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
-
-
 			<li Class="CompProperties_Shearable">
 				<woolDef>GR_MuffalowolfWool</woolDef>
 				<shearIntervalDays>25</shearIntervalDays>
@@ -470,14 +475,13 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<adrenalineburst>true</adrenalineburst>
 				<carrymore>true</carrymore>
-			</li> 
+			</li>
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>2.0</baseBodySize>
 			<baseHealthScale>1.95</baseHealthScale>
@@ -487,7 +491,7 @@
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<wildness>0.5</wildness>
-		<trainability>Advanced</trainability>
+			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>13</lifeExpectancy>
 			<lifeStageAges>
@@ -569,8 +573,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Muffalo - Rat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalorat</defName>
@@ -593,7 +602,6 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
@@ -649,7 +657,6 @@
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
@@ -704,8 +711,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Muffalo - Cat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalocat</defName>
@@ -758,7 +770,6 @@
 				<chanceFactor>0.5</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
@@ -768,16 +779,16 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<catreflexes>true</catreflexes>
 				<carrymore>true</carrymore>
-			</li>  
+			</li>
 			<li Class="CompProperties_Shearable">
 				<woolDef>GR_HairballWool</woolDef>
 				<shearIntervalDays>12</shearIntervalDays>
 				<woolAmount>24</woolAmount>
-			</li>		
+			</li>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
-			</li>			
+			</li>
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
@@ -877,6 +888,11 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 </Defs>

@@ -205,6 +205,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ReptileGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Reptile - Boomalope -->
@@ -376,6 +382,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ReptileGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Reptile - Chicken -->
@@ -557,6 +569,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ReptileGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Reptile - Muffalo -->
@@ -717,6 +735,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ReptileGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Reptile - Insectoid -->
@@ -914,6 +938,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ReptileGenetic</dominantGenome>
+				<secondaryGenome>GR_InsectoidGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	
@@ -1140,6 +1170,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ReptileGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<!-- Reptile - Cat -->
@@ -1316,6 +1352,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ReptileGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 </Defs>

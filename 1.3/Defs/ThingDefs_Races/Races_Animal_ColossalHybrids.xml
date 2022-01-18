@@ -176,6 +176,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Boomalope - Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -191,7 +197,6 @@
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.30</ArmorRating_Heat>
 			<FilthRate>12</FilthRate>
-			
 		</statBases>
 		<tools>
 			<li>
@@ -357,6 +362,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Chicken - Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -521,6 +532,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Muffalo - Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -536,7 +553,6 @@
 			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.60</ArmorRating_Heat>
 			<FilthRate>20</FilthRate>
-			
 		</statBases>
 		<tools>
 			<li>
@@ -705,6 +721,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Wolf - Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -721,7 +743,6 @@
 			<ArmorRating_Heat>0.30</ArmorRating_Heat>
 			<FilthRate>4</FilthRate>
 			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
-			
 		</statBases>
 		<tools>
 			<li>
@@ -880,6 +901,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Cat - Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -1059,6 +1086,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Thrumbo - Insectoid -->
 	<ThingDef ParentName="GR_BaseInsect">
@@ -1074,7 +1107,6 @@
 			<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.30</ArmorRating_Heat>
 			<FilthRate>4</FilthRate>
-			
 		</statBases>
 		<tools>
 			<li>
@@ -1190,6 +1222,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_InsectoidGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Reptile - Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -1225,8 +1263,6 @@
 				<label>poison spit</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
 		<tools>
 			<li>
@@ -1390,14 +1426,17 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_ReptileGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Rat - Thrumbo -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumborat</defName>
 		<label>thrumborat</label>
-		
 		<description>A Rat / Thrumbo hybrid. What could be scarier than a fast-breeding thrumbo?\n\nUseful abilities: Fast breeding and fast maturing for a creature of this size. Not very long-lived, though.</description>
 		<statBases>
 			<MoveSpeed>5.25</MoveSpeed>
@@ -1468,7 +1507,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>true</herdAnimal>
@@ -1509,10 +1547,8 @@
 			<li>AnimalGenetic</li>
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumborat</defName>
-
 		<label>thrumborat</label>
 		<race>GR_Thrumborat</race>
 		<combatPower>400</combatPower>
@@ -1568,5 +1604,11 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 </Defs>

@@ -42,7 +42,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_UnfertilizedHybridEgg</eggUnfertilizedDef>
@@ -53,7 +52,6 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<chickenRimPox>true</chickenRimPox>
 				<rage>true</rage>
-
 			</li>
 		</comps>
 		<race>
@@ -111,7 +109,6 @@
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Chickenbear</defName>
 		<label>chickenbear</label>
 		<race>GR_Chickenbear</race>
@@ -174,8 +171,13 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AvianGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Chicken - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenlope</defName>
@@ -218,7 +220,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ChickenlopeEggUnfertilized</eggUnfertilizedDef>
@@ -236,7 +237,6 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<chickenRimPox>true</chickenRimPox>
 				<explodable>true</explodable>
-
 			</li>
 		</comps>
 		<race>
@@ -353,8 +353,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AvianGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Chicken - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenffalo</defName>
@@ -377,7 +382,6 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
 			</li>
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -390,7 +394,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_ChickenffaloMilk</milkDef>
@@ -398,7 +401,6 @@
 				<milkAmount>10</milkAmount>
 			</li>
 			<li Class="CompProperties_Shearable">
-
 				<woolDef>GR_ChickenffaloWool</woolDef>
 				<shearIntervalDays>1</shearIntervalDays>
 				<woolAmount>4</woolAmount>
@@ -413,9 +415,7 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<chickenRimPox>true</chickenRimPox>
 				<carrymore>true</carrymore>
-
 			</li>
-
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
@@ -531,8 +531,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AvianGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Chicken - Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenwolf</defName>
@@ -575,7 +580,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ChickenwolfEggUnfertilized</eggUnfertilizedDef>
@@ -587,7 +591,6 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<chickenRimPox>true</chickenRimPox>
 				<adrenalineburst>true</adrenalineburst>
-
 			</li>
 		</comps>
 		<race>
@@ -707,8 +710,13 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AvianGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Chicken - Rabbit -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenrabbit</defName>
@@ -751,7 +759,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ChickenrabbitEggUnfertilized</eggUnfertilizedDef>
@@ -771,7 +778,6 @@
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>GR_BirdWithTeeth</body>
-
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -874,8 +880,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AvianGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Chicken - Cat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickencat</defName>
@@ -886,7 +897,6 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<MarketValue>150</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
-			
 		</statBases>
 		<tools>
 			<li>
@@ -918,7 +928,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ChickencatEggUnfertilized</eggUnfertilizedDef>
@@ -930,7 +939,6 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<chickenRimPox>true</chickenRimPox>
 				<catreflexes>true</catreflexes>
-
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
@@ -939,7 +947,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>GR_BirdWithTeeth</body>
 			<baseHungerRate>0.14</baseHungerRate>
@@ -1049,9 +1056,13 @@
 					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
-
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AvianGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 </Defs>

@@ -12,7 +12,6 @@
 			<FilthRate>3</FilthRate>
 		</statBases>
 		<tools>
-
 			<li>
 				<label>left claw</label>
 				<capacities>
@@ -81,7 +80,6 @@
 				<rage>true</rage>
 			</li>
 		</comps>
-
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -95,7 +93,7 @@
 			<gestationPeriodDays>22.5</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
-			<wildness>0.75</wildness>			
+			<wildness>0.75</wildness>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -189,10 +187,14 @@
 					<allowFemale>true</allowFemale>
 				</butcherBodyPart>
 			</li>
-
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_CanineGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Wolf - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfalope</defName>
@@ -273,14 +275,12 @@
 				<gatheringIntervalDays>2</gatheringIntervalDays>
 				<resourceAmount>17</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
-
 			</li>
-
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<adrenalineburst>true</adrenalineburst>
 				<explodable>true</explodable>
 			</li>
-		</comps>  
+		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -298,7 +298,6 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
 			<wildness>0.75</wildness>
-			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -388,8 +387,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_CanineGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Wolf - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfchicken</defName>
@@ -464,7 +468,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_WolfchickenEggUnfertilized</eggUnfertilizedDef>
@@ -478,7 +481,6 @@
 				<gatheringIntervalDays>4</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>FeatherGrowth</customResourceString>
-
 			</li>
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<adrenalineburst>true</adrenalineburst>
@@ -488,7 +490,6 @@
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>GR_QuadrupedAnimalWithBeak</body>
-
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -500,7 +501,6 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
 			<wildness>0.75</wildness>
-			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -590,8 +590,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_CanineGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Wolf - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolffalo</defName>
@@ -638,7 +643,6 @@
 					</extraMeleeDamages>
 				</surpriseAttack>
 			</li>
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -649,7 +653,6 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_WolffaloMilk</milkDef>
@@ -669,7 +672,6 @@
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -681,7 +683,6 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>None</trainability>
 			<wildness>0.75</wildness>
-			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
@@ -718,7 +719,6 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
@@ -773,15 +773,17 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_CanineGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Wolf - Rodent  -->
-
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfbeaver</defName>
 		<label>wolfbeaver</label>
-		
 		<description>A Wolf / Beaver hybrid. This fast breeding predator can be a drain on your tree reserves, unless you provide it with some fresh meat.\n\nUseful abilities: Fast breeding.</description>
 		<statBases>
 			<MoveSpeed>7.5</MoveSpeed>
@@ -874,7 +876,6 @@
 			<gestationPeriodDays>6</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
-		
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -911,7 +912,6 @@
 			<li>AnimalGenetic</li>
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Wolfbeaver</defName>
 		<label>wolfbeaver</label>
@@ -960,8 +960,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_CanineGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Wolf - Cat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfcat</defName>
@@ -974,7 +979,6 @@
 			<FilthRate>2</FilthRate>
 		</statBases>
 		<tools>
-
 			<li>
 				<label>left claw</label>
 				<capacities>
@@ -1047,7 +1051,6 @@
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
-
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -1151,10 +1154,13 @@
 					<texPath>Things/Pawn/Animal/Wolf/Wolfcat/GR_Dessicated_Wolfcat</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
-
 			</li>
-
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_CanineGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 </Defs>

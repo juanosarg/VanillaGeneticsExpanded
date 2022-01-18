@@ -1,12 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-
-
-
-
 	<!-- Bear - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearalope</defName>
@@ -83,7 +76,6 @@
 			</li>
 		</tools>
 		<comps>
-
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>Chemfuel</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
@@ -97,7 +89,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -120,7 +111,6 @@
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -146,9 +136,7 @@
 			<li>AnimalGenetic</li>
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="BearBase">
-
 		<defName>GR_Bearalope</defName>
 		<label>bearalope</label>
 		<race>GR_Bearalope</race>
@@ -199,11 +187,16 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_UrsineGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	<!-- Bear - Chicken --> 
+	<!-- Bear - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearchicken</defName>
-		
 		<label>bearchicken</label>
 		<description>A bear / chicken hybrid. Nicknamed "owlbear" by the colonists. Much weaker in melee than a bear, but it lays eggs, and can obviously defend itself in combat much better than a chicken.\n\nUseful abilities: Lays eggs and regularly produces feathers, which can be converted into Featherdust joints.</description>
 		<statBases>
@@ -275,8 +268,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_BearChickenEggUnfertilized</eggUnfertilizedDef>
@@ -293,17 +284,14 @@
 				<gatheringIntervalDays>1</gatheringIntervalDays>
 				<resourceAmount>17</resourceAmount>
 				<customResourceString>FeatherGrowth</customResourceString>
-
 			</li>
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<rage>true</rage>
 				<chickenRimPox>true</chickenRimPox>
 			</li>
 		</comps>
-
 		<race>
 			<fleshType>GR_Normal</fleshType>
-
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -322,7 +310,6 @@
 			<manhunterOnTameFailChance>0.010</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<mateMtbHours>10</mateMtbHours>
-
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -348,14 +335,12 @@
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Bearchicken</defName>
 		<label>bearchicken</label>
 		<race>GR_Bearchicken</race>
@@ -408,6 +393,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_UrsineGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Bear - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -416,7 +407,7 @@
 		<description>A bear / muffalo hybrid. This hulking, wooly bear is a very temperamental pack animal, valued for its hardiness.\n\nUseful abilities: Produces specific high-quality milk and wool. Acts as a pack beast.</description>
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
-			 <FilthRate>12</FilthRate>
+			<FilthRate>12</FilthRate>
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
 			<MarketValue>500</MarketValue>
 		</statBases>
@@ -483,7 +474,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_BearffaloMilk</milkDef>
@@ -499,7 +489,6 @@
 				<rage>true</rage>
 				<carrymore>true</carrymore>
 			</li>
-
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
@@ -517,14 +506,12 @@
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
 			<packAnimal>true</packAnimal>
-			<trainability>Intermediate</trainability>	
+			<trainability>Intermediate</trainability>
 			<body>QuadrupedAnimalWithPaws</body>
 			<baseHungerRate>0.35</baseHungerRate>
 			<intelligence>Animal</intelligence>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -551,7 +538,6 @@
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="BearBase">
-
 		<defName>GR_Bearffalo</defName>
 		<label>bearffalo</label>
 		<race>GR_Bearffalo</race>
@@ -602,12 +588,17 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_UrsineGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Bear - Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearwolf</defName>
 		<label>bearwolf</label>
-		 
 		<description>A bear / wolf hybrid. Strong like a bear, and fast like a wolf. Excellent as a rapid strike force, but their fast metabolism means they need a lot of food.\n\nUseful abilities: Good guard animal. Butchering gives Bearwolf Fangs, which can be sold.</description>
 		<statBases>
 			<MoveSpeed>4.75</MoveSpeed>
@@ -616,7 +607,6 @@
 			<FilthRate>2</FilthRate>
 		</statBases>
 		<comps>
-
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<adrenalineburst>true</adrenalineburst>
 				<rage>true</rage>
@@ -685,8 +675,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
-
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -698,17 +686,14 @@
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
-			<wildness>0.80</wildness>  
+			<wildness>0.80</wildness>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<intelligence>Animal</intelligence>
-
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-
 			<trainability>Advanced</trainability>
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -735,7 +720,6 @@
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="BearBase">
-
 		<defName>GR_Bearwolf</defName>
 		<label>bearwolf</label>
 		<race>GR_Bearwolf</race>
@@ -756,7 +740,7 @@
 					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Dessicated_Bearwolf</texPath>
 					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
-			</li> 
+			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Bearwolf</texPath>
@@ -791,12 +775,16 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_UrsineGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Bear - Rodent -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearmole</defName>
-		
 		<label>bearmole</label>
 		<description>A Bear / Mole hybrid. This blind animal has a very acute sense of vibrations, alllowing it to detect its prey even better than a sighted animal.\n\nUseful abilities: Good guard animal. Very fast breeding.</description>
 		<statBases>
@@ -806,7 +794,6 @@
 			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
-
 			<li>
 				<label>left claw</label>
 				<capacities>
@@ -875,7 +862,6 @@
 				<burrowing>true</burrowing>
 			</li>
 		</comps>
-
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPaws</body>
@@ -891,7 +877,6 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>None</trainability>
 			<wildness>0.6</wildness>
-			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Alphabeaver</useLeatherFrom>
@@ -933,7 +918,6 @@
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Bearmole</defName>
 		<label>bearmole</label>
 		<race>GR_Bearmole</race>
@@ -942,7 +926,6 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearmole/Bearmole</texPath>
 					<drawSize>2.0</drawSize>
@@ -979,12 +962,15 @@
 					<texPath>Things/Pawn/Animal/Bears/Bearmole/Dessicated_Bearmole</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
-
 			</li>
-
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_UrsineGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Bear - Cat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearcat</defName>
@@ -1059,7 +1045,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<rage>true</rage>
@@ -1070,7 +1055,6 @@
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
-
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -1080,7 +1064,7 @@
 			<baseBodySize>1.75</baseBodySize>
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>			
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<gestationPeriodDays>26</gestationPeriodDays>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<trainability>Advanced</trainability>
@@ -1090,7 +1074,6 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Cougar</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
-
 			<lifeExpectancy>13</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -1118,7 +1101,6 @@
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Bearcat</defName>
 		<label>bearcat</label>
 		<race>GR_Bearcat</race>
@@ -1127,7 +1109,6 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearcat/GR_Bearcat</texPath>
 					<drawSize>2.0</drawSize>
@@ -1168,10 +1149,13 @@
 					<bodyPartGroup>HeadAttackTool</bodyPartGroup>
 					<thing>GR_HugeBearCatPelt</thing>
 				</butcherBodyPart>
-
 			</li>
-
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_UrsineGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 </Defs>

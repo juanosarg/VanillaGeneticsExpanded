@@ -136,10 +136,8 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
-
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catbear</defName>
 		<label>catbear</label>
@@ -153,7 +151,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catbear/GR_Catbear</texPath>
 					<drawSize>2</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -164,7 +161,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catbear/GR_Catbear</texPath>
 					<drawSize>3</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -175,7 +171,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catbear/GR_Catbear</texPath>
 					<drawSize>3.5</drawSize>
-
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -187,8 +182,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_FelineGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Cat - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catalope</defName>
@@ -200,160 +200,159 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 		</statBases>
 		<tools>
-			
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="GeneticRim.CompProperties_Draftable">
+				<catreflexes>true</catreflexes>
+				<explodable>true</explodable>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>Chemfuel</resourceDef>
+				<gatheringIntervalDays>1</gatheringIntervalDays>
+				<resourceAmount>5</resourceAmount>
+				<customResourceString>ChemfuelProd</customResourceString>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_MeleeDodge</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<race>
+			<deathActionWorkerClass>GeneticRim.DeathActionWorker_SmallHairballExplosion</deathActionWorkerClass>
+			<executionRange>2</executionRange>
+			<fleshType>GR_Normal</fleshType>
+			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<predator>true</predator>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<maxPreyBodySize>0.25</maxPreyBodySize>
+			<baseBodySize>0.255</baseBodySize>
+			<baseHungerRate>0.05</baseHungerRate>
+			<baseHealthScale>0.42</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<useLeatherFrom>Cat</useLeatherFrom>
+			<useMeatFrom>Cat</useMeatFrom>
+			<wildness>0.36</wildness>
+			<trainability>Intermediate</trainability>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
+			<gestationPeriodDays>24</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(3, 0.7)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>10</lifeExpectancy>
+			<lifeStageAges>
 				<li>
-					<capacities>
-						<li>Bite</li>
-					</capacities>
-					<power>5</power>
-					<cooldownTime>2</cooldownTime>
-					<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-					<chanceFactor>0.7</chanceFactor>
-					<surpriseAttack>
-						<extraMeleeDamages>
-							<li>
-								<def>Stun</def>
-								<amount>8</amount>
-							</li>
-						</extraMeleeDamages>
-					</surpriseAttack>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
 				</li>
 				<li>
-					<label>head</label>
-					<capacities>
-						<li>Blunt</li>
-					</capacities>
-					<power>3</power>
-					<cooldownTime>2</cooldownTime>
-					<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-					<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-					<chanceFactor>0.2</chanceFactor>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
 				</li>
-			</tools>
-			<comps>
-				<li Class="GeneticRim.CompProperties_Draftable">
-					<catreflexes>true</catreflexes>
-					<explodable>true</explodable>
-				</li>
-				<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-					<resourceDef>Chemfuel</resourceDef>
-					<gatheringIntervalDays>1</gatheringIntervalDays>
-					<resourceAmount>5</resourceAmount>
-					<customResourceString>ChemfuelProd</customResourceString>
-				</li>
-				<li Class="AnimalBehaviours.CompProperties_InitialHediff">
-					<hediffname>GR_MeleeDodge</hediffname>
-					<hediffseverity>1</hediffseverity>
-				</li> 
-			</comps>
-			<race>
-				<deathActionWorkerClass>GeneticRim.DeathActionWorker_SmallHairballExplosion</deathActionWorkerClass>
-				<executionRange>2</executionRange>
-				<fleshType>GR_Normal</fleshType>
-				<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
-				<body>QuadrupedAnimalWithPawsAndTail</body>
-				<predator>true</predator>
-				<herdMigrationAllowed>false</herdMigrationAllowed>
-				<maxPreyBodySize>0.25</maxPreyBodySize>
-				<baseBodySize>0.255</baseBodySize>
-				<baseHungerRate>0.05</baseHungerRate>
-				<baseHealthScale>0.42</baseHealthScale>
-				<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-				<useLeatherFrom>Cat</useLeatherFrom>
-				<useMeatFrom>Cat</useMeatFrom>
-				<wildness>0.36</wildness>
-				<trainability>Intermediate</trainability>
-				<nuzzleMtbHours>8</nuzzleMtbHours>
-				<gestationPeriodDays>24</gestationPeriodDays>
-				<nameOnTameChance>1</nameOnTameChance>
-				<litterSizeCurve>
-					<points>
-						<li>(0.5, 0)</li>
-						<li>(1, 1)</li>
-						<li>(2, 1.7)</li>
-						<li>(3, 0.7)</li>
-						<li>(3.5, 0)</li>
-					</points>
-				</litterSizeCurve>
-				<lifeExpectancy>10</lifeExpectancy>
-				<lifeStageAges>
-					<li>
-						<def>AnimalBaby</def>
-						<minAge>0</minAge>
-					</li>
-					<li>
-						<def>AnimalJuvenile</def>
-						<minAge>0.15</minAge>
-					</li>
-					<li>
-						<def>AnimalAdult</def>
-						<minAge>0.4</minAge>
-						<soundWounded>Pawn_Cat_Injured</soundWounded>
-						<soundDeath>Pawn_Cat_Death</soundDeath>
-						<soundCall>Pawn_Cat_Call</soundCall>
-						<soundAngry>Pawn_Cat_Angry</soundAngry>
-					</li>
-				</lifeStageAges>
-				<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-				<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-				<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-			</race>
-			<tradeTags>
-				<li>AnimalGenetic</li>
-
-			</tradeTags>
-		</ThingDef>
-
-		<PawnKindDef ParentName="AnimalKindBase">
-			<defName>GR_Catalope</defName>
-			<label>catalope</label>
-			<race>GR_Catalope</race>
-			<combatPower>45</combatPower>
-			<ecoSystemWeight>1</ecoSystemWeight>
-			<canArriveManhunter>false</canArriveManhunter>
-			<lifeStages>
 				<li>
-					<label>catalope kitten</label>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
-						<drawSize>2</drawSize>
-
-					</bodyGraphicData>
-					<dessicatedBodyGraphicData>
-						<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+					<def>AnimalAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Cat_Injured</soundWounded>
+					<soundDeath>Pawn_Cat_Death</soundDeath>
+					<soundCall>Pawn_Cat_Call</soundCall>
+					<soundAngry>Pawn_Cat_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Catalope</defName>
+		<label>catalope</label>
+		<race>GR_Catalope</race>
+		<combatPower>45</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<lifeStages>
+			<li>
+				<label>catalope kitten</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
+					<drawSize>2</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
 					<drawSize>0.6</drawSize>
-					</dessicatedBodyGraphicData>
-				</li>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
-						<drawSize>3</drawSize>
-
-					</bodyGraphicData>
-					<dessicatedBodyGraphicData>
-						<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
-						<drawSize>0.8</drawSize>
-					</dessicatedBodyGraphicData>
-				</li>
-				<li>
-					<bodyGraphicData>
-						<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
-						<drawSize>3.5</drawSize>
-
-						<shadowData>
-							<volume>(0.25, 0.3, 0.25)</volume>
-							<offset>(0,0,-0.15)</offset>
-						</shadowData>
-					</bodyGraphicData>
-					<dessicatedBodyGraphicData>
-						<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
-						<drawSize>1.0</drawSize>
-					</dessicatedBodyGraphicData>
-				</li>
-			</lifeStages>
-		</PawnKindDef>
-		
-		<!-- Cat - Chicken -->
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
+					<drawSize>3</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_FelineGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	<!-- Cat - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catchicken</defName>
 		<label>catchicken</label>
@@ -364,7 +363,6 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 		</statBases>
 		<tools>
-			
 			<li>
 				<capacities>
 					<li>Bite</li>
@@ -462,10 +460,8 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
-
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catchicken</defName>
 		<label>catchicken</label>
@@ -479,7 +475,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catchicken/GR_Catchicken</texPath>
 					<drawSize>2</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -490,7 +485,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catchicken/GR_Catchicken</texPath>
 					<drawSize>3</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -501,7 +495,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catchicken/GR_Catchicken</texPath>
 					<drawSize>3.5</drawSize>
-
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -513,8 +506,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_FelineGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Cat - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catffalo</defName>
@@ -526,46 +524,46 @@
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
 		</statBases>
 		<tools>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>6</power>
-        <cooldownTime>2.6</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-      </li>
-      <li>
-        <label>left hoof</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>5</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <label>right hoof</label>
-        <capacities>
-          <li>Blunt</li>
-          <li>Poke</li>
-        </capacities>
-        <power>5</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>4</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.5</chanceFactor>
-      </li>
-    </tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<carrymore>true</carrymore>
@@ -575,22 +573,22 @@
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
-			 <li Class="CompProperties_Milkable">
-        <milkDef>Milk</milkDef>
-        <milkIntervalDays>1</milkIntervalDays>
-        <milkAmount>5</milkAmount>
-      </li>
-      <li Class="CompProperties_Shearable">
-        <woolDef>WoolMuffalo</woolDef>
-        <shearIntervalDays>1</shearIntervalDays>
-        <woolAmount>3</woolAmount>
-      </li>
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>5</milkAmount>
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>WoolMuffalo</woolDef>
+				<shearIntervalDays>1</shearIntervalDays>
+				<woolAmount>3</woolAmount>
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithHooves</body>
-			<predator>false</predator>			
+			<predator>false</predator>
 			<baseBodySize>0.4</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>0.8</baseHealthScale>
@@ -638,10 +636,8 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
-
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catffalo</defName>
 		<label>catffalo</label>
@@ -655,7 +651,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
 					<drawSize>2</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -666,7 +661,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
 					<drawSize>3</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -677,7 +671,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
 					<drawSize>3.5</drawSize>
-
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -689,8 +682,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_FelineGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Cat - Rabbit -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catrabbit</defName>
@@ -702,69 +700,69 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 		</statBases>
 		<tools>
-      <li>
-        <label>left claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>4</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>12</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>right claw</label>
-        <capacities>
-          <li>Scratch</li>
-        </capacities>
-        <power>4</power>
-        <cooldownTime>1.5</cooldownTime>
-        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>12</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <capacities>
-          <li>Bite</li>
-        </capacities>
-        <power>7</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-        <chanceFactor>0.7</chanceFactor>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-      </li>
-      <li>
-        <label>head</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>3</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-        <chanceFactor>0.2</chanceFactor>
-      </li>
-    </tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>12</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>12</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<burrowing>true</burrowing>
@@ -792,7 +790,7 @@
 			<trainability>Intermediate</trainability>
 			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<mateMtbHours>1</mateMtbHours>
-			<gestationPeriodDays>5</gestationPeriodDays>			
+			<gestationPeriodDays>5</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -828,10 +826,8 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
-
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catrabbit</defName>
 		<label>catrabbit</label>
@@ -845,7 +841,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catrabbit/GR_Catrabbit</texPath>
 					<drawSize>2</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -856,7 +851,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catrabbit/GR_Catrabbit</texPath>
 					<drawSize>3</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -867,7 +861,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catrabbit/GR_Catrabbit</texPath>
 					<drawSize>3.5</drawSize>
-
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -879,9 +872,14 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_FelineGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
-<!-- Cat - Wolf -->
+	<!-- Cat - Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catwolf</defName>
 		<label>catwolf</label>
@@ -1017,10 +1015,8 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
-
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catwolf</defName>
 		<label>catwolf</label>
@@ -1034,7 +1030,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catwolf/GR_Catwolf</texPath>
 					<drawSize>2</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -1045,7 +1040,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catwolf/GR_Catwolf</texPath>
 					<drawSize>3</drawSize>
-
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
@@ -1056,7 +1050,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Catwolf/GR_Catwolf</texPath>
 					<drawSize>3.5</drawSize>
-
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -1068,7 +1061,11 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_FelineGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
-
-	</Defs>
+</Defs>

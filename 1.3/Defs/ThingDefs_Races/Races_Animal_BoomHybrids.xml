@@ -37,10 +37,10 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      </li>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
 		</tools>
 		<comps>
-
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>Chemfuel</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
@@ -50,8 +50,8 @@
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<rage>true</rage>
 				<explodable>true</explodable>
-			</li>	  
-		</comps>   
+			</li>
+		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<intelligence>Animal</intelligence>
@@ -111,7 +111,6 @@
 				<labelPlural>boomabear calves</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomabear/Boomabear</texPath>
-
 					<drawSize>1.0</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
@@ -127,7 +126,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomabear/Boomabear</texPath>
-
 					<drawSize>2</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
@@ -143,7 +141,6 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomabear/Boomabear</texPath>
-
 					<drawSize>3</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
@@ -157,8 +154,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BoomalopeGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Boomalope - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomachicken</defName>
@@ -180,7 +182,8 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      </li>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
 			<li>
 				<label>bite</label>
 				<capacities>
@@ -191,7 +194,6 @@
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_BoomachickenEggUnfertilized</eggUnfertilizedDef>
@@ -312,8 +314,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BoomalopeGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Boomalope - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomffalo</defName>
@@ -335,7 +342,8 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      </li>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
 		</tools>
 		<comps>
 			<li Class="CompProperties_Milkable">
@@ -459,8 +467,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BoomalopeGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Boomalope - Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomwolf</defName>
@@ -498,7 +511,8 @@
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      </li>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
 		</tools>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
@@ -514,7 +528,7 @@
 		</comps>
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
-			<body>QuadrupedAnimalWithHoovesAndHump</body>			
+			<body>QuadrupedAnimalWithHoovesAndHump</body>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_StunningExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
@@ -565,7 +579,6 @@
 		<combatPower>130</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-
 		<lifeStages>
 			<li>
 				<label>boomwolf calf</label>
@@ -615,14 +628,17 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BoomalopeGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Boomalope - Rodent -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomsquirrel</defName>
-		
 		<label>boomsquirrel</label>
-		
 		<description>A Boomalope / Squirrel hybrid. Slightly smaller than other boomalope hybrids. While lacking in size, it is faster moving, faster breeding and faster producing chemfuel than base boomalopes.\n\nUseful abilities: Explodes on death. Produces more chemfuel than regular boomalopes. Very fast breeding. Can be slaughtered for their horns.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
@@ -666,7 +682,8 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      </li>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
 		</tools>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
@@ -674,20 +691,19 @@
 				<gatheringIntervalDays>2</gatheringIntervalDays>
 				<resourceAmount>15</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
-
 			</li>
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<explodable>true</explodable>
 				<burrowing>true</burrowing>
 			</li>
-		</comps>  
+		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
-			<executionRange>6</executionRange>    
+			<executionRange>6</executionRange>
 			<baseBodySize>1.3</baseBodySize>
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>0.55</baseHealthScale>
@@ -732,10 +748,9 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
-			<butcherProducts>
-		<GR_SquirralopeHorn>1</GR_SquirralopeHorn>
-		
-	</butcherProducts>
+		<butcherProducts>
+			<GR_SquirralopeHorn>1</GR_SquirralopeHorn>
+		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boomsquirrel</defName>
@@ -745,11 +760,7 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-		
-		
-		
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boomsquirrel/Boomsquirrel</texPath>
 					<drawSize>1.5</drawSize>
@@ -788,8 +799,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BoomalopeGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Boomalope - Cat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomcat</defName>
@@ -827,7 +843,8 @@
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      </li>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
 		</tools>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
@@ -878,8 +895,8 @@
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
 					<soundWounded>Pawn_Cougar_Injured</soundWounded>
-          <soundDeath>Pawn_Cougar_Death</soundDeath>
-          <soundAngry>Pawn_Cougar_Angry</soundAngry>
+					<soundDeath>Pawn_Cougar_Death</soundDeath>
+					<soundAngry>Pawn_Cougar_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -897,7 +914,6 @@
 		<combatPower>120</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-
 		<lifeStages>
 			<li>
 				<label>boomcat kitten</label>
@@ -947,6 +963,11 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BoomalopeGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 </Defs>

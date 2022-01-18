@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- Rodent - Bear -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Molebear</defName>
-
 		<label>molebear</label>
 		<description>A Mole / Bear hybrid. The molebear combines the resilience of a bear with the extremely low methabolic rate of a mole rat. These creatures lack pain sensitivity, so if you want to kill one, there is no "knocking it unconscious".\n\nUseful abilities: No pain sensitivity. Fast breeding.</description>
 		<statBases>
@@ -14,7 +12,6 @@
 			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
-
 			<li>
 				<label>left claw</label>
 				<capacities>
@@ -87,7 +84,6 @@
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
-
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPaws</body>
@@ -103,7 +99,6 @@
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>None</trainability>
 			<wildness>0.6</wildness>
-			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Rat</useLeatherFrom>
@@ -146,7 +141,6 @@
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Molebear</defName>
 		<label>molebear</label>
 		<race>GR_Molebear</race>
@@ -155,7 +149,6 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Molebear/GR_Molebear</texPath>
 					<drawSize>2.0</drawSize>
@@ -192,7 +185,6 @@
 					<texPath>Things/Pawn/Animal/Rodent/Molebear/GR_Dessicated_Molebear</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
-
 			</li>
 			<modExtensions>
 				<li Class="GeneticRim.DefExtension_Hybrid">
@@ -202,9 +194,6 @@
 			</modExtensions>
 		</lifeStages>
 	</PawnKindDef>
-
-
-
 	<!-- Rodent - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Squirralope</defName>
@@ -261,20 +250,19 @@
 				<gatheringIntervalDays>1</gatheringIntervalDays>
 				<resourceAmount>8</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
-
 			</li>
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<explodable>true</explodable>
 				<burrowing>true</burrowing>
 			</li>
-		</comps>  
+		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
-			<executionRange>4</executionRange>    
+			<executionRange>4</executionRange>
 			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>0.25</baseHealthScale>
@@ -282,7 +270,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<mateMtbHours>4</mateMtbHours>
 			<gestationPeriodDays>7</gestationPeriodDays>
-			<wildness>0.5</wildness>			
+			<wildness>0.5</wildness>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
 			<litterSizeCurve>
@@ -329,7 +317,6 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Squirralope/Squirralope</texPath>
 					<drawSize>1</drawSize>
@@ -368,9 +355,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_RodentGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
-
 	<!-- Rabbit - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Rabbitchicken</defName>
@@ -403,9 +394,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
-
 			<li Class="GeneticRim.CompProperties_Draftable">
 				<chickenRimPox>true</chickenRimPox>
 				<burrowing>true</burrowing>
@@ -414,7 +403,6 @@
 		<race>
 			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -426,7 +414,6 @@
 			<gestationPeriodDays>3</gestationPeriodDays>
 			<trainability>None</trainability>
 			<wildness>0.65</wildness>
-
 			<useLeatherFrom>Hare</useLeatherFrom>
 			<useMeatFrom>Hare</useMeatFrom>
 			<litterSizeCurve>
@@ -474,10 +461,8 @@
 		<combatPower>20</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitchicken/GR_Rabbitchicken</texPath>
 					<drawSize>0.6</drawSize>
@@ -516,8 +501,13 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_RodentGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Rat - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Ratffalo</defName>
@@ -548,7 +538,6 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_RatMilk</milkDef>
@@ -604,7 +593,6 @@
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
@@ -619,8 +607,6 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
-
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Ratffalo/GR_Ratffalo</texPath>
 					<drawSize>2.5</drawSize>
@@ -659,17 +645,17 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_RodentGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
-	
-
 	<!-- Beaver - Wolf -->
-
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Beaverwolf</defName>
 		<label>beaverwolf</label>
-
 		<description>A Beaver / Wolf hybrid. Beaverwolves can eat either meat or trees, although they are not as voracious as the wolfbeaver hybrid. They are not as efficient in battle, but they produce castoreum, which can be used to cook.\n\nUseful abilities: Regularly produces a secretion called castoreum that can be used as a cooking ingredient. Fast breeding.</description>
 		<statBases>
 			<MoveSpeed>6.5</MoveSpeed>
@@ -687,7 +673,6 @@
 				<gatheringIntervalDays>1</gatheringIntervalDays>
 				<resourceAmount>10</resourceAmount>
 				<customResourceString>CastoreumProd</customResourceString>
-
 			</li>
 		</comps>
 		<tools>
@@ -770,7 +755,6 @@
 			<gestationPeriodDays>6</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
-			
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>
@@ -807,7 +791,6 @@
 			<li>AnimalGenetic</li>
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Beaverwolf</defName>
 		<label>beaverwolf</label>
@@ -856,15 +839,17 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_RodentGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Rabbit - Cat -->
-
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Rabbitcat</defName>
 		<label>rabbitcat</label>
-
 		<description>A Rabbit / Cat hybrid. The rabbitcat is a very efficient predator. Equipped with excellent hearing and a keen intelligence.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. Fast breeding. Its fangs can be used as a trophy or sold for a profit.</description>
 		<statBases>
 			<MoveSpeed>5.75</MoveSpeed>
@@ -968,7 +953,6 @@
 			<li>AnimalGenetic</li>
 		</tradeTags>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Rabbitcat</defName>
 		<label>rabbitcat</label>
@@ -1021,6 +1005,11 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_RodentGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 </Defs>
