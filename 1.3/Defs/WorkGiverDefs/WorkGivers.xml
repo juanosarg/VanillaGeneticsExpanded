@@ -21,6 +21,23 @@
 	</WorkGiverDef>
 	
 	<WorkGiverDef>
+		<defName>GR_DoBillsTissueGrinder</defName>
+		<label>works at tissue grinder</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>GR_TissueGrinder</li>
+		</fixedBillGiverDefs>
+		<verb>grinding tissues</verb>
+		<gerund>grinding tissues at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
 		<defName>GR_DoBillsGenePod</defName>
 		<label>works at genepod</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
