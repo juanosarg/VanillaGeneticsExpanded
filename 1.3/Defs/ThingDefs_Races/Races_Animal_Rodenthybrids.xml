@@ -186,13 +186,14 @@
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
-			<modExtensions>
+			
+		</lifeStages>
+		<modExtensions>
 				<li Class="GeneticRim.DefExtension_Hybrid">
 					<dominantGenome>GR_RodentGenetic</dominantGenome>
 					<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
 				</li>
 			</modExtensions>
-		</lifeStages>
 	</PawnKindDef>
 	<!-- Rodent - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">

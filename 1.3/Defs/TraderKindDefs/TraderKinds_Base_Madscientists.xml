@@ -87,9 +87,7 @@
 	  <li Class="StockGenerator_BuySingleDef">
         <thingDef>GR_MechaMilk</thingDef>
       </li>	  
-	  <li Class="StockGenerator_BuySingleDef">
-        <thingDef>GR_EmptyIncubator</thingDef>
-      </li>
+	 
 	  <li Class="StockGenerator_BuySingleDef">
         <thingDef>GR_Owlbearfeathers</thingDef>
       </li>

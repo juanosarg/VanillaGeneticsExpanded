@@ -3,53 +3,6 @@
 
 
 
-	<RecipeDef>
-		<defName>GR_BaseIncubator</defName>
-		<label>manufacture empty incubator</label>
-		<description>Manufacture an empty incubator using Steel and an organic growth compound.</description>
-		<jobString>Manufacturing empty incubator</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>800</workAmount>
-		<recipeUsers>
-			<li>GR_GeneticExtractionTable</li>	 
-			<li>GR_ParagonSerumExtractionTable</li>	  
-
-		</recipeUsers>	
-		<ingredients>
-			<li>
-				<filter>
-
-					<thingDefs>
-						<li>Steel</li>
-
-					</thingDefs>
-				</filter>
-				<count>5</count>
-			</li>
-			<li>
-				<filter>
-
-					<thingDefs>
-						<li>GR_OrganicPulp</li>
-
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-
-			<thingDefs>
-				<li>Steel</li>
-				<li>GR_OrganicPulp</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<GR_EmptyIncubator>1</GR_EmptyIncubator>
-		</products>
-
-	</RecipeDef>
 
 
 
@@ -89,7 +42,7 @@
 			<GR_UrsineGenetic>1</GR_UrsineGenetic>
 		</products>
 		<skillRequirements>
-			<Intellectual>5</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -139,7 +92,7 @@
 			<GR_AvianGenetic>1</GR_AvianGenetic>
 		</products>
 		<skillRequirements>
-			<Intellectual>5</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -161,6 +114,7 @@
 
 					<thingDefs>
 						<li>Corpse_Boomalope</li>
+						<li>Corpse_Boomrat</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -170,13 +124,14 @@
 
 			<thingDefs>
 				<li>Corpse_Boomalope</li>
+				<li>Corpse_Boomrat</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
 			<GR_BoomalopeGenetic>1</GR_BoomalopeGenetic>
 		</products>
 		<skillRequirements>
-			<Intellectual>5</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -217,7 +172,7 @@
 			<GR_MuffaloGenetic>1</GR_MuffaloGenetic>
 		</products>
 		<skillRequirements>
-			<Intellectual>5</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -270,7 +225,7 @@
 			<GR_CanineGenetic>1</GR_CanineGenetic>
 		</products>
 		<skillRequirements>
-			<Intellectual>5</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -326,7 +281,7 @@
 			<GR_RodentGenetic>1</GR_RodentGenetic>
 		</products>
 		<skillRequirements>
-			<Intellectual>5</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	
@@ -370,7 +325,7 @@
 			<GR_FelineGenetic>1</GR_FelineGenetic>
 		</products>
 		<skillRequirements>
-			<Intellectual>5</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -416,7 +371,7 @@
 		</products>
 		<researchPrerequisite>GR_InsectoidGenome</researchPrerequisite>
 		<skillRequirements>
-			<Intellectual>7</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -462,7 +417,7 @@
 		</products>
 		<researchPrerequisite>GR_ReptileGenome</researchPrerequisite>
 		<skillRequirements>
-			<Intellectual>7</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -498,7 +453,7 @@
 		</products>
 		<researchPrerequisite>GR_HumanoidGeneticEngineering</researchPrerequisite>
 		<skillRequirements>
-			<Intellectual>7</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
@@ -520,6 +475,8 @@
 
 					<thingDefs>
 						<li>Corpse_Thrumbo</li>
+						<li>Corpse_Elephant</li>
+						<li>Corpse_Megasloth</li>
 
 					</thingDefs>
 				</filter>
@@ -530,6 +487,8 @@
 
 			<thingDefs>
 				<li>Corpse_Thrumbo</li>
+				<li>Corpse_Elephant</li>
+				<li>Corpse_Megasloth</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>
@@ -538,11 +497,11 @@
 		</products>
 		<researchPrerequisite>GR_AdvancedGeneticEngineering</researchPrerequisite>
 		<skillRequirements>
-			<Intellectual>10</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 
-	<RecipeDef>
+<!--	<RecipeDef>
 		<defName>GR_ExtractGenesMechanoid</defName>
 		<label>extract genes from a mechanoid</label>
 		<description>Extract genetic material from a mechanoid corpse.</description>
@@ -585,7 +544,7 @@
 		<skillRequirements>
 			<Intellectual>10</Intellectual>
 		</skillRequirements>
-	</RecipeDef>
+	</RecipeDef>-->
 	
 	<RecipeDef>
 		<defName>GR_ExtractNonSpecializedGenes</defName>
@@ -630,7 +589,7 @@
 			<GR_NonSpecializedGenetic>1</GR_NonSpecializedGenetic>
 		</products>
 		<skillRequirements>
-			<Intellectual>5</Intellectual>
+			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 

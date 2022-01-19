@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="GR_GenoframeRecipeBase" Abstract="true">
+		<jobString>Creating genoframe</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>3500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>GR_TissueGrinder</li>
+		</recipeUsers>
+		<unfinishedThingDef>GR_GenoframeUnfinished</unfinishedThingDef>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_GenoframeRecipeBase">
+		<defName>GR_GenoframeAwfulRecipe</defName>
+		<label>Create Genoframe (Awful)</label>
+		<description>Create an awful quality genoframe from an animal corpse.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<disallowedCategories>
+				<li>CorpsesMechanoid</li>
+			</disallowedCategories>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesAnimal</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<GR_GenoframeAwful>1</GR_GenoframeAwful>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_GenoframeRecipeBase">
+		<defName>GR_GenoframePoorRecipe</defName>
+		<label>Create Genoframe (Poor)</label>
+		<description>Create a poor quality genoframe from two awful quality genoframes.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_GenoframeAwful</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_GenoframeAwful</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_GenoframePoor>1</GR_GenoframePoor>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_GenoframeRecipeBase">
+		<defName>GR_GenoframeNormalRecipe</defName>
+		<label>Create Genoframe (Normal)</label>
+		<description>Create a normal quality genoframe from two poor quality genoframes.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_GenoframePoor</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_GenoframePoor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_GenoframeNormal>1</GR_GenoframeNormal>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_GenoframeRecipeBase">
+		<defName>GR_GenoframeGoodRecipe</defName>
+		<label>Create Genoframe (Good)</label>
+		<description>Create a good quality genoframe from two normal quality genoframes.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_GenoframeNormal</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_GenoframeNormal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_GenoframeGood>1</GR_GenoframeGood>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_GenoframeRecipeBase">
+		<defName>GR_GenoframeExcellentRecipe</defName>
+		<label>Create Genoframe (Excellent)</label>
+		<description>Create an excellent quality genoframe from two good quality genoframes.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_GenoframeGood</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_GenoframeGood</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_GenoframeExcellent>1</GR_GenoframeExcellent>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_GenoframeRecipeBase">
+		<defName>GR_GenoframeMasterworkRecipe</defName>
+		<label>Create Genoframe (Masterwork)</label>
+		<description>Create a masterwork quality genoframe from two excellent quality genoframes.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_GenoframeExcellent</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_GenoframeExcellent</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_GenoframeMasterwork>1</GR_GenoframeMasterwork>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_GenoframeRecipeBase">
+		<defName>GR_GenoframeLegendaryRecipe</defName>
+		<label>Create Genoframe (Legendary)</label>
+		<description>Create a legendary quality genoframe from two masterwork quality genoframes.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_GenoframeMasterwork</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_GenoframeMasterwork</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_GenoframeLegendary>1</GR_GenoframeLegendary>
+		</products>
+	</RecipeDef>
+</Defs>

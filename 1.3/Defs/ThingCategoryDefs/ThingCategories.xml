@@ -17,6 +17,13 @@
       
     </ThingCategoryDef>
 	<ThingCategoryDef>
+      <defName>GR_Genoframes</defName>
+      <label>genoframes</label>
+      <parent>GR_GeneticMaterial</parent>
+	  <iconPath>Things/Item/Genoframe</iconPath>
+      
+    </ThingCategoryDef>
+	<ThingCategoryDef>
       <defName>GR_ParagonSerums</defName>
       <label>paragon serums</label>
       <parent>GR_GeneticMaterial</parent>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=============== Genoframes ====================-->
+	<ThingDef Name="GR_GenoframeBase" ParentName="ResourceBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Genoframe</texPath>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<Mass>0.10</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		
+		<thingCategories>
+			<li>GR_Genoframes</li>
+		</thingCategories>
+	</ThingDef>
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>GR_GenoframeUnfinished</defName>
+		<label>unfinished genoframe</label>
+		<description>An unfinished genoframe of some kind.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/UnfinishedGenoframe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false"/>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenoframeBase">
+		<defName>GR_GenoframeAwful</defName>
+		<label>Genoframe (Awful)</label>
+		<description>A stable genetic material consumed by the genomorpher machine that serves as a framework for hybrid experimentation. After the framework is used to create a growthcell, the genoframe is empty and discarded.\n\nAwful genoframe will result in a hybrid with greatly decreased stats over a normal hybrid.</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenoframeBase">
+		<defName>GR_GenoframePoor</defName>
+		<label>Genoframe (Poor)</label>
+		<description>A stable genetic material consumed by the genomorpher machine that serves as a framework for hybrid experimentation. After the framework is used to create a growthcell, the genoframe is empty and discarded.\n\nPoor genoframe will result in a hybrid with slightly decreased stats over a normal hybrid.</description>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenoframeBase">
+		<defName>GR_GenoframeNormal</defName>
+		<label>Genoframe (Normal)</label>
+		<description>A stable genetic material consumed by the genomorpher machine that serves as a framework for hybrid experimentation. After the framework is used to create a growthcell, the genoframe is empty and discarded.\n\nNormal genoframe will result in a hybrid with baseline stats.</description>
+		<statBases>
+			<MarketValue>200</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenoframeBase">
+		<defName>GR_GenoframeGood</defName>
+		<label>Genoframe (Good)</label>
+		<description>A stable genetic material consumed by the genomorpher machine that serves as a framework for hybrid experimentation. After the framework is used to create a growthcell, the genoframe is empty and discarded.\n\nGood genoframe will result in a hybrid with slightly improved stats over a normal hybrid.</description>
+		<statBases>
+			<MarketValue>400</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenoframeBase">
+		<defName>GR_GenoframeExcellent</defName>
+		<label>Genoframe (Excellent)</label>
+		<description>A stable genetic material consumed by the genomorpher machine that serves as a framework for hybrid experimentation. After the framework is used to create a growthcell, the genoframe is empty and discarded.\n\nExcellent genoframe will result in a hybrid with significantly improved stats over a normal hybrid.</description>
+		<statBases>
+			<MarketValue>800</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenoframeBase">
+		<defName>GR_GenoframeMasterwork</defName>
+		<label>Genoframe (Masterwork)</label>
+		<description>A stable genetic material consumed by the genomorpher machine that serves as a framework for hybrid experimentation. After the framework is used to create a growthcell, the genoframe is empty and discarded.\n\nMasterwork genoframe will result in a hybrid with superior stats over a normal hybrid.</description>
+		<statBases>
+			<MarketValue>1600</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenoframeBase">
+		<defName>GR_GenoframeLegendary</defName>
+		<label>Genoframe (Legendary)</label>
+		<description>A stable genetic material consumed by the genomorpher machine that serves as a framework for hybrid experimentation. After the framework is used to create a growthcell, the genoframe is empty and discarded.\n\nLegendary genoframe will result in an incredibly powerful hybrid that’s eclipsing normal creatures.</description>
+		<statBases>
+			<MarketValue>3200</MarketValue>
+		</statBases>
+	</ThingDef>
+</Defs>
