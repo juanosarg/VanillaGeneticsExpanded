@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="GR_BoosterRecipeBase" Abstract="true">
+		<jobString>Creating booster</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>GR_GeneticsTinkeringTable</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftImmunobooster</defName>
+		<label>Craft Immunobooster</label>
+		<description>Craft an immunobooster.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterImmuno>1</GR_BoosterImmuno>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftImmunoboosterBulk</defName>
+		<label>Craft 5x Immunobooster</label>
+		<workAmount>1500</workAmount>
+		<description>Craft immunoboosters in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Neutroamine</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Neutroamine</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterImmuno>5</GR_BoosterImmuno>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftHarmonobooster</defName>
+		<label>Craft Harmonobooster</label>
+		<description>Craft a harmonobooster.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterHarmono>1</GR_BoosterHarmono>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftHarmonoboosterBulk</defName>
+		<label>Craft 5x Harmonobooster</label>
+		<workAmount>1500</workAmount>
+		<description>Craft harmonoboosters in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Chemfuel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterHarmono>5</GR_BoosterHarmono>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftTempobooster</defName>
+		<label>Craft Tempobooster</label>
+		<description>Craft a tempobooster.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>InsectJelly</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>InsectJelly</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterTempo>1</GR_BoosterTempo>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftTempoboosterBulk</defName>
+		<label>Craft 5x Tempobooster</label>
+		<workAmount>1500</workAmount>
+		<description>Craft tempoboosters in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>InsectJelly</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>InsectJelly</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterTempo>5</GR_BoosterTempo>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftFertilityUnblocker</defName>
+		<label>Craft Fertility Unblocker</label>
+		<description>Craft a fertility unblocker.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterFertility>1</GR_BoosterFertility>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftFertilityUnblockerBulk</defName>
+		<label>Craft 5x Fertility Unblocker</label>
+		<workAmount>1500</workAmount>
+		<description>Craft fertility unblockers in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>MedicineIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterFertility>5</GR_BoosterFertility>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftStabilizator</defName>
+		<label>Craft Stabilizator</label>
+		<description>Craft an stabilizator.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_BoosterHarmono</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_BoosterImmuno</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_BoosterHarmono</li>
+				<li>GR_BoosterImmuno</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterStabilizator>1</GR_BoosterStabilizator>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftStabilizatorBulk</defName>
+		<label>Craft 5x Stabilizator</label>
+		<workAmount>1500</workAmount>
+		<description>Craft stabilizators in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_BoosterHarmono</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_BoosterImmuno</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_BoosterHarmono</li>
+				<li>GR_BoosterImmuno</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterStabilizator>5</GR_BoosterStabilizator>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftController</defName>
+		<label>Craft Controller</label>
+		<description>Craft a controller.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterController>1</GR_BoosterController>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_CraftControllerBulk</defName>
+		<label>Craft 5x Controller</label>
+		<workAmount>1500</workAmount>
+		<description>Craft controllers in bulk.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoosterController>5</GR_BoosterController>
+		</products>		
+	</RecipeDef>
+	
+</Defs>

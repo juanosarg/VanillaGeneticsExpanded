@@ -7,7 +7,7 @@
 		<defName>GR_DoBillsGenetics</defName>
 		<label>works at genetics table</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_GeneticExtractionTable</li>
@@ -24,7 +24,7 @@
 		<defName>GR_DoBillsTissueGrinder</defName>
 		<label>works at tissue grinder</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_TissueGrinder</li>
@@ -38,10 +38,27 @@
 	</WorkGiverDef>
 	
 	<WorkGiverDef>
+		<defName>GR_DoBillsGeneticsTinkeringTable</defName>
+		<label>works at genetics tinkering table</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>GR_Genetics</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>GR_GeneticsTinkeringTable</li>
+		</fixedBillGiverDefs>
+		<verb>tinkering</verb>
+		<gerund>tinkering at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+	<WorkGiverDef>
 		<defName>GR_DoBillsGenePod</defName>
 		<label>works at genepod</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_GenePod</li>
@@ -58,7 +75,7 @@
 		<defName>GR_DoBillsAdvancedGenePod</defName>
 		<label>works at advanced genepod</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_AdvancedGenePod</li>
@@ -75,7 +92,7 @@
 		<defName>GR_DoBillsPulper</defName>
 		<label>works at wood pulper</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_Pulper</li>
@@ -92,7 +109,7 @@
 		<defName>GR_DoBillsRecycler</defName>
 		<label>works at recycler</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_PulpRecycler</li>
@@ -110,7 +127,7 @@
 		<defName>GR_DoBillsGeneRecombinator</defName>
 		<label>works at gene recombinator</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_GeneRecombinator</li>
@@ -127,7 +144,7 @@
 		<defName>GR_DoBillsGeneDuplicator</defName>
 		<label>works at gene duplicator</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_GeneDuplicator</li>
@@ -144,7 +161,7 @@
 		<defName>GR_DoBillsVat</defName>
 		<label>works at tissue growing vat</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_TissueGrowingVat</li>
@@ -161,7 +178,7 @@
 		<defName>GR_DoBillsSerumTable</defName>
 		<label>works at paragon serum extraction table</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_ParagonSerumExtractionTable</li>
@@ -178,7 +195,7 @@
 		<defName>GR_DoBillsGenetrainerBench</defName>
 		<label>works at genetrainer bench</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_GenetrainerBench</li>
@@ -195,7 +212,7 @@
 		<defName>GR_DoBillsAnimalEnrichment</defName>
 		<label>works at animal enrichment center</label>
 		<giverClass>WorkGiver_DoBill</giverClass>
-		<workType>Crafting</workType>
+		<workType>GR_Genetics</workType>
 		<priorityInType>100</priorityInType>
 		<fixedBillGiverDefs>
 			<li>GR_AnimalEnrichmentCenter</li>

@@ -250,7 +250,7 @@
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <surfaceType>Item</surfaceType>
     <canOverlapZones>false</canOverlapZones>
-    <designationCategory>GR_GeneticsTab</designationCategory>
+  
   </ThingDef>
   
     <ThingDef ParentName="BuildingBase">

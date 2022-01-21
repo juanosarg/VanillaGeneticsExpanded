@@ -233,6 +233,63 @@
 		</researchPrerequisites>
 		<designationCategory>GR_GeneticsTab</designationCategory>
 	</ThingDef>
+	
+	<ThingDef ParentName="BenchBase">
+		<defName>GR_GeneticsTinkeringTable</defName>
+		<label>genetics tinkering table</label>		
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		
+		<description>Desc-todo.</description>
+		<graphicData>
+			<texPath>Things/Building/TableGeneticTinkering/TableGeneticTinkering</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,2)</drawSize>
+		</graphicData>
+		
+		<uiIconScale>0.75</uiIconScale>
+		<castEdgeShadows>false</castEdgeShadows>
+		<costList>
+			<Steel>210</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.25</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>35</Mass>
+			<WorkToBuild>1200</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+	
+		<size>(5,2)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>GR_NutrientVat</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>GR_GeneticEngineering</li>
+		</researchPrerequisites>
+		<designationCategory>GR_GeneticsTab</designationCategory>
+	</ThingDef>
 
 
 

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <WorkTypeDef>
+    <defName>GR_Genetics</defName>
+    <labelShort>genetics</labelShort>
+    <pawnLabel>Genetic researcher</pawnLabel>
+    <gerundLabel>researching genetics</gerundLabel>
+    <description>Perform genetics research work.</description>
+    <verb>Research genetics at</verb>
+    <naturalPriority>101</naturalPriority>
+    <disabledForSlaves>true</disabledForSlaves>
+    <relevantSkills>
+      <li>Intellectual</li>
+    </relevantSkills>
+    <workTags>
+      <li>Intellectual</li>
+      <li>Commoner</li>
+      <li>AllWork</li>
+    </workTags>
+  </WorkTypeDef>
+
+</Defs>

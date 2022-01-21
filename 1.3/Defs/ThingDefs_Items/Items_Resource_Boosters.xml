@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=============== Boosters ====================-->
+	<ThingDef Name="GR_BoosterBase" ParentName="ResourceBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_StackCount</graphicClass>			
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>15</MaxHitPoints>
+			<Mass>0.10</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		
+		<thingCategories>
+			<li>GR_Boosters</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_BoosterImmuno</defName>
+		<label>immunobooster</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/Immunobooster</texPath>			
+		</graphicData>
+		<description>Text-todo.</description>
+		<statBases>
+			<MarketValue>20</MarketValue>
+		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				
+				<safety>5</safety>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_BoosterHarmono</defName>
+		<label>harmonobooster</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/Harmonobooster</texPath>			
+		</graphicData>
+		<description>Text-todo.</description>
+		<statBases>
+			<MarketValue>12</MarketValue>
+		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				
+				<stability>5</stability>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_BoosterTempo</defName>
+		<label>tempobooster</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/Tempobooster</texPath>			
+		</graphicData>
+		<description>Text-todo.</description>
+		<statBases>
+			<MarketValue>18</MarketValue>
+		</statBases>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_BoosterFertility</defName>
+		<label>fertility unblocker</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/FertilityUnblocker</texPath>			
+		</graphicData>
+		<description>Text-todo.</description>
+		<statBases>
+			<MarketValue>28</MarketValue>
+		</statBases>
+		
+	</ThingDef>
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_BoosterStabilizator</defName>
+		<label>stabilizator</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/Stabilizator</texPath>			
+		</graphicData>
+		<description>Text-todo.</description>
+		<statBases>
+			<MarketValue>32</MarketValue>
+		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				<stability>10</stability>
+				<safety>10</safety>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_BoosterController</defName>
+		<label>controller</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/Controller</texPath>			
+		</graphicData>
+		<description>Text-todo.</description>
+		<statBases>
+			<MarketValue>220</MarketValue>
+		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				
+				<safety>-5</safety>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>
