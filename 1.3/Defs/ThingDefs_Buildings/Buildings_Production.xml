@@ -245,7 +245,7 @@
 		<graphicData>
 			<texPath>Things/Building/TableGeneticTinkering/TableGeneticTinkering</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5,2)</drawSize>
+			 <drawSize>(7,4)</drawSize>
 		</graphicData>
 		
 		<uiIconScale>0.75</uiIconScale>
@@ -354,6 +354,68 @@
 		<designationCategory>GR_GeneticsTab</designationCategory>
 	</ThingDef>
 	
+	<ThingDef ParentName="BuildingBase">
+		<defName>GR_GeneRecombinator</defName>
+		<label>genome recombinator</label>
+		<canOverlapZones>false</canOverlapZones>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<thingClass>Building_WorkTable</thingClass>
+		<description>todo.</description>
+		<graphicData>
+			<texPath>Things/Building/GenomeRecombinator/GenomeRecombinator</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			 <drawSize>(4,3)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<castEdgeShadows>false</castEdgeShadows>
+		<costList>
+			<Steel>140</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Gold>6</Gold>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>56</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,2)</size>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>GR_NutrientVat</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>GR_GeneticDuplication</li>
+		</researchPrerequisites>
+		<designationCategory>GR_GeneticsTab</designationCategory>
+	</ThingDef>
 	
 	
 	
@@ -367,6 +429,7 @@
 	
 	
 	
+	<!-- Old -->
 	
 	
 	
@@ -539,68 +602,7 @@
 		</researchPrerequisites>
 		
 	</ThingDef>
-	<ThingDef ParentName="BuildingBase">
-		<defName>GR_GeneRecombinator</defName>
-		<label>gene recombinator</label>
-		<canOverlapZones>false</canOverlapZones>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
-		<thingClass>Building_WorkTable</thingClass>
-		<description>Mixes genes from different species, and produces genes from other species at random. Or not. Also, be careful, you don't want to mix frogs with other things. Life finds a way.</description>
-		<graphicData>
-			<texPath>Things/Building/GR_GeneRecombinator</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
-		</graphicData>
-		<uiIconScale>0.75</uiIconScale>
-		<castEdgeShadows>false</castEdgeShadows>
-		<costList>
-			<Steel>75</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
-			<GR_OrganicPulp>5</GR_OrganicPulp>
-		</costList>
-		<altitudeLayer>Building</altitudeLayer>
-		<fillPercent>0.5</fillPercent>
-		<useHitPoints>True</useHitPoints>
-		<statBases>
-			<Mass>56</Mass>
-			<WorkToBuild>500</WorkToBuild>
-			<MaxHitPoints>120</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<size>(2,2)</size>
-		<passability>PassThroughOnly</passability>
-		<pathCost>70</pathCost>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<surfaceType>Item</surfaceType>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		</building>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<basePowerConsumption>50</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>GR_NutrientVat</li>
-				</linkableFacilities>
-			</li>
-		</comps>
-		<researchPrerequisites>
-			<li>GR_GeneticEngineering</li>
-		</researchPrerequisites>
 	
-	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_TissueGrowingVat</defName>
 		<label>tissue growing vat</label>
@@ -663,68 +665,7 @@
 		</researchPrerequisites>
 		
 	</ThingDef>
-	<ThingDef ParentName="BuildingBase">
-		<defName>GR_GeneDuplicator</defName>
-		<label>gene duplicator</label>
-		<canOverlapZones>false</canOverlapZones>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<thingCategories>
-			<li>BuildingsProduction</li>
-		</thingCategories>
-		<thingClass>Building_WorkTable</thingClass>
-		<description>This advanced machine can be used to grow and duplicate almost any kind of genetic material. It consumes a large amount of organic pulp and most of it is wasted on the process. Also, tt won't work on Thrumbo and Mechanoid genes.</description>
-		<graphicData>
-			<texPath>Things/Building/GR_GeneDuplicator</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
-		</graphicData>
-		<uiIconScale>0.75</uiIconScale>
-		<castEdgeShadows>false</castEdgeShadows>
-		<costList>
-			<Steel>250</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<GR_OrganicPulp>4</GR_OrganicPulp>
-		</costList>
-		<altitudeLayer>Building</altitudeLayer>
-		<fillPercent>0.5</fillPercent>
-		<useHitPoints>True</useHitPoints>
-		<statBases>
-			<Mass>50</Mass>
-			<WorkToBuild>500</WorkToBuild>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-		</statBases>
-		<size>(2,2)</size>
-		<passability>PassThroughOnly</passability>
-		<pathCost>70</pathCost>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<surfaceType>Item</surfaceType>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		</building>
-		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<basePowerConsumption>120</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>GR_NutrientVat</li>
-				</linkableFacilities>
-			</li>
-		</comps>
-		<researchPrerequisites>
-			<li>GR_GeneDuplication</li>
-		</researchPrerequisites>
-		
-	</ThingDef>
+	
 	<ThingDef ParentName="BenchBase">
 		<defName>GR_ParagonSerumExtractionTable</defName>
 		<label>paragon serum extraction table</label>

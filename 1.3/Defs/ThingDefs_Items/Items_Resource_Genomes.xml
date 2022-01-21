@@ -162,6 +162,17 @@
 			<texPath>Things/Item/GR_NonSpecializedGeneticMaterial</texPath>
 		</graphicData>
 	</ThingDef>
+	<ThingDef ParentName="GR_GeneticsBase">
+		<defName>GR_TemplateGenetic</defName>
+		<label>template genome</label>
+		<description>todo.</description>
+		<statBases>
+			<MarketValue>400</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/TemplateGenome</texPath>
+		</graphicData>
+	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_RuinedGenetic</defName>
 		<label>ruined genome</label>

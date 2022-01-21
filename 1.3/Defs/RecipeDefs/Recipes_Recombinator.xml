@@ -1,9 +1,409 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
+	<RecipeDef Name="GR_RecombinatorRecipeBase" Abstract="true">
+		<jobString>Recombinating genomes</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>3500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>GR_GeneRecombinator</li>
+		</recipeUsers>
+		
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
+		<defName>GR_CreateTemplateGenome</defName>
+		<label>Create template genome</label>
+		<description>Create a template genome that can be used to duplicate existing genome samples.</description>
+		<ingredientValueGetterClass>AnimalBehaviours.IngredientValueGetter_Mass</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Corpses</li>
+					</categories>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Corpses</li>
+			</categories>
+			<disallowedCategories>
+				<li>CorpsesMechanoid</li>
+			</disallowedCategories>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesAnimal</li>
+			</categories>
+		</defaultIngredientFilter>
+		<products>
+			<GR_TemplateGenetic>1</GR_TemplateGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateUrsineGenome</defName>
+		<label>Duplicate Ursine genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_UrsineGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_UrsineGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_UrsineGenetic>2</GR_UrsineGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateAvianGenome</defName>
+		<label>Duplicate Avian genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_AvianGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_AvianGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_AvianGenetic>2</GR_AvianGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateBoomalopeGenome</defName>
+		<label>Duplicate Booma genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_BoomalopeGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_BoomalopeGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BoomalopeGenetic>2</GR_BoomalopeGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateMuffaloGenome</defName>
+		<label>Duplicate Muffalo genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_MuffaloGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_MuffaloGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_MuffaloGenetic>2</GR_MuffaloGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateCanineGenome</defName>
+		<label>Duplicate Canine genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_CanineGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_CanineGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_CanineGenetic>2</GR_CanineGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateRodentGenome</defName>
+		<label>Duplicate Rodent genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_RodentGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_RodentGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_RodentGenetic>2</GR_RodentGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateFelineGenome</defName>
+		<label>Duplicate Feline genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_FelineGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_FelineGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_FelineGenetic>2</GR_FelineGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateEquineGenome</defName>
+		<label>Duplicate Equine genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_EquineGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_EquineGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_EquineGenetic>2</GR_EquineGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateInsectoidGenome</defName>
+		<label>Duplicate Insectoid genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_InsectoidGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_InsectoidGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_InsectoidGenetic>2</GR_InsectoidGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateReptileGenome</defName>
+		<label>Duplicate Reptile genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_ReptileGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_ReptileGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_ReptileGenetic>2</GR_ReptileGenetic>
+		</products>		
+	</RecipeDef>
+	<RecipeDef ParentName="GR_BoosterRecipeBase">
+		<defName>GR_DuplicateHumanoidGenome</defName>
+		<label>Duplicate Humanoid genome</label>
+		<description>Duplicate the genome using a blank template.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_TemplateGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_HumanoidGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GR_TemplateGenetic</li>
+				<li>GR_HumanoidGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_HumanoidGenetic>2</GR_HumanoidGenetic>
+		</products>		
+	</RecipeDef>
 	
-	<RecipeDef>
+	<!--<RecipeDef>
 		<defName>GR_RecombineGenes</defName>
 		<label>recombine genes</label>
 		<description>Recombine genes from one or several species to get new ones.</description>
@@ -129,7 +529,7 @@
 		<skillRequirements>
 			<Intellectual>5</Intellectual>
 		</skillRequirements>
-	</RecipeDef>
+	</RecipeDef>-->
  
 
 
