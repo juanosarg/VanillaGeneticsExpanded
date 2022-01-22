@@ -28,5 +28,9 @@ namespace GeneticRim
 		public static ThingDef GR_MechanoidGenetic;
 		public static ThingDef GR_NonSpecializedGenetic;
 		public static ThingDef GR_RuinedGenetic;
+		public static ThingCategoryDef GR_GeneticMaterial;
+		public static ThingCategoryDef GR_Genoframes;
+		public static ThingCategoryDef GR_Boosters;
+
 	}
 }
