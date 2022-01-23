@@ -35,6 +35,14 @@ namespace GeneticRim
 
         public override void DoWindowContents(Rect inRect)
         {
+            PawnKindDef mainResult = Core.GetHybrid(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, 
+                                                                 out float swapChance, out float failureChance, out PawnKindDef swapResult, out PawnKindDef failureResult);
+
+            
+            float fullWeight = 1 + failureChance;
+
+            Log.ErrorOnce(swapChance + " | " + failureChance, Mathf.RoundToInt(swapChance*100f + failureChance*100f));
+
             var xPos = inRect.x + 15;
             var explanationLabelBox = new Rect(xPos, inRect.y + 5, 300, 30);
             DrawExplanation(explanationLabelBox, "GR_GenomorpherExplanation".Translate());
@@ -48,13 +56,13 @@ namespace GeneticRim
             Text.Font = GameFont.Small;
 
             var firstOutcomeBox = new Rect(xPos, precictedOutComesBox.yMax + 10, 165, 165);
-            DrawPawnOutcome(firstOutcomeBox, PawnKindDefOf.Thrumbo, 0.9f);
+            DrawPawnOutcome(firstOutcomeBox, mainResult, (1f-swapChance) / fullWeight);
 
             var secondOutcomeBox = new Rect(xPos, firstOutcomeBox.yMax + 30, 95, 95);
-            DrawPawnOutcome(secondOutcomeBox, PawnKindDefOf.Alphabeaver, 0.1f);
+            DrawPawnOutcome(secondOutcomeBox, swapResult, swapChance / fullWeight);
 
             var failureOutcomeBox = new Rect(failureOutComeBox.x, failureOutComeBox.yMax + 10, 165, 165);
-            DrawPawnOutcome(failureOutcomeBox, PawnKindDefOf.Boomalope, 0.1f, false);
+            DrawPawnOutcome(failureOutcomeBox, failureResult, failureChance / fullWeight, false);
 
             explanationLabelBox = new Rect(inRect.x + 300, inRect.y + 120, 330, 30);
             DrawExplanation(explanationLabelBox, "GR_GenomorpherExplanationPartTwo".Translate(), TextAnchor.MiddleCenter);
@@ -185,6 +193,7 @@ namespace GeneticRim
         {
             // for erdelf
         }
+
         private void DrawButton(Rect rect, string label, Action action, string explanation)
         {
             if (Widgets.ButtonText(rect, label))
@@ -198,19 +207,23 @@ namespace GeneticRim
         private void DrawPawnOutcome(Rect outcomeBox, PawnKindDef pawnKindDef, float chance, bool percentageInfoToLeft = true)
         {
             Widgets.DrawBoxSolid(outcomeBox, PawnOutcomeBackground);
-            GUI.DrawTexture(outcomeBox, pawnKindDef.race.uiIcon);
-            Text.Font = GameFont.Medium;
-            var percentString = chance.ToStringPercent();
-            var percentStringSize = Text.CalcSize(percentString);
-            var percentLabelRect = percentageInfoToLeft 
-                ? new Rect(outcomeBox.x + outcomeBox.width - percentStringSize.x, outcomeBox.yMax - 30, percentStringSize.x, 30)
-                : new Rect(outcomeBox.x, outcomeBox.yMax - 30, percentStringSize.x, 30);
-            Widgets.Label(percentLabelRect, percentString);
+            if (pawnKindDef != null)
+            {
+                GUI.DrawTexture(outcomeBox, pawnKindDef.race.uiIcon);
+                Text.Font = GameFont.Medium;
+                var percentString     = chance.ToString("P");
+                var percentStringSize = Text.CalcSize(percentString);
+                var percentLabelRect = percentageInfoToLeft
+                                           ? new Rect(outcomeBox.x + outcomeBox.width - percentStringSize.x, outcomeBox.yMax - 30, percentStringSize.x, 30)
+                                           : new Rect(outcomeBox.x,                                          outcomeBox.yMax - 30, percentStringSize.x, 30);
+                Widgets.Label(percentLabelRect, percentString);
+            }
+
             Text.Font = GameFont.Small;
             var infoBox = new Rect(outcomeBox.x, outcomeBox.yMax + 5, 18, 18);
-            Widgets.InfoCardButton(infoBox, pawnKindDef.race);
+            Widgets.InfoCardButton(infoBox, pawnKindDef?.race);
 
-            var pawnName = pawnKindDef.label.CapitalizeFirst();
+            var pawnName = pawnKindDef?.label.CapitalizeFirst();
             var ppawnLabelSize = Text.CalcSize(pawnName);
             var pawnLabel = new Rect(infoBox.xMax + 5, infoBox.y, ppawnLabelSize.x, 24);
             Widgets.Label(pawnLabel, pawnName);

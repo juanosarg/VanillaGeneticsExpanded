@@ -130,6 +130,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridFailure">
+				<failureMin>6</failureMin>
+				<failureMax>10</failureMax>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 

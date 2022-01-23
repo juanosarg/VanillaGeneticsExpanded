@@ -310,6 +310,7 @@
     <Compile Include="Core.cs" />
     <Compile Include="DefExtensions\DefExtension_Hybrid.cs" />
     <Compile Include="DefExtensions\DefExtension_HybridChanceAlterer.cs" />
+    <Compile Include="DefExtensions\DefExtension_HybridFailure.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Dev Mode\SuperItemSpawner.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />
