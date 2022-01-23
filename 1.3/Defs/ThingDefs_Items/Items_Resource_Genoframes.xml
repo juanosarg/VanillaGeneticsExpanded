@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!--=============== Genoframes ====================-->
 	<ThingDef Name="GR_GenoframeBase" ParentName="ResourceBase" Abstract="True">
@@ -39,6 +39,11 @@
 		<statBases>
 			<MarketValue>50</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Quality">
+				<quality>Awful</quality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_GenoframeBase">
 		<defName>GR_GenoframePoor</defName>
@@ -47,6 +52,11 @@
 		<statBases>
 			<MarketValue>100</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Quality">
+				<quality>Poor</quality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_GenoframeBase">
 		<defName>GR_GenoframeNormal</defName>
@@ -55,6 +65,11 @@
 		<statBases>
 			<MarketValue>200</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Quality">
+				<quality>Normal</quality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_GenoframeBase">
 		<defName>GR_GenoframeGood</defName>
@@ -63,6 +78,11 @@
 		<statBases>
 			<MarketValue>400</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Quality">
+				<quality>Good</quality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_GenoframeBase">
 		<defName>GR_GenoframeExcellent</defName>
@@ -71,6 +91,11 @@
 		<statBases>
 			<MarketValue>800</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Quality">
+				<quality>Excellent</quality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_GenoframeBase">
 		<defName>GR_GenoframeMasterwork</defName>
@@ -79,6 +104,11 @@
 		<statBases>
 			<MarketValue>1600</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Quality">
+				<quality>Masterwork</quality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_GenoframeBase">
 		<defName>GR_GenoframeLegendary</defName>
@@ -87,5 +117,10 @@
 		<statBases>
 			<MarketValue>3200</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Quality">
+				<quality>Legendary</quality>
+			</li>
+		</modExtensions>
 	</ThingDef>
 </Defs>

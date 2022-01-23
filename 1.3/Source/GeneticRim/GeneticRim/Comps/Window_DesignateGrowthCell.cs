@@ -18,6 +18,10 @@ namespace GeneticRim
         public const int BottomButtonWidth = 190;
         public const int SelectionButtonWidth = 190;
 
+        public static readonly Texture2D Hexagon = ContentFinder<Texture2D>.Get("ui/GeneticsUI_Hexagon");
+        public static readonly Texture2D Arrow = ContentFinder<Texture2D>.Get("ui/GeneticsUI_Arrow");
+        public static readonly Texture2D ArrowTwoWays = ContentFinder<Texture2D>.Get("ui/GeneticsUI_ArrowTwoWays");
+
         public CompGenomorpher comp;
         public ThingDef genomeDominant;
         public ThingDef genomeSecondary;
@@ -61,13 +65,27 @@ namespace GeneticRim
             var secondOutcomeBox = new Rect(xPos, firstOutcomeBox.yMax + 30, 95, 95);
             DrawPawnOutcome(secondOutcomeBox, swapResult, swapChance / fullWeight);
 
+            var genoframeQuality = genoframe != null ? Core.GetQualityFromGenoframe(genoframe) : null;
+            var qualityInfoRect = new Rect(xPos, secondOutcomeBox.yMax + 100, 200, 30);
+            Text.Font = GameFont.Medium;
+            Widgets.Label(qualityInfoRect, "GR_Quality".Translate(genoframeQuality != null ? genoframeQuality.Value.GetLabel() : "None"));
+            var qualityInfoExplanationRect = new Rect(xPos, qualityInfoRect.yMax + 5, 240, 30);
+            DrawExplanation(qualityInfoExplanationRect, "GR_QualityExplanation".Translate());
+
+            var durationTicks = GenDate.TicksPerDay + 654321;
+            var durationRect = new Rect(xPos, qualityInfoExplanationRect.yMax + 50, 300, 30);
+            Text.Font = GameFont.Medium;
+            Widgets.Label(durationRect, "GR_ProcessWillTake".Translate(durationTicks.ToStringTicksToDays()));
+            var durationExplanationRect = new Rect(xPos, durationRect.yMax + 5, 240, 30);
+            DrawExplanation(durationExplanationRect, "GR_ProcessDurationExplanation".Translate());
+
             var failureOutcomeBox = new Rect(failureOutComeBox.x, failureOutComeBox.yMax + 10, 165, 165);
             DrawPawnOutcome(failureOutcomeBox, failureResult, failureChance / fullWeight, false);
 
-            explanationLabelBox = new Rect(inRect.x + 300, inRect.y + 120, 330, 30);
+            explanationLabelBox = new Rect(inRect.x + 300, inRect.y + 80, 330, 30);
             DrawExplanation(explanationLabelBox, "GR_GenomorpherExplanationPartTwo".Translate(), TextAnchor.MiddleCenter);
 
-            var selectDominantGenomeRect = new Rect(inRect.x + 550, failureOutcomeBox.yMax - 12, SelectionButtonWidth, 24);
+            var selectDominantGenomeRect = new Rect(inRect.x + 550, failureOutcomeBox.yMax - 25, SelectionButtonWidth, 24);
             DrawButton(selectDominantGenomeRect, "GR_SelectDominantGenome".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
@@ -81,7 +99,7 @@ namespace GeneticRim
                 Find.WindowStack.Add(new FloatMenu(floatOptions));
             }, "GR_SelectDominantGenomeExplanation".Translate());
 
-            var selectSecondaryGenomeRect = new Rect(selectDominantGenomeRect.x + 160, selectDominantGenomeRect.yMax + 50, SelectionButtonWidth, 24);
+            var selectSecondaryGenomeRect = new Rect(selectDominantGenomeRect.x + 160, selectDominantGenomeRect.yMax + 62, SelectionButtonWidth, 24);
             DrawButton(selectSecondaryGenomeRect, "GR_SelectSecondaryGenome".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
@@ -130,28 +148,28 @@ namespace GeneticRim
             Text.Anchor = TextAnchor.UpperLeft;
             GUI.color = Color.white;
 
-            var genomeDominantRect = new Rect(350, 200, 75, 75);
-            if (genomeDominant != null)
-            {
-                DrawThing(genomeDominant, genomeDominantRect);
-            }
+            var arrowTwoWidth = ArrowTwoWays.width * arrowTwoScale;
+            var arrowTwoHeight = ArrowTwoWays.height * arrowTwoScale;
+            var arrowTwoRect = new Rect(test1 - 140, test2 - 150, arrowTwoWidth, arrowTwoHeight);
+            GUI.DrawTexture(arrowTwoRect, ArrowTwoWays);
 
-            var genomeSecondaryRect = new Rect(genomeDominantRect.xMax + 50, genomeDominantRect.yMax + 30, genomeDominantRect.width, genomeDominantRect.height);
-            if (genomeSecondary != null)
-            {
-                DrawThing(genomeSecondary, genomeSecondaryRect);
-            }
-            var genoframeRect = new Rect(genomeDominantRect.x, genomeDominantRect.yMax + 100, genomeDominantRect.width, genomeDominantRect.height);
-            if (genoframe != null)
-            {
-                DrawThing(genoframe, genoframeRect);
-            }
+            var genomeDominantRect = new Rect(test1, test2, 75, 75);
+            DrawThing(genomeDominant, genomeDominantRect);
 
-            var boosterRect = new Rect(genoframeRect.x, genoframeRect.yMax + 100, genomeDominantRect.width, genomeDominantRect.height);
-            if (booster != null)
-            {
-                DrawThing(booster, boosterRect);
-            }
+            var arrowWidth = Arrow.width * arrowScale;
+            var arrowHeight = Arrow.height * arrowScale;
+            var arrowToLeftRect = new Rect(test1 - arrowWidth - 70, genomeDominantRect.center.y + 5, arrowWidth, arrowHeight);
+            GUI.DrawTexture(arrowToLeftRect, Arrow);
+
+            var genomeSecondaryRect = new Rect(genomeDominantRect.xMax + test3, genomeDominantRect.yMax + test4, genomeDominantRect.width, genomeDominantRect.height);
+            DrawThing(genomeSecondary, genomeSecondaryRect);
+
+            var genoframeRect = new Rect(genomeDominantRect.x, genomeDominantRect.yMax + test5, genomeDominantRect.width, genomeDominantRect.height);
+            DrawThing(genoframe, genoframeRect);
+
+            var boosterRect = new Rect(genoframeRect.x, genoframeRect.yMax + test6, genomeDominantRect.width, genomeDominantRect.height);
+            DrawThing(booster, boosterRect);
+
 
             if (Widgets.ButtonText(new Rect(inRect.x, inRect.yMax - 32, BottomButtonWidth, 32), "CloseButton".Translate()))
             {
@@ -163,7 +181,7 @@ namespace GeneticRim
                 RandomizeAll();
             }
 
-            if (Widgets.ButtonText(new Rect(inRect.xMax - BottomButtonWidth, inRect.yMax - 32, BottomButtonWidth, 32), "CloseButton".Translate()))
+            if (Widgets.ButtonText(new Rect(inRect.xMax - BottomButtonWidth, inRect.yMax - 32, BottomButtonWidth, 32), "GR_InitiateSynthesis".Translate()))
             {
                 InitiateSynthesis();
             }
@@ -172,13 +190,29 @@ namespace GeneticRim
             Text.Font = GameFont.Small;
         }
 
+        [TweakValue("000", 0, 1)] public static float arrowScale = 0.56f;
+        [TweakValue("000", 0, 1)] public static float arrowTwoScale = 0.53f;
+        [TweakValue("000", 0, 1)] public static float hexagonScale = 0.45f;
+        [TweakValue("000", 0, 1000)] public static float test1 = 384f;
+        [TweakValue("000", 0, 1000)] public static float test2 = 261.5f;
+        [TweakValue("000", 0, 1000)] public static float test3 = 75f;
+        [TweakValue("000", 0, 1000)] public static float test4 = 10f;
+        [TweakValue("000", 0, 1000)] public static float test5 = 96.78f;
+        [TweakValue("000", 0, 1000)] public static float test6 = 96.78f;
         private void DrawThing(ThingDef thingDef, Rect rect)
         {
-            Widgets.DefIcon(rect, thingDef);
-            var label = thingDef.label.CapitalizeFirst();
-            var size = Text.CalcSize(label);
-            var labelRect = new Rect(rect.x - 10, rect.yMax + 10, size.x, 24);
-            Widgets.Label(labelRect, label);
+            var hexWidth = Hexagon.width * hexagonScale;
+            var hexHeight = Hexagon.height * hexagonScale;
+            var hexRect = new Rect(rect.center.x - (hexWidth / 2), rect.center.y - (hexHeight / 2), hexWidth, hexHeight);
+            GUI.DrawTexture(hexRect, Hexagon);
+            if (thingDef != null)
+            {
+                Widgets.DefIcon(rect, thingDef);
+                var label = thingDef.label.CapitalizeFirst();
+                var size = Text.CalcSize(label);
+                var labelRect = new Rect((rect.x + (rect.width / 2)) - (size.x / 2), rect.yMax + 10, size.x, 24);
+                Widgets.Label(labelRect, label);
+            }
         }
 
         private void RandomizeAll()

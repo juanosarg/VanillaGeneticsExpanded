@@ -1,5 +1,6 @@
 ﻿namespace GeneticRim
 {
+    using RimWorld;
     using System.Collections.Generic;
     using System.Linq;
     using Verse;
@@ -66,6 +67,16 @@
                 if (secondaryChain.TryGetValue(genomeSecondary, out PawnKindDef result))
                     return result;
             Log.Message("5");
+            return null;
+        }
+
+        public static QualityCategory? GetQualityFromGenoframe(ThingDef genoframe)
+        {
+            var extension = genoframe.GetModExtension<DefExtension_Quality>();
+            if (extension != null)
+            {
+                return extension.quality;
+            }
             return null;
         }
     }
