@@ -37,7 +37,6 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -49,6 +48,8 @@
 				<linkableFacilities>
 					<li>GR_NutrientVat</li>
 				</linkableFacilities>
+			</li>
+			<li Class="GeneticRim.CompProperties_Genomorpher">
 			</li>
 		</comps>
 		<researchPrerequisites>

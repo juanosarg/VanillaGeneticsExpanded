@@ -12,34 +12,6 @@ namespace GeneticRim
 
     public class CompElectroWomb : ThingComp
     {
-        private static Dictionary<ThingDef, Dictionary<ThingDef, PawnKindDef>> hybrids;
-
-        public static Dictionary<ThingDef, Dictionary<ThingDef, PawnKindDef>> Hybrids
-        {
-            get
-            {
-                if (hybrids != null)
-                    return hybrids;
-
-                hybrids = new Dictionary<ThingDef, Dictionary<ThingDef, PawnKindDef>>();
-
-                foreach (PawnKindDef pawnKindDef in DefDatabase<PawnKindDef>.AllDefsListForReading)
-                {
-                    DefExtension_Hybrid hybridExt = pawnKindDef.GetModExtension<DefExtension_Hybrid>();
-                    
-                    if (hybridExt != null)
-                    {
-                        if(!hybrids.ContainsKey(hybridExt.dominantGenome))
-                            hybrids.Add(hybridExt.dominantGenome, new Dictionary<ThingDef, PawnKindDef>());
-                        hybrids[hybridExt.dominantGenome].Add(hybridExt.secondaryGenome, pawnKindDef);
-                    }
-                }
-
-                return hybrids;
-            }
-        }
-
-
         public CompProperties_ElectroWomb Props => (CompProperties_ElectroWomb)this.props;
 
         public PawnKindDef growingResult;
@@ -83,25 +55,19 @@ namespace GeneticRim
         {
             CompGrowthCell growthComp = growthCell.TryGetComp<CompGrowthCell>();
 
-            DefExtension_HybridChanceAlterer frameExtension = growthComp.genoframe.GetModExtension<DefExtension_HybridChanceAlterer>();
-            DefExtension_HybridChanceAlterer boosterExtension = growthComp.booster.GetModExtension<DefExtension_HybridChanceAlterer>();
-            
-            bool swap     = Rand.Chance((10f - frameExtension.stability - boosterExtension.stability) / 100f);
-            
-            if(hybrids.TryGetValue(!swap ? growthComp.genomeDominant : growthComp.genomeSecondary, out Dictionary<ThingDef, PawnKindDef> secondaryChain))
+            PawnKindDef result = Core.GetHybrid(growthComp.genomeDominant, growthComp.genomeSecondary, growthComp.genoframe,       growthComp.booster,
+                                              out float swapChance,      out float failureChance,    out PawnKindDef swapResult, out PawnKindDef failureResult);
+
+            bool swap = Rand.Chance(swapChance);
+            result = swap ? result : swapResult;
+
+            bool failure = Rand.Chance(failureChance);
+
+            if (!failure && result != null && result.RaceProps.baseBodySize < this.Props.maxBodySize)
             {
-                if (secondaryChain.TryGetValue(!swap ? growthComp.genomeSecondary : growthComp.genomeDominant, out PawnKindDef pkd))
-                {
-                    if (!Rand.Chance((10f - frameExtension.safety - boosterExtension.safety) / 100f))
-                    {
-                        if (pkd.RaceProps.baseBodySize < this.Props.maxBodySize)
-                        {
-                            this.growingResult = pkd;
-                            this.progress      = 0;
-                            return;
-                        }
-                    }
-                }
+                this.growingResult = result;
+                this.progress      = 0;
+                return;
             }
 
             //todo: failures here

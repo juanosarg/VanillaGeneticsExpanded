@@ -20,5 +20,8 @@ namespace GeneticRim
          */
         public int safety;
 
+        public bool isBooster;
+        public bool isGenome;
+
     }
 }

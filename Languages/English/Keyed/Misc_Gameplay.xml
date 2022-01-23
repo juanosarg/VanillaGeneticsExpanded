@@ -130,6 +130,25 @@
   
   <GR_UpdateLetterLabel>Textures Update</GR_UpdateLetterLabel>
 	<GR_UpdateLetterText>We have released the Vanilla Textures Expanded - Genetic Rim retexture mod, which changes the textures of Genetic Rim to be more vanilla friendly. This is a separate mod from Genetic Rim, so those who prefer the old textures can keep using them.\n\nIt is HIGHLY recommended that you use this retexture, since it brings Genetic Rim in line with what it should have been from the beginning, if I had the proper graphics knowledge three years ago ;)</GR_UpdateLetterText>
- 
+	<GR_DesignateGrowthCell>Designate a growth cell</GR_DesignateGrowthCell>
+	<GR_DesignateGrowthCellDesc>todo</GR_DesignateGrowthCellDesc>
+	<GR_GenomorpherExplanation>Select genomes, genoframe and optionally a booster to create a growthcell of a selected hybrid</GR_GenomorpherExplanation>
+	<GR_GenomorpherExplanationPartTwo>Use immunity boostersor use safer genome commbinations to lower the risk of failure.</GR_GenomorpherExplanationPartTwo>
 
+	<GR_PredictedOutcomes>Predicted Outcomes</GR_PredictedOutcomes>
+	<GR_FailureOutcome>Failure Outcome</GR_FailureOutcome>
+	<GR_SelectDominantGenome>Select dominant genome</GR_SelectDominantGenome>
+	<GR_SelectDominantGenomeExplanation>Dominant genome affects primary characteristics of the hybrid</GR_SelectDominantGenomeExplanation>
+	<GR_SelectSecondaryGenome>Select secondary genome</GR_SelectSecondaryGenome>
+	<GR_SelectSecondaryGenomeExplanation>todo</GR_SelectSecondaryGenomeExplanation>
+	
+	<GR_SelectGenoframe>Select genoframe</GR_SelectGenoframe>
+	<GR_SelectGenoframeExplanation>Genoframe affects the quality level of the hybrid</GR_SelectGenoframeExplanation>
+	
+	<GR_SelectBooster>Select booster</GR_SelectBooster>
+	<GR_SelectBoosterExplanation>Boosters affect the speed of the synthesis process as well as the failure chance</GR_SelectBoosterExplanation>
+	
+	<GR_InitiateSynthesisExplanation>Initiating synthesis will have your colonists deliver all the required ingredients to this Genepod. After synthesis concludes, a growthcell of a hybrid will have to be extracted and inserted into an electrowomb where it will grow to maturity. Larger animals may require large electrowomb.</GR_InitiateSynthesisExplanation>
+	<GR_RandomizeAll>Randomize all</GR_RandomizeAll>
+	<GR_InitiateSynthesis>Initiate synthesis</GR_InitiateSynthesis>
 </LanguageData>
