@@ -72,21 +72,12 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-			    <rage>true</rage>
-				<stampede>true</stampede>
-				<mechablast>true</mechablast>
-				<catreflexes>true</catreflexes>
-				<chickenRimPox>true</chickenRimPox>
-				<burrowing>true</burrowing>
-				<adrenalineburst>true</adrenalineburst>
-				<orbitalstrike>true</orbitalstrike>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>MechanicalCentipede</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>

@@ -61,13 +61,10 @@
 				<resourceAmount>15</resourceAmount>
 				<customResourceString>JellyGrowth</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-				<insectclouds>true</insectclouds>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>BeetleLikeWithClaw</body>
 			<trainability>Advanced</trainability>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -217,15 +214,12 @@
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>SacGrowth</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<explodable>true</explodable>
-				<insectclouds>true</insectclouds>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Insectoid</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<body>BeetleLikeWithClaw</body>
@@ -364,15 +358,12 @@
 				<resourceAmount>40</resourceAmount>
 				<customResourceString>SilkGrowth</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<insectclouds>true</insectclouds>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Insectoid</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>BeetleLikeWithClaw</body>
 			<baseHungerRate>0.15</baseHungerRate>
 			<baseBodySize>1.1</baseBodySize>
@@ -504,13 +495,10 @@
 				<shearIntervalDays>10</shearIntervalDays>
 				<woolAmount>45</woolAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<carrymore>true</carrymore>
-				<insectclouds>true</insectclouds>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<fleshType>GR_Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<herdAnimal>true</herdAnimal>
@@ -638,14 +626,9 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<insectclouds>true</insectclouds>
-			</li>
-		</comps>
+		
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>BeetleLikeWithClaw</body>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>0.85</baseBodySize>
@@ -794,17 +777,14 @@
 			</li>
 		</verbs>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<catreflexes>true</catreflexes>
-				<insectclouds>true</insectclouds>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>BeetleLike</body>
 			<maxPreyBodySize>0.85</maxPreyBodySize>
 			<herdMigrationAllowed>false</herdMigrationAllowed>

@@ -70,13 +70,10 @@
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>150</woolAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-				<stampede>true</stampede>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -254,13 +251,10 @@
 				<resourceAmount>80</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<explodable>true</explodable>
-				<stampede>true</stampede>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_GargantuanExplosion</deathActionWorkerClass>
 			<executionRange>16</executionRange>
@@ -424,13 +418,10 @@
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<stampede>true</stampede>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>GR_HornedBird</body>
 			<predator>true</predator>
 			<herdAnimal>true</herdAnimal>
@@ -614,13 +605,10 @@
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>150</woolAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<carrymore>true</carrymore>
-				<stampede>true</stampede>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -793,14 +781,9 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<stampede>true</stampede>
-			</li>
-		</comps>
+		
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -974,17 +957,14 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<catreflexes>true</catreflexes>
-				<stampede>true</stampede>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -1129,14 +1109,9 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<stampede>true</stampede>
-				<insectclouds>true</insectclouds>
-			</li>
-		</comps>
+		
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>BeetleLikeWithClaw</body>
 			<baseHungerRate>4</baseHungerRate>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
@@ -1320,13 +1295,10 @@
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>PoisonGrowth</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<stampede>true</stampede>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<fleshType>GR_Normal</fleshType>
 			<herdAnimal>true</herdAnimal>
@@ -1499,15 +1471,10 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<stampede>true</stampede>
-				<burrowing>true</burrowing>
-			</li>
-		</comps>
+		
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>

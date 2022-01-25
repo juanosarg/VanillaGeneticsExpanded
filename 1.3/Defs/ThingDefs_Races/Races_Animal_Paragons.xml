@@ -77,16 +77,12 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-			</li>
-		</comps>
+		
 
 		<race>
 			<fleshType>GR_Normal</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
 			<herdAnimal>false</herdAnimal>
@@ -198,11 +194,7 @@
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
 			<MarketValue>350</MarketValue>
 		</statBases>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-			</li>
-		</comps>
+		
 		<tools>
 			<li>
 				<label>tusk</label>
@@ -238,7 +230,7 @@
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndTusks</body>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>1.2</baseHealthScale>
@@ -372,12 +364,10 @@
 				<resourceAmount>25</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<explodable>true</explodable>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
@@ -529,14 +519,12 @@
 				<eggLayIntervalDays>1.5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>Bird</body>
 			<baseHungerRate>0.55</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
@@ -649,7 +637,7 @@
 		<race>
 			<fleshType>GR_Normal</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>Bird</body>
 			<herdAnimal>false</herdAnimal>
 			<baseBodySize>1</baseBodySize>
@@ -695,9 +683,7 @@
 				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-			</li>
+			
 		</comps>
 		<tools>
 			<li>
@@ -833,12 +819,10 @@
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>120</woolAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<carrymore>true</carrymore>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -954,7 +938,7 @@
 		<race>
 			<fleshType>GR_Normal</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>1.5</baseBodySize>
@@ -997,9 +981,7 @@
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-			</li>
+			
 		</comps>
 		<tools>
 			<li>
@@ -1158,15 +1140,11 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<stampede>true</stampede>
-			</li>
-		</comps>
+		
 		<race>
 			<fleshType>GR_Normal</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseHungerRate>1.75</baseHungerRate>
@@ -1339,15 +1317,11 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-			</li>
-		</comps>
+		
 		<race>
 			<fleshType>GR_Normal</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1499,14 +1473,12 @@
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>ChocolateEgg</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<burrowing>true</burrowing>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<useLeatherFrom>Hare</useLeatherFrom>
 			<useMeatFrom>Hare</useMeatFrom>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -1660,14 +1632,12 @@
 					<max>2</max>
 				</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
 			<baseBodySize>0.40</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
@@ -1789,15 +1759,11 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-			</li>
-		</comps>
+		
 		<race>
 			<fleshType>GR_Normal</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>1.2</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
@@ -1975,15 +1941,11 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<burrowing>true</burrowing>
-			</li>
-		</comps>
+	
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPaws</body>
 			<baseBodySize>0.3</baseBodySize>
 			<baseHungerRate>0.50</baseHungerRate>
@@ -2122,14 +2084,12 @@
 
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-			</li>
+		
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>TurtleLike</body>
 			<baseBodySize>0.75</baseBodySize>
 			<baseHungerRate>0.75</baseHungerRate>

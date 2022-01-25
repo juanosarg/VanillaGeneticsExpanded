@@ -75,10 +75,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-				<catreflexes>true</catreflexes>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -86,7 +83,7 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -230,10 +227,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<catreflexes>true</catreflexes>
-				<explodable>true</explodable>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>Chemfuel</resourceDef>
 				<gatheringIntervalDays>1</gatheringIntervalDays>
@@ -249,7 +243,7 @@
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_SmallHairballExplosion</deathActionWorkerClass>
 			<executionRange>2</executionRange>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -399,10 +393,7 @@
 				<eggLayIntervalDays>1</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<catreflexes>true</catreflexes>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -410,7 +401,7 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>GR_QuadrupedAnimalWithBeak</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.25</maxPreyBodySize>
@@ -565,10 +556,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<carrymore>true</carrymore>
-				<catreflexes>true</catreflexes>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -586,7 +574,7 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHooves</body>
 			<predator>false</predator>
 			<baseBodySize>0.4</baseBodySize>
@@ -764,10 +752,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<burrowing>true</burrowing>
-				<catreflexes>true</catreflexes>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -775,7 +760,7 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.25</maxPreyBodySize>
@@ -954,10 +939,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<catreflexes>true</catreflexes>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -965,7 +947,7 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.25</maxPreyBodySize>

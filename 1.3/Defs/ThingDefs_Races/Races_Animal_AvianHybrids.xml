@@ -49,15 +49,12 @@
 				<eggLayIntervalDays>1.9</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<rage>true</rage>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>GR_BirdWithTeeth</body>
 			<baseHungerRate>0.45</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
@@ -234,15 +231,12 @@
 				<resourceAmount>5</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<explodable>true</explodable>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>Bird</body>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>4</executionRange>
@@ -412,13 +406,10 @@
 				<eggLayIntervalDays>1.8</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<carrymore>true</carrymore>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -588,15 +579,12 @@
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<adrenalineburst>true</adrenalineburst>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>GR_BirdWithTeeth</body>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
@@ -770,13 +758,10 @@
 					<max>2</max>
 				</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<burrowing>true</burrowing>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>GR_BirdWithTeeth</body>
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -936,10 +921,7 @@
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<catreflexes>true</catreflexes>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -947,7 +929,7 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>GR_BirdWithTeeth</body>
 			<baseHungerRate>0.14</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>

@@ -13,12 +13,7 @@
 			<MarketValue>400</MarketValue>
 			<FilthRate>4</FilthRate>
 		</statBases>
-		<comps>		
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-				<poisonouscloud>true</poisonouscloud>
-			</li>
-		</comps>
+		
 		<tools>
 			<li>
 				<label>left claw</label>
@@ -109,7 +104,7 @@
 		</verbs>
 
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -225,12 +220,7 @@
 			<MarketValue>400</MarketValue>
 			<ToxicSensitivity>0</ToxicSensitivity>
 		</statBases>
-		<comps>		
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<explodable>true</explodable>
-			</li>
-		</comps>
+		
 		<tools>
 			<li>
 				<capacities>
@@ -284,7 +274,7 @@
 
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>Snake</body>
 			<trainability>Intermediate</trainability>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_ToxicExplosion</deathActionWorkerClass>
@@ -443,10 +433,7 @@
 				<eggLayIntervalDays>1.2</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<chickenRimPox>true</chickenRimPox>
-			</li>
+			
 		</comps>
 		<verbs>
 			<li>
@@ -470,7 +457,7 @@
 
 		</verbs>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>Bird</body>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -610,10 +597,7 @@
 				<customResourceString>PoisonGrowth</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<carrymore>true</carrymore>
-			</li>
+			
 		</comps>
 		<verbs>
 			<li>
@@ -637,7 +621,7 @@
 
 		</verbs>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHooves</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -821,17 +805,14 @@
 
 			</li>
 		
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<insectclouds>true</insectclouds>
-			</li>
+			
 		</comps>
 
 
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>Snake</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.35</maxPreyBodySize>
@@ -1035,10 +1016,7 @@
 				<customResourceString>SkinShed</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<adrenalineburst>true</adrenalineburst>
-			</li>
+			
 		</comps>
 		<verbs>
 			<li>
@@ -1062,7 +1040,7 @@
 
 		</verbs>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1191,10 +1169,7 @@
 			<MarketValue>400</MarketValue>
 		</statBases>
 		<comps>		
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<catreflexes>true</catreflexes>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -1254,7 +1229,7 @@
 
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.35</maxPreyBodySize>    

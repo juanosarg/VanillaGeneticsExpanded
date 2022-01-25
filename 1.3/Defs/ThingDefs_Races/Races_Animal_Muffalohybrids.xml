@@ -28,13 +28,10 @@
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>12</milkAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-				<carrymore>true</carrymore>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -175,13 +172,10 @@
 				<resourceAmount>55</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<explodable>true</explodable>
-				<carrymore>true</carrymore>
-			</li>
+		
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -336,13 +330,10 @@
 				<eggLayIntervalDays>8</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<carrymore>true</carrymore>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -472,13 +463,10 @@
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>90</woolAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<carrymore>true</carrymore>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -613,13 +601,10 @@
 				<shearIntervalDays>1</shearIntervalDays>
 				<woolAmount>5</woolAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<carrymore>true</carrymore>
-				<burrowing>true</burrowing>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<roamMtbDays>2</roamMtbDays>
 			<predator>false</predator>
@@ -776,10 +761,7 @@
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>12</milkAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<catreflexes>true</catreflexes>
-				<carrymore>true</carrymore>
-			</li>
+			
 			<li Class="CompProperties_Shearable">
 				<woolDef>GR_HairballWool</woolDef>
 				<shearIntervalDays>12</shearIntervalDays>
@@ -791,7 +773,7 @@
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>

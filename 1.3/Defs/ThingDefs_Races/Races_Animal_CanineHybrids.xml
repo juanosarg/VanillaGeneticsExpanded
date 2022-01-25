@@ -74,14 +74,9 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<rage>true</rage>
-			</li>
-		</comps>
+		
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -276,13 +271,10 @@
 				<resourceAmount>17</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<explodable>true</explodable>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_EMPExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
@@ -482,13 +474,10 @@
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>FeatherGrowth</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<chickenRimPox>true</chickenRimPox>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>GR_QuadrupedAnimalWithBeak</body>
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -664,13 +653,10 @@
 				<shearIntervalDays>3</shearIntervalDays>
 				<woolAmount>20</woolAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<carrymore>true</carrymore>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -791,12 +777,7 @@
 			<MarketValue>275</MarketValue>
 			<FilthRate>2</FilthRate>
 		</statBases>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<burrowing>true</burrowing>
-			</li>
-		</comps>
+		
 		<tools>
 			<li>
 				<label>left claw</label>
@@ -863,7 +844,7 @@
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<baseBodySize>0.85</baseBodySize>
@@ -1042,17 +1023,14 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<catreflexes>true</catreflexes>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>

@@ -66,13 +66,10 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-				<mechablast>true</mechablast>
-			</li>
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPaws</body>
 			<fleshType>GR_Mechanoid</fleshType>
 			<herdAnimal>false</herdAnimal>
@@ -208,17 +205,14 @@
 				<milkAmount>20</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<explodable>true</explodable>
-				<mechablast>true</mechablast>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -356,15 +350,12 @@
 				<eggCountRange>1</eggCountRange>
 				<eggLayFemaleOnly>false</eggLayFemaleOnly>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<chickenRimPox>true</chickenRimPox>
-				<mechablast>true</mechablast>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>Bird</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -493,15 +484,12 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<insectclouds>true</insectclouds>
-				<mechablast>true</mechablast>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>BeetleLikeWithClaw</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -643,16 +631,13 @@
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>50</woolAmount>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<carrymore>true</carrymore>
-				<mechablast>true</mechablast>
-			</li>
+		
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
 			<packAnimal>true</packAnimal>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHooves</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -781,15 +766,12 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<burrowing>true</burrowing>
-				<mechablast>true</mechablast>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -918,15 +900,12 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<poisonouscloud>true</poisonouscloud>
-				<mechablast>true</mechablast>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>TurtleLike</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1055,15 +1034,12 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<adrenalineburst>true</adrenalineburst>
-				<mechablast>true</mechablast>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1194,15 +1170,12 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<stampede>true</stampede>
-				<mechablast>true</mechablast>
-			</li>
+			
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1334,10 +1307,7 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<catreflexes>true</catreflexes>
-				<mechablast>true</mechablast>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -1346,7 +1316,7 @@
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
 
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
