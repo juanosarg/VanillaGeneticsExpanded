@@ -66,7 +66,7 @@
             if (hybrids.TryGetValue(genomeDominant, out secondaryChain))
                 if (secondaryChain.TryGetValue(genomeSecondary, out PawnKindDef result))
                     return result;
-            Log.Message("5");
+            
             return null;
         }
 

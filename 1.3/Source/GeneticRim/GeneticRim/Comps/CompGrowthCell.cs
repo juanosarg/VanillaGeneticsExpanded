@@ -1,7 +1,6 @@
-﻿using System.Text;
-
-namespace GeneticRim.Comps
+﻿namespace GeneticRim
 {
+    using System.Text;
     using Verse;
 
     public class CompGrowthCell : ThingComp
@@ -18,9 +17,10 @@ namespace GeneticRim.Comps
             sb.AppendLine("GR_GrowthCell_InspectDominant".Translate(this.genomeDominant.LabelCap));
             sb.AppendLine("GR_GrowthCell_InspectSecondary".Translate(this.genomeSecondary.LabelCap));
             sb.AppendLine("GR_GrowthCell_InspectGenoframe".Translate(this.genoframe.LabelCap));
-            sb.AppendLine("GR_GrowthCell_InspectBooster".Translate(this.booster.LabelCap));
+            if(this.booster != null)
+                sb.AppendLine("GR_GrowthCell_InspectBooster".Translate(this.booster.LabelCap));
 
-            return sb.ToString();
+            return sb.ToString().Trim();
         }
 
         public override void PostExposeData()

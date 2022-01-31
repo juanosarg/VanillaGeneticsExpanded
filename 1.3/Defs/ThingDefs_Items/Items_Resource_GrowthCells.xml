@@ -28,7 +28,8 @@
 				<maxSafeTemperature>50</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 			</li>
-			<li Class="GeneticRim.CompProperties_Incubator">
+			<li>
+				<compClass>GeneticRim.CompGrowthCell</compClass>
 			</li>
 		</comps>
 	</ThingDef>

@@ -23,10 +23,10 @@ namespace GeneticRim
         public static readonly Texture2D ArrowTwoWays = ContentFinder<Texture2D>.Get("ui/GeneticsUI_ArrowTwoWays");
 
         public CompGenomorpher comp;
-        public ThingDef genomeDominant;
-        public ThingDef genomeSecondary;
-        public ThingDef genoframe;
-        public ThingDef booster;
+        public Thing genomeDominant;
+        public Thing genomeSecondary;
+        public Thing genoframe;
+        public Thing booster;
 
         private static readonly Color PawnOutcomeBackground = new Color(0.13f, 0.13f, 0.13f);
         public override Vector2 InitialSize => new Vector2(1000, 800);
@@ -37,15 +37,26 @@ namespace GeneticRim
             this.forcePause = true;
         }
 
+        public List<Thing> genomes;
+        public List<Thing> genoframes;
+        public List<Thing> boosters;
+
+        public override void PreOpen()
+        {
+            base.PreOpen();
+
+            this.genomes    = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterial) ?? false).ToList();
+            this.boosters   = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_Boosters)        ?? false).ToList();
+            this.genoframes = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_Genoframes)      ?? false).ToList();
+        }
+
         public override void DoWindowContents(Rect inRect)
         {
-            PawnKindDef mainResult = Core.GetHybrid(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, 
+            PawnKindDef mainResult = Core.GetHybrid(this.genomeDominant?.def, this.genomeSecondary?.def, this.genoframe?.def, this.booster?.def, 
                                                                  out float swapChance, out float failureChance, out PawnKindDef swapResult, out PawnKindDef failureResult);
 
             
             float fullWeight = 1 + failureChance;
-
-            Log.ErrorOnce(swapChance + " | " + failureChance, Mathf.RoundToInt(swapChance*100f + failureChance*100f));
 
             var xPos = inRect.x + 15;
             var explanationLabelBox = new Rect(xPos, inRect.y + 5, 300, 30);
@@ -65,14 +76,14 @@ namespace GeneticRim
             var secondOutcomeBox = new Rect(xPos, firstOutcomeBox.yMax + 30, 95, 95);
             DrawPawnOutcome(secondOutcomeBox, swapResult, swapChance / fullWeight);
 
-            var genoframeQuality = genoframe != null ? Core.GetQualityFromGenoframe(genoframe) : null;
+            var genoframeQuality = genoframe != null ? Core.GetQualityFromGenoframe(genoframe.def) : null;
             var qualityInfoRect = new Rect(xPos, secondOutcomeBox.yMax + 100, 200, 30);
             Text.Font = GameFont.Medium;
             Widgets.Label(qualityInfoRect, "GR_Quality".Translate(genoframeQuality != null ? genoframeQuality.Value.GetLabel() : "None"));
             var qualityInfoExplanationRect = new Rect(xPos, qualityInfoRect.yMax + 5, 240, 30);
             DrawExplanation(qualityInfoExplanationRect, "GR_QualityExplanation".Translate());
 
-            var durationTicks = GenDate.TicksPerDay + 654321;
+            var durationTicks = GenDate.TicksPerDay;
             var durationRect = new Rect(xPos, qualityInfoExplanationRect.yMax + 50, 300, 30);
             Text.Font = GameFont.Medium;
             Widgets.Label(durationRect, "GR_ProcessWillTake".Translate(durationTicks.ToStringTicksToDays()));
@@ -89,9 +100,9 @@ namespace GeneticRim
             DrawButton(selectDominantGenomeRect, "GR_SelectDominantGenome".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
-                foreach (var genome in Core.genomes.Except(genomeSecondary).ToList())
+                foreach (var genome in this.genomes.Except(genomeSecondary).ToList())
                 {
-                    floatOptions.Add(new FloatMenuOption(genome.label, delegate
+                    floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
                     {
                         genomeDominant = genome;
                     }));
@@ -103,9 +114,9 @@ namespace GeneticRim
             DrawButton(selectSecondaryGenomeRect, "GR_SelectSecondaryGenome".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
-                foreach (var genome in Core.genomes.Except(genomeDominant).ToList())
+                foreach (var genome in this.genomes.Except(genomeDominant).ToList())
                 {
-                    floatOptions.Add(new FloatMenuOption(genome.label, delegate
+                    floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
                     {
                         genomeSecondary = genome;
                     }));
@@ -117,9 +128,9 @@ namespace GeneticRim
             DrawButton(selectGenoframeRect, "GR_SelectGenoframe".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
-                foreach (var genoframe in Core.genoframes.ToList())
+                foreach (var genoframe in this.genoframes.ToList())
                 {
-                    floatOptions.Add(new FloatMenuOption(genoframe.label, delegate
+                    floatOptions.Add(new FloatMenuOption(genoframe.def.LabelCap, delegate
                     {
                         this.genoframe = genoframe;
                     }));
@@ -131,9 +142,9 @@ namespace GeneticRim
             DrawButton(selectBoosterRect, "GR_SelectBooster".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
-                foreach (var booster in Core.boosters.ToList())
+                foreach (var booster in this.boosters.ToList())
                 {
-                    floatOptions.Add(new FloatMenuOption(booster.label, delegate
+                    floatOptions.Add(new FloatMenuOption(booster.def.LabelCap, delegate
                     {
                         this.booster = booster;
                     }));
@@ -181,7 +192,8 @@ namespace GeneticRim
                 RandomizeAll();
             }
 
-            if (Widgets.ButtonText(new Rect(inRect.xMax - BottomButtonWidth, inRect.yMax - 32, BottomButtonWidth, 32), "GR_InitiateSynthesis".Translate()))
+            if (Widgets.ButtonText(new Rect(inRect.xMax - BottomButtonWidth, inRect.yMax - 32, BottomButtonWidth, 32), "GR_InitiateSynthesis".Translate(),
+                                   active: this.genomeDominant != null && this.genomeSecondary != null && this.genoframe != null))
             {
                 InitiateSynthesis();
             }
@@ -199,16 +211,16 @@ namespace GeneticRim
         [TweakValue("000", 0, 1000)] public static float test4 = 10f;
         [TweakValue("000", 0, 1000)] public static float test5 = 96.78f;
         [TweakValue("000", 0, 1000)] public static float test6 = 96.78f;
-        private void DrawThing(ThingDef thingDef, Rect rect)
+        private void DrawThing(Thing thing, Rect rect)
         {
             var hexWidth = Hexagon.width * hexagonScale;
             var hexHeight = Hexagon.height * hexagonScale;
             var hexRect = new Rect(rect.center.x - (hexWidth / 2), rect.center.y - (hexHeight / 2), hexWidth, hexHeight);
             GUI.DrawTexture(hexRect, Hexagon);
-            if (thingDef != null)
+            if (thing != null)
             {
-                Widgets.DefIcon(rect, thingDef);
-                var label = thingDef.label.CapitalizeFirst();
+                Widgets.DefIcon(rect, thing.def);
+                var label = thing.def.label.CapitalizeFirst();
                 var size = Text.CalcSize(label);
                 var labelRect = new Rect((rect.x + (rect.width / 2)) - (size.x / 2), rect.yMax + 10, size.x, 24);
                 Widgets.Label(labelRect, label);
@@ -217,15 +229,16 @@ namespace GeneticRim
 
         private void RandomizeAll()
         {
-            this.genomeDominant = Core.genomes.RandomElement();
-            this.genomeSecondary = Core.genomes.Except(genomeSecondary).RandomElement();
-            this.genoframe = Core.genoframes.RandomElement();
-            this.booster = Core.boosters.RandomElement();
+            this.genomeDominant  = this.genomes.RandomElement();
+            this.genomeSecondary = this.genomes.Except(this.genomeDominant).RandomElement();
+            this.genoframe       = this.genoframes.RandomElement();
+            this.booster         = this.boosters.RandomElement();
         }
 
         private void InitiateSynthesis()
         {
-            // for erdelf
+            this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, GenDate.TicksPerDay);
+            this.Close();
         }
 
         private void DrawButton(Rect rect, string label, Action action, string explanation)

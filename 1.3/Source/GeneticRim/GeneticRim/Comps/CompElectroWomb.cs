@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace GeneticRim
 {
-    using Comps;
     using RimWorld;
     using Verse;
 
