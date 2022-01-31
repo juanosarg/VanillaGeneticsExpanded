@@ -120,11 +120,7 @@
   <GR_RemoveUpdateNotice>Remove VGE - Genetic Rim update notice</GR_RemoveUpdateNotice>
 
   
-  <!-- This isn't used for now -->
 
-  <AccAgeProg>Accelerated aging progress</AccAgeProg>
-  <CannotCarryToAccelerationPod>Cannot carry to age acceleration pod</CannotCarryToAccelerationPod>
-  <NoAccelerationPod>No valid age acceleration pod found</NoAccelerationPod>
     
   <!-- Update letter -->
   
@@ -148,11 +144,12 @@
 	<GR_SelectBooster>Select booster</GR_SelectBooster>
 	<GR_SelectBoosterExplanation>Boosters affect the speed of the synthesis process as well as the failure chance</GR_SelectBoosterExplanation>
 	
-	<GR_InitiateSynthesisExplanation>Initiating synthesis will have your colonists deliver all the required ingredients to this Genepod. After synthesis concludes, a growthcell of a hybrid will have to be extracted and inserted into an electrowomb where it will grow to maturity. Larger animals may require large electrowomb.</GR_InitiateSynthesisExplanation>
+	<GR_InitiateSynthesisExplanation>Initiating synthesis will have your colonists deliver all the required ingredients to this Genemorpher. After synthesis concludes, a growthcell of a hybrid will have to be extracted and inserted into an electrowomb where it will grow to maturity. Larger animals may require large electrowomb.</GR_InitiateSynthesisExplanation>
 	<GR_RandomizeAll>Randomize all</GR_RandomizeAll>
 	<GR_InitiateSynthesis>Initiate synthesis</GR_InitiateSynthesis>
 	<GR_Quality>Quality: {0}</GR_Quality>
 	<GR_QualityExplanation>Use higher grade genoframes to increase the quality of the hybrid.</GR_QualityExplanation>
 	<GR_ProcessWillTake>Process will take: {0}</GR_ProcessWillTake>
 	<GR_ProcessDurationExplanation>Use growth boosters or construct additional nutrient vats to speed up the process.</GR_ProcessDurationExplanation>
+	<GR_NoIngredientFound>No ingredients found to start the genomorpher process</GR_NoIngredientFound>
 </LanguageData>

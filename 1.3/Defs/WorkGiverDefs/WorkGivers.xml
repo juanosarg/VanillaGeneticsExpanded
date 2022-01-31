@@ -210,6 +210,19 @@
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
 	
+	<WorkGiverDef>
+		<defName>GR_InsertIngredients</defName>
+		<label>bringing ingredients</label>
+		<giverClass>GeneticRim.WorkGiver_InsertIngredients</giverClass>
+		<workType>GR_Genetics</workType>
+		<verb>bring ingredients to</verb>
+		<gerund>bringing ingredients to</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
 	
 	
 	

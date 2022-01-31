@@ -32,5 +32,7 @@ namespace GeneticRim
 		public static ThingCategoryDef GR_GeneticMaterial;
 		public static ThingCategoryDef GR_Genoframes;
 		public static ThingCategoryDef GR_Boosters;
-    }
+		public static ThingDef         GR_GenePod;
+		public static JobDef           GR_InsertIngredients;
+	}
 }

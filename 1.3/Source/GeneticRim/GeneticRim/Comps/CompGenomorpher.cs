@@ -11,9 +11,16 @@ namespace GeneticRim
 
     public class CompGenomorpher : ThingComp
     {
-        private float progress;
-        private int duration;
+        public float progress;
+        public int duration;
+        public int durationTicks;
         private Thing growthCell;
+        public bool bringIngredients = false;
+        public Thing genomeDominant;
+        public Thing genomeSecondary;
+        public Thing frame;
+        public Thing booster;
+
 
         public void Initialize(Thing genomeDominant, Thing genomeSecondary, Thing frame, Thing booster, int durationTicks)
         {
@@ -24,8 +31,14 @@ namespace GeneticRim
             cell.genoframe       = frame.def;
             cell.booster         = booster?.def;
 
-            this.progress = 0;
-            this.duration = durationTicks;
+            this.genomeDominant = genomeDominant;
+            this.genomeSecondary = genomeSecondary;
+            this.frame = frame;
+            this.booster = booster;
+            this.durationTicks = durationTicks;
+
+            this.bringIngredients = true;
+            
         }
 
         public override void CompTick()
@@ -83,7 +96,16 @@ namespace GeneticRim
 
             Scribe_Values.Look(ref this.progress, nameof(this.progress));
             Scribe_Values.Look(ref this.duration, nameof(this.duration));
+            Scribe_Values.Look(ref this.bringIngredients, nameof(this.bringIngredients));
+            Scribe_Values.Look(ref this.durationTicks, nameof(this.durationTicks));
+
             Scribe_Deep.Look(ref this.growthCell, nameof(this.growthCell));
+            Scribe_Deep.Look(ref this.genomeDominant, nameof(this.genomeDominant));
+            Scribe_Deep.Look(ref this.genomeSecondary, nameof(this.genomeSecondary));
+            Scribe_Deep.Look(ref this.frame, nameof(this.frame));
+            Scribe_Deep.Look(ref this.booster, nameof(this.booster));
         }
+
+       
     }
 }

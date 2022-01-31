@@ -9,7 +9,7 @@ namespace GeneticRim
 
     {
 
-
+        /*
       
         public static float failureRate = 10;
      
@@ -54,6 +54,6 @@ namespace GeneticRim
            
 
 
-        }
+        }*/
     }
 }

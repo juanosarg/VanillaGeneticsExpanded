@@ -14,4 +14,11 @@
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
   
+  <JobDef>
+    <defName>GR_InsertIngredients</defName>
+    <driverClass>GeneticRim.JobDriver_InsertIngredients</driverClass>
+    <reportString>inserting ingredients on TargetA.</reportString>
+	<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
 </Defs>

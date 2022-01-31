@@ -298,6 +298,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\JobDrivers\JobDriver_InsertIngredients.cs" />
+    <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
     <Compile Include="Comps\CompAnimalControlHub.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
@@ -332,7 +334,7 @@
     <Compile Include="Hediffs\Hediff_Burrowing.cs" />
     <Compile Include="Hediffs\Hediff_InsectClouds.cs" />
     <Compile Include="Hediffs\Hediff_StampedeClouds.cs" />
-    <Compile Include="JobDrivers\JobDriver_AttackMeleeOnceAndChickenRimPox.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_AttackMeleeOnceAndChickenRimPox.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_HybridGenesUseEffect.cs" />
     <Compile Include="Comps\CompExploder.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Exploder.cs" />
@@ -364,8 +366,6 @@
     <Compile Include="Hediff Comps\HediffComp_Milker.cs" />
     <Compile Include="Hediff Comps\HediffComp_Hatcher.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_Hatcher.cs" />
-    <Compile Include="Comps\CompIncubator.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_Incubator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rooms\RoomRoleWorker_GeneLab.cs" />
   </ItemGroup>
