@@ -328,8 +328,44 @@
 			<Intellectual>6</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
-
+	
 	<RecipeDef>
+		<defName>GR_ExtractGenesHuman</defName>
+		<label>extract genes from a humanoid</label>
+		<description>Extract genetic material from a humanoid.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>CorpsesHumanlike</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<GR_HumanoidGenetic>1</GR_HumanoidGenetic>
+		</products>
+		<researchPrerequisite>GR_HumanoidGeneticEngineering</researchPrerequisite>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+
+<!--	<RecipeDef>
 		<defName>GR_ExtractGenesInsectoid</defName>
 		<label>extract genes from an insectoid</label>
 		<description>Extract genetic material from an alien insectoid.</description>
@@ -421,41 +457,7 @@
 		</skillRequirements>
 	</RecipeDef>
 
-	<RecipeDef>
-		<defName>GR_ExtractGenesHuman</defName>
-		<label>extract genes from a humanoid</label>
-		<description>Extract genetic material from a humanoid.</description>
-		<jobString>Extracting Genetic Material</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
-		<workSkill>Intellectual</workSkill>
-		<recipeUsers>
-			<li>GR_GeneticExtractionTable</li>	  
-		</recipeUsers>	
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>CorpsesHumanlike</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>CorpsesHumanlike</li>
-			</categories>
-		</fixedIngredientFilter>
-		<products>
-			<GR_HumanoidGenetic>1</GR_HumanoidGenetic>
-		</products>
-		<researchPrerequisite>GR_HumanoidGeneticEngineering</researchPrerequisite>
-		<skillRequirements>
-			<Intellectual>6</Intellectual>
-		</skillRequirements>
-	</RecipeDef>
+	
 
 	<RecipeDef>
 		<defName>GR_ExtractGenesThrumbo</defName>
@@ -501,7 +503,7 @@
 		</skillRequirements>
 	</RecipeDef>
 
-<!--	<RecipeDef>
+	<RecipeDef>
 		<defName>GR_ExtractGenesMechanoid</defName>
 		<label>extract genes from a mechanoid</label>
 		<description>Extract genetic material from a mechanoid corpse.</description>
@@ -544,7 +546,7 @@
 		<skillRequirements>
 			<Intellectual>10</Intellectual>
 		</skillRequirements>
-	</RecipeDef>-->
+	</RecipeDef>
 	
 	<RecipeDef>
 		<defName>GR_ExtractNonSpecializedGenes</defName>
@@ -593,7 +595,7 @@
 		</skillRequirements>
 	</RecipeDef>
 
-
+-->
 
 
 
