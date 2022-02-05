@@ -65,7 +65,7 @@ namespace GeneticRim
 
             Job job = JobMaker.MakeJob(InternalDefOf.GR_InsertIngredients, t);
             job.targetQueueB = new List<LocalTargetInfo>(chosenThings.Count);
-            job.count = chosenThings.Count;
+            job.count = 1;
             for (int i = 0; i < chosenThings.Count; i++)
             {
                 job.targetQueueB.Add(chosenThings[i]);
