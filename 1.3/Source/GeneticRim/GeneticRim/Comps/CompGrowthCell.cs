@@ -1,7 +1,10 @@
 ﻿namespace GeneticRim
 {
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Text;
     using Verse;
+    using Verse.AI;
 
     public class CompGrowthCell : ThingComp
     {
@@ -9,6 +12,27 @@
         public ThingDef genomeSecondary;
         public ThingDef genoframe;
         public ThingDef booster;
+
+        public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn selPawn)
+        {
+            foreach (FloatMenuOption option in base.CompFloatMenuOptions(selPawn)) 
+                yield return option;
+
+            foreach (Building building in this.parent.Map.listerBuildings.allBuildingsColonist)
+            {
+                if (building.TryGetComp<CompElectroWomb>()?.Free ?? false)
+                {
+                    yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap), () =>
+                                                                                                                       {
+                                                                                                                           Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertGrowthCell, building,
+                                                                                                                               this.parent);
+                                                                                                                           makeJob.haulMode = HaulMode.ToCellNonStorage;
+                                                                                                                           makeJob.count    = 1;
+                                                                                                                           selPawn.jobs.StartJob(makeJob, JobCondition.InterruptForced);
+                                                                                                                       });
+                }
+            }
+        }
 
         public override string CompInspectStringExtra()
         {

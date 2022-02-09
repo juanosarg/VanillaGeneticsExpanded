@@ -34,5 +34,6 @@ namespace GeneticRim
 		public static ThingCategoryDef GR_Boosters;
 		public static ThingDef         GR_GenePod;
 		public static JobDef           GR_InsertIngredients;
-	}
+        public static JobDef           GR_InsertGrowthCell;
+    }
 }

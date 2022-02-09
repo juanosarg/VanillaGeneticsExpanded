@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 namespace GeneticRim
 {
     using RimWorld;
+    using UnityEngine;
     using Verse;
 
     public class CompElectroWomb : ThingComp
     {
         public CompProperties_ElectroWomb Props => (CompProperties_ElectroWomb)this.props;
+
+        public bool Free => this.growingResult == null;
 
         public PawnKindDef growingResult;
         public float       progress;
@@ -22,7 +25,7 @@ namespace GeneticRim
 
             if (this.growingResult != null)
             {
-                this.progress += 1f / (GenDate.TicksPerDay * 7f);
+                this.progress += 1f / GenDate.TicksPerHour; // (GenDate.TicksPerDay * 7f);
 
                 if (this.progress > 1)
                 {
@@ -41,12 +44,27 @@ namespace GeneticRim
             }
         }
 
+        public override string CompInspectStringExtra()
+        {
+            return "GR_ElectroWomb_Progress".Translate(this.progress.ToStringPercent());
+        }
+
         public override void PostExposeData()
         {
             base.PostExposeData();
 
             Scribe_Defs.Look(ref this.growingResult, nameof(this.growingResult));
             Scribe_Values.Look(ref this.progress, nameof(this.progress));
+        }
+
+        public override void PostDraw()
+        {
+            base.PostDraw();
+
+            Vector3 pos = this.parent.DrawPos;
+            pos.y = AltitudeLayer.MetaOverlays.AltitudeFor();
+            Graphic graphic         = this.growingResult?.lifeStages.Last().bodyGraphicData.Graphic.GetCopy(this.parent.def.graphicData.drawSize * this.progress, null);
+            graphic?.DrawFromDef(pos, Rot4.South, null);
         }
 
 
@@ -56,6 +74,8 @@ namespace GeneticRim
 
             PawnKindDef result = Core.GetHybrid(growthComp.genomeDominant, growthComp.genomeSecondary, growthComp.genoframe,       growthComp.booster,
                                               out float swapChance,      out float failureChance,    out PawnKindDef swapResult, out PawnKindDef failureResult);
+
+            growthCell.Destroy();
 
             bool swap = Rand.Chance(swapChance);
             result = swap ? result : swapResult;
@@ -69,6 +89,7 @@ namespace GeneticRim
                 return;
             }
 
+            Log.Message("FAILURE");
             //todo: failures here
         }
     }

@@ -237,7 +237,7 @@ namespace GeneticRim
 
         private void InitiateSynthesis()
         {
-            this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, GenDate.TicksPerDay);
+            this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, GenDate.TicksPerHour);
             this.Close();
         }
 

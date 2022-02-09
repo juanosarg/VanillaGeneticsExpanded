@@ -72,6 +72,15 @@ namespace GeneticRim
             }
         }
 
+        public override string CompInspectStringExtra()
+        {
+            StringBuilder sb = new StringBuilder(base.CompInspectStringExtra());
+
+            sb.AppendLine("GR_Genomorpher_Progress".Translate(this.progress.ToStringPercent()));
+
+            return sb.ToString().Trim();
+        }
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             yield return new Command_Action

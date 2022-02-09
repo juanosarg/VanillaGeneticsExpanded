@@ -27,8 +27,17 @@
   <GR_GrowthCell_InspectSecondary>Secondary Gene: {0}</GR_GrowthCell_InspectSecondary>
   <GR_GrowthCell_InspectGenoframe>Genoframe: {0}</GR_GrowthCell_InspectGenoframe>
   <GR_GrowthCell_InspectBooster>Booster: {0}</GR_GrowthCell_InspectBooster>
+  <GR_GrowthCell_InsertInElectroWomb>Insert into {0}</GR_GrowthCell_InsertInElectroWomb>
 
+
+  <!-- Genomorpher -->
+
+  <GR_Genomorpher_Progress>Progress: {0}</GR_Genomorpher_Progress>
   
+  <!-- ElectroWomb -->
+
+  <GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>
+
   <!-- Gene Pods Control -->
 
   <GR_ExtractGenes>Empty Tank 1</GR_ExtractGenes>
