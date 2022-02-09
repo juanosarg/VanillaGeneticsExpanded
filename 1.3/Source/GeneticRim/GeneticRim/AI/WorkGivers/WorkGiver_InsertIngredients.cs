@@ -30,11 +30,10 @@ namespace GeneticRim
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            CompGenomorpher comp = t.TryGetComp< CompGenomorpher>();
+            CompGenomorpher comp = t.TryGetComp<CompGenomorpher>();
             
-            if (!comp.bringIngredients)
+            if (!comp.BringIngredients)
             {
-               
                 return false;
             }
 
@@ -57,6 +56,10 @@ namespace GeneticRim
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             CompGenomorpher comp = t.TryGetComp<CompGenomorpher>();
+
+            if (!comp.BringIngredients)
+                return JobMaker.MakeJob(JobDefOf.Vomit);
+
             List<Thing> chosenThings = new List<Thing> ();
             chosenThings.Add(comp.genomeDominant);
             chosenThings.Add(comp.genomeSecondary);
@@ -68,8 +71,9 @@ namespace GeneticRim
             job.count = 1;
             for (int i = 0; i < chosenThings.Count; i++)
             {
-                job.targetQueueB.Add(chosenThings[i]);
-                
+                Thing chosenThing = chosenThings[i];
+                if(chosenThing != null)
+                    job.targetQueueB.Add(chosenThing);
             }
             job.haulMode = HaulMode.ToCellNonStorage;
            

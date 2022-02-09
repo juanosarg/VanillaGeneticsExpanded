@@ -50,16 +50,15 @@ namespace GeneticRim
                 yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
                 yield return Toils_General.Wait(200, TargetIndex.None).FailOnDestroyedNullOrForbidden(TargetIndex.B).FailOnDestroyedNullOrForbidden(TargetIndex.A).FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch).WithProgressBarToilDelay(TargetIndex.A, false, -0.5f);
                 yield return Toils_General.DoAtomic(delegate
-                {
-                    job.GetTarget(TargetIndex.B).Thing.Destroy();
-                });
+                                                    {
+                                                        Pawn actor = this.GetActor();
+                                                        actor.carryTracker.TryDropCarriedThing(actor.Position, ThingPlaceMode.Near, out _, (thing, i) => thing.DeSpawn());
+                                                    });
                 
             }
             yield return Toils_General.DoAtomic(delegate
             {
-                comp.bringIngredients = false;
-                comp.progress = 0;
-                comp.duration = comp.durationTicks;
+                comp.StartGrowthProcess();
             });
 
            
