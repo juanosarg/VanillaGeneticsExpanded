@@ -76,7 +76,8 @@ namespace GeneticRim
         {
             StringBuilder sb = new StringBuilder(base.CompInspectStringExtra());
 
-            sb.AppendLine("GR_Genomorpher_Progress".Translate(this.progress.ToStringPercent()));
+            if (this.progress != -1f) { sb.AppendLine("GR_Genomorpher_Progress".Translate(this.progress.ToStringPercent())); }
+            
 
             return sb.ToString().Trim();
         }

@@ -29,6 +29,9 @@ namespace GeneticRim
 		public static ThingDef         GR_NonSpecializedGenetic;
 		public static ThingDef         GR_RuinedGenetic;
         public static ThingDef         GR_GrowthCell;
+		public static ThingDef         GR_BoosterFertility;
+		public static ThingDef         GR_BoosterController;
+		public static HediffDef        GR_AnimalControlImplant;
 		public static ThingCategoryDef GR_GeneticMaterial;
 		public static ThingCategoryDef GR_Genoframes;
 		public static ThingCategoryDef GR_Boosters;

@@ -21,15 +21,15 @@
 
 	<HediffDef ParentName="ImplantHediffBase">
 		<defName>GR_AnimalControlImplant</defName>
-		<label>animal mind controller</label>
-		<labelNoun>an animal mind controller</labelNoun>
-		<description>An installed animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player. Note that you will need to build an Animal Control Hub anywhere on the planet for this to work.</description>
+		<label>animal controller</label>
+		<labelNoun>an animal controller</labelNoun>
+		<description>An installed animal controller implant. This implant will allow this creature to be drafted and controlled by the player.</description>
 		<descriptionHyperlinks>
 			<ThingDef>GR_AnimalControlImplant</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>GR_AnimalControlImplant</spawnThingOnRemoved>
 		<comps>
-			<li Class="GeneticRim.HediffCompProperties_Draftable"/>
+			<li Class="AnimalBehaviours.HediffCompProperties_Draftable"/>
 		</comps>
 		<addedPartProps>
 			<solid>true</solid>												

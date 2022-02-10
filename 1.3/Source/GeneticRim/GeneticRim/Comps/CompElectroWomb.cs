@@ -17,6 +17,7 @@ namespace GeneticRim
         public bool Free => this.growingResult == null;
 
         public PawnKindDef growingResult;
+        public ThingDef booster;
         public float       progress;
 
         public override void CompTick()
@@ -33,6 +34,16 @@ namespace GeneticRim
                                                                                      newborn: true, forceGenerateNewPawn: true));
 
                     IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 5f);
+
+                    if(this.booster != InternalDefOf.GR_BoosterFertility)
+                    {
+                        pawn.health.AddHediff(HediffDefOf.Sterilized);
+                    }
+
+                    if (this.booster == InternalDefOf.GR_BoosterController)
+                    {
+                        pawn.health.AddHediff(InternalDefOf.GR_AnimalControlImplant);
+                    }
 
                     GenSpawn.Spawn(pawn, near, this.parent.Map);
 
@@ -74,6 +85,8 @@ namespace GeneticRim
 
             PawnKindDef result = Core.GetHybrid(growthComp.genomeDominant, growthComp.genomeSecondary, growthComp.genoframe,       growthComp.booster,
                                               out float swapChance,      out float failureChance,    out PawnKindDef swapResult, out PawnKindDef failureResult);
+
+            this.booster = growthComp.booster;
 
             growthCell.Destroy();
 
