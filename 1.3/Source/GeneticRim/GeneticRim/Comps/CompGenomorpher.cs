@@ -101,15 +101,15 @@ namespace GeneticRim
         {
             base.PostDraw();
             GenDraw.FillableBarRequest fillableBarRequest = default(GenDraw.FillableBarRequest);
-            fillableBarRequest.center      = this.parent.DrawPos + Vector3.up * 0.1f + Vector3.left * 0.25f;
-            fillableBarRequest.size        = new Vector2(1f, 0.14f);
+            fillableBarRequest.center      = this.parent.DrawPos + Vector3.forward * 0.1f + Vector3.left * 1.49f;
+            fillableBarRequest.size        = new Vector2(1.6f, 0.2f);
             fillableBarRequest.fillPercent = this.progress;
             fillableBarRequest.filledMat   = barFilledMat;
             fillableBarRequest.unfilledMat = barUnfilledMat;
             fillableBarRequest.margin      = 0.15f;
             fillableBarRequest.rotation    = this.parent.Rotation.Rotated(RotationDirection.Clockwise);
             GenDraw.DrawFillableBar(fillableBarRequest);
-            fillableBarRequest.center = this.parent.DrawPos + Vector3.up * 0.1f + Vector3.right * 0.1f;
+            fillableBarRequest.center = this.parent.DrawPos + Vector3.forward * 0.1f + Vector3.right * 1.49f;
             GenDraw.DrawFillableBar(fillableBarRequest);
         }
 

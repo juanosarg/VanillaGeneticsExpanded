@@ -49,7 +49,7 @@
 					</value>
 				</li>	
 				
-				<li Class="PatchOperationAdd">
+				<!--<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesThrumbo"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 						<li>Corpse_VFEV_Lothurr</li>
@@ -87,7 +87,7 @@
 
 
 					</value>
-				</li>	
+				</li>	-->
 
 
 
