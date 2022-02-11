@@ -12,6 +12,8 @@ namespace GeneticRim
     {
         public float maxBodySize = float.MaxValue;
 
+        public bool isLarge = false;
+
         public CompProperties_ElectroWomb()
         {
             this.compClass = typeof(CompElectroWomb);

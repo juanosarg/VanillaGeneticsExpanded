@@ -10,7 +10,7 @@
 		<thingCategories>
 			<li>BuildingsProduction</li>
 		</thingCategories>
-		<description>Desc-todo.</description>
+		<description>A machine where the miracle - or horror - of birth happens using automated procedures, a little genetic hand-waving and a great heaping dose of lost sleep. The inserted Genoframe is influenced by two genomes, one dominant and one recessive, and can be modified with optional boosters./n/nThe process isn’t perfect, due to material contamination, missing chromosomes or simple bad luck, and can result in something completely unwanted being developed. For the machine, it makes no difference whether it’s trying to grow an animal or a comically large fruit. The resulting growth cell has a limited lifespan as the embryonic fluid will start breaking down if not allowed to gestate properly.</description>
 		<graphicData>
 			<texPath>Things/Building/Genomorpher/Genomorpher</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -175,6 +175,7 @@
 				</linkableFacilities>
 			</li>
 			<li Class="GeneticRim.CompProperties_ElectroWomb">
+				<isLarge>true</isLarge>
 			</li>
 		</comps>
 		<researchPrerequisites>
@@ -188,9 +189,8 @@
 		<label>tissue grinder</label>		
 		<canOverlapZones>false</canOverlapZones>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		
-		<description>Desc-todo.</description>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>		
+		<description>A workplace accident waiting to happen, the Tissue Grinder takes the corpses of animals and carefully rips and tears them to pieces in order to extract useful genetic data in the form of Genoframes. The hardware is also capable of combining two identical frames into a superior form by comparing and improving upon latent and inferior genetic material.\n\nWorkspeed is influenced by someone who actually knows what they’re looking for in order to skip some of the more routine tasks, and possibly shouldn’t be placed into the hands of someone with no concept of ethics, morality or conscience.</description>
 		<graphicData>
 			<texPath>Things/Building/TissueGrinder/TissueGrinder</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -303,7 +303,7 @@
 		<defName>GR_GeneticExtractionTable</defName>
 		<label>genome extractor table</label>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>todo.</description>
+		<description>A specialized extraction module that is equipped to extract the genomes from a subject’s corpse. The material is converted into a soupish-mixture which is then condensed into the relevant genome. Processing speed is influenced by intelligence, as it relies and knowing which button to press, when to press it and where to find it under the intimidating number of submenus.</description>
 		<graphicData>
 			<texPath>Things/Building/TableGeneticExtraction/TableGeneticExtraction</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -315,7 +315,7 @@
 			</damageData>
 		</graphicData>
 		<costList>
-			<Steel>200</Steel>
+			<Steel>100</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>

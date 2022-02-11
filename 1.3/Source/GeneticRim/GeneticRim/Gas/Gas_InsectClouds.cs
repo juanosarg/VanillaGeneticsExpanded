@@ -14,7 +14,7 @@ namespace GeneticRim
 
         public override void Tick()
         {
-            base.Tick();
+           /* base.Tick();
             try
             {
                     if (tickerInterval >= 30)
@@ -50,7 +50,7 @@ namespace GeneticRim
             catch (NullReferenceException e)
             {
                 //A weird error is produced sometimes when GetThingList returns a NullReferenceException. I did a try-catch which is inellegant, but it works
-            }
+            }*/
 
         }
 

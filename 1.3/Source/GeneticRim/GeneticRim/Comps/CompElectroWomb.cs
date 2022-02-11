@@ -10,6 +10,7 @@ namespace GeneticRim
     using UnityEngine;
     using Verse;
 
+  
     public class CompElectroWomb : ThingComp
     {
         public CompProperties_ElectroWomb Props => (CompProperties_ElectroWomb)this.props;
@@ -18,14 +19,27 @@ namespace GeneticRim
 
         public PawnKindDef growingResult;
         public ThingDef booster;
-        public float       progress;
+        public float progress;
+
+                Graphic usedGraphic;
 
         public CompPowerTrader compPowerTrader;
+
+        public bool isLargeWomb;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
             this.compPowerTrader = this.parent.GetComp<CompPowerTrader>();
+           
+            if (Props.isLarge)
+            {
+                usedGraphic = GraphicsCache.graphicTopLarge;
+                
+            }
+            else { usedGraphic = GraphicsCache.graphicTopSmall; }
+            usedGraphic.drawSize = this.parent.def.graphicData.drawSize;
+
         }
 
         public override void CompTick()
@@ -34,7 +48,8 @@ namespace GeneticRim
 
             if (this.growingResult != null)
             {
-                if (compPowerTrader?.PowerOn == true) {
+                if (compPowerTrader?.PowerOn == true)
+                {
 
                     this.progress += 1f / GenDate.TicksPerHour; // (GenDate.TicksPerDay * 7f);
 
@@ -66,7 +81,7 @@ namespace GeneticRim
                     }
 
                 }
-                
+
             }
         }
 
@@ -89,8 +104,12 @@ namespace GeneticRim
 
             Vector3 pos = this.parent.DrawPos;
             pos.y = AltitudeLayer.MetaOverlays.AltitudeFor();
-            Graphic graphic         = this.growingResult?.lifeStages.Last().bodyGraphicData.Graphic.GetCopy(this.parent.def.graphicData.drawSize * this.progress, null);
+            Graphic graphic = this.growingResult?.lifeStages.Last().bodyGraphicData.Graphic.GetCopy(this.parent.def.graphicData.drawSize * this.progress, null);
             graphic?.DrawFromDef(pos, Rot4.South, null);
+
+            Vector3 posTop = this.parent.DrawPos;
+            posTop.y = AltitudeLayer.MetaOverlays.AltitudeFor() + 1;
+            usedGraphic?.DrawFromDef(pos, Rot4.North, null);
         }
 
 
@@ -98,8 +117,8 @@ namespace GeneticRim
         {
             CompGrowthCell growthComp = growthCell.TryGetComp<CompGrowthCell>();
 
-            PawnKindDef result = Core.GetHybrid(growthComp.genomeDominant, growthComp.genomeSecondary, growthComp.genoframe,       growthComp.booster,
-                                              out float swapChance,      out float failureChance,    out PawnKindDef swapResult, out PawnKindDef failureResult);
+            PawnKindDef result = Core.GetHybrid(growthComp.genomeDominant, growthComp.genomeSecondary, growthComp.genoframe, growthComp.booster,
+                                              out float swapChance, out float failureChance, out PawnKindDef swapResult, out PawnKindDef failureResult);
 
             this.booster = growthComp.booster;
 
@@ -113,7 +132,7 @@ namespace GeneticRim
             if (!failure && result != null && result.RaceProps.baseBodySize < this.Props.maxBodySize)
             {
                 this.growingResult = result;
-                this.progress      = 0;
+                this.progress = 0;
                 return;
             }
 

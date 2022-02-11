@@ -3,7 +3,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_GrowthCell</defName>
 		<label>growth cell</label>
-		<description>This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius until the genetically modified organism is ready to hatch.</description>
+		<description>A portable, human-made casing designed to hold an embryo until it is transferred to a relevant Electrowomb, similar to fertilized eggs that require incubation. The embryonic fluid is unstable due to the unnatural genetic combination, so it will need to be implanted within 7 days after its creation. This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/GR_Growthcell</texPath>
@@ -27,6 +27,10 @@
 				<minSafeTemperature>0</minSafeTemperature>
 				<maxSafeTemperature>50</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+			</li>
+			 <li Class="CompProperties_Rottable">
+				<daysToRotStart>7</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
 			</li>
 			<li>
 				<compClass>GeneticRim.CompGrowthCell</compClass>

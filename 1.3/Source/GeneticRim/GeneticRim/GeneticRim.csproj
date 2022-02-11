@@ -297,14 +297,11 @@
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertIngredients.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
-    <Compile Include="Comps\CompAnimalControlHub.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
     <Compile Include="Comps\CompGrowthCell.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_AnimalControlHub.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_ElectroWomb.cs" />
-    <Compile Include="Comps\DraftingList.cs" />
     <Compile Include="Comps\Window_DesignateGrowthCell.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="DefExtensions\DefExtension_Hybrid.cs" />
@@ -323,6 +320,7 @@
     <Compile Include="Gas\Gas_InsanityCloud.cs" />
     <Compile Include="Gas\Gas_InsectClouds.cs" />
     <Compile Include="Gas\Gas_PoisonCloud.cs" />
+    <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\Root_Play_Update.cs" />
     <Compile Include="Harmony\MapParent_RecalculateHibernatableIncidentTargets.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
