@@ -21,7 +21,14 @@ namespace GeneticRim
         public Thing frame;
         public Thing booster;
 
+        public CompPowerTrader compPowerTrader;
 
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            this.compPowerTrader = this.parent.GetComp<CompPowerTrader>();
+        }
+       
         public void Initialize(Thing genomeDominant, Thing genomeSecondary, Thing frame, Thing booster, int durationTicks)
         {
             this.genomeDominant = genomeDominant;
@@ -41,10 +48,7 @@ namespace GeneticRim
             cell.genoframe       = this.frame.def;
             cell.booster         = this.booster?.def;
 
-            this.genomeDominant.Destroy();
-            this.genomeSecondary.Destroy();
-            this.frame.Destroy();
-            this.booster?.Destroy();
+            
 
             this.genomeDominant  = null;
             this.genomeSecondary = null;
@@ -60,15 +64,19 @@ namespace GeneticRim
 
             if (this.progress >= 0)
             {
-                this.progress += 1f / this.duration;
+                if (compPowerTrader?.PowerOn == true) {
+                    this.progress += 1f / this.duration;
 
-                if (this.progress >= 1)
-                {
-                    GenSpawn.Spawn(this.growthCell, this.parent.InteractionCell, this.parent.Map);
-                    this.duration   = -1;
-                    this.progress   = -1f;
-                    this.growthCell = null;
+                    if (this.progress >= 1)
+                    {
+                        GenSpawn.Spawn(this.growthCell, this.parent.InteractionCell, this.parent.Map);
+                        this.duration = -1;
+                        this.progress = -1f;
+                        this.growthCell = null;
+                    }
+
                 }
+                
             }
         }
 

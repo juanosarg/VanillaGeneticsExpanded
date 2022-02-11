@@ -20,38 +20,53 @@ namespace GeneticRim
         public ThingDef booster;
         public float       progress;
 
+        public CompPowerTrader compPowerTrader;
+
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            this.compPowerTrader = this.parent.GetComp<CompPowerTrader>();
+        }
+
         public override void CompTick()
         {
             base.CompTick();
 
             if (this.growingResult != null)
             {
-                this.progress += 1f / GenDate.TicksPerHour; // (GenDate.TicksPerDay * 7f);
+                if (compPowerTrader?.PowerOn == true) {
 
-                if (this.progress > 1)
-                {
-                    Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 0, fixedChronologicalAge: 0, 
-                                                                                     newborn: true, forceGenerateNewPawn: true));
+                    this.progress += 1f / GenDate.TicksPerHour; // (GenDate.TicksPerDay * 7f);
 
-                    IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 5f);
-
-                    if(this.booster != InternalDefOf.GR_BoosterFertility)
+                    if (this.progress > 1)
                     {
-                        pawn.health.AddHediff(HediffDefOf.Sterilized);
+                        Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 0, fixedChronologicalAge: 0,
+                                                                                         newborn: true, forceGenerateNewPawn: true));
+
+                        IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 5f);
+
+
+
+                        GenSpawn.Spawn(pawn, near, this.parent.Map);
+
+                        if (this.booster != InternalDefOf.GR_BoosterFertility)
+                        {
+                            pawn.health.AddHediff(HediffDefOf.Sterilized);
+                        }
+
+                        if (this.booster == InternalDefOf.GR_BoosterController)
+                        {
+                            pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
+                        }
+
+                        this.progress = 0;
+                        this.growingResult = null;
+
+                        //finished
                     }
 
-                    if (this.booster == InternalDefOf.GR_BoosterController)
-                    {
-                        pawn.health.AddHediff(InternalDefOf.GR_AnimalControlImplant);
-                    }
-
-                    GenSpawn.Spawn(pawn, near, this.parent.Map);
-
-                    this.progress      = 0;
-                    this.growingResult = null;
-                    
-                    //finished
                 }
+                
             }
         }
 
