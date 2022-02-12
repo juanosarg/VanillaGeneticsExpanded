@@ -25,7 +25,7 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/Immunobooster</texPath>			
 		</graphicData>
-		<description>Text-todo.</description>
+		<description>Capsules containing genetic restorative medicine that helps prevent genomes from breaking down prematurely. Effectively helps mitigate the possibility of the hybrid ending in complete failure.</description>
 		<statBases>
 			<MarketValue>20</MarketValue>
 		</statBases>
@@ -42,7 +42,7 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/Harmonobooster</texPath>			
 		</graphicData>
-		<description>Text-todo.</description>
+		<description>Capsules containing genetic stabilizers that help maintain the dominant-recessive genome relationship. Effectively reduces the chance of the hybrid having the opposite intended result.</description>
 		<statBases>
 			<MarketValue>12</MarketValue>
 		</statBases>
@@ -59,7 +59,7 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/Tempobooster</texPath>			
 		</graphicData>
-		<description>Text-todo.</description>
+		<description>Capsules containing growth hormones that help speed up the hybrid’s growth process.</description>
 		<statBases>
 			<MarketValue>18</MarketValue>
 		</statBases>
@@ -72,7 +72,7 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/FertilityUnblocker</texPath>			
 		</graphicData>
-		<description>Text-todo.</description>
+		<description>Compressed medicine that allows hybrids to develop functional sexual organs. Effectively allows hybrids to reproduce with the exact same species.</description>
 		<statBases>
 			<MarketValue>28</MarketValue>
 		</statBases>
@@ -84,7 +84,7 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/Stabilizator</texPath>			
 		</graphicData>
-		<description>Text-todo.</description>
+		<description>Compressed medicine that slows the growth of the specimen, increasing both stability and safety. Effectively increases growth time by 50% in exchange for a vastly increased chance of obtaining the intended result.</description>
 		<statBases>
 			<MarketValue>32</MarketValue>
 		</statBases>
@@ -101,7 +101,7 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/Controller</texPath>			
 		</graphicData>
-		<description>Text-todo.</description>
+		<description>Self-assembling machinery that fuses with the specimen’s nerve centers during the growth process. Effectively allows hybrids to be drafted but increases the chance of failure due to introduction of invasive foreign material.</description>
 		<statBases>
 			<MarketValue>220</MarketValue>
 		</statBases>

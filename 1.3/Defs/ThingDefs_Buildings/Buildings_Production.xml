@@ -69,7 +69,7 @@
 		<thingCategories>
 			<li>BuildingsProduction</li>
 		</thingCategories>
-		<description>Desc-todo.</description>
+		<description>A relatively small machine designed to simulate the environment of a mother’s womb. Once a Growthcell has been inserted, the embryo can start growing all the way to its adult life stage before being released. Provides limited growing room for specimens.</description>
 		<graphicData>
 			<texPath>Things/Building/Electrowombs/Electrowomb_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +131,7 @@
 		<thingCategories>
 			<li>BuildingsProduction</li>
 		</thingCategories>
-		<description>Desc-todo.</description>
+		<description>A larger machine designed to simulate the environment of a mother’s womb. Once a Growthcell has been inserted, the embryo can start growing all the way to its adult life stage before being released. Provides more growing room for larger specimens.</description>
 		<graphicData>
 			<texPath>Things/Building/Electrowombs/ElectrowombLarge_Base</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -141,8 +141,8 @@
 		<uiIconScale>0.75</uiIconScale>
 		<castEdgeShadows>false</castEdgeShadows>
 		<costList>
-			<Steel>60</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>120</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.25</fillPercent>
@@ -246,7 +246,7 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		
-		<description>Desc-todo.</description>
+		<description>An advanced and specialized workbench capable of manufacturing medical-grade implants and mixing genetic boosters specifically tuned to Genomorphers. These include but aren’t limited to boosters that improve the safety or stability of hybrids and even micro-controllers that enable direct user-input.</description>
 		<graphicData>
 			<texPath>Things/Building/TableGeneticTinkering/TableGeneticTinkering</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
