@@ -6,9 +6,26 @@
       <defName>GR_GeneticMaterial</defName>
       <label>genetic materials</label>
       <parent>Manufactured</parent>
-	  <iconPath>Things/Item/GR_GeneticMaterials_Bear</iconPath>
+	  <iconPath>Things/Item/TemplateGenome</iconPath>
       
     </ThingCategoryDef>
+	
+	 <ThingCategoryDef>
+      <defName>GR_GeneticMaterialTierOne</defName>
+      <label>genetic materials (tier 1)</label>
+      <parent>GR_GeneticMaterial</parent>
+	  <iconPath>Things/Item/GR_GeneticMaterials_Bear</iconPath>     
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>GR_GeneticMaterialTierTwoOrThree</defName>
+      <label>genetic materials (tiers 2 and 3)</label>
+      <parent>GR_GeneticMaterial</parent>
+	  <iconPath>Things/Item/GR_GeneticMaterials_Reptile</iconPath>     
+    </ThingCategoryDef>
+	
+	
+	
 	<ThingCategoryDef>
       <defName>GR_Incubators</defName>
       <label>growth cells</label>

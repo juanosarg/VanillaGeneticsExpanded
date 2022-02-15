@@ -13,6 +13,7 @@ namespace GeneticRim
     }
 
     [HotSwappableAttribute]
+    [StaticConstructorOnStartup]
     public class Window_DesignateGrowthCell : Window
     {
         public const int BottomButtonWidth = 190;
@@ -38,6 +39,7 @@ namespace GeneticRim
         }
 
         public List<Thing> genomes;
+        public List<Thing> genomesCanBeSecondary;
         public List<Thing> genoframes;
         public List<Thing> boosters;
 
@@ -45,7 +47,10 @@ namespace GeneticRim
         {
             base.PreOpen();
 
-            this.genomes    = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterial) ?? false).ToList();
+
+            this.genomes    = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne)==true|| x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true) ).ToList();
+            this.genomesCanBeSecondary = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) ?? false).ToList();
+
             this.boosters   = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_Boosters)        ?? false).ToList();
             this.genoframes = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_Genoframes)      ?? false).ToList();
         }
@@ -114,7 +119,7 @@ namespace GeneticRim
             DrawButton(selectSecondaryGenomeRect, "GR_SelectSecondaryGenome".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
-                foreach (var genome in this.genomes.Except(genomeDominant).ToList())
+                foreach (var genome in this.genomesCanBeSecondary.Except(genomeDominant).ToList())
                 {
                     floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
                     {
@@ -268,7 +273,8 @@ namespace GeneticRim
 
             Text.Font = GameFont.Small;
             var infoBox = new Rect(outcomeBox.x, outcomeBox.yMax + 5, 18, 18);
-            Widgets.InfoCardButton(infoBox, pawnKindDef?.race);
+            if (pawnKindDef!=null) { Widgets.InfoCardButton(infoBox, pawnKindDef?.race);}
+            
 
             var pawnName = pawnKindDef?.label.CapitalizeFirst();
             var ppawnLabelSize = Text.CalcSize(pawnName);

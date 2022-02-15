@@ -54,7 +54,12 @@
             
             DefExtension_HybridChanceAlterer frameExtension   = genoframe?.GetModExtension<DefExtension_HybridChanceAlterer>();
             DefExtension_HybridChanceAlterer boosterExtension = booster?.GetModExtension<DefExtension_HybridChanceAlterer>();
-            swapChance = (10f - (frameExtension?.stability ?? 0) - (boosterExtension?.stability ?? 0)) / 100f;
+            if (genomeDominant.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true)
+            {
+                swapChance = 0f;
+            }
+            else { swapChance = (10f - (frameExtension?.stability ?? 0) - (boosterExtension?.stability ?? 0)) / 100f; }
+            
             float failure = (10f - (frameExtension?.safety ?? 0) - (boosterExtension?.safety ?? 0));
             failureChance = failure / 100f;
             

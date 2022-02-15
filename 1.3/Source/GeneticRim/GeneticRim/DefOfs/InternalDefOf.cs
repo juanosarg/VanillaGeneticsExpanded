@@ -25,14 +25,14 @@ namespace GeneticRim
 		public static ThingDef         GR_ReptileGenetic;
 		public static ThingDef         GR_HumanoidGenetic;
 		public static ThingDef         GR_ThrumboGenetic;
-		public static ThingDef         GR_MechanoidGenetic;
-		public static ThingDef         GR_NonSpecializedGenetic;
-		public static ThingDef         GR_RuinedGenetic;
+		public static ThingDef         GR_MechanoidGenetic;		
         public static ThingDef         GR_GrowthCell;
 		public static ThingDef         GR_BoosterFertility;
 		public static ThingDef         GR_BoosterController;
 		public static HediffDef        GR_AnimalControlHediff;
 		public static ThingCategoryDef GR_GeneticMaterial;
+		public static ThingCategoryDef GR_GeneticMaterialTierOne;
+		public static ThingCategoryDef GR_GeneticMaterialTierTwoOrThree;
 		public static ThingCategoryDef GR_Genoframes;
 		public static ThingCategoryDef GR_Boosters;
 		public static ThingDef         GR_GenePod;

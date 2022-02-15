@@ -548,52 +548,7 @@
 		</skillRequirements>
 	</RecipeDef>
 	
-	<RecipeDef>
-		<defName>GR_ExtractNonSpecializedGenes</defName>
-		<label>extract non-specialized genes from any animal</label>
-		<description>Extract non-specialized cells from any animal. These genes can't be used to create animal hybrids. They can probably be used in a gene recombinator to turn them into more useful genetic materials, though.</description>
-		<jobString>Extracting Genetic Material</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
-		<workSkill>Intellectual</workSkill>
-		<recipeUsers>
-			<li>GR_GeneticExtractionTable</li>	  
-		</recipeUsers>	
-		 <ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>Corpses</li>
-					</categories>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		
-		<fixedIngredientFilter>
-			<categories>
-				<li>Corpses</li>
-			</categories>
-			<disallowedCategories>
-				<li>CorpsesMechanoid</li>
-			</disallowedCategories>
-      <specialFiltersToDisallow>
-        <li>AllowRotten</li>
-      </specialFiltersToDisallow>
-		</fixedIngredientFilter>
-		<defaultIngredientFilter>
-			<categories>
-				<li>CorpsesAnimal</li>
-			</categories>
-		</defaultIngredientFilter>
-		<products>
-			<GR_NonSpecializedGenetic>1</GR_NonSpecializedGenetic>
-		</products>
-		<skillRequirements>
-			<Intellectual>6</Intellectual>
-		</skillRequirements>
-	</RecipeDef>
+	
 
 -->
 

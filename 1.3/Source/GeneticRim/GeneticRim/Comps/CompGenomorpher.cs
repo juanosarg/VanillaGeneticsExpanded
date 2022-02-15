@@ -9,6 +9,7 @@ namespace GeneticRim
     using RimWorld;
     using UnityEngine;
 
+    [StaticConstructorOnStartup]
     public class CompGenomorpher : ThingComp
     {
         public  float progress = -1;

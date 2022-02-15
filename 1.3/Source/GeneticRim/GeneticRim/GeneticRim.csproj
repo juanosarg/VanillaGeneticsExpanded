@@ -333,8 +333,6 @@
     <Compile Include="Comps\CompProperties\CompProperties_Exploder.cs" />
     <Compile Include="Comps\CompRecombinatorSerum.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RecombinatorSerum.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_Recombinator.cs" />
-    <Compile Include="Comps\CompRecombinator.cs" />
     <Compile Include="Comps\CompUseEffect_ApplyHediff.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_BiggerExplosion.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_Eggxplosion.cs" />

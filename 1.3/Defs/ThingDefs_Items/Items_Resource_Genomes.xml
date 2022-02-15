@@ -16,7 +16,7 @@
 		</statBases>
 		<tradeability>None</tradeability>
 		<thingCategories>
-			<li>GR_GeneticMaterial</li>
+			<li>GR_GeneticMaterialTierOne</li>
 		</thingCategories>
 		<tickerType>Rare</tickerType>
 		<comps>
@@ -31,6 +31,13 @@
 				<safety>10</safety>
 			</li>
 		</modExtensions>
+	</ThingDef>
+	<ThingDef Name="GR_GeneticsBaseTier2or3" ParentName="GR_GeneticsBase" Abstract="True">
+		
+		<thingCategories Inherit="false">
+			<li>GR_GeneticMaterialTierTwoOrThree</li>
+		</thingCategories>
+		
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_UrsineGenetic</defName>
@@ -89,14 +96,26 @@
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
+		<defName>GR_HumanoidGenetic</defName>
+		<label>humanoid genome</label>
+		<description>A payload of humanoid genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_GeneticMaterials_Humanoid</texPath>
+		</graphicData>
+		
+	</ThingDef>
+	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_EquineGenetic</defName>
 		<label>equine genome</label>
 		<description>A payload of equine genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<statBases>
+			<MarketValue>45</MarketValue>
+		</statBases>
 		<graphicData>
 			<texPath>Things/Item/GR_GeneticMaterials_Equine</texPath>
 		</graphicData>
 	</ThingDef>
-	<ThingDef ParentName="GR_GeneticsBase">
+	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_InsectoidGenetic</defName>
 		<label>insectoid genome</label>
 		<description>A payload of insectoid genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
@@ -107,7 +126,7 @@
 			<texPath>Things/Item/GR_GeneticMaterials_Insectoid</texPath>
 		</graphicData>
 	</ThingDef>
-	<ThingDef ParentName="GR_GeneticsBase">
+	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_ReptileGenetic</defName>
 		<label>reptile genome</label>
 		<description>A payload of reptile genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
@@ -118,18 +137,8 @@
 			<texPath>Things/Item/GR_GeneticMaterials_Reptile</texPath>
 		</graphicData>
 	</ThingDef>
-	<ThingDef ParentName="GR_GeneticsBase">
-		<defName>GR_HumanoidGenetic</defName>
-		<label>humanoid genome</label>
-		<description>A payload of humanoid genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
-		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Humanoid</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>45</MarketValue>
-		</statBases>
-	</ThingDef>
-	<ThingDef ParentName="GR_GeneticsBase">
+	
+	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_ThrumboGenetic</defName>
 		<label>colossal genome</label>
 		<description>A payload of colossal genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
@@ -140,7 +149,7 @@
 			<texPath>Things/Item/GR_GeneticMaterials_Thrumbo</texPath>
 		</graphicData>
 	</ThingDef>
-	<ThingDef ParentName="GR_GeneticsBase">
+	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_MechanoidGenetic</defName>
 		<label>mechanoid active components</label>
 		<description>A vial of active mechanites from a mechanoid's corpse.</description>
@@ -151,17 +160,7 @@
 			<texPath>Things/Item/GR_GeneticMaterials_Mechanoid</texPath>
 		</graphicData>
 	</ThingDef>
-	<ThingDef ParentName="GR_GeneticsBase">
-		<defName>GR_NonSpecializedGenetic</defName>
-		<label>non-specialized genome</label>
-		<description>This vial of genetic material contains non-specialized cells that can't be used to create animal hybrids. They can probably be used in a gene recombinator to turn them into more useful genetic materials, though.</description>
-		<statBases>
-			<MarketValue>45</MarketValue>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Item/GR_NonSpecializedGeneticMaterial</texPath>
-		</graphicData>
-	</ThingDef>
+	
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_TemplateGenetic</defName>
 		<label>template genome</label>
@@ -173,25 +172,5 @@
 			<texPath>Things/Item/TemplateGenome</texPath>
 		</graphicData>
 	</ThingDef>
-	<ThingDef ParentName="ResourceBase">
-		<defName>GR_RuinedGenetic</defName>
-		<label>ruined genome</label>
-		<description>This genetic material is ruined. Useless, though some merchant may pay a pittance for the glass shards.</description>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/GR_RuinedGenetic</texPath>
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<statBases>
-			<MaxHitPoints>15</MaxHitPoints>
-			<Flammability>1.0</Flammability>
-			<DeteriorationRate>6</DeteriorationRate>
-			<Mass>0.1</Mass>
-			<MarketValue>1</MarketValue>
-		</statBases>
-		<thingCategories>
-			<li>GR_GeneticMaterial</li>
-		</thingCategories>
-		<stackLimit>1</stackLimit>
-	</ThingDef>
+	
 </Defs>
