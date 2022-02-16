@@ -15,6 +15,13 @@
   </JobDef>
   
   <JobDef>
+    <defName>GR_UseGenomeExcavator</defName>
+    <driverClass>GeneticRim.JobDriver_UseExcavator</driverClass>
+    <reportString>using genome excavator.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+  <JobDef>
     <defName>GR_InsertIngredients</defName>
     <driverClass>GeneticRim.JobDriver_InsertIngredients</driverClass>
     <reportString>inserting ingredients on TargetA.</reportString>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierTwoAnimalsReptiles</defName>
+		<tier>2</tier>
+		<itemProduced>GR_ReptileGenetic</itemProduced>
+		<extractableAnimals>							
+			<li>Iguana</li>						
+			
+		
+		</extractableAnimals>							
+	</GeneticRim.ExtractableAnimalsList>
+
+
+
+
+
+
+
+</Defs>

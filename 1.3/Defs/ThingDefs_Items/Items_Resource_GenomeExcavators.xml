@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase" Name="GR_GenomeExcavatorBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<Mass>0.2</Mass>
+			<DeteriorationRate>2.0</DeteriorationRate>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<thingCategories>
+			<li>GR_GenomeExcavators</li>
+		</thingCategories>
+		<techLevel>Ultra</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenomeExcavatorBase">
+		<defName>GR_GenomeExcavator</defName>
+		<label>genome excavator</label>
+		<description>A simplified genome extraction device designed to be usable by even the most simple-minded goon, as such it resembles a caulking gun that works in reverse. The best genetic material can be found in the brain and the automated, single-use design instantly compresses this material into a usable genome.\n\nThe desired subject needs to be docile and trusting of the user who intends on scooping out their brain in a process that is not-quite instantaneous, but don’t let that stop you. Alternatively, it will also work on a dead body...</description>
+		<graphicData>
+			<texPath>Things/Item/GR_GenomeExcavator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>GR_UseGenomeExcavator</useJob>
+				<useLabel>Use genome excavator</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="GeneticRim.CompProperties_TargetableAnimalOrCorpse">				
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_TargetEffect_Extract">				
+				<tier>2</tier>
+			</li>			
+			
+		</comps>
+	</ThingDef>
+</Defs>

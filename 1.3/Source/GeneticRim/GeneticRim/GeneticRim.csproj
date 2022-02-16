@@ -296,12 +296,17 @@
   <ItemGroup>
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertIngredients.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
     <Compile Include="Comps\CompGrowthCell.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_ElectroWomb.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_TargetableAnimalOrCorpse.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_TargetEffect_Extract.cs" />
+    <Compile Include="Comps\CompTargetableAnimalOrCorpse.cs" />
+    <Compile Include="Comps\CompTargetEffect_Extract.cs" />
     <Compile Include="Comps\Window_DesignateGrowthCell.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="DefExtensions\DefExtension_Hybrid.cs" />
@@ -309,6 +314,7 @@
     <Compile Include="DefExtensions\DefExtension_HybridFailure.cs" />
     <Compile Include="DefExtensions\DefExtension_Quality.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Defs\ExtractableAnimalsList.cs" />
     <Compile Include="Dev Mode\SuperItemSpawner.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />
     <Compile Include="Endgame\ArchotechUtility.cs" />

@@ -1,77 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
- 
-    <ThingCategoryDef>
-      <defName>GR_GeneticMaterial</defName>
-      <label>genetic materials</label>
-      <parent>Manufactured</parent>
-	  <iconPath>Things/Item/TemplateGenome</iconPath>
-      
-    </ThingCategoryDef>
-	
-	 <ThingCategoryDef>
-      <defName>GR_GeneticMaterialTierOne</defName>
-      <label>genetic materials (tier 1)</label>
-      <parent>GR_GeneticMaterial</parent>
-	  <iconPath>Things/Item/GR_GeneticMaterials_Bear</iconPath>     
-    </ThingCategoryDef>
-	
 	<ThingCategoryDef>
-      <defName>GR_GeneticMaterialTierTwoOrThree</defName>
-      <label>genetic materials (tiers 2 and 3)</label>
-      <parent>GR_GeneticMaterial</parent>
-	  <iconPath>Things/Item/GR_GeneticMaterials_Reptile</iconPath>     
-    </ThingCategoryDef>
-	
-	
-	
+		<defName>GR_GeneticMaterial</defName>
+		<label>genetic materials</label>
+		<parent>Manufactured</parent>
+		<iconPath>Things/Item/TemplateGenome</iconPath>
+	</ThingCategoryDef>
 	<ThingCategoryDef>
-      <defName>GR_Incubators</defName>
-      <label>growth cells</label>
-      <parent>GR_GeneticMaterial</parent>
-	  <iconPath>Things/Item/GR_IncubatorCanister</iconPath>
-      
-    </ThingCategoryDef>
+		<defName>GR_GeneticMaterialTierOne</defName>
+		<label>genetic materials (tier 1)</label>
+		<parent>GR_GeneticMaterial</parent>
+		<iconPath>Things/Item/GR_GeneticMaterials_Bear</iconPath>
+	</ThingCategoryDef>
 	<ThingCategoryDef>
-      <defName>GR_Genoframes</defName>
-      <label>genoframes</label>
-      <parent>GR_GeneticMaterial</parent>
-	  <iconPath>Things/Item/Genoframe</iconPath>
-      
-    </ThingCategoryDef>
+		<defName>GR_GeneticMaterialTierTwoOrThree</defName>
+		<label>genetic materials (tiers 2 and 3)</label>
+		<parent>GR_GeneticMaterial</parent>
+		<iconPath>Things/Item/GR_GeneticMaterials_Reptile</iconPath>
+	</ThingCategoryDef>
 	<ThingCategoryDef>
-      <defName>GR_Boosters</defName>
-      <label>boosters</label>
-      <parent>GR_GeneticMaterial</parent>
-	  <iconPath>Things/Item/Boosters/Immunobooster/Immunobooster_b</iconPath>
-      
-    </ThingCategoryDef>
+		<defName>GR_GenomeExcavators</defName>
+		<label>genome excavators</label>
+		<parent>GR_GeneticMaterial</parent>
+		<iconPath>Things/Item/GR_GenomeExcavator</iconPath>
+	</ThingCategoryDef>
 	<ThingCategoryDef>
-      <defName>GR_ParagonSerums</defName>
-      <label>paragon serums</label>
-      <parent>GR_GeneticMaterial</parent>
-	  <iconPath>Things/Item/GR_ParagonSerum</iconPath>
-      
-    </ThingCategoryDef>
-	
-	    <ThingCategoryDef>
-    <defName>GR_Corpses</defName>
-    <label>hybrid and paragon corpses</label>
-      <parent>Corpses</parent>
-    </ThingCategoryDef>
-	
+		<defName>GR_Incubators</defName>
+		<label>growth cells</label>
+		<parent>GR_GeneticMaterial</parent>
+		<iconPath>Things/Item/GR_Growthcell</iconPath>
+	</ThingCategoryDef>
 	<ThingCategoryDef>
-        <defName>GR_ImplantCategory</defName>
-        <label>hybrid implants</label>
-        <parent>BodyParts</parent>
-      </ThingCategoryDef>
-	  
-	  <ThingCategoryDef>
-        <defName>GR_GenetrainersCategory</defName>
-        <label>genetrainers</label>
-        <parent>Items</parent>
-      </ThingCategoryDef>
-
-
+		<defName>GR_Genoframes</defName>
+		<label>genoframes</label>
+		<parent>GR_GeneticMaterial</parent>
+		<iconPath>Things/Item/Genoframe</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>GR_Boosters</defName>
+		<label>boosters</label>
+		<parent>GR_GeneticMaterial</parent>
+		<iconPath>Things/Item/Boosters/Immunobooster/Immunobooster_b</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>GR_ParagonSerums</defName>
+		<label>paragon serums</label>
+		<parent>GR_GeneticMaterial</parent>
+		<iconPath>Things/Item/GR_ParagonSerum</iconPath>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>GR_Corpses</defName>
+		<label>hybrid and paragon corpses</label>
+		<parent>Corpses</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>GR_ImplantCategory</defName>
+		<label>hybrid implants</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>GR_GenetrainersCategory</defName>
+		<label>genetrainers</label>
+		<parent>Items</parent>
+	</ThingCategoryDef>
 </Defs>
