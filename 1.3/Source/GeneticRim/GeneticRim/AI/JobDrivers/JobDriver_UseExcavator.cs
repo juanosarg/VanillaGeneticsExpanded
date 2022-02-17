@@ -28,30 +28,34 @@ namespace GeneticRim
 
 		protected override IEnumerable<Toil> MakeNewToils()
 		{
+			job.count = 1;
 			this.FailOnIncapable(PawnCapacityDefOf.Manipulation);
-			yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
+			yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.A);
+			yield return Toils_Haul.StartCarryThing(TargetIndex.A, false, false, false);
+			yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.Touch).FailOnDespawnedOrNull(TargetIndex.B);
+
+			
 			Toil toil = Toils_General.Wait(useDuration);
-			toil.WithProgressBarToilDelay(TargetIndex.A);
-			toil.FailOnDespawnedNullOrForbidden(TargetIndex.A);
-			toil.FailOnCannotTouch(TargetIndex.A, PathEndMode.Touch);
+			toil.WithProgressBarToilDelay(TargetIndex.B);
+			toil.FailOnDespawnedNullOrForbidden(TargetIndex.B);
+			toil.FailOnCannotTouch(TargetIndex.B, PathEndMode.Touch);
 			if (job.targetB.IsValid)
 			{
 				toil.FailOnDespawnedOrNull(TargetIndex.B);
-				CompTargetableAnimalOrCorpse compTargetable = job.GetTarget(TargetIndex.A).Thing.TryGetComp<CompTargetableAnimalOrCorpse>();
-				if (compTargetable != null && compTargetable.Props.nonDownedPawnOnly)
-				{
-					toil.FailOnDownedOrDead(TargetIndex.B);
-				}
+				
 			}
 			yield return toil;
 			Toil use = new Toil();
+			
 			use.initAction = delegate
 			{
 				Pawn actor = use.actor;
 				actor.CurJob.targetA.Thing.TryGetComp<CompUsable>().UsedBy(actor);
+				
 			};
 			use.defaultCompleteMode = ToilCompleteMode.Instant;
 			yield return use;
+			yield break;
 		}
 	}
 }

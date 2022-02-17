@@ -20,6 +20,22 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>GR_ExtractedBrain</defName>
+		<description>The brain or neural center of this creature has been extracted and refined into genetic material.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>brain extracted</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		
+		<stages>
+			<li>
+
+			</li>
+		</stages>
+	</HediffDef>
 
 	<HediffDef>
 		<defName>GR_AteChocolateEgg</defName>

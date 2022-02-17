@@ -36,13 +36,14 @@
 			<li Class="CompProperties_Usable">
 				<useJob>GR_UseGenomeExcavator</useJob>
 				<useLabel>Use genome excavator</useLabel>
-				<useDuration>600</useDuration>
+				<useDuration>60</useDuration>
 			</li>
 			<li Class="GeneticRim.CompProperties_TargetableAnimalOrCorpse">				
 				
 			</li>
 			<li Class="GeneticRim.CompProperties_TargetEffect_Extract">				
 				<tier>2</tier>
+				<numberOfUses>1</numberOfUses>
 			</li>			
 			
 		</comps>

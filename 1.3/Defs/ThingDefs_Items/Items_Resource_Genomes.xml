@@ -45,12 +45,12 @@
 			<texPath>Things/Item/GR_GeneticMaterials_Bear</texPath>
 		</graphicData>
 		<label>ursine genome</label>
-		<description>A payload of ursine genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of ursine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_AvianGenetic</defName>
 		<label>avian genome</label>
-		<description>A payload of avian genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of avian genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_GeneticMaterials_Bird</texPath>
 		</graphicData>
@@ -58,7 +58,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_BoomalopeGenetic</defName>
 		<label>boom genome</label>
-		<description>A payload of boom genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of boom genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_GeneticMaterials_Boomalope</texPath>
 		</graphicData>
@@ -66,7 +66,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_MuffaloGenetic</defName>
 		<label>muffalo genome</label>
-		<description>A payload of muffalo genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of muffalo genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_GeneticMaterials_Muffalo</texPath>
 		</graphicData>
@@ -74,7 +74,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_CanineGenetic</defName>
 		<label>canine genome</label>
-		<description>A payload of canine genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of canine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_GeneticMaterials_Canine</texPath>
 		</graphicData>
@@ -82,7 +82,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_RodentGenetic</defName>
 		<label>rodent/leporid genome</label>
-		<description>A payload of rodent genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of rodent genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_GeneticMaterials_Rodent</texPath>
 		</graphicData>
@@ -90,7 +90,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_FelineGenetic</defName>
 		<label>feline genome</label>
-		<description>A payload of feline genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of feline genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_GeneticMaterials_Feline</texPath>
 		</graphicData>
@@ -98,7 +98,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_HumanoidGenetic</defName>
 		<label>humanoid genome</label>
-		<description>A payload of humanoid genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of humanoid genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_GeneticMaterials_Humanoid</texPath>
 		</graphicData>
@@ -107,7 +107,7 @@
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_EquineGenetic</defName>
 		<label>equine genome</label>
-		<description>A payload of equine genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of equine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<statBases>
 			<MarketValue>45</MarketValue>
 		</statBases>
@@ -118,7 +118,7 @@
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_InsectoidGenetic</defName>
 		<label>insectoid genome</label>
-		<description>A payload of insectoid genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of insectoid genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<statBases>
 			<MarketValue>45</MarketValue>
 		</statBases>
@@ -129,7 +129,7 @@
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_ReptileGenetic</defName>
 		<label>reptile genome</label>
-		<description>A payload of reptile genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of reptile genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<statBases>
 			<MarketValue>45</MarketValue>
 		</statBases>
@@ -141,7 +141,7 @@
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_ThrumboGenetic</defName>
 		<label>colossal genome</label>
-		<description>A payload of colossal genetic material. Can be used at the genepod to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
+		<description>A payload of colossal genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. Can be used as either a primary or secondary genome.</description>
 		<statBases>
 			<MarketValue>100</MarketValue>
 		</statBases>

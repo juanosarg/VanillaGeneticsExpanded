@@ -30,13 +30,17 @@ namespace GeneticRim
 		public static ThingDef         GR_BoosterFertility;
 		public static ThingDef         GR_BoosterController;
 		public static HediffDef        GR_AnimalControlHediff;
+		public static HediffDef        GR_ExtractedBrain;
 		public static ThingCategoryDef GR_GeneticMaterial;
 		public static ThingCategoryDef GR_GeneticMaterialTierOne;
 		public static ThingCategoryDef GR_GeneticMaterialTierTwoOrThree;
 		public static ThingCategoryDef GR_Genoframes;
 		public static ThingCategoryDef GR_Boosters;
+		public static ThingCategoryDef GR_GenomeExcavators;
 		public static ThingDef         GR_GenePod;
 		public static JobDef           GR_InsertIngredients;
         public static JobDef           GR_InsertGrowthCell;
-    }
+		public static SoundDef         GR_Pop;
+
+	}
 }

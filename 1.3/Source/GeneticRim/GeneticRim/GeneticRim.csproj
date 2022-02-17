@@ -322,6 +322,7 @@
     <Compile Include="Endgame\Building_ArchotechPlatform.cs" />
     <Compile Include="Endgame\CompArchotechPart.cs" />
     <Compile Include="Endgame\CompProperties_ArchotechPart.cs" />
+    <Compile Include="GameComponents\GameComponent_HyperlinkInitializer.cs" />
     <Compile Include="Gas\Gas_Hairballs.cs" />
     <Compile Include="Gas\Gas_InsanityCloud.cs" />
     <Compile Include="Gas\Gas_InsectClouds.cs" />

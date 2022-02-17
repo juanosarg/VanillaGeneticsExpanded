@@ -27,9 +27,10 @@ namespace GeneticRim
             return new TargetingParameters
             {
                 canTargetPawns = true,
-                canTargetBuildings = false,
                 canTargetItems = true,
-                validator = (TargetInfo x) => BaseTargetValidator(x.Thing) && ((x.Thing is Corpse)||(x.Thing is Pawn))
+                canTargetBuildings = false,
+                mapObjectTargetsMustBeAutoAttackable = false,
+                validator = (TargetInfo x) => BaseTargetValidator(x.Thing) && ((x.Thing is Corpse)||(x.Thing is Pawn && x.Thing.Faction == Faction.OfPlayer))
             };
         }
 

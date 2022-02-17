@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
-
 	<GeneticRim.ExtractableAnimalsList>
 		<defName>GR_TierTwoAnimalsReptiles</defName>
 		<tier>2</tier>
 		<itemProduced>GR_ReptileGenetic</itemProduced>
-		<extractableAnimals>							
-			<li>Iguana</li>						
-			
-		
-		</extractableAnimals>							
+		<extractableAnimals>
+			<li>Iguana</li>
+			<li>Cobra</li>
+			<li>Tortoise</li>
+		</extractableAnimals>
 	</GeneticRim.ExtractableAnimalsList>
-
-
-
-
-
-
-
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierTwoAnimalsInsectoids</defName>
+		<tier>2</tier>
+		<itemProduced>GR_InsectoidGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Megascarab</li>
+			<li>Megaspider</li>
+			<li>Spelopede</li>
+			
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
 </Defs>
