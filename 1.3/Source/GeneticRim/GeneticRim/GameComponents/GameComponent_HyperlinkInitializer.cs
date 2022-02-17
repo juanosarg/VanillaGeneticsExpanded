@@ -36,13 +36,13 @@ namespace GeneticRim
 
             CompProperties_TargetEffect_Extract comp = excavator.GetCompProperties<CompProperties_TargetEffect_Extract>();
 
-            string tier = comp.tier;
+            List<string> tier = comp.tier;
 
             HashSet<ThingDef> allLinks = new HashSet<ThingDef>();
             HashSet<ExtractableAnimalsList> allLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
             foreach (ExtractableAnimalsList individualList in allLists)
             {
-                if (individualList.tier == tier)
+                if (tier.Contains(individualList.tier))
                 {
                     allLinks.AddRange(individualList.extractableAnimals);
                 }

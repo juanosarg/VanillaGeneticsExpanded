@@ -21,4 +21,13 @@
 			
 		</extractableAnimals>
 	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierThreeAnimalsColossals</defName>
+		<tier>3</tier>
+		<itemProduced>GR_ThrumboGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Thrumbo</li>
+			
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
 </Defs>

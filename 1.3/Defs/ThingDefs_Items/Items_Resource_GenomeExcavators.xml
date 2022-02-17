@@ -21,7 +21,7 @@
 	<ThingDef ParentName="GR_GenomeExcavatorBase">
 		<defName>GR_GenomeExcavator</defName>
 		<label>genome excavator</label>
-		<description>A simplified genome extraction device designed to be usable by even the most simple-minded goon, as such it resembles a caulking gun that works in reverse. The best genetic material can be found in the brain and the automated, single-use design instantly compresses this material into a usable genome.\n\nThe desired subject needs to be docile and trusting of the user who intends on scooping out their brain in a process that is not-quite instantaneous, but don’t let that stop you. Alternatively, it will also work on a dead body...</description>
+		<description>A simplified genome extraction device designed to be usable by even the most simple-minded goon, as such it resembles a caulking gun that works in reverse. The best genetic material can be found in the brain and the automated, single-use design instantly compresses this material into a usable genome.\n\nThe desired subject needs to be docile and trusting of the user who intends on scooping out their brain in a process that is not-quite instantaneous. It is recommended to anesthetize the creature as any sudden movement on their part will interrupt the whole process. Alternatively, it will also work on a dead body...</description>
 		<graphicData>
 			<texPath>Things/Item/GR_GenomeExcavator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -31,7 +31,6 @@
 		<statBases>
 			<MarketValue>100</MarketValue>
 		</statBases>
-		
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>GR_UseGenomeExcavator</useJob>
@@ -41,11 +40,43 @@
 			<li Class="GeneticRim.CompProperties_TargetableAnimalOrCorpse">				
 				
 			</li>
-			<li Class="GeneticRim.CompProperties_TargetEffect_Extract">				
-				<tier>2</tier>
+			<li Class="GeneticRim.CompProperties_TargetEffect_Extract">
+				<tier>
+					<li>2</li>
+				</tier>
 				<numberOfUses>1</numberOfUses>
-			</li>			
-			
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="GR_GenomeExcavatorBase">
+		<defName>GR_ArchotechGenomeExcavator</defName>
+		<label>archotech genome excavator</label>
+		<description>An advanced genome extraction device that is capable of self-arming and self-guiding at the touch of a button. The best genetic material can be found in the brain and the automated design instantly compresses this material into a usable genome. Each device holds up to three charges before it becomes useless.\n\nThe desired subject needs to be docile and trusting of the user who intends on scooping out their brain in a process that is guaranteed to be painless and instantaneous. It is recommended to anesthetize the creature as any sudden movement on their part will interrupt the whole process. Alternatively, it will also work on a dead body... The device is much better at compressing material and as such can be used on even the largest of organisms.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_GenomeExcavatorArchotech</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>GR_UseGenomeExcavator</useJob>
+				<useLabel>Use genome excavator</useLabel>
+				<useDuration>60</useDuration>
+			</li>
+			<li Class="GeneticRim.CompProperties_TargetableAnimalOrCorpse">				
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_TargetEffect_Extract">
+				<tier>
+					<li>2</li>
+					<li>3</li>
+				</tier>
+				<numberOfUses>3</numberOfUses>
+			</li>
 		</comps>
 	</ThingDef>
 </Defs>

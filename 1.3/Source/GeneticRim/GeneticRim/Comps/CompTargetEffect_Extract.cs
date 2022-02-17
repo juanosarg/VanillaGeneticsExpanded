@@ -16,7 +16,7 @@ namespace GeneticRim
 	{
 
 		
-		public ThingDef thingToSpawn;
+		public ThingDef thingToSpawn = null;
 
 		public int numberOfUses=-1;
 
@@ -89,9 +89,9 @@ namespace GeneticRim
 					HashSet<ExtractableAnimalsList> allLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
 					foreach (ExtractableAnimalsList individualList in allLists)
 					{
-						if (individualList.tier == Props.tier)
+						if (Props.tier.Contains(individualList.tier))
 						{
-
+							
 							if (target is Corpse)
 							{
 								Corpse pawn = target as Corpse;

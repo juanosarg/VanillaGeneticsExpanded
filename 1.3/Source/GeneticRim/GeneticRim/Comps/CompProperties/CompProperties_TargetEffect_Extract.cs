@@ -1,11 +1,12 @@
-﻿
-using RimWorld;
+﻿using RimWorld;
 using Verse;
+using System.Collections.Generic;
+
 namespace GeneticRim
 {
 	public class CompProperties_TargetEffect_Extract : CompProperties
 	{
-		public string tier;
+		public List<string> tier;
 		public int numberOfUses;
 
 		public CompProperties_TargetEffect_Extract()
