@@ -4,57 +4,59 @@
 		<mods>
 			<li>Vanilla Animals Expanded — Temperate Forest</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
-		<operations>
-			
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesChicken"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_WildGoose</li>
-					
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesChicken"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_WildGoose</li>
-					
-
-
-				</value>
-			</li>	
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_Beaver</li>
-				
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_Beaver</li>
-				
-
-				</value>
-			</li>	
-			
-		
-			
-	
-			
-			
-			
-			
-		</operations>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_WildGoose</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_WildGoose</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_Beaver</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_Beaver</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsAvianTemperateForest</defName>
+							<tier>1</tier>
+							<itemProduced>GR_AvianGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_WildGoose</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsRodentTemperateForest</defName>
+							<tier>1</tier>
+							<itemProduced>GR_RodentGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_Beaver</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
-	
-	
 </Patch>

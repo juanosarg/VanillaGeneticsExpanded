@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="GR_ExcavatorRecipeBase" Abstract="true">
+		<jobString>Creating genome excavator</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>GR_GeneticsTinkeringTable</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_ExcavatorRecipeBase">
+		<defName>GR_CraftGenomeExcavator</defName>
+		<label>Craft Genome excavator</label>
+		<description>Craft an genome excavator to extract genomes from tamed or dead animals. This excavator can extract tier 1 and tier 2 genomes.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_GenomeExcavator>1</GR_GenomeExcavator>
+		</products>		
+	</RecipeDef>
+</Defs>

@@ -29,7 +29,20 @@
 				</value>
 			</li>	
 			
-			
+			<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsBoomAustralia</defName>
+							<tier>1</tier>
+							<itemProduced>GR_BoomalopeGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_Boombat</li>
+								
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
 			
 			
 			

@@ -4,51 +4,67 @@
 		<mods>
 			<li>Let's Have a Cat!</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
-		<operations>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_akaNEKO_shironeko</li>
-					<li>Corpse_akaNEKO_kuroneko</li>
-					<li>Corpse_akaNEKO_kijitora</li>
-					<li>Corpse_akaNEKO_A_Shorthair</li>
-					<li>Corpse_akaNEKO_Russian_Blue</li>
-					<li>Corpse_akaNEKO_Siamese</li>
-					<li>Corpse_akaNEKO_J_Bobtail</li>
-					<li>Corpse_akaNEKO_Persian</li>
-					<li>Corpse_akaNEKO_Scottish_Fold</li>
-					<li>Corpse_akaNEKO_Scottish_Fold_Long</li>
-					<li>Corpse_akaNEKO_Maine_Coon</li>
-					<li>Corpse_akaNEKO_N_Forest_Cat</li>
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_akaNEKO_shironeko</li>
-					<li>Corpse_akaNEKO_kuroneko</li>
-					<li>Corpse_akaNEKO_kijitora</li>
-					<li>Corpse_akaNEKO_A_Shorthair</li>
-					<li>Corpse_akaNEKO_Russian_Blue</li>
-					<li>Corpse_akaNEKO_Siamese</li>
-					<li>Corpse_akaNEKO_J_Bobtail</li>
-					<li>Corpse_akaNEKO_Persian</li>
-					<li>Corpse_akaNEKO_Scottish_Fold</li>
-					<li>Corpse_akaNEKO_Scottish_Fold_Long</li>
-					<li>Corpse_akaNEKO_Maine_Coon</li>
-					<li>Corpse_akaNEKO_N_Forest_Cat</li>
-
-				</value>
-			</li>
-			
-		</operations>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_akaNEKO_shironeko</li>
+						<li>Corpse_akaNEKO_kuroneko</li>
+						<li>Corpse_akaNEKO_kijitora</li>
+						<li>Corpse_akaNEKO_A_Shorthair</li>
+						<li>Corpse_akaNEKO_Russian_Blue</li>
+						<li>Corpse_akaNEKO_Siamese</li>
+						<li>Corpse_akaNEKO_J_Bobtail</li>
+						<li>Corpse_akaNEKO_Persian</li>
+						<li>Corpse_akaNEKO_Scottish_Fold</li>
+						<li>Corpse_akaNEKO_Scottish_Fold_Long</li>
+						<li>Corpse_akaNEKO_Maine_Coon</li>
+						<li>Corpse_akaNEKO_N_Forest_Cat</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_akaNEKO_shironeko</li>
+						<li>Corpse_akaNEKO_kuroneko</li>
+						<li>Corpse_akaNEKO_kijitora</li>
+						<li>Corpse_akaNEKO_A_Shorthair</li>
+						<li>Corpse_akaNEKO_Russian_Blue</li>
+						<li>Corpse_akaNEKO_Siamese</li>
+						<li>Corpse_akaNEKO_J_Bobtail</li>
+						<li>Corpse_akaNEKO_Persian</li>
+						<li>Corpse_akaNEKO_Scottish_Fold</li>
+						<li>Corpse_akaNEKO_Scottish_Fold_Long</li>
+						<li>Corpse_akaNEKO_Maine_Coon</li>
+						<li>Corpse_akaNEKO_N_Forest_Cat</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsFelineLetsCats</defName>
+							<tier>1</tier>
+							<itemProduced>GR_FelineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>akaNEKO_shironeko</li>
+								<li>akaNEKO_kuroneko</li>
+								<li>akaNEKO_kijitora</li>
+								<li>akaNEKO_A_Shorthair</li>
+								<li>akaNEKO_Russian_Blue</li>
+								<li>akaNEKO_Siamese</li>
+								<li>akaNEKO_J_Bobtail</li>
+								<li>akaNEKO_Persian</li>
+								<li>akaNEKO_Scottish_Fold</li>
+								<li>akaNEKO_Scottish_Fold_Long</li>
+								<li>akaNEKO_Maine_Coon</li>
+								<li>akaNEKO_N_Forest_Cat</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
-	
-	
 </Patch>

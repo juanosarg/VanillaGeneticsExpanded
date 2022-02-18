@@ -7,7 +7,7 @@
 
 		<match Class="PatchOperationSequence">
 		<operations>
-			
+			<!--
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMechanoid"]/ingredients/li/filter/thingDefs</xpath>
 				<value>
@@ -31,7 +31,7 @@
 					<li>Corpse_Mech_Assaulter</li>
 				</value>
 			</li>
-
+-->
 
 		</operations>
 		</match>

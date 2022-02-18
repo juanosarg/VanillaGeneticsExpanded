@@ -2,38 +2,24 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Better Infestations 1.2</li>
+			<li>Better Infestations 1.3</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
-		<operations>
-			
-	
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_BI_Queen</li>
-				
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_BI_Queen</li>
-
-
-
-				</value>
-			</li>	
-
-		
-		
-		</operations>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierTwoAnimalsInsectoidsBetterInfestations</defName>
+							<tier>2</tier>
+							<itemProduced>GR_InsectoidGenetic</itemProduced>
+							<extractableAnimals>
+								<li>BI_Queen</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
-	
-	
 </Patch>

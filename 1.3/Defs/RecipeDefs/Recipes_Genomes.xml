@@ -369,49 +369,7 @@
 
 	
 
-	<RecipeDef>
-		<defName>GR_ExtractGenesThrumbo</defName>
-		<label>extract genes from a colossal creature</label>
-		<description>Extract genetic material from a colossal creature's corpse.</description>
-		<jobString>Extracting Genetic Material</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
-		<workSkill>Intellectual</workSkill>
-		<recipeUsers>
-			<li>GR_GeneticExtractionTable</li>	  
-		</recipeUsers>	
-		<ingredients>
-			<li>
-				<filter>
-
-					<thingDefs>
-						<li>Corpse_Thrumbo</li>
-						<li>Corpse_Elephant</li>
-						<li>Corpse_Megasloth</li>
-
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-
-			<thingDefs>
-				<li>Corpse_Thrumbo</li>
-				<li>Corpse_Elephant</li>
-				<li>Corpse_Megasloth</li>
-
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<GR_ThrumboGenetic>1</GR_ThrumboGenetic>
-		</products>
-		<researchPrerequisite>GR_AdvancedGeneticEngineering</researchPrerequisite>
-		<skillRequirements>
-			<Intellectual>6</Intellectual>
-		</skillRequirements>
-	</RecipeDef>
+	
 
 	<RecipeDef>
 		<defName>GR_ExtractGenesMechanoid</defName>

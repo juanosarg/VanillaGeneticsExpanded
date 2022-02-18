@@ -4,55 +4,59 @@
 		<mods>
 			<li>Vanilla Animals Expanded — Tundra</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
-		<operations>
-			
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_Porcupine</li>
-					
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_Porcupine</li>
-					
-
-
-				</value>
-			</li>	
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_Muskox</li>
-					
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_Muskox</li>
-					
-
-				</value>
-			</li>
-			
-	
-			
-			
-			
-			
-		</operations>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_Porcupine</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_Porcupine</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_Muskox</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_Muskox</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsRodentTundra</defName>
+							<tier>1</tier>
+							<itemProduced>GR_RodentGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_Porcupine</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsMuffaloTundra</defName>
+							<tier>1</tier>
+							<itemProduced>GR_MuffaloGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_Muskox</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
-	
-	
 </Patch>

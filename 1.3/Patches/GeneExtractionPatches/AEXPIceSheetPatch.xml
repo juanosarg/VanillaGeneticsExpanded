@@ -4,40 +4,34 @@
 		<mods>
 			<li>Vanilla Animals Expanded — Ice Sheet</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
-		<operations>
-			
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesChicken"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_Penguin</li>
-					
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesChicken"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_Penguin</li>
-					
-
-
-				</value>
-			</li>	
-			
-		
-			
-	
-			
-			
-			
-			
-		</operations>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_Penguin</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_Penguin</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsAvianIceSheet</defName>
+							<tier>1</tier>
+							<itemProduced>GR_AvianGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_Penguin</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
-	
-	
 </Patch>

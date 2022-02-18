@@ -4,57 +4,47 @@
 		<mods>
 			<li>[HLX] ReGrowth - Extinct Animals Pack</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
 			<operations>
-
-
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptilian"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-						<li>Corpse_RG-EAP_ArcticDrak</li>
-						
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptilian"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						
-						<li>Corpse_RG-EAP_ArcticDrak</li>
-
-
-					</value>
-				</li>	
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesChicken"]/ingredients/li/filter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 						<li>Corpse_RG-EAP_Dodo</li>
-						
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesChicken"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						
 						<li>Corpse_RG-EAP_Dodo</li>
-
-
 					</value>
-				</li>	
-
-				
-
-
-
-
-
-
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsAvianReGrowthExtinct</defName>
+							<tier>1</tier>
+							<itemProduced>GR_AvianGenetic</itemProduced>
+							<extractableAnimals>
+								<li>RG-EAP_Dodo</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierTwoAnimalsReptilesReGrowthExtinct</defName>
+							<tier>2</tier>
+							<itemProduced>GR_ReptileGenetic</itemProduced>
+							<extractableAnimals>
+								<li>RG-EAP_ArcticDrak</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
-
-
 </Patch>

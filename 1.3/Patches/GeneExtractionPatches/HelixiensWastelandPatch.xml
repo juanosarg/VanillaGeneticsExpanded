@@ -4,59 +4,62 @@
 		<mods>
 			<li>ReGrowth - Wasteland - Animal Addon</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
 			<operations>
-
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 						<li>Corpse_RG-WF_WastelandSquirrel</li>
 						<li>Corpse_RG-WF_WastelandBeaver</li>
-						
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						
 						<li>Corpse_RG-WF_WastelandSquirrel</li>
 						<li>Corpse_RG-WF_WastelandBeaver</li>
-
-
 					</value>
-				</li>	
-				
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 						<li>Corpse_RG-WF_WastelandBear</li>
-						
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						
 						<li>Corpse_RG-WF_WastelandBear</li>
-
-
 					</value>
-				</li>	
-
-				
-
-
-
-
-
-
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsRodentReGrowthWasteland</defName>
+							<tier>1</tier>
+							<itemProduced>GR_RodentGenetic</itemProduced>
+							<extractableAnimals>
+								<li>RG-WF_WastelandSquirrel</li>
+								<li>RG-WF_WastelandBeaver</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsUrsineReGrowthWasteland</defName>
+							<tier>1</tier>
+							<itemProduced>GR_UrsineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>RG-WF_WastelandBear</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
-
-
 </Patch>

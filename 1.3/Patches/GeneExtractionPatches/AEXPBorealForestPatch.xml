@@ -4,57 +4,59 @@
 		<mods>
 			<li>Vanilla Animals Expanded — Boreal Forest</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
-		<operations>
-			
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesWolf"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_ArcticCoyote</li>
-					
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesWolf"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_ArcticCoyote</li>
-					
-
-
-				</value>
-			</li>	
-			
-		
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_BlackBear</li>
-					
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_AEXP_BlackBear</li>
-					
-
-
-				</value>
-			</li>				
-	
-			
-			
-			
-			
-		</operations>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_ArcticCoyote</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_ArcticCoyote</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_BlackBear</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AEXP_BlackBear</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsCanineBoreal</defName>
+							<tier>1</tier>
+							<itemProduced>GR_CanineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_ArcticCoyote</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsUrsineBoreal</defName>
+							<tier>1</tier>
+							<itemProduced>GR_UrsineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_BlackBear</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
-	
-	
 </Patch>

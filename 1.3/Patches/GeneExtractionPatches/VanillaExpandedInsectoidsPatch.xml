@@ -8,72 +8,43 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/ingredients/li/filter/thingDefs</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-						<li>Corpse_VFEI_Insectoid_Queen</li>
-						<li>Corpse_VFEI_Insectoid_RoyalMegaspider</li>
-						<li>Corpse_VFEI_Insectoid_Gigalocust</li>
-						<li>Corpse_VFEI_Insectoid_Megapede</li>
-						<li>Corpse_VFEI_Insectoid_Larvae</li>
-						<li>Corpse_VFEI_VatgrownBoomtick</li>
-						<li>Corpse_VFEI_VatGrownCuterpillar</li>
-						<li>Corpse_VFEI_VatGrownGigascorpion</li>
-						<li>Corpse_VFEI_VatGrownGigawig</li>
-						<li>Corpse_VFEI_VatGrownMegacricket</li>
-						<li>Corpse_VFEI_VatGrownMilkbeetle</li>
-						<li>Corpse_VFEI_VatGrownMonstrosity</li>
-						<li>Corpse_VFEI_VatGrownPrincess</li>
-						<li>Corpse_VFEI_VatgrownRoyalLarva</li>
-						<li>Corpse_VFEI_VatGrownRoyalMaggot</li>
-						<li>Corpse_VFEI_VatGrownSpiderweaver</li>
-						<li>Corpse_VFEI_VatGrownTitanbeetle</li>
-						<li>Corpse_VFEI_VatGrownGigalocust</li>
-						<li>Corpse_VFEI_VatGrownMegapede</li>
-						<li>Corpse_VFEI_VatGrownMegascarab</li>
-						<li>Corpse_VFEI_VatgrownMegaspider</li>
-						<li>Corpse_VFEI_VatGrownSpelopede</li>
-						<li>Corpse_VFEI_VatGrownWargling</li>
-						<li>Corpse_VFEI_VatGrownWorkerAnt</li>
-
-
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierTwoAnimalsInsectoidsVEI</defName>
+							<tier>2</tier>
+							<itemProduced>GR_InsectoidGenetic</itemProduced>
+							<extractableAnimals>
+								<li>VFEI_Insectoid_Queen</li>
+								<li>VFEI_Insectoid_RoyalMegaspider</li>
+								<li>VFEI_Insectoid_Gigalocust</li>
+								<li>VFEI_Insectoid_Megapede</li>
+								<li>VFEI_Insectoid_Larvae</li>
+								<li>VFEI_VatgrownBoomtick</li>
+								<li>VFEI_VatGrownCuterpillar</li>
+								<li>VFEI_VatGrownGigascorpion</li>
+								<li>VFEI_VatGrownGigawig</li>
+								<li>VFEI_VatGrownMegacricket</li>
+								<li>VFEI_VatGrownMilkbeetle</li>
+								<li>VFEI_VatGrownMonstrosity</li>
+								<li>VFEI_VatGrownPrincess</li>
+								<li>VFEI_VatgrownRoyalLarva</li>
+								<li>VFEI_VatGrownRoyalMaggot</li>
+								<li>VFEI_VatGrownSpiderweaver</li>
+								<li>VFEI_VatGrownTitanbeetle</li>
+								<li>VFEI_VatGrownGigalocust</li>
+								<li>VFEI_VatGrownMegapede</li>
+								<li>VFEI_VatGrownMegascarab</li>
+								<li>VFEI_VatgrownMegaspider</li>
+								<li>VFEI_VatGrownSpelopede</li>
+								<li>VFEI_VatGrownWargling</li>
+								<li>VFEI_VatGrownWorkerAnt</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
 					</value>
 				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Corpse_VFEI_Insectoid_Queen</li>
-						<li>Corpse_VFEI_Insectoid_RoyalMegaspider</li>
-						<li>Corpse_VFEI_Insectoid_Gigalocust</li>
-						<li>Corpse_VFEI_Insectoid_Megapede</li>
-						<li>Corpse_VFEI_Insectoid_Larvae</li>
-						<li>Corpse_VFEI_VatgrownBoomtick</li>
-						<li>Corpse_VFEI_VatGrownCuterpillar</li>
-						<li>Corpse_VFEI_VatGrownGigascorpion</li>
-						<li>Corpse_VFEI_VatGrownGigawig</li>
-						<li>Corpse_VFEI_VatGrownMegacricket</li>
-						<li>Corpse_VFEI_VatGrownMilkbeetle</li>
-						<li>Corpse_VFEI_VatGrownMonstrosity</li>
-						<li>Corpse_VFEI_VatGrownPrincess</li>
-						<li>Corpse_VFEI_VatgrownRoyalLarva</li>
-						<li>Corpse_VFEI_VatGrownRoyalMaggot</li>
-						<li>Corpse_VFEI_VatGrownSpiderweaver</li>
-						<li>Corpse_VFEI_VatGrownTitanbeetle</li>
-						<li>Corpse_VFEI_VatGrownGigalocust</li>
-						<li>Corpse_VFEI_VatGrownMegapede</li>
-						<li>Corpse_VFEI_VatGrownMegascarab</li>
-						<li>Corpse_VFEI_VatgrownMegaspider</li>
-						<li>Corpse_VFEI_VatGrownSpelopede</li>
-						<li>Corpse_VFEI_VatGrownWargling</li>
-						<li>Corpse_VFEI_VatGrownWorkerAnt</li>
-
-
-
-
-					</value>
-				</li>	
+				
 
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>

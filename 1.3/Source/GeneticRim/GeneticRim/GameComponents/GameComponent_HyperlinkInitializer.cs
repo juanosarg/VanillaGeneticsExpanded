@@ -18,16 +18,23 @@ namespace GeneticRim
         {
 
             HashSet<ThingDef> excavators = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.thingCategories?.Contains(InternalDefOf.GR_GenomeExcavators) == true).ToHashSet();
+            HashSet<ThingDef> genomes = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => ((x.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) == true)|| (x.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true))).ToHashSet();
 
 
             foreach (ThingDef excavator in excavators)
             {
-                
-                AddHyperlinks(excavator);
+
+                AddExcavatorHyperlinks(excavator);
+            }
+
+            foreach (ThingDef genome in genomes)
+            {
+
+                AddGenomeHyperlinks(genome);
             }
         }
 
-        private void AddHyperlinks(ThingDef excavator)
+        private void AddExcavatorHyperlinks(ThingDef excavator)
         {
             if (excavator.descriptionHyperlinks == null)
             {
@@ -38,25 +45,49 @@ namespace GeneticRim
 
             List<string> tier = comp.tier;
 
-            HashSet<ThingDef> allLinks = new HashSet<ThingDef>();
+            HashSet<ThingDef> allExcavatorsLinks = new HashSet<ThingDef>();
             HashSet<ExtractableAnimalsList> allLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
             foreach (ExtractableAnimalsList individualList in allLists)
             {
                 if (tier.Contains(individualList.tier))
                 {
-                    allLinks.AddRange(individualList.extractableAnimals);
+                    allExcavatorsLinks.Add(individualList.itemProduced);
                 }
             }
-
-            foreach (ThingDef thing in allLinks)
+            foreach (ThingDef thing in allExcavatorsLinks)
             {
                 excavator.descriptionHyperlinks.Add(thing);
-
                
             }
+        }
 
+        private void AddGenomeHyperlinks(ThingDef genome)
+        {
+            if (genome.descriptionHyperlinks == null)
+            {
+                genome.descriptionHyperlinks = new List<DefHyperlink>();
+            }
 
+           
 
+            HashSet<ThingDef> allGenomesLinks = new HashSet<ThingDef>();
+            HashSet<ExtractableAnimalsList> allLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
+            foreach (ExtractableAnimalsList individualList in allLists)
+            {
+                if (individualList.itemProduced==genome)
+                {
+                    if (!individualList.needsHumanLike)
+                    {
+                        allGenomesLinks.AddRange(individualList.extractableAnimals);
+                    }
+                   
+                }
+            }
+            foreach (ThingDef thing in allGenomesLinks)
+            {
+                genome.descriptionHyperlinks.Add(thing);
+
+            }
         }
 
     }

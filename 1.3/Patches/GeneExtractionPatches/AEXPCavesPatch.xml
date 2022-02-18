@@ -4,84 +4,65 @@
 		<mods>
 			<li>Vanilla Animals Expanded — Caves</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
-		<operations>
-			
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_VAECaves_CaveBear</li>
-					
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_VAECaves_CaveBear</li>
-					
-
-
-				</value>
-			</li>	
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptile"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_VAECaves_Wyrm</li>
-					<li>Corpse_VAECaves_BlindSalamander</li>
-					
-
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesReptile"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_VAECaves_Wyrm</li>
-					<li>Corpse_VAECaves_BlindSalamander</li>
-					
-
-
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/ingredients/li/filter/thingDefs</xpath>
-				<value>
-					<li>Corpse_VAECaves_AncientGiantSpider</li>
-					<li>Corpse_VAECaves_CaveCrawler</li>
-					<li>Corpse_VAECaves_GiantSpider</li>
-					<li>Corpse_VAECaves_GiantSpiderHatchling</li>
-					<li>Corpse_VAECaves_InsectoidHulk</li>
-					
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesInsectoid"]/fixedIngredientFilter/thingDefs</xpath>
-				<value>
-					<li>Corpse_VAECaves_AncientGiantSpider</li>
-					<li>Corpse_VAECaves_CaveCrawler</li>
-					<li>Corpse_VAECaves_GiantSpider</li>
-					<li>Corpse_VAECaves_GiantSpiderHatchling</li>
-					<li>Corpse_VAECaves_InsectoidHulk</li>
-					
-
-				</value>
-			</li>
-			
-	
-			
-			
-			
-			
-		</operations>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_VAECaves_CaveBear</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBear"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_VAECaves_CaveBear</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsUrsineCaves</defName>
+							<tier>1</tier>
+							<itemProduced>GR_UrsineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>VAECaves_CaveBear</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierTwoAnimalsReptileCaves</defName>
+							<tier>2</tier>
+							<itemProduced>GR_ReptileGenetic</itemProduced>
+							<extractableAnimals>
+								<li>VAECaves_Wyrm</li>
+								<li>VAECaves_BlindSalamander</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierTwoAnimalsInsectoidCaves</defName>
+							<tier>2</tier>
+							<itemProduced>GR_InsectoidGenetic</itemProduced>
+							<extractableAnimals>
+								<li>VAECaves_AncientGiantSpider</li>
+								<li>VAECaves_CaveCrawler</li>
+								<li>VAECaves_GiantSpider</li>
+								<li>VAECaves_GiantSpiderHatchling</li>
+								<li>VAECaves_InsectoidHulk</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+			</operations>
 		</match>
 	</Operation>
-	
-	
 </Patch>

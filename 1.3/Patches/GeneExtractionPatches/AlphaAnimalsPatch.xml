@@ -4,80 +4,48 @@
 		<mods>
 			<li>Alpha Animals</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
 			<operations>
-
-
-
-		
-
-		
-
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[@Name = "GR_JawImplants"]/appliedOnFixedBodyParts</xpath>
-				<value>
-					<li>AA_InsectMouth</li>
-					<li>AA_CrocodileJaw</li>
-					<li>AA_SentientPlantMouth</li>
-				</value>
-			</li>
-
-
-
-		
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[@Name = "GR_LegImplants"]/appliedOnFixedBodyParts</xpath>
-				<value>
-					<li>AA_SmallInsectLeg</li>
-
-				</value>
-			</li>
-
-
-
-
-
-
-
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/RecipeDef[@Name = "GR_TailImplants"]/appliedOnFixedBodyParts</xpath>
-				<value>
-					<li>AA_InsectTail</li>
-
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "AA_MatureFleshbeast"]/race</xpath>
-				<value>
-					<useMeatFrom>GR_AberrantFleshbeast</useMeatFrom>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThingDef[defName = "GR_AberrantFleshbeast"]/comps</xpath>
-				<value>
-					<li Class="AnimalBehaviours.CompProperties_Metamorphosis">
-						<timeInYears>0.25</timeInYears>
-						<pawnToTurnInto>AA_MatureFleshbeast</pawnToTurnInto>
-					</li>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationAdd">
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name = "GR_JawImplants"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_InsectMouth</li>
+						<li>AA_CrocodileJaw</li>
+						<li>AA_SentientPlantMouth</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name = "GR_LegImplants"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_SmallInsectLeg</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name = "GR_TailImplants"]/appliedOnFixedBodyParts</xpath>
+					<value>
+						<li>AA_InsectTail</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "GR_AberrantFleshbeast"]/comps</xpath>
+					<value>
+						<li Class="AnimalBehaviours.CompProperties_Metamorphosis">
+							<timeInYears>0.25</timeInYears>
+							<pawnToTurnInto>AA_MatureFleshbeast</pawnToTurnInto>
+						</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 						<li>Corpse_AA_ArcticLion</li>
 						<li>Corpse_AA_SandLion</li>
 						<li>Corpse_AA_CrystallineCaracal</li>
 						<li>Corpse_AA_PhoenixOwlcat</li>
-
-
+						<li>Corpse_AA_FrostLynx</li>
+						<li>Corpse_AA_Genix</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesFeline"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
@@ -85,44 +53,10 @@
 						<li>Corpse_AA_SandLion</li>
 						<li>Corpse_AA_CrystallineCaracal</li>
 						<li>Corpse_AA_PhoenixOwlcat</li>
-
+						<li>Corpse_AA_FrostLynx</li>
+						<li>Corpse_AA_Genix</li>
 					</value>
 				</li>
-
-				<!--<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMechanoid"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-						<li>Corpse_AA_Slurrypede</li>
-						<li>Corpse_AA_Aura</li>
-						<li>Corpse_AA_Daggersnout</li>
-						<li>Corpse_AA_Fireworm</li>
-						<li>Corpse_AA_Goliath</li>
-						<li>Corpse_AA_Siegebreaker</li>
-						<li>Corpse_AA_Demolisher</li>
-						<li>Corpse_AA_Phalanx</li>
-						<li>Corpse_AA_WaywardMobileAssembler</li>
-
-
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMechanoid"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Corpse_AA_Slurrypede</li>
-						<li>Corpse_AA_Aura</li>
-						<li>Corpse_AA_Daggersnout</li>
-						<li>Corpse_AA_Fireworm</li>
-						<li>Corpse_AA_Goliath</li>
-						<li>Corpse_AA_Siegebreaker</li>
-						<li>Corpse_AA_Demolisher</li>
-						<li>Corpse_AA_Phalanx</li>
-						<li>Corpse_AA_WaywardMobileAssembler</li>
-					</value>
-				</li>-->
-
-
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
@@ -132,11 +66,8 @@
 						<li>Corpse_AA_NightAve</li>
 						<li>Corpse_AA_FrostAve</li>
 						<li>Corpse_AA_FlamingoPhoenix</li>
-						<li>Corpse_AA_PhoenixOwlcat</li>
-
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesBird"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
@@ -146,15 +77,146 @@
 						<li>Corpse_AA_NightAve</li>
 						<li>Corpse_AA_FrostAve</li>
 						<li>Corpse_AA_FlamingoPhoenix</li>
-						<li>Corpse_AA_PhoenixOwlcat</li>
-
 					</value>
 				</li>
-
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_AnimusVox</li>
+						<li>Corpse_AA_RipperHound</li>
+						<li>Corpse_AA_Skiphound</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_AnimusVox</li>
+						<li>Corpse_AA_RipperHound</li>
+						<li>Corpse_AA_Skiphound</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_FissionMouse</li>
+						<li>Corpse_AA_FissionMouseSecond</li>
+						<li>Corpse_AA_FissionMouseThird</li>
+						<li>Corpse_AA_DuskRat</li>
+						<li>Corpse_AA_Razorjack</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_FissionMouse</li>
+						<li>Corpse_AA_FissionMouseSecond</li>
+						<li>Corpse_AA_FissionMouseThird</li>
+						<li>Corpse_AA_DuskRat</li>
+						<li>Corpse_AA_Razorjack</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_ChameleonYak</li>
+						<li>Corpse_AA_SpinedGow</li>
+						<li>Corpse_AA_Gigantelope</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+						<li>Corpse_AA_ChameleonYak</li>
+						<li>Corpse_AA_SpinedGow</li>
+						<li>Corpse_AA_Gigantelope</li>
+					</value>
+				</li>
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
-					
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsFelineAlphaAnimals</defName>
+							<tier>1</tier>
+							<itemProduced>GR_FelineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AA_ArcticLion</li>
+								<li>AA_SandLion</li>
+								<li>AA_CrystallineCaracal</li>
+								<li>AA_PhoenixOwlcat</li>
+								<li>AA_FrostLynx</li>
+								<li>AA_Genix</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsAvianAlphaAnimals</defName>
+							<tier>1</tier>
+							<itemProduced>GR_AvianGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AA_MeadowAve</li>
+								<li>AA_RoyalAve</li>
+								<li>AA_DesertAve</li>
+								<li>AA_NightAve</li>
+								<li>AA_FrostAve</li>
+								<li>AA_FlamingoPhoenix</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsCanineAlphaAnimals</defName>
+							<tier>1</tier>
+							<itemProduced>GR_CanineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AA_AnimusVox</li>
+								<li>AA_RipperHound</li>
+								<li>AA_Skiphound</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsRodentAlphaAnimals</defName>
+							<tier>1</tier>
+							<itemProduced>GR_RodentGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AA_FissionMouse</li>
+								<li>AA_FissionMouseSecond</li>
+								<li>AA_FissionMouseThird</li>
+								<li>AA_DuskRat</li>
+								<li>AA_Razorjack</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsMuffaloAlphaAnimals</defName>
+							<tier>1</tier>
+							<itemProduced>GR_MuffaloGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AA_ChameleonYak</li>
+								<li>AA_SpinedGow</li>
+								<li>AA_Gigantelope</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
 						<GeneticRim.ExtractableAnimalsList>
 							<defName>GR_TierTwoAnimalsInsectoidsAlphaAnimals</defName>
 							<tier>2</tier>
@@ -194,15 +256,11 @@
 								<li>AA_EmpressButterfly</li>
 							</extractableAnimals>
 						</GeneticRim.ExtractableAnimalsList>
-					
-					
 					</value>
 				</li>
-				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
-					
 						<GeneticRim.ExtractableAnimalsList>
 							<defName>GR_TierTwoAnimalsReptilesAlphaAnimals</defName>
 							<tier>2</tier>
@@ -217,89 +275,55 @@
 								<li>AA_PedigreedRaptor</li>
 							</extractableAnimals>
 						</GeneticRim.ExtractableAnimalsList>
-					
-					
 					</value>
 				</li>
-
-				
-
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/ingredients/li/filter/thingDefs</xpath>
+					<xpath>/Defs</xpath>
 					<value>
-						<li>Corpse_AA_AnimusVox</li>
-						<li>Corpse_AA_RipperHound</li>
-						<li>Corpse_AA_Skiphound</li>
-
-
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierThreeAnimalsColossalAlphaAnimals</defName>
+							<tier>3</tier>
+							<itemProduced>GR_ThrumboGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AA_Gallatross</li>
+								<li>AA_GallatrossMoribund</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
 					</value>
 				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/fixedIngredientFilter/thingDefs</xpath>
+				<!--<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMechanoid"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
-						<li>Corpse_AA_AnimusVox</li>
-						<li>Corpse_AA_RipperHound</li>
-						<li>Corpse_AA_Skiphound</li>
-
-
-
-					</value>
-				</li>	
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-						<li>Corpse_AA_FissionMouse</li>
-						<li>Corpse_AA_FissionMouseSecond</li>
-						<li>Corpse_AA_FissionMouseThird</li>
-						<li>Corpse_AA_DuskRat</li>
-						<li>Corpse_AA_Razorjack</li>
+						<li>Corpse_AA_Slurrypede</li>
+						<li>Corpse_AA_Aura</li>
+						<li>Corpse_AA_Daggersnout</li>
+						<li>Corpse_AA_Fireworm</li>
+						<li>Corpse_AA_Goliath</li>
+						<li>Corpse_AA_Siegebreaker</li>
+						<li>Corpse_AA_Demolisher</li>
+						<li>Corpse_AA_Phalanx</li>
+						<li>Corpse_AA_WaywardMobileAssembler</li>
 
 
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesRodent"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMechanoid"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>Corpse_AA_FissionMouse</li>
-						<li>Corpse_AA_FissionMouseSecond</li>
-						<li>Corpse_AA_FissionMouseThird</li>
-						<li>Corpse_AA_DuskRat</li>
-						<li>Corpse_AA_Razorjack</li>
-
-
-
+						<li>Corpse_AA_Slurrypede</li>
+						<li>Corpse_AA_Aura</li>
+						<li>Corpse_AA_Daggersnout</li>
+						<li>Corpse_AA_Fireworm</li>
+						<li>Corpse_AA_Goliath</li>
+						<li>Corpse_AA_Siegebreaker</li>
+						<li>Corpse_AA_Demolisher</li>
+						<li>Corpse_AA_Phalanx</li>
+						<li>Corpse_AA_WaywardMobileAssembler</li>
 					</value>
-				</li>	
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-						<li>Corpse_AA_ChameleonYak</li>
-						<li>Corpse_AA_SpinedGow</li>
-						<li>Corpse_AA_Gigantelope</li>
-
-
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Corpse_AA_ChameleonYak</li>
-						<li>Corpse_AA_SpinedGow</li>
-						<li>Corpse_AA_Gigantelope</li>
-
-					</value>
-				</li>
-
-
-		</operations>
+				</li>-->
+			</operations>
 		</match>
 	</Operation>
-
-
 </Patch>
 

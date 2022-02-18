@@ -95,17 +95,16 @@ namespace GeneticRim
 							if (target is Corpse)
 							{
 								Corpse pawn = target as Corpse;
-								if (individualList.extractableAnimals.Contains(pawn.InnerPawn.def))
-								{
+                                if ((individualList.needsHumanLike && pawn.InnerPawn.def.race.Humanlike)|| (individualList.extractableAnimals?.Contains(pawn.InnerPawn.def)==true)) { 							
 									thingToSpawn = individualList.itemProduced;
 								}
 							}
 							else
 							{
 								Pawn pawn = target as Pawn;
-								if (individualList.extractableAnimals.Contains(pawn.def))
+								if ((individualList.needsHumanLike && pawn.def.race.Humanlike) || (individualList.extractableAnimals?.Contains(pawn.def) == true)) 
 								{
-									thingToSpawn = individualList.itemProduced;
+										thingToSpawn = individualList.itemProduced;
 								}
 							}
 
@@ -116,7 +115,19 @@ namespace GeneticRim
 					{
 						Thing newThing = ThingMaker.MakeThing(thingToSpawn);
 						GenPlace.TryPlaceThing(newThing, target.Position, target.Map, ThingPlaceMode.Near);
-						
+						for (int i = 0; i < 20; i++)
+						{
+							IntVec3 c;
+							CellFinder.TryFindRandomReachableCellNear(target.Position, target.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
+							FilthMaker.TryMakeFilth(c, target.Map, ThingDefOf.Filth_Blood);
+
+						}
+						InternalDefOf.GR_Pop.PlayOneShot(new TargetInfo(target.Position, target.Map, false));
+						this.numberOfUses--;
+						if (numberOfUses <= 0)
+						{
+							user.carryTracker.DestroyCarriedThing();
+						}
 						if (target is Corpse)
 						{
 
@@ -130,19 +141,7 @@ namespace GeneticRim
 							pawn.Kill(null);
 						}
 
-						for (int i = 0; i < 20; i++)
-						{
-							IntVec3 c;
-							CellFinder.TryFindRandomReachableCellNear(target.Position, target.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
-							FilthMaker.TryMakeFilth(c, target.Map, ThingDefOf.Filth_Blood);
-
-						}
-						InternalDefOf.GR_Pop.PlayOneShot(new TargetInfo(target.Position, target.Map, false));
-						this.numberOfUses--;
-                        if (numberOfUses <= 0)
-                        {
-							user.carryTracker.DestroyCarriedThing();
-						}
+						
 					}
 					else
 					{

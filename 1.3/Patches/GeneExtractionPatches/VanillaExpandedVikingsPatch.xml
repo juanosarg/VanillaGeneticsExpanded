@@ -4,70 +4,37 @@
 		<mods>
 			<li>Vanilla Factions Expanded - Vikings</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
 			<operations>
-
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 						<li>Corpse_VFEV_WoolyCow</li>
 						<li>Corpse_VFEV_Njorun</li>
-
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMuffalo"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						
 						<li>Corpse_VFEV_WoolyCow</li>
 						<li>Corpse_VFEV_Njorun</li>
-
-
-					</value>
-				</li>	
-
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesWolf"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-						<li>Corpse_VFEV_Fenrir</li>
-						<li>Corpse_VFEV_Wolfhound</li>	
-
-
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesWolf"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
-						
 						<li>Corpse_VFEV_Fenrir</li>
-						<li>Corpse_VFEV_Wolfhound</li>	
-
-					</value>
-				</li>	
-				
-				<!--<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesThrumbo"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-						<li>Corpse_VFEV_Lothurr</li>
-						
-
-
+						<li>Corpse_VFEV_Wolfhound</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesThrumbo"]/fixedIngredientFilter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesCanine"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						
-						<li>Corpse_VFEV_Lothurr</li>
-
-
+						<li>Corpse_VFEV_Fenrir</li>
+						<li>Corpse_VFEV_Wolfhound</li>
 					</value>
-				</li>	
+				</li>
+				<!--
 				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/RecipeDef[defName = "GR_ExtractGenesMechanoid"]/ingredients/li/filter/thingDefs</xpath>
@@ -88,15 +55,48 @@
 
 					</value>
 				</li>	-->
-
-
-
-
-
-
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsMuffaloVikings</defName>
+							<tier>1</tier>
+							<itemProduced>GR_MuffaloGenetic</itemProduced>
+							<extractableAnimals>
+								<li>VFEV_WoolyCow</li>
+								<li>VFEV_Njorun</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierOneAnimalsCanineVikings</defName>
+							<tier>1</tier>
+							<itemProduced>GR_CanineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>VFEV_Fenrir</li>
+								<li>VFEV_Wolfhound</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierThreeAnimalsColossalVikings</defName>
+							<tier>3</tier>
+							<itemProduced>GR_ThrumboGenetic</itemProduced>
+							<extractableAnimals>
+								<li>VFEV_Lothurr</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
 			</operations>
 		</match>
 	</Operation>
-
-
 </Patch>

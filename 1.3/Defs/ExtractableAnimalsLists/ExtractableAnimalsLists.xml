@@ -1,5 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
+	<!-- Tier 1 -->
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierOneAnimalsUrsines</defName>
+		<tier>1</tier>
+		<itemProduced>GR_UrsineGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Bear_Grizzly</li>
+			<li>Bear_Polar</li>			
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierOneAnimalsBird</defName>
+		<tier>1</tier>
+		<itemProduced>GR_AvianGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Chicken</li>
+			<li>Turkey</li>
+			<li>Ostrich</li>
+			<li>Emu</li>
+			<li>Cassowary</li>
+			<li>Duck</li>
+			<li>Goose</li>	
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierOneAnimalsBoom</defName>
+		<tier>1</tier>
+		<itemProduced>GR_BoomalopeGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Boomalope</li>
+			<li>Boomrat</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierOneAnimalsMuffalo</defName>
+		<tier>1</tier>
+		<itemProduced>GR_MuffaloGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Muffalo</li>
+			<li>Bison</li>
+			<li>Yak</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierOneAnimalsCanine</defName>
+		<tier>1</tier>
+		<itemProduced>GR_CanineGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Wolf_Timber</li>
+			<li>Wolf_Arctic</li>
+			<li>Warg</li>
+			<li>YorkshireTerrier</li>
+			<li>Husky</li>
+			<li>LabradorRetriever</li>
+			<li>Fox_Fennec</li>
+			<li>Fox_Red</li>
+			<li>Fox_Arctic</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierOneAnimalsRodent</defName>
+		<tier>1</tier>
+		<itemProduced>GR_RodentGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Hare</li>
+			<li>Snowhare</li>
+			<li>Squirrel</li>
+			<li>Alphabeaver</li>
+			<li>Capybara</li>
+			<li>Chinchilla</li>
+			<li>Raccoon</li>
+			<li>Rat</li>
+			<li>GuineaPig</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierOneAnimalsFeline</defName>
+		<tier>1</tier>
+		<itemProduced>GR_FelineGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Cougar</li>
+			<li>Panther</li>
+			<li>Lynx</li>
+			<li>Cat</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierOneAnimalsHumanoid</defName>
+		<tier>1</tier>
+		<itemProduced>GR_HumanoidGenetic</itemProduced>
+		<needsHumanLike>true</needsHumanLike>
+		
+	</GeneticRim.ExtractableAnimalsList>
+	
+
+	<!-- Tier 2 -->
 	<GeneticRim.ExtractableAnimalsList>
 		<defName>GR_TierTwoAnimalsReptiles</defName>
 		<tier>2</tier>
@@ -21,6 +118,8 @@
 			
 		</extractableAnimals>
 	</GeneticRim.ExtractableAnimalsList>
+	
+	<!-- Tier 3 -->
 	<GeneticRim.ExtractableAnimalsList>
 		<defName>GR_TierThreeAnimalsColossals</defName>
 		<tier>3</tier>
