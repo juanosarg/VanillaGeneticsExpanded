@@ -369,7 +369,7 @@
 			<li>BuildingsProduction</li>
 		</thingCategories>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>todo.</description>
+		<description>A specialized extraction module that is equipped to extract the genomes from a subject’s corpse. The material is converted into a soupish-mixture which is then condensed into an extremely complex genome. Completely useless by itself, but functions as a template which can be compared to another genome. The procedure removes any excess genetic information and renders them completely identical.</description>
 		<graphicData>
 			<texPath>Things/Building/GenomeRecombinator/GenomeRecombinator</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

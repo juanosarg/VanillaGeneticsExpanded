@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientCryofreezer</defName>
+    <label>ancient cryofreezer</label>
+    <description>A super-charged air-conditioning unit designed for its intended purpose of preventing genomes from breaking down entropically. Unfortunately, that temperature is also beyond the comfort range of almost all organic life but it can no longer maintain the desired output of approaching absolute zero.</description>
+    <size>(3,3)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientCryofreezer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<tickerType>Normal</tickerType>
+	<costList>
+	    <Steel>50</Steel>
+		<ComponentIndustrial>3</ComponentIndustrial>
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+	<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>-30</heatPerSecond>
+				<heatPushMinTemperature>-200</heatPushMinTemperature>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+		</comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientElectrowomb</defName>
+    <label>ancient electrowomb</label>
+    <description>This device has collapsed in on itself, rendering it useless.</description>
+    <size>(1,1)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientElectrowomb</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	
+	<costList>
+	    <Steel>10</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientElectrowombLarge</defName>
+    <label>ancient large electrowomb</label>
+    <description>The exterior shell has completely fallen apart, yet it seems that it exploded instead of imploded.</description>
+    <size>(2,2)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientElectrowombLarge</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	
+	<costList>
+	    <Steel>20</Steel>
+		<ComponentIndustrial>2</ComponentIndustrial>
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientGenomeRecombinator</defName>
+    <label>ancient genome recombinator</label>
+    <description>A very old recombinator that somehow possesses an awful stench and excessive mould.</description>
+    <size>(3,2)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientGenomeRecombinator</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4, 3)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>30</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		<Gold>1</Gold>
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientGenomorpher</defName>
+    <label>ancient genomorpher</label>
+    <description>A Genomorpher that has fallen into complete disrepair, some salvage yet remains.</description>
+    <size>(5,5)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientGenomorpher</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>100</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientGenomeExtractor</defName>
+    <label>ancient genome extractor table</label>
+    <description>Lacking proper maintenance for so long, this machine is rusted shut.</description>
+    <size>(3,1)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientTableGeneticExtraction</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.25)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>20</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientGeneticsTinkeringTable</defName>
+    <label>ancient genetics tinkering table</label>
+    <description>Most of the useful and otherwise functional parts are missing, indicating intentional sabotage.</description>
+    <size>(5,2)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientTableGeneticTinkering</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,4)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>50</Steel>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientTissueGrinder</defName>
+    <label>ancient tissue grinder</label>
+    <description>The machinery and electronics are irreparable but could be broken down for scrap.</description>
+    <size>(3,2)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientTissueGrinder</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,2)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>50</Steel>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>GR_RuinedAncientBioBattery</defName>
+    <label>ancient ruined bio-battery tank</label>
+    <description>This ancient tank once converted biological matter into an electrical current. It is now completely broken and useless.</description>
+    <size>(3,3)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/GR_RuinedAncientBioBattery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4.5,4.5)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>50</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>GR_RuinedAncientGeneTailoringPod</defName>
+    <label>ancient ruined gene-tailoring pod</label>
+    <description>This ancient structure was once used to inject nanomachines in a subject in an attempt to create the perfect soldier. It now lies rusted and unsalvageable.</description>
+    <size>(3,3)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/GR_RuinedAncientGeneTailoringPod</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4.5,4.5)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>50</Steel>
+		<ComponentIndustrial>3</ComponentIndustrial>
+		
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>GR_AncientBioBattery</defName>
+    <label>ancient microbiobattery</label>
+    <description>A very efficient battery that has somehow managed to survive for so long without maintenance, purpose-built to power genome storage rooms.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Building_Battery</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Ruined/AncientMicrobiobattery</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+   
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>-15</Beauty>
+    </statBases>
+    <size>(1,2)</size>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Battery">
+        <storedEnergyMax>600</storedEnergyMax>
+        <efficiency>0.5</efficiency>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+	  <li Class="GeneticRim.CompProperties_StartCharged"/>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationHotKey>Misc4</designationHotKey>
+    <canOverlapZones>false</canOverlapZones>
+   
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>GR_RuinedGenePod</defName>
+    <label>ancient ruined genepod</label>
+    <description>An ancient genepod that was used to combine genetic material. This machine is obsolete and damaged beyond repair.</description>
+    <size>(2,2)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/GR_RuinedGenePod</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(3.5, 3.5)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>30</Steel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+   <ThingDef ParentName="BuildingBase">
+    <defName>GR_RuinedAnimalControlHub</defName>
+    <label>ancient animal control hub</label>
+    <description>It seems that this structure was capable of emitting some kind of electromagnetic radiation used to control brain function of certain animals. This was crude and primitive technology prone to failure and instability, and as such it is completely useless now.</description>
+    <size>(2,2)</size>
+    <fillPercent>0.50</fillPercent>
+    <graphicData>
+      <texPath>Things/Building/Ruined/GR_RuinedAnimalControlHub</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(3.5, 3.5)</drawSize>
+      <shadowData>
+        <volume>(3, 0.35, 3)</volume>
+      </shadowData>
+    </graphicData>
+	<costList>
+	    <Steel>5</Steel>
+		<ComponentIndustrial>3</ComponentIndustrial>
+	</costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>2000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  
+  
+
+  
+
+</Defs>

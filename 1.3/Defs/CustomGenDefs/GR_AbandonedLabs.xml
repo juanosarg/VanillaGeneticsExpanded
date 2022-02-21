@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<KCSG.StructureLayoutDef>
+  <defName>GR_AbandonedLabAlpha</defName>
+  <layouts>
+    <li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+      <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,MetalTile,.</li>
+      <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    </li>
+    <li>
+      <li>Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
+      <li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,.,.,.,.,.,GR_RuinedGenePod_North,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,.,.,.,.,.,.,.,.,.,GR_RuinedGenePod_North,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,Wall_Steel,.,.,GR_RuinedGenePod_North,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>.,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>.,Wall_Steel,.,.,.,.,.,.,.,.,GR_RuinedGenePod_North,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_Steel</li>
+      <li>Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel,Wall_Steel</li>
+    </li>
+  </layouts>
+  <roofGrid>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+    <li>.,1,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,1,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,1,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,1,1,1,1,1,1,1,1,1,.,.,.,.,.</li>
+    <li>.,1,1,1,1,1,1,1,1,1,.,1,1,1,.</li>
+    <li>.,.,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,.,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,.,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,1,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,1,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,1,1,1,1,1,1,1,1,1,1,1,1,1,.</li>
+    <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+  </roofGrid>
+</KCSG.StructureLayoutDef>
+
+
+</Defs>

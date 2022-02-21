@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<KCSG.SymbolDef>
+  <defName>GR_RuinedGenePod_North</defName>
+  <thing>GR_RuinedGenePod</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+
+
+</Defs>

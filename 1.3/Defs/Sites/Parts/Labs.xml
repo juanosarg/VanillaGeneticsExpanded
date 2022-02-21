@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+  <SitePartDef>
+    <defName>GR_AbandonedLab</defName>
+    <label>abandoned lab</label>
+    <description>A recently-discovered abandoned lab.</description>
+    <siteTexture>ui/commands/GR_Microscope</siteTexture>
+    <expandingIconTexture>ui/commands/GR_Microscope</expandingIconTexture>
+    <tags>
+      <li>GR_AbandonedLab</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>GR_AbandonedLab</defName>
+    <linkWithSite>GR_AbandonedLab</linkWithSite>
+    <order>450</order>
+    <genStep Class="KCSG.GenStep_CustomStructureGen">
+      <structureLayoutDefs>
+        <li>GR_AbandonedLabAlpha</li>
+       
+      </structureLayoutDefs>
+      <shouldRuin>true</shouldRuin>
+      <filthTypes>
+        <li>Filth_Dirt</li>
+        <li>Filth_Trash</li>
+        <li>Filth_RubbleBuilding</li>
+      </filthTypes>
+      <ruinSymbolResolvers>
+        <li>kcsg_randomdamage</li>
+        <li>kcsg_randomfilth</li>
+        <li>kcsg_randomterrainremoval</li>
+        <li>kcsg_randomroofremoval</li>
+        <li>kcsg_randomitemremoval</li>
+        <li>kcsg_removeperishable</li>
+        <li>kcsg_destroyrefuelablelightsource</li>
+      </ruinSymbolResolvers>
+    </genStep>
+  </GenStepDef>
+
+ 
+</Defs>
