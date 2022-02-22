@@ -6,7 +6,7 @@
   <DesignationCategoryDef>
     <defName>GR_GeneticsTab</defName>
     <label>Genetics</label>
-    <description>Items added by Genetic Rim.</description>
+    <description>Items added by Vanilla Genetics Expanded.</description>
     <order>450</order>
     <specialDesignatorClasses>
       <li>Designator_Cancel</li>

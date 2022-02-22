@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef Name="GR_FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+    <tags>
+      <li>Floor</li>
+    </tags>
+   
+    <fertility>0</fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+  
+  </TerrainDef>
+  <!-- ================= Misc ================= -->
+
+
+  <TerrainDef ParentName="GR_FloorBase">
+    <defName>GR_CrackedConcrete</defName>
+    <label>cracked concrete</label>
+    <description>Rough concrete. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/GR_CrackedConcrete</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+   
+  </TerrainDef>
+
+  <TerrainDef ParentName="GR_FloorBase">
+    <defName>GR_PavedTile</defName>
+    <label>rusted laboratory tile</label>
+    <renderPrecedence>231</renderPrecedence>
+    <description>Rusted metallic tiles.</description>
+    <texturePath>Terrain/Surfaces/GR_PavedTile</texturePath>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+   
+  </TerrainDef>
+  
+  <TerrainDef ParentName="GR_FloorBase">
+    <defName>GR_WhiteTile</defName>
+    <label>white laboratory tile</label>
+    <renderPrecedence>232</renderPrecedence>
+    <description>White clean tiles.</description>
+    <texturePath>Terrain/Surfaces/GR_WhiteTile</texturePath>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+   
+  </TerrainDef>
+
+ 
+
+</Defs>
