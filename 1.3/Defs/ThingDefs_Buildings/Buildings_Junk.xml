@@ -660,6 +660,31 @@
 		<pathCost>2</pathCost>
 	</ThingDef>
 	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_RuinedBarrelDouble</defName>
+		<label>ancient ruined lab barrels</label>
+		<description>Whatever this barrel held has long ago evaporated.</description>
+		<size>(1,2)</size>
+		<rotatable>false</rotatable>
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_RuinedBarrelDouble</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.8,1.6)</drawSize>
+			
+		</graphicData>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>2</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_RuinedVials</defName>
 		<label>ancient ruined vials</label>
 		<description>Small canisters that once held some valuable liquids.</description>
@@ -882,6 +907,55 @@
 		</graphicData>
 		<costList>
 			<Steel>15</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+	</ThingDef>
+	 <ThingDef ParentName="GR_JunkBuildingBase">
+    <defName>GR_LabLockerBank</defName>
+    <label>ancient lab locker bank</label>
+    <description>An ancient, rusted bank of lockers. All of the lockers have been forced open with nothing valuable left behind.</description>
+    <graphicData>
+      <texPath>Things/Building/Ruined/GR_LabLockerBank</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(3.5,1.85)</drawSize>
+      <shadowData>
+        <volume>(3, 0.85, 1)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(3, 1)</size>
+    <fillPercent>0.50</fillPercent>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>900</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+  </ThingDef>
+  <ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_MonitorBank</defName>
+		<label>ancient monitor banks</label>
+		<description>These monitors will never show any information again.</description>
+		<size>(5,2)</size>
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_MonitorBank</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(7,4)</drawSize>
+			
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
