@@ -47,7 +47,7 @@
 		<graphicData>
 			<texPath>Things/Building/Endgame/ArchocentipedeFormer</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5,3)</drawSize>
+			<drawSize>(5,4)</drawSize>
 
 		</graphicData>
 		<uiIconScale>0.75</uiIconScale>
@@ -69,7 +69,7 @@
 			<Mass>50</Mass>
 		</statBases>
 		<tickerType>Normal</tickerType>
-		<size>(5,3)</size>
+		<size>(5,4)</size>
 	
 		
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
