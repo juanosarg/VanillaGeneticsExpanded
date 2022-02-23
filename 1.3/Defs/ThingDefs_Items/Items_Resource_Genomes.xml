@@ -164,7 +164,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_TemplateGenetic</defName>
 		<label>template genome</label>
-		<description>todo.</description>
+		<description>Absolutely and completely worthless, but when properly processed alongside an actual genome it can be trimmed down to an identical copy.</description>
 		<statBases>
 			<MarketValue>400</MarketValue>
 		</statBases>

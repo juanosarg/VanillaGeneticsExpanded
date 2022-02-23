@@ -2,10 +2,124 @@
 <Defs>
 
 
+	<ThingDef ParentName="BuildingBase">
+		<defName>GR_DNAStorageBank</defName>
+		<label>DNA storage bank</label>
+		<description>todo.</description>
+		<thingClass>GeneticRim.Building_DNAStorageBank</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Endgame/ArchotechDNABank</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>25</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>
+	
+		
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>GR_ArchocentipedeFormer</defName>
+		<label>archocentipede former</label>
+		<description>todo.</description>
+		
+		<graphicData>
+			<texPath>Things/Building/Endgame/ArchocentipedeFormer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,3)</drawSize>
+
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>50</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(5,3)</size>
+	
+		
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>GR_ArchoWomb</defName>
+		<label>archowomb</label>
+		<description>todo.</description>
+		
+		<graphicData>
+			<texPath>Things/Building/Endgame/Archowomb_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(7,7)</drawSize>
+
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<rotatable>false</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Mass>50</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<size>(5,5)</size>
+		<comps>
+			
+			<li Class="GeneticRim.CompProperties_ArchoWomb"/>
+			
+		</comps>
+		
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	
+	</ThingDef>
 
 
-
-	<!-- Reactor - Platform -->
+	<!-- Old -->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_ArchotechPlatform</defName>

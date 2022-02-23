@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingDef Name="GR_JunkBuildingBase" Abstract= "true" ParentName="BuildingBase">
+	<ThingDef Name="GR_JunkBuildingBase" Abstract="true" ParentName="BuildingBase">
 
 	</ThingDef>
-	
 	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_AncientCryofreezer</defName>
 		<label>ancient cryofreezer</label>
@@ -15,7 +13,6 @@
 			<texPath>Things/Building/Ruined/AncientCryofreezer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3, 3)</drawSize>
-			
 		</graphicData>
 		<tickerType>Normal</tickerType>
 		<costList>
@@ -55,7 +52,6 @@
 			<texPath>Things/Building/Ruined/AncientElectrowomb</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.75,1.75)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>10</Steel>
@@ -81,7 +77,6 @@
 			<texPath>Things/Building/Ruined/AncientElectrowombLarge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>20</Steel>
@@ -106,7 +101,6 @@
 			<texPath>Things/Building/Ruined/AncientGenomeRecombinator</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,2.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>30</Steel>
@@ -132,7 +126,6 @@
 			<texPath>Things/Building/Ruined/AncientGenomorpher</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(7,7)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>100</Steel>
@@ -157,7 +150,6 @@
 			<texPath>Things/Building/Ruined/AncientTableGeneticExtraction</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,1.25)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>20</Steel>
@@ -182,7 +174,6 @@
 			<texPath>Things/Building/Ruined/AncientTableGeneticTinkering</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(7,4)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
@@ -207,7 +198,6 @@
 			<texPath>Things/Building/Ruined/AncientTissueGrinder</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,2)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
@@ -233,7 +223,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedAncientBioBattery</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4,4)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
@@ -259,7 +248,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedAncientGeneTailoringPod</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5,2.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
@@ -284,7 +272,6 @@
 			<texPath>Things/Building/Ruined/AncientMicrobiobattery</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,3)</drawSize>
-			
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -319,7 +306,6 @@
 			<li Class="GeneticRim.CompProperties_StartCharged"/>
 		</comps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-	
 		<staticSunShadowHeight>0.2</staticSunShadowHeight>
 		<constructEffect>ConstructMetal</constructEffect>
 		<designationHotKey>Misc4</designationHotKey>
@@ -336,7 +322,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedGenePod</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(3.5, 3.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>30</Steel>
@@ -362,7 +347,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedAnimalControlHub</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.75, 3.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>5</Steel>
@@ -388,7 +372,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedAnimalEnrichmentCenter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5, 3.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>25</Steel>
@@ -414,7 +397,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedArchotechPlatform</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(8, 8)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>250</Steel>
@@ -440,7 +422,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedGeneDuplicator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5, 3.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>25</Steel>
@@ -466,7 +447,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedGeneRecombinator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5, 3.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>15</Steel>
@@ -492,7 +472,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedGeneticDatabase</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5, 3.5)</drawSize>
-		
 		</graphicData>
 		<costList>
 			<Steel>15</Steel>
@@ -512,13 +491,11 @@
 		<label>ancient genetic extraction table</label>
 		<description>Yet another workstation that has deteriorated beyond all recovery. A foul-smelling vial of stagnant liquid warns you to keep away from it.</description>
 		<size>(3,1)</size>
-		
 		<fillPercent>0.50</fillPercent>
 		<graphicData>
 			<texPath>Things/Building/Ruined/GR_RuinedGeneticExtractionTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,1.75)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>20</Steel>
@@ -544,7 +521,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedGeneticStorage</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1.5, 1.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>10</Steel>
@@ -569,7 +545,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedGenomeSequencer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3, 3)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>100</Steel>
@@ -594,7 +569,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedHexagelPlant</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(6,6)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>100</Steel>
@@ -620,7 +594,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedIncubator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>5</Steel>
@@ -645,7 +618,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedLabBarrel</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>5</Steel>
@@ -670,7 +642,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedBarrelDouble</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(0.8,1.6)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>10</Steel>
@@ -695,7 +666,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedVials</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(1,1)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>5</Steel>
@@ -719,7 +689,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedLabShelf</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,1.75)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>20</Steel>
@@ -744,7 +713,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedMechanoidTinkeringTable</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(7,4)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
@@ -770,7 +738,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedMutaniteCentrifuge</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(4, 4)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>100</Steel>
@@ -788,8 +755,6 @@
 		<defName>GR_RuinedNutrientVat</defName>
 		<label>ancient nutrient vat</label>
 		<description>A slurry of liquefied organic pulp filled this reinforced glass vat. It now lays broken and empty.</description>
-		<thingClass>Building_WorkTable</thingClass>
-		
 		<graphicData>
 			<texPath>Things/Building/Ruined/GR_RuinedNutrientVat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -798,7 +763,6 @@
 		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		
 		<fillPercent>0.5</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<pathCost>60</pathCost>
@@ -816,7 +780,6 @@
 		<defName>GR_RuinedPulper</defName>
 		<label>ancient pulper</label>
 		<description>A weird-looking machine that shredded wood into organic pulp. Broken beyond repair.</description>
-		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Ruined/GR_RuinedPulper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -825,7 +788,6 @@
 		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
-		
 		<fillPercent>0.5</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<pathCost>60</pathCost>
@@ -850,7 +812,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedPulpRecycler</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5, 3.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>15</Steel>
@@ -903,7 +864,6 @@
 			<texPath>Things/Building/Ruined/GR_RuinedTissueGrowingVat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(3.5, 3.5)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>15</Steel>
@@ -917,31 +877,31 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 	</ThingDef>
-	 <ThingDef ParentName="GR_JunkBuildingBase">
-    <defName>GR_LabLockerBank</defName>
-    <label>ancient lab locker bank</label>
-    <description>An ancient, rusted bank of lockers. All of the lockers have been forced open with nothing valuable left behind.</description>
-    <graphicData>
-      <texPath>Things/Building/Ruined/GR_LabLockerBank</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(3.5,1.85)</drawSize>
-      <shadowData>
-        <volume>(3, 0.85, 1)</volume>
-      </shadowData>
-    </graphicData>
-    <size>(3, 1)</size>
-    <fillPercent>0.50</fillPercent>
-    <rotatable>false</rotatable>
-    <altitudeLayer>Building</altitudeLayer>
-    <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>900</WorkToBuild>
-      <Flammability>0.5</Flammability>
-    </statBases>
-    <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
-  </ThingDef>
-  <ThingDef ParentName="GR_JunkBuildingBase">
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_LabLockerBank</defName>
+		<label>ancient lab locker bank</label>
+		<description>An ancient, rusted bank of lockers. All of the lockers have been forced open with nothing valuable left behind.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_LabLockerBank</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(3.5,1.85)</drawSize>
+			<shadowData>
+				<volume>(3, 0.85, 1)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(3, 1)</size>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>900</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_MonitorBank</defName>
 		<label>ancient monitor banks</label>
 		<description>These monitors will never show any information again.</description>
@@ -951,11 +911,183 @@
 			<texPath>Things/Building/Ruined/GR_MonitorBank</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(7,4)</drawSize>
-			
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SignA</defName>
+		<label>ancient sign</label>
+		<description>A weathered sign advertising a company that has long been forgotten.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SignA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,2.1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SignB</defName>
+		<label>ancient sign</label>
+		<description>A weathered sign advertising a company that has long been forgotten.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SignB</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,2.1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SignC</defName>
+		<label>ancient sign</label>
+		<description>A weathered sign advertising a company that has long been forgotten.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SignC</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,2.1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SignD</defName>
+		<label>ancient sign</label>
+		<description>A weathered sign advertising a company that has long been forgotten.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SignD</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,2.1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SignE</defName>
+		<label>ancient sign</label>
+		<description>A weathered sign advertising a company that has long been forgotten.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SignE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1,1.1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_Toilet</defName>
+		<label>ancient toilet</label>
+		<description>Drinking from this will give you more than just a few rads...</description>
+		<size>(1,1)</size>
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_Toilet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>10</Steel>
+		
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_Sink</defName>
+		<label>ancient sink</label>
+		<description>Drinking from this will give you more than just a few rads...</description>
+		<size>(1,1)</size>
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_Sink</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>10</Steel>
+		
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>

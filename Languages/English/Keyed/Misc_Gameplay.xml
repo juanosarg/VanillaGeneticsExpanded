@@ -58,6 +58,12 @@
 	<!-- ElectroWomb -->
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>
 	
+	<!-- DNA Storage -->
+	<GR_SelectGenomeToHarvest>Select genome to harvest</GR_SelectGenomeToHarvest>
+	<GR_SelectGenomeToHarvestDesc>Select genome to harvest</GR_SelectGenomeToHarvestDesc>
+	<GR_NoEndgameGenomes>No endgame genomes! (error)</GR_NoEndgameGenomes>
+	<GR_SelectedGenome>Genome currently selected for extraction: {0}</GR_SelectedGenome>
+	
 	<!-- Gene Pods Control -->
 	<GR_ExtractGenes>Empty Tank 1</GR_ExtractGenes>
 	<GR_ExtractGenesDesc>Extract Genetic Material from tank #1</GR_ExtractGenesDesc>

@@ -298,9 +298,14 @@
     <Compile Include="AI\JobDrivers\JobDriver_InsertIngredients.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
+    <Compile Include="Buildings\Building_DNAStorageBank.cs" />
+    <Compile Include="Commands\Command_SetGenomeList.cs" />
+    <Compile Include="Commands\GenomeListSetupUtility.cs" />
+    <Compile Include="Comps\CompArchoWomb.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
     <Compile Include="Comps\CompGrowthCell.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_ArchoWomb.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_ElectroWomb.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_StartCharged.cs" />
@@ -316,6 +321,7 @@
     <Compile Include="DefExtensions\DefExtension_HybridFailure.cs" />
     <Compile Include="DefExtensions\DefExtension_Quality.cs" />
     <Compile Include="DefOfs\InternalDefOf.cs" />
+    <Compile Include="Defs\EndgameGenomesDefs.cs" />
     <Compile Include="Defs\ExtractableAnimalsList.cs" />
     <Compile Include="Dev Mode\SuperItemSpawner.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />

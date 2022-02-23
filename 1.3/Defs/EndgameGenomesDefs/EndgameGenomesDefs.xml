@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<GeneticRim.EndgameGenomesDef>
+		<defName>GR_EndgameGenomes</defName>
+		<genomes>
+			<li>GR_UrsineGenetic</li>
+			<li>GR_AvianGenetic</li>
+			<li>GR_BoomalopeGenetic</li>
+			<li>GR_MuffaloGenetic</li>
+			<li>GR_CanineGenetic</li>
+			<li>GR_RodentGenetic</li>
+			<li>GR_FelineGenetic</li>
+			<li>GR_HumanoidGenetic</li>
+			<li>GR_EquineGenetic</li>
+			<li>GR_InsectoidGenetic</li>
+			<li>GR_ReptileGenetic</li>
+			<li>GR_ThrumboGenetic</li>
+			
+		</genomes>
+	</GeneticRim.EndgameGenomesDef>
+</Defs>
