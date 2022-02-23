@@ -108,9 +108,10 @@ namespace GeneticRim
             Graphic graphic = this.growingResult?.lifeStages.Last().bodyGraphicData.Graphic.GetCopy(this.parent.def.graphicData.drawSize * this.progress, null);
             graphic?.DrawFromDef(pos, Rot4.South, null);
 
-            Vector3 posTop = this.parent.DrawPos;
-            posTop.y = AltitudeLayer.MetaOverlays.AltitudeFor() + 1;
-            usedGraphic?.DrawFromDef(pos, Rot4.North, null);
+            var vector = this.parent.DrawPos + Altitudes.AltIncVect;
+            vector.y += 6;
+
+            usedGraphic?.DrawFromDef(vector, Rot4.North, null);
         }
 
 
