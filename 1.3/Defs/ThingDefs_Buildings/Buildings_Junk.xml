@@ -632,6 +632,80 @@
 		<pathCost>2</pathCost>
 	</ThingDef>
 	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_AncientCrate</defName>
+		<label>ancient ruined crate</label>
+		<description>Whatever this crate contained has long ago rotted and turned to dust.</description>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_AncientCrate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>5</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToBuild>100</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>2</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_AncientCrateDouble</defName>
+		<label>ancient ruined crate</label>
+		<description>Whatever this crate contained has long ago rotted and turned to dust.</description>
+		<size>(2,1)</size>
+		
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_AncientCrateDouble</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		
+		<costList>
+			<Steel>4</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>2</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_AncientCratePile</defName>
+		<label>pile of ancient ruined crates</label>
+		<description>Whatever these crates contained has long ago rotted and turned to dust.</description>
+		<size>(2,2)</size>
+		<rotatable>false</rotatable>
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_PileAncientCrate</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		
+		<costList>
+			<Steel>4</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>2</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_RuinedBarrelDouble</defName>
 		<label>ancient ruined lab barrels</label>
 		<description>Whatever this barrel held has long ago evaporated.</description>
@@ -1063,7 +1137,6 @@
 		</graphicData>
 		<costList>
 			<Steel>10</Steel>
-		
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -1087,7 +1160,6 @@
 		</graphicData>
 		<costList>
 			<Steel>10</Steel>
-		
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -1097,5 +1169,65 @@
 		</statBases>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SmallBioLight</defName>
+		<label>ancient bioluminiscent light</label>
+		<description>A metallic capsule filled with some bioluminiscent compound. This one seems to still be producing some faint light.</description>
+		<size>(1,1)</size>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SmallBioLight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>2</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>6</glowRadius>
+				<glowColor>(211,231,209,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_BioLight</defName>
+		<label>ancient bioluminiscent light</label>
+		<description>A metallic capsule filled with some bioluminiscent compound. This one seems to still be producing some faint light.</description>
+		<size>(1,2)</size>
+		
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_BioLight</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(0.8,1.6)</drawSize>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(211,231,209,0)</glowColor>
+			</li>
+		</comps>
+		<costList>
+			<Steel>4</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>2</pathCost>
 	</ThingDef>
 </Defs>
