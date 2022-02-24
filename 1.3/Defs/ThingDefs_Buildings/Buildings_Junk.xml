@@ -663,7 +663,7 @@
 		
 		<fillPercent>0.50</fillPercent>
 		<graphicData>
-			<texPath>Things/Building/Ruined/GR_AncientCrateDouble</texPath>
+			<texPath>Things/Building/Ruined/GR_DoubleAncientCrate</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -690,7 +690,32 @@
 		<graphicData>
 			<texPath>Things/Building/Ruined/GR_PileAncientCrate</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(3.25,3.25)</drawSize>
+		</graphicData>
+		
+		<costList>
+			<Steel>4</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>2</pathCost>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_AncientTechCrate</defName>
+		<label>ancient mechanized crate</label>
+		<description>Whatever this crate contained has long ago rotted and turned to dust.</description>
+		<size>(3,1)</size>
+		
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_AncientTechCrate</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		
 		<costList>
