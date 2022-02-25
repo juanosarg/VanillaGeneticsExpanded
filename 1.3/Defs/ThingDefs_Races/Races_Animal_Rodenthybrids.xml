@@ -317,7 +317,7 @@
 					<drawSize>1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Rodent/Squirralope/GR_Dessicated_Squirralope</texPath>
+					<texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
