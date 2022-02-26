@@ -54,6 +54,9 @@
 	<GR_ProcessWillTake>Process will take: {0}</GR_ProcessWillTake>
 	<GR_ProcessDurationExplanation>Use growth boosters or construct additional nutrient vats to speed up the process.</GR_ProcessDurationExplanation>
 	<GR_NoIngredientFound>No ingredients found to start the genomorpher process</GR_NoIngredientFound>
+	<GR_NoGenomesInMap>No valid genomes on map</GR_NoGenomesInMap>
+	<GR_NoGenoframesInMap>No valid genoframes on map</GR_NoGenoframesInMap>
+	<GR_NoBoostersInMap>No valid boosters on map</GR_NoBoostersInMap>
 	
 	<!-- ElectroWomb -->
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>

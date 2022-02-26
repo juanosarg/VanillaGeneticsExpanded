@@ -112,6 +112,14 @@ namespace GeneticRim
                         genomeDominant = genome;
                     }));
                 }
+                if (this.genomes.NullOrEmpty())
+                {
+                    floatOptions.Add(new FloatMenuOption("GR_NoGenomesInMap".Translate(), delegate
+                    {
+                        
+                    }));
+
+                }
                 Find.WindowStack.Add(new FloatMenu(floatOptions));
             }, "GR_SelectDominantGenomeExplanation".Translate());
 
@@ -125,6 +133,14 @@ namespace GeneticRim
                     {
                         genomeSecondary = genome;
                     }));
+                }
+                if (this.genomesCanBeSecondary.NullOrEmpty())
+                {
+                    floatOptions.Add(new FloatMenuOption("GR_NoGenomesInMap".Translate(), delegate
+                    {
+
+                    }));
+
                 }
                 Find.WindowStack.Add(new FloatMenu(floatOptions));
             }, "GR_SelectSecondaryGenomeExplanation".Translate());
@@ -140,6 +156,14 @@ namespace GeneticRim
                         this.genoframe = genoframe;
                     }));
                 }
+                if (this.genoframes.NullOrEmpty())
+                {
+                    floatOptions.Add(new FloatMenuOption("GR_NoGenoframesInMap".Translate(), delegate
+                    {
+
+                    }));
+
+                }
                 Find.WindowStack.Add(new FloatMenu(floatOptions));
             }, "GR_SelectGenoframeExplanation".Translate());
 
@@ -153,6 +177,14 @@ namespace GeneticRim
                     {
                         this.booster = booster;
                     }));
+                }
+                if (this.boosters.NullOrEmpty())
+                {
+                    floatOptions.Add(new FloatMenuOption("GR_NoBoostersInMap".Translate(), delegate
+                    {
+
+                    }));
+
                 }
                 Find.WindowStack.Add(new FloatMenu(floatOptions));
             }, "GR_SelectBoosterExplanation".Translate());

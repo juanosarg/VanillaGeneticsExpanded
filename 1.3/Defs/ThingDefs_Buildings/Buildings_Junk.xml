@@ -89,12 +89,16 @@
 		</statBases>
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
 			<li Class="GeneticRim.CompProperties_RandomHybridSpawner">
 				
 			</li>
 			
 		</comps>
+		<placeWorkers>
+			<li>GeneticRim.PlaceWorker_ShowSpawnerRadius</li>
+		</placeWorkers>
 	</ThingDef>
 	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_AncientElectrowombLarge</defName>

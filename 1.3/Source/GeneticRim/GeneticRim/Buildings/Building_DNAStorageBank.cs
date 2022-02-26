@@ -25,9 +25,6 @@ namespace GeneticRim
             if (this.Faction == Faction.OfPlayer) {
 
 
-
-
-
                 yield return GenomeListSetupUtility.SetGenomeListCommand(this, this.Map);
 
 

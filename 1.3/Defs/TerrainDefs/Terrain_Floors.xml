@@ -52,6 +52,21 @@
   </TerrainDef>
   
   <TerrainDef ParentName="GR_FloorBase">
+    <defName>GR_PavedTileClean</defName>
+    <label>laboratory tile</label>
+    <renderPrecedence>232</renderPrecedence>
+    <description>Clean metallic tiles.</description>
+    <texturePath>Terrain/Surfaces/GR_PavedTileClean</texturePath>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+   
+  </TerrainDef>
+  
+  <TerrainDef ParentName="GR_FloorBase">
     <defName>GR_WhiteTile</defName>
     <label>white laboratory tile</label>
     <renderPrecedence>232</renderPrecedence>

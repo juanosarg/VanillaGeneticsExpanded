@@ -363,6 +363,7 @@
     <Compile Include="DeathActionWorkers\DeathActionWorker_StunningExplosion.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_ToxicExplosion.cs" />
     <Compile Include="Dev Mode\FixedColonyAnimalsDebug.cs" />
+    <Compile Include="PlaceWorkers\PlaceWorker_ShowSpawnerRadius.cs" />
     <Compile Include="Settings\GeneticRim_Settings.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_GenericHatcher.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_Milker.cs" />
