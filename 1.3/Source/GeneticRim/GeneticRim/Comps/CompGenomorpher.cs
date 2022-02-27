@@ -24,6 +24,8 @@ namespace GeneticRim
 
         public CompPowerTrader compPowerTrader;
 
+        public CompProperties_Genomorpher Props => (CompProperties_Genomorpher)this.props;
+
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
@@ -97,11 +99,24 @@ namespace GeneticRim
             {
                 defaultLabel = "GR_DesignateGrowthCell".Translate(),
                 defaultDesc = "GR_DesignateGrowthCellDesc".Translate(),
+                icon = ContentFinder<Texture2D>.Get("Things/Item/GR_Growthcell", true),
+
                 action = delegate
                 {
                     Find.WindowStack.Add(new Window_DesignateGrowthCell(this));
                 }
             };
+            if (Prefs.DevMode)
+            {
+                Command_Action command_Action = new Command_Action();
+                command_Action.defaultLabel = "DEBUG: Finish growth cell";
+                command_Action.action = delegate
+                {
+                    this.progress=1;
+                };
+                yield return command_Action;
+               
+            }
         }
 
         private static readonly Material barFilledMat   = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.5f,  0.475f, 0.1f));

@@ -54,14 +54,20 @@
             
             DefExtension_HybridChanceAlterer frameExtension   = genoframe?.GetModExtension<DefExtension_HybridChanceAlterer>();
             DefExtension_HybridChanceAlterer boosterExtension = booster?.GetModExtension<DefExtension_HybridChanceAlterer>();
-            if (genomeDominant.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true)
+            if ((genomeDominant.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true)|| genomeDominant== genomeSecondary)
             {
                 swapChance = 0f;
             }
             else { swapChance = (10f - (frameExtension?.stability ?? 0) - (boosterExtension?.stability ?? 0)) / 100f; }
-            
+
+            float paragonFailureFactor = 0f;
+
+            if (genomeDominant==genomeSecondary) {
+                paragonFailureFactor = 0.25f;
+            }
+
             float failure = (10f - (frameExtension?.safety ?? 0) - (boosterExtension?.safety ?? 0));
-            failureChance = failure / 100f;
+            failureChance = (failure / 100f)+ paragonFailureFactor;
             
 
             if (!hybrids.TryGetValue(genomeSecondary, out Dictionary<ThingDef, PawnKindDef> secondaryChain) || !secondaryChain.TryGetValue(genomeDominant, out swapResult))

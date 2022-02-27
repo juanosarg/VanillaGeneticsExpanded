@@ -33,7 +33,7 @@
 	<!-- Genomorpher -->
 	<GR_Genomorpher_Progress>Progress: {0}</GR_Genomorpher_Progress>
 	<GR_DesignateGrowthCell>Designate a growth cell</GR_DesignateGrowthCell>
-	<GR_DesignateGrowthCellDesc>todo</GR_DesignateGrowthCellDesc>
+	<GR_DesignateGrowthCellDesc>Select genomes, genoframe and optionally a booster to create a growthcell of a selected hybrid</GR_DesignateGrowthCellDesc>
 	<GR_GenomorpherExplanation>Select genomes, genoframe and optionally a booster to create a growthcell of a selected hybrid</GR_GenomorpherExplanation>
 	<GR_GenomorpherExplanationPartTwo>Use immunity boosters or use safer genome combinations to lower the risk of failure.</GR_GenomorpherExplanationPartTwo>
 	<GR_PredictedOutcomes>Predicted Outcomes</GR_PredictedOutcomes>
@@ -41,7 +41,7 @@
 	<GR_SelectDominantGenome>Select dominant genome</GR_SelectDominantGenome>
 	<GR_SelectDominantGenomeExplanation>Dominant genome affects primary characteristics of the hybrid</GR_SelectDominantGenomeExplanation>
 	<GR_SelectSecondaryGenome>Select secondary genome</GR_SelectSecondaryGenome>
-	<GR_SelectSecondaryGenomeExplanation>todo</GR_SelectSecondaryGenomeExplanation>
+	<GR_SelectSecondaryGenomeExplanation>Affects the hybrid less than the dominant one</GR_SelectSecondaryGenomeExplanation>
 	<GR_SelectGenoframe>Select genoframe</GR_SelectGenoframe>
 	<GR_SelectGenoframeExplanation>Genoframe affects the quality level of the hybrid</GR_SelectGenoframeExplanation>
 	<GR_SelectBooster>Select booster</GR_SelectBooster>
@@ -57,6 +57,7 @@
 	<GR_NoGenomesInMap>No valid genomes on map</GR_NoGenomesInMap>
 	<GR_NoGenoframesInMap>No valid genoframes on map</GR_NoGenoframesInMap>
 	<GR_NoBoostersInMap>No valid boosters on map</GR_NoBoostersInMap>
+	<GR_ChooseDominantGenomeFirst>Choose dominant genome first</GR_ChooseDominantGenomeFirst>
 	
 	<!-- ElectroWomb -->
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>

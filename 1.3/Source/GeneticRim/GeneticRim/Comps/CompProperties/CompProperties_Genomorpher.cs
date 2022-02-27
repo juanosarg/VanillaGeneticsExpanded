@@ -9,6 +9,8 @@ namespace GeneticRim
 {
     public class CompProperties_Genomorpher : CompProperties
     {
+        public int hoursProcess;
+
         public CompProperties_Genomorpher()
         {
             this.compClass = typeof(CompGenomorpher);

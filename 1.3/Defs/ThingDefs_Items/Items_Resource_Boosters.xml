@@ -59,10 +59,16 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/Tempobooster</texPath>			
 		</graphicData>
-		<description>Capsules containing growth hormones that help speed up the hybrid’s growth process.</description>
+		<description>Capsules containing growth hormones that help speed up the hybrid’s growth process, halving the time it takes to complete.</description>
 		<statBases>
 			<MarketValue>18</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				<timeMultiplier>0.5</timeMultiplier>
+				
+			</li>
+		</modExtensions>
 		
 	</ThingDef>
 	

@@ -29,6 +29,8 @@ namespace GeneticRim
         public Thing genoframe;
         public Thing booster;
 
+        public int durationTicks;
+
         private static readonly Color PawnOutcomeBackground = new Color(0.13f, 0.13f, 0.13f);
         public override Vector2 InitialSize => new Vector2(1000, 800);
         public Window_DesignateGrowthCell(CompGenomorpher comp)
@@ -79,7 +81,10 @@ namespace GeneticRim
             DrawPawnOutcome(firstOutcomeBox, mainResult, (1f-swapChance) / fullWeight);
 
             var secondOutcomeBox = new Rect(xPos, firstOutcomeBox.yMax + 30, 95, 95);
-            DrawPawnOutcome(secondOutcomeBox, swapResult, swapChance / fullWeight);
+            if(swapResult!= mainResult) {
+                DrawPawnOutcome(secondOutcomeBox, swapResult, swapChance / fullWeight);
+
+            }
 
             var genoframeQuality = genoframe != null ? Core.GetQualityFromGenoframe(genoframe.def) : null;
             var qualityInfoRect = new Rect(xPos, secondOutcomeBox.yMax + 100, 200, 30);
@@ -88,7 +93,14 @@ namespace GeneticRim
             var qualityInfoExplanationRect = new Rect(xPos, qualityInfoRect.yMax + 5, 240, 30);
             DrawExplanation(qualityInfoExplanationRect, "GR_QualityExplanation".Translate());
 
-            var durationTicks = GenDate.TicksPerDay;
+            durationTicks = this.comp.Props.hoursProcess * GenDate.TicksPerHour;
+            float? timeMultiplier = this.booster?.def?.GetModExtension<DefExtension_HybridChanceAlterer>()?.timeMultiplier;
+
+            if (timeMultiplier != null && timeMultiplier!=0)
+            {
+                durationTicks = (int)(durationTicks*timeMultiplier);
+            }
+            
             var durationRect = new Rect(xPos, qualityInfoExplanationRect.yMax + 50, 300, 30);
             Text.Font = GameFont.Medium;
             Widgets.Label(durationRect, "GR_ProcessWillTake".Translate(durationTicks.ToStringTicksToDays()));
@@ -105,11 +117,12 @@ namespace GeneticRim
             DrawButton(selectDominantGenomeRect, "GR_SelectDominantGenome".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
-                foreach (var genome in this.genomes.Except(genomeSecondary).ToList())
+                foreach (var genome in this.genomes.ToList())
                 {
                     floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
                     {
                         genomeDominant = genome;
+                        genomeSecondary = null;
                     }));
                 }
                 if (this.genomes.NullOrEmpty())
@@ -127,21 +140,43 @@ namespace GeneticRim
             DrawButton(selectSecondaryGenomeRect, "GR_SelectSecondaryGenome".Translate(), delegate
             {
                 var floatOptions = new List<FloatMenuOption>();
-                foreach (var genome in this.genomesCanBeSecondary.Except(genomeDominant).ToList())
-                {
-                    floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
-                    {
-                        genomeSecondary = genome;
-                    }));
-                }
-                if (this.genomesCanBeSecondary.NullOrEmpty())
-                {
-                    floatOptions.Add(new FloatMenuOption("GR_NoGenomesInMap".Translate(), delegate
+
+                if (this.genomeDominant == null) {
+
+                    floatOptions.Add(new FloatMenuOption("GR_ChooseDominantGenomeFirst".Translate(), delegate
                     {
 
                     }));
 
+                } else {
+                    foreach (var genome in this.genomesCanBeSecondary.ToList())
+                    {
+                        floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
+                        {
+                            genomeSecondary = genome;
+                        }));
+                    }
+                    if (!this.genomesCanBeSecondary.Contains(this.genomeDominant))
+                    {
+                        floatOptions.Add(new FloatMenuOption(this.genomeDominant.def.LabelCap, delegate
+                        {
+                            genomeSecondary = this.genomeDominant;
+                        }));
+                    }
+
+                    if (this.genomesCanBeSecondary.NullOrEmpty())
+                    {
+                        floatOptions.Add(new FloatMenuOption("GR_NoGenomesInMap".Translate(), delegate
+                        {
+
+                        }));
+
+                    }
+
+
                 }
+
+                
                 Find.WindowStack.Add(new FloatMenu(floatOptions));
             }, "GR_SelectSecondaryGenomeExplanation".Translate());
 
@@ -176,6 +211,15 @@ namespace GeneticRim
                     floatOptions.Add(new FloatMenuOption(booster.def.LabelCap, delegate
                     {
                         this.booster = booster;
+
+                        durationTicks = this.comp.Props.hoursProcess * GenDate.TicksPerHour;
+                        float? timeMultiplierRefresh = this.booster?.def?.GetModExtension<DefExtension_HybridChanceAlterer>()?.timeMultiplier;
+
+                        if (timeMultiplierRefresh != null)
+                        {
+                            durationTicks = (int)(durationTicks * timeMultiplierRefresh);
+                        }
+
                     }));
                 }
                 if (this.boosters.NullOrEmpty())
@@ -267,14 +311,21 @@ namespace GeneticRim
         private void RandomizeAll()
         {
             this.genomeDominant  = this.genomes.RandomElement();
-            this.genomeSecondary = this.genomes.Except(this.genomeDominant).RandomElement();
+            this.genomeSecondary = this.genomesCanBeSecondary.RandomElement();
             this.genoframe       = this.genoframes.RandomElement();
             this.booster         = this.boosters.RandomElement();
         }
 
         private void InitiateSynthesis()
         {
-            this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, GenDate.TicksPerHour);
+            float? timeMultiplier = this.booster?.def?.GetModExtension<DefExtension_HybridChanceAlterer>()?.timeMultiplier;
+
+            if (timeMultiplier != null&& timeMultiplier != 0)
+            {
+                this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, (int)(GenDate.TicksPerHour * this.comp.Props.hoursProcess * timeMultiplier));
+            }
+            else { this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, GenDate.TicksPerHour * this.comp.Props.hoursProcess); }
+            
             this.Close();
         }
 

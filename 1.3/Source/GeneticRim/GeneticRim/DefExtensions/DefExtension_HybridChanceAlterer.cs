@@ -20,6 +20,11 @@ namespace GeneticRim
          */
         public int safety;
 
+        /**
+         * Hybrid process time multiplier.
+         */
+        public float timeMultiplier;
+
         public bool isBooster;
         public bool isGenome;
 
