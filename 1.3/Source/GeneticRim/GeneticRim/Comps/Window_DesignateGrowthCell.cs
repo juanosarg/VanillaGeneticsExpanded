@@ -310,10 +310,26 @@ namespace GeneticRim
 
         private void RandomizeAll()
         {
-            this.genomeDominant  = this.genomes.RandomElement();
-            this.genomeSecondary = this.genomesCanBeSecondary.RandomElement();
-            this.genoframe       = this.genoframes.RandomElement();
-            this.booster         = this.boosters.RandomElement();
+            if (!this.genomes.NullOrEmpty())
+            {
+                this.genomeDominant = this.genomes.RandomElement();
+            }
+            if (!this.genomesCanBeSecondary.NullOrEmpty())
+            {
+                this.genomeSecondary = this.genomesCanBeSecondary.RandomElement();
+            }
+            if (!this.genoframes.NullOrEmpty())
+            {
+                this.genoframe = this.genoframes.RandomElement();
+            }
+            if (!this.boosters.NullOrEmpty())
+            {
+                this.booster = this.boosters.RandomElement();
+            }
+
+           
+           
+           
         }
 
         private void InitiateSynthesis()
