@@ -75,8 +75,8 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-      <li>AnimalGenetic</li>
-    </tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 

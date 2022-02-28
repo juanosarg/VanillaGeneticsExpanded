@@ -82,6 +82,32 @@
 		<statBases>
 			<MarketValue>28</MarketValue>
 		</statBases>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				<isFertilityUnblocker>true</isFertilityUnblocker>
+				
+			</li>
+		</modExtensions>
+		
+	</ThingDef>
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_StabilizedFertilityUnblocker</defName>
+		<label>stabilized fertility unblocker</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/GR_StabilizedFertilityUnblocker</texPath>			
+		</graphicData>
+		<description>Compressed medicine that allows hybrids to develop functional sexual organs. Effectively allows hybrids to reproduce with the exact same species.\n\nThis booster can't be crafted, only scavenged.</description>
+		<statBases>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				<isFertilityUnblocker>true</isFertilityUnblocker>
+				<safety>5</safety>
+				<stability>5</stability>
+			</li>
+		</modExtensions>
 		
 	</ThingDef>
 	<ThingDef ParentName="GR_BoosterBase">
@@ -113,9 +139,90 @@
 		</statBases>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
-				
+				<isController>true</isController>
 				<safety>-5</safety>
 			</li>
 		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_ImprovedController</defName>
+		<label>improved controller</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/GR_ImprovedController</texPath>			
+		</graphicData>
+		<description>Self-assembling machinery that fuses with the specimen’s nerve centers during the growth process. Effectively allows hybrids to be drafted.\n\nThis booster can't be crafted, only scavenged.</description>
+		<statBases>
+			<MarketValue>350</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				<isController>true</isController>
+				<safety>5</safety>
+				<stability>5</stability>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_BoosterImmunoGreater</defName>
+		<label>improved immunobooster</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/GR_BoosterImmunoGreater</texPath>			
+		</graphicData>
+		<description>Capsules containing genetic restorative medicine that helps prevent genomes from breaking down prematurely. Greatly helps mitigate the possibility of the hybrid ending in complete failure, at the expense of more processing time.\n\nThis booster can't be crafted, only scavenged.</description>
+		<statBases>
+			<MarketValue>30</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				
+				<safety>15</safety>
+				<timeMultiplier>1.5</timeMultiplier>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_BoosterHarmonoGreater</defName>
+		<label>improved harmonobooster</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/GR_BoosterHarmonoGreater</texPath>			
+		</graphicData>
+		<description>Capsules containing genetic stabilizers that help maintain the dominant-recessive genome relationship. Greatly reduces the chance of the hybrid having the opposite intended result, at the expense of more processing time.\n\nThis booster can't be crafted, only scavenged.</description>
+		<statBases>
+			<MarketValue>30</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				
+				<stability>15</stability>
+				<timeMultiplier>1.5</timeMultiplier>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="GR_BoosterBase">
+		<defName>GR_MechaniteBooster</defName>
+		<label>mechanite booster</label>
+		<graphicData>
+			<texPath>Things/Item/Boosters/GR_MechaniteBooster</texPath>			
+		</graphicData>
+		<description>This highly sought-after booster will result in an almost perfect hybrid: fertile, draftable and genetically stable.\n\nThis booster can't be crafted, only scavenged.</description>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
+				<isFertilityUnblocker>true</isFertilityUnblocker>
+				<isController>true</isController>
+				<safety>5</safety>
+				<stability>5</stability>
+				<timeMultiplier>0.5</timeMultiplier>
+			</li>
+		</modExtensions>
+		
 	</ThingDef>
 </Defs>

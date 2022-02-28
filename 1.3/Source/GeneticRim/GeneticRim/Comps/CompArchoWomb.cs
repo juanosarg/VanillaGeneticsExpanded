@@ -60,15 +60,7 @@ namespace GeneticRim
 
                         GenSpawn.Spawn(pawn, near, this.parent.Map);
 
-                        if (this.booster != InternalDefOf.GR_BoosterFertility)
-                        {
-                            pawn.health.AddHediff(HediffDefOf.Sterilized);
-                        }
-
-                        if (this.booster == InternalDefOf.GR_BoosterController)
-                        {
-                            pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
-                        }
+                       
 
                         this.progress = 0;
                         this.growingResult = null;

@@ -20,23 +20,19 @@
     <genStep Class="KCSG.GenStep_CustomStructureGen">
       <structureLayoutDefs>
         <li>GR_AbandonedLabAlpha</li>
+		<li>GR_AbandonedLabBeta</li>
+		<li>GR_AbandonedLabGamma</li>
+		<li>GR_AbandonedLabDelta</li>
+		<li>GR_AbandonedLabEpsilon</li>
        
       </structureLayoutDefs>
-      <shouldRuin>true</shouldRuin>
+      <shouldRuin>false</shouldRuin>
       <filthTypes>
         <li>Filth_Dirt</li>
         <li>Filth_Trash</li>
         <li>Filth_RubbleBuilding</li>
       </filthTypes>
-      <ruinSymbolResolvers>
-        <li>kcsg_randomdamage</li>
-        <li>kcsg_randomfilth</li>
-        <li>kcsg_randomterrainremoval</li>
-        <li>kcsg_randomroofremoval</li>
-        <li>kcsg_randomitemremoval</li>
-        <li>kcsg_removeperishable</li>
-        <li>kcsg_destroyrefuelablelightsource</li>
-      </ruinSymbolResolvers>
+     
     </genStep>
   </GenStepDef>
 

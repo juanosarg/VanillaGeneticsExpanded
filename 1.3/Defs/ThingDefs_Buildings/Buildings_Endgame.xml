@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<ThingDef Name="GR_ArchotechBuildingBase" Abstract="true" ParentName="BuildingBase">
 
-	<ThingDef ParentName="BuildingBase">
+	</ThingDef>
+	<ThingDef ParentName="GR_ArchotechBuildingBase">
 		<defName>GR_DNAStorageBank</defName>
 		<label>DNA storage bank</label>
 		<description>todo.</description>
@@ -39,7 +41,7 @@
 	
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="GR_ArchotechBuildingBase">
 		<defName>GR_ArchocentipedeFormer</defName>
 		<label>archocentipede former</label>
 		<description>todo.</description>
@@ -76,7 +78,7 @@
 	
 	</ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="GR_ArchotechBuildingBase">
 		<defName>GR_ArchoWomb</defName>
 		<label>archowomb</label>
 		<description>todo.</description>

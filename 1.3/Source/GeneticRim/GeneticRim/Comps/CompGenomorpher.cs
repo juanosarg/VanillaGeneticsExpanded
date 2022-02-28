@@ -95,24 +95,30 @@ namespace GeneticRim
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            yield return new Command_Action
-            {
-                defaultLabel = "GR_DesignateGrowthCell".Translate(),
-                defaultDesc = "GR_DesignateGrowthCellDesc".Translate(),
-                icon = ContentFinder<Texture2D>.Get("Things/Item/GR_Growthcell", true),
-
-                action = delegate
+            if(this.progress== -1f) {
+                yield return new Command_Action
                 {
-                    Find.WindowStack.Add(new Window_DesignateGrowthCell(this));
-                }
-            };
+                    defaultLabel = "GR_DesignateGrowthCell".Translate(),
+                    defaultDesc = "GR_DesignateGrowthCellDesc".Translate(),
+                    icon = ContentFinder<Texture2D>.Get("Things/Item/GR_Growthcell", true),
+
+                    action = delegate
+                    {
+                        Find.WindowStack.Add(new Window_DesignateGrowthCell(this));
+                    }
+                };
+
+            }
+            
             if (Prefs.DevMode)
             {
                 Command_Action command_Action = new Command_Action();
                 command_Action.defaultLabel = "DEBUG: Finish growth cell";
                 command_Action.action = delegate
                 {
-                    this.progress=1;
+                    if (this.progress >= 0)
+                    { this.progress = 1; }
+                        
                 };
                 yield return command_Action;
                

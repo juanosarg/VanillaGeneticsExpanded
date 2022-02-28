@@ -25,6 +25,18 @@ namespace GeneticRim
          */
         public float timeMultiplier;
 
+        /**
+         * Hybrid draftability toggle.
+         */
+        public bool isController = false;
+
+        /**
+         * Hybrid fertility toggle.
+         */
+        public bool isFertilityUnblocker = false;
+
+
+
         public bool isBooster;
         public bool isGenome;
 

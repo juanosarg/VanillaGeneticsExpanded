@@ -80,7 +80,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1.75,1.75)</drawSize>
 		</graphicData>
-		
+
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -92,9 +92,9 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
 			<li Class="GeneticRim.CompProperties_RandomHybridSpawner">
-				
+
 			</li>
-			
+
 		</comps>
 		<placeWorkers>
 			<li>GeneticRim.PlaceWorker_ShowSpawnerRadius</li>
@@ -766,14 +766,14 @@
 		<label>ancient ruined crate</label>
 		<description>Whatever this crate contained has long ago rotted and turned to dust.</description>
 		<size>(2,1)</size>
-		
+
 		<fillPercent>0.50</fillPercent>
 		<graphicData>
 			<texPath>Things/Building/Ruined/GR_DoubleAncientCrate</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		
+
 		<costList>
 			<Steel>4</Steel>
 		</costList>
@@ -798,7 +798,7 @@
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(3.25,3.25)</drawSize>
 		</graphicData>
-		
+
 		<costList>
 			<Steel>4</Steel>
 		</costList>
@@ -816,14 +816,14 @@
 		<label>ancient mechanized crate</label>
 		<description>Whatever this crate contained has long ago rotted and turned to dust.</description>
 		<size>(3,1)</size>
-		
+
 		<fillPercent>0.50</fillPercent>
 		<graphicData>
 			<texPath>Things/Building/Ruined/GR_AncientTechCrate</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
-		
+
 		<costList>
 			<Steel>4</Steel>
 		</costList>
@@ -1336,7 +1336,7 @@
 		<label>ancient bioluminiscent light</label>
 		<description>A metallic capsule filled with some bioluminiscent compound. This one seems to still be producing some faint light.</description>
 		<size>(1,2)</size>
-		
+
 		<fillPercent>0.50</fillPercent>
 		<graphicData>
 			<texPath>Things/Building/Ruined/GR_BioLight</texPath>
@@ -1361,4 +1361,191 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>2</pathCost>
 	</ThingDef>
+
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_RandomBooster</defName>
+		<label>random booster</label>
+		<description>Spawn random booster.</description>
+		<size>(1,1)</size>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_RandomBooster</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<comps>
+			<li Class="GeneticRim.CompProperties_RandomItemSpawner">
+				<items>
+					<li>GR_BoosterImmuno</li>
+					<li>GR_BoosterHarmono</li>
+					<li>GR_BoosterTempo</li>
+					<li>GR_BoosterFertility</li>
+					<li>GR_StabilizedFertilityUnblocker</li>
+					<li>GR_BoosterStabilizator</li>
+					<li>GR_BoosterController</li>
+					<li>GR_ImprovedController</li>
+					<li>GR_BoosterImmunoGreater</li>
+					<li>GR_BoosterHarmonoGreater</li>
+				</items>
+
+			</li>
+
+		</comps>
+
+	</ThingDef>
+
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_RandomExcavator</defName>
+		<label>random excavator</label>
+		<description>Spawn random excavator.</description>
+		<size>(1,1)</size>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_RandomExcavator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<comps>
+			<li Class="GeneticRim.CompProperties_RandomItemSpawner">
+				<items>
+					<li>GR_GenomeExcavator</li>
+					<li>GR_ArchotechGenomeExcavator</li>
+
+				</items>
+
+			</li>
+
+		</comps>
+
+	</ThingDef>
+
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_RandomGenoframe</defName>
+		<label>random genoframe</label>
+		<description>Spawn random genoframe.</description>
+		<size>(1,1)</size>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_RandomGenoframe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<comps>
+			<li Class="GeneticRim.CompProperties_RandomItemSpawner">
+				<items>
+					<li>GR_GenoframeAwful</li>
+					<li>GR_GenoframePoor</li>
+					<li>GR_GenoframeNormal</li>
+					<li>GR_GenoframeGood</li>
+					<li>GR_GenoframeExcellent</li>
+					<li>GR_GenoframeMasterwork</li>
+					<li>GR_GenoframeLegendary</li>
+
+				</items>
+
+			</li>
+
+		</comps>
+
+	</ThingDef>
+
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_RandomGenome</defName>
+		<label>random genome</label>
+		<description>Spawn random genome.</description>
+		<size>(1,1)</size>
+		<fillPercent>0.50</fillPercent>
+		<rotatable>false</rotatable>
+		<tickerType>Normal</tickerType>
+		<clearBuildingArea>false</clearBuildingArea>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_RandomGenome</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<building>
+			<isEdifice>false</isEdifice>
+			<canPlaceOverWall>true</canPlaceOverWall>
+		</building>
+		<comps>
+			<li Class="GeneticRim.CompProperties_RandomItemSpawner">
+				<items>
+					<li>GR_UrsineGenetic</li>
+					<li>GR_AvianGenetic</li>
+					<li>GR_BoomalopeGenetic</li>
+					<li>GR_MuffaloGenetic</li>
+					<li>GR_CanineGenetic</li>
+					<li>GR_RodentGenetic</li>
+					<li>GR_FelineGenetic</li>
+					<li>GR_HumanoidGenetic</li>
+					<li>GR_EquineGenetic</li>
+					<li>GR_InsectoidGenetic</li>
+					<li>GR_ReptileGenetic</li>
+					<li>GR_ThrumboGenetic</li>
+
+				</items>
+
+			</li>
+
+		</comps>
+
+	</ThingDef>
+
 </Defs>

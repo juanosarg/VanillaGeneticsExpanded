@@ -9,24 +9,32 @@ using Verse;
 
 namespace GeneticRim
 {
-   
 
-  
+
+    [StaticConstructorOnStartup]
     public class CompElectroWomb : ThingComp
     {
         public CompProperties_ElectroWomb Props => (CompProperties_ElectroWomb)this.props;
 
+        private static readonly Material barFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.5f, 0.475f, 0.1f));
+        private static readonly Material barUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.15f, 0.15f, 0.15f));
+
         public bool Free => this.growingResult == null;
 
         public PawnKindDef growingResult;
+        public PawnKindDef failureResult;
         public ThingDef booster;
         public float progress;
 
-                Graphic usedGraphic;
+        bool failure;
+
+        public int hoursProcess =1;
+
+        Graphic usedGraphic;
 
         public CompPowerTrader compPowerTrader;
 
-        public bool isLargeWomb;
+      
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -52,12 +60,22 @@ namespace GeneticRim
                 if (compPowerTrader?.PowerOn == true)
                 {
 
-                    this.progress += 1f / GenDate.TicksPerHour; // (GenDate.TicksPerDay * 7f);
+                    this.progress += 1f / hoursProcess; // (GenDate.TicksPerDay * 7f);
 
                     if (this.progress > 1)
                     {
-                        Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 0, fixedChronologicalAge: 0,
+                        Pawn pawn = null;
+                        if (failure) {
+
+                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.failureResult, Faction.OfPlayer, fixedBiologicalAge: 0, fixedChronologicalAge: 0,
                                                                                          newborn: true, forceGenerateNewPawn: true));
+
+                        }
+                        else {
+                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 0, fixedChronologicalAge: 0,
+                                                                                      newborn: true, forceGenerateNewPawn: true));
+                        }
+                        
 
                         IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 5f);
 
@@ -65,12 +83,12 @@ namespace GeneticRim
 
                         GenSpawn.Spawn(pawn, near, this.parent.Map);
 
-                        if (this.booster != InternalDefOf.GR_BoosterFertility)
+                        if (this.booster?.GetModExtension<DefExtension_HybridChanceAlterer>()?.isFertilityUnblocker!=true)
                         {
                             pawn.health.AddHediff(HediffDefOf.Sterilized);
                         }
 
-                        if (this.booster == InternalDefOf.GR_BoosterController)
+                        if (this.booster?.GetModExtension<DefExtension_HybridChanceAlterer>()?.isController==true)
                         {
                             pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
                         }
@@ -78,7 +96,7 @@ namespace GeneticRim
                         this.progress = 0;
                         this.growingResult = null;
 
-                        //finished
+                       
                     }
 
                 }
@@ -88,7 +106,11 @@ namespace GeneticRim
 
         public override string CompInspectStringExtra()
         {
-            return "GR_ElectroWomb_Progress".Translate(this.progress.ToStringPercent());
+            if (this.growingResult != null)
+            {
+                return "GR_ElectroWomb_Progress".Translate(this.progress.ToStringPercent());
+            }
+            else return null;
         }
 
         public override void PostExposeData()
@@ -96,7 +118,12 @@ namespace GeneticRim
             base.PostExposeData();
 
             Scribe_Defs.Look(ref this.growingResult, nameof(this.growingResult));
+            Scribe_Defs.Look(ref this.failureResult, nameof(this.failureResult));
             Scribe_Values.Look(ref this.progress, nameof(this.progress));
+            Scribe_Values.Look(ref this.hoursProcess, nameof(this.hoursProcess));
+            Scribe_Values.Look(ref this.failure, nameof(this.failure));
+
+
         }
 
         public override void PostDraw()
@@ -115,8 +142,46 @@ namespace GeneticRim
             vector.y += 6;
 
             usedGraphic?.DrawFromDef(vector, Rot4.North, null);
+
+            GenDraw.FillableBarRequest fillableBarRequest = default(GenDraw.FillableBarRequest);
+            if (Props.isLarge)
+            {
+                fillableBarRequest.center = this.parent.DrawPos - Vector3.forward * 0.9f;
+                fillableBarRequest.size = new Vector2(0.85f, 0.07f);
+            }
+            else
+            {
+                fillableBarRequest.center = this.parent.DrawPos - Vector3.forward * 0.375f;
+                fillableBarRequest.size = new Vector2(0.65f, 0.07f);
+            }
+            
+            
+            fillableBarRequest.fillPercent = this.progress;
+            fillableBarRequest.filledMat = barFilledMat;
+            fillableBarRequest.unfilledMat = barUnfilledMat;
+            fillableBarRequest.margin = 0.1f;
+          
+            GenDraw.DrawFillableBar(fillableBarRequest);
+
         }
 
+        public override IEnumerable<Gizmo> CompGetGizmosExtra()
+        {
+            
+            if (Prefs.DevMode)
+            {
+                Command_Action command_Action = new Command_Action();
+                command_Action.defaultLabel = "DEBUG: Finish womb work";
+                command_Action.action = delegate
+                {
+                    if (this.progress > 0)
+                    { this.progress = 1; }
+
+                };
+                yield return command_Action;
+
+            }
+        }
 
         public void InitProcess(Thing growthCell)
         {
@@ -127,22 +192,36 @@ namespace GeneticRim
 
             this.booster = growthComp.booster;
 
-            growthCell.Destroy();
+            hoursProcess = Props.hoursProcess * GenDate.TicksPerHour;
+            float? timeMultiplier = booster?.GetModExtension<DefExtension_HybridChanceAlterer>()?.timeMultiplier;
 
-            bool swap = Rand.Chance(swapChance);
-            result = swap ? result : swapResult;
-
-            bool failure = Rand.Chance(failureChance);
-
-            if (!failure && result != null && result.RaceProps.baseBodySize < this.Props.maxBodySize)
+            if (timeMultiplier != null && timeMultiplier != 0)
             {
-                this.growingResult = result;
-                this.progress = 0;
-                return;
+                hoursProcess = (int)(hoursProcess * timeMultiplier);
             }
 
-            Log.Message("FAILURE");
-            //todo: failures here
+            growthCell.Destroy();
+
+            if (swapChance != 0) {
+                bool swap = Rand.Chance(swapChance);
+                result = swap ? result : swapResult;
+            }
+
+            if (failureChance != 0)
+            {
+                failure = Rand.Chance(failureChance);
+                this.failureResult = failureResult;
+            }
+            
+            this.growingResult = result;
+            this.progress = 0;
+
+            if (result == null || result.RaceProps.baseBodySize > this.Props.maxBodySize)
+            {
+                failure = true;
+            }
+          
+
         }
     }
 }

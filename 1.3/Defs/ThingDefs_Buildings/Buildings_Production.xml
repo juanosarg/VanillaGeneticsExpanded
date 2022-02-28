@@ -113,6 +113,7 @@
 			</li>
 			<li Class="GeneticRim.CompProperties_ElectroWomb">
 				<maxBodySize>1</maxBodySize>
+				<hoursProcess>72</hoursProcess>
 			</li>
 		</comps>
 		<researchPrerequisites>
@@ -174,6 +175,7 @@
 			</li>
 			<li Class="GeneticRim.CompProperties_ElectroWomb">
 				<isLarge>true</isLarge>
+				<hoursProcess>72</hoursProcess>
 			</li>
 		</comps>
 		<researchPrerequisites>

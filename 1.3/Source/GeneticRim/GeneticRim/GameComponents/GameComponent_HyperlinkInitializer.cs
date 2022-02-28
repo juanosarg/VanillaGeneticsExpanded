@@ -43,22 +43,26 @@ namespace GeneticRim
 
             CompProperties_TargetEffect_Extract comp = excavator.GetCompProperties<CompProperties_TargetEffect_Extract>();
 
-            List<string> tier = comp.tier;
+            if (comp != null) {
+                List<string> tier = comp.tier;
 
-            HashSet<ThingDef> allExcavatorsLinks = new HashSet<ThingDef>();
-            HashSet<ExtractableAnimalsList> allLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
-            foreach (ExtractableAnimalsList individualList in allLists)
-            {
-                if (tier.Contains(individualList.tier))
+                HashSet<ThingDef> allExcavatorsLinks = new HashSet<ThingDef>();
+                HashSet<ExtractableAnimalsList> allLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
+                foreach (ExtractableAnimalsList individualList in allLists)
                 {
-                    allExcavatorsLinks.Add(individualList.itemProduced);
+                    if (tier.Contains(individualList.tier))
+                    {
+                        allExcavatorsLinks.Add(individualList.itemProduced);
+                    }
                 }
+                foreach (ThingDef thing in allExcavatorsLinks)
+                {
+                    excavator.descriptionHyperlinks.Add(thing);
+
+                }
+
             }
-            foreach (ThingDef thing in allExcavatorsLinks)
-            {
-                excavator.descriptionHyperlinks.Add(thing);
-               
-            }
+            
         }
 
         private void AddGenomeHyperlinks(ThingDef genome)
