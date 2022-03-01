@@ -302,6 +302,7 @@
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
+    <Compile Include="Buildings\Building_ArchocentipedeFormer.cs" />
     <Compile Include="Buildings\Building_DNAStorageBank.cs" />
     <Compile Include="Commands\Command_SetAnimalList.cs" />
     <Compile Include="Commands\Command_SetGenomeList.cs" />

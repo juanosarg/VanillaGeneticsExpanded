@@ -63,9 +63,22 @@ namespace GeneticRim
 
 
                     yield return GenomeListSetupUtility.SetAnimalListCommand(this, this.Map, this.selectedGenome);
+                    if (Prefs.DevMode)
+                    {
+                        Command_Action command_Action = new Command_Action();
+                        command_Action.defaultLabel = "DEBUG: Finish DNA progress";
+                        command_Action.action = delegate
+                        {
+                            this.progress = 1;
 
+                        };
+                        yield return command_Action;
+
+                    }
 
                 }
+
+                
             }
 
         }
@@ -114,6 +127,37 @@ namespace GeneticRim
             Scribe_Values.Look(ref this.progress, nameof(this.progress));
             Scribe_Values.Look(ref this.hasAsked, nameof(this.hasAsked));
 
+
+        }
+
+        public override void DeSpawn(DestroyMode mode = DestroyMode.Vanish)
+        {
+            
+            NotifyDestructionToFormer();
+            base.DeSpawn(mode);
+        }
+
+        public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
+        {
+            
+            NotifyDestructionToFormer();
+            base.Destroy(mode);
+        }
+
+        public void NotifyDestructionToFormer()
+        {
+            foreach (Thing thing in this.GetComp<CompFacility>().LinkedBuildings)
+            {
+                
+                Building_ArchocentipedeFormer building = thing as Building_ArchocentipedeFormer;
+                if (building != null)
+                {
+                    if (building.FacilitiesAndProgress.ContainsKey(this.selectedGenome))
+                    {
+                        building.FacilitiesAndProgress.Remove(this.selectedGenome);
+                    }
+                }
+            }
 
         }
 

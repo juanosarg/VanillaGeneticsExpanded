@@ -73,6 +73,12 @@
 	<GR_DNABankProgress>DNA amount progress: {0}</GR_DNABankProgress>
 	<GR_AreYouSureDNA>Are you sure you want to change the accepted genome? All current progress will be lost</GR_AreYouSureDNA>
 	
+	<!-- Archocentipede former -->
+	<GR_ArchoFormerGenomeProgress>{0} progress: {1}</GR_ArchoFormerGenomeProgress>
+	<GR_ArchoFormerDisabledReason>Lacking DNA bank progress</GR_ArchoFormerDisabledReason>
+	<GR_BeginArchotechGrowthCell>Create growth cell</GR_BeginArchotechGrowthCell>
+	<GR_BeginArchotechGrowthCellDesc>Begin creation of an archotech growth cell. This will need all neccessary DNA banks to be at 100% progress</GR_BeginArchotechGrowthCellDesc>
+	
 	<!-- Gene Pods Control -->
 	<GR_ExtractGenes>Empty Tank 1</GR_ExtractGenes>
 	<GR_ExtractGenesDesc>Extract Genetic Material from tank #1</GR_ExtractGenesDesc>
