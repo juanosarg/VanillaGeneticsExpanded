@@ -67,6 +67,11 @@
 	<GR_SelectGenomeToHarvestDesc>Select genome to harvest</GR_SelectGenomeToHarvestDesc>
 	<GR_NoEndgameGenomes>No endgame genomes! (error)</GR_NoEndgameGenomes>
 	<GR_SelectedGenome>Genome currently selected for extraction: {0}</GR_SelectedGenome>
+	<GR_SelectAnimalToHarvest>Select animal to harvest</GR_SelectAnimalToHarvest>
+	<GR_SelectAnimalToHarvestDesc>Select animal to harvest. This animal will be brought to the DNA bank and harvested for its DNA. It will kill the animal and destroy its body.</GR_SelectAnimalToHarvestDesc>
+	<GR_NoValidAnimalsToExtract>No colony animals with that genome</GR_NoValidAnimalsToExtract>
+	<GR_DNABankProgress>DNA amount progress: {0}</GR_DNABankProgress>
+	<GR_AreYouSureDNA>Are you sure you want to change the accepted genome? All current progress will be lost</GR_AreYouSureDNA>
 	
 	<!-- Gene Pods Control -->
 	<GR_ExtractGenes>Empty Tank 1</GR_ExtractGenes>

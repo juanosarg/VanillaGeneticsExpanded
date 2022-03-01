@@ -223,6 +223,19 @@
 		</requiredCapacities>
 	</WorkGiverDef>
 	
+	<WorkGiverDef>
+		<defName>GR_ArchotechDNAExtraction</defName>
+		<label>bringing animals to extraction</label>
+		<giverClass>GeneticRim.WorkGiver_ArchotechDNAExtraction</giverClass>
+		<workType>GR_Genetics</workType>
+		<verb>bring animal to</verb>
+		<gerund>bringing animal to</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
 	
 	
 	

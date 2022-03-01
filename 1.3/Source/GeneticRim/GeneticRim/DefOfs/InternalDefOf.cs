@@ -38,6 +38,7 @@ namespace GeneticRim
 		public static ThingDef         GR_GenePod;
 		public static JobDef           GR_InsertIngredients;
         public static JobDef           GR_InsertGrowthCell;
+		public static JobDef           GR_ArchotechDNAExtractionJob;
 		public static SoundDef         GR_Pop;
 
 	}

@@ -132,6 +132,19 @@
                 _ => throw new ArgumentOutOfRangeException()
             };
 
+        public float GetDNAExtractionFactor() =>
+            this.quality switch
+            {
+                QualityCategory.Awful => 0.01f,
+                QualityCategory.Poor => 0.03f,
+                QualityCategory.Normal => 0.06f,
+                QualityCategory.Good => 0.12f,
+                QualityCategory.Excellent => 0.25f,
+                QualityCategory.Masterwork => 0.5f,
+                QualityCategory.Legendary => 1f,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+
         public override void PostExposeData()
         {
             base.PostExposeData();

@@ -296,11 +296,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\JobDrivers\JobDriver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertIngredients.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
+    <Compile Include="AI\WorkGivers\WorkGiver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
     <Compile Include="Buildings\Building_DNAStorageBank.cs" />
+    <Compile Include="Commands\Command_SetAnimalList.cs" />
     <Compile Include="Commands\Command_SetGenomeList.cs" />
     <Compile Include="Commands\GenomeListSetupUtility.cs" />
     <Compile Include="Comps\CompArchoWomb.cs" />
@@ -337,7 +340,8 @@
     <Compile Include="Endgame\Building_ArchotechPlatform.cs" />
     <Compile Include="Endgame\CompArchotechPart.cs" />
     <Compile Include="Endgame\CompProperties_ArchotechPart.cs" />
-    <Compile Include="GameComponents\GameComponent_HyperlinkInitializer.cs" />
+    <Compile Include="Game and Map Components\ArchotechExtractableAnimals_MapComponent.cs" />
+    <Compile Include="Game and Map Components\GameComponent_HyperlinkInitializer.cs" />
     <Compile Include="Gas\Gas_Hairballs.cs" />
     <Compile Include="Gas\Gas_InsanityCloud.cs" />
     <Compile Include="Gas\Gas_InsectClouds.cs" />

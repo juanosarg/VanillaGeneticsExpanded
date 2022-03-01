@@ -98,8 +98,11 @@ namespace GeneticRim
                             pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
                         }
 
-                        CompHybrid compHybrid = pawn.GetComp<CompHybrid>();
-                        compHybrid.quality = this.genoframe.GetModExtension<DefExtension_Quality>().quality;
+                        CompHybrid compHybrid = pawn.TryGetComp<CompHybrid>();
+                        if (compHybrid != null) {
+                            compHybrid.quality = this.genoframe.GetModExtension<DefExtension_Quality>().quality;
+
+                        }
 
                         this.progress = 0;
                         this.growingResult = null;

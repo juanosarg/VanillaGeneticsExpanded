@@ -9,42 +9,36 @@ using System.Linq;
 namespace GeneticRim
 {
     [StaticConstructorOnStartup]
-    public class Command_SetGenomeList : Command
+    public class Command_SetAnimalList : Command
     {
 
         public Map map;
         public Building_DNAStorageBank building;
+        public ThingDef selectedGenome;
+        List<Pawn> listOfPawns;
 
 
 
-        public Command_SetGenomeList()
+        public Command_SetAnimalList()
         {
+            
+            
         }
 
         public override void ProcessInput(Event ev)
         {
             base.ProcessInput(ev);
             List<FloatMenuOption> list = new List<FloatMenuOption>();
-
-            HashSet<ThingDef> listOfAllEndgameGenomes = new HashSet<ThingDef>();
-            HashSet <EndgameGenomesDef> allLists = DefDatabase<EndgameGenomesDef>.AllDefsListForReading.ToHashSet();
-            foreach (EndgameGenomesDef element in allLists)
-            {
-                listOfAllEndgameGenomes.AddRange(element.genomes);
-
-            }
-
-
-            foreach (ThingDef thing in listOfAllEndgameGenomes)
+           
+            listOfPawns = Find.CurrentMap.mapPawns.SpawnedColonyAnimals.Where(x => (x.kindDef.GetModExtension<DefExtension_Hybrid>()?.dominantGenome == selectedGenome)
+            || (x.kindDef.GetModExtension<DefExtension_Hybrid>()?.secondaryGenome == selectedGenome)).ToList();
+           
+            foreach (Pawn pawn in listOfPawns)
             {
                 
-                    list.Add(new FloatMenuOption(thing.LabelCap, delegate
+                    list.Add(new FloatMenuOption(pawn.LabelCap, delegate
                     {
-                        if (building.selectedGenome != thing) { building.progress = 0f; }
-                        building.selectedGenome = thing;
-                        building.hasAsked = false;
-                        
-                        
+                        pawn.Map.GetComponent<ArchotechExtractableAnimals_MapComponent>().AddAnimalToCarry(pawn,building);
                     }, MenuOptionPriority.Default, null, null, 29f, null, null));
                 
 
@@ -60,7 +54,7 @@ namespace GeneticRim
             }
             else
             {
-                list.Add(new FloatMenuOption("GR_NoEndgameGenomes".Translate(), delegate
+                list.Add(new FloatMenuOption("GR_NoValidAnimalsToExtract".Translate(), delegate
                 {
 
                 }, MenuOptionPriority.Default, null, null, 29f, null, null));

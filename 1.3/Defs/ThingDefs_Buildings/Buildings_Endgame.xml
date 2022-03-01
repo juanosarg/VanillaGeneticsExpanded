@@ -7,7 +7,7 @@
 	<ThingDef ParentName="GR_ArchotechBuildingBase">
 		<defName>GR_DNAStorageBank</defName>
 		<label>DNA storage bank</label>
-		<description>todo.</description>
+		<description>A vital piece of archotechnology that is part of the process in creating an Archocentipede.\n\nGenome Extractor Tables function in a very similar way to this device, except this machine requires live specimens and stores the genetic material for later use, preventing deterioration. Depending on the base Genoframe, the amount of viable genetic material extracted will vary.\n\nEach storage bank can only store the genetic material from a single animal branch, such as ursine or feline. Inserting a hybrid into the database yields half as much valuable data compared to a paragon.</description>
 		<thingClass>GeneticRim.Building_DNAStorageBank</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Endgame/ArchotechDNABank</texPath>
@@ -18,6 +18,7 @@
 		<uiIconScale>0.75</uiIconScale>
 		<rotatable>false</rotatable>
 		<minifiedDef>MinifiedThing</minifiedDef>
+		<drawerType>RealtimeOnly</drawerType>
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
@@ -44,7 +45,7 @@
 	<ThingDef ParentName="GR_ArchotechBuildingBase">
 		<defName>GR_ArchocentipedeFormer</defName>
 		<label>archocentipede former</label>
-		<description>todo.</description>
+		<description>The archotech version of the Genomorpher, this machine combines the best genetic material of all the animal branches into a single Archocentipede Growthcell. The way it functions is beyond understanding and is impossible to replicate even with the best glitterworld technology.\n\nIn order for this machine to function, it requires multiple connecting DNA Storage Banks which each have the complete genetic data from the different animal branches. Each storage bank will be completely drained in order to ensure that the resulting Growthcell is perfect in every single way.\n\nThe resulting Archocentipede Growthcell requires its own special Archowomb, as it is impossible to replicate the necessary nurturing environment.</description>
 		
 		<graphicData>
 			<texPath>Things/Building/Endgame/ArchocentipedeFormer</texPath>
@@ -81,7 +82,7 @@
 	<ThingDef ParentName="GR_ArchotechBuildingBase">
 		<defName>GR_ArchoWomb</defName>
 		<label>archowomb</label>
-		<description>todo.</description>
+		<description>A relatively massive machine designed to simulate the environment of a mother’s womb specifically for the Archocentipede. Once the Growthcell has been inserted, the embryo can start growing all the way to its adult life stage before being released.\n\nCare should be taken before beginning the process, as the resulting energy signature will force any and all hostiles to attack the colony before the monstrosity can be born. The procedure will last 15 days and once finished, the creature will be under the player’s control with peerless combat prowess.</description>
 		
 		<graphicData>
 			<texPath>Things/Building/Endgame/Archowomb_Base</texPath>

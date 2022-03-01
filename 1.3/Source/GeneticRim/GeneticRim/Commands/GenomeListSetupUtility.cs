@@ -22,6 +22,21 @@ namespace GeneticRim
             };
         }
 
-      
+        public static Command_SetAnimalList SetAnimalListCommand(Building_DNAStorageBank building, Map map,ThingDef selectedGenome)
+        {
+            return new Command_SetAnimalList()
+            {
+                defaultDesc = "GR_SelectAnimalToHarvestDesc".Translate(),
+                defaultLabel = "GR_SelectAnimalToHarvest".Translate(),
+                icon = ContentFinder<Texture2D>.Get("ui/commands/GR_BringAnimal", true),
+                hotKey = KeyBindingDefOf.Misc1,
+                map = map,
+                building = building,
+                selectedGenome= selectedGenome
+
+            };
+        }
+
+
     }
 }

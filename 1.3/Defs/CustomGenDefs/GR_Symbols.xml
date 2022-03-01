@@ -510,11 +510,6 @@
 </KCSG.SymbolDef>
 
 
-<KCSG.SymbolDef>
-  <defName>GR_RuinedMechanoidTinkeringTable_South</defName>
-  <thing>GR_RuinedMechanoidTinkeringTable</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
   <defName>GR_SignA</defName>

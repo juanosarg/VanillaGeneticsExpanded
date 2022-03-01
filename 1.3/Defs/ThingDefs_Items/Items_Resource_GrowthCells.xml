@@ -41,7 +41,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_ArchoGrowthcell</defName>
 		<label>archotech growth cell</label>
-		<description>A portable, human-made casing designed to hold an embryo until it is transferred to a relevant Electrowomb, similar to fertilized eggs that require incubation. The embryonic fluid is unstable due to the unnatural genetic combination, so it will need to be implanted within 7 days after its creation. This growth cell has to be kept at a temperature between 0 and 50 degrees Celsius.</description>
+		<description>A portable, archotech-made casing designed to hold an embryo until it is transferred to a relevant Electrowomb, similar to fertilized eggs that require incubation. This particular one is completely stable and contains the embryo of an Archocentipede, which can only grow in an Archowomb.\n\nCare should be taken before beginning the process, as the resulting energy signature will force any and all hostiles to attack the colony before the monstrosity can be born.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/GR_ArchoGrowthcell</texPath>
@@ -61,15 +61,7 @@
 		<stackLimit>1</stackLimit>
 		<comps>
 
-			<li Class="CompProperties_TemperatureRuinable">
-				<minSafeTemperature>0</minSafeTemperature>
-				<maxSafeTemperature>50</maxSafeTemperature>
-				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
-			</li>
-			 <li Class="CompProperties_Rottable">
-				<daysToRotStart>7</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
+			
 			<li>
 				<compClass>GeneticRim.CompGrowthCell</compClass>
 			</li>

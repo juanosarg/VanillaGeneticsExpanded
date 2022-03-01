@@ -35,4 +35,11 @@
 	  <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
   
+  <JobDef>
+    <defName>GR_ArchotechDNAExtractionJob</defName>
+    <driverClass>GeneticRim.JobDriver_ArchotechDNAExtraction</driverClass>
+    <reportString>carrying TargetA to TargetB.</reportString>
+	  <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
 </Defs>
