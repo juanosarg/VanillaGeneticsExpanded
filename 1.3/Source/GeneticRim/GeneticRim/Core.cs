@@ -33,6 +33,9 @@
                         if (!hybrids.ContainsKey(hybridExt.dominantGenome))
                             hybrids.Add(hybridExt.dominantGenome, new Dictionary<ThingDef, PawnKindDef>());
                         hybrids[hybridExt.dominantGenome].Add(hybridExt.secondaryGenome, pawnKindDef);
+
+                        if(!pawnKindDef.race.HasComp(typeof(CompHybrid)))
+                            pawnKindDef.race.comps.Add(new CompProperties(typeof(CompHybrid)));
                     }
                 }
             }

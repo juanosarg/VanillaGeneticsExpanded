@@ -23,7 +23,12 @@ namespace GeneticRim
 
         public PawnKindDef growingResult;
         public PawnKindDef failureResult;
+
+        public ThingDef genomeDominant;
+        public ThingDef genomeSecondary;
+        public ThingDef genoframe;
         public ThingDef booster;
+
         public float progress;
 
         bool failure;
@@ -92,6 +97,9 @@ namespace GeneticRim
                         {
                             pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
                         }
+
+                        CompHybrid compHybrid = pawn.GetComp<CompHybrid>();
+                        compHybrid.quality = this.genoframe.GetModExtension<DefExtension_Quality>().quality;
 
                         this.progress = 0;
                         this.growingResult = null;
@@ -190,7 +198,10 @@ namespace GeneticRim
             PawnKindDef result = Core.GetHybrid(growthComp.genomeDominant, growthComp.genomeSecondary, growthComp.genoframe, growthComp.booster,
                                               out float swapChance, out float failureChance, out PawnKindDef swapResult, out PawnKindDef failureResult);
 
-            this.booster = growthComp.booster;
+            this.booster         = growthComp.booster;
+            this.genoframe       = growthComp.genoframe;
+            this.genomeDominant  = growthComp.genomeDominant;
+            this.genomeSecondary = growthComp.genomeSecondary;
 
             hoursProcess = Props.hoursProcess * GenDate.TicksPerHour;
             float? timeMultiplier = booster?.GetModExtension<DefExtension_HybridChanceAlterer>()?.timeMultiplier;

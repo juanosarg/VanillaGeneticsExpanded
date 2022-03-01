@@ -22,6 +22,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,6 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -305,6 +307,7 @@
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
     <Compile Include="Comps\CompGrowthCell.cs" />
+    <Compile Include="Comps\CompHybrid.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomItemSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomHybridSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_ArchoWomb.cs" />
@@ -340,6 +343,12 @@
     <Compile Include="Gas\Gas_InsectClouds.cs" />
     <Compile Include="Gas\Gas_PoisonCloud.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
+    <Compile Include="Harmony\Patch_BodySize.cs" />
+    <Compile Include="Harmony\Patch_GetDamageFactor.cs" />
+    <Compile Include="Harmony\Patch_HealthScale.cs" />
+    <Compile Include="Harmony\Patch_HungerRate.cs" />
+    <Compile Include="Harmony\Patch_PawnLabel.cs" />
+    <Compile Include="Harmony\Patch_StatValueUnfinalized.cs" />
     <Compile Include="Harmony\Root_Play_Update.cs" />
     <Compile Include="Harmony\MapParent_RecalculateHibernatableIncidentTargets.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
