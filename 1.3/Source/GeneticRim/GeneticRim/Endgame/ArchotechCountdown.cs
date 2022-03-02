@@ -13,7 +13,7 @@ namespace GeneticRim
     {
         private static float timeLeft = -1000f;
 
-        private static Building shipRoot;
+        private static Building_ArchoWomb womb;
 
         private const float InitialTime = 7.2f;
 
@@ -25,10 +25,10 @@ namespace GeneticRim
             }
         }
 
-        public static void InitiateCountdown(Building launchingShipRoot)
+        public static void InitiateCountdown(Building_ArchoWomb womb)
         {
             SoundDefOf.ShipTakeoff.PlayOneShotOnCamera(null);
-            ArchotechCountdown.shipRoot = launchingShipRoot;
+            ArchotechCountdown.womb = womb;
             ArchotechCountdown.timeLeft = 7.2f;
             ScreenFader.StartFade(Color.white, 7.2f);
         }
@@ -52,7 +52,9 @@ namespace GeneticRim
 
         private static void CountdownEnded()
         {
-            List<Building> list = ArchotechUtility.ShipBuildingsAttachedTo(ArchotechCountdown.shipRoot).ToList<Building>();
+           
+          
+
             StringBuilder stringBuilder = new StringBuilder();
             Pawn theFutureTamer = null;
             foreach (Pawn current in PawnsFinder.AllMaps_FreeColonistsSpawned)
@@ -61,29 +63,18 @@ namespace GeneticRim
                 theFutureTamer = current;
             }
             
-            foreach (Building current in list)
-            {
-                if (current.def.defName== "GR_ArchotechPlatform") {
-                    Map mapToPlaceAt = current.Map;
-                    IntVec3 positionToPlaceAt = current.Position;
-                    current.Destroy(DestroyMode.Vanish);
-                    Building new_Platform = (Building)ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("GR_SpentArchotechPlatform", true));
-                    new_Platform.SetFaction(Faction.OfPlayer);
-                    GenSpawn.Spawn(new_Platform, positionToPlaceAt, mapToPlaceAt);
+          
 
-                    PawnGenerationRequest request = new PawnGenerationRequest(PawnKindDef.Named("GR_ArchotechCentipede"), Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false);
-                    Pawn pawn = PawnGenerator.GeneratePawn(request);
-                    pawn.training.Train(TrainableDefOf.Obedience, theFutureTamer, true);
-                    pawn.training.Train(TrainableDefOf.Release, theFutureTamer, true);
-                   
+           PawnGenerationRequest request = new PawnGenerationRequest(InternalDefOf.GR_ArchotechCentipede, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, false, true, false, false, true, false, 1f, false, true, true, false, false);
+           Pawn pawn = PawnGenerator.GeneratePawn(request);
+           pawn.training.Train(TrainableDefOf.Obedience, theFutureTamer, true);
+           pawn.training.Train(TrainableDefOf.Release, theFutureTamer, true);
+           PawnUtility.TrySpawnHatchedOrBornPawn(pawn, womb);
 
-                    PawnUtility.TrySpawnHatchedOrBornPawn(pawn, new_Platform);
-
-                }
-                
-            }
+           
             string victoryText = "GR_GameOverArchotech".Translate(stringBuilder.ToString());
             GameVictoryUtility.ShowCredits(victoryText);
+            womb.StopHibernatingWomb();
         }
     }
 }

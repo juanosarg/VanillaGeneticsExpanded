@@ -297,24 +297,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI\JobDrivers\JobDriver_ArchotechDNAExtraction.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_InsertArchotechGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertIngredients.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
     <Compile Include="Buildings\Building_ArchocentipedeFormer.cs" />
+    <Compile Include="Buildings\Building_ArchoWomb.cs" />
     <Compile Include="Buildings\Building_DNAStorageBank.cs" />
     <Compile Include="Commands\Command_SetAnimalList.cs" />
     <Compile Include="Commands\Command_SetGenomeList.cs" />
     <Compile Include="Commands\GenomeListSetupUtility.cs" />
-    <Compile Include="Comps\CompArchoWomb.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
+    <Compile Include="Comps\CompArchotechGrowthCell.cs" />
     <Compile Include="Comps\CompGrowthCell.cs" />
     <Compile Include="Comps\CompHybrid.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomItemSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomHybridSpawner.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_ArchoWomb.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_ElectroWomb.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_StartCharged.cs" />
@@ -336,11 +337,6 @@
     <Compile Include="Defs\ExtractableAnimalsList.cs" />
     <Compile Include="Dev Mode\SuperItemSpawner.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />
-    <Compile Include="Endgame\ArchotechUtility.cs" />
-    <Compile Include="Endgame\Building_ArchotechComputerCore.cs" />
-    <Compile Include="Endgame\Building_ArchotechPlatform.cs" />
-    <Compile Include="Endgame\CompArchotechPart.cs" />
-    <Compile Include="Endgame\CompProperties_ArchotechPart.cs" />
     <Compile Include="Game and Map Components\ArchotechExtractableAnimals_MapComponent.cs" />
     <Compile Include="Game and Map Components\GameComponent_HyperlinkInitializer.cs" />
     <Compile Include="Gas\Gas_Hairballs.cs" />

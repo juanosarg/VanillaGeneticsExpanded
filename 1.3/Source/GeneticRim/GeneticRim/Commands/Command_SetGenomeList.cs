@@ -34,15 +34,40 @@ namespace GeneticRim
 
             }
 
+           
+
 
             foreach (ThingDef thing in listOfAllEndgameGenomes)
             {
                 
                     list.Add(new FloatMenuOption(thing.LabelCap, delegate
                     {
-                        if (building.selectedGenome != thing) { building.progress = 0f; }
-                        building.selectedGenome = thing;
-                        building.hasAsked = false;
+                        bool duplicatedFlag = false;
+                        foreach (Thing item in building.Map.listerBuldingOfDefInProximity.GetForCell(building.Position, 30, InternalDefOf.GR_DNAStorageBank))
+                        {
+                            Building_DNAStorageBank otherBuilding = item as Building_DNAStorageBank;
+
+                            if(otherBuilding.selectedGenome== thing)
+                            {
+                                duplicatedFlag = true;
+                                break;
+                            }
+
+                        }
+
+                        if (duplicatedFlag)
+                        {
+                            Messages.Message("GR_DuplicatedGenomeSelection".Translate(), building, MessageTypeDefOf.NeutralEvent);
+                        }
+                        else {
+                            if (building.selectedGenome != thing)
+                            {
+                                building.progress = 0f;
+                            }
+                            building.selectedGenome = thing;
+                            building.hasAsked = false;
+                        }
+                        
                         
                         
                     }, MenuOptionPriority.Default, null, null, 29f, null, null));

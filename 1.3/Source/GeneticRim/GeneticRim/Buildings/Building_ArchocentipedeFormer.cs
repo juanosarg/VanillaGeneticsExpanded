@@ -20,6 +20,8 @@ namespace GeneticRim
         List<float> list3;
         public int totalGenomeAmount =0;
         public float totalGenomeProgress =0;
+        public float growthCellProgress = -1;
+        public const int growthCellDuration = 24; //in hours
 
 
         public override void ExposeData()
@@ -29,6 +31,8 @@ namespace GeneticRim
             Scribe_Collections.Look(ref FacilitiesAndProgress, "FacilitiesAndProgress", LookMode.Def, LookMode.Value, ref list2, ref list3);
             Scribe_Values.Look(ref this.totalGenomeAmount, nameof(this.totalGenomeAmount));
             Scribe_Values.Look(ref this.totalGenomeProgress, nameof(this.totalGenomeProgress));
+            Scribe_Values.Look(ref this.growthCellProgress, nameof(this.growthCellProgress));
+
 
 
         }
@@ -95,6 +99,18 @@ namespace GeneticRim
 
             }
 
+            if (growthCellProgress!=-1) {
+
+                this.growthCellProgress += 1f / (GenDate.TicksPerHour * growthCellDuration);
+                if (this.growthCellProgress > 1)
+                {
+
+                    GenSpawn.Spawn(InternalDefOf.GR_ArchoGrowthcell, this.InteractionCell, this.Map);
+                    growthCellProgress = -1;
+                }
+
+             }
+
 
         }
 
@@ -117,8 +133,14 @@ namespace GeneticRim
                 command_Action.hotKey = KeyBindingDefOf.Misc1;
                 command_Action.action = delegate
                 {
-                    Messages.Message("working", this, MessageTypeDefOf.NeutralEvent);
+                    growthCellProgress = 0;
+                    List<Thing> listBanks = this.TryGetComp<CompAffectedByFacilities>()?.LinkedFacilitiesListForReading;
+                    foreach (Thing thing in listBanks)
+                    {
+                        Building_DNAStorageBank bank = thing as Building_DNAStorageBank;
+                        bank.progress = 0;
 
+                    }
 
                 };
                 if (gizmoDisabled())
@@ -127,7 +149,19 @@ namespace GeneticRim
 
                 }
                 yield return command_Action;
+                if (Prefs.DevMode && this.growthCellProgress != -1)
+                {
+                    Command_Action command_Action2 = new Command_Action();
+                    command_Action2.defaultLabel = "DEBUG: Finish former work";
+                    command_Action2.action = delegate
+                    {
 
+                        this.growthCellProgress = 1;
+
+                    };
+                    yield return command_Action;
+
+                }
             }
 
         }
@@ -137,19 +171,26 @@ namespace GeneticRim
         public override string GetInspectString()
         {
             StringBuilder sb = new StringBuilder(base.GetInspectString());
-
-            foreach (ThingDef thing in listOfAllEndgameGenomes)
+            if (this.growthCellProgress != -1)
             {
-                if (FacilitiesAndProgress.ContainsKey(thing))
-                {
-                    sb.AppendLine("GR_ArchoFormerGenomeProgress".Translate(thing.LabelCap, FacilitiesAndProgress[thing].ToStringPercent()));
-                }
-                else
-                {
-                    sb.AppendLine("GR_ArchoFormerGenomeProgress".Translate(thing.LabelCap, "0%"));
-                }
-
+                sb.AppendLine("GR_ArchoFormerCellProgress".Translate(this.growthCellProgress.ToStringPercent()));
+               
             }
+            else {
+                foreach (ThingDef thing in listOfAllEndgameGenomes)
+                {
+                    if (FacilitiesAndProgress.ContainsKey(thing))
+                    {
+                        sb.AppendLine("GR_ArchoFormerGenomeProgress".Translate(thing.LabelCap, FacilitiesAndProgress[thing].ToStringPercent()));
+                    }
+                    else
+                    {
+                        sb.AppendLine("GR_ArchoFormerGenomeProgress".Translate(thing.LabelCap, "0%"));
+                    }
+
+                }
+            }
+            
 
 
 

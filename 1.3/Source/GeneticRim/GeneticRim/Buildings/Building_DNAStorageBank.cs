@@ -154,7 +154,7 @@ namespace GeneticRim
                 {
                     if (building.FacilitiesAndProgress.ContainsKey(this.selectedGenome))
                     {
-                        building.FacilitiesAndProgress.Remove(this.selectedGenome);
+                        building.FacilitiesAndProgress[this.selectedGenome]=0;
                     }
                 }
             }

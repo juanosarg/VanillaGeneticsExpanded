@@ -35,6 +35,13 @@
 	  <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
   
+   <JobDef>
+    <defName>GR_InsertArchotechGrowthCell</defName>
+    <driverClass>GeneticRim.JobDriver_InsertArchotechGrowthCell</driverClass>
+    <reportString>inserting archotech growth cell on TargetA.</reportString>
+	  <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
   <JobDef>
     <defName>GR_ArchotechDNAExtractionJob</defName>
     <driverClass>GeneticRim.JobDriver_ArchotechDNAExtraction</driverClass>

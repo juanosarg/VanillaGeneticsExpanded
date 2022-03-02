@@ -61,9 +61,8 @@
 		<stackLimit>1</stackLimit>
 		<comps>
 
-			
 			<li>
-				<compClass>GeneticRim.CompGrowthCell</compClass>
+				<compClass>GeneticRim.CompArchotechGrowthCell</compClass>
 			</li>
 		</comps>
 	</ThingDef>

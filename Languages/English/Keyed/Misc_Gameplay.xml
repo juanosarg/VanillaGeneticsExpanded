@@ -72,25 +72,21 @@
 	<GR_NoValidAnimalsToExtract>No colony animals with that genome</GR_NoValidAnimalsToExtract>
 	<GR_DNABankProgress>DNA amount progress: {0}</GR_DNABankProgress>
 	<GR_AreYouSureDNA>Are you sure you want to change the accepted genome? All current progress will be lost</GR_AreYouSureDNA>
+	<GR_DuplicatedGenomeSelection>There is already a DNA storage bank nearby with that genome chosen</GR_DuplicatedGenomeSelection>
 	
 	<!-- Archocentipede former -->
 	<GR_ArchoFormerGenomeProgress>{0} progress: {1}</GR_ArchoFormerGenomeProgress>
 	<GR_ArchoFormerDisabledReason>Lacking DNA bank progress</GR_ArchoFormerDisabledReason>
 	<GR_BeginArchotechGrowthCell>Create growth cell</GR_BeginArchotechGrowthCell>
 	<GR_BeginArchotechGrowthCellDesc>Begin creation of an archotech growth cell. This will need all neccessary DNA banks to be at 100% progress</GR_BeginArchotechGrowthCellDesc>
+	<GR_ArchoFormerCellProgress>Archotech Growth Cell progress: {0}</GR_ArchoFormerCellProgress>
 	
-	<!-- Gene Pods Control -->
-	<GR_ExtractGenes>Empty Tank 1</GR_ExtractGenes>
-	<GR_ExtractGenesDesc>Extract Genetic Material from tank #1</GR_ExtractGenesDesc>
-	<GR_ExtractGenes2>Empty Tank 2</GR_ExtractGenes2>
-	<GR_ExtractGenes2Desc>Extract Genetic Material from tank #2</GR_ExtractGenes2Desc>
-	<GR_InsertGenes>Insert on Tank 1</GR_InsertGenes>
-	<GR_InsertGenesDesc>Insert Genetic Material on tank #1</GR_InsertGenesDesc>
-	<GR_InsertGenes2>Insert on Tank 2</GR_InsertGenes2>
-	<GR_InsertGenes2Desc>Insert Genetic Material on tank #2</GR_InsertGenes2Desc>
-	<GR_NoGenes>No Genetic Material available!</GR_NoGenes>
-	<GR_AllGenesNotPresent>Fill both tanks with genetic material to start processing</GR_AllGenesNotPresent>
-	<GR_MixingGenes>Mixing genetic material. Progress:</GR_MixingGenes>
+	<!-- Archowomb -->
+	<GR_ArchotechGrowthCellNotInserted>An archotech growth cell needs to be inserted in the archowomb before the process can be started</GR_ArchotechGrowthCellNotInserted>
+	<GR_BeginArchotechCentipede>Archotech Awakening</GR_BeginArchotechCentipede>
+	<GR_BeginArchotechCentipedeDesc>Create the Archotech centipede. The process will take about 15 days, and the energy signature will be detectable from a long distance away.</GR_BeginArchotechCentipedeDesc>
+	<GR_BeginArchotechCentipedeText>You are ready to start the archotech centipede project.\n\nThe process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates that someone is meddling in technology that is far beyond human understanding, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first.</GR_BeginArchotechCentipedeText>
+	<GR_ArchoWombProgress>Archowomb progress: {0}</GR_ArchoWombProgress>
 	
 	<!-- Creature Control Commands -->
 	<GR_CreatureMindControl>Mind control creature</GR_CreatureMindControl>

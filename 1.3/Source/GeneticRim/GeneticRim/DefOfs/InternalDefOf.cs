@@ -27,6 +27,10 @@ namespace GeneticRim
 		public static ThingDef         GR_ThrumboGenetic;
 		public static ThingDef         GR_MechanoidGenetic;		
         public static ThingDef         GR_GrowthCell;
+		public static ThingDef         GR_DNAStorageBank;
+		public static ThingDef         GR_ArchoGrowthcell;
+		public static ThingDef         GR_ArchoWomb;
+		public static PawnKindDef      GR_ArchotechCentipede;
 		public static HediffDef        GR_AnimalControlHediff;
 		public static HediffDef        GR_ExtractedBrain;
 		public static ThingCategoryDef GR_GeneticMaterial;
@@ -38,8 +42,10 @@ namespace GeneticRim
 		public static ThingDef         GR_GenePod;
 		public static JobDef           GR_InsertIngredients;
         public static JobDef           GR_InsertGrowthCell;
+		public static JobDef           GR_InsertArchotechGrowthCell;
 		public static JobDef           GR_ArchotechDNAExtractionJob;
 		public static SoundDef         GR_Pop;
+
 
 	}
 }
