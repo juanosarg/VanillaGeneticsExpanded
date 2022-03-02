@@ -136,18 +136,8 @@
 	  <li Class="StockGenerator_BuySingleDef">
         <thingDef>GR_TortoiseShell</thingDef>
       </li>
-	  <li Class="StockGenerator_BuySingleDef">
-        <thingDef>GR_OrganicPulp</thingDef>
-      </li>	 
-	  <li Class="StockGenerator_BuySingleDef">
-        <thingDef>GR_ImplantPlasteelWireMesh</thingDef>
-      </li>	  
-	  <li Class="StockGenerator_BuySingleDef">
-        <thingDef>GR_ImplantSteelWireMesh</thingDef>
-      </li>	  
-	  <li Class="StockGenerator_BuySingleDef">
-        <thingDef>GR_ImplantUraniumWireMesh</thingDef>
-      </li>	  
+	  
+	 
 	  <li Class="StockGenerator_BuySingleDef">
         <thingDef>GR_Cryofuel</thingDef>
       </li>	  

@@ -21,8 +21,8 @@
 	<!-- Paragon Chicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ParagonChickenEggUnfertilized</defName>
-		<label>paragon chicken egg (unfert.)</label>
-		<description>Unfertilized paragon chicken egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Inmaculate eggness.</description>
+		<label>avian paragon egg (unfert.)</label>
+		<description>Unfertilized avian paragon egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Inmaculate eggness.</description>
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
@@ -34,8 +34,8 @@
 
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_ParagonChickenEggFertilized</defName>
-		<label>paragon chicken egg (fert.)</label>
-		<description>Fertilized paragon chicken egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Inmaculate eggness. If all goes well, it should hatch into a paragon chicken.</description>
+		<label>avian paragon egg (fert.)</label>
+		<description>Fertilized avian paragon egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Inmaculate eggness. If all goes well, it should hatch into an avian paragon.</description>
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
@@ -51,95 +51,13 @@
 		</comps>
 	</ThingDef>
 
-	<!-- Paragon Emu Egg -->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>GR_ParagonEmuEggUnfertilized</defName>
-		<label>paragon emu egg (unfert.)</label>
-		<description>Unfertilized paragon emu egg. It can be eaten raw, but it's much, much better cooked. This thing is huge.</description>
-		<tradeability>Sellable</tradeability>
-		<graphicData>
-			<texPath>Things/Item/GR_EggLarge</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>15</MarketValue>
-			<Nutrition>.4</Nutrition>
-
-		</statBases>
-
-	</ThingDef>
-
-	<ThingDef ParentName="EggFertBase">
-		<defName>GR_ParagonEmuEggFertilized</defName>
-		<label>paragon emu egg (fert.)</label>
-		<description>Fertilized paragon emu egg. It can be eaten raw, but it's much, much better cooked. This thing is huge. If all goes well, it should hatch into a paragon emu.</description>
-		<tradeability>None</tradeability>
-		<graphicData>
-			<texPath>Things/Item/GR_EggLarge</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<statBases>
-			<MarketValue>15</MarketValue>
-			<Nutrition>.4</Nutrition>
-
-		</statBases>
-
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>6</hatcherDaystoHatch>
-				<hatcherPawn>GR_ParagonEmu</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<!-- Paragon Ostrich Egg -->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>GR_ParagonOstrichEggUnfertilized</defName>
-		<label>paragon ostrich egg (unfert.)</label>
-		<description>Unfertilized paragon ostrich egg. It can be eaten raw, but it's much, much better cooked. This thing is huge.</description>
-		<tradeability>Sellable</tradeability>
-		<graphicData>
-			<texPath>Things/Item/GR_EggHuge</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20</MarketValue>
-			<Nutrition>.5</Nutrition>
-
-		</statBases>
-
-	</ThingDef>
-
-	<ThingDef ParentName="EggFertBase">
-		<defName>GR_ParagonOstrichEggFertilized</defName>
-		<label>paragon ostrich egg (fert.)</label>
-		<description>Fertilized paragon ostrich egg. It can be eaten raw, but it's much, much better cooked. This thing is huge. If all goes well, it should hatch into a paragon ostrich.</description>
-		<tradeability>None</tradeability>
-		<graphicData>
-			<texPath>Things/Item/GR_EggHuge</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.7</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20</MarketValue>
-			<Nutrition>.5</Nutrition>
-
-		</statBases>
-
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>8</hatcherDaystoHatch>
-				<hatcherPawn>GR_ParagonOstrich</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
+	
 
 	<!-- Paragon Iguana Egg -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ParagonIguanaEggUnfertilized</defName>
-		<label>paragon iguana egg (unfert.)</label>
-		<description>Unfertilized paragon iguana egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<label>reptile paragon egg (unfert.)</label>
+		<description>Unfertilized reptile paragon egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(245,245,245)</color>
@@ -157,8 +75,8 @@
 
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_ParagonIguanaEggFertilized</defName>
-		<label>paragon iguana egg (fert.)</label>
-		<description>Fertilized paragon iguana egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a paragon iguana.</description>
+		<label>reptile paragon egg (fert.)</label>
+		<description>Fertilized reptile paragon egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a reptile paragon.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
 			<color>(245,245,245)</color>
@@ -179,48 +97,7 @@
 		</comps>
 	</ThingDef>
 
-	<!-- Paragon Tortoise Egg -->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>GR_ParagonTortoiseEggUnfertilized</defName>
-		<label>paragon tortoise egg (unfert.)</label>
-		<description>Unfertilized paragon tortoise egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
-			<drawSize>1.3</drawSize>
-			<graphicClass>Graphic_StackCount</graphicClass> 
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<statBases>
-			<MarketValue>36</MarketValue>
-			<Nutrition>.4</Nutrition>
-
-		</statBases>
-
-	</ThingDef>
-
-	<ThingDef ParentName="EggFertBase">
-		<defName>GR_ParagonTortoiseEggFertilized</defName>
-		<label>paragon tortoise egg (fert.)</label>
-		<description>Fertilized paragon tortoise egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a paragon tortoise.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
-			<drawSize>1.3</drawSize>
-			<graphicClass>Graphic_StackCount</graphicClass> 
-		</graphicData>
-		<tradeability>None</tradeability>
-		<statBases>
-			<MarketValue>36</MarketValue>
-			<Nutrition>.4</Nutrition>
-
-		</statBases>
-
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>3</hatcherDaystoHatch>
-				<hatcherPawn>GR_ParagonTortoise</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
+	
 
 	<!-- Bear / Chicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">

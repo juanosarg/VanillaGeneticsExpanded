@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
+<!--
 	<RecipeDef>
 		<defName>GR_CraftBearGenetrainer</defName>
 		<label>craft hybrid bear genes genetrainer</label>
@@ -575,6 +575,6 @@
 		<skillRequirements>
 			<Intellectual>10</Intellectual>
 		</skillRequirements>
-	</RecipeDef>	
+	</RecipeDef>	-->
 
 </Defs>

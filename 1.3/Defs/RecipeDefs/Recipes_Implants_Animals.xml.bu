@@ -1,166 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!--=============== Hybrid Implants Bases ====================-->
-
-	<RecipeDef>
-		<defName>GR_CraftImplantSteelWireMesh</defName>
-		<label>craft hybrid implant steel wire mesh (tier 1)</label>
-		<description>Craft hybrid implant steel wire mesh.</description>
-		<jobString>Building Implant Mesh</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>500</workAmount>
-		<recipeUsers>
-			<li>GR_TissueGrowingVat</li>	  
-		</recipeUsers>	
-		<ingredients>
-
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>50</count>
-			</li>
-
-
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Steel</li>
-
-			</thingDefs>
-		</fixedIngredientFilter>
-
-		<products>
-			<GR_ImplantSteelWireMesh>1</GR_ImplantSteelWireMesh>
-		</products>
-	</RecipeDef>
-
-
-	<RecipeDef>
-		<defName>GR_CraftImplantPlasteelWireMesh</defName>
-		<label>craft hybrid implant plasteel wire mesh (tier 2)</label>
-		<description>Craft hybrid implant plasteel wire mesh.</description>
-		<jobString>Building Implant Mesh</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>500</workAmount>
-		<recipeUsers>
-			<li>GR_TissueGrowingVat</li>	  
-		</recipeUsers>	
-		<ingredients>
-
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>50</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentIndustrial</li>
-					</thingDefs>
-				</filter>
-				<count>2</count>
-			</li>
-
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Steel</li>
-				<li>Plasteel</li>
-				<li>ComponentIndustrial</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-
-		<products>
-			<GR_ImplantPlasteelWireMesh>1</GR_ImplantPlasteelWireMesh>
-		</products>
-	</RecipeDef>
-
-	<RecipeDef>
-		<defName>GR_CraftImplantUraniumWireMesh</defName>
-		<label>craft hybrid implant uranium wire mesh (tier 3)</label>
-		<description>Craft hybrid implant uranium wire mesh.</description>
-		<jobString>Building Implant Mesh</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>500</workAmount>
-		<recipeUsers>
-			<li>GR_TissueGrowingVat</li>	  
-		</recipeUsers>	
-		<ingredients>
-
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Steel</li>
-					</thingDefs>
-				</filter>
-				<count>50</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Plasteel</li>
-					</thingDefs>
-				</filter>
-				<count>15</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Uranium</li>
-					</thingDefs>
-				</filter>
-				<count>40</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentIndustrial</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentSpacer</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Steel</li>
-				<li>Plasteel</li>
-				<li>Uranium</li>
-				<li>ComponentIndustrial</li>
-				<li>ComponentSpacer</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-
-		<products>
-			<GR_ImplantUraniumWireMesh>1</GR_ImplantUraniumWireMesh>
-		</products>
-	</RecipeDef>
+	
 
 	<!--=============== Animal Hybrid Implants ====================-->
 
@@ -176,21 +17,11 @@
 
 	</RecipeDef>
 	
-	<RecipeDef Name="GR_HybridProsthesisBaseWithAnimalControl" Abstract="True">
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		<effectWorking>Smith</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>1500</workAmount>
-		<recipeUsers>
-			<li>GR_TissueGrowingVat</li>
-		</recipeUsers>
-		<researchPrerequisite>GR_AnimalControl</researchPrerequisite>
-
-	</RecipeDef>
+	
 	
 	<!--=============== Animal Control Implant ====================-->
 
-	<RecipeDef ParentName="GR_HybridProsthesisBase">
+	<!--<RecipeDef ParentName="GR_HybridProsthesisBase">
 		<defName>GR_MakeAnimalControlImplant</defName>
 		<label>animal mind controller</label>
 		<description>Craft an animal mind controller implant. This implant will allow this creature to be drafted and controlled by the player. Note that you will need to build an Animal Control Hub anywhere on the planet for this to work.</description>
@@ -225,7 +56,7 @@
 			<GR_AnimalControlImplant>1</GR_AnimalControlImplant>
 		</products>		
 		<workSkill>Crafting</workSkill>
-	</RecipeDef>
+	</RecipeDef>-->
 
 	<!--=============== Legs ====================-->
 

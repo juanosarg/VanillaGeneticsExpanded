@@ -149,17 +149,7 @@
 			<texPath>Things/Item/GR_GeneticMaterials_Thrumbo</texPath>
 		</graphicData>
 	</ThingDef>
-	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
-		<defName>GR_MechanoidGenetic</defName>
-		<label>mechanoid active components</label>
-		<description>A vial of active mechanites from a mechanoid's corpse.</description>
-		<statBases>
-			<MarketValue>100</MarketValue>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Mechanoid</texPath>
-		</graphicData>
-	</ThingDef>
+	
 	
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_TemplateGenetic</defName>

@@ -369,24 +369,6 @@
 
 	
 
-	
-
-	<RecipeDef>
-		<defName>GR_ExtractGenesMechanoid</defName>
-		<label>extract genes from a mechanoid</label>
-		<description>Extract genetic material from a mechanoid corpse.</description>
-		<jobString>Extracting Genetic Material</jobString>
-		<effectWorking>Cremate</effectWorking>
-		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
-		<workSkill>Intellectual</workSkill>
-		<recipeUsers>
-			<li>GR_GeneticExtractionTable</li>	  
-		</recipeUsers>	
-		<ingredients>
-			<li>
-				<filter>
-
 					<thingDefs>
 						<li>Corpse_Mech_Centipede</li>
 						<li>Corpse_Mech_Lancer</li>
@@ -394,27 +376,7 @@
 						<li>Corpse_Mech_Pikeman</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-
-			<thingDefs>
-				<li>Corpse_Mech_Centipede</li>
-				<li>Corpse_Mech_Lancer</li>
-				<li>Corpse_Mech_Scyther</li>
-				<li>Corpse_Mech_Pikeman</li>
-
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<GR_MechanoidGenetic>1</GR_MechanoidGenetic>
-		</products>
-		<researchPrerequisite>GR_AdvancedMechaniteBioIntegration</researchPrerequisite>
-		<skillRequirements>
-			<Intellectual>10</Intellectual>
-		</skillRequirements>
-	</RecipeDef>
+			
 	
 	
 
