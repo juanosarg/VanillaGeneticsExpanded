@@ -481,7 +481,7 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<description>Accelerates growth of organic structures, allowing accelerated development of genetically manipulated hybrid implants. This building is used for both hybrid animal implants and humanoid implants.</description>
 		<graphicData>
-			<texPath>Things/Building/GR_TissueGrowingVat</texPath>
+			<texPath>Things/Building/ImplantAugmentator</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(3.5,3.5)</drawSize>
 		</graphicData>
@@ -501,7 +501,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
-		<size>(2,2)</size>
+		<size>(2,1)</size>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
 		<hasInteractionCell>True</hasInteractionCell>
