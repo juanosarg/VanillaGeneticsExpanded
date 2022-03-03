@@ -57,13 +57,15 @@ namespace GeneticRim
     {
         public static void Postfix(ThingWithComps __instance)
         {
-            if (__instance.def == VanillaGeneticsExpanded_Recipe_RemoveBodyPart_ApplyOnPawn_Prefix.implantQuality.First) { }
-            var comp = __instance.TryGetComp<CompQuality>();
-            if (comp != null)
-            {
-                comp.SetQuality(VanillaGeneticsExpanded_Recipe_RemoveBodyPart_ApplyOnPawn_Prefix.implantQuality.Second, ArtGenerationContext.Colony);
+            if (__instance.def == VanillaGeneticsExpanded_Recipe_RemoveBodyPart_ApplyOnPawn_Prefix.implantQuality.First) {
+                var comp = __instance.TryGetComp<CompQuality>();
+                if (comp != null)
+                {
+                    comp.SetQuality(VanillaGeneticsExpanded_Recipe_RemoveBodyPart_ApplyOnPawn_Prefix.implantQuality.Second, ArtGenerationContext.Colony);
 
+                }
             }
+            
 
         }
     }

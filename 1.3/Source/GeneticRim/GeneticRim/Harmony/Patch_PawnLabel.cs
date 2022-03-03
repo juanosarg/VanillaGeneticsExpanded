@@ -8,7 +8,13 @@
     public static class Patch_PawnLabel
     {
         [HarmonyPostfix]
-        public static void Postfix(Pawn __instance, ref string __result) => 
-            __result += $" ({__instance?.TryGetComp<CompHybrid>()?.quality.GetLabel().CapitalizeFirst()})";
+        public static void Postfix(Pawn __instance, ref string __result)
+        {
+            CompHybrid comp = __instance?.TryGetComp<CompHybrid>();
+            if (comp != null) {
+                __result += $" ({comp.quality.GetLabel().CapitalizeFirst()})";
+            }
+            
+        }
     }
 }

@@ -488,9 +488,9 @@
 		<uiIconScale>0.75</uiIconScale>
 		<castEdgeShadows>false</castEdgeShadows>
 		<costList>
-			<Steel>150</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<GR_OrganicPulp>4</GR_OrganicPulp>
+			<Steel>110</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<fillPercent>0.5</fillPercent>

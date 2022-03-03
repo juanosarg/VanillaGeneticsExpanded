@@ -38,6 +38,7 @@ namespace GeneticRim
                             if (ingredient != null && hediff.def.spawnThingOnRemoved == ingredient.def && ingredient.TryGetQuality(out var qualityCategory))
                             {
                                 comp.quality = qualityCategory;
+                                comp.SelectSeverity(qualityCategory);
                                 break;
                             }
                         }

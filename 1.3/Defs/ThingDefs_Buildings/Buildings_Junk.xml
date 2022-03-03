@@ -17,7 +17,7 @@
 		<tickerType>Normal</tickerType>
 		<costList>
 			<Steel>50</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>false</rotatable>
@@ -55,7 +55,7 @@
 		</graphicData>
 		<costList>
 			<Steel>10</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -114,7 +114,7 @@
 		</graphicData>
 		<costList>
 			<Steel>20</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -138,7 +138,7 @@
 		</graphicData>
 		<costList>
 			<Steel>30</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
 			<Gold>1</Gold>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
@@ -163,7 +163,7 @@
 		</graphicData>
 		<costList>
 			<Steel>100</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -187,7 +187,7 @@
 		</graphicData>
 		<costList>
 			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -210,8 +210,8 @@
 			<drawSize>(7,4)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>50</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>10</Steel>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -234,8 +234,8 @@
 			<drawSize>(3,2)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>50</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>20</Steel>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -259,8 +259,8 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>50</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>20</Steel>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -284,8 +284,8 @@
 			<drawSize>(3.5,2.5)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>50</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<Steel>20</Steel>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -326,8 +326,8 @@
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
 		</building>
 		<costList>
-			<Steel>70</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>15</Steel>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Battery">
@@ -358,8 +358,8 @@
 			<drawSize>(3.5, 3.5)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>30</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>10</Steel>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -384,7 +384,7 @@
 		</graphicData>
 		<costList>
 			<Steel>5</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -409,7 +409,7 @@
 		</graphicData>
 		<costList>
 			<Steel>25</Steel>
-			<ComponentIndustrial>3</ComponentIndustrial>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -433,8 +433,8 @@
 			<drawSize>(8, 8)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>250</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>100</Steel>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -459,7 +459,7 @@
 		</graphicData>
 		<costList>
 			<Steel>25</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -484,7 +484,7 @@
 		</graphicData>
 		<costList>
 			<Steel>15</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -509,7 +509,7 @@
 		</graphicData>
 		<costList>
 			<Steel>15</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -533,7 +533,7 @@
 		</graphicData>
 		<costList>
 			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -581,7 +581,7 @@
 			<drawSize>(3, 3)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>100</Steel>
+			<Steel>40</Steel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -606,7 +606,7 @@
 		</graphicData>
 		<costList>
 			<Steel>100</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -726,7 +726,7 @@
 			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>5</Steel>
+			<Steel>1</Steel>
 		</costList>
 		<altitudeLayer>FloorEmplacement</altitudeLayer>
 		<statBases>
@@ -750,7 +750,7 @@
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>5</Steel>
+			<Steel>2</Steel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -873,7 +873,7 @@
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>5</Steel>
+			<Steel>1</Steel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -896,8 +896,8 @@
 			<drawSize>(3,1.75)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>10</Steel>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -920,8 +920,8 @@
 			<drawSize>(7,4)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>50</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>20</Steel>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -945,7 +945,7 @@
 			<drawSize>(4, 4)</drawSize>
 		</graphicData>
 		<costList>
-			<Steel>100</Steel>
+			<Steel>20</Steel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -1020,7 +1020,7 @@
 		</graphicData>
 		<costList>
 			<Steel>15</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>
@@ -1055,7 +1055,7 @@
 		</statBases>
 		<size>(6,2)</size>
 		<costList>
-			<Steel>200</Steel>
+			<Steel>30</Steel>
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="GR_JunkBuildingBase">
@@ -1119,7 +1119,7 @@
 		</graphicData>
 		<costList>
 			<Steel>50</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<statBases>

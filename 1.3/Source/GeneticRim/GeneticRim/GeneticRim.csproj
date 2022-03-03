@@ -344,6 +344,7 @@
     <Compile Include="Gas\Gas_InsectClouds.cs" />
     <Compile Include="Gas\Gas_PoisonCloud.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
+    <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
     <Compile Include="Harmony\Patch_BodySize.cs" />
     <Compile Include="Harmony\Patch_GetDamageFactor.cs" />
     <Compile Include="Harmony\Patch_HealthScale.cs" />
