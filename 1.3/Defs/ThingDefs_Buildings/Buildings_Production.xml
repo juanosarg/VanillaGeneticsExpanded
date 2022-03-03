@@ -471,7 +471,7 @@
 	
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_TissueGrowingVat</defName>
-		<label>tissue growing vat</label>
+		<label>implant augmentator</label>
 		<canOverlapZones>false</canOverlapZones>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>

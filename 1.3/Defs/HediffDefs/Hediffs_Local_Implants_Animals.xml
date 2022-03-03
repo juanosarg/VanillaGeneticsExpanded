@@ -1660,7 +1660,32 @@
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>0.15</offset>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
@@ -1673,12 +1698,84 @@
 					<ArmorRating_Heat>0.03</ArmorRating_Heat>
 				</statOffsets>
 			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.04</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.075</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.06</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.30</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.07</ArmorRating_Heat>
+				</statOffsets>
+			</li>
 		</stages>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_CrocodileSpine</defName>
 		<description>A bionic implant adding a sturdy crocodile spine to the creature's skeletal system.</description>
-		<label>animal Implant: crocodile spine (tier 2)</label>
+		<label>animal Implant: crocodile spine</label>
 		<spawnThingOnRemoved>GR_CrocodileSpine</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>1</partEfficiency>
@@ -1689,17 +1786,114 @@
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.03</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.04</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
 						<offset>0.2</offset>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>0.15</offset>
+						<offset>-0.075</offset>
 					</li>
 				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
 				<statOffsets>
 					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.06</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.30</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.07</ArmorRating_Heat>
 				</statOffsets>
 			</li>
 		</stages>
@@ -1707,10 +1901,10 @@
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_MechaSpine</defName>
 		<description>A bionic implant adding a plasteel structure with active mechanites to the creature's skeletal system.</description>
-		<label>animal Implant: mechanoid spine (tier 3)</label>
+		<label>animal Implant: reinforced bionic spine</label>
 		<spawnThingOnRemoved>GR_MechaSpine</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>1</partEfficiency>
+			<partEfficiency>1.25</partEfficiency>
 			<solid>true</solid>
 		</addedPartProps>
 		<stages>
@@ -1718,17 +1912,114 @@
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>0.4</offset>
+						<offset>-0.1</offset>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>0.5</offset>
+						<offset>-0.15</offset>
 					</li>
 				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.03</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.04</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.075</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
 				<statOffsets>
 					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.06</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.30</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.07</ArmorRating_Heat>
 				</statOffsets>
 			</li>
 		</stages>
@@ -1737,20 +2028,49 @@
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_ChickenBrains</defName>
 		<description>An implant that uses chicken brain tissue to patch damaged neurological pathways. This implant is intended for brain-dead creatures.</description>
-		<label>animal Implant: chicken brains (tier 1)</label>
+		<label>animal Implant: chicken brains</label>
 		<spawnThingOnRemoved>GR_ChickenBrains</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>0.7</partEfficiency>
+			<partEfficiency>0.5</partEfficiency>
 			<solid>true</solid>
 		</addedPartProps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+			</li>
+		</stages>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_MonitorLizardBrain</defName>
 		<description>A bionic implant using monitor lizard brain tissue. This highly intelligent reptile has very quick reflexes.</description>
-		<label>animal Implant: monitor lizard brain (tier 2)</label>
+		<label>animal Implant: monitor lizard brain</label>
 		<spawnThingOnRemoved>GR_MonitorLizardBrain</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>1.2</partEfficiency>
+			<partEfficiency>1</partEfficiency>
 			<solid>true</solid>
 		</addedPartProps>
 		<stages>
@@ -1758,16 +2078,77 @@
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
 						<offset>0.1</offset>
 					</li>
 				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.18</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
 			</li>
 		</stages>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_ThrumboBrain</defName>
 		<description>A bionic brain implant using thrumbo neural tissue. Superb intelligence and reflexes.</description>
-		<label>animal Implant: bionic thrumbo brain (tier 3)</label>
+		<label>animal Implant: bionic thrumbo brain</label>
 		<spawnThingOnRemoved>GR_ThrumboBrain</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>1.5</partEfficiency>
@@ -1778,21 +2159,70 @@
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>0.25</offset>
-					</li>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.08</offset>
-					</li>
-					<li>
-						<capacity>Sight</capacity>
-						<offset>0.08</offset>
-					</li>
-					<li>
-						<capacity>Hearing</capacity>
-						<offset>0.08</offset>
+						<offset>-0.2</offset>
 					</li>
 				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.18</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
 			</li>
 		</stages>
 	</HediffDef>

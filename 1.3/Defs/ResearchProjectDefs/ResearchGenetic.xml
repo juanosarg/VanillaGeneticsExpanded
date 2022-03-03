@@ -54,7 +54,7 @@
 		<label>genetic augmentation</label>
 		<tab>GR_GeneticReseach</tab>
 		<techLevel>Industrial</techLevel>
-		<description>Grow bio-engineered implants for hybrids and animals alike on the Tissue Growing Vat.</description>
+		<description>Grow bio-engineered implants for hybrids and animals alike on the Implant augmentator.</description>
 		<baseCost>1000</baseCost>
 		<prerequisites>
 			<li>GR_GeneticEngineering</li>
@@ -69,7 +69,7 @@
 		<label>genetic compatibility</label>
 		<tab>GR_GeneticReseach</tab>
 		<techLevel>Industrial</techLevel>
-		<description>Grow bio-engineered implants for humans on the Tissue Growing Vat.</description>
+		<description>Grow bio-engineered implants for humans on the Implant augmentator.</description>
 		<baseCost>1250</baseCost>
 		<prerequisites>
 			<li>GR_HybridImplantology</li>
