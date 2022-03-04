@@ -12,6 +12,20 @@
 			<li Class="GeneticRim.HediffCompProperties_ImplantQuality"/>
 		</comps>
 	</HediffDef>
+	
+	
+	<HediffDef>
+		<defName>GR_AnimalControlHediff</defName>
+		<label>animal controller</label>
+		<description>This creature was genetically modified with a controller booster.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_Draftable"/>
+		</comps>
+	</HediffDef>
+	
 	<!--=============== Animal Hybrid Implants ====================-->
 	<!--=============== Legs ====================-->
 	<HediffDef ParentName="GR_HybridPartsBase">
@@ -846,7 +860,7 @@
 			<solid>true</solid>
 		</addedPartProps>
 		<stages>
-			<li>
+			
 				<li>
 					<capMods>
 						<li>
@@ -941,7 +955,7 @@
 						<ArmorRating_Heat>0.02</ArmorRating_Heat>
 					</statOffsets>
 				</li>
-			</li>
+			
 		</stages>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">

@@ -202,57 +202,7 @@
    
   </ThingDef>
   
-   <ThingDef ParentName="FurnitureWithQualityBase">
-    <defName>GR_LabShelf</defName>
-    <label>lab shelf</label>
-    <description>A shelf for storing miscellaneous laboratory items. Items stored in this will not deteriorate, even if outside.</description>
-    <thingClass>Building_Storage</thingClass>
-    <graphicData>
-      <texPath>Things/Building/GR_LabShelf</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.5,2)</drawSize>
-    </graphicData>
-	
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <fillPercent>0.4</fillPercent>
-    <castEdgeShadows>true</castEdgeShadows>
-   <costList>
-      <Steel>30</Steel>    
-	  <GR_OrganicPulp>2</GR_OrganicPulp>
-    </costList>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Mass>15</Mass>
-      <WorkToBuild>600</WorkToBuild>
-      <Flammability>0.5</Flammability>
-    </statBases>
-    <size>(3,1)</size>
-    <defaultPlacingRot>South</defaultPlacingRot>
-    <building>
-      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
-      <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
-      <defaultStorageSettings>
-        <priority>Important</priority>
-        <filter>
-          <categories>
-            <li>GR_Incubators</li>
-			<li>GR_ParagonSerums</li>
-			<li>GR_GeneticMaterial</li>
-          </categories>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-    <inspectorTabs>
-      <li>ITab_Storage</li>
-    </inspectorTabs>
-    <designationHotKey>Misc12</designationHotKey>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <surfaceType>Item</surfaceType>
-    <canOverlapZones>false</canOverlapZones>
-  
-  </ThingDef>
-  
+ 
   
 
 

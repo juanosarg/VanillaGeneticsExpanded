@@ -25,7 +25,7 @@ namespace GeneticRim
 		public static ThingDef         GR_ReptileGenetic;
 		public static ThingDef         GR_HumanoidGenetic;
 		public static ThingDef         GR_ThrumboGenetic;
-		public static ThingDef         GR_MechanoidGenetic;		
+
         public static ThingDef         GR_GrowthCell;
 		public static ThingDef         GR_DNAStorageBank;
 		public static ThingDef         GR_ArchoGrowthcell;
