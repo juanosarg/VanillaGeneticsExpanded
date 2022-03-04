@@ -359,7 +359,7 @@
 		<products>
 			<GR_HumanoidGenetic>1</GR_HumanoidGenetic>
 		</products>
-		<researchPrerequisite>GR_HumanoidGeneticEngineering</researchPrerequisite>
+		
 		<skillRequirements>
 			<Intellectual>6</Intellectual>
 		</skillRequirements>

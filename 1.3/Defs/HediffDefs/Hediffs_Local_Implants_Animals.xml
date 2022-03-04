@@ -2244,23 +2244,166 @@
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_BoomalopeHeart</defName>
 		<description>An implant that uses chemfuel to pump blood through the animal's body. This implant is intended for creatures whose heart is failing catastrophically, since it is less efficient than a natural heart.</description>
-		<label>animal Implant: boomalope heart (tier 1)</label>
+		<label>animal Implant: boomalope heart</label>
 		<spawnThingOnRemoved>GR_BoomalopeHeart</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>0.7</partEfficiency>
 			<solid>true</solid>
 		</addedPartProps>
+		<stages>
+		<li>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+			</li>
+		</stages>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_ChitinousHeart</defName>
-		<description>A bionic heart implant using a reinforced shell of insectoid chitin for protection. This is a heart designed to take a beating. Pun intended, but it's the last one, I promise .</description>
-		<label>animal Implant: chitinous heart (tier 2)</label>
+		<description>A bionic heart implant using a reinforced shell of insectoid chitin for protection. This is a heart designed to take a beating. Pun intended, but it's the last one, I promise.</description>
+		<label>animal Implant: chitinous heart</label>
 		<spawnThingOnRemoved>GR_ChitinousHeart</spawnThingOnRemoved>
 		<addedPartProps>
-			<partEfficiency>1.2</partEfficiency>
+			<partEfficiency>1</partEfficiency>
 			<solid>true</solid>
 		</addedPartProps>
 		<stages>
+		<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.02</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.03</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.04</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.12</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.12</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.07</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
 			<li>
 				<capMods>
 					<li>
@@ -2269,24 +2412,50 @@
 					</li>
 					<li>
 						<capacity>Moving</capacity>
-						<offset>0.05</offset>
+						<offset>0.15</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>0.025</offset>
+						<offset>0.1</offset>
 					</li>
-				</capMods>
+				</capMods>				
 				<statOffsets>
-					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.03</ArmorRating_Heat>
+					<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.06</ArmorRating_Heat>
 				</statOffsets>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
 			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.07</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+			</li>
+			
 		</stages>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_MechaHeart</defName>
-		<label>animal Implant: mechanoid heart (tier 3)</label>
+		<label>animal Implant: reinforced bionic heart</label>
 		<description>A bionic heart strengthened by the action of active mechanites.</description>
 		<spawnThingOnRemoved>GR_MechaHeart</spawnThingOnRemoved>
 		<addedPartProps>
@@ -2298,7 +2467,54 @@
 				<capMods>
 					<li>
 						<capacity>BloodPumping</capacity>
-						<offset>0.35</offset>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
@@ -2306,14 +2522,106 @@
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
+						<offset>0.02</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.03</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
 						<offset>0.05</offset>
 					</li>
-				</capMods>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.04</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.12</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.12</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.07</offset>
+					</li>
+				</capMods>				
 				<statOffsets>
 					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 					<ArmorRating_Heat>0.05</ArmorRating_Heat>
 				</statOffsets>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.06</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.06</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.06</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>				
+				<statOffsets>
+					<ArmorRating_Sharp>0.07</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.07</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.07</ArmorRating_Heat>
+				</statOffsets>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
 			</li>
 		</stages>
 	</HediffDef>
@@ -2321,7 +2629,7 @@
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_MuffaloLung</defName>
 		<description>An implant that uses muffalo genes to increase breathing capacity.</description>
-		<label>animal Implant: muffalo lung (tier 1)</label>
+		<label>animal Implant: muffalo lung</label>
 		<spawnThingOnRemoved>GR_MuffaloLung</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>1.1</partEfficiency>
@@ -2332,16 +2640,77 @@
 				<capMods>
 					<li>
 						<capacity>Breathing</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.3</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
 						<offset>0.1</offset>
 					</li>
 				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.18</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
 			</li>
 		</stages>
 	</HediffDef>
 	<!--=============== Liver ====================-->
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_BearLiver</defName>
-		<label>animal Implant: bear liver (tier 1)</label>
+		<label>animal Implant: bear liver</label>
 		<description>An implant that uses bear genes to improve function of the liver. Specially useful for those alcoholic chickens.</description>
 		<spawnThingOnRemoved>GR_BearLiver</spawnThingOnRemoved>
 		<addedPartProps>
@@ -2349,6 +2718,47 @@
 			<solid>true</solid>
 		</addedPartProps>
 		<stages>
+		<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.3</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.2</minSeverity>
+			</li>
 			<li>
 				<capMods>
 					<li>
@@ -2360,13 +2770,58 @@
 						<offset>0.1</offset>
 					</li>
 				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
 			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.12</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.12</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+			</li>
+			
 		</stages>
 	</HediffDef>
 	<!--=============== Kidney ====================-->
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_ChickenKidney</defName>
-		<label>animal Implant: chicken kidney (tier 1)</label>
+		<label>animal Implant: chicken kidney</label>
 		<description>An implant that uses chicken genes to improve function of the kidney. Birds have large kidneys. Yep, you learned that today.</description>
 		<spawnThingOnRemoved>GR_ChickenKidney</spawnThingOnRemoved>
 		<addedPartProps>
@@ -2378,6 +2833,47 @@
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.3</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
 						<offset>0.1</offset>
 					</li>
 					<li>
@@ -2385,13 +2881,57 @@
 						<offset>0.1</offset>
 					</li>
 				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.12</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.12</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
 			</li>
 		</stages>
 	</HediffDef>
 	<!--=============== Stomach ====================-->
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_BoomalopeStomach</defName>
-		<label>animal Implant: boomalope stomach (tier 1)</label>
+		<label>animal Implant: boomalope stomach</label>
 		<description>An implant that uses boomalope genes to improve function of the stomach.</description>
 		<spawnThingOnRemoved>GR_BoomalopeStomach</spawnThingOnRemoved>
 		<addedPartProps>
@@ -2403,6 +2943,47 @@
 				<capMods>
 					<li>
 						<capacity>Eating</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.3</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.2</minSeverity>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
 						<offset>0.1</offset>
 					</li>
 					<li>
@@ -2410,6 +2991,50 @@
 						<offset>0.1</offset>
 					</li>
 				</capMods>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.12</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.12</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.15</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+			</li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Eating</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
 			</li>
 		</stages>
 	</HediffDef>

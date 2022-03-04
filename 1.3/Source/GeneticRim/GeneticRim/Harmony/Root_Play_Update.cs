@@ -10,12 +10,10 @@ using RimWorld.Planet;
 
 
 
-// So, let's comment this code, since it uses Harmony and has moderate complexity
-
 namespace GeneticRim
 {
 
-    /*This Harmony postfix checks the Archotech Project countdown counter (why didn't Tynan do this with a tick counter??)
+    /*This Harmony postfix checks the Archotech Project countdown counter 
    * 
    */
     [HarmonyPatch(typeof(Root_Play))]

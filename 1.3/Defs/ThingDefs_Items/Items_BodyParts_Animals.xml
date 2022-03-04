@@ -9,7 +9,7 @@
 		<graphicData>
 			<texPath>Things/Item/GR_AnimalGeneticHybridOrgan</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.80</drawSize>
+			
 		</graphicData>
 		<statBases>
 			<DeteriorationRate>2.0</DeteriorationRate>

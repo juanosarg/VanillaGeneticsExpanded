@@ -5,12 +5,13 @@
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Smith</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>25000</workAmount>
 		<recipeUsers>
 			<li>GR_TissueGrowingVat</li>
 		</recipeUsers>
 		<researchPrerequisite>GR_HybridImplantology</researchPrerequisite>
 		<workSkill>Intellectual</workSkill>
+		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
 	</RecipeDef>
 	<!--=============== Legs ====================-->
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -48,7 +49,7 @@
 			<GR_BearLeg>1</GR_BearLeg>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -86,7 +87,7 @@
 			<GR_LizardLeg>1</GR_LizardLeg>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -124,7 +125,7 @@
 			<GR_ThrumboLeg>1</GR_ThrumboLeg>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Tail ====================-->
@@ -172,7 +173,7 @@
 			<GR_ScytherTail>1</GR_ScytherTail>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -210,7 +211,7 @@
 			<GR_MechaTail>1</GR_MechaTail>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Eyes ====================-->
@@ -249,7 +250,7 @@
 			<GR_CanidEye>1</GR_CanidEye>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -287,7 +288,7 @@
 			<GR_InsectileEye>1</GR_InsectileEye>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -325,7 +326,7 @@
 			<GR_ThrumboEye>1</GR_ThrumboEye>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Ears ====================-->
@@ -364,7 +365,7 @@
 			<GR_RodentEar>1</GR_RodentEar>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -402,7 +403,7 @@
 			<GR_MothTympanalOrgan>1</GR_MothTympanalOrgan>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -440,7 +441,7 @@
 			<GR_MechaReceptors>1</GR_MechaReceptors>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Noses ====================-->
@@ -479,7 +480,7 @@
 			<GR_RodentNose>1</GR_RodentNose>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -517,7 +518,7 @@
 			<GR_InsectoidPheromones>1</GR_InsectoidPheromones>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -555,7 +556,7 @@
 			<GR_MiniatureThrumboHorn>1</GR_MiniatureThrumboHorn>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Jaws ====================-->
@@ -594,7 +595,7 @@
 			<GR_WolfJaws>1</GR_WolfJaws>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -632,7 +633,7 @@
 			<GR_InsectMandibles>1</GR_InsectMandibles>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -670,7 +671,7 @@
 			<GR_ThrumboJaws>1</GR_ThrumboJaws>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Spines ====================-->
@@ -709,7 +710,7 @@
 			<GR_MuffaloSpine>1</GR_MuffaloSpine>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -747,7 +748,7 @@
 			<GR_CrocodileSpine>1</GR_CrocodileSpine>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -785,7 +786,7 @@
 			<GR_MechaSpine>1</GR_MechaSpine>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Brain ====================-->
@@ -824,7 +825,7 @@
 			<GR_ChickenBrains>1</GR_ChickenBrains>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -862,7 +863,7 @@
 			<GR_MonitorLizardBrain>1</GR_MonitorLizardBrain>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -900,7 +901,7 @@
 			<GR_ThrumboBrain>1</GR_ThrumboBrain>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Hearts ====================-->
@@ -939,7 +940,7 @@
 			<GR_BoomalopeHeart>1</GR_BoomalopeHeart>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -977,7 +978,7 @@
 			<GR_ChitinousHeart>1</GR_ChitinousHeart>
 		</products>
 		<skillRequirements>
-			<Crafting>7</Crafting>
+			<Intellectual>7</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
@@ -1015,7 +1016,7 @@
 			<GR_MechaHeart>1</GR_MechaHeart>
 		</products>
 		<skillRequirements>
-			<Crafting>10</Crafting>
+			<Intellectual>10</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Lungs ====================-->
@@ -1054,7 +1055,7 @@
 			<GR_MuffaloLung>1</GR_MuffaloLung>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Liver ====================-->
@@ -1093,7 +1094,7 @@
 			<GR_BearLiver>1</GR_BearLiver>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Kidney ====================-->
@@ -1132,7 +1133,7 @@
 			<GR_ChickenKidney>1</GR_ChickenKidney>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<!--=============== Stomach ====================-->
@@ -1171,7 +1172,7 @@
 			<GR_BoomalopeStomach>1</GR_BoomalopeStomach>
 		</products>
 		<skillRequirements>
-			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 </Defs>

@@ -6,6 +6,9 @@ namespace GeneticRim
     {
 
         public float hatcherDaystoHatch = 1f;
+        public int baseAmount = 5;
+        public ThingDef thingToHatch;
+
 
         public HediffCompProperties_Hatcher()
         {

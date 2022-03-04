@@ -51,7 +51,7 @@ namespace GeneticRim
                 }
                 tickerInterval++;
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException)
             {
                 //A weird error is produced sometimes when GetThingList returns a NullReferenceException. I did a try-catch which is inellegant, but it works
             }
