@@ -54,6 +54,7 @@
 				<burstShotCount>1</burstShotCount>
 				<minRange>4</minRange>
 				<range>200</range>
+				<label>disintegrator</label>
 				<soundCast>GR_DisintegratorSound</soundCast>
 				<muzzleFlashScale>15</muzzleFlashScale>
 				<!--Commanility determines how frequent this range verb is chosen.-->
