@@ -294,6 +294,10 @@
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="VFECore">
+      <HintPath>References\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AI\JobDrivers\JobDriver_ArchotechDNAExtraction.cs" />
@@ -309,11 +313,13 @@
     <Compile Include="Commands\Command_SetAnimalList.cs" />
     <Compile Include="Commands\Command_SetGenomeList.cs" />
     <Compile Include="Commands\GenomeListSetupUtility.cs" />
+    <Compile Include="Comps\CompDetonate.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
     <Compile Include="Comps\CompArchotechGrowthCell.cs" />
     <Compile Include="Comps\CompGrowthCell.cs" />
     <Compile Include="Comps\CompHybrid.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_Detonate.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomItemSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomHybridSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
@@ -335,6 +341,7 @@
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Defs\EndgameGenomesDefs.cs" />
     <Compile Include="Defs\ExtractableAnimalsList.cs" />
+    <Compile Include="Dev Mode\SpawnPawnWithQuality.cs" />
     <Compile Include="Dev Mode\SuperItemSpawner.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />
     <Compile Include="Game and Map Components\ArchotechExtractableAnimals_MapComponent.cs" />
@@ -345,6 +352,7 @@
     <Compile Include="Gas\Gas_PoisonCloud.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
+    <Compile Include="Harmony\CompHatcher_Hatch.cs" />
     <Compile Include="Harmony\Hediff_Pregnant_DoBirthSpawn.cs" />
     <Compile Include="Harmony\Patch_BodySize.cs" />
     <Compile Include="Harmony\Patch_GetDamageFactor.cs" />

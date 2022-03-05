@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BuildingBase" Name="GR_ArtBaseGround" Abstract="True">
+		<thingClass>Building_Art</thingClass>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<SellPriceFactor>1.50</SellPriceFactor>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+			</defaultIngredientFilter>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!--================================ Rugs ======================================-->
+	
+	<ThingDef ParentName="GR_ArtBaseGround">
+		<defName>GR_HugeBearCatRug</defName>
+		<label>huge bearcat rug</label>
+		<description>A bearcat pelt rug. This thing seems to be quite more exotic than other pelt rugs!</description>
+		<graphicData>
+			<texPath>Things/Building/GR_HugeBearCatRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+	
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>495</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>60</Beauty>
+			<Cleanliness>0.4</Cleanliness>
+		</statBases>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<rotatable>true</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<size>(2,2)</size>
+		<costList>
+			<GR_HugeBearCatPelt>1</GR_HugeBearCatPelt>
+		</costList>
+	</ThingDef>
+	
+</Defs>

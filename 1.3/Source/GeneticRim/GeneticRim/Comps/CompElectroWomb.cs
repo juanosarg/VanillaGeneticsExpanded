@@ -72,12 +72,12 @@ namespace GeneticRim
                         Pawn pawn = null;
                         if (failure) {
 
-                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.failureResult, Faction.OfPlayer, fixedBiologicalAge: 2, fixedChronologicalAge: 0,
+                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.failureResult, null, fixedBiologicalAge: 1, fixedChronologicalAge: 0,
                                                                                          newborn: false, forceGenerateNewPawn: true));
 
                         }
                         else {
-                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 2, fixedChronologicalAge: 0,
+                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 1, fixedChronologicalAge: 0,
                                                                                       newborn: false, forceGenerateNewPawn: true));
                         }
                         

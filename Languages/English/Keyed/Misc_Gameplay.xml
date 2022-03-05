@@ -88,13 +88,22 @@
 	<GR_BeginArchotechCentipedeText>You are ready to start the archotech centipede project.\n\nThe process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates that someone is meddling in technology that is far beyond human understanding, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first.</GR_BeginArchotechCentipedeText>
 	<GR_ArchoWombProgress>Archowomb progress: {0}</GR_ArchoWombProgress>
 	
+	<!--Hybrid role descriptions-->
+	<GR_HybridRole>Hybrid role</GR_HybridRole>
+	<GR_HybridRoleCombat>Combat</GR_HybridRoleCombat>
+	<GR_HybridRoleFarm>Farm</GR_HybridRoleFarm>
+	<GR_HybridRoleUtility>Utility</GR_HybridRoleUtility>
+	<GR_HybridRoleCombatDesc>Combat hybrids excel at either melee or ranged combat. These hybrids will benefit the most from implants and controller boosters.</GR_HybridRoleCombatDesc>
+	<GR_HybridRoleFarmDesc>Farm hybrids produce some sort of resource over time, but generally need to be kept inside an animal pen. These hybrids will not benefit as much from implants and controller boosters.</GR_HybridRoleFarmDesc>
+	<GR_HybridRoleUtilityDesc>Utility hybrids bring some kind of mechanic to the colony that isn't strictly used for combat or resource generation.</GR_HybridRoleUtilityDesc>
+	
 	<!-- Creature Control Commands -->
 	<GR_CreatureMindControl>Mind control creature</GR_CreatureMindControl>
 	<GR_CreatureMindControlDesc>Use mind control to order this creature around the map</GR_CreatureMindControlDesc>
 	<GR_CreatureRageAttack>Rage attack</GR_CreatureRageAttack>
 	<GR_CreatureRageAttackDesc>Send the creature in a bloodthristy rage against its target</GR_CreatureRageAttackDesc>
 	<GR_DetonateChemfuel>Detonate Chemfuel</GR_DetonateChemfuel>
-	<GR_DetonateChemfuelDesc>Remotely detonate the chemfuel reservoirs of this creature. This kills the poor beast, obviously</GR_DetonateChemfuelDesc>
+	<GR_DetonateChemfuelDesc>Remotely detonate the chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion</GR_DetonateChemfuelDesc>
 	<GR_InflictChickenRimPox>Inflict Chicken RimPox</GR_InflictChickenRimPox>
 	<GR_InflictChickenRimPoxDesc>Attacks a target and inflicts Chicken RimPox, a debilitating disease</GR_InflictChickenRimPoxDesc>
 	<GR_CarryMore>Carrying more weight</GR_CarryMore>

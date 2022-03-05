@@ -56,7 +56,15 @@ namespace GeneticRim
 
             GenSpawn.Spawn(pawn, near, this.parent.Map);
 
+            CompHybrid compHybrid = pawn.TryGetComp<CompHybrid>();
+
+            if (compHybrid != null)
+            {
+                compHybrid.quality = QualityUtility.GenerateQualityRandomEqualChance();
+            }
+
             pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
+            pawn.health.AddHediff(HediffDefOf.Scaria);
 
             this.parent.Destroy();
             

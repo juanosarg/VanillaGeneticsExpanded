@@ -24,7 +24,7 @@ namespace GeneticRim
             }
         }
 
-        [DebugAction("Autotests", "Make colony (animals, fixed)", false, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        [DebugAction("Vanilla Genetics Expanded", "Make colony (animals, fixed)", false, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         private static void MakeColonyAnimals()
         {
             FixedColonyAnimalsDebug.MakeColony(new ColonyMakerFlag[1]);

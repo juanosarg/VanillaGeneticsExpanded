@@ -2,14 +2,14 @@
 <Defs>
 
 	<ThingDef ParentName="OrganicProductBase">
-		<defName>GR_Owlbearfeathers</defName>
-		<label>owlbear feathers</label>
-		<description>Bearchicken feathers can be gathered and processed into a fine powder, which produces a mild euphoric sensation when burned and inhaled.</description>
+		<defName>GR_Chickenbearfeathers</defName>
+		<label>chickenbear feathers</label>
+		<description>Chickenbear feathers can be gathered and processed into a fine powder called featherdust, which produces a mild euphoric sensation when burned and inhaled.</description>
 		<graphicData>
-			<texPath>Things/Item/GR_OwlbearFeathers</texPath>
+			<texPath>Things/Item/GR_Chickenbearfeathers</texPath>
 		</graphicData>  
 		<statBases>
-			<MarketValue>3</MarketValue>
+			<MarketValue>1.8</MarketValue>
 			<Mass>0.002</Mass>
 			<MaxHitPoints>10</MaxHitPoints>
 		</statBases>
@@ -19,32 +19,7 @@
 		</thingCategories>
 	</ThingDef>
 
-	<ThingDef ParentName="ResourceBase">
-		<defName>GR_BearwolfFangs</defName>
-		<label>bearwolf fangs</label>
-		<description>The sharpened teeth of a bearwolf. These teeth are essentially useless, but some primitive tribes in the Rimworlds tend to use animal teeth as currency, since they are durable. Someone might pay for these.</description>
-		<graphicData>
-			<texPath>Things/Item/GR_BearwolfFangs</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<stackLimit>1</stackLimit>
-		<useHitPoints>true</useHitPoints>
-		<statBases>
-			<MarketValue>750</MarketValue>
-			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>1.8</Mass>
-
-		</statBases>
-		<thingCategories>
-			<li>ResourcesRaw</li>
-		</thingCategories>
-		<drawGUIOverlay>false</drawGUIOverlay>
-		<tradeTags>
-			<li>Exotic</li>
-		</tradeTags>
-	</ThingDef>
+	
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_RabbitcatFangs</defName>

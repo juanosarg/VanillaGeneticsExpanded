@@ -44,17 +44,23 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_UnfertilizedHybridEgg</eggUnfertilizedDef>
+				<eggUnfertilizedDef>GR_ChickenbearEggUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>GR_ChickenbearEggFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1.9</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>GR_Owlbearfeathers</resourceDef>
+				<gatheringIntervalDays>5</gatheringIntervalDays>
+				<resourceAmount>20</resourceAmount>
+				<customResourceString>FeatherGrowth</customResourceString>
 			</li>
 			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
+			<herdMigrationAllowed>false</herdMigrationAllowed>			
 			<body>GR_BirdWithTeeth</body>
 			<baseHungerRate>0.45</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
@@ -74,7 +80,7 @@
 					<li>(1.01, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>8</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -104,6 +110,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Chickenbear</defName>
@@ -161,11 +180,7 @@
 					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>0.95</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>Teeth</bodyPartGroup>
-					<thing>GR_VerySmallTeeth</thing>
-					<allowFemale>true</allowFemale>
-				</butcherBodyPart>
+				
 			</li>
 		</lifeStages>
 		<modExtensions>

@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearalope</defName>
 		<label>bearalope</label>
-		<description>A bear / boomalope hybrid. Not as strong in melee as a pure bear, but its unstable chemical reservoirs explode with great force when it dies. Unfortunately, the extreme virulence of these chemicals is harmful to the creature, and they have very short, miserable lifespans.\n\nUseful abilities: Big explosion produced on hybrid's death. Decent chemfuel production.</description>
+		<description>.\n\nUseful abilities: Big explosion produced on hybrid's death. Decent chemfuel production.</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -76,17 +76,18 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
-				<gatheringIntervalDays>2</gatheringIntervalDays>
-				<resourceAmount>22</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
+			<li Class="GeneticRim.CompProperties_Detonate">
+				<gizmoImage>UI/Commands/Detonate</gizmoImage>
+				<gizmoLabel>GR_DetonateChemfuel</gizmoLabel>
+				<gizmoDesc>GR_DetonateChemfuelDesc</gizmoDesc>
+				<radius>3</radius>
+				<damageType>Bomb</damageType>
+				<thingCreated>Filth_Fuel</thingCreated>
+				<thingCreatedChance>0.75</thingCreatedChance>
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -95,13 +96,13 @@
 			<baseHungerRate>0.35</baseHungerRate>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<intelligence>Animal</intelligence>
-			<deathActionWorkerClass>GeneticRim.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>GeneticRim.DeathActionWorker_SmallBomb</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<wildness>0.80</wildness>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>45</gestationPeriodDays>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
@@ -132,6 +133,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="BearBase">
 		<defName>GR_Bearalope</defName>
@@ -208,14 +222,14 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>8</power>
+				<power>13</power>
 				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>15</amount>
+							<amount>18</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -225,14 +239,14 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>8</power>
+				<power>13</power>
 				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>15</amount>
+							<amount>18</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -241,14 +255,14 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>7</power>
+				<power>13</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>13</amount>
+							<amount>18</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -276,17 +290,12 @@
 					<max>2</max>
 				</eggCountRange>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_Owlbearfeathers</resourceDef>
-				<gatheringIntervalDays>1</gatheringIntervalDays>
-				<resourceAmount>17</resourceAmount>
-				<customResourceString>FeatherGrowth</customResourceString>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>false</predator>
@@ -295,12 +304,12 @@
 			<wildness>0.70</wildness>
 			<baseBodySize>0.81</baseBodySize>
 			<baseHealthScale>0.75</baseHealthScale>
-			<lifeExpectancy>15</lifeExpectancy>
-			<gestationPeriodDays>10</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
-			<trainability>None</trainability>
+			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.010</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<mateMtbHours>10</mateMtbHours>
@@ -333,6 +342,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Bearchicken</defName>
@@ -475,14 +497,12 @@
 				<milkAmount>6</milkAmount>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>GR_BearffaloWool</woolDef>
+				<woolDef>GR_ThickHybridWool</woolDef>
 				<shearIntervalDays>15</shearIntervalDays>
 				<woolAmount>100</woolAmount>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -491,8 +511,8 @@
 			<wildness>0.80</wildness>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>1.9</baseHealthScale>
-			<lifeExpectancy>25</lifeExpectancy>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.090</manhunterOnTameFailChance>
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
@@ -527,6 +547,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="BearBase">
 		<defName>GR_Bearffalo</defName>
@@ -597,7 +630,6 @@
 			<MarketValue>370</MarketValue>
 			<FilthRate>2</FilthRate>
 		</statBases>
-		
 		<tools>
 			<li>
 				<label>left claw</label>
@@ -662,13 +694,12 @@
 			</li>
 		</tools>
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHungerRate>1.25</baseHungerRate>
 			<baseHealthScale>2.75</baseHealthScale>
-			<lifeExpectancy>15</lifeExpectancy>
-			<gestationPeriodDays>27</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
@@ -704,6 +735,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="BearBase">
 		<defName>GR_Bearwolf</defName>
@@ -842,9 +886,13 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_NoPain</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPaws</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -854,7 +902,7 @@
 			<baseHealthScale>3</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<mateMtbHours>3</mateMtbHours>
-			<gestationPeriodDays>8</gestationPeriodDays>
+			<gestationPeriodDays>12</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>None</trainability>
 			<wildness>0.6</wildness>
@@ -871,7 +919,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>12</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -897,6 +945,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Bearmole</defName>
@@ -1027,14 +1088,12 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<maxPreyBodySize>2</maxPreyBodySize>
@@ -1043,7 +1102,7 @@
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<gestationPeriodDays>26</gestationPeriodDays>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<trainability>Advanced</trainability>
 			<wildness>0.8</wildness>
@@ -1052,7 +1111,7 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Cougar</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
-			<lifeExpectancy>13</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1077,6 +1136,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Bearcat</defName>

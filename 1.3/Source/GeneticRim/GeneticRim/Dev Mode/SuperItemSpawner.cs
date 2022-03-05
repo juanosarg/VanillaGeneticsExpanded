@@ -18,7 +18,7 @@ namespace GeneticRim
 			}
 		}
 
-		[DebugAction("Autotests", "Make all possible items", false, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+		[DebugAction("Vanilla Genetics Expanded", "Make all possible items", false, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
 		private static void MakeAllItems()
 		{
 			SuperItemSpawner.MakeColonyItems(new ColonyMakerFlag[1]);
