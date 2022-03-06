@@ -41,13 +41,7 @@
 		<label>boosters</label>
 		<parent>GR_GeneticMaterial</parent>
 		<iconPath>Things/Item/Boosters/Immunobooster/Immunobooster_b</iconPath>
-	</ThingCategoryDef>
-	<ThingCategoryDef>
-		<defName>GR_ParagonSerums</defName>
-		<label>paragon serums</label>
-		<parent>GR_GeneticMaterial</parent>
-		<iconPath>Things/Item/GR_ParagonSerum</iconPath>
-	</ThingCategoryDef>
+	</ThingCategoryDef>	
 	<ThingCategoryDef>
 		<defName>GR_Corpses</defName>
 		<label>hybrid and paragon corpses</label>
@@ -58,9 +52,5 @@
 		<label>hybrid implants</label>
 		<parent>BodyParts</parent>
 	</ThingCategoryDef>
-	<ThingCategoryDef>
-		<defName>GR_GenetrainersCategory</defName>
-		<label>genetrainers</label>
-		<parent>Items</parent>
-	</ThingCategoryDef>
+
 </Defs>
