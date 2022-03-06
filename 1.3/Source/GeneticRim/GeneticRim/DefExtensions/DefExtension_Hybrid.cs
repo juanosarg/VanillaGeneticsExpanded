@@ -7,5 +7,7 @@
     {
         public ThingDef dominantGenome;
         public ThingDef secondaryGenome;
+        public bool carryingIncrease = false;
+        public float carryingFactor = 1.5f;
     }
 }

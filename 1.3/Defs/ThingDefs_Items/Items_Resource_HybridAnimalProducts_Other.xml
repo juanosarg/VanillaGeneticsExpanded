@@ -101,31 +101,6 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="ResourceBase">
-		<defName>GR_VerySmallTeeth</defName>
-		<label>very small teeth</label>
-		<description>These minuscule teeth are very durable. Some tribes in the Rimworlds tend to use animal teeth as currency, so they might be slightly valuable.</description>
-		<graphicData>
-			<texPath>Things/Item/GR_VerySmallTeeth</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<stackLimit>50</stackLimit>
-		<useHitPoints>true</useHitPoints>
-		<statBases>
-			<MarketValue>41</MarketValue>
-			<MaxHitPoints>10</MaxHitPoints>
-			<Mass>0.01</Mass>
-
-		</statBases>
-		<thingCategories>
-			<li>ResourcesRaw</li>
-		</thingCategories>
-		<tradeTags>
-			<li>Exotic</li>
-		</tradeTags>
-	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_ParagonBoarTusks</defName>

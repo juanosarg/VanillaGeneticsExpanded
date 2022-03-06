@@ -28,6 +28,11 @@
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>12</milkAmount>
 			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>GR_ThickHybridWool</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>110</woolAmount>
+			</li>
 			
 		</comps>
 		<race>
@@ -43,10 +48,10 @@
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<roamMtbDays>2</roamMtbDays>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.5</wildness>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>19</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -72,6 +77,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Muffalobear</defName>
@@ -130,6 +148,8 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
 				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -161,16 +181,20 @@
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>1</milkAmount>
 			</li>
-			<li Class="CompProperties_Shearable">
+			<!--<li Class="CompProperties_Shearable">
 				<woolDef>GR_MuffalopeWool</woolDef>
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>80</woolAmount>
-			</li>
+			</li>-->
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>Chemfuel</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
 				<resourceAmount>55</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
+			</li>
+			
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_ChemfuelSquirt</initialAbility>
 			</li>
 		
 		</comps>
@@ -189,10 +213,10 @@
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.5</wildness>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>15</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -218,6 +242,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Muffalope</defName>
@@ -276,6 +313,8 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
 				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -348,7 +387,7 @@
 			<gestationPeriodDays>17</gestationPeriodDays>
 			<wildness>0.5</wildness>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>15</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -432,6 +471,8 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
 				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -481,7 +522,7 @@
 			<wildness>0.5</wildness>
 			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>13</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -565,6 +606,8 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
 				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -620,7 +663,7 @@
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>5</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -700,6 +743,8 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
 				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -790,7 +835,7 @@
 			<roamMtbDays>2</roamMtbDays>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>14</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -874,6 +919,8 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
 				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

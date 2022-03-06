@@ -354,6 +354,7 @@
     <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
     <Compile Include="Harmony\CompHatcher_Hatch.cs" />
     <Compile Include="Harmony\Hediff_Pregnant_DoBirthSpawn.cs" />
+    <Compile Include="Harmony\MassUtility_Capacity.cs" />
     <Compile Include="Harmony\Patch_BodySize.cs" />
     <Compile Include="Harmony\Patch_GetDamageFactor.cs" />
     <Compile Include="Harmony\Patch_HealthScale.cs" />

@@ -56,11 +56,10 @@
 				<resourceAmount>20</resourceAmount>
 				<customResourceString>FeatherGrowth</customResourceString>
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>			
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<body>GR_BirdWithTeeth</body>
 			<baseHungerRate>0.45</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
@@ -71,7 +70,6 @@
 			<roamMtbDays>7</roamMtbDays>
 			<useLeatherFrom>Chicken</useLeatherFrom>
 			<useMeatFrom>Chicken</useMeatFrom>
-			<gestationPeriodDays>8</gestationPeriodDays>
 			<mateMtbHours>9</mateMtbHours>
 			<litterSizeCurve>
 				<points>
@@ -180,7 +178,6 @@
 					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>0.95</drawSize>
 				</dessicatedBodyGraphicData>
-				
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -246,12 +243,10 @@
 				<resourceAmount>5</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
 			<body>Bird</body>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>4</executionRange>
@@ -264,7 +259,6 @@
 			<useMeatFrom>Chicken</useMeatFrom>
 			<trainability>None</trainability>
 			<wildness>0.36</wildness>
-			<gestationPeriodDays>9</gestationPeriodDays>
 			<mateMtbHours>8</mateMtbHours>
 			<litterSizeCurve>
 				<points>
@@ -273,7 +267,7 @@
 					<li>(1.01, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -303,6 +297,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Chickenlope</defName>
@@ -410,7 +417,7 @@
 				<milkAmount>10</milkAmount>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>GR_ChickenffaloWool</woolDef>
+				<woolDef>GR_ThinHybridWool</woolDef>
 				<shearIntervalDays>1</shearIntervalDays>
 				<woolAmount>4</woolAmount>
 			</li>
@@ -421,10 +428,8 @@
 				<eggLayIntervalDays>1.8</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -439,7 +444,6 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>None</trainability>
 			<wildness>0.36</wildness>
-			<gestationPeriodDays>20</gestationPeriodDays>
 			<mateMtbHours>8</mateMtbHours>
 			<litterSizeCurve>
 				<points>
@@ -448,7 +452,7 @@
 					<li>(1.01, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -478,6 +482,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Chickenffalo</defName>
@@ -594,23 +611,19 @@
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
 			<body>GR_BirdWithTeeth</body>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
-			<roamMtbDays>15</roamMtbDays>
 			<baseHealthScale>0.45</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Chicken</useLeatherFrom>
 			<useMeatFrom>Chicken</useMeatFrom>
-			<trainability>None</trainability>
+			<trainability>Advanced</trainability>
 			<wildness>0.36</wildness>
-			<gestationPeriodDays>15</gestationPeriodDays>
 			<mateMtbHours>8</mateMtbHours>
 			<litterSizeCurve>
 				<points>
@@ -619,7 +632,7 @@
 					<li>(1.01, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>7</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -649,6 +662,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Chickenwolf</defName>
@@ -706,11 +732,6 @@
 					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>Teeth</bodyPartGroup>
-					<thing>GR_VerySmallTeeth</thing>
-					<allowFemale>true</allowFemale>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -773,10 +794,8 @@
 					<max>2</max>
 				</eggCountRange>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>GR_BirdWithTeeth</body>
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -786,7 +805,6 @@
 			<baseHealthScale>0.35</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<mateMtbHours>1</mateMtbHours>
-			<gestationPeriodDays>5</gestationPeriodDays>
 			<trainability>None</trainability>
 			<wildness>0.47</wildness>
 			<roamMtbDays>7</roamMtbDays>
@@ -799,7 +817,7 @@
 					<li>(1.01, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>6</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -829,6 +847,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Chickenrabbit</defName>
@@ -936,7 +967,6 @@
 				<eggLayIntervalDays>3</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -944,7 +974,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			
 			<body>GR_BirdWithTeeth</body>
 			<baseHungerRate>0.14</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
@@ -954,10 +983,8 @@
 			<useMeatFrom>Chicken</useMeatFrom>
 			<trainability>Intermediate</trainability>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
-			<roamMtbDays>7</roamMtbDays>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.36</wildness>
-			<gestationPeriodDays>15</gestationPeriodDays>
 			<mateMtbHours>8</mateMtbHours>
 			<litterSizeCurve>
 				<points>
@@ -966,7 +993,7 @@
 					<li>(1.01, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>7</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -996,6 +1023,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Chickencat</defName>

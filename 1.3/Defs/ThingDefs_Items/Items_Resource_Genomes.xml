@@ -42,7 +42,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_UrsineGenetic</defName>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Bear</texPath>
+			<texPath>Things/Item/GenomeUrsine</texPath>
 		</graphicData>
 		<label>ursine genome</label>
 		<description>A payload of ursine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
@@ -52,7 +52,7 @@
 		<label>avian genome</label>
 		<description>A payload of avian genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Bird</texPath>
+			<texPath>Things/Item/GenomeAvian</texPath>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
@@ -60,7 +60,7 @@
 		<label>boom genome</label>
 		<description>A payload of boom genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Boomalope</texPath>
+			<texPath>Things/Item/GenomeBoom</texPath>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
@@ -68,7 +68,7 @@
 		<label>muffalo genome</label>
 		<description>A payload of muffalo genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Muffalo</texPath>
+			<texPath>Things/Item/GenomeMuffalo</texPath>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
@@ -76,7 +76,7 @@
 		<label>canine genome</label>
 		<description>A payload of canine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Canine</texPath>
+			<texPath>Things/Item/GenomeCanine</texPath>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
@@ -84,7 +84,7 @@
 		<label>rodent/leporid genome</label>
 		<description>A payload of rodent genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Rodent</texPath>
+			<texPath>Things/Item/GenomeRodent</texPath>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
@@ -92,7 +92,7 @@
 		<label>feline genome</label>
 		<description>A payload of feline genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Feline</texPath>
+			<texPath>Things/Item/GenomeFeline</texPath>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
@@ -100,7 +100,7 @@
 		<label>humanoid genome</label>
 		<description>A payload of humanoid genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from any sentient humanoid.</description>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Humanoid</texPath>
+			<texPath>Things/Item/GenomeHuman</texPath>
 		</graphicData>
 		
 	</ThingDef>
@@ -112,7 +112,7 @@
 			<MarketValue>45</MarketValue>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Equine</texPath>
+			<texPath>Things/Item/GenomeEquine</texPath>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
@@ -123,7 +123,7 @@
 			<MarketValue>45</MarketValue>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Insectoid</texPath>
+			<texPath>Things/Item/GenomeInsectoid</texPath>
 		</graphicData>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
@@ -134,7 +134,7 @@
 			<MarketValue>45</MarketValue>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Reptile</texPath>
+			<texPath>Things/Item/GenomeReptile</texPath>
 		</graphicData>
 	</ThingDef>
 	
@@ -146,7 +146,7 @@
 			<MarketValue>100</MarketValue>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Item/GR_GeneticMaterials_Thrumbo</texPath>
+			<texPath>Things/Item/GenomeColossal</texPath>
 		</graphicData>
 	</ThingDef>
 	

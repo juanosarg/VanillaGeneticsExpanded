@@ -2,7 +2,23 @@
 <Defs>
 
 	
-	
+	<ThingDef ParentName="WoolBase">
+		<defName>GR_ThinHybridWool</defName>
+		<label>thin hybrid wool</label>
+		<description>Brittle, strange smelling wool. Not the best wool to craft apparel with, though it's better than nothing. Provides nice heat insulation.</description>
+		<graphicData>
+			<color>(235,227,93)</color>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<commonality>0</commonality>
+			<color>(235,227,93)</color>
+		</stuffProps>
+	</ThingDef>
 	<ThingDef ParentName="WoolBase">
 		<defName>GR_ThickHybridWool</defName>
 		<label>thick hybrid wool</label>
@@ -23,26 +39,26 @@
 			<color>(219,214,209)</color>
 		</stuffProps>
 	</ThingDef>
-	
 	<ThingDef ParentName="WoolBase">
-		<defName>GR_ThinHybridWool</defName>
-		<label>thin hybrid wool</label>
-		<description>Brittle, strange smelling wool. Not the best wool to craft apparel with, though it's better than nothing. Provides nice heat insulation.</description>
+		<defName>GR_LuxuriantHybridWool</defName>
+		<label>luxuriant hybrid wool</label>
+		<description>This wool is extremely thick and warm. Probably the best wool in the animal kingdom.</description>
 		<graphicData>
-			<color>(235,227,93)</color>
+			<color>(233,233,233)</color>
 		</graphicData>
 		<tradeability>Sellable</tradeability>
 		<statBases>
-			<StuffPower_Insulation_Cold>24</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+			<StuffPower_Insulation_Cold>36</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>34</StuffPower_Insulation_Heat>
+			<StuffPower_Armor_Sharp>0.65</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.4</StuffPower_Armor_Heat>
 		</statBases>
 		<stuffProps>
 			<commonality>0</commonality>
-			<color>(235,227,93)</color>
+			<color>(233,233,233)</color>
 		</stuffProps>
 	</ThingDef>
-	
-	
 	<ThingDef ParentName="WoolBase">
 		<defName>GR_HybridSilk</defName>
 		<label>hybrid silk</label>
@@ -75,23 +91,7 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="WoolBase">
-		<defName>GR_LuxuriantHybridWool</defName>
-		<label>luxuriant hybrid wool</label>
-		<description>This wool is extremely thick and warm. Probably the best wool in the animal kingdom.</description>
-		<graphicData>
-			<color>(233,233,233)</color>
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<statBases>
-			<StuffPower_Insulation_Cold>36</StuffPower_Insulation_Cold>
-			<StuffPower_Insulation_Heat>34</StuffPower_Insulation_Heat>
-		</statBases>
-		<stuffProps>
-			<commonality>0</commonality>
-			<color>(233,233,233)</color>
-		</stuffProps>
-	</ThingDef>
+	
 	
 	<ThingDef ParentName="WoolBase">
 		<defName>GR_MechaWool</defName>
