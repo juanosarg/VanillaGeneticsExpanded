@@ -14,7 +14,7 @@
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>6</DeteriorationRate>
 		</statBases>
-		
+		<tradeability>Buyable</tradeability>
 		<thingCategories>
 			<li>GR_GeneticMaterialTierOne</li>
 		</thingCategories>
@@ -109,7 +109,7 @@
 		<label>equine genome</label>
 		<description>A payload of equine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
 		<statBases>
-			<MarketValue>45</MarketValue>
+			<MarketValue>250</MarketValue>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Item/GenomeEquine</texPath>
@@ -120,7 +120,7 @@
 		<label>insectoid genome</label>
 		<description>A payload of insectoid genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
 		<statBases>
-			<MarketValue>45</MarketValue>
+			<MarketValue>250</MarketValue>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Item/GenomeInsectoid</texPath>
@@ -131,7 +131,7 @@
 		<label>reptile genome</label>
 		<description>A payload of reptile genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
 		<statBases>
-			<MarketValue>45</MarketValue>
+			<MarketValue>250</MarketValue>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Item/GenomeReptile</texPath>
@@ -143,7 +143,7 @@
 		<label>colossal genome</label>
 		<description>A payload of colossal genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 3 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can only be extracted via an archotech genome excavator from:</description>
 		<statBases>
-			<MarketValue>100</MarketValue>
+			<MarketValue>1000</MarketValue>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Item/GenomeColossal</texPath>
@@ -156,7 +156,7 @@
 		<label>template genome</label>
 		<description>Absolutely and completely worthless, but when properly processed alongside an actual genome it can be trimmed down to an identical copy.</description>
 		<statBases>
-			<MarketValue>20</MarketValue>
+			<MarketValue>400</MarketValue>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Item/TemplateGenome</texPath>

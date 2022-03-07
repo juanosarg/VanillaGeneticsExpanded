@@ -6,7 +6,7 @@
 	<ThingDef ParentName="GR_ArchotechBuildingBase">
 		<defName>GR_DNAStorageBank</defName>
 		<label>DNA storage bank</label>
-		<description>A vital piece of archotechnology that is part of the process in creating an Archocentipede.\n\nGenome Extractor Tables function in a very similar way to this device, except this machine requires live specimens and stores the genetic material for later use, preventing deterioration. Depending on the base Genoframe, the amount of viable genetic material extracted will vary.\n\nEach storage bank can only store the genetic material from a single animal branch, such as ursine or feline. Inserting a hybrid into the database yields half as much valuable data compared to a paragon.</description>
+		<description>A vital piece of archotechnology that is part of the process in creating an Archocentipede.\n\nGenome Extractor Tables function in a very similar way to this device, except this machine requires live specimens and stores the genetic material for later use, preventing deterioration. Depending on the base Genoframe, the amount of viable genetic material extracted will vary.\n\nEach storage bank can only store the genetic material from a single animal branch, such as ursine or feline. Inserting a hybrid into the database yields half as much valuable data compared to a paragon.\n\nDetailed yields for paragons (half for hybrids):\n\nAwful quality: yields 1%\nPoor quality: yields 3%\nNormal quality: yields 6%\nGood quality: yields 12%\nExcellent quality: yields 25%\nMasterwork quality: yields 50%\nLegendary quality: yields 100%</description>
 		<thingClass>GeneticRim.Building_DNAStorageBank</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Endgame/ArchotechDNABank</texPath>
@@ -50,7 +50,7 @@
 		<defName>GR_ArchocentipedeFormer</defName>
 		<label>archocentipede former</label>
 		<thingClass>GeneticRim.Building_ArchocentipedeFormer</thingClass>
-		<description>The archotech version of the Genomorpher, this machine combines the best genetic material of all the animal branches into a single Archocentipede Growthcell. The way it functions is beyond understanding and is impossible to replicate even with the best glitterworld technology.\n\nIn order for this machine to function, it requires multiple connecting DNA Storage Banks which each have the complete genetic data from the different animal branches. Each storage bank will be completely drained in order to ensure that the resulting Growthcell is perfect in every single way.\n\nThe resulting Archocentipede Growthcell requires its own special Archowomb, as it is impossible to replicate the necessary nurturing environment.</description>
+		<description>The archotech version of the Genomorpher, this machine combines the best genetic material of all the animal branches into a single Archocentipede Growthcell. The way it functions is beyond understanding and is impossible to replicate even with the best glitterworld technology.\n\nIn order for this machine to function, it requires multiple connecting DNA Storage Banks which each have the complete genetic data from the different animal branches. Each storage bank will be completely drained in order to ensure that the resulting Growthcell is perfect in every single way.\n\nThe resulting Archocentipede Growthcell requires its own special Archowomb, as it is impossible to replicate the necessary nurturing environment.\n\nGenomes needed:</description>
 		<graphicData>
 			<texPath>Things/Building/Endgame/ArchocentipedeFormer</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

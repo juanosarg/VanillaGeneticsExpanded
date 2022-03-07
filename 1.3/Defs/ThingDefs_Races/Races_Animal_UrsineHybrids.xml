@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearalope</defName>
 		<label>bearalope</label>
-		<description>.\n\nUseful abilities: Big explosion produced on hybrid's death. Decent chemfuel production.</description>
+		<description>An unusual concoction of traits that was favoured by a particular client who was obsessed on making things explode. Earned the nickname Boom-Boom as they would often make requests along the lines of “two more booms, wasn’t paying attention”.\n\nAn ursine hybrid with recessive boomalope genes. Lacking intelligence compared to a bear while also missing out on some strength and confidence in hunting. However, they can be commanded to detonate a limited amount of fuel sacks for increased combat versatility in exchange for hurting themselves intentionally.</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -76,14 +76,8 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Detonate">
-				<gizmoImage>UI/Commands/Detonate</gizmoImage>
-				<gizmoLabel>GR_DetonateChemfuel</gizmoLabel>
-				<gizmoDesc>GR_DetonateChemfuelDesc</gizmoDesc>
-				<radius>1</radius>
-				<damageType>Bomb</damageType>
-				<thingCreated>Filth_Fuel</thingCreated>
-				<thingCreatedChance>0.75</thingCreatedChance>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_DetonateBomb</initialAbility>
 			</li>
 		</comps>
 		<race>

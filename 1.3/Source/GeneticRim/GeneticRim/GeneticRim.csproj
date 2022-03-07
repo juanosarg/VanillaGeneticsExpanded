@@ -300,6 +300,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\CompCreateThingDefAround.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_CreateThingDefAround.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertArchotechGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
@@ -313,13 +315,13 @@
     <Compile Include="Commands\Command_SetAnimalList.cs" />
     <Compile Include="Commands\Command_SetGenomeList.cs" />
     <Compile Include="Commands\GenomeListSetupUtility.cs" />
-    <Compile Include="Comps\CompDetonate.cs" />
+    <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
     <Compile Include="Comps\CompArchotechGrowthCell.cs" />
     <Compile Include="Comps\CompGrowthCell.cs" />
     <Compile Include="Comps\CompHybrid.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_Detonate.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_Detonate.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomItemSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomHybridSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />

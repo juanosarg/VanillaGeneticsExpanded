@@ -14,7 +14,7 @@
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>6</DeteriorationRate>
 		</statBases>
-		
+		<tradeability>Buyable</tradeability>
 		<thingCategories>
 			<li>GR_Genoframes</li>
 		</thingCategories>

@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RimWorld;
 using Verse;
 
 namespace GeneticRim
 {
 
 
-    public class CompProperties_Detonate : CompProperties
+    public class CompProperties_Detonate : CompProperties_AbilityEffect
     {
-        public string gizmoImage;
-        public string gizmoLabel;
-        public string gizmoDesc;
+       
         public float radius;
         public DamageDef damageType;
         public int damageAmount = -1;

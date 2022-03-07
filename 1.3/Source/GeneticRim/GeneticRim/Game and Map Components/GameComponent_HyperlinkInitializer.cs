@@ -18,7 +18,7 @@ namespace GeneticRim
         {
 
             HashSet<ThingDef> excavators = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.thingCategories?.Contains(InternalDefOf.GR_GenomeExcavators) == true).ToHashSet();
-            HashSet<ThingDef> genomes = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => ((x.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) == true)|| (x.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true))).ToHashSet();
+            HashSet<ThingDef> genomes = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => ((x.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) == true) || (x.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true))).ToHashSet();
 
 
             foreach (ThingDef excavator in excavators)
@@ -32,6 +32,8 @@ namespace GeneticRim
 
                 AddGenomeHyperlinks(genome);
             }
+
+            AddArchotechProjectHyperlinks();
         }
 
         private void AddExcavatorHyperlinks(ThingDef excavator)
@@ -43,7 +45,8 @@ namespace GeneticRim
 
             CompProperties_TargetEffect_Extract comp = excavator.GetCompProperties<CompProperties_TargetEffect_Extract>();
 
-            if (comp != null) {
+            if (comp != null)
+            {
                 List<string> tier = comp.tier;
 
                 HashSet<ThingDef> allExcavatorsLinks = new HashSet<ThingDef>();
@@ -62,7 +65,7 @@ namespace GeneticRim
                 }
 
             }
-            
+
         }
 
         private void AddGenomeHyperlinks(ThingDef genome)
@@ -72,24 +75,46 @@ namespace GeneticRim
                 genome.descriptionHyperlinks = new List<DefHyperlink>();
             }
 
-           
+
 
             HashSet<ThingDef> allGenomesLinks = new HashSet<ThingDef>();
             HashSet<ExtractableAnimalsList> allLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
             foreach (ExtractableAnimalsList individualList in allLists)
             {
-                if (individualList.itemProduced==genome)
+                if (individualList.itemProduced == genome)
                 {
                     if (!individualList.needsHumanLike)
                     {
                         allGenomesLinks.AddRange(individualList.extractableAnimals);
                     }
-                   
+
                 }
             }
             foreach (ThingDef thing in allGenomesLinks)
             {
                 genome.descriptionHyperlinks.Add(thing);
+
+            }
+        }
+
+        private void AddArchotechProjectHyperlinks()
+        {
+            ThingDef former = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x== InternalDefOf.GR_ArchocentipedeFormer).FirstOrDefault();
+
+            if (former.descriptionHyperlinks == null)
+            {
+                former.descriptionHyperlinks = new List<DefHyperlink>();
+            }
+            HashSet<ThingDef> allGenomesLinks = new HashSet<ThingDef>();
+            HashSet<EndgameGenomesDef> allLists = DefDatabase<EndgameGenomesDef>.AllDefsListForReading.ToHashSet();
+            foreach (EndgameGenomesDef individualList in allLists)
+            {
+                allGenomesLinks.AddRange(individualList.genomes);
+            }
+            
+            foreach (ThingDef thing in allGenomesLinks)
+            {
+                former.descriptionHyperlinks.Add(thing);
 
             }
         }

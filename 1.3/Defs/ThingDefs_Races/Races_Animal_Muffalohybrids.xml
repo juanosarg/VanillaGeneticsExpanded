@@ -176,25 +176,10 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="CompProperties_Milkable">
-				<milkDef>GR_MuffalopeMilk</milkDef>
-				<milkIntervalDays>2</milkIntervalDays>
-				<milkAmount>1</milkAmount>
-			</li>
-			<!--<li Class="CompProperties_Shearable">
-				<woolDef>GR_MuffalopeWool</woolDef>
-				<shearIntervalDays>25</shearIntervalDays>
-				<woolAmount>80</woolAmount>
-			</li>-->
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
-				<gatheringIntervalDays>3</gatheringIntervalDays>
-				<resourceAmount>55</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
-			</li>
+			
 			
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
-				<initialAbility>GR_ChemfuelSquirt</initialAbility>
+				<initialAbility>GR_ChemfuelDischarge</initialAbility>
 			</li>
 		
 		</comps>
@@ -248,10 +233,10 @@
 					<li>GR_HybridRole</li>
 				</statToAdd>
 				<statValues>
-					<li>GR_HybridRoleFarm</li>
+					<li>GR_HybridRoleCombat</li>
 				</statValues>
 				<statDescriptions>
-					<li>GR_HybridRoleFarmDesc</li>
+					<li>GR_HybridRoleCombatDesc</li>
 				</statDescriptions>
 			</li>
 		</modExtensions>
@@ -357,17 +342,9 @@
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>12</milkAmount>
 			</li>
-			<li Class="CompProperties_Shearable">
-				<woolDef>GR_MuffalochickenWool</woolDef>
-				<shearIntervalDays>27</shearIntervalDays>
-				<woolAmount>60</woolAmount>
-			</li>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_MuffalochickenEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_MuffalochickenEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>8</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
+			<li Class="AnimalBehaviours.CompProperties_LastStand">
+				<finalCoolDownMultiplier>6</finalCoolDownMultiplier>
+			
 			</li>
 			
 		</comps>
@@ -384,7 +361,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
-			<gestationPeriodDays>17</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.5</wildness>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>4</lifeExpectancy>
@@ -413,6 +390,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Muffalochicken</defName>

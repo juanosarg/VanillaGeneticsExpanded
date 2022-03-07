@@ -27,6 +27,7 @@ namespace GeneticRim
 		public static ThingDef         GR_ThrumboGenetic;
         public static ThingDef         GR_GrowthCell;
 		public static ThingDef         GR_DNAStorageBank;
+		public static ThingDef         GR_ArchocentipedeFormer;
 		public static ThingDef         GR_ArchoGrowthcell;
 		public static ThingDef         GR_ArchoWomb;
 		public static PawnKindDef      GR_ArchotechCentipede;

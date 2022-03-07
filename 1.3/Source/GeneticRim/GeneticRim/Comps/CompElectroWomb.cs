@@ -72,19 +72,18 @@ namespace GeneticRim
                         Pawn pawn = null;
                         if (failure) {
 
-                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.failureResult, null, fixedBiologicalAge: 1, fixedChronologicalAge: 0,
+                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.failureResult, null, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
                                                                                          newborn: false, forceGenerateNewPawn: true));
                         }
                         else {
-                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 1, fixedChronologicalAge: 0,
+                            pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
                                                                                       newborn: false, forceGenerateNewPawn: true));
                         }
                         
                         IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 5f);
                         GenSpawn.Spawn(pawn, near, this.parent.Map);
 
-                        pawn.drafter = new Pawn_DraftController(pawn);
-                        pawn.equipment = new Pawn_EquipmentTracker(pawn);
+                      
 
                         if (!failure) {
                             DefExtension_HybridChanceAlterer extension = this.booster?.GetModExtension<DefExtension_HybridChanceAlterer>();
