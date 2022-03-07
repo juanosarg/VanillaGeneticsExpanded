@@ -13,12 +13,12 @@
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>6</DeteriorationRate>
 		</statBases>
-		
+
 		<thingCategories>
 			<li>GR_Boosters</li>
 		</thingCategories>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="GR_BoosterBase">
 		<defName>GR_BoosterImmuno</defName>
 		<label>immunobooster</label>
@@ -31,8 +31,24 @@
 		</statBases>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
-				
+
 				<safety>5</safety>
+				<addedHediffs>
+					<li>
+						<hediff>GR_BearLeg</hediff>
+						<bodyparts>
+							<li>Leg</li>
+							<li>InsectLeg</li>
+						</bodyparts>
+					</li>
+					<li>
+						<hediff>GR_CanidEye</hediff>
+						<bodyparts>
+							<li>Eye</li>
+						
+						</bodyparts>
+					</li>
+				</addedHediffs>
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -48,7 +64,7 @@
 		</statBases>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
-				
+
 				<stability>5</stability>
 			</li>
 		</modExtensions>
@@ -66,12 +82,12 @@
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
 				<timeMultiplier>0.5</timeMultiplier>
-				
+
 			</li>
 		</modExtensions>
-		
+
 	</ThingDef>
-	
+
 	<ThingDef ParentName="GR_BoosterBase">
 		<defName>GR_BoosterFertility</defName>
 		<label>fertility unblocker</label>
@@ -85,10 +101,10 @@
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
 				<isFertilityUnblocker>true</isFertilityUnblocker>
-				
+
 			</li>
 		</modExtensions>
-		
+
 	</ThingDef>
 	<ThingDef ParentName="GR_BoosterBase">
 		<defName>GR_StabilizedFertilityUnblocker</defName>
@@ -108,7 +124,7 @@
 				<stability>5</stability>
 			</li>
 		</modExtensions>
-		
+
 	</ThingDef>
 	<ThingDef ParentName="GR_BoosterBase">
 		<defName>GR_BoosterStabilizator</defName>
@@ -144,7 +160,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="GR_BoosterBase">
 		<defName>GR_ImprovedController</defName>
 		<label>improved controller</label>
@@ -164,7 +180,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="GR_BoosterBase">
 		<defName>GR_BoosterImmunoGreater</defName>
 		<label>improved immunobooster</label>
@@ -178,7 +194,7 @@
 		<tradeability>None</tradeability>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
-				
+
 				<safety>15</safety>
 				<timeMultiplier>1.5</timeMultiplier>
 			</li>
@@ -197,7 +213,7 @@
 		<tradeability>None</tradeability>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
-				
+
 				<stability>15</stability>
 				<timeMultiplier>1.5</timeMultiplier>
 			</li>
@@ -223,6 +239,6 @@
 				<timeMultiplier>0.5</timeMultiplier>
 			</li>
 		</modExtensions>
-		
+
 	</ThingDef>
 </Defs>

@@ -46,7 +46,14 @@ namespace GeneticRim
                     {
                         return false;
                     }
-                   
+                    if (!pawn.CanReserve(comp.genomeDominant)|| !pawn.CanReserve(comp.genomeSecondary)|| !pawn.CanReserve(comp.frame) || (comp.booster!=null&&!pawn.CanReserve(comp.booster)))
+                    {
+                        comp.duration = -1;
+                        comp.progress = -1f;
+                        comp.growthCell = null;
+                        return false;
+                    }
+
                     return !t.IsBurning();
                 }
             }

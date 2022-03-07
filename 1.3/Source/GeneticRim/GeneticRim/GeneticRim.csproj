@@ -341,6 +341,7 @@
     <Compile Include="DefOfs\InternalDefOf.cs" />
     <Compile Include="Defs\EndgameGenomesDefs.cs" />
     <Compile Include="Defs\ExtractableAnimalsList.cs" />
+    <Compile Include="Defs\HediffToBodyparts.cs" />
     <Compile Include="Dev Mode\SpawnPawnWithQuality.cs" />
     <Compile Include="Dev Mode\SuperItemSpawner.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />

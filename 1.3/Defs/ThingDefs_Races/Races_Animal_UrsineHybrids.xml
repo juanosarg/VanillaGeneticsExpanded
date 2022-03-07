@@ -80,7 +80,7 @@
 				<gizmoImage>UI/Commands/Detonate</gizmoImage>
 				<gizmoLabel>GR_DetonateChemfuel</gizmoLabel>
 				<gizmoDesc>GR_DetonateChemfuelDesc</gizmoDesc>
-				<radius>3</radius>
+				<radius>1</radius>
 				<damageType>Bomb</damageType>
 				<thingCreated>Filth_Fuel</thingCreated>
 				<thingCreatedChance>0.75</thingCreatedChance>

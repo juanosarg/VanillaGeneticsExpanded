@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+  
+  <AbilityDef Abstract="True" Name="RoleAuraBuffBase">
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <groupDef>MultiRole</groupDef>
+    <hotKey>Misc12</hotKey>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <statBases>
+      <Ability_Duration>1000</Ability_Duration>
+      <Ability_EffectRadius>9.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>9.9</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  <AbilityDef ParentName="RoleAuraBuffBase">
+    <defName>GR_ChemfuelSquirt</defName>
+    <label>marksman command</label>
+    <description>Call out shots and boost the shooting skills of everyone nearby. The effect remains attached to the caster for 24 hours.</description>
+    <iconPath>UI/Abilities/MarksmanCommand</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/MarksmanCommand</warmupMoteSocialSymbol>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>MarksmanCommand</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+
+ 
+
+</Defs>

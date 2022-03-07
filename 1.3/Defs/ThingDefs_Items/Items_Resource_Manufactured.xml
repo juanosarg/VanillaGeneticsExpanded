@@ -3,68 +3,6 @@
 
 
 
-   <!--=============== Hybrid Implants Base ====================-->
-
-<ThingDef ParentName="ResourceBase">
-    <defName>GR_ImplantSteelWireMesh</defName>
-    <label>hybrid implant steel wire mesh (tier 1)</label>
-    <description>This steel wire mesh acts as a sterile scaffold for tissue growth. It is used as the base for basic vat grown hybrid implants. More advanced implants require a plasteel based wire mesh.</description>
-    <graphicData>
-      <texPath>Things/Item/GR_ImplantSteelWireMesh</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-			<tradeability>Sellable</tradeability>
-
-    <statBases>
-      <MarketValue>45</MarketValue>
-      <Mass>1</Mass>
-    </statBases>
-	<thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-    
-  </ThingDef>   
-   
-<ThingDef ParentName="ResourceBase">
-    <defName>GR_ImplantPlasteelWireMesh</defName>
-    <label>hybrid implant plasteel wire mesh (tier 2)</label>
-    <description>This plasteel wire mesh acts as a sterile scaffold for tissue growth. It is used as the base for advanced vat grown hybrid implants. Elite implants require an uranium based wire mesh.</description>
-    <graphicData>
-      <texPath>Things/Item/GR_ImplantPlasteelWireMesh</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-			<tradeability>Sellable</tradeability>
-
-    <statBases>
-      <MarketValue>50</MarketValue>
-      <Mass>1</Mass>
-    </statBases>
-	<thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-    
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceBase">
-    <defName>GR_ImplantUraniumWireMesh</defName>
-    <label>hybrid implant uranium wire mesh (tier 3)</label>
-    <description>This uranium wire mesh acts as a sterile scaffold for tissue growth. It is used as the base for the most elite vat grown hybrid implants.</description>
-    <graphicData>
-      <texPath>Things/Item/GR_ImplantUraniumWireMesh</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-			<tradeability>Sellable</tradeability>
-
-    <statBases>
-      <MarketValue>80</MarketValue>
-      <Mass>1</Mass>
-    </statBases>
-	<thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-    
-  </ThingDef>
-  
      <!--=============== Boomfuels ====================-->
   
   <ThingDef ParentName="ResourceBase">

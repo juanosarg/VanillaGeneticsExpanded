@@ -14,7 +14,7 @@ namespace GeneticRim
     {
         public  float progress = -1;
         public  int   duration;
-        private Thing growthCell;
+        public Thing growthCell;
         public  bool  BringIngredients => this.genomeDominant != null && this.progress < 0;
 
         public Thing genomeDominant;

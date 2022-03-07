@@ -50,11 +50,11 @@ namespace GeneticRim
             base.PreOpen();
 
 
-            this.genomes    = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne)==true|| x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true) ).ToList();
-            this.genomesCanBeSecondary = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) ?? false).ToList();
+            this.genomes    = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne)==true || x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree)==true)&&!x.IsForbidden(Faction.OfPlayer)).ToList();
+            this.genomesCanBeSecondary = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) ?? false)&&!x.IsForbidden(Faction.OfPlayer)).ToList();
 
-            this.boosters   = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_Boosters)        ?? false).ToList();
-            this.genoframes = this.comp.parent.Map.listerThings.AllThings.Where(x => x.def.thingCategories?.Contains(InternalDefOf.GR_Genoframes)      ?? false).ToList();
+            this.boosters   = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_Boosters)        ?? false)&&!x.IsForbidden(Faction.OfPlayer)).ToList();
+            this.genoframes = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_Genoframes)      ?? false)&& !x.IsForbidden(Faction.OfPlayer)).ToList();
         }
 
         public override void DoWindowContents(Rect inRect)
@@ -274,7 +274,7 @@ namespace GeneticRim
             }
 
             if (Widgets.ButtonText(new Rect(inRect.xMax - BottomButtonWidth, inRect.yMax - 32, BottomButtonWidth, 32), "GR_InitiateSynthesis".Translate(),
-                                   active: this.genomeDominant != null && this.genomeSecondary != null && this.genoframe != null))
+                                   active: this.genomeDominant != null && this.genomeSecondary != null && this.genoframe != null &&mainResult!=null))
             {
                 InitiateSynthesis();
             }

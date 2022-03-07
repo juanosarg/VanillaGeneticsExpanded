@@ -10,13 +10,13 @@
 		<defName>GR_GeneticMaterialTierOne</defName>
 		<label>genetic materials (tier 1)</label>
 		<parent>GR_GeneticMaterial</parent>
-		<iconPath>Things/Item/GR_GeneticMaterials_Bear</iconPath>
+		<iconPath>Things/Item/GenomeUrsine</iconPath>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>GR_GeneticMaterialTierTwoOrThree</defName>
 		<label>genetic materials (tiers 2 and 3)</label>
 		<parent>GR_GeneticMaterial</parent>
-		<iconPath>Things/Item/GR_GeneticMaterials_Reptile</iconPath>
+		<iconPath>Things/Item/GenomeReptile</iconPath>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
 		<defName>GR_GenomeExcavators</defName>

@@ -41,9 +41,9 @@
 			</defaultIngredientFilter>
 		</recipeMaker>
 	</ThingDef>
-	
+
 	<!--================================ Rugs ======================================-->
-	
+
 	<ThingDef ParentName="GR_ArtBaseGround">
 		<defName>GR_HugeBearCatRug</defName>
 		<label>huge bearcat rug</label>
@@ -54,7 +54,7 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<tradeability>Sellable</tradeability>
-	
+
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>495</WorkToBuild>
@@ -64,6 +64,9 @@
 			<Cleanliness>0.4</Cleanliness>
 		</statBases>
 		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
 		<rotatable>true</rotatable>
 		<building>
 			<isEdifice>false</isEdifice>
@@ -73,5 +76,5 @@
 			<GR_HugeBearCatPelt>1</GR_HugeBearCatPelt>
 		</costList>
 	</ThingDef>
-	
+
 </Defs>

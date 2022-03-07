@@ -14,7 +14,7 @@
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>6</DeteriorationRate>
 		</statBases>
-		<tradeability>None</tradeability>
+		
 		<thingCategories>
 			<li>GR_GeneticMaterialTierOne</li>
 		</thingCategories>
@@ -156,7 +156,7 @@
 		<label>template genome</label>
 		<description>Absolutely and completely worthless, but when properly processed alongside an actual genome it can be trimmed down to an identical copy.</description>
 		<statBases>
-			<MarketValue>400</MarketValue>
+			<MarketValue>20</MarketValue>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Item/TemplateGenome</texPath>

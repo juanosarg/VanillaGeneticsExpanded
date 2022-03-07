@@ -74,29 +74,38 @@ namespace GeneticRim
 
                             pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.failureResult, null, fixedBiologicalAge: 1, fixedChronologicalAge: 0,
                                                                                          newborn: false, forceGenerateNewPawn: true));
-
                         }
                         else {
                             pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 1, fixedChronologicalAge: 0,
                                                                                       newborn: false, forceGenerateNewPawn: true));
                         }
                         
-
                         IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 5f);
-
-
-
                         GenSpawn.Spawn(pawn, near, this.parent.Map);
 
-                        if (this.booster?.GetModExtension<DefExtension_HybridChanceAlterer>()?.isFertilityUnblocker!=true)
-                        {
-                            pawn.health.AddHediff(HediffDefOf.Sterilized);
-                        }
+                        pawn.drafter = new Pawn_DraftController(pawn);
+                        pawn.equipment = new Pawn_EquipmentTracker(pawn);
 
-                        if (this.booster?.GetModExtension<DefExtension_HybridChanceAlterer>()?.isController==true)
-                        {
-                            pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
+                        if (!failure) {
+                            DefExtension_HybridChanceAlterer extension = this.booster?.GetModExtension<DefExtension_HybridChanceAlterer>();
+
+                            if (extension?.isFertilityUnblocker != true)
+                            {
+                                pawn.health.AddHediff(HediffDefOf.Sterilized);
+                            }
+
+                            if (extension?.isController == true)
+                            {
+                                pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
+                            }
+
+                            if (extension?.addedHediffs != null)
+                            {
+                                AddInitialHybridHediffs(extension, pawn);
+                            }
+
                         }
+                       
 
                         CompHybrid compHybrid = pawn.TryGetComp<CompHybrid>();
                         if (compHybrid != null) {
@@ -113,6 +122,23 @@ namespace GeneticRim
                 }
 
             }
+        }
+
+        public void AddInitialHybridHediffs(DefExtension_HybridChanceAlterer extension,Pawn pawn)
+        {
+            foreach (HediffToBodyparts hediffToBodyParts in extension.addedHediffs)
+            {
+                foreach(BodyPartDef part in hediffToBodyParts.bodyparts)
+                {
+                    if (!pawn.RaceProps.body.GetPartsWithDef(part).EnumerableNullOrEmpty())
+                    {
+                        pawn.health.AddHediff(hediffToBodyParts.hediff, pawn.RaceProps.body.GetPartsWithDef(part).RandomElement());
+                    }
+
+                }
+
+            }
+
         }
 
         public override string CompInspectStringExtra()
@@ -216,9 +242,10 @@ namespace GeneticRim
 
             growthCell.Destroy();
 
+           
             if (swapChance != 0) {
                 bool swap = Rand.Chance(swapChance);
-                result = swap ? result : swapResult;
+                result = swap ? swapResult : result;
             }
 
             if (failureChance != 0)

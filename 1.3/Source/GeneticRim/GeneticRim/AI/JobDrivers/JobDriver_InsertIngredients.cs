@@ -41,9 +41,10 @@ namespace GeneticRim
                 yield return Toils_General.DoAtomic(delegate
                 {
                     job.SetTarget(TargetIndex.B, target);
+                  
                     job.count = 1;
                 });
-                yield return Toils_Reserve.Reserve(TargetIndex.B,1,1);
+                yield return Toils_Reserve.Reserve(TargetIndex.B,1,1).FailOnDespawnedNullOrForbidden(TargetIndex.B);
                 yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.ClosestTouch).FailOnDespawnedNullOrForbidden(TargetIndex.B).FailOnSomeonePhysicallyInteracting(TargetIndex.B);
                 yield return Toils_Haul.StartCarryThing(TargetIndex.B, false, true, false).FailOnDestroyedNullOrForbidden(TargetIndex.B);
               

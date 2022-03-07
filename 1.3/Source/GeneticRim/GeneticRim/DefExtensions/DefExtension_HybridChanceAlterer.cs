@@ -10,30 +10,23 @@ namespace GeneticRim
 
     public class DefExtension_HybridChanceAlterer : DefModExtension
     {
-        /**
-         * Deducted from genome swap chance.
-         */
+        // Deducted from genome swap chance.       
         public int stability;
 
-        /**
-         * Deducted from failure outcome chance.
-         */
+        // Deducted from failure outcome chance.
         public int safety;
 
-        /**
-         * Hybrid process time multiplier.
-         */
+        // Hybrid process time multiplier.
         public float timeMultiplier;
 
-        /**
-         * Hybrid draftability toggle.
-         */
+        // Hybrid draftability toggle.
         public bool isController = false;
 
-        /**
-         * Hybrid fertility toggle.
-         */
+        // Hybrid fertility toggle.
         public bool isFertilityUnblocker = false;
+
+        // Add initial hediffs to hybrid.
+        public List<HediffToBodyparts> addedHediffs;
 
 
 

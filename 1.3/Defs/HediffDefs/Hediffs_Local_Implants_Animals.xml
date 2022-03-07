@@ -22,7 +22,9 @@
 		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
 		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_Draftable"/>
+			<li Class="AnimalBehaviours.HediffCompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
 		</comps>
 	</HediffDef>
 	
