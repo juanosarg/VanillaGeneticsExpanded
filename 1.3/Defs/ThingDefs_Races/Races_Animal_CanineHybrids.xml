@@ -7,7 +7,7 @@
 		<description>A Wolf / Bear hybrid. Very similar to the standard timber wolf, but with better stamina.\n\nUseful abilities: Good guard animal. Butchering gives Wolfbear paws, which can be sold.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
-			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>370</MarketValue>
 			<FilthRate>3</FilthRate>
 		</statBases>
@@ -15,36 +15,22 @@
 			<li>
 				<label>left claw</label>
 				<capacities>
-					<li>Scratch</li>
+					<li>GR_GoForTheHead</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>right claw</label>
 				<capacities>
-					<li>Scratch</li>
+					<li>GR_GoForTheHead</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<capacities>
@@ -53,14 +39,7 @@
 				<power>11</power>
 				<cooldownTime>2.1</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -74,7 +53,11 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_AdrenalineRush</initialAbility>
+			</li>
+		</comps>
 		<race>
 			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -85,7 +68,7 @@
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
-			<gestationPeriodDays>22.5</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
@@ -102,7 +85,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>14</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -128,6 +111,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Wolfbear</defName>
@@ -207,50 +203,29 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>5</power>
+				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>right claw</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>5</power>
+				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>2.1</cooldownTime>
+				<power>5</power>
+				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -264,19 +239,37 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_FlameBreathAnimated</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>1</minRange>
+				<range>15</range>	
+				<label>fire breath</label>	  				
+				<soundCast>GR_FireBreath</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
-				<gatheringIntervalDays>2</gatheringIntervalDays>
-				<resourceAmount>17</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_AdrenalineRush</initialAbility>
 			</li>
 			
 		</comps>
 		<race>
 			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<deathActionWorkerClass>GeneticRim.DeathActionWorker_EMPExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<predator>true</predator>
 			<maxPreyBodySize>2</maxPreyBodySize>
@@ -286,7 +279,7 @@
 			<baseHungerRate>0.18</baseHungerRate>
 			<baseHealthScale>0.99</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
-			<gestationPeriodDays>22.5</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Intermediate</trainability>
 			<wildness>0.75</wildness>
@@ -303,7 +296,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>14</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -329,6 +322,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Wolfalope</defName>
@@ -403,50 +409,29 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>7</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>4</power>
+				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>right claw</label>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>7</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>4</power>
+				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+			
 			</li>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>2.1</cooldownTime>
+				<power>5</power>
+				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -468,12 +453,7 @@
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_WolfchickenFeathers</resourceDef>
-				<gatheringIntervalDays>4</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>FeatherGrowth</customResourceString>
-			</li>
+			
 			
 		</comps>
 		<race>
@@ -503,7 +483,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>14</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -606,14 +586,7 @@
 				<power>7</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>16</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -623,14 +596,7 @@
 				<power>7</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>16</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -683,7 +649,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>14</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -787,14 +753,7 @@
 				<power>9</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -804,14 +763,7 @@
 				<power>9</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+			
 			</li>
 			<li>
 				<capacities>
@@ -820,14 +772,7 @@
 				<power>16</power>
 				<cooldownTime>2.1</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -843,18 +788,16 @@
 		</tools>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
-			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<predator>true</predator>
+			<herdMigrationAllowed>false</herdMigrationAllowed>			
+			<body>QuadrupedAnimalWithPawsAndTail</body>			
 			<baseBodySize>0.85</baseBodySize>
 			<baseHungerRate>2</baseHungerRate>
 			<baseHealthScale>0.99</baseHealthScale>
-			<foodType>CarnivoreAnimal, DendrovoreAnimal</foodType>
+			<foodType>DendrovoreAnimal</foodType>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<mateMtbHours>6</mateMtbHours>
-			<gestationPeriodDays>6</gestationPeriodDays>
+			<gestationPeriodDays>7</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
 			<litterSizeCurve>
@@ -866,7 +809,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>8</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -968,14 +911,7 @@
 				<power>10</power>
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>13</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -985,14 +921,7 @@
 				<power>10</power>
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>13</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<capacities>
@@ -1001,14 +930,7 @@
 				<power>11</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>15</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -1034,14 +956,14 @@
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
-			<maxPreyBodySize>2.3</maxPreyBodySize>
+			<maxPreyBodySize>1.5</maxPreyBodySize>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<baseBodySize>1</baseBodySize>
 			<baseHungerRate>0.18</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
-			<gestationPeriodDays>22.5</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>0.46</wildness>
@@ -1058,7 +980,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>12</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

@@ -87,6 +87,7 @@
 	<GR_BeginArchotechCentipedeDesc>Create the Archotech centipede. The process will take about 15 days, and the energy signature will be detectable from a long distance away.</GR_BeginArchotechCentipedeDesc>
 	<GR_BeginArchotechCentipedeText>You are ready to start the archotech centipede project.\n\nThe process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates that someone is meddling in technology that is far beyond human understanding, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first.</GR_BeginArchotechCentipedeText>
 	<GR_ArchoWombProgress>Archowomb progress: {0}</GR_ArchoWombProgress>
+	<GR_GameOverArchotech>You've activated the Archotech Project! These colonists were present for the archotech awakening:\n\n{0}\n\nThe Archotech Centipede is now under their control, and you are free to decimate your enemies and control the planet unopposed.\n\nCongratulations, you have won the game with the Vanilla Genetics Expanded mod!</GR_GameOverArchotech>
 	
 	<!--Hybrid role descriptions-->
 	<GR_HybridRole>Hybrid role</GR_HybridRole>
@@ -108,7 +109,7 @@
 	<GR_InflictChickenRimPoxDesc>Attacks a target and inflicts Chicken RimPox, a debilitating disease</GR_InflictChickenRimPoxDesc>
 	<GR_CarryMore>Carrying more weight</GR_CarryMore>
 	<GR_CarryMoreDesc>This hybrid is carrying more weight than usual due to the influence of the animal control hub</GR_CarryMoreDesc>
-	<GR_StartAdrenalineBurst>Adrenaline Burst</GR_StartAdrenalineBurst>
+	<GR_StartAdrenalineBurst>Adrenaline Rush</GR_StartAdrenalineBurst>
 	<GR_StartAdrenalineBurstDesc>Causes the creature to move much faster for a while, at the cost of getting tired afterwards for almost half a day</GR_StartAdrenalineBurstDesc>
 	<GR_ReleaseInsectClouds>Release Insect Clouds</GR_ReleaseInsectClouds>
 	<GR_ReleaseInsectCloudsDesc>Causes the creature to release insect clouds around it, damaging every pawn that isn't an insect hybrid</GR_ReleaseInsectCloudsDesc>
@@ -133,26 +134,6 @@
 	<GR_AbilityRecharging>Ability is rechaging. Check animal's health tab</GR_AbilityRecharging>
 	<GR_PoisonCloudRange>Poison cloud has a maximum range of 10. Get closer to the target!</GR_PoisonCloudRange>
 	<GR_InvokingInsanityRange>Invoking insanity has a maximum range of 10. Get closer to the target!</GR_InvokingInsanityRange>
-	<!-- Misc -->
-	<GR_ANewCreatureWasBorn>An incubator has hatched!</GR_ANewCreatureWasBorn>
-	<GR_ANewCreatureWasBornMutant>An incubator has hatc... Wait, what is THAT thing???</GR_ANewCreatureWasBornMutant>
-	<GR_CantUseMoreGenetrainers>A genetrainer has been wasted. This colonist already has a genetrainer applied.</GR_CantUseMoreGenetrainers>
-	<GR_CommandArchotechReport>Show project report</GR_CommandArchotechReport>
-	<GR_CommandArchotechReportDesc>Show a readiness report about the archotect centipede project.</GR_CommandArchotechReportDesc>
-	<GR_CommandArchotechStartup>Start archotech project</GR_CommandArchotechStartup>
-	<GR_CommandArchotechStartupDesc>Activate archotech construction platform to begin the archotech centipede project.</GR_CommandArchotechStartupDesc>
-	<GR_ArchotechProjectText>You are ready to start the archotech centipede project.\n\nThe process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates that someone is meddling in technology that is far beyond human understanding, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first.\n\nBear in mind that you will still need to have all the project buildings connected to the platform to activate the archotech centipede.</GR_ArchotechProjectText>
-	<GR_ArchotechProjectLaunch>Activate archotech centipede</GR_ArchotechProjectLaunch>
-	<GR_ArchotechProjectLaunchDesc>Activate the archotech centipede to destroy your enemies. Or kill everyone including all the colonists. It's fifty-fifty.</GR_ArchotechProjectLaunchDesc>
-	<GR_ArchotechReportCannotLaunch>Cannot activate Archotech Centipede.</GR_ArchotechReportCannotLaunch>
-	<GR_ArchotechReportCanLaunch>Ready to activate the Archotech Centipede.</GR_ArchotechReportCanLaunch>
-	<GR_GameOverArchotech>You've activated the Archotech Project! These colonists were present for the archotech awakening:\n\n{0}\n\nThe Archotech Centipede is now under their control, and you are free to decimate your enemies and control the planet unopposed.\n\nCongratulations, you have won the game with the Genetic Rim mod!</GR_GameOverArchotech>
-	<!-- Settings -->
-	<GR_useLeglessGraphics>Uncheck this to use alternate legless graphics for ALL Genetic hybrids (takes a few seconds to update)</GR_useLeglessGraphics>
-	<GR_IncubatorFailureRate>Incubator failure rate (default is 10%)</GR_IncubatorFailureRate>
-	<GR_RemoveUpdateNotice>Remove VGE - Genetic Rim update notice</GR_RemoveUpdateNotice>
-	<!-- Update letter -->
-	<GR_UpdateLetterLabel>Textures Update</GR_UpdateLetterLabel>
-	<GR_UpdateLetterText>We have released the Vanilla Textures Expanded - Genetic Rim retexture mod, which changes the textures of Genetic Rim to be more vanilla friendly. This is a separate mod from Genetic Rim, so those who prefer the old textures can keep using them.\n\nIt is HIGHLY recommended that you use this retexture, since it brings Genetic Rim in line with what it should have been from the beginning, if I had the proper graphics knowledge three years ago ;)</GR_UpdateLetterText>
+	
 	
 </LanguageData>

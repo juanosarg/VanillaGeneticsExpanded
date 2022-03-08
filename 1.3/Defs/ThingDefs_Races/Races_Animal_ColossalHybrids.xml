@@ -537,7 +537,7 @@
 		<description>This massive ungulate is the result of splicing a thrumbo with muffalo genes. Capable of carrying a huge amount of materials, there is no better possible pack animal in all the Rim (yet! Science never rests).\n\nUseful abilities: Produces high quality milk and wool.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
-			<ComfyTemperatureMin>-85</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-150</ComfyTemperatureMin>
 			<MarketValue>3500</MarketValue>
 			<MeatAmount>60</MeatAmount>
 			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>

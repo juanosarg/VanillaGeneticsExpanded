@@ -7,8 +7,8 @@
 	<!-- ArchotechCentipede -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ArchotechCentipede</defName>		
-		<label>archotech centipede</label>
-		<description>The Archotech Centipede is the end result of the Archotech Project, aiming to provide a "friendly" machine superintelligence with a capable body. Even though this centipede is forcefully loyal to the colonists, and can be somewhat controlled by them, most other inhabitants of the planet will consider its existance to be an abomination, since dabbling in archotech usually signals the end of comprehensible human life.\n\nUseful abilities: What do you mean useful? You have WON the game. The Archotech Centipede is basically unkillable by normal means, just use it to lay waste to everything in the planet. You don't have enemies now, you have pets. Ooooor... the archotech may kill all your colonists. One of the two.</description>
+		<label>archocentipede</label>
+		<description>The Archocentipede is the end result of the Archotech Project, aiming to provide a "friendly" machine superintelligence with a capable body. Even though this centipede is forcefully loyal to the colonists, and can be somewhat controlled by them, most other inhabitants of the planet will consider its existance to be an abomination, since dabbling in archotech usually signals the end of comprehensible human life.\n\nUseful abilities: What do you mean useful? You have WON the game. The Archocentipede is basically unkillable by normal means, just use it to lay waste to everything in the planet. You don't have enemies now, you have pets. Ooooor... the archotech may kill all your colonists. One of the two.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>10</MoveSpeed>
@@ -73,6 +73,9 @@
 				<customResourceString>ComponentIndustrialDesc</customResourceString>
 
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_NoTamingDecay">
+				
+			</li>
 			
 		</comps>
 		<race>
@@ -120,7 +123,7 @@
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ArchotechCentipede</defName>
-		<label>archotech centipede</label>
+		<label>archocentipede</label>
 		<race>GR_ArchotechCentipede</race>
 		<combatPower>10000</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>

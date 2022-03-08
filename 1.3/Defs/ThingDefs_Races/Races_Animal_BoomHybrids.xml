@@ -164,7 +164,7 @@
 		<label>boomachicken</label>
 		<description>A Boomalope / chicken hybrid. These creatures produce two types of eggs: the regular kind, and a special type of egg filled to the brim with dangerous chemicals. These aberrant eggs aren't normally laid, and they are liberated when the creature dies. In contact with the atmosphere, they explode violently in a few seconds.\n\nUseful abilities: Eggxplosion!! Weak chemfuel production.</description>
 		<statBases>
-			<MoveSpeed>2.0</MoveSpeed>
+			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
 			<MarketValue>150</MarketValue>
 			<FilthRate>8</FilthRate>

@@ -301,7 +301,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abilities\CompCreateThingDefAround.cs" />
+    <Compile Include="Abilities\CompGiveHediff.cs" />
     <Compile Include="Abilities\Properties\CompProperties_CreateThingDefAround.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_GiveHediff.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertArchotechGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
@@ -336,6 +338,7 @@
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
     <Compile Include="Comps\Window_DesignateGrowthCell.cs" />
     <Compile Include="Core.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_GoForTheHead.cs" />
     <Compile Include="DefExtensions\DefExtension_Hybrid.cs" />
     <Compile Include="DefExtensions\DefExtension_HybridChanceAlterer.cs" />
     <Compile Include="DefExtensions\DefExtension_HybridFailure.cs" />

@@ -7,7 +7,7 @@
 		<description>A Muffalo / bear hybrid. The Muffalobear is a stronger variant of muffalo that doesn't produce wool. \n\nUseful abilities: Muffalobears produce a special milk, less nutritive but with a mild euphoric effect. They are pack animals that carry more weight than regular muffalos.</description>
 		<statBases>
 			<MoveSpeed>3.6</MoveSpeed>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<MarketValue>400</MarketValue>
 			<FilthRate>16</FilthRate>
 		</statBases>
@@ -160,7 +160,7 @@
 		<description>A Muffalo / boomalope hybrid. Because it's so cool when your caravans can EXPLODE. \n\nUseful abilities: Milk produced by these animals is not edible, but highly explosive, so it can be used to build IEDs. Can be sheared for low quality wool. Produces a decent amount of chemfuel.</description>
 		<statBases>
 			<MoveSpeed>3.2</MoveSpeed>
-			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<MarketValue>350</MarketValue>
 			<FilthRate>16</FilthRate>
 		</statBases>
@@ -310,7 +310,7 @@
 		<description>A Muffalo / chicken hybrid. A very strange bovine beast that lays eggs. \n\nUseful abilities: Produces high quality milk, wool and eggs.</description>
 		<statBases>
 			<MoveSpeed>3.2</MoveSpeed>
-			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<MarketValue>250</MarketValue>
 			<FilthRate>8</FilthRate>
 		</statBases>
@@ -473,7 +473,7 @@
 		<description>A Muffalo / wolf hybrid. Faster than a standard muffalo, and better able to defend itself, but has lost the capacity to produce milk. \n\nUseful abilities: Quite fast pack beast.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<MarketValue>450</MarketValue>
 			<FilthRate>8</FilthRate>
 		</statBases>
@@ -608,7 +608,7 @@
 		<description>A Muffalo / Rat hybrid. A short-lived pack beast that breeds really fast.\n\nUseful abilities: Acts as a pack beast. Produces small amounts of milk and wool at a quite fast rate. Fast breeding.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<MarketValue>105</MarketValue>
 			<FilthRate>4</FilthRate>
 		</statBases>
@@ -745,7 +745,7 @@
 		<description>A Muffalo / cat hybrid. The Muffalocat is a very intelligent muffalo hybrid that can be trained further than its brethren.\n\nUseful abilities: Muffalocats produce milk and hairball wool. They are also pack animals, though not as efficient as regular muffalos.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
-			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<MarketValue>400</MarketValue>
 			<FilthRate>8</FilthRate>
 		</statBases>

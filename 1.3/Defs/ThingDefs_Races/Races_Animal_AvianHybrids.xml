@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenbear</defName>
 		<label>chickenbear</label>
-		<description>A chicken / bear hybrid. Lays eggs, and can defend itself in combat slightly better than a chicken. \n\nUseful abilities: Their sharp, small teeth can be harvested when butchering them, and they are slightly valuable and lightweight.</description>
+		<description>For something so small, this animal has a hell of an appetite. Lacking in many departments, but the nutrition has to go somewhere and that’s for those looking for a non-vegan friendly option of getting high. The person who thought it would be a good idea to inhale the burning feathers of this plump creature is one stoners everywhere praise while they blaze.\n\nAn avian hybrid with recessive ursine genes. Has a considerably larger appetite and inherent wildness, but reproduces quickly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be regularly plucked for chickenbear feathers. When these feathers are turned into powder at a Drug lab, they can be rolled into a joint to be smoked.</description>
 		<statBases>
 			<MoveSpeed>1.8</MoveSpeed>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
@@ -380,7 +380,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenffalo</defName>
 		<label>chickenffalo</label>
-		<description>A chicken / muffalo hybrid. Lays eggs, produces milk, wool and can be used as a pack beast. Of course, it doesn't excel at ANY of those things, but it's the price you pay for convenience. They are so cute, though, wearing their tiny bags...</description>
+		<description>You wouldn’t think something so small could eat so much, but that’s the price you pay for the sake of convenience. That convenience is sporadic, low in nutrition and very thin, an effect commonly described as “nerfing”.\n\nAn avian hybrid with recessive muffalo genes. Loves to wander so it must be securely penned, but they make for a surprising pack beast. Capable of producing the holy trinity of milk, eggs and wool, however they can be quite lacking in substance.</description>
 		<statBases>
 			<MoveSpeed>3.1</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -565,7 +565,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenwolf</defName>
 		<label>chickenwolf</label>
-		<description>A chicken / wolf hybrid. Fast moving, and with a nasty bite! \n\nUseful abilities: Their sharp, small teeth can be harvested when butchering them, and they are slightly valuable and lightweight.</description>
+		<description>The Tiny Terror with a disconcertingly large mouth and sharp teeth. These comic flightless web-footed little bastards may finally unwittingly help man to fathom the uncharted depths of just how dangerous they can make a living creature the size of a basketball.\n\nAn avian hybrid with recessive canine genes. Doesn’t produce much in the way of eggs but makes up for it by having a shorter gestation period and a very nasty bite. They’re also incredibly smart and agile, making them ideal for swarm tactics.</description>
 		<statBases>
 			<MoveSpeed>5.25</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -745,7 +745,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenrabbit</defName>
 		<label>chickenrabbit</label>
-		<description>A Chicken / Rabbit hybrid. What happens when you artificially crossbreed two fast breeding creatures? The chickenrabbit is an ecological disaster waiting to happen.\n\nUseful abilities: Egg layer. EXTREMELY fast breeding.</description>
+		<description>One of the few unusual animal hybrids that come with their own warning labels despite being almost entirely harmless. All it took was one absent-minded vegan to cause a single couple of “Breeders” to overpopulate and devastate the ecology of an entire continent. Fairy tales surrounding the fluffy terror have done nothing to help it be taken seriously.\n\nAn avian hybrid with recessive rodent genes. An incredibly low metabolism coupled with an incredibly high reproduction rate, these animals are very sensitive to temperature and are unusually keen on escaping to the wilds.</description>
 		<statBases>
 			<MoveSpeed>2.1</MoveSpeed>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -807,7 +807,7 @@
 			<mateMtbHours>1</mateMtbHours>
 			<trainability>None</trainability>
 			<wildness>0.47</wildness>
-			<roamMtbDays>7</roamMtbDays>
+			<roamMtbDays>2</roamMtbDays>
 			<useLeatherFrom>Chicken</useLeatherFrom>
 			<useMeatFrom>Chicken</useMeatFrom>
 			<litterSizeCurve>
@@ -922,7 +922,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickencat</defName>
 		<label>chickencat</label>
-		<description>A chicken / cat hybrid. Fast moving, specially intelligent. It is one of the few chicken hybrids that can be somewhat trained.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. The chickencat obviously produces eggs.</description>
+		<description>Respectably intelligent as well as lethal, these egg-laying, plump beasties love nuzzling their owners and biting their enemies. Sometimes those are different people.\n\nAn avian hybrid with recessive feline genes. Quite clean with a low gestation period, they make for an average farm animal and an average combatant with good speed. They still require a pen, so they make for good home defence.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

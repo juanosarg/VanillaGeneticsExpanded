@@ -45,12 +45,12 @@
 			<texPath>Things/Item/GenomeUrsine</texPath>
 		</graphicData>
 		<label>ursine genome</label>
-		<description>A payload of ursine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
+		<description>A payload of ursine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary ursine hybrids have stunning attacks, and high body size.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 	</ThingDef>
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_AvianGenetic</defName>
 		<label>avian genome</label>
-		<description>A payload of avian genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
+		<description>A payload of avian genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary avian hybrids lay eggs. Combat avian hybrids get increased movement speed.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
 			<texPath>Things/Item/GenomeAvian</texPath>
 		</graphicData>
@@ -58,7 +58,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_BoomalopeGenetic</defName>
 		<label>boom genome</label>
-		<description>A payload of boom genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
+		<description>A payload of boom genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All boom hybrids explode on death. Farm hybrids produce chemfuel, while combat hybrids can use exploding abilities.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
 			<texPath>Things/Item/GenomeBoom</texPath>
 		</graphicData>
@@ -66,7 +66,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_MuffaloGenetic</defName>
 		<label>muffalo genome</label>
-		<description>A payload of muffalo genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
+		<description>A payload of muffalo genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All muffalo hybrid animals are pack animals, with primary muffalo hybrids getting 50% increased capacity caravaning. All muffalo hybrids have an increase to minimum comfortable temperature.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
 			<texPath>Things/Item/GenomeMuffalo</texPath>
 		</graphicData>
@@ -74,7 +74,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_CanineGenetic</defName>
 		<label>canine genome</label>
-		<description>A payload of canine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
+		<description>A payload of canine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary canine hybrids have the adrenaline rush ability. All canine hybrids have fast attack speed.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
 			<texPath>Things/Item/GenomeCanine</texPath>
 		</graphicData>
@@ -82,7 +82,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_RodentGenetic</defName>
 		<label>rodent/leporid genome</label>
-		<description>A payload of rodent genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
+		<description>A payload of rodent genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All rodent hybrids have a reduced body size, but greatly increased reproduction rates (if fertile).\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
 			<texPath>Things/Item/GenomeRodent</texPath>
 		</graphicData>
@@ -90,7 +90,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_FelineGenetic</defName>
 		<label>feline genome</label>
-		<description>A payload of feline genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
+		<description>A payload of feline genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All feline hybrids have an inherent dodge chance. Combat feline hybrids get a further increase to dodge chance.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
 		<graphicData>
 			<texPath>Things/Item/GenomeFeline</texPath>
 		</graphicData>
@@ -98,7 +98,7 @@
 	<ThingDef ParentName="GR_GeneticsBase">
 		<defName>GR_HumanoidGenetic</defName>
 		<label>humanoid genome</label>
-		<description>A payload of humanoid genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from any sentient humanoid.</description>
+		<description>A payload of humanoid genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used as either a primary or secondary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All humanoid hybrids have a somewhat decent level of intelligence and can do various tasks around the colony.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from any sentient humanoid.</description>
 		<graphicData>
 			<texPath>Things/Item/GenomeHuman</texPath>
 		</graphicData>
@@ -107,7 +107,7 @@
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_EquineGenetic</defName>
 		<label>equine genome</label>
-		<description>A payload of equine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
+		<description>A payload of equine genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids have increased caravaning speed.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
 		</statBases>
@@ -118,7 +118,7 @@
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_InsectoidGenetic</defName>
 		<label>insectoid genome</label>
-		<description>A payload of insectoid genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
+		<description>A payload of insectoid genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All hybrids with insectoid genome get 100% toxic resistance as well as an armor increase. Combat hybrids get a further increase to armor.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
 		</statBases>
@@ -129,7 +129,7 @@
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_ReptileGenetic</defName>
 		<label>reptile genome</label>
-		<description>A payload of reptile genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
+		<description>A payload of reptile genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have greatly increased minimum and maximum comfortable temperature. They also have melee and ranged venomous attacks.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can only be extracted via any genome excavator from:</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
 		</statBases>
@@ -141,7 +141,7 @@
 	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
 		<defName>GR_ThrumboGenetic</defName>
 		<label>colossal genome</label>
-		<description>A payload of colossal genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 3 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Can only be extracted via an archotech genome excavator from:</description>
+		<description>A payload of colossal genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 3 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Extreme increase in size, health, damage and market value at the cost of slower attack speed.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can only be extracted via an archotech genome excavator from:</description>
 		<statBases>
 			<MarketValue>1000</MarketValue>
 		</statBases>

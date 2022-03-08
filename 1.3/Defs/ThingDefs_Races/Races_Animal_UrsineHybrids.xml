@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearalope</defName>
 		<label>bearalope</label>
-		<description>An unusual concoction of traits that was favoured by a particular client who was obsessed on making things explode. Earned the nickname Boom-Boom as they would often make requests along the lines of “two more booms, wasn’t paying attention”.\n\nAn ursine hybrid with recessive boomalope genes. Lacking intelligence compared to a bear while also missing out on some strength and confidence in hunting. However, they can be commanded to detonate a limited amount of fuel sacks for increased combat versatility in exchange for hurting themselves intentionally.</description>
+		<description>An unusual concoction of traits that was favoured by a particular client who was obsessed on making things explode. Earned the nickname Boom-Boom as they would often make requests along the lines of “two more booms, wasn’t paying attention”.\n\nAn ursine hybrid with recessive boomalope genes. Lacking intelligence compared to a bear while also missing out on some strength and confidence in hunting. However, they can be commanded to detonate a limited amount of fuel sacks for increased combat versatility in exchange for hurting themselves intentionally.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; The "Detonate chemfuel" ability can be used to cause a powerful "Bomb" damage type explosion surrounding the hybrid. Bear in mind (pun intended) that this will damage the hybrid too!</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -203,7 +203,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearchicken</defName>
 		<label>bearchicken</label>
-		<description>A bear / chicken hybrid. Nicknamed "owlbear" by the colonists. Much weaker in melee than a bear, but it lays eggs, and can obviously defend itself in combat much better than a chicken.\n\nUseful abilities: Lays eggs and regularly produces feathers, which can be converted into Featherdust joints.</description>
+		<description>A surprisingly clean animal dubbed the “owl-bear” by those that find them amusing as they attempt to fly by rapidly flapping their stubby vestigial wings. That is until they get their eyes pecked out and flattened by their weight.\n\nAn ursine hybrid with recessive avian genes. Slightly dumber but easier to train, they lay eggs every couple of days and have the strength to protect their clutch. Slower than a bear but their ability to hover over terrain means they perform better in harsh terrain.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Ignores movement terrain costs.</description>
 		<statBases>
 			<MoveSpeed>3.0</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -414,7 +414,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearffalo</defName>
 		<label>bearffalo</label>
-		<description>A bear / muffalo hybrid. This hulking, wooly bear is a very temperamental pack animal, valued for its hardiness.\n\nUseful abilities: Produces specific high-quality milk and wool. Acts as a pack beast.</description>
+		<description>A wonderful animal for those cold winter journeys, very popular as travellers snuggle into their fur at night to keep warm. Fights have even broken out over who gets to sleep with the oversized rug.\n\nAn ursine hybrid with recessive muffalo genes. Very filthy but a decently intelligent pack animal that produces good-quality wool and milk. Performs very well in cold environments and is more than capable of defending itself.</description>
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<FilthRate>12</FilthRate>
@@ -617,7 +617,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearwolf</defName>
 		<label>bearwolf</label>
-		<description>A bear / wolf hybrid. Strong like a bear, and fast like a wolf. Excellent as a rapid strike force, but their fast metabolism means they need a lot of food.\n\nUseful abilities: Good guard animal. Butchering gives Bearwolf Fangs, which can be sold.</description>
+		<description>todo.</description>
 		<statBases>
 			<MoveSpeed>4.75</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -810,7 +810,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearmole</defName>
 		<label>bearmole</label>
-		<description>A Bear / Mole hybrid. This blind animal has a very acute sense of vibrations, alllowing it to detect its prey even better than a sighted animal.\n\nUseful abilities: Good guard animal. Very fast breeding.</description>
+		<description>Not many people get to see a naked bear, and fewer still want a repeat viewing. This oversized mole-rat inspires plenty of fear with its massive teeth, but gets a lot of love and affection from those wanting a large, hairless pet that gnaws on the furniture.\n\nAn ursine hybrid with recessive rodent genes. Very slow both mentally and physically along with dietary restrictions, but very fierce in combat and immune to pain. Also they have the added benefit of having a short reproductive cycle, low metabolism and being completely fearless in hunting prey.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; No pain sensitivity. This hybrid won't be knocked down on combat due to pain.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -891,7 +891,7 @@
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<baseBodySize>2.5</baseBodySize>
+			<baseBodySize>0.8</baseBodySize>
 			<baseHungerRate>0.18</baseHungerRate>
 			<baseHealthScale>3</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
@@ -964,17 +964,17 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearmole/Bearmole</texPath>
-					<drawSize>2.0</drawSize>
+					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearmole/Dessicated_Bearmole</texPath>
-					<drawSize>2</drawSize>
+					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearmole/Bearmole</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -982,13 +982,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearmole/Dessicated_Bearmole</texPath>
-					<drawSize>2.5</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearmole/Bearmole</texPath>
-					<drawSize>3.0</drawSize>
+					<drawSize>2.0</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -996,7 +996,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearmole/Dessicated_Bearmole</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -1011,7 +1011,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearcat</defName>
 		<label>bearcat</label>
-		<description>A Bear / Cat hybrid. This hybrid is like a beefed up cougar. A solitary hunter that stalks its prey and attacks it with blinding speed.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. The Bearcat can also be slaughtered for its valuable pelt.</description>
+		<description>Massive, fluffy murder babies is just one of the many “cute” nicknames made for this animal, their only downside being that they’re unable to purr. Because they’re so large, they often end up knocking over the people they’re trying to show affection to before laying on top of them for warmth.\n\nAn ursine hybrid with recessive feline genes. Retaining their intelligence and being faster and more fierce in combat, they are adorable killing machines that love to nuzzle. They prefer easier prey and can be slaughtered for a valuable pelt, you monster.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. The pelt can be sold or used in the art workbench to create rugs.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

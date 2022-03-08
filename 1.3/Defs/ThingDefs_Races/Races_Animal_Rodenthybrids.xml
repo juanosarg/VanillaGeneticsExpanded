@@ -505,7 +505,7 @@
 		<description>A Rat / Muffalo hybrid. This is a very large, muscular and resilient rat. It can be used as a pack animal, and also produces some milk of questionable quality.\n\nUseful abilities: Acts as a pack beast. Produces small amounts of milk and wool at a quite fast rate. Fast breeding.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<MarketValue>105</MarketValue>
 			<FilthRate>10</FilthRate>
 		</statBases>
