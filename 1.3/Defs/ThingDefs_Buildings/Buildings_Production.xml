@@ -483,7 +483,7 @@
 		<graphicData>
 			<texPath>Things/Building/ImplantAugmentator/ImplantAugmentator</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
+			<drawSize>(3,3)</drawSize>
 		</graphicData>
 		<uiIconScale>0.75</uiIconScale>
 		<castEdgeShadows>false</castEdgeShadows>
