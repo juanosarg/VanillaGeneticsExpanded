@@ -48,31 +48,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="ResourceBase">
-		<defName>GR_WolfchickenFeathers</defName>
-		<label>wolfchicken feathers</label>
-		<description>Wolfchicken feathers are colourful and pretty. Quite useless, but someone might pay for them as a decorative object.</description>
-		<graphicData>
-			<texPath>Things/Item/GR_WolfchickenFeathers</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<resourceReadoutPriority>Middle</resourceReadoutPriority>
-		<stackLimit>75</stackLimit>
-		<useHitPoints>true</useHitPoints>
-		<statBases>
-			<MarketValue>50</MarketValue>
-			<MaxHitPoints>10</MaxHitPoints>
-			<Mass>0.1</Mass>
 
-		</statBases>
-		<thingCategories>
-			<li>ResourcesRaw</li>
-		</thingCategories>
-		<tradeTags>
-			<li>Exotic</li>
-		</tradeTags>
-	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_WolfbearPaws</defName>

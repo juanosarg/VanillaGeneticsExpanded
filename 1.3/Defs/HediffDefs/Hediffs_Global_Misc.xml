@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<HediffDef>
 		<defName>GR_RecentlyHatched</defName>
 		<description>This creature has recently hatched from an incubator.</description>
@@ -20,7 +19,6 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>GR_ExtractedBrain</defName>
 		<description>The brain or neural center of this creature has been extracted and refined into genetic material.</description>
@@ -29,14 +27,12 @@
 		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-		
 		<stages>
 			<li>
 
 			</li>
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_AteChocolateEgg</defName>
 		<description>This creature has recently eaten a chocolate egg.</description>
@@ -54,6 +50,126 @@
 			<li>
 
 			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="RoleStatBuff">
+		<defName>GR_PackTactics</defName>
+		<label>pack tactics</label>
+		<description>This hybrid is collaborating with other nearby muffalowolves to bring down prey.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="GeneticRim.HediffCompProperties_GiveHediffsInRangeExpanded">
+				<range>9.9</range>
+				<mote>Mote_CombatCommand</mote>
+				<hideMoteWhenNotDrafted>false</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>true</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>false</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>GR_PackTacticsBuff</hediff>
+				<affectSameDef>true</affectSameDef>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>20</MeleeDodgeChance>
+					<MeleeHitChance>20</MeleeHitChance>
+					<MeleeDPS>0.5</MeleeDPS>
+				</statOffsets>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+	<HediffDef ParentName="CombatRoleAuraBuffHediffBase">
+		<defName>GR_PackTacticsBuff</defName>
+		<label>pack tactics</label>
+		<description>This hybrid is collaborating with other nearby muffalowolves to bring down prey.</description>
+		<stages>
+			<li>
+				<statOffsets>
+					<MeleeDodgeChance>20</MeleeDodgeChance>
+					<MeleeHitChance>20</MeleeHitChance>
+					<MeleeDPS>0.5</MeleeDPS>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>GR_BloodFrenzy</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>blood frenzy</label>
+		<description>This creature has been victim of a frenzied attack.</description>
+		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>true</isBad>
+		<comps>
+			
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-2</severityPerDayNotImmune>
+			</li>
+			<li Class="GeneticRim.HediffCompProperties_BloodFrenzy">
+				
+			</li>
+			
+		</comps>
+		<stages>
+			<li>
+				
+				<capMods>
+					
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+					
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>GR_Frenzied</defName>
+		<label>frenzied</label>
+		<description>The smell of its enemies' blood has filled this hybrid with a frenzy.</description>
+		<makesSickThought>false</makesSickThought>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(255,95,95)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>GR_Exhausted</stateEffecter>
+				<severityIndices>
+					<min>0</min>
+					<max>1</max>
+				</severityIndices>
+			</li>
+			
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>6000</min>
+					<max>6000</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>1.0</offset>
+					</li>
+				</capMods>
+			</li>
+			
 		</stages>
 	</HediffDef>
 	<HediffDef>
@@ -106,7 +222,6 @@
 						<offset>-0.15</offset>
 					</li>
 				</capMods>
-
 			</li>
 			<li>
 				<label>serious</label>
@@ -118,7 +233,6 @@
 						<offset>-0.25</offset>
 					</li>
 				</capMods>
-
 			</li>
 			<li>
 				<label>extreme</label>
@@ -130,11 +244,9 @@
 						<setMax>0.10</setMax>
 					</li>
 				</capMods>
-
 			</li>
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_HairballDamage</defName>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -183,7 +295,6 @@
 						<offset>-0.35</offset>
 					</li>
 				</capMods>
-
 			</li>
 			<li>
 				<label>serious</label>
@@ -195,7 +306,6 @@
 						<offset>-0.5</offset>
 					</li>
 				</capMods>
-
 			</li>
 			<li>
 				<label>extreme</label>
@@ -207,7 +317,6 @@
 						<setMax>0.05</setMax>
 					</li>
 				</capMods>
-
 			</li>
 			<li>
 				<label>nauseating</label>
@@ -223,11 +332,9 @@
 						<setMax>0.5</setMax>
 					</li>
 				</capMods>
-
 			</li>
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_Kamikaze</defName>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -237,7 +344,6 @@
 		<lethalSeverity>0.05</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
 		<scenarioCanAdd>true</scenarioCanAdd>
-
 		<stages>
 			<li>
 				<label>initial-hidden</label>
@@ -245,16 +351,13 @@
 			<li>
 				<label>critical</label>
 				<minSeverity>0.04</minSeverity>
-
 			</li>
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_AdrenalineBurst</defName>
-		<label>adrenaline burst</label>
-		<description>Adrenaline burst greatly increases the speed of the hybrid for a while, and then it needs to be recharged to be used again.</description>
+		<label>adrenaline rush</label>
+		<description>Adrenaline rush greatly increases the speed of the hybrid for a while, and then it needs to be recharged to be used again.</description>
 		<makesSickThought>false</makesSickThought>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
@@ -262,14 +365,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
-			<li Class="HediffCompProperties_Effecter">
-				<stateEffecter>GR_Exhausted</stateEffecter>
-				<severityIndices>
-					<min>1</min>
-					<max>2</max>
-				</severityIndices>
-			</li>
+			
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>60</severityPerDay>
 			</li>
@@ -281,8 +377,7 @@
 			</li>
 		</comps>
 		<stages>
-
-			<li>   
+			<li>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -290,7 +385,6 @@
 					</li>
 				</capMods>
 			</li>
-
 			<li>
 				<label>exhausted</label>
 				<restFallFactorOffset>2.0</restFallFactorOffset>
@@ -300,14 +394,10 @@
 						<capacity>Moving</capacity>
 						<offset>-0.75</offset>
 					</li>
-				</capMods>		
-
-
+				</capMods>
 			</li>
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_Stamina</defName>
 		<label>increased stamina</label>
@@ -319,7 +409,6 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>GR_Exhausted</stateEffecter>
 				<severityIndices>
@@ -338,33 +427,24 @@
 			</li>
 		</comps>
 		<stages>
-
-			<li>   
+			<li>
 				<painOffset>-0.30</painOffset>
 				<painFactor>0.5</painFactor>
-
 				<statOffsets>
 					<ArmorRating_Blunt>1</ArmorRating_Blunt>
 					<ArmorRating_Sharp>1</ArmorRating_Sharp>
-
 				</statOffsets>
 			</li>
-
 			<li>
 				<label>exhausted</label>
 				<minSeverity>1</minSeverity>
-
-
 			</li>
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_CatReflexes</defName>
 		<label>cat reflexes</label>
 		<description>Cat reflexes greatly increases the speed and melee dodge chance of the hybrid for a while, and then it needs to be recharged to be used again.</description>
-
 		<makesSickThought>false</makesSickThought>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
@@ -372,7 +452,6 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>GR_Exhausted</stateEffecter>
 				<severityIndices>
@@ -391,11 +470,10 @@
 			</li>
 		</comps>
 		<stages>
-
-			<li>   
+			<li>
 				<statOffsets>
-					<MeleeDodgeChance>25</MeleeDodgeChance>			
-				</statOffsets>	
+					<MeleeDodgeChance>25</MeleeDodgeChance>
+				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -403,19 +481,12 @@
 					</li>
 				</capMods>
 			</li>
-
 			<li>
 				<label>exhausted</label>
 				<minSeverity>1</minSeverity>
-
-
 			</li>
-
 		</stages>
 	</HediffDef>
-
-
-
 	<HediffDef>
 		<defName>GR_KeenSenses</defName>
 		<label>keen senses</label>
@@ -427,7 +498,6 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>GR_Exhausted</stateEffecter>
 				<severityIndices>
@@ -446,8 +516,7 @@
 			</li>
 		</comps>
 		<stages>
-
-			<li>   
+			<li>
 				<capMods>
 					<li>
 						<capacity>Sight</capacity>
@@ -459,17 +528,12 @@
 					</li>
 				</capMods>
 			</li>
-
 			<li>
 				<label>exhausted</label>
 				<minSeverity>1</minSeverity>
-
-
 			</li>
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_InsectClouds</defName>
 		<label>releasing insect clouds</label>
@@ -481,7 +545,6 @@
 		<hediffClass>GeneticRim.Hediff_InsectClouds</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>GR_Exhausted</stateEffecter>
 				<severityIndices>
@@ -500,22 +563,15 @@
 			</li>
 		</comps>
 		<stages>
-
 			<li>   
 
 			</li>
 			<li>
 				<label>recovering</label>
 				<minSeverity>1</minSeverity>
-
-
-
 			</li>
-
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_Burrowing</defName>
 		<label>burrowing underground</label>
@@ -527,7 +583,6 @@
 		<hediffClass>GeneticRim.Hediff_Burrowing</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>GR_Exhausted</stateEffecter>
 				<severityIndices>
@@ -546,27 +601,18 @@
 			</li>
 		</comps>
 		<stages>
-
-			<li>   
+			<li>
 				<statOffsets>
 					<ArmorRating_Blunt>1000</ArmorRating_Blunt>
 					<ArmorRating_Sharp>1000</ArmorRating_Sharp>
-
 				</statOffsets>
-
 			</li>
 			<li>
 				<label>recovering</label>
 				<minSeverity>1</minSeverity>
-
-
-
 			</li>
-
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_Stampeding</defName>
 		<label>stampeding</label>
@@ -578,7 +624,6 @@
 		<hediffClass>GeneticRim.Hediff_StampedeClouds</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>GR_Exhausted</stateEffecter>
 				<severityIndices>
@@ -597,8 +642,7 @@
 			</li>
 		</comps>
 		<stages>
-
-			<li>   
+			<li>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -606,17 +650,12 @@
 					</li>
 				</capMods>
 			</li>
-
 			<li>
 				<label>recovering</label>
 				<minSeverity>1</minSeverity>
-
-
 			</li>
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_CausedPoisonCloud</defName>
 		<label>recently released poison cloud</label>
@@ -628,15 +667,13 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
-
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>GR_Exhausted</stateEffecter>
 				<severityIndices>
 					<min>1</min>
 					<max>2</max>
 				</severityIndices>
-			</li>  
+			</li>
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>
 					<min>9000</min>
@@ -645,20 +682,12 @@
 			</li>
 		</comps>
 		<stages>
-
-
 			<li>
 				<label>recovering</label>
 				<minSeverity>1</minSeverity>
-
-
-
 			</li>
-
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_CausedHorror</defName>
 		<label>recently invoked the insanity of That Which Man Is Not Meant to Know</label>
@@ -670,9 +699,6 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
-
-
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>
 					<min>9000</min>
@@ -681,21 +707,12 @@
 			</li>
 		</comps>
 		<stages>
-
-
 			<li>
 				<label>recovering</label>
 				<minSeverity>1</minSeverity>
-
-
-
 			</li>
-
-
 		</stages>
 	</HediffDef>
-
-
 	<HediffDef>
 		<defName>GR_CausedPowerBeam</defName>
 		<label>recently called an orbital power beam</label>
@@ -707,9 +724,6 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
-
-
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>
 					<min>4500</min>
@@ -718,20 +732,12 @@
 			</li>
 		</comps>
 		<stages>
-
-
 			<li>
 				<label>recharging</label>
 				<minSeverity>1</minSeverity>
-
-
-
 			</li>
-
-
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_VentedExhaust</defName>
 		<label>recently vented exhaust gasses</label>
@@ -743,9 +749,6 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-
-
-
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>
 					<min>9000</min>
@@ -754,30 +757,19 @@
 			</li>
 		</comps>
 		<stages>
-
-
 			<li>
 				<label>recovering</label>
 				<minSeverity>1</minSeverity>
-
-
-
 			</li>
-
-
 		</stages>
 	</HediffDef>
-
-
 	<HediffDef>
 		<defName>GR_NoPain</defName>
-
 		<label>no pain sensitivity</label>
 		<description>This hybrid has a reduced pain sensitivity, and it takes longer to be downed due to pain.</description>
 		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-
 		<stages>
 			<li>
 				<painFactor>0.5</painFactor>
@@ -787,33 +779,26 @@
 			</li>
 		</stages>
 	</HediffDef>
-
 	<HediffDef>
 		<defName>GR_MeleeDodge</defName>
-
 		<label>melee dodging</label>
 		<description>This hybrid is very agile and receives a considerable bonus to melee dodge.</description>
 		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-
 		<stages>
 			<li>
-
 				<statOffsets>
 					<MeleeDodgeChance>25</MeleeDodgeChance>
 				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>
-
 	<HediffDef ParentName="InfectionBase">
 		<defName>GR_ChickenRimPox</defName>
 		<label>rimpox</label>
 		<description>An infectious disease acting like a very powerful flu.</description>
-
 		<taleOnVisible>IllnessRevealed</taleOnVisible>
-
 		<makesSickThought>true</makesSickThought>
 		<tendable>true</tendable>
 		<comps>
@@ -829,9 +814,7 @@
 			</li>
 		</comps>
 		<stages>
-
 			<li>
-
 				<label>minor</label>
 				<capMods>
 					<li>
@@ -842,7 +825,6 @@
 						<capacity>Manipulation</capacity>
 						<offset>-0.3</offset>
 					</li>
-
 				</capMods>
 			</li>
 			<li>
@@ -858,7 +840,6 @@
 						<capacity>Manipulation</capacity>
 						<offset>-0.5</offset>
 					</li>
-
 				</capMods>
 			</li>
 			<li>
@@ -874,12 +855,8 @@
 						<capacity>Manipulation</capacity>
 						<offset>-0.75</offset>
 					</li>
-
 				</capMods>
 			</li>
 		</stages>
 	</HediffDef>
-
-
-
 </Defs>

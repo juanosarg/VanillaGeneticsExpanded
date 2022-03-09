@@ -489,10 +489,8 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="CompProperties_Shearable">
-				<woolDef>GR_MuffalowolfWool</woolDef>
-				<shearIntervalDays>25</shearIntervalDays>
-				<woolAmount>90</woolAmount>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_PackTactics</initialAbility>
 			</li>
 			
 		</comps>
@@ -508,7 +506,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<wildness>0.5</wildness>
 			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
@@ -538,6 +536,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Muffalowolf</defName>
@@ -601,143 +612,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	<!-- Muffalo - Rat -->
-	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Muffalorat</defName>
-		<label>muffalorat</label>
-		<description>A Muffalo / Rat hybrid. A short-lived pack beast that breeds really fast.\n\nUseful abilities: Acts as a pack beast. Produces small amounts of milk and wool at a quite fast rate. Fast breeding.</description>
-		<statBases>
-			<MoveSpeed>5</MoveSpeed>
-			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
-			<MarketValue>105</MarketValue>
-			<FilthRate>4</FilthRate>
-		</statBases>
-		<tools>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>1.35</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<comps>
-			<li Class="CompProperties_Milkable">
-				<milkDef>Milk</milkDef>
-				<milkIntervalDays>1</milkIntervalDays>
-				<milkAmount>6</milkAmount>
-			</li>
-			<li Class="CompProperties_Shearable">
-				<woolDef>WoolMuffalo</woolDef>
-				<shearIntervalDays>1</shearIntervalDays>
-				<woolAmount>5</woolAmount>
-			</li>
-			
-		</comps>
-		<race>
-			
-			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<roamMtbDays>2</roamMtbDays>
-			<predator>false</predator>
-			<fleshType>GR_Normal</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<baseBodySize>1.4</baseBodySize>
-			<baseHungerRate>0.35</baseHungerRate>
-			<baseHealthScale>1.5</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<mateMtbHours>3</mateMtbHours>
-			<gestationPeriodDays>6</gestationPeriodDays>
-			<wildness>0.5</wildness>
-			<useLeatherFrom>Muffalo</useLeatherFrom>
-			<useMeatFrom>Muffalo</useMeatFrom>
-			<packAnimal>true</packAnimal>
-			<lifeExpectancy>4</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.07</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.3</minAge>
-					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
-					<soundDeath>Pawn_Muffalo_Death</soundDeath>
-					<soundCall>Pawn_Muffalo_Call</soundCall>
-					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalGenetic</li>
-		</tradeTags>
-	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_Muffalorat</defName>
-		<label>muffalorat</label>
-		<race>GR_Muffalorat</race>
-		<combatPower>90</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>1</ecoSystemWeight>
-		<lifeStages>
-			<li>
-				<label>muffalorat calf</label>
-				<labelPlural>muffalorat calves</labelPlural>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Muffalorat</texPath>
-					<drawSize>2.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Dessicated_Muffalorat</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Muffalorat</texPath>
-					<drawSize>2.9</drawSize>
-					<shadowData>
-						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Dessicated_Muffalorat</texPath>
-					<drawSize>2.9</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Muffalorat</texPath>
-					<drawSize>4</drawSize>
-					<shadowData>
-						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Dessicated_Muffalorat</texPath>
-					<drawSize>4</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-		<modExtensions>
-			<li Class="GeneticRim.DefExtension_Hybrid">
-				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
-				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
-				<carryingIncrease>true</carryingIncrease>
-				<carryingFactor>1.5</carryingFactor>
-			</li>
-		</modExtensions>
-	</PawnKindDef>
 	<!-- Muffalo - Cat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalocat</defName>
@@ -792,15 +666,17 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_Milkable">
-				<milkDef>Milk</milkDef>
-				<milkIntervalDays>2</milkIntervalDays>
-				<milkAmount>12</milkAmount>
+				<milkDef>GR_WolffaloMilk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>15</milkAmount>
 			</li>
 			
-			<li Class="CompProperties_Shearable">
-				<woolDef>GR_HairballWool</woolDef>
-				<shearIntervalDays>12</shearIntervalDays>
-				<woolAmount>24</woolAmount>
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>GR_ThickHybridWool</thingToSpawn>
+				<spawnCount>50</spawnCount>
+				<spawnIntervalRange>420000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
@@ -820,7 +696,7 @@
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>None</trainability>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<wildness>0.5</wildness>
 			<roamMtbDays>2</roamMtbDays>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
@@ -851,6 +727,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Muffalocat</defName>
@@ -914,4 +803,156 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	<!-- Muffalo - Rat -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Muffalorat</defName>
+		<label>muffalorat</label>
+		<description>A Muffalo / Rat hybrid. A short-lived pack beast that breeds really fast.\n\nUseful abilities: Acts as a pack beast. Produces small amounts of milk and wool at a quite fast rate. Fast breeding.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
+			<MarketValue>105</MarketValue>
+			<FilthRate>4</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>1.35</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Milkable">
+				<milkDef>GR_RatMilk</milkDef>
+				<milkIntervalDays>1</milkIntervalDays>
+				<milkAmount>6</milkAmount>
+			</li>
+			
+			<li Class="CompProperties_Shearable">
+				<woolDef>GR_ThickHybridWool</woolDef>
+				<shearIntervalDays>1</shearIntervalDays>
+				<woolAmount>5</woolAmount>
+			</li>
+			
+		</comps>
+		<race>
+			
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<roamMtbDays>2</roamMtbDays>
+			<predator>false</predator>
+			<fleshType>GR_Normal</fleshType>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<baseBodySize>1</baseBodySize>
+			<baseHungerRate>0.35</baseHungerRate>
+			<baseHealthScale>1.5</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<mateMtbHours>3</mateMtbHours>
+			<gestationPeriodDays>7</gestationPeriodDays>
+			<wildness>0.5</wildness>
+			<useLeatherFrom>Muffalo</useLeatherFrom>
+			<useMeatFrom>Muffalo</useMeatFrom>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.07</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Muffalorat</defName>
+		<label>muffalorat</label>
+		<race>GR_Muffalorat</race>
+		<combatPower>90</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>muffalorat calf</label>
+				<labelPlural>muffalorat calves</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Muffalorat</texPath>
+					<drawSize>2.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Dessicated_Muffalorat</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Muffalorat</texPath>
+					<drawSize>2.9</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Dessicated_Muffalorat</texPath>
+					<drawSize>2.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Muffalorat</texPath>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffalorat/Dessicated_Muffalorat</texPath>
+					<drawSize>4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
 </Defs>

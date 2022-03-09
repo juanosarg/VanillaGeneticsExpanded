@@ -6,6 +6,26 @@
 		<label>vicious slash</label>
 		<workerClass>GeneticRim.DamageWorker_GoForTheHead</workerClass>
 	</DamageDef>
+	<DamageDef ParentName="CutBase">
+		<defName>GR_DoubleSlash</defName>
+		<label>double slash</label>
+		<workerClass>GeneticRim.DamageWorker_Double</workerClass>
+	</DamageDef>
+	<DamageDef ParentName="Bite">
+		<defName>GR_DevastatingBite</defName>
+		<label>devastating bite</label>
+		<workerClass>GeneticRim.DamageWorker_DevastatingBite</workerClass>
+	</DamageDef>
+	<DamageDef ParentName="CutBase">
+		<defName>GR_BloodFrenzy</defName>
+		<label>blood frenzy</label>
+		<additionalHediffs>
+			<li>
+				<hediff>GR_BloodFrenzy</hediff>
+				
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 	<DamageDef ParentName="Bite">
 		<defName>GR_VeryToxicBite</defName>
 		<label>virulent toxic bite</label>

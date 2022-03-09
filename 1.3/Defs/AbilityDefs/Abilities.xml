@@ -89,6 +89,23 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	
+	 <AbilityDef ParentName="RoleAuraBuffBase">
+    <defName>GR_PackTactics</defName>
+    <label>pack tactics</label>
+    <description>Collaborate with other nearby muffalowolves to bring down prey.</description>
+    <iconPath>ui/commands/GR_PackTactics</iconPath>
+   
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>GR_PackTactics</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
 
 
 

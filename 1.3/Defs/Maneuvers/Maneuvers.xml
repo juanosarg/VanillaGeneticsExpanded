@@ -14,6 +14,45 @@
 		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
 	<ManeuverDef>
+		<defName>GR_BloodFrenzy</defName>
+		<requiredCapacity>GR_BloodFrenzy</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>GR_BloodFrenzy</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	<ManeuverDef>
+		<defName>GR_DoubleSlash</defName>
+		<requiredCapacity>GR_DoubleSlash</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>GR_DoubleSlash</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	<ManeuverDef>
+		<defName>GR_DevastatingBite</defName>
+		<requiredCapacity>GR_DevastatingBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>GR_DevastatingBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	<ManeuverDef>
 		<defName>GR_VeryToxicBite</defName>
 		<requiredCapacity>GR_VeryToxicBite</requiredCapacity>
 		<verb>

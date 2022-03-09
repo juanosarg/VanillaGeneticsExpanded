@@ -206,7 +206,7 @@
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_WolffaloMilk</defName>
-		<label>wolffalo milk</label>
+		<label>hairy milk</label>
 		<description>This milk seems to be filled with strands of grey wool. Disgusting, and quite hard to drink...</description>
 		<graphicData>
 			<texPath>Things/Item/GR_WoolMilk</texPath>

@@ -5,6 +5,18 @@
 		<label>vicious slash</label>
 	</ToolCapacityDef>
 	<ToolCapacityDef>
+		<defName>GR_BloodFrenzy</defName>
+		<label>blood frenzy</label>
+	</ToolCapacityDef>
+	<ToolCapacityDef>
+		<defName>GR_DoubleSlash</defName>
+		<label>double slash</label>
+	</ToolCapacityDef>
+	<ToolCapacityDef>
+		<defName>GR_DevastatingBite</defName>
+		<label>devastating bite</label>
+	</ToolCapacityDef>
+	<ToolCapacityDef>
 		<defName>GR_VeryToxicBite</defName>
 		<label>virulent toxic bite</label>
 	</ToolCapacityDef>

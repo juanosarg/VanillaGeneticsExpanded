@@ -2,7 +2,7 @@
 <Defs>
 	<TraderKindDef>
 		<defName>GR_Outlander_CaravanTrader</defName>
-		<label>genetics supplies</label>
+		<label>genetics supplier</label>
 		<stockGenerators>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>ComponentIndustrial</thingDef>
@@ -44,41 +44,36 @@
 				<thingDef>GR_BoosterTempo</thingDef>
 				<countRange>1~2</countRange>
 			</li>
-			 <li Class="StockGenerator_Category">
-        <categoryDef>GR_GeneticMaterialTierOne</categoryDef>
-        <thingDefCountRange>1~3</thingDefCountRange>
-        
-      </li>
-	   <li Class="StockGenerator_Category">
-        <categoryDef>GR_GeneticMaterialTierTwoOrThree</categoryDef>
-        <thingDefCountRange>0~2</thingDefCountRange>
-        
-      </li>
-	   <li Class="StockGenerator_Category">
-        <categoryDef>GR_Genoframes</categoryDef>
-        <thingDefCountRange>1~3</thingDefCountRange>
-        
-      </li>
-	  
+			<li Class="StockGenerator_Category">
+				<categoryDef>GR_GeneticMaterialTierOne</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>GR_GeneticMaterialTierTwoOrThree</categoryDef>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>GR_Genoframes</categoryDef>
+				<thingDefCountRange>1~4</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
 			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
-		
 		</stockGenerators>
 	</TraderKindDef>
 	<TraderKindDef>
 		<defName>GR_OrbitalTrader</defName>
-		<label>genetics supplies</label>
+		<label>genetics supplier</label>
 		<orbital>true</orbital>
 		<stockGenerators>
-			
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>GR_EmuFatOintment</thingDef>
 			</li>
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>GR_MechaMilk</thingDef>
 			</li>
-			
-			
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>GR_HugeBearPelt</thingDef>
 			</li>
@@ -100,11 +95,9 @@
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>GR_JamonSerrano</thingDef>
 			</li>
-			
 			<li Class="StockGenerator_BuySingleDef">
 				<thingDef>GR_Cryofuel</thingDef>
 			</li>
-			
 			<li Class="StockGenerator_BuyTradeTag">
 				<tag>Art</tag>
 			</li>

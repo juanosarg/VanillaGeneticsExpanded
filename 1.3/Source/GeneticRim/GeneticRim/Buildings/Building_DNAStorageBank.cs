@@ -150,7 +150,7 @@ namespace GeneticRim
             {
                 
                 Building_ArchocentipedeFormer building = thing as Building_ArchocentipedeFormer;
-                if (building != null)
+                if (building != null && this.selectedGenome!=null)
                 {
                     if (building.FacilitiesAndProgress.ContainsKey(this.selectedGenome))
                     {
