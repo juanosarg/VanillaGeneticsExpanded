@@ -31,6 +31,7 @@ namespace GeneticRim
 		public static ThingDef         GR_ArchoGrowthcell;
 		public static ThingDef         GR_ArchoWomb;
 		public static ThingDef         GR_Wolfchicken;
+		public static ThingDef         GR_Catffalo;
 		public static PawnKindDef      GR_ArchotechCentipede;
 		public static HediffDef        GR_AnimalControlHediff;
 		public static HediffDef        GR_ExtractedBrain;

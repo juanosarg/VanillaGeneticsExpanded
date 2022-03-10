@@ -6,7 +6,7 @@
 		<label>catbear</label>
 		<description>A cat / bear hybrid. Catbears are intelligent and affectionate, a perfect companion. They are also quite more resilient than your average cat.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight, and a short nuzzle period.</description>
 		<statBases>
-			<MoveSpeed>4</MoveSpeed>
+			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>150</MarketValue>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 		</statBases>
@@ -16,14 +16,14 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>6</power>
+				<power>4</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>10</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -33,14 +33,14 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>6</power>
+				<power>4</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>10</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -49,7 +49,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>15</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.7</chanceFactor>
@@ -57,7 +57,7 @@
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>20</amount>
+							<amount>15</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -80,6 +80,18 @@
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+				<customThingToDig>			
+					<li>Rat</li>
+					
+				</customThingToDig>
+				<customAmountToDig>				
+					<li>1</li>
+					
+				</customAmountToDig>
+				<ticksToDig>120000</ticksToDig>
+				<resultIsCorpse>true</resultIsCorpse>
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
@@ -91,13 +103,13 @@
 			<baseBodySize>0.4</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<foodType>Corpse, CarnivoreAnimal, OvivoreAnimal</foodType>
 			<useLeatherFrom>Cat</useLeatherFrom>
 			<useMeatFrom>Cat</useMeatFrom>
 			<wildness>0.36</wildness>
 			<trainability>Intermediate</trainability>
 			<nuzzleMtbHours>8</nuzzleMtbHours>
-			<gestationPeriodDays>24</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -108,7 +120,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -134,6 +146,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catbear</defName>
@@ -257,7 +282,7 @@
 			<wildness>0.36</wildness>
 			<trainability>Intermediate</trainability>
 			<nuzzleMtbHours>8</nuzzleMtbHours>
-			<gestationPeriodDays>24</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -268,7 +293,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -415,7 +440,7 @@
 			<wildness>0.36</wildness>
 			<trainability>Intermediate</trainability>
 			<nuzzleMtbHours>8</nuzzleMtbHours>
-			<gestationPeriodDays>16</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -426,7 +451,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -561,20 +586,10 @@
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
-			<li Class="CompProperties_Milkable">
-				<milkDef>Milk</milkDef>
-				<milkIntervalDays>1</milkIntervalDays>
-				<milkAmount>5</milkAmount>
-			</li>
-			<li Class="CompProperties_Shearable">
-				<woolDef>WoolMuffalo</woolDef>
-				<shearIntervalDays>1</shearIntervalDays>
-				<woolAmount>3</woolAmount>
-			</li>
+			
 		</comps>
 		<race>
-			<fleshType>GR_Normal</fleshType>
-			
+			<fleshType>GR_Normal</fleshType>			
 			<body>QuadrupedAnimalWithHooves</body>
 			<predator>false</predator>
 			<baseBodySize>0.4</baseBodySize>
@@ -588,7 +603,7 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<trainability>Intermediate</trainability>
 			<nuzzleMtbHours>8</nuzzleMtbHours>
-			<gestationPeriodDays>24</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -599,7 +614,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -625,6 +640,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catffalo</defName>
@@ -786,7 +814,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>3</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -961,7 +989,7 @@
 			<wildness>0.36</wildness>
 			<trainability>Advanced</trainability>
 			<nuzzleMtbHours>8</nuzzleMtbHours>
-			<gestationPeriodDays>24</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -972,7 +1000,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

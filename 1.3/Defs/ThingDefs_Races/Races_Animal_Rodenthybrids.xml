@@ -559,6 +559,7 @@
 		<description>A Rat / Muffalo hybrid. This is a very large, muscular and resilient rat. It can be used as a pack animal, and also produces some milk of questionable quality.\n\nUseful abilities: Acts as a pack beast. Produces small amounts of milk and wool at a quite fast rate. Fast breeding.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
+			<ToxicSensitivity>0</ToxicSensitivity>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<MarketValue>105</MarketValue>
 			<FilthRate>10</FilthRate>
@@ -582,19 +583,7 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<comps>
-			<li Class="CompProperties_Milkable">
-				<milkDef>GR_RatMilk</milkDef>
-				<milkIntervalDays>1</milkIntervalDays>
-				<milkAmount>7</milkAmount>
-			</li>
-			<li Class="CompProperties_Shearable">
-				<woolDef>WoolMuffalo</woolDef>
-				<shearIntervalDays>1</shearIntervalDays>
-				<woolAmount>5</woolAmount>
-			</li>
-			
-		</comps>
+		
 		<race>
 			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -605,9 +594,9 @@
 			<baseBodySize>1.75</baseBodySize>
 			<baseHungerRate>0.85</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
+			<foodType>Corpse,VegetarianRoughAnimal</foodType>
 			<mateMtbHours>3</mateMtbHours>
-			<gestationPeriodDays>7</gestationPeriodDays>
+			<gestationPeriodDays>9</gestationPeriodDays>
 			<wildness>0.5</wildness>
 			<useLeatherFrom>Rat</useLeatherFrom>
 			<useMeatFrom>Rat</useMeatFrom>
@@ -638,6 +627,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Ratffalo</defName>
@@ -719,7 +721,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>8</power>
+				<power>5</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -736,7 +738,7 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>8</power>
+				<power>5</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -752,17 +754,10 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>16</power>
+				<power>10</power>
 				<cooldownTime>2.1</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -828,6 +823,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Beaverwolf</defName>
@@ -901,12 +909,19 @@
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
+				
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>100</rateInTicks>
+
+			</li>
+
+		
 		</comps>
 		<tools>
 			<li>
 				<label>left claw</label>
 				<cooldownTime>1.35</cooldownTime>
-				<power>16</power>
+				<power>8</power>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -915,7 +930,7 @@
 			<li>
 				<label>right claw</label>
 				<cooldownTime>1.35</cooldownTime>
-				<power>16</power>
+				<power>8</power>
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
@@ -923,19 +938,12 @@
 			</li>
 			<li>
 				<cooldownTime>1.6</cooldownTime>
-				<power>21</power>
+				<power>12</power>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>22</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 		</tools>
 		<race>
@@ -951,7 +959,7 @@
 			<useLeatherFrom>Cougar</useLeatherFrom>
 			<useMeatFrom>Cougar</useMeatFrom>
 			<mateMtbHours>6</mateMtbHours>
-			<gestationPeriodDays>6</gestationPeriodDays>
+			<gestationPeriodDays>8</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.85</wildness>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
@@ -987,6 +995,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Rabbitcat</defName>
@@ -1024,7 +1045,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Rabbitcat</texPath>
-					<drawSize>3.1</drawSize>
+					<drawSize>2.7</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -1032,7 +1053,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Dessicated_Rabbitcat</texPath>
-					<drawSize>3.1</drawSize>
+					<drawSize>2.7</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
 					<bodyPartGroup>GR_FangsAttackTool</bodyPartGroup>

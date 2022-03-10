@@ -359,6 +359,7 @@
     <Compile Include="Gas\Gas_InsectClouds.cs" />
     <Compile Include="Gas\Gas_PoisonCloud.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
+    <Compile Include="Harmony\ForagedFoodPerDayCalculator_GetForagedFoodCountPerInterval_Patch.cs" />
     <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
     <Compile Include="Harmony\CompHatcher_Hatch.cs" />
     <Compile Include="Harmony\Hediff_Pregnant_DoBirthSpawn.cs" />
