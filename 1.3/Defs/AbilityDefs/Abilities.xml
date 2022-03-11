@@ -78,6 +78,26 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_DetonatePoison</defName>
+		<label>detonate venomous chemfuel</label>
+		<description>Remotely detonate the venomous chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
+		<iconPath>UI/Commands/Detonate</iconPath>
+		<warmupStartSound>GR_Wick</warmupStartSound>
+		<verbProperties><range>1.9</range></verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_Detonate">
+
+				<radius>2.9</radius>
+				<damageType>GR_ToxicExplosion</damageType>
+				<thingCreated>Filth_Fuel</thingCreated>
+				<soundCreated>GR_Pop</soundCreated>
+				<thingCreatedChance>0.25</thingCreatedChance>
+				<damageUser>true</damageUser>
+			</li>
+		</comps>
+	</AbilityDef>
 
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_ChemfuelDischarge</defName>

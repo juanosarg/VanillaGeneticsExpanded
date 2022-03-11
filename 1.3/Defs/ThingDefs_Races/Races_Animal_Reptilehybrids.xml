@@ -81,28 +81,7 @@
 			</li>
 		</tools>
 
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>1</accuracyShort>
-				<accuracyMedium>1</accuracyMedium>
-				<accuracyLong>1</accuracyLong>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<minRange>2</minRange>
-				<range>20</range>
-				<soundCast>GR_PoisonBlast</soundCast>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<label>poison spit</label>
-				<commonality>1</commonality>
-			</li>
-
-
-		</verbs>
-
+		
 		<race>
 			
 			<fleshType>GR_Normal</fleshType>
@@ -111,8 +90,8 @@
 			<baseBodySize>3.5</baseBodySize>
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>2.75</baseHealthScale>
-			<lifeExpectancy>25</lifeExpectancy>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
@@ -147,6 +126,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 
@@ -160,7 +152,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearodile/Bearodile</texPath>
-					<drawSize>2.4</drawSize>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
 						<offset>(0,0,-0.2)</offset>
@@ -168,13 +160,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>2.4</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearodile/Bearodile</texPath>
-					<drawSize>3.0</drawSize>
+					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -182,13 +174,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearodile/Bearodile</texPath>
-					<drawSize>3.7</drawSize>
+					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -196,7 +188,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
-					<drawSize>3.7</drawSize>
+					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -218,7 +210,7 @@
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
 			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>400</MarketValue>
-			<ToxicSensitivity>0</ToxicSensitivity>
+		
 		</statBases>
 		
 		<tools>
@@ -250,6 +242,12 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_DetonatePoison</initialAbility>
+			</li>
+			
+		</comps>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -273,8 +271,7 @@
 		</verbs>
 
 		<race>
-			<fleshType>GR_Normal</fleshType>
-			
+			<fleshType>GR_Normal</fleshType>			
 			<body>Snake</body>
 			<trainability>Intermediate</trainability>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_ToxicExplosion</deathActionWorkerClass>
@@ -282,8 +279,8 @@
 			<baseBodySize>1.5</baseBodySize>
 			<baseHungerRate>0.535</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
-			<lifeExpectancy>25</lifeExpectancy>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
@@ -319,6 +316,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 
@@ -462,11 +472,9 @@
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>0.3</baseBodySize>
-			<roamMtbDays>7</roamMtbDays>
 			<baseHungerRate>.35</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
-			<lifeExpectancy>10</lifeExpectancy>
-			<gestationPeriodDays>7</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Chicken</useLeatherFrom>
@@ -474,7 +482,7 @@
 			<wildness>0.36</wildness>
 			<mateMtbHours>8</mateMtbHours>
 			<intelligence>Animal</intelligence>
-
+			<trainability>Intermediate</trainability>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 
 			<lifeStageAges>
@@ -503,6 +511,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 
@@ -630,8 +651,8 @@
 			<baseBodySize>3.5</baseBodySize>
 			<baseHungerRate>.85</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
-			<lifeExpectancy>20</lifeExpectancy>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
@@ -825,7 +846,7 @@
 			<wildness>0.75</wildness>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<gestationPeriodDays>17.5</gestationPeriodDays>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<litterSizeCurve>
 				<points>
@@ -835,7 +856,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>20</lifeExpectancy>	
+			<lifeExpectancy>4</lifeExpectancy>	
 
 
 
@@ -1051,7 +1072,7 @@
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			<gestationPeriodDays>22.5</gestationPeriodDays>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>0.80</wildness>
@@ -1067,7 +1088,7 @@
 					<li>(3.5, 0)</li>
 				</points>
 			</litterSizeCurve>
-			<lifeExpectancy>25</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 
 
 
@@ -1237,8 +1258,8 @@
 			<baseBodySize>1.5</baseBodySize>
 			<baseHungerRate>0.3</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
-			<lifeExpectancy>25</lifeExpectancy>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<useLeatherFrom>Cobra</useLeatherFrom>

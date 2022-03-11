@@ -14,7 +14,7 @@ namespace GeneticRim
 
         public override void Tick()
         {
-           /* base.Tick();
+            base.Tick();
             try
             {
                 if (tickerInterval >= 18)
@@ -26,20 +26,16 @@ namespace GeneticRim
                         foreach (Thing current in hashSet)
                         {
                             Pawn pawn = current as Pawn;
-                            bool flag = (pawn != null);
-                            if (flag)
+
+                            if (pawn != null)
                             {
-                                if (DraftingList.draftable_animals.ContainsKey(pawn))
+                                if (pawn.def != InternalDefOf.GR_Boomsnake)
                                 {
-                                    if (!DraftingList.draftable_animals[pawn][7])
-                                    {
-                                        pawn.health.AddHediff(HediffDefOf.ToxicBuildup);
-                                        this.Destroy();
-                                    }
-                                }
-                                else {
+
                                     pawn.health.AddHediff(HediffDefOf.ToxicBuildup);
                                     this.Destroy();
+
+
                                 }
 
 
@@ -55,10 +51,10 @@ namespace GeneticRim
                 }
                 tickerInterval++;
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException)
             {
                 //A weird error is produced sometimes when GetThingList returns a NullReferenceException. I did a try-catch which is inellegant, but it works
-            }*/
+            }
 
         }
 
