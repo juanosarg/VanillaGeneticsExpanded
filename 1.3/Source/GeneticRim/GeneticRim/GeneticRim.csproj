@@ -340,6 +340,7 @@
     <Compile Include="Core.cs" />
     <Compile Include="DamageWorkers\DamageWorker_DevastatingBite.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Double.cs" />
+    <Compile Include="DamageWorkers\DamageWorker_GoForTheEyes.cs" />
     <Compile Include="DamageWorkers\DamageWorker_GoForTheHead.cs" />
     <Compile Include="DefExtensions\DefExtension_Hybrid.cs" />
     <Compile Include="DefExtensions\DefExtension_HybridChanceAlterer.cs" />

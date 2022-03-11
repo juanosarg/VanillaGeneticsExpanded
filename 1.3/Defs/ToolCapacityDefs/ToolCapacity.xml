@@ -5,6 +5,10 @@
 		<label>vicious slash</label>
 	</ToolCapacityDef>
 	<ToolCapacityDef>
+		<defName>GR_GoForTheEyes</defName>
+		<label>peck at the eyes</label>
+	</ToolCapacityDef>
+	<ToolCapacityDef>
 		<defName>GR_BloodFrenzy</defName>
 		<label>blood frenzy</label>
 	</ToolCapacityDef>

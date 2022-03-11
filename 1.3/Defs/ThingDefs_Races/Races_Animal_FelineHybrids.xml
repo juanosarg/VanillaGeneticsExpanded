@@ -75,19 +75,16 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
-				<customThingToDig>			
+				<customThingToDig>
 					<li>Rat</li>
-					
 				</customThingToDig>
-				<customAmountToDig>				
+				<customAmountToDig>
 					<li>1</li>
-					
 				</customAmountToDig>
 				<ticksToDig>120000</ticksToDig>
 				<resultIsCorpse>true</resultIsCorpse>
@@ -95,7 +92,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -252,23 +248,15 @@
 			</li>
 		</tools>
 		<comps>
-			
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
-				<gatheringIntervalDays>1</gatheringIntervalDays>
-				<resourceAmount>5</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
-			</li>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
 		<race>
-			<deathActionWorkerClass>GeneticRim.DeathActionWorker_SmallHairballExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>2</executionRange>
 			<fleshType>GR_Normal</fleshType>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -316,9 +304,42 @@
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>0.8</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>0.95</accuracyMedium>
+				<accuracyLong>0.8</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_FireSpit</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<burstShotCount>2</burstShotCount>
+				<minRange>1</minRange>
+				<range>6</range>
+				<forcedMissRadius>1</forcedMissRadius>
+				<soundCast>ThrowMolotovCocktail</soundCast>
+				<muzzleFlashScale>2</muzzleFlashScale>
+				<label>chemfuel spit</label>
+				<commonality>1</commonality>
+			</li>
+		</verbs>
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catalope</defName>
@@ -384,7 +405,7 @@
 		<tools>
 			<li>
 				<capacities>
-					<li>Bite</li>
+					<li>GR_GoForTheEyes</li>
 				</capacities>
 				<power>11</power>
 				<cooldownTime>2.1</cooldownTime>
@@ -411,14 +432,6 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_CatchickenEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_CatchickenEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>1</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -426,7 +439,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			
 			<body>GR_QuadrupedAnimalWithBeak</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.25</maxPreyBodySize>
@@ -477,6 +489,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catchicken</defName>
@@ -581,15 +606,13 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
-			
 		</comps>
 		<race>
-			<fleshType>GR_Normal</fleshType>			
+			<fleshType>GR_Normal</fleshType>
 			<body>QuadrupedAnimalWithHooves</body>
 			<predator>false</predator>
 			<baseBodySize>0.4</baseBodySize>
@@ -780,15 +803,18 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
+				<radius>8</radius>
+				<tickInterval>500</tickInterval>
+				<thoughtDef>GR_BunnyAround</thoughtDef>
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.25</maxPreyBodySize>
@@ -801,7 +827,7 @@
 			<wildness>0.36</wildness>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<trainability>Intermediate</trainability>
-			<nuzzleMtbHours>8</nuzzleMtbHours>
+			<nuzzleMtbHours>4</nuzzleMtbHours>
 			<mateMtbHours>1</mateMtbHours>
 			<gestationPeriodDays>5</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -840,6 +866,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catrabbit</defName>
@@ -967,15 +1006,16 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_NoFilth">
+		
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.25</maxPreyBodySize>
@@ -1026,6 +1066,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Catwolf</defName>

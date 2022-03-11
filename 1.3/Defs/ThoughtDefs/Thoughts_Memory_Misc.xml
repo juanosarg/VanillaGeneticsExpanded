@@ -19,6 +19,23 @@
 			</li>
 		</stages>
 	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>GR_BunnyAround</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>cute catrabbit</label>
+				<description>*faint sobs* that's the cutest thing I've ever seen</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 
 
 

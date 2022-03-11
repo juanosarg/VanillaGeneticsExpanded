@@ -687,6 +687,14 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<comps><li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+
+				<customThingsToDig><li>RawBerries</li></customThingsToDig>
+				<customAmountsToDig><li>15</li></customAmountsToDig>
+				<spawnForbidden>true</spawnForbidden>
+				<digOnlyOnGrowingSeason>true</digOnlyOnGrowingSeason>
+
+			</li></comps>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseBodySize>1</baseBodySize>

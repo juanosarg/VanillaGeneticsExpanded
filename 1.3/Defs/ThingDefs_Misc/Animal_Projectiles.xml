@@ -71,6 +71,27 @@
 
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="GR_BaseAnimalProjectile">
+		<defName>GR_FireSpit</defName>
+		<label>fire spit</label>
+		<graphicData>
+			<texPath>Things/Projectile/GR_FireSpit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<speed>20</speed>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<explosionRadius>1.1</explosionRadius>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.1</preExplosionSpawnChance>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			
+		</projectile>
+	</ThingDef>
 
 	<ThingDef ParentName="GR_BaseAnimalProjectile">
 		<defName>GR_IncendiaryMote</defName>

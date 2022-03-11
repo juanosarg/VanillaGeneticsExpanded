@@ -7,6 +7,11 @@
 		<workerClass>GeneticRim.DamageWorker_GoForTheHead</workerClass>
 	</DamageDef>
 	<DamageDef ParentName="CutBase">
+		<defName>GR_GoForTheEyes</defName>
+		<label>vicious pecking</label>
+		<workerClass>GeneticRim.DamageWorker_GoForTheEyes</workerClass>
+	</DamageDef>
+	<DamageDef ParentName="CutBase">
 		<defName>GR_DoubleSlash</defName>
 		<label>double slash</label>
 		<workerClass>GeneticRim.DamageWorker_Double</workerClass>
