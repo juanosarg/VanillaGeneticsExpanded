@@ -342,6 +342,7 @@
     <Compile Include="DamageWorkers\DamageWorker_Double.cs" />
     <Compile Include="DamageWorkers\DamageWorker_GoForTheEyes.cs" />
     <Compile Include="DamageWorkers\DamageWorker_GoForTheHead.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionWorker_AcidExplosion.cs" />
     <Compile Include="DefExtensions\DefExtension_Hybrid.cs" />
     <Compile Include="DefExtensions\DefExtension_HybridChanceAlterer.cs" />
     <Compile Include="DefExtensions\DefExtension_HybridFailure.cs" />

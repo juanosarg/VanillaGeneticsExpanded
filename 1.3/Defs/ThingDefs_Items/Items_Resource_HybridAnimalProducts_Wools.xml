@@ -89,6 +89,29 @@
 			<color>(218,201,168)</color>
 		</stuffProps>
 	</ThingDef>
+	<ThingDef ParentName="LeatherBase">
+		<defName>GR_HybridChitin</defName>
+		<label>hybrid chitin</label>
+		<description>Overlapping plates of hardened chitin. Really durable in combat, but provides little protection from weather.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/GR_Chitin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(154,125,94)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.2</MarketValue>
+			<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(154,125,94)</color>
+			<commonality>0</commonality>
+			<statFactors>
+				<MaxHitPoints>2</MaxHitPoints>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
 	
 	
 	

@@ -49,7 +49,9 @@ namespace GeneticRim
 		public static JobDef           GR_InsertArchotechGrowthCell;
 		public static JobDef           GR_ArchotechDNAExtractionJob;
 		public static SoundDef         GR_Pop;
-		
+		public static DamageDef        GR_Acid;
+
+
 
 
 	}

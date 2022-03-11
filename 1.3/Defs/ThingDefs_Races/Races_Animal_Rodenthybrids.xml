@@ -1021,17 +1021,17 @@
 				<labelPlural>rabbitcat kittens</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Rabbitcat</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Dessicated_Rabbitcat</texPath>
-					<drawSize>1</drawSize>
+					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Rabbitcat</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>1.85</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
 						<offset>(0,0,-0.25)</offset>
@@ -1039,13 +1039,13 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Dessicated_Rabbitcat</texPath>
-					<drawSize>2.1</drawSize>
+					<drawSize>1.85</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Rabbitcat</texPath>
-					<drawSize>2.7</drawSize>
+					<drawSize>2.3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -1053,7 +1053,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Dessicated_Rabbitcat</texPath>
-					<drawSize>2.7</drawSize>
+					<drawSize>2.3</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
 					<bodyPartGroup>GR_FangsAttackTool</bodyPartGroup>

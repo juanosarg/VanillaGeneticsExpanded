@@ -389,7 +389,7 @@
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ChickenspiderEggUnfertilized</defName>
 		<label>chickenspider egg (unfert.)</label>
-		<description>Unfertilized Chickenspider egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<description>Unfertilized Chickenspider egg. It can be eaten raw, but it's much, much better cooked. Since insectoid hybrids are always infertile, these eggs can never be fertilized.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
 		</graphicData>
@@ -399,25 +399,7 @@
 			<Nutrition>.2</Nutrition>
 		</statBases>
 	</ThingDef>
-	<ThingDef ParentName="EggFertBase">
-		<defName>GR_ChickenspiderEggFertilized</defName>
-		<label>chickenspider egg (fert.)</label>
-		<description>Fertilized Chickenspider egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-		</graphicData>
-		<statBases>
-			<MarketValue>7.0</MarketValue>
-			<Nutrition>.2</Nutrition>
-		</statBases>
-		<tradeability>None</tradeability>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>10</hatcherDaystoHatch>
-				<hatcherPawn>GR_Chickenspider</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
+	
 	<!-- Chickenlizard Egg -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ChickenlizardEggUnfertilized</defName>

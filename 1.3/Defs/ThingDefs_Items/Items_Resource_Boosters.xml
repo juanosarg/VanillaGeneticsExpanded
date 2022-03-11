@@ -94,7 +94,7 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/FertilityUnblocker</texPath>			
 		</graphicData>
-		<description>Compressed medicine that allows hybrids to develop functional sexual organs. Effectively allows hybrids to reproduce with the exact same species.</description>
+		<description>Compressed medicine that allows hybrids to develop functional sexual organs. Effectively allows hybrids to reproduce with the exact same species.\n\nNote: Insectoid hybrids are always incapable of reproducing.</description>
 		<statBases>
 			<MarketValue>28</MarketValue>
 		</statBases>
@@ -112,7 +112,7 @@
 		<graphicData>
 			<texPath>Things/Item/Boosters/GR_StabilizedFertilityUnblocker</texPath>			
 		</graphicData>
-		<description>Compressed medicine that allows hybrids to develop functional sexual organs. Effectively allows hybrids to reproduce with the exact same species.\n\nThis booster can't be crafted, only scavenged.</description>
+		<description>Compressed medicine that allows hybrids to develop functional sexual organs. Effectively allows hybrids to reproduce with the exact same species.\n\nThis booster can't be crafted, only scavenged.\n\nNote: Insectoid hybrids are always incapable of reproducing.</description>
 		<statBases>
 			<MarketValue>50</MarketValue>
 		</statBases>

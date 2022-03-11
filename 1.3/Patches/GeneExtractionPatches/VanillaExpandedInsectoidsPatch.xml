@@ -44,6 +44,31 @@
 						</GeneticRim.ExtractableAnimalsList>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_Chickenspider"]/comps/li[@Name="GR_ChickenspiderSilkComp"]/resourceDef</xpath>
+					<value>
+						
+							<resourceDef>VFEI_Spidersilk</resourceDef>
+						
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_Muffalopede"]/comps/li[@Name="GR_MuffalopedeJellyComp"]/resourceDef</xpath>
+					<value>
+						
+							<resourceDef>VFEI_RoyalInsectJelly</resourceDef>
+						
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_Muffalopede"]/comps/li[@Name="GR_MuffalopedeChitinComp"]/resourceDef</xpath>
+					<value>
+						
+							<resourceDef>VFEI_Chitin</resourceDef>
+						
+					</value>
+				</li>
 				
 
 				<li Class="PatchOperationAdd">
@@ -90,7 +115,7 @@
 							<skillRequirements>
 								<Intellectual>5</Intellectual>
 							</skillRequirements>
-							<researchPrerequisite>GR_InsectoidGenomeAdvanced</researchPrerequisite>
+							
 						</RecipeDef>
 
 						<RecipeDef>
@@ -133,7 +158,7 @@
 							<skillRequirements>
 								<Intellectual>5</Intellectual>
 							</skillRequirements>
-							<researchPrerequisite>GR_InsectoidGenomeAdvanced</researchPrerequisite>
+							
 						</RecipeDef>
 
 						<RecipeDef>
@@ -176,24 +201,10 @@
 							<skillRequirements>
 								<Intellectual>5</Intellectual>
 							</skillRequirements>
-							<researchPrerequisite>GR_InsectoidGenomeAdvanced</researchPrerequisite>
+							
 						</RecipeDef>
 
-						<ResearchProjectDef>
-							<defName>GR_InsectoidGenomeAdvanced</defName>
-							<label>advanced insectoid genome</label>
-							<tab>GR_GeneticReseach</tab>
-							<techLevel>Spacer</techLevel>
-							<description>Research ways to improve existing insectoid genetic material and develop it into specialized insectoids. This opens up experimenting with the bio-engineering lab and Vanilla Factions Expanded - Insectoids.</description>
-							<baseCost>2000</baseCost>
-							<prerequisites>
-								<li>GR_InsectoidGenome</li>
-								<li>GR_AdvancedGeneticEngineering</li>
-							</prerequisites>
-
-							<researchViewX>1</researchViewX>
-							<researchViewY>2</researchViewY>
-						</ResearchProjectDef>
+						
 
 
 
@@ -209,15 +220,10 @@
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="VFEI_BioengineeringIncubator"]/costList</xpath>
 					<value>
-						<GR_OrganicPulp>20</GR_OrganicPulp>
+						<GR_GenoframeLegendary>1</GR_GenoframeLegendary>
 					</value>
 				</li>				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="VFEI_BioengineeringIncubator"]</xpath>
-					<value>
-						<researchPrerequisites><li>GR_InsectoidGenomeAdvanced</li></researchPrerequisites>
-					</value>
-				</li>	
+				
 				
 
 

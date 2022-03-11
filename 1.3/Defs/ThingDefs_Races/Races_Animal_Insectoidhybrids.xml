@@ -30,8 +30,8 @@
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<MarketValue>450</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>
@@ -54,15 +54,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_RoyalJelly</resourceDef>
-				<gatheringIntervalDays>20</gatheringIntervalDays>
-				<resourceAmount>15</resourceAmount>
-				<customResourceString>JellyGrowth</customResourceString>
-			</li>
-			
-		</comps>
+		
 		<race>
 			
 			<body>BeetleLikeWithClaw</body>
@@ -72,23 +64,15 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>3</baseBodySize>
-			<baseHealthScale>1.9</baseHealthScale>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<baseHealthScale>1.9</baseHealthScale>			
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.4</wildness>
-			<lifeExpectancy>8</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
-				<li>
-					<def>EusocialInsectLarva</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>EusocialInsectJuvenile</def>
-					<minAge>0.03</minAge>
-				</li>
+				
 				<li>
 					<def>EusocialInsectAdult</def>
-					<minAge>0.2</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Spelopede_Pain</soundWounded>
 					<soundDeath>Pawn_Spelopede_Death</soundDeath>
 					<soundCall>Pawn_Spelopede_Call</soundCall>
@@ -102,6 +86,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Bearscarab</defName>
@@ -111,30 +108,11 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearscarab/Bearscarab</texPath>
-					<drawSize>1.8</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearscarab/Dessicated_Bearscarab</texPath>
-					<drawSize>1.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
+			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearscarab/Bearscarab</texPath>
 					<drawSize>2.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearscarab/Dessicated_Bearscarab</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearscarab/Bearscarab</texPath>
-					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.5, 0.37)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -142,7 +120,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearscarab/Dessicated_Bearscarab</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -163,8 +141,8 @@
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 			<MarketValue>450</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>
@@ -208,41 +186,29 @@
 			</li>
 		</verbs>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_Weapon_ThrownSac</resourceDef>
-				<gatheringIntervalDays>40</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>SacGrowth</customResourceString>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_DetonateAcid</initialAbility>
 			</li>
 			
 		</comps>
 		<race>
 			<fleshType>GR_Insectoid</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
-			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
-			<executionRange>6</executionRange>
+			<herdMigrationAllowed>false</herdMigrationAllowed>			
+			<deathActionWorkerClass>GeneticRim.DeathActionWorker_AcidExplosion</deathActionWorkerClass>
+			<executionRange>2</executionRange>
 			<body>BeetleLikeWithClaw</body>
 			<trainability>Intermediate</trainability>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHealthScale>0.65</baseHealthScale>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<baseHealthScale>0.65</baseHealthScale>			
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.8</wildness>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
-				<li>
-					<def>EusocialInsectLarva</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>EusocialInsectJuvenile</def>
-					<minAge>0.03</minAge>
-				</li>
+				
 				<li>
 					<def>EusocialInsectAdult</def>
-					<minAge>0.2</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Spelopede_Pain</soundWounded>
 					<soundDeath>Pawn_Spelopede_Death</soundDeath>
 					<soundCall>Pawn_Spelopede_Call</soundCall>
@@ -256,6 +222,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boombeetle</defName>
@@ -265,33 +244,12 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
+			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boombeetle/Boombeetle</texPath>
-					<drawSize>1.75</drawSize>
-					<color>(156,148,125)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boombeetle/Dessicated_Boombeetle</texPath>
-					<drawSize>1.75</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boombeetle/Boombeetle</texPath>
-					<drawSize>2.3</drawSize>
-					<color>(156,148,125)</color>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boombeetle/Dessicated_Boombeetle</texPath>
-					<drawSize>2.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boombeetle/Boombeetle</texPath>
-					<drawSize>3</drawSize>
-					<color>(156,148,125)</color>
+					<drawSize>2</drawSize>
+					
 					<shadowData>
 						<volume>(0.4, 0.5, 0.37)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -299,7 +257,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Boomalope/Boombeetle/Dessicated_Boombeetle</texPath>
-					<drawSize>3</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -346,14 +304,13 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_ChickenspiderEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_ChickenspiderEggFertilized</eggFertilizedDef>
+				<eggUnfertilizedDef>GR_ChickenspiderEggUnfertilized</eggUnfertilizedDef>			
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1.8</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_ChickenspiderSilk</resourceDef>
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct" Name="GR_ChickenspiderSilkComp">
+				<resourceDef>GR_HybridSilk</resourceDef>
 				<gatheringIntervalDays>12</gatheringIntervalDays>
 				<resourceAmount>40</resourceAmount>
 				<customResourceString>SilkGrowth</customResourceString>
@@ -362,28 +319,20 @@
 		</comps>
 		<race>
 			<fleshType>GR_Insectoid</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
+			<herdMigrationAllowed>false</herdMigrationAllowed>			
 			<body>BeetleLikeWithClaw</body>
 			<baseHungerRate>0.15</baseHungerRate>
 			<baseBodySize>1.1</baseBodySize>
-			<baseHealthScale>2.5</baseHealthScale>
-			<gestationPeriodDays>10</gestationPeriodDays>
+			<baseHealthScale>2.5</baseHealthScale>		
+			<trainability>None</trainability>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.8</wildness>
-			<lifeExpectancy>6</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.03</minAge>
-				</li>
+			<roamMtbDays>5</roamMtbDays>
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>				
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>0.2</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Spelopede_Pain</soundWounded>
 					<soundDeath>Pawn_Spelopede_Death</soundDeath>
 					<soundCall>Pawn_Spelopede_Call</soundCall>
@@ -397,6 +346,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Chickenspider</defName>
@@ -406,26 +368,7 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenspider/Chickenspider</texPath>
-					<drawSize>1.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-					<drawSize>.75</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenspider/Chickenspider</texPath>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
+			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Chicken/Chickenspider/Chickenspider</texPath>
@@ -484,14 +427,14 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct" Name="GR_MuffalopedeJellyComp">
 				<resourceDef>InsectJelly</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
 				<resourceAmount>12</resourceAmount>
 				<customResourceString>VanillaJellyGrowth</customResourceString>
 			</li>
-			<li Class="CompProperties_Shearable">
-				<woolDef>GR_MuffalopedeChitin</woolDef>
+			<li Class="CompProperties_Shearable" Name="GR_MuffalopedeChitinComp">
+				<woolDef>GR_HybridChitin</woolDef>
 				<shearIntervalDays>10</shearIntervalDays>
 				<woolAmount>45</woolAmount>
 			</li>
@@ -508,26 +451,18 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<baseHungerRate>0.535</baseHungerRate>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHealthScale>1.9</baseHealthScale>
-			<gestationPeriodDays>25</gestationPeriodDays>
+			<baseHealthScale>1.9</baseHealthScale>			
 			<body>BeetleLikeWithClaw</body>
-			<nuzzleMtbHours>120</nuzzleMtbHours>
+			<roamMtbDays>2</roamMtbDays>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>15</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.8</wildness>
 			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.03</minAge>
-				</li>
+				
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>0.2</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Spelopede_Pain</soundWounded>
 					<soundDeath>Pawn_Spelopede_Death</soundDeath>
 					<soundCall>Pawn_Spelopede_Call</soundCall>
@@ -541,6 +476,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Muffalopede</defName>
@@ -550,26 +498,7 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalopede/Muffalopede</texPath>
-					<drawSize>1.8</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalopede/Dessicated_Muffalopede</texPath>
-					<drawSize>1.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalopede/Muffalopede</texPath>
-					<drawSize>2.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalopede/Dessicated_Muffalopede</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
+			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Muffalo/Muffalopede/Muffalopede</texPath>
@@ -602,7 +531,7 @@
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<MarketValue>400</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
-			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
 		<tools>
@@ -632,26 +561,18 @@
 			<body>BeetleLikeWithClaw</body>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>0.85</baseBodySize>
-			<baseHealthScale>1</baseHealthScale>
-			<gestationPeriodDays>22</gestationPeriodDays>
+			<baseHealthScale>1</baseHealthScale>			
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.75</wildness>
-			<lifeExpectancy>12</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<fleshType>GR_Insectoid</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<lifeStageAges>
-				<li>
-					<def>EusocialInsectLarva</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>EusocialInsectJuvenile</def>
-					<minAge>0.03</minAge>
-				</li>
+				
 				<li>
 					<def>EusocialInsectAdult</def>
-					<minAge>0.2</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
 					<soundDeath>Pawn_BigInsect_Death</soundDeath>
 					<soundCall>Pawn_BigInsect_Call</soundCall>
@@ -665,6 +586,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Wolfscarab</defName>
@@ -674,32 +608,7 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			<li>
-				<label>wolfscarab puppy</label>
-				<labelPlural>wolfscarab puppies</labelPlural>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfscarab/Wolfscarab</texPath>
-					<drawSize>1.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfscarab/Dessicated_Wolfscarab</texPath>
-					<drawSize>1.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfscarab/Wolfscarab</texPath>
-					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfscarab/Dessicated_Wolfscarab</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
+			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Wolf/Wolfscarab/Wolfscarab</texPath>
@@ -772,7 +681,7 @@
 				<range>22</range>
 				<soundCast>Bow_Recurve</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<label>hairballs</label>
+				<label>blinding spit</label>
 				<commonality>0.6</commonality>
 			</li>
 		</verbs>
@@ -794,22 +703,15 @@
 			<predator>true</predator>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.75</wildness>
-			<lifeExpectancy>14</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<fleshType>GR_Insectoid</fleshType>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<lifeStageAges>
-				<li>
-					<def>EusocialInsectLarva</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>EusocialInsectJuvenile</def>
-					<minAge>0.03</minAge>
-				</li>
+				
 				<li>
 					<def>EusocialInsectAdult</def>
-					<minAge>0.2</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
 					<soundDeath>Pawn_BigInsect_Death</soundDeath>
 					<soundCall>Pawn_BigInsect_Call</soundCall>
@@ -823,6 +725,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Spidercat</defName>
@@ -832,32 +747,7 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			<li>
-				<label>spidercat kitten</label>
-				<labelPlural>spidercat kittens</labelPlural>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Spidercat</texPath>
-					<drawSize>1.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Dessicated_Spidercat</texPath>
-					<drawSize>1.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Spidercat</texPath>
-					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Dessicated_Spidercat</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
+			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Spidercat</texPath>
