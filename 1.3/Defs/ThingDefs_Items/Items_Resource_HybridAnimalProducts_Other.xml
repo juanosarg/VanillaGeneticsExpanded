@@ -179,27 +179,7 @@
 		</tradeTags>
 	</ThingDef>
 
-	<ThingDef ParentName="ResourceBase">
-		<defName>GR_SpidersnakeSkin</defName>
-		<label>spidersnake shed skin</label>
-		<description>This shed skin can be ground and processed at a drug lab to extract minute amounts of neutroamine.</description>
-		<graphicData>
-			<texPath>Things/Item/GR_SpidersnakeSkin</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<stackLimit>75</stackLimit>
-		<tradeability>Sellable</tradeability>
-		<statBases>
-			<MaxHitPoints>30</MaxHitPoints>
-			<MarketValue>41</MarketValue>
-			<Mass>0.01</Mass>
-			<Flammability>1.0</Flammability>
-			<DeteriorationRate>1.0</DeteriorationRate>
-		</statBases>
-		<thingCategories>
-			<li>ResourcesRaw</li>
-		</thingCategories>
-	</ThingDef>
+	
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_HugeBearPelt</defName>

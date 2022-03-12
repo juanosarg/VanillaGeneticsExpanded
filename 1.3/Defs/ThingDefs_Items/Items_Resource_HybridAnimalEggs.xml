@@ -431,37 +431,5 @@
 			</li>
 		</comps>
 	</ThingDef>
-	<!-- Spidersnake Egg -->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>GR_SpidersnakeEggUnfertilized</defName>
-		<label>spidersnake egg (unfert.)</label>
-		<description>Unfertilized Spidersnake egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(17,114,134)</color>
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<statBases>
-			<MarketValue>7.0</MarketValue>
-		</statBases>
-	</ThingDef>
-	<ThingDef ParentName="EggFertBase">
-		<defName>GR_SpidersnakeEggFertilized</defName>
-		<label>spidersnake egg (fert.)</label>
-		<description>Fertilized Spidersnake egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<color>(17,114,134)</color>
-		</graphicData>
-		<tradeability>None</tradeability>
-		<statBases>
-			<MarketValue>7.0</MarketValue>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>10</hatcherDaystoHatch>
-				<hatcherPawn>GR_Spidersnake</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
+	
 </Defs>

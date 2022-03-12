@@ -596,6 +596,7 @@
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
 			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>650</MarketValue>
+		
 		</statBases>
 		<tools>
 			<li>
@@ -613,7 +614,7 @@
 
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>GR_PoisonAmpoule</resourceDef>
-				<gatheringIntervalDays>5</gatheringIntervalDays>
+				<gatheringIntervalDays>10</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>PoisonGrowth</customResourceString>
 
@@ -687,6 +688,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 
@@ -808,21 +822,12 @@
 		</tools>
 
 		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_SpidersnakeEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_SpidersnakeEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>14.0</eggLayIntervalDays>
-				<eggCountRange>
-					<min>1</min>
-					<max>3</max>
-				</eggCountRange>
-			</li>
+		
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_SpidersnakeSkin</resourceDef>
+				<resourceDef>Neutroamine</resourceDef>
 				<gatheringIntervalDays>5</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
-				<customResourceString>SkinShed</customResourceString>
+				<customResourceString>GR_Neutroamine</customResourceString>
 
 			</li>
 		
@@ -833,7 +838,7 @@
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
+			<roamMtbDays>7</roamMtbDays>
 			<body>Snake</body>
 			<predator>true</predator>
 			<maxPreyBodySize>0.35</maxPreyBodySize>
@@ -887,6 +892,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 
@@ -956,8 +974,7 @@
 		<label>wolfsnake</label>
 		<description>A reptile / wolf hybrid. These serpentine predators are fast as lightning, and armed with a powerful, venomous bite. \n\nSpeed and poison make for a very effective base defender. Sheds wolfsnake skin from time to time.</description>
 		<statBases>
-			<MoveSpeed>6.5</MoveSpeed>
-			
+			<MoveSpeed>6.5</MoveSpeed>	
 			<MarketValue>450</MarketValue>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
 			<ComfyTemperatureMax>75</ComfyTemperatureMax>
@@ -973,14 +990,7 @@
 				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -990,14 +1000,7 @@
 				<power>10</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<capacities>
@@ -1006,14 +1009,7 @@
 				<power>12</power>
 				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -1030,36 +1026,17 @@
 
 		<comps>
 
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_WolfsnakeSkin</resourceDef>
-				<gatheringIntervalDays>25</gatheringIntervalDays>
-				<resourceAmount>90</resourceAmount>
-				<customResourceString>SkinShed</customResourceString>
-
+		
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>GR_HybridScales</thingToSpawn>
+				<spawnCount>90</spawnCount>
+				<spawnIntervalRange>1500000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
 			</li>
 			
 		</comps>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>1</accuracyShort>
-				<accuracyMedium>1</accuracyMedium>
-				<accuracyLong>1</accuracyLong>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<minRange>2</minRange>
-				<range>20</range>
-				<soundCast>GR_PoisonBlast</soundCast>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<label>poison spit</label>
-				<commonality>1</commonality>
-			</li>
-
-
-		</verbs>
+		
 		<race>
 			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -1118,6 +1095,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 
@@ -1295,6 +1285,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 

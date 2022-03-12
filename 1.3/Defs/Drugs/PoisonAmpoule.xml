@@ -46,7 +46,7 @@
   <ThingDef ParentName="GR_AmpouleBase">
     <defName>GR_PoisonAmpoule</defName>
     <label>poison ampoule</label>
-    <description>This tiny vial is filled with a concentrated solution of Muffalokomodo saliva, which acts as a powerful neuromuscular-blocking drug. This effectively paralyses anyone foolish enough to drink it, though it is not lethal. Useful for prisoner control.</description>
+    <description>This tiny vial is filled with a concentrated solution of Muffalokomodo saliva, which acts as a powerful neuromuscular-blocking drug. This effectively paralyses anyone that drinks it, though it is not lethal. It will also stop bleeding rate while active, perhaps allowing a person to avoid bleeding to death if the poison is administered quick enough. Effects wear off after 6 hours.</description>
     <graphicData>
       <texPath>Things/Item/GR_PoisonAmpoule</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -82,19 +82,19 @@
     <defName>GR_PoisonAmpouleDrank</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>poison ampoule</label>
-	    <description>Poison in the bloodstream. Causes paralysis and wears off after a day.</description>
+	    <description>Poison in the bloodstream. Causes paralysis while slowing bleeding rate and wears off after 6 hours.</description>
 
     <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
     <scenarioCanAdd>false</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-			<severityPerDay>-1.0</severityPerDay>
+			<severityPerDay>-4.0</severityPerDay>
 			</li>
 		</comps>
     <stages>
       <li>
-        
+        <totalBleedFactor>0.3</totalBleedFactor>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>

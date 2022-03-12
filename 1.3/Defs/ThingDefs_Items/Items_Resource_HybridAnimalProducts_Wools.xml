@@ -94,7 +94,7 @@
 		<label>hybrid chitin</label>
 		<description>Overlapping plates of hardened chitin. Really durable in combat, but provides little protection from weather.</description>
 		<graphicData>
-			<texPath>Things/Item/Resource/GR_Chitin</texPath>
+			<texPath>Things/Item/GR_Chitin</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(154,125,94)</color>
 		</graphicData>
@@ -111,6 +111,35 @@
 				<MaxHitPoints>2</MaxHitPoints>
 			</statFactors>
 		</stuffProps>
+	</ThingDef>
+	<ThingDef ParentName="LeatherBase">
+		<defName>GR_HybridScales</defName>
+		<label>hybrid scales</label>
+		<description>Light, pliable sheets of scaly skin. Light, strong, and insulates well.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_ScalySkin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>8</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>3</DeteriorationRate>
+			<StuffPower_Armor_Heat>1.75</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			
+			<commonality>0</commonality>
+			<color>(0,116,6)</color>
+
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
 	</ThingDef>
 	
 	

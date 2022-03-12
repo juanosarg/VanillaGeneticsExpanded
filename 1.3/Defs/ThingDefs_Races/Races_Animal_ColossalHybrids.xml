@@ -22,16 +22,16 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>28</power>
-				<cooldownTime>1.85</cooldownTime>
+				<power>40</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>25</power>
-				<cooldownTime>2.0</cooldownTime>
+				<power>30</power>
+				<cooldownTime>3.0</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -39,8 +39,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>28</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -48,8 +48,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>28</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -57,21 +57,14 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="CompProperties_Shearable">
-				<woolDef>GR_ThrumbearWool</woolDef>
-				<shearIntervalDays>25</shearIntervalDays>
-				<woolAmount>150</woolAmount>
-			</li>
-			
-		</comps>
+		
 		<race>
 			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
@@ -85,11 +78,11 @@
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<trainability>Advanced</trainability>
-			<gestationPeriodDays>80</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
-			<lifeExpectancy>220</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -115,6 +108,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumbear</defName>
@@ -268,11 +274,11 @@
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<trainability>Intermediate</trainability>
-			<gestationPeriodDays>80</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
-			<lifeExpectancy>220</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -435,11 +441,11 @@
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<packAnimal>false</packAnimal>
 			<trainability>Advanced</trainability>
-			<gestationPeriodDays>80</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
-			<lifeExpectancy>220</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -621,11 +627,11 @@
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<packAnimal>true</packAnimal>
 			<trainability>Intermediate</trainability>
-			<gestationPeriodDays>80</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
 			<wildness>0.6</wildness>
-			<lifeExpectancy>220</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -796,11 +802,11 @@
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<trainability>Advanced</trainability>
-			<gestationPeriodDays>80</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.09</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
-			<lifeExpectancy>120</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -977,11 +983,11 @@
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<trainability>Advanced</trainability>
-			<gestationPeriodDays>60</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.09</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
-			<lifeExpectancy>85</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<lifeStageAges>
 				<li>
@@ -1117,10 +1123,10 @@
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<baseBodySize>4.5</baseBodySize>
 			<baseHealthScale>16</baseHealthScale>
-			<gestationPeriodDays>85</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.85</wildness>
-			<lifeExpectancy>120</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<fleshType>GR_Insectoid</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1310,11 +1316,11 @@
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<trainability>Advanced</trainability>
-			<gestationPeriodDays>80</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
-			<lifeExpectancy>400</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1487,7 +1493,7 @@
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.85</wildness>
-			<lifeExpectancy>10</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
