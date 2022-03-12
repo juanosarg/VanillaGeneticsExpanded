@@ -208,16 +208,16 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>18</power>
-				<cooldownTime>1.85</cooldownTime>
+				<power>30</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>16</power>
-				<cooldownTime>2.0</cooldownTime>
+				<power>24</power>
+				<cooldownTime>3.0</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -225,8 +225,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -234,8 +234,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -243,8 +243,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -304,6 +304,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumbalope</defName>
@@ -441,7 +454,6 @@
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<packAnimal>false</packAnimal>
 			<trainability>Advanced</trainability>
-			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
@@ -471,6 +483,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumbochicken</defName>

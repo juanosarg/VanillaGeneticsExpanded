@@ -380,7 +380,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>35</hatcherDaystoHatch>
+				<hatcherDaystoHatch>25</hatcherDaystoHatch>
 				<hatcherPawn>GR_Thrumbochicken</hatcherPawn>
 			</li>
 		</comps>
