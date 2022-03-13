@@ -38,6 +38,6 @@
 	</ToolCapacityDef>
 	<ToolCapacityDef>
 		<defName>GR_HairballBite</defName>
-		<label>hairball bite</label>
+		<label>suffocating bite</label>
 	</ToolCapacityDef>
 </Defs>

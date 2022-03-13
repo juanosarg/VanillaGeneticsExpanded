@@ -43,8 +43,7 @@ namespace GeneticRim
                     theListToChange = (HashSet<IncidentTargetTagDef>)typeof(MapParent).GetField("hibernatableIncidentTargets", AccessTools.all).GetValue(__instance);
                     theListToChange.Add(compHibernatable.Props.incidentTargetWhileStarting);
                     typeof(MapParent).GetField("hibernatableIncidentTargets", AccessTools.all).SetValue(__instance, theListToChange);
-                    Log.Message("Vanilla Genetics Expanded is starting the Archotech Project. Prepare for raids!");
-
+                   
                     // this.hibernatableIncidentTargets.Add(compHibernatable.Props.incidentTargetWhileStarting);
                 }
             }

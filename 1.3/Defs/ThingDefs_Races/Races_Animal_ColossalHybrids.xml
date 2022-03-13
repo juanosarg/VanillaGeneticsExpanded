@@ -405,16 +405,16 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>18</power>
-				<cooldownTime>1.85</cooldownTime>
+				<power>29</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>26</power>
-				<cooldownTime>2.0</cooldownTime>
+				<power>39</power>
+				<cooldownTime>3.0</cooldownTime>
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -422,8 +422,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -583,16 +583,16 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>18</power>
-				<cooldownTime>1.85</cooldownTime>
+				<power>29</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>2.0</cooldownTime>
+				<power>21</power>
+				<cooldownTime>3.0</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -600,8 +600,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -609,8 +609,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -618,8 +618,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -632,7 +632,7 @@
 				<milkAmount>20</milkAmount>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>GR_ThrumffaloWool</woolDef>
+				<woolDef>GR_LuxuriantHybridWool</woolDef>
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>150</woolAmount>
 			</li>
@@ -646,6 +646,7 @@
 			<fleshType>GR_Normal</fleshType>
 			<baseBodySize>8.4</baseBodySize>
 			<baseHungerRate>3.5</baseHungerRate>
+			<roamMtbDays>7</roamMtbDays>
 			<baseHealthScale>10.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
@@ -682,6 +683,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumffalo</defName>
@@ -770,16 +784,16 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>18</power>
-				<cooldownTime>1</cooldownTime>
+				<power>54</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>20</power>
-				<cooldownTime>1.4</cooldownTime>
+				<power>42</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -787,8 +801,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -796,8 +810,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -805,8 +819,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -857,6 +871,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumwolf</defName>
@@ -872,10 +899,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.3, 0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
+					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
@@ -886,10 +910,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>2.5</drawSize>
-					<shadowData>
-						<volume>(0.7, 0.6, 0.4)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
+					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
@@ -900,10 +921,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>3</drawSize>
-					<shadowData>
-						<volume>(1, 0.8, 0.5)</volume>
-						<offset>(0,0,-0.5)</offset>
-					</shadowData>
+					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
@@ -945,16 +963,16 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>18</power>
-				<cooldownTime>1</cooldownTime>
+				<power>45</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<capacities>
 					<li>GR_HairballBite</li>
 				</capacities>
-				<power>18</power>
-				<cooldownTime>1.4</cooldownTime>
+				<power>35</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -962,8 +980,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10</power>
-				<cooldownTime>1.45</cooldownTime>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -971,8 +989,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10</power>
-				<cooldownTime>1.45</cooldownTime>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -980,8 +998,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
@@ -1039,6 +1057,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumbocat</defName>
@@ -1054,10 +1085,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
 					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.3, 0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
+					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
@@ -1068,10 +1096,7 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
 					<drawSize>2.5</drawSize>
-					<shadowData>
-						<volume>(0.7, 0.6, 0.4)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
+					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
@@ -1081,15 +1106,12 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
-					<drawSize>3.5</drawSize>
-					<shadowData>
-						<volume>(1, 0.8, 0.5)</volume>
-						<offset>(0,0,-0.5)</offset>
-					</shadowData>
+					<drawSize>3</drawSize>
+					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
-					<drawSize>3.5</drawSize>
+					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
 					<bodyPartGroup>HornAttackTool</bodyPartGroup>

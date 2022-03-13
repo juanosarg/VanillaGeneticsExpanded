@@ -252,7 +252,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<description>Genetically altered hairballs are suffocating this creature. This negatively affects breathing and can even cause unconsciousness.</description>
 		<defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
-		<label>hairball damage</label>
+		<label>suffocating damage</label>
 		<maxSeverity>1.0</maxSeverity>
 		<makesSickThought>true</makesSickThought>
 		<scenarioCanAdd>true</scenarioCanAdd>

@@ -84,7 +84,7 @@
 	</DamageDef>
 	<DamageDef ParentName="Bite">
 		<defName>GR_GreatHairballProjectileDamage</defName>
-		<label>greater hairball</label>
+		<label>suffocating attack</label>
 		<additionalHediffs>
 			<li>
 				<hediff>GR_HairballDamage</hediff>
