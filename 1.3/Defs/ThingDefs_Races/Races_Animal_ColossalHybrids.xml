@@ -1146,8 +1146,8 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>30</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>54</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -1155,14 +1155,17 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
+		<comps><li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>400</rateInTicks>
+
+			</li></comps>
 		<race>
 			
 			<body>BeetleLikeWithClaw</body>
@@ -1202,6 +1205,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumbospider</defName>
