@@ -1,39 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <ThingDef ParentName="ResourceBase">
-    <defName>GR_EggBomb</defName>
-    <label>detonating unstable egg</label>
-    <description>This huge egg is filled with unstable chemicals. It is going to explode!</description>
-	<tradeability>None</tradeability>
-    <graphicData>
-      <texPath>Things/Item/GR_EggBomb</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <statBases>
-      <MaxHitPoints>5000</MaxHitPoints>
-      <MarketValue>45</MarketValue>
-      <Mass>0.35</Mass>
-      <Flammability>0.0</Flammability>
-      <DeteriorationRate>6</DeteriorationRate>
-    </statBases>
-    <thingCategories>
-      <li>Manufactured</li>
-    </thingCategories>
-    <tickerType>Normal</tickerType>
-    <comps>
-      <li Class="GeneticRim.CompProperties_Exploder">
-        <wickTimeSeconds>10</wickTimeSeconds>
-		<wickTimeVariance>10</wickTimeVariance>
-		<explosionForce>5</explosionForce>
-      </li>
-    </comps>
-  </ThingDef> 
-  
-
-
-
- 
+	<ThingDef ParentName="ResourceBase">
+		<defName>GR_EggBomb</defName>
+		<label>detonating unstable egg</label>
+		<description>This huge egg is filled with unstable chemicals. It is going to explode!</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_EggBomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<statBases>
+			<MaxHitPoints>2</MaxHitPoints>
+			<MarketValue>45</MarketValue>
+			<Mass>0.35</Mass>
+			<Flammability>0.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="GeneticRim.CompProperties_Exploder">
+				<wickTimeSeconds>7</wickTimeSeconds>
+				<wickTimeVariance>10</wickTimeVariance>
+				<explosionForce>3</explosionForce>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="ResourceBase">
+		<defName>GR_CompressedChemfuel</defName>
+		<label>compressed chemfuel</label>
+		<description>A very volatile sludge with a tar-like appearance. Can be used defensively or converted to regular Chemfuel in a refinery.</description>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/GR_CompressedChemfuel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<stackLimit>400</stackLimit>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>0.05</Mass>
+			<Flammability>3.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>15</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>
+					<min>70</min>
+					<max>150</max>
+				</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

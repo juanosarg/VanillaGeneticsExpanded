@@ -31,13 +31,15 @@ namespace GeneticRim
         {
             CellRect rect = GenAdj.OccupiedRect(parent.pawn.Position, parent.pawn.Rotation, IntVec2.One);
             rect = rect.ExpandedBy(Props.radius);
+            int totalCreated = 0;
 
             foreach (IntVec3 current in rect.Cells)
             {
                 if (current.InBounds(parent.pawn.Map) && Rand.Chance(Props.thingCreatedChance))
                 {
 
-                    if(Props.thingCreated.thingClass == typeof(Filth)) {
+                    if (Props.thingCreated.thingClass == typeof(Filth))
+                    {
                         int filthNumber = 0;
                         List<Thing> list = parent.pawn.Map.thingGrid.ThingsListAt(current);
                         for (int i = 0; i < list.Count; i++)
@@ -52,7 +54,8 @@ namespace GeneticRim
                             Thing thing = ThingMaker.MakeThing(Props.thingCreated, null);
                             thing.Rotation = Rot4.North;
                             thing.Position = current;
-                            thing.SpawnSetup(parent.pawn.Map, false);
+                            if (Props.count==0||(Props.count != 0 && totalCreated < Props.count)) { thing.SpawnSetup(parent.pawn.Map, false); }
+                            if (Props.count != 0){totalCreated++;}
                         }
 
                     }
@@ -61,8 +64,9 @@ namespace GeneticRim
                         Thing thing = ThingMaker.MakeThing(Props.thingCreated, null);
                         thing.Rotation = Rot4.North;
                         thing.Position = current;
-                        thing.SpawnSetup(parent.pawn.Map, false);
-                    }                    
+                        if (Props.count == 0 || (Props.count != 0 && totalCreated < Props.count)) { thing.SpawnSetup(parent.pawn.Map, false); }
+                        if (Props.count != 0) { totalCreated++; }
+                    }
 
 
                 }

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <AbilityGroupDef>
-    <defName>GR_NoTargetAbilitiesGroup</defName>
-    <cooldownTicks>6000</cooldownTicks>
-  </AbilityGroupDef>
-  
-    <AbilityGroupDef>
-    <defName>GR_TwiceDayAbilitiesGroup</defName>
-    <cooldownTicks>30000</cooldownTicks>
-  </AbilityGroupDef>
-
+	<AbilityGroupDef>
+		<defName>GR_NoTargetAbilitiesGroup</defName>
+		<cooldownTicks>6000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>GR_TwiceDayAbilitiesGroup</defName>
+		<cooldownTicks>30000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>GR_OnceADayAbilitiesGroup</defName>
+		<cooldownTicks>60000</cooldownTicks>
+	</AbilityGroupDef>
 	<AbilityDef Abstract="True" Name="GR_NoTargetAbilities">
 		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>False</targetRequired>
@@ -21,12 +22,9 @@
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<groupDef>GR_NoTargetAbilitiesGroup</groupDef>
 		<hotKey>Misc12</hotKey>
-		
-		
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
 			<warmupTime>0.5</warmupTime>
-			
 			<drawAimPie>False</drawAimPie>
 			<requireLineOfSight>False</requireLineOfSight>
 			<targetParams>
@@ -39,17 +37,17 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonateBomb</defName>
 		<label>detonate chemfuel</label>
 		<description>Remotely detonate the chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
 		<iconPath>UI/Commands/Detonate</iconPath>
 		<warmupStartSound>GR_Wick</warmupStartSound>
-		<verbProperties><range>1.9</range></verbProperties>
+		<verbProperties>
+			<range>1.9</range>
+		</verbProperties>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Detonate">
-
 				<radius>1.9</radius>
 				<damageType>Bomb</damageType>
 				<thingCreated>Filth_Fuel</thingCreated>
@@ -58,17 +56,17 @@
 			</li>
 		</comps>
 	</AbilityDef>
-	
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonateAcid</defName>
 		<label>detonate acidic chemfuel</label>
 		<description>Remotely detonate the acidic chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
 		<iconPath>UI/Commands/Detonate</iconPath>
 		<warmupStartSound>GR_Wick</warmupStartSound>
-		<verbProperties><range>1.9</range></verbProperties>
+		<verbProperties>
+			<range>1.9</range>
+		</verbProperties>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Detonate">
-
 				<radius>2.9</radius>
 				<damageType>GR_Acid</damageType>
 				<thingCreated>Filth_Fuel</thingCreated>
@@ -78,17 +76,17 @@
 			</li>
 		</comps>
 	</AbilityDef>
-	
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonatePoison</defName>
 		<label>detonate venomous chemfuel</label>
 		<description>Remotely detonate the venomous chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
 		<iconPath>UI/Commands/Detonate</iconPath>
 		<warmupStartSound>GR_Wick</warmupStartSound>
-		<verbProperties><range>1.9</range></verbProperties>
+		<verbProperties>
+			<range>1.9</range>
+		</verbProperties>
 		<comps>
 			<li Class="GeneticRim.CompProperties_Detonate">
-
 				<radius>2.9</radius>
 				<damageType>GR_ToxicExplosion</damageType>
 				<thingCreated>Filth_Fuel</thingCreated>
@@ -98,55 +96,120 @@
 			</li>
 		</comps>
 	</AbilityDef>
-
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_DetonateFrost</defName>
+		<label>detonate cryo chemfuel</label>
+		<description>Remotely detonate the cryo chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
+		<iconPath>UI/Commands/Detonate</iconPath>
+		<warmupStartSound>GR_Wick</warmupStartSound>
+		<verbProperties>
+			<range>1.9</range>
+		</verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_Detonate">
+				<radius>2.9</radius>
+				<damageType>Frostbite</damageType>
+				<thingCreated>GR_Gas_Ice</thingCreated>
+				<soundCreated>Explosion_Bomb</soundCreated>
+				<thingCreatedChance>1</thingCreatedChance>
+				<damageUser>true</damageUser>
+				<damageAmount>15</damageAmount>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_DetonateStun</defName>
+		<label>detonate stunning chemfuel</label>
+		<description>Remotely detonate the stunning chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
+		<iconPath>UI/Commands/Detonate</iconPath>
+		<warmupStartSound>GR_Wick</warmupStartSound>
+		<verbProperties>
+			<range>1.9</range>
+		</verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_Detonate">
+				<radius>2.9</radius>
+				<damageType>Stun</damageType>
+				<thingCreated>Gas_Smoke</thingCreated>
+				<soundCreated>Explosion_Bomb</soundCreated>
+				<thingCreatedChance>0.75</thingCreatedChance>
+				<damageUser>true</damageUser>
+				<damageAmount>15</damageAmount>
+			</li>
+		</comps>
+	</AbilityDef>
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_ChemfuelDischarge</defName>
 		<label>chemfuel discharge</label>
 		<description>Remotely detonate the chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
 		<iconPath>UI/Commands/Detonate</iconPath>
 		<warmupStartSound>GR_Spill</warmupStartSound>
-		<verbProperties><range>3.9</range></verbProperties>
+		<verbProperties>
+			<range>3.9</range>
+		</verbProperties>
 		<comps>
 			<li Class="GeneticRim.CompProperties_CreateThingDefAround">
-				<radius>3</radius>				
+				<radius>3</radius>
 				<thingCreated>Filth_Fuel</thingCreated>
 				<thingCreatedChance>0.5</thingCreatedChance>
 			</li>
 		</comps>
 	</AbilityDef>
-	
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_FragEggs</defName>
+		<label>lay frag eggs</label>
+		<description>Lay several exploding eggs. The animal will be affected and damaged by the resulting explosion.</description>
+		<iconPath>Things/Item/GR_EggBomb</iconPath>
+		<groupDef>GR_TwiceDayAbilitiesGroup</groupDef>
+		<verbProperties>
+			<range>1.9</range>
+		</verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_CreateThingDefAround">
+				<radius>1</radius>
+				<thingCreated>GR_EggBomb</thingCreated>
+				<thingCreatedChance>0.5</thingCreatedChance>
+				<count>3</count>
+			</li>
+		</comps>
+	</AbilityDef>
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_AdrenalineRush</defName>
 		<label>adrenaline rush</label>
 		<description>Causes the creature to move much faster for a while, at the cost of getting tired afterwards for almost half a day.</description>
 		<iconPath>ui/commands/GR_AdrenalineBurst</iconPath>
-		
 		<groupDef>GR_TwiceDayAbilitiesGroup</groupDef>
 		<comps>
-			
 			<li Class="GeneticRim.CompProperties_GiveHediff">
 				<hediffDef>GR_AdrenalineBurst</hediffDef>
 			</li>
 		</comps>
 	</AbilityDef>
-	
-	 <AbilityDef ParentName="RoleAuraBuffBase">
-    <defName>GR_PackTactics</defName>
-    <label>pack tactics</label>
-    <description>Collaborate with other nearby muffalowolves to bring down prey.</description>
-    <iconPath>ui/commands/GR_PackTactics</iconPath>
-   
-    <comps>
-      <li Class="CompProperties_AbilityGiveHediff">
-        <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>GR_PackTactics</hediffDef>
-        <onlyBrain>True</onlyBrain>
-        <onlyApplyToSelf>True</onlyApplyToSelf>
-        <replaceExisting>true</replaceExisting>
-      </li>
-    </comps>
-  </AbilityDef>
-
-
-
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_Burrow</defName>
+		<label>burrow underground</label>
+		<description>Sends the creature underground into burrowing mode, making it very resistant to damage for a while.</description>
+		<iconPath>Things/Pawn/Animal/Special/GR_Special_Burrowing</iconPath>
+		<groupDef>GR_OnceADayAbilitiesGroup</groupDef>
+		<comps>
+			<li Class="GeneticRim.CompProperties_GiveHediff">
+				<hediffDef>GR_Burrowing</hediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="RoleAuraBuffBase">
+		<defName>GR_PackTactics</defName>
+		<label>pack tactics</label>
+		<description>Collaborate with other nearby muffalowolves to bring down prey.</description>
+		<iconPath>ui/commands/GR_PackTactics</iconPath>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>GR_PackTactics</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
 </Defs>

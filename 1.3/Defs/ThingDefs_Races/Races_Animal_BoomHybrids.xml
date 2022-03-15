@@ -42,18 +42,16 @@
 		</tools>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
+				<resourceDef>GR_CompressedChemfuel</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
-				<resourceAmount>26</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
+				<resourceAmount>13</resourceAmount>
+				<customResourceString>Cryofuel</customResourceString>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<intelligence>Animal</intelligence>
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
-			<deathActionWorkerClass>GeneticRim.DeathActionWorker_SmallBomb</deathActionWorkerClass>
+			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -67,8 +65,8 @@
 			<useMeatFrom>Boomalope</useMeatFrom>
 			<wildness>0.6</wildness>
 			<canBePredatorPrey>false</canBePredatorPrey>
-			<gestationPeriodDays>30</gestationPeriodDays>
-			<lifeExpectancy>19</lifeExpectancy>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -94,6 +92,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boomabear</defName>
@@ -199,16 +210,11 @@
 				<eggLayIntervalDays>8</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
-				<gatheringIntervalDays>2</gatheringIntervalDays>
-				<resourceAmount>12</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_FragEggs</initialAbility>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>GR_QuadrupedAnimalWithBeakandHump</body>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_Eggxplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
@@ -224,8 +230,8 @@
 			<useMeatFrom>Boomalope</useMeatFrom>
 			<wildness>0.6</wildness>
 			<canBePredatorPrey>false</canBePredatorPrey>
-			<gestationPeriodDays>15</gestationPeriodDays>
-			<lifeExpectancy>10</lifeExpectancy>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -251,6 +257,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boomachicken</defName>
@@ -346,22 +365,20 @@
 				<milkAmount>12</milkAmount>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_Cryofuel</resourceDef>
+				<resourceDef>GR_CompressedChemfuel</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
-				<resourceAmount>20</resourceAmount>
+				<resourceAmount>10</resourceAmount>
 				<customResourceString>Cryofuel</customResourceString>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>GR_BoomffaloWool</woolDef>
+				<woolDef>GR_ThinHybridWool</woolDef>
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>90</woolAmount>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
-			<deathActionWorkerClass>GeneticRim.DeathActionWorker_FrostExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -374,8 +391,8 @@
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
 			<canBePredatorPrey>false</canBePredatorPrey>
-			<gestationPeriodDays>30</gestationPeriodDays>
-			<lifeExpectancy>15</lifeExpectancy>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
 			<wildness>0.6</wildness>
 			<lifeStageAges>
 				<li>
@@ -402,6 +419,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boomffalo</defName>
@@ -485,14 +515,6 @@
 				<power>15</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 			<li>
 				<label>head</label>
@@ -507,18 +529,13 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
-				<gatheringIntervalDays>1</gatheringIntervalDays>
-				<resourceAmount>9</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_DetonateFrost</initialAbility>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
-			<deathActionWorkerClass>GeneticRim.DeathActionWorker_StunningExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>GeneticRim.DeathActionWorker_FrostExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -532,8 +549,8 @@
 			<useMeatFrom>Boomalope</useMeatFrom>
 			<trainability>None</trainability>
 			<wildness>0.7</wildness>
-			<gestationPeriodDays>30</gestationPeriodDays>
-			<lifeExpectancy>13</lifeExpectancy>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnTameFailChance>0.050</manhunterOnTameFailChance>
 			<lifeStageAges>
 				<li>
@@ -560,6 +577,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boomwolf</defName>
@@ -675,40 +705,27 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
-				<gatheringIntervalDays>2</gatheringIntervalDays>
-				<resourceAmount>15</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_DetonateStun</initialAbility>
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+			<deathActionWorkerClass>GeneticRim.DeathActionWorker_StunningExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<baseBodySize>1.3</baseBodySize>
 			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>0.55</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<mateMtbHours>4</mateMtbHours>
-			<gestationPeriodDays>7</gestationPeriodDays>
+			<gestationPeriodDays>5</gestationPeriodDays>
 			<wildness>0.5</wildness>
 			<trainability>Intermediate</trainability>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(5, 1)</li>
-					<li>(6, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>7</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -734,9 +751,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
-		<butcherProducts>
-			<GR_SquirralopeHorn>1</GR_SquirralopeHorn>
-		</butcherProducts>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boomsquirrel</defName>
@@ -811,14 +838,6 @@
 				<power>12</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>25</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
 			</li>
 			<li>
 				<label>head</label>
@@ -834,19 +853,17 @@
 		</tools>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
+				<resourceDef>GR_CompressedChemfuel</resourceDef>
 				<gatheringIntervalDays>1</gatheringIntervalDays>
-				<resourceAmount>10</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
+				<resourceAmount>5</resourceAmount>
+				<customResourceString>Cryofuel</customResourceString>
 			</li>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_HairballExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
@@ -861,9 +878,10 @@
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
 			<trainability>None</trainability>
+			<roamMtbDays>4</roamMtbDays>
 			<wildness>0.6</wildness>
-			<gestationPeriodDays>27</gestationPeriodDays>
-			<lifeExpectancy>14</lifeExpectancy>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnTameFailChance>0.050</manhunterOnTameFailChance>
 			<lifeStageAges>
 				<li>
@@ -889,6 +907,22 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+		<butcherProducts>
+			<GR_CompressedChemfuel>10</GR_CompressedChemfuel>
+		</butcherProducts>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boomcat</defName>

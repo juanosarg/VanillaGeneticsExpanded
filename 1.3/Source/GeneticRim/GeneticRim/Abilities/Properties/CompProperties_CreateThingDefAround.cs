@@ -10,7 +10,8 @@ namespace GeneticRim
        
         public int radius;     
         public ThingDef thingCreated = null;
-        public float thingCreatedChance = 0;      
+        public float thingCreatedChance = 0;
+        public int count =0;
 
         public CompProperties_CreateThingDefAround()
         {

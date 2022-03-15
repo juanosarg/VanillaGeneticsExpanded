@@ -800,11 +800,7 @@
 					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Dessicated_Bearwolf</texPath>
 					<drawSize>3.7</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>Teeth</bodyPartGroup>
-					<thing>GR_BearwolfFangs</thing>
-					<allowFemale>true</allowFemale>
-				</butcherBodyPart>
+				
 			</li>
 		</lifeStages>
 		<modExtensions>

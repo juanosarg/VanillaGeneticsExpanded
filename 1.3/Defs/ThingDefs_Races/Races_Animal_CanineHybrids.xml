@@ -1002,6 +1002,7 @@
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_AdrenalineRush</initialAbility>
 			</li>
+			
 		</comps>
 		<race>
 			

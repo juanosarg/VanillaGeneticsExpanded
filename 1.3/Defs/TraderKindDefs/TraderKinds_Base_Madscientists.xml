@@ -68,39 +68,62 @@
 		<label>genetics supplier</label>
 		<orbital>true</orbital>
 		<stockGenerators>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_EmuFatOintment</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>30~40</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_MechaMilk</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>ComponentSpacer</thingDef>
+				<countRange>2~10</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_HugeBearPelt</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Neutroamine</thingDef>
+				<countRange>70~160</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_HugeBearCatPelt</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineHerbal</thingDef>
+				<countRange>0~10</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_WolfPelt</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineIndustrial</thingDef>
+				<countRange>2~5</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_MuffaloPelt</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>MedicineUltratech</thingDef>
+				<countRange>2~5</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_ChocolateEgg</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>GR_TemplateGenetic</thingDef>
+				<countRange>0~2</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_BaconStrips</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>GR_BoosterImmuno</thingDef>
+				<countRange>1~2</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_JamonSerrano</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>GR_BoosterHarmono</thingDef>
+				<countRange>1~2</countRange>
 			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>GR_Cryofuel</thingDef>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>GR_BoosterTempo</thingDef>
+				<countRange>1~2</countRange>
 			</li>
-			<li Class="StockGenerator_BuyTradeTag">
-				<tag>Art</tag>
+			<li Class="StockGenerator_Category">
+				<categoryDef>GR_GeneticMaterialTierOne</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<countRange>1~2</countRange>
 			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>GR_GeneticMaterialTierTwoOrThree</categoryDef>
+				<thingDefCountRange>0~2</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<li Class="StockGenerator_Category">
+				<categoryDef>GR_Genoframes</categoryDef>
+				<thingDefCountRange>1~4</thingDefCountRange>
+				<countRange>1~2</countRange>
+			</li>
+			<!-- Buying -->
 			<li Class="StockGenerator_BuyExpensiveSimple"/>
 		</stockGenerators>
 	</TraderKindDef>

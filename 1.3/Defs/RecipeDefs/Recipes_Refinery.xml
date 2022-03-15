@@ -3,13 +3,13 @@
 
 
 	<RecipeDef>
-		<defName>GR_CryofuelToFuel</defName>
-		<label>make chemfuel from cryofuel</label>
-		<description>Make a batch of chemfuel by converting cryofuel.</description>
-		<jobString>Refining chemfuel from cryofuel.</jobString>
+		<defName>GR_CompressedChemfuelToFuel</defName>
+		<label>make chemfuel from compressed chemfuel</label>
+		<description>Make a batch of chemfuel by converting compressed chemfuel.</description>
+		<jobString>Refining chemfuel from compressed chemfuel.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>100</workAmount>
+		<workAmount>4000</workAmount>
 		<recipeUsers>
 				<li>BiofuelRefinery</li>	  
 		</recipeUsers>	
@@ -19,7 +19,7 @@
 			<li>
 				<filter>
 				  <thingDefs>
-					<li>GR_Cryofuel</li>
+					<li>GR_CompressedChemfuel</li>
 				  </thingDefs>
 				</filter>
 				<count>25</count>
@@ -27,12 +27,12 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>GR_Cryofuel</li>
+				<li>GR_CompressedChemfuel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		
 		<products>
-			<Chemfuel>25</Chemfuel>
+			<Chemfuel>50</Chemfuel>
 		</products>
 	</RecipeDef>
 	

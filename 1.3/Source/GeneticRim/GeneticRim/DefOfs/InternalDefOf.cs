@@ -33,11 +33,15 @@ namespace GeneticRim
 		public static ThingDef         GR_Wolfchicken;
 		public static ThingDef         GR_Catffalo;
 		public static ThingDef         GR_Boomsnake;
+		public static ThingDef         GR_EggBomb;
+		public static ThingDef         GR_GenePod;
+
 		public static PawnKindDef      GR_ArchotechCentipede;
 
 		public static HediffDef        GR_AnimalControlHediff;
 		public static HediffDef        GR_ExtractedBrain;
 		public static HediffDef        GR_Frenzied;
+
 		public static ThingCategoryDef GR_GeneticMaterial;
 		public static ThingCategoryDef GR_GeneticMaterialTierOne;
 		public static ThingCategoryDef GR_GeneticMaterialTierTwoOrThree;
@@ -45,12 +49,14 @@ namespace GeneticRim
 		public static ThingCategoryDef GR_Boosters;
 		public static ThingCategoryDef GR_GenomeExcavators;
 		public static ThingCategoryDef GR_ImplantCategory;
-		public static ThingDef         GR_GenePod;
+		
 		public static JobDef           GR_InsertIngredients;
         public static JobDef           GR_InsertGrowthCell;
 		public static JobDef           GR_InsertArchotechGrowthCell;
 		public static JobDef           GR_ArchotechDNAExtractionJob;
+
 		public static SoundDef         GR_Pop;
+
 		public static DamageDef        GR_Acid;
 
 
