@@ -9,61 +9,7 @@
 		<makesSickThought>true</makesSickThought>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
-		<hediffGivers>
-			<li Class="HediffGiver_RandomDrugEffect">
-				<hediff>Cirrhosis</hediff>
-				<severityToMtbDaysCurve>
-					<points>
-						<li>(0.55, 99999)</li>
-						<li>(0.6, 60)</li>
-						<li>(0.85, 10)</li>
-					</points>
-				</severityToMtbDaysCurve>
-				<partsToAffect>
-					<li>Liver</li>
-				</partsToAffect>
-			</li>
-			<li Class="HediffGiver_RandomDrugEffect">
-				<hediff>Carcinoma</hediff>
-				<severityToMtbDaysCurve>
-					<points>
-						<li>(0.55, 99999)</li>
-						<li>(0.6, 40)</li>
-						<li>(0.85, 10)</li>
-					</points>
-				</severityToMtbDaysCurve>
-				<partsToAffect>
-					<li>Heart</li>
-				</partsToAffect>
-			</li>
-			<li Class="HediffGiver_RandomDrugEffect">
-				<hediff>ChemicalDamageSevere</hediff>
-				<severityToMtbDaysCurve>
-					<points>
-						<li>(0.55, 99999)</li>
-						<li>(0.6, 60)</li>
-						<li>(0.85, 10)</li>
-					</points>
-				</severityToMtbDaysCurve>
-				<partsToAffect>
-					<li>Kidney</li>
-				</partsToAffect>
-			</li>
-			<li Class="HediffGiver_RandomDrugEffect">
-				<hediff>Asthma</hediff>
-				<severityToMtbDaysCurve>
-					<points>
-						<li>(0.55, 99999)</li>
-						<li>(0.6, 90)</li>
-						<li>(0.85, 10)</li>
-					</points>
-				</severityToMtbDaysCurve>
-				<partsToAffect>
-					<li>Lung</li>
-				</partsToAffect>
-				<countToAffect>2</countToAffect>
-			</li>
-		</hediffGivers>
+		
 		<stages>
 			<li>
 				<label>weakened</label>
@@ -107,7 +53,7 @@
 				<severityPerDayTended>-0.15</severityPerDayTended>
 				<baseTendDurationHours>24</baseTendDurationHours>
 			</li>
-			<li Class="VanillaIdeologyExpanded_Dryads.HediffCompProperties_PeriodicWounds">
+			<li Class="GeneticRim.HediffCompProperties_PeriodicWounds">
 				<mtbWoundsSecondStage>30000</mtbWoundsSecondStage>
 				<mtbWoundsThirdStage>6000</mtbWoundsThirdStage>
 			</li>
