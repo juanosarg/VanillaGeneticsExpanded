@@ -13,7 +13,7 @@ namespace GeneticRim
         public const int ticksToApply = 10800000;  // 3 years
         public const int ticksToReapply = ticksToApply-900000;  // 3 years - 15 days
 
-        List<HediffDef> hediffsToApply = new List<HediffDef>() { InternalDefOf.GR_MuscleNecrosis };
+        List<HediffDef> hediffsToApply = new List<HediffDef>() { InternalDefOf.GR_MuscleNecrosis, InternalDefOf.GR_AnimalTuberculosis, InternalDefOf.GR_AnimalAbasia };
 
         public override void PostExposeData()
         {

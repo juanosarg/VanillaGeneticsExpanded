@@ -382,10 +382,12 @@
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_GiveHediffsInRangeExpanded.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_ImplantQuality.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_PeriodicWounds.cs" />
+    <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_Vomiting.cs" />
     <Compile Include="Hediff Comps\HediffCompImplantQuality.cs" />
     <Compile Include="Hediff Comps\HediffComp_BloodFrenzy.cs" />
     <Compile Include="Hediff Comps\HediffComp_GiveHediffsInRangeExpanded.cs" />
     <Compile Include="Hediff Comps\HediffComp_PeriodicWounds.cs" />
+    <Compile Include="Hediff Comps\HediffComp_Vomiting.cs" />
     <Compile Include="Hediffs\Hediff_Burrowing.cs" />
     <Compile Include="Hediffs\Hediff_InsectClouds.cs" />
     <Compile Include="Hediffs\Hediff_StampedeClouds.cs" />

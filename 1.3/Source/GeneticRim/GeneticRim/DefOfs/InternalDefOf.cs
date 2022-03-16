@@ -45,6 +45,8 @@ namespace GeneticRim
 		public static HediffDef        GR_Frenzied;
 		public static HediffDef        GR_RecentlyHatched;
 		public static HediffDef        GR_MuscleNecrosis;
+		public static HediffDef        GR_AnimalTuberculosis;
+		public static HediffDef        GR_AnimalAbasia;
 
 		public static ThingCategoryDef GR_GeneticMaterial;
 		public static ThingCategoryDef GR_GeneticMaterialTierOne;

@@ -12,7 +12,8 @@
 		
 		<stages>
 			<li>
-				<label>weakened</label>
+				<label>initial</label>
+				<lifeThreatening>true</lifeThreatening>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
@@ -22,24 +23,25 @@
 			</li>
 			<li>
 				<minSeverity>0.6</minSeverity>
-				<label>withering</label>
+				<label>necrotic</label>
+				<lifeThreatening>true</lifeThreatening>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<setMax>0.5</setMax>
+						<setMax>0.6</setMax>
 					</li>
 				</capMods>
 			</li>
 			<li>
 				<minSeverity>0.85</minSeverity>
-				<label>vanishing</label>
+				<label>horribly necrotic</label>
 				<lifeThreatening>true</lifeThreatening>
 				<vomitMtbDays>0.75</vomitMtbDays>
 				<painOffset>0.5</painOffset>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<setMax>0.1</setMax>
+						<setMax>0.4</setMax>
 					</li>
 				</capMods>
 			</li>
@@ -59,5 +61,107 @@
 			</li>
 		</comps>
 	</HediffDef>
+	
+	<HediffDef ParentName="DiseaseBase">
+		<defName>GR_AnimalTuberculosis</defName>
+		<label>animal tuberculosis</label>
+		<description>A disease originating from a bacterial infection that attacks lungs. Animals with tuberculosis will keep spitting blood until blood loss causes them to die. Every time a coughing attack occurs, the lungs of that animal will get more and more damaged. A creature with Animal Tuberculosis can be tended to which will slow down the disease, but cannot be cured.\n\nAny hybrid or paragon animal will get this disease 3 years after being hatched or born naturally, though this is affected by the hybrids's quality.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<lethalSeverity>1</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+		<minSeverity>0.001</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		
+		<stages>
+			<li>
+				<label>initial</label>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>damaged lungs</label>
+				<lifeThreatening>true</lifeThreatening>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.85</minSeverity>
+				<label>very damaged lungs</label>
+				<lifeThreatening>true</lifeThreatening>
+				
+				<painOffset>0.5</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.3</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.2</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<severityPerDayTended>-0.15</severityPerDayTended>
+				<baseTendDurationHours>24</baseTendDurationHours>
+			</li>
+			<li Class="GeneticRim.HediffCompProperties_Vomiting">
+				<mtbVomitingBlood>6000</mtbVomitingBlood>
+				<woundDamage>3</woundDamage>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="DiseaseBase">
+		<defName>GR_AnimalAbasia</defName>
+		<label>animal abasia</label>
+		<description>A condition that makes an animal unable to walk by interfering with the motor cortex. If not treated in time, Abasia inevitably interferes with functioning of organs - for example by halting the heart functions. A creature with Animal Abasia can be tended to which will slow down the disease, but cannot be cured.\n\nAny hybrid or paragon animal will get this disease 3 years after being hatched or born naturally, though this is affected by the hybrids's quality.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<lethalSeverity>1</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+		<minSeverity>0.001</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		
+		<stages>
+			
+			<li>
+				<minSeverity>0</minSeverity>
+				<label>paralyzed</label>
+				<lifeThreatening>true</lifeThreatening>
+				
+			
+				<capMods>
+					<li>
+						 <capacity>Moving</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.15</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<severityPerDayTended>-0.1</severityPerDayTended>
+				<baseTendDurationHours>24</baseTendDurationHours>
+			</li>
+			
+		</comps>
+	</HediffDef>
+	
 	
 </Defs>
