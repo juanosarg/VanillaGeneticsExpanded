@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="DiseaseBase">
+		<defName>GR_MuscleNecrosis</defName>
+		<label>muscle necrosis</label>
+		<description>A viral infection causing an animal organism to turn on itself and reject normal functioning tissue, causing widespread necrosis across the entire animal body. A creature with Muscle Necrosis can be tended to which will slow down the disease, but cannot be cured.\n\nAny hybrid or paragon animal will get this disease 3 years after being hatched or born naturally, though this is affected by the hybrids's quality.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<lethalSeverity>1</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+		<minSeverity>0.001</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Cirrhosis</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.55, 99999)</li>
+						<li>(0.6, 60)</li>
+						<li>(0.85, 10)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Liver</li>
+				</partsToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Carcinoma</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.55, 99999)</li>
+						<li>(0.6, 40)</li>
+						<li>(0.85, 10)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Heart</li>
+				</partsToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>ChemicalDamageSevere</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.55, 99999)</li>
+						<li>(0.6, 60)</li>
+						<li>(0.85, 10)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Kidney</li>
+				</partsToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Asthma</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.55, 99999)</li>
+						<li>(0.6, 90)</li>
+						<li>(0.85, 10)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+		</hediffGivers>
+		<stages>
+			<li>
+				<label>weakened</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>withering</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.85</minSeverity>
+				<label>vanishing</label>
+				<lifeThreatening>true</lifeThreatening>
+				<vomitMtbDays>0.75</vomitMtbDays>
+				<painOffset>0.5</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.2</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<severityPerDayTended>-0.15</severityPerDayTended>
+				<baseTendDurationHours>24</baseTendDurationHours>
+			</li>
+			<li Class="VanillaIdeologyExpanded_Dryads.HediffCompProperties_PeriodicWounds">
+				<mtbWoundsSecondStage>30000</mtbWoundsSecondStage>
+				<mtbWoundsThirdStage>6000</mtbWoundsThirdStage>
+			</li>
+		</comps>
+	</HediffDef>
+	
+</Defs>

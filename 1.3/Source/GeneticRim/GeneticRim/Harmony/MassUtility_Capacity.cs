@@ -27,9 +27,9 @@ namespace GeneticRim
 
         {
             bool flagIsCreatureMine = p.Faction != null && p.Faction.IsPlayer;
-            bool flagIsCreatureDraftable = AnimalBehaviours.AnimalCollectionClass.draftable_animals.Contains(p);
+            //bool flagIsCreatureDraftable = AnimalBehaviours.AnimalCollectionClass.draftable_animals.Contains(p);
             bool flagCanCreatureCarryMore = false;
-            if (flagIsCreatureMine && flagIsCreatureDraftable)
+            if (flagIsCreatureMine)
             {
                 flagCanCreatureCarryMore = (p.kindDef?.GetModExtension<DefExtension_Hybrid>()?.carryingIncrease) ?? false;
             }

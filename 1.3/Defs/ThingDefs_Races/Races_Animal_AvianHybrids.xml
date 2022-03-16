@@ -51,7 +51,7 @@
 				<eggCountRange>1</eggCountRange>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_Owlbearfeathers</resourceDef>
+				<resourceDef>GR_Chickenbearfeathers</resourceDef>
 				<gatheringIntervalDays>5</gatheringIntervalDays>
 				<resourceAmount>20</resourceAmount>
 				<customResourceString>FeatherGrowth</customResourceString>
@@ -71,13 +71,6 @@
 			<useLeatherFrom>Chicken</useLeatherFrom>
 			<useMeatFrom>Chicken</useMeatFrom>
 			<mateMtbHours>9</mateMtbHours>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -260,13 +253,6 @@
 			<trainability>None</trainability>
 			<wildness>0.36</wildness>
 			<mateMtbHours>8</mateMtbHours>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -445,13 +431,6 @@
 			<trainability>None</trainability>
 			<wildness>0.36</wildness>
 			<mateMtbHours>8</mateMtbHours>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -625,13 +604,6 @@
 			<trainability>Advanced</trainability>
 			<wildness>0.36</wildness>
 			<mateMtbHours>8</mateMtbHours>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -810,13 +782,6 @@
 			<roamMtbDays>2</roamMtbDays>
 			<useLeatherFrom>Chicken</useLeatherFrom>
 			<useMeatFrom>Chicken</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -986,13 +951,6 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.36</wildness>
 			<mateMtbHours>8</mateMtbHours>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>

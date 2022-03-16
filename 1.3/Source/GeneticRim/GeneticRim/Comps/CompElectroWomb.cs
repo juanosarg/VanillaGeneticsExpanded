@@ -82,8 +82,8 @@ namespace GeneticRim
                         
                         IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 5f);
                         GenSpawn.Spawn(pawn, near, this.parent.Map);
+                        pawn.health.AddHediff(InternalDefOf.GR_RecentlyHatched);
 
-                      
 
                         if (!failure) {
                             DefExtension_HybridChanceAlterer extension = this.booster?.GetModExtension<DefExtension_HybridChanceAlterer>();

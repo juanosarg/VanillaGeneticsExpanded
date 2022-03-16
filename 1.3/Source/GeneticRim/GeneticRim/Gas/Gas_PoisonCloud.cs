@@ -29,7 +29,7 @@ namespace GeneticRim
 
                             if (pawn != null)
                             {
-                                if (pawn.def != InternalDefOf.GR_Boomsnake)
+                                if (pawn.def != InternalDefOf.GR_Boomsnake && pawn.def != InternalDefOf.GR_ParagonIguana)
                                 {
 
                                     pawn.health.AddHediff(HediffDefOf.ToxicBuildup);

@@ -42,6 +42,7 @@
 						<li>Corpse_AEXP_Cheetah</li>
 					</value>
 				</li>
+				
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
 					<value>
@@ -90,6 +91,19 @@
 							<itemProduced>GR_FelineGenetic</itemProduced>
 							<extractableAnimals>
 								<li>AEXP_Cheetah</li>
+							</extractableAnimals>
+						</GeneticRim.ExtractableAnimalsList>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<GeneticRim.ExtractableAnimalsList>
+							<defName>GR_TierTwoAnimalsEquineAEArid</defName>
+							<tier>2</tier>
+							<itemProduced>GR_EquineGenetic</itemProduced>
+							<extractableAnimals>
+								<li>AEXP_Zebra</li>
 							</extractableAnimals>
 						</GeneticRim.ExtractableAnimalsList>
 					</value>

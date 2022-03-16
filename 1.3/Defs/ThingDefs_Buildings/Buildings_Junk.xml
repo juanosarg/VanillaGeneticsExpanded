@@ -1256,6 +1256,81 @@
 		</costList>
 	</ThingDef>
 	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SignF</defName>
+		<label>ancient sign</label>
+		<description>A weathered sign advertising a company that has long been forgotten.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SignF</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.1,1.1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,1)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SignG</defName>
+		<label>ancient sign</label>
+		<description>A weathered sign advertising a company that has long been forgotten.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SignG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,2.1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_SignH</defName>
+		<label>ancient sign</label>
+		<description>A weathered sign advertising a company that has long been forgotten.</description>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_SignH</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.1,2.1)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>60</pathCost>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1800</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(1,2)</size>
+		<costList>
+			<Steel>10</Steel>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_Toilet</defName>
 		<label>ancient toilet</label>
 		<description>Drinking from this will give you more than just a few rads...</description>

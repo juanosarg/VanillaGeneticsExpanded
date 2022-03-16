@@ -64,9 +64,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -82,6 +80,10 @@
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -257,10 +259,8 @@
 				<resourceAmount>80</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_GargantuanExplosion</deathActionWorkerClass>
 			<executionRange>16</executionRange>
@@ -278,6 +278,10 @@
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
 			<wildness>0.8</wildness>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -437,10 +441,8 @@
 				<eggLayIntervalDays>5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>GR_HornedBird</body>
 			<predator>true</predator>
 			<herdAnimal>true</herdAnimal>
@@ -636,10 +638,8 @@
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>150</woolAmount>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -826,9 +826,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -899,7 +897,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>2</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
@@ -910,7 +907,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>2.5</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
@@ -921,7 +917,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>3</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
@@ -1006,14 +1001,12 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -1085,7 +1078,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
 					<drawSize>2</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
@@ -1096,7 +1088,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
 					<drawSize>2.5</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
@@ -1107,7 +1098,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
 					<drawSize>3</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
@@ -1162,12 +1152,12 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps><li Class="AnimalBehaviours.CompProperties_Regeneration">
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>400</rateInTicks>
-
-			</li></comps>
+			</li>
+		</comps>
 		<race>
-			
 			<body>BeetleLikeWithClaw</body>
 			<baseHungerRate>4</baseHungerRate>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
@@ -1176,6 +1166,10 @@
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.85</wildness>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<fleshType>GR_Insectoid</fleshType>
@@ -1301,14 +1295,12 @@
 				<warmupTime>1.5</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>1</minRange>
-				<range>12</range>				
+				<range>12</range>
 				<soundCast>GR_FireBreath</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<label>poison breath</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
 		<tools>
 			<li>
@@ -1359,9 +1351,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<fleshType>GR_Normal</fleshType>
 			<herdAnimal>true</herdAnimal>
@@ -1370,6 +1360,10 @@
 			<baseHungerRate>1.5</baseHungerRate>
 			<baseHealthScale>13.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<trainability>Advanced</trainability>
@@ -1496,7 +1490,6 @@
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
 			<FilthRate>8</FilthRate>
 			<CaravanRidingSpeedFactor>1.1</CaravanRidingSpeedFactor>
-		
 		</statBases>
 		<tools>
 			<li>
@@ -1548,15 +1541,12 @@
 			</li>
 		</tools>
 		<comps>
-			
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_Burrow</initialAbility>
 			</li>
-		
 		</comps>
 		<race>
-			<fleshType>GR_Normal</fleshType>			
+			<fleshType>GR_Normal</fleshType>
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1564,6 +1554,10 @@
 			<baseHungerRate>1.5</baseHungerRate>
 			<baseHealthScale>13.0</baseHealthScale>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<useLeatherFrom>Rat</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<trainability>Advanced</trainability>

@@ -36,6 +36,9 @@
 
                         if(!pawnKindDef.race.HasComp(typeof(CompHybrid)))
                             pawnKindDef.race.comps.Add(new CompProperties(typeof(CompHybrid)));
+
+                        if (!pawnKindDef.race.HasComp(typeof(CompApplyAgeDiseases)))
+                            pawnKindDef.race.comps.Add(new CompProperties(typeof(CompApplyAgeDiseases)));
                     }
                 }
             }

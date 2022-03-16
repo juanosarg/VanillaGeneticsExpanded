@@ -75,30 +75,27 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
-				<customThingToDig>			
+				<customThingToDig>
 					<li>Steel</li>
 					<li>Silver</li>
 					<li>Uranium</li>
 					<li>Gold</li>
 					<li>Plasteel</li>
-					<li>ComponentIndustrial</li>	
+					<li>ComponentIndustrial</li>
 				</customThingToDig>
-				<customAmountToDig>				
+				<customAmountToDig>
 					<li>5</li>
 					<li>10</li>
 					<li>2</li>
 					<li>2</li>
 					<li>2</li>
 					<li>1</li>
-
 				</customAmountToDig>
 				<ticksToDig>60000</ticksToDig>
 			</li>
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPaws</body>
 			<predator>true</predator>
 			<maxPreyBodySize>2</maxPreyBodySize>
@@ -117,15 +114,7 @@
 			<useLeatherFrom>Rat</useLeatherFrom>
 			<useMeatFrom>Rat</useMeatFrom>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -212,14 +201,13 @@
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
-			
 		</lifeStages>
 		<modExtensions>
-				<li Class="GeneticRim.DefExtension_Hybrid">
-					<dominantGenome>GR_RodentGenetic</dominantGenome>
-					<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
-				</li>
-			</modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_RodentGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Rodent - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -278,17 +266,16 @@
 				<resourceAmount>8</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
-		
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>			
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>2</executionRange>
 			<baseBodySize>0.2</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
-			<baseHealthScale>0.25</baseHealthScale>			
+			<baseHealthScale>0.25</baseHealthScale>
 			<roamMtbDays>2</roamMtbDays>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<mateMtbHours>4</mateMtbHours>
@@ -296,14 +283,7 @@
 			<wildness>0.5</wildness>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(5, 1)</li>
-					<li>(6, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -430,9 +410,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -447,13 +425,7 @@
 			<wildness>0.65</wildness>
 			<useLeatherFrom>Hare</useLeatherFrom>
 			<useMeatFrom>Hare</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -583,9 +555,7 @@
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<trainability>Intermediate</trainability>
 			<predator>false</predator>
@@ -707,7 +677,6 @@
 			<FilthRate>2</FilthRate>
 		</statBases>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>GR_Castoreum</resourceDef>
 				<gatheringIntervalDays>1</gatheringIntervalDays>
@@ -757,7 +726,6 @@
 				<power>10</power>
 				<cooldownTime>2.1</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -774,7 +742,6 @@
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<maxPreyBodySize>1.2</maxPreyBodySize>
@@ -782,21 +749,16 @@
 			<baseHungerRate>.8</baseHungerRate>
 			<baseHealthScale>0.99</baseHealthScale>
 			<foodType>CarnivoreAnimal, DendrovoreAnimal</foodType>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<useLeatherFrom>Alphabeaver</useLeatherFrom>
 			<useMeatFrom>Alphabeaver</useMeatFrom>
 			<mateMtbHours>6</mateMtbHours>
 			<gestationPeriodDays>6</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -904,18 +866,13 @@
 			<FilthRate>2</FilthRate>
 		</statBases>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
-				
 			<li Class="AnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>100</rateInTicks>
-
 			</li>
-
-		
 		</comps>
 		<tools>
 			<li>
@@ -943,12 +900,10 @@
 					<li>Bite</li>
 				</capacities>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 		</tools>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			
 			<body>GR_QuadrupedAnimalWithPawsAndFangs</body>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -963,13 +918,7 @@
 			<trainability>Advanced</trainability>
 			<wildness>0.85</wildness>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -1055,10 +1004,6 @@
 					<texPath>Things/Pawn/Animal/Rodent/Rabbitcat/GR_Dessicated_Rabbitcat</texPath>
 					<drawSize>2.3</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>GR_FangsAttackTool</bodyPartGroup>
-					<thing>GR_RabbitcatFangs</thing>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 		<modExtensions>

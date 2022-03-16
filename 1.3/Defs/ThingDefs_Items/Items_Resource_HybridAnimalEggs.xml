@@ -9,7 +9,7 @@
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
-			<Nutrition>.25</Nutrition>
+			<Nutrition>.4</Nutrition>
 		</statBases>
 	</ThingDef>
 	<ThingDef ParentName="EggFertBase">
@@ -19,11 +19,11 @@
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
-			<Nutrition>.25</Nutrition>
+			<Nutrition>.4</Nutrition>
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
 				<hatcherPawn>GR_ParagonChicken</hatcherPawn>
 			</li>
 		</comps>

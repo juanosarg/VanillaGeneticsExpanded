@@ -33,14 +33,18 @@ namespace GeneticRim
 		public static ThingDef         GR_Wolfchicken;
 		public static ThingDef         GR_Catffalo;
 		public static ThingDef         GR_Boomsnake;
+		public static ThingDef         GR_ParagonIguana;
 		public static ThingDef         GR_EggBomb;
 		public static ThingDef         GR_GenePod;
+		public static ThingDef         GR_Gas_Dust;
 
 		public static PawnKindDef      GR_ArchotechCentipede;
 
 		public static HediffDef        GR_AnimalControlHediff;
 		public static HediffDef        GR_ExtractedBrain;
 		public static HediffDef        GR_Frenzied;
+		public static HediffDef        GR_RecentlyHatched;
+		public static HediffDef        GR_MuscleNecrosis;
 
 		public static ThingCategoryDef GR_GeneticMaterial;
 		public static ThingCategoryDef GR_GeneticMaterialTierOne;

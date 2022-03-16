@@ -1,19 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- Bear -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonBear</defName>
 		<label>ursine paragon</label>
 		<description>This massive bear can grow to sizes dwarfing regular grizzly bears, reaching up to a metrical ton in weight. Their thick pelt is an almost perfect adaptation to cold climates, allowing them to survive for months in hibernation if necessary. While still omnivorous, their teeth are better suited to a higher degree of herbivory than grizzly bears.\n\nUseful abilities: Paragon bear pelts can be sold for profit, or converted into decorational rugs.</description>
-
-
 		<statBases>
-			<MoveSpeed>3.8</MoveSpeed>
+			<MoveSpeed>4.8</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
-			<MarketValue>1400</MarketValue>
+			<MarketValue>1100</MarketValue>
+			<FilthRate>3</FilthRate>
 		</statBases>
-
 		<tools>
 			<li>
 				<label>left claw</label>
@@ -27,7 +24,7 @@
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>27</amount>
+							<amount>38</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -44,7 +41,7 @@
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>27</amount>
+							<amount>38</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -60,7 +57,7 @@
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>24</amount>
+							<amount>30</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -77,12 +74,8 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
-
 		<race>
 			<fleshType>GR_Normal</fleshType>
-
-			
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
 			<herdAnimal>false</herdAnimal>
@@ -93,9 +86,9 @@
 			<baseBodySize>2.95</baseBodySize>
 			<baseHealthScale>2.75</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<wildness>0.80</wildness>
-			<lifeExpectancy>32</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -124,6 +117,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ParagonBear</defName>
@@ -132,7 +138,6 @@
 		<combatPower>270</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
@@ -188,9 +193,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Boomalope -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonBoomalope</defName>
 		<label>boomalope paragon</label>
@@ -199,6 +202,7 @@
 			<MoveSpeed>2.75</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<MarketValue>580</MarketValue>
+			<FilthRate>12</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -213,35 +217,33 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>Chemfuel</resourceDef>
+				<resourceDef>GR_CompressedChemfuel</resourceDef>
 				<gatheringIntervalDays>1</gatheringIntervalDays>
-				<resourceAmount>25</resourceAmount>
-				<customResourceString>ChemfuelProd</customResourceString>
+				<resourceAmount>8</resourceAmount>
+				<customResourceString>Cryofuel</customResourceString>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
-			<baseBodySize>1.9</baseBodySize>
-			<baseHungerRate>1.1</baseHungerRate>
+			<trainability>None</trainability>
+			<roamMtbDays>5</roamMtbDays>
+			<baseBodySize>2.2</baseBodySize>
+			<baseHungerRate>0.4</baseHungerRate>
 			<baseHealthScale>1.2</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useMeatFrom>Boomalope</useMeatFrom>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<wildness>0.6</wildness>
 			<canBePredatorPrey>false</canBePredatorPrey>
-			<gestationPeriodDays>30</gestationPeriodDays>
-			<lifeExpectancy>20</lifeExpectancy>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -267,7 +269,20 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
-	</ThingDef> 
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ParagonBoomalope</defName>
 		<label>boomalope paragon</label>
@@ -328,9 +343,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Chicken -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonChicken</defName>
 		<label>avian paragon</label>
@@ -341,7 +354,7 @@
 			<MarketValue>150</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>120</MeatAmount>
-
+			<FilthRate>2</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -373,7 +386,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ParagonChickenEggUnfertilized</eggUnfertilizedDef>
@@ -382,29 +394,20 @@
 				<eggLayIntervalDays>1.5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
+			<roamMtbDays>9</roamMtbDays>
 			<body>Bird</body>
-			<baseHungerRate>0.55</baseHungerRate>
+			<baseHungerRate>0.2</baseHungerRate>
 			<baseBodySize>0.3</baseBodySize>
 			<baseHealthScale>0.55</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>None</trainability>
 			<wildness>0.36</wildness>
-			<gestationPeriodDays>5</gestationPeriodDays>
 			<mateMtbHours>7</mateMtbHours>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>9</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>
@@ -434,6 +437,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ParagonChicken</defName>
@@ -442,11 +458,11 @@
 		<combatPower>30</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-		<labelMale>paragon rooster</labelMale>
-		<labelFemale>paragon hen</labelFemale>
+		<labelMale>avian paragon rooster</labelMale>
+		<labelFemale>avian paragon hen</labelFemale>
 		<lifeStages>
 			<li>
-				<label>paragon chick</label>
+				<label>avian paragon chick</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Paragon/Chicken/GR_ParagonChicken</texPath>
 					<drawSize>0.75</drawSize>
@@ -457,12 +473,11 @@
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
-				<labelMale>paragon cockerel</labelMale>
+				<labelMale>avian paragon cockerel</labelMale>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Paragon/Chicken/GR_ParagonChicken</texPath>
 					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>1.2</drawSize>
@@ -477,7 +492,6 @@
 						<offset>(0,0,-0.05)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
 					<drawSize>1.5</drawSize>
@@ -491,17 +505,17 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
-		<!-- Muffalo -->	
-
+	<!-- Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonMuffalo</defName>
 		<label>muffalo paragon</label>
 		<description>A huge, hairy quadruped perfectly adapted to extreme cold climates. Peaceful unless disturbed.\n\nUseful abilities: Pack animal. Produces milk and wool in slightly greater quantities than a regular muffalo. It's pelt is valuable, and can be used as a decorative rug.</description>
 		<statBases>
-			<MoveSpeed>4</MoveSpeed>
+			<MoveSpeed>4.7</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MarketValue>1000</MarketValue>
+			<FilthRate>12</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -516,7 +530,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
@@ -525,29 +538,27 @@
 			</li>
 			<li Class="CompProperties_Shearable">
 				<woolDef>WoolMuffalo</woolDef>
-				<shearIntervalDays>25</shearIntervalDays>
+				<shearIntervalDays>13</shearIntervalDays>
 				<woolAmount>120</woolAmount>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-
+			<trainability>None</trainability>
+			<roamMtbDays>5</roamMtbDays>
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>2.5</baseBodySize>
 			<baseHealthScale>1.95</baseHealthScale>
-			<baseHungerRate>0.95</baseHungerRate>
+			<baseHungerRate>0.5</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
-			<gestationPeriodDays>20</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.5</wildness>
-			<nuzzleMtbHours>100</nuzzleMtbHours>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>20</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -573,6 +584,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ParagonMuffalo</defName>
@@ -583,8 +607,8 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
-				<label>paragon muffalo calf</label>
-				<labelPlural>paragon muffalo calves</labelPlural>
+				<label>muffalo paragon calf</label>
+				<labelPlural>muffalo paragon calves</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Paragon/Muffalo/GR_ParagonMuffalo</texPath>
 					<drawSize>2.5</drawSize>
@@ -635,12 +659,12 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
 				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
-	<!-- Wolf -->	 
-
+	<!-- Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonTimberWolf</defName>
 		<label>canine paragon</label>
@@ -649,6 +673,7 @@
 			<MoveSpeed>5.6</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<MarketValue>740</MarketValue>
+			<FilthRate>1</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -713,37 +738,29 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_AdrenalineRush</initialAbility>
+			</li>
+		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>1</baseBodySize>
-			<baseHungerRate>0.3</baseHungerRate>
+			<baseHungerRate>0.15</baseHungerRate>
 			<baseHealthScale>1.3</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			<gestationPeriodDays>22.5</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
-			<nuzzleMtbHours>100</nuzzleMtbHours>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>19</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -769,12 +786,23 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ParagonTimberWolf</defName>
 		<label>canine paragon</label>
-		
 		<race>GR_ParagonTimberWolf</race>
 		<combatPower>95</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
@@ -832,16 +860,14 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
-	<!-- Rat -->	 
-	
+	<!-- Rat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonRat</defName>
 		<label>rodent paragon</label>
 		<description>This rat is obviously disease ridden.\n\nUseful abilities: Paragon rats spread the bubonic plague when they bite. Careful!</description>
 		<statBases>
-			<MoveSpeed>4</MoveSpeed>
-			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<MoveSpeed>4.5</MoveSpeed>
+			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<MarketValue>120</MarketValue>
 		</statBases>
 		<tools>
@@ -883,30 +909,21 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-	
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
 			<body>QuadrupedAnimalWithPaws</body>
 			<baseBodySize>0.3</baseBodySize>
-			<baseHungerRate>0.50</baseHungerRate>
+			<baseHungerRate>0.05</baseHungerRate>
 			<baseHealthScale>0.55</baseHealthScale>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useLeatherFrom>Rat</useLeatherFrom>
 			<useMeatFrom>Rat</useMeatFrom>
-			<wildness>0.50</wildness>
+			<wildness>0.40</wildness>
 			<mateMtbHours>6</mateMtbHours>
-			<gestationPeriodDays>10</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(5, 1)</li>
-					<li>(5.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>12</lifeExpectancy>
+			<gestationPeriodDays>4</gestationPeriodDays>
+			<trainability>Intermediate</trainability>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -932,6 +949,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ParagonRat</defName>
@@ -982,24 +1012,22 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	
-	<!-- Iguana -->	 
-
+	<!-- Iguana -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonIguana</defName>
 		<label>reptile paragon</label>
 		<description>This large lizard has a beautiful iridiscent sheen on its scales. Contrary to the regular iguanas, this paragon specimen has a nasty venomous bite.\n\nUseful abilities: Lays eggs and has a venomous bite.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>200</MarketValue>
 		</statBases>
 		<tools>
 			<li>
 				<label>left claw</label>
 				<capacities>
-					<li>GR_LightToxicBite</li>
+					<li>GR_VeryToxicBite</li>
 				</capacities>
 				<power>10</power>
 				<cooldownTime>1.65</cooldownTime>
@@ -1008,7 +1036,7 @@
 			<li>
 				<label>right claw</label>
 				<capacities>
-					<li>GR_LightToxicBite</li>
+					<li>GR_VeryToxicBite</li>
 				</capacities>
 				<power>10</power>
 				<cooldownTime>1.65</cooldownTime>
@@ -1016,7 +1044,7 @@
 			</li>
 			<li>
 				<capacities>
-					<li>GR_LightToxicBite</li>
+					<li>GR_VeryToxicBite</li>
 				</capacities>
 				<power>8</power>
 				<cooldownTime>1.65</cooldownTime>
@@ -1034,42 +1062,31 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ParagonIguanaEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_ParagonIguanaEggFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>10</eggLayIntervalDays>
-				<eggCountRange>
-					<min>1</min>
-					<max>2</max>
-				</eggCountRange>
+				<eggLayIntervalDays>5</eggLayIntervalDays>
+				<eggCountRange>1~2</eggCountRange>
 			</li>
-			
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_PoisonousCloud</initialAbility>
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
 			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
 			<baseBodySize>0.40</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
-			<baseHungerRate>0.35</baseHungerRate>
+			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useLeatherFrom>Iguana</useLeatherFrom>
 			<useMeatFrom>Iguana</useMeatFrom>
-			<wildness>0.5</wildness>
-			<gestationPeriodDays>12</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>18</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+			<wildness>0.4</wildness>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1095,6 +1112,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ParagonIguana</defName>
@@ -1146,75 +1176,35 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-	<!-- Wildboar -->
-
-	<!--<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_ParagonWildBoar</defName>
-		<label>paragon wild boar</label>
-		<description>This strong, muscular creature is fiercely territorial, and its powerful curved tusks can be extremely dangerous for the unwary hunter.\n\nUseful abilities: Paragon wild boar tusks are prized for their ivory, and can be carved into statuettes.</description>
+	<!-- Horse -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_ParagonHorse</defName>
+		<label>equine paragon</label>
+		<description>todo.</description>
 		<statBases>
-			<MoveSpeed>5.5</MoveSpeed>
-			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
-			<MarketValue>350</MarketValue>
+			<MoveSpeed>6</MoveSpeed>
+			<MarketValue>750</MarketValue>
+			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>12</FilthRate>
+			<CaravanRidingSpeedFactor>1.8</CaravanRidingSpeedFactor>
 		</statBases>
-		
-		<tools>
-			<li>
-				<label>tusk</label>
-				<capacities>
-					<li>Scratch</li>
-					<li>Stab</li>
-				</capacities>
-				<power>14</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>7</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>7</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-
+		<uiIconScale>1.1</uiIconScale>
 		<race>
-			<fleshType>GR_Normal</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
-			<body>QuadrupedAnimalWithHoovesAndTusks</body>
-			<baseBodySize>1.5</baseBodySize>
-			<baseHealthScale>1.2</baseHealthScale>
-			<baseHungerRate>0.45</baseHungerRate>
-			<foodType>OmnivoreRoughAnimal</foodType>
-			<wildness>0.50</wildness>
-			<trainability>Advanced</trainability>
-			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-			<useMeatFrom>Pig</useMeatFrom>
-			<useLeatherFrom>Pig</useLeatherFrom>
-			<gestationPeriodDays>13</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>20</lifeExpectancy>
+			<herdAnimal>true</herdAnimal>
+			<body>QuadrupedAnimalWithHooves</body>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>2.25</baseHealthScale>
+			<baseHungerRate>0.35</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<useLeatherFrom>Horse</useLeatherFrom>
+			<useMeatFrom>Horse</useMeatFrom>
+			<gestationPeriodDays>6</gestationPeriodDays>
+			<wildness>0.4</wildness>
+			<roamMtbDays>3</roamMtbDays>
+			<trainability>None</trainability>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1222,495 +1212,15 @@
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
-					<minAge>0.1</minAge>
+					<minAge>0.25</minAge>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>0.35</minAge>
-					<soundWounded>Pawn_Wildboar_Wounded</soundWounded>
-					<soundDeath>Pawn_Wildboar_Death</soundDeath>
-					<soundCall>Pawn_Wildboar_Call</soundCall>
-					<soundAngry>Pawn_Wildboar_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalGenetic</li>
-		</tradeTags>
-	</ThingDef>  
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_ParagonWildBoar</defName>
-		<label>paragon wild boar</label>
-		<race>GR_ParagonWildBoar</race>
-		<combatPower>75</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>1</ecoSystemWeight>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Boar/GR_ParagonWildBoar</texPath>
-					<drawSize>1.5</drawSize>
-					<shadowData>
-						<volume>(0.30, 0.25, 0.20)</volume>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/WildBoar/Dessicated_WildBoar</texPath>
-					<drawSize>1.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Boar/GR_ParagonWildBoar</texPath>
-					<drawSize>2.2</drawSize>
-					<shadowData>
-						<volume>(0.375, 0.375, 0.375)</volume>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/WildBoar/Dessicated_WildBoar</texPath>
-					<drawSize>2.2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Boar/GR_ParagonWildBoar</texPath>
-					<drawSize>2.75</drawSize>
-					<shadowData>
-						<volume>(0.5, 0.5, 0.4)</volume>
-						<offset>(0,0,-0.05)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/WildBoar/Dessicated_WildBoar</texPath>
-					<drawSize>2.75</drawSize>
-				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>TuskAttackTool</bodyPartGroup>
-					<thing>GR_ParagonBoarTusks</thing>
-				</butcherBodyPart>
-			</li>
-		</lifeStages>
-	</PawnKindDef>-->
-
-	
-
-	<!-- Emu -->	
-
-	<!--<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_ParagonEmu</defName>
-		<label>paragon emu</label>
-		<description>This huge flightless bird is incredibly bad tempered and ugly as sin. However, it produces some enormous eggs, and its fat can be rubbed on skin and used as a primitive bush medicine.\n\nUseful abilities: Very nutritive eggs. Once slaughtered, its fat can be used as a basic medicine.</description>
-		<statBases>
-			<MoveSpeed>5.5</MoveSpeed>
-			<ComfyTemperatureMin>-12</ComfyTemperatureMin>
-			<MarketValue>600</MarketValue>
-		</statBases>
-		<race>
-			<fleshType>GR_Normal</fleshType>
-
-			
-			<body>Bird</body>
-			<herdAnimal>false</herdAnimal>
-			<baseBodySize>1</baseBodySize>
-			<baseHealthScale>1.3</baseHealthScale>
-			<baseHungerRate>0.6</baseHungerRate>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.95</wildness>
-			<lifeExpectancy>50</lifeExpectancy>
-			<useLeatherFrom>Emu</useLeatherFrom>
-			<gestationPeriodDays>20</gestationPeriodDays>
-			<useMeatFrom>Cassowary</useMeatFrom>
-			<manhunterOnTameFailChance>0.022</manhunterOnTameFailChance>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBabyTiny</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.22</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.45</minAge>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalGenetic</li>
-		</tradeTags>
-		<butcherProducts>
-			<GR_EmuFatOintment>5</GR_EmuFatOintment>
-		</butcherProducts>
-		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_ParagonEmuEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_ParagonEmuEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>15</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
-			
-		</comps>
-		<tools>
-			<li>
-				<label>claws</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>13</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>11</power>
-				<cooldownTime>1.85</cooldownTime>
-				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>6</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-
-	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_ParagonEmu</defName>
-		<label>paragon emu</label>
-		<race>GR_ParagonEmu</race>
-		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>1</ecoSystemWeight>
-		<combatPower>175</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Emu/GR_ParagonEmu</texPath>
-					<drawSize>2.0</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
-					<drawSize>2.0</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Emu/GR_ParagonEmu</texPath>
-					<drawSize>2.3</drawSize>
-					<shadowData>
-						<volume>(0.3, 0.3, 0.3)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
-					<drawSize>2.3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Emu/GR_ParagonEmu</texPath>
-					<drawSize>3</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.4, 0.4)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Emu/Dessicated_Emu</texPath>
-					<drawSize>3</drawSize>
-				</dessicatedBodyGraphicData>
-
-			</li>
-		</lifeStages>
-	</PawnKindDef>-->
-
-
-
-	<!-- Ostrich -->	
-
-	<!--<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_ParagonOstrich</defName>
-		<label>paragon ostrich</label>
-		<description>A truly enormous ostrich. This flightless bird lays huge eggs, very nutritive.\n\nUseful abilities: Lays the biggest eggs of any non-hybrid creature.</description>
-		<statBases>
-			<MoveSpeed>6.5</MoveSpeed>
-			<ComfyTemperatureMin>-12</ComfyTemperatureMin>
-			<MarketValue>720</MarketValue>
-		</statBases>
-		<race>
-			<fleshType>GR_Normal</fleshType>
-
-			
-			<herdAnimal>false</herdAnimal>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<baseBodySize>1.5</baseBodySize>
-			<baseHealthScale>1.5</baseHealthScale>
-			<baseHungerRate>0.75</baseHungerRate>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.95</wildness>
-			<lifeExpectancy>65</lifeExpectancy>
-			<useLeatherFrom>Ostrich</useLeatherFrom>
-			<useMeatFrom>Cassowary</useMeatFrom>
-			<manhunterOnTameFailChance>0.022</manhunterOnTameFailChance>
-			<body>Bird</body>
-			<gestationPeriodDays>20</gestationPeriodDays>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBabyTiny</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.22</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.45</minAge>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalGenetic</li>
-		</tradeTags>
-		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_ParagonOstrichEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_ParagonOstrichEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>20</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
-			
-		</comps>
-		<tools>
-			<li>
-				<label>claws</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>13</power>
-				<cooldownTime>1.85</cooldownTime>
-				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>7</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-
-	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_ParagonOstrich</defName>
-		<label>paragon ostrich</label>
-		<labelPlural>paragon ostriches</labelPlural>
-		<race>GR_ParagonOstrich</race>
-		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>1</ecoSystemWeight>
-		<combatPower>175</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Ostrich/GR_Paragonostrich</texPath>
-					<drawSize>1.7</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Ostrich/Dessicated_Ostrich</texPath>
-					<drawSize>1.7</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Ostrich/GR_Paragonostrich</texPath>
-					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.3, 0.3, 0.3)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Ostrich/Dessicated_Ostrich</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Ostrich/GR_Paragonostrich</texPath>
-					<drawSize>2.5</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.4, 0.4)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Ostrich/GR_Paragonostrich</texPath>
-					<drawSize>2.5</drawSize>
-					<shadowData>
-						<volume>(0.4, 0.4, 0.4)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Ostrich/Dessicated_Ostrich</texPath>
-					<drawSize>1.8</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>-->
-
-	<!-- Rhino -->	
-
-	<!--<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_ParagonRhinoceros</defName>
-		<label>paragon rhinoceros</label>
-		<description>The very ground trembles when this massive herbivore moves. Although usually quite peaceful, it can be very aggressive when provoked. Its horn is considered to be very valuable, despite lack of scientific evidence of it being useful at all in fields like medicine.\n\nUseful abilities: It's horn is valuable, and... you don't want to be in the path of a charging paragon rhinoceros.</description>
-		<statBases>
-			<MoveSpeed>4.2</MoveSpeed>
-			<ComfyTemperatureMin>-12</ComfyTemperatureMin>
-			<MarketValue>2000</MarketValue>
-		</statBases>
-		<tools>
-			<li>
-				<label>horn</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>20</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>horn</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>22</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
-			</li>
-
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>15</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-		
-		<race>
-			<fleshType>GR_Normal</fleshType>
-
-			
-			<body>QuadrupedAnimalWithHoovesAndHorn</body>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<baseHungerRate>1.75</baseHungerRate>
-			<baseBodySize>3.5</baseBodySize>
-			<baseHealthScale>4.5</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<useLeatherFrom>Rhinoceros</useLeatherFrom>
-			<useMeatFrom>Rhinoceros</useMeatFrom>
-			<wildness>0.90</wildness>
-			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<gestationPeriodDays>45</gestationPeriodDays>
-			<nameOnTameChance>1</nameOnTameChance>
-			<lifeExpectancy>65</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.3</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>1.0</minAge>
-					<soundWounded>Pawn_Rhinoceros_Wounded</soundWounded>
-					<soundDeath>Pawn_Rhinoceros_Death</soundDeath>
-					<soundCall>Pawn_Rhinoceros_Call</soundCall>
-					<soundAngry>Pawn_Rhinoceros_Angry</soundAngry>
+					<minAge>0.3333</minAge>
+					<soundWounded>Pawn_Horse_Wounded</soundWounded>
+					<soundDeath>Pawn_Horse_Death</soundDeath>
+					<soundCall>Pawn_Horse_Call</soundCall>
+					<soundAngry>Pawn_Horse_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -1720,447 +1230,224 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
-	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_ParagonRhinoceros</defName>
-		<label>paragon rhinoceros</label>
-		<labelPlural>paragon rhinoceroses</labelPlural>
-		<race>GR_ParagonRhinoceros</race>
-		<combatPower>310</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>1</ecoSystemWeight>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Rhino/GR_ParagonRhinoceros</texPath>
-					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.475, 0.2, 0.3)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Rhino/GR_Dessicated_ParagonRhinoceros</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Rhino/GR_ParagonRhinoceros</texPath>
-					<drawSize>3.2</drawSize>
-					<shadowData>
-						<volume>(0.72, 0.3, 0.45)</volume>
-						<offset>(0,0,-0.25)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Rhino/GR_Dessicated_ParagonRhinoceros</texPath>
-					<drawSize>3.2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Rhino/GR_ParagonRhinoceros</texPath>
-					<drawSize>4.75</drawSize>
-					<shadowData>
-						<volume>(0.95, 0.4, 0.6)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Rhino/GR_Dessicated_ParagonRhinoceros</texPath>
-					<drawSize>4.75</drawSize>
-				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HornAttackTool</bodyPartGroup>
-					<thing>GR_HugeRhinoHorn</thing>
-				</butcherBodyPart>
-			</li>
-		</lifeStages>
-	</PawnKindDef>-->
-
-	
-
-	
-
-	<!-- Pig -->	 
-
-	<!--<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_ParagonPig</defName>
-		<label>paragon pig</label>
-		<description>This huge pig has a voracious appetite, but the quality of its meat is legendary.\n\nUseful abilities: The butchering process will produce bacon jerky and jamón serrano, two delicacies that can be stored for months without refrigeration.</description>
-		<statBases>
-			<MoveSpeed>3.9</MoveSpeed>
-			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
-			<MarketValue>560</MarketValue>
-		</statBases>
 		<tools>
-			<li>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
 			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>6</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-		
-		<race>
-			<fleshType>GR_Normal</fleshType>
-
-			
-			<body>QuadrupedAnimalWithHooves</body>
-			<baseBodySize>1.2</baseBodySize>
-			<baseHealthScale>1</baseHealthScale>
-			<baseHungerRate>1.2</baseHungerRate>
-			<foodType>OmnivoreRoughAnimal</foodType>
-			<useLeatherFrom>Pig</useLeatherFrom>
-			<useMeatFrom>Pig</useMeatFrom>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<wildness>0.4</wildness>
-			<trainability>Advanced</trainability>
-
-			<gestationPeriodDays>10</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>18</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.1</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.35</minAge>
-					<soundWounded>Pawn_Wildboar_Wounded</soundWounded>
-					<soundDeath>Pawn_Wildboar_Death</soundDeath>
-					<soundCall>Pawn_Wildboar_Call</soundCall>
-					<soundAngry>Pawn_Wildboar_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalGenetic</li>
-		</tradeTags>
-		<butcherProducts>
-			<GR_BaconStrips>4</GR_BaconStrips>
-			<GR_JamonSerrano>1</GR_JamonSerrano>
-		</butcherProducts>
-
-
-	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_ParagonPig</defName>
-		<label>paragon pig</label>
-		<race>GR_ParagonPig</race>
-		<combatPower>65</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>1</ecoSystemWeight>
-		<labelFemale>paragon sow</labelFemale>
-		<lifeStages>
-			<li>
-				<label>paragon piglet</label>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Pig/GR_ParagonPig</texPath>
-					<drawSize>1.2</drawSize>
-
-					<shadowData>
-						<volume>(0.25, 0.25, 0.25)</volume>
-						<offset>(0,0,-0.2)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
-					<drawSize>1.5</drawSize>
-				</dessicatedBodyGraphicData>
 			</li>
 			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Pig/GR_ParagonPig</texPath>
-					<drawSize>2</drawSize>
-
-					<shadowData>
-						<volume>(0.375, 0.375, 0.375)</volume>
-						<offset>(0,0,0)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Pig/GR_ParagonPig</texPath>
-					<drawSize>1.8</drawSize>
-
-					<shadowData>
-						<volume>(0.375, 0.375, 0.375)</volume>
-						<offset>(0,0,0)</offset>
-					</shadowData>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
+				<label>left hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Pig/GR_ParagonPig</texPath>
-					<drawSize>2.5</drawSize>
-					<shadowData>
-						<volume>(0.5, 0.5, 0.5)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Pig/GR_ParagonPig</texPath>
-					<drawSize>2.2</drawSize>
-					<shadowData>
-						<volume>(0.5, 0.5, 0.4)</volume>
-						<offset>(0,0,-0.05)</offset>
-					</shadowData>
-				</femaleGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
+				<label>right hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
-		</lifeStages>
-	</PawnKindDef>-->
-
-	<!-- Hare -->	 
-
-	<!--<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_ParagonHare</defName>
-		<label>rodent paragon</label>
-		<description>This small creature has a fierce gaze and quite a poor disposition. Be careful with these critters, since they breed like... well... rabbits.\n\nUseful abilities: Due to a terrible sense of humour in your scientists, this creatures lays edible chocolate eggs...</description>
-
-		<statBases>
-			<MoveSpeed>5.8</MoveSpeed>
-			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
-			<MarketValue>120</MarketValue>
-		</statBases>
-		<tools>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
 				<power>5</power>
-				<cooldownTime>1.65</cooldownTime>
+				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
-			<li>
-				<label>head</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>2</power>
-				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
+				<chanceFactor>0.5</chanceFactor>
 			</li>
 		</tools>
-
-		<comps>
-
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_ChocolateEgg</resourceDef>
-				<gatheringIntervalDays>1</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ChocolateEgg</customResourceString>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
 			</li>
-			
-		</comps>
-		<race>
-			<fleshType>GR_Normal</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
-			<useLeatherFrom>Hare</useLeatherFrom>
-			<useMeatFrom>Hare</useMeatFrom>
-			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<baseBodySize>0.5</baseBodySize>
-			<baseHungerRate>0.45</baseHungerRate>
-			<baseHealthScale>1</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<wildness>0.75</wildness>
-			<mateMtbHours>7</mateMtbHours>
-			<nuzzleMtbHours>100</nuzzleMtbHours>
-			<gestationPeriodDays>5.5</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(2.5, 0)</li>
-					<li>(3, 1)</li>
-					<li>(4, 1)</li>
-					<li>(4.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>15</lifeExpectancy>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.1</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.3</minAge>
-					<soundWounded>Pawn_Hare_Wounded</soundWounded>
-					<soundDeath>Pawn_Hare_Death</soundDeath>
-					<soundCall>Pawn_Hare_Call</soundCall>
-					<soundAngry>Pawn_Hare_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalGenetic</li>
-		</tradeTags>
+		</modExtensions>
 	</ThingDef>
-	<PawnKindDef ParentName="AnimalKindBase">
-		<combatPower>35</combatPower>
+	<PawnKindDef Name="Horse" ParentName="AnimalKindBase">
+		<defName>GR_ParagonHorse</defName>
+		<label>equine paragon</label>
+		<race>GR_ParagonHorse</race>
+		<combatPower>150</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-		<defName>GR_ParagonHare</defName>
-		<label>rodent paragon</label>
-		<race>GR_ParagonHare</race>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+				<texPath>Things/Pawn/Animal/Paragon/Horse/GR_ParagonEquine1</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/Paragon/Horse/GR_ParagonEquine2</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/Paragon/Horse/GR_ParagonEquine3</texPath>
+			</li>
+			<li>
+				<texPath>Things/Pawn/Animal/Paragon/Horse/GR_ParagonEquine4</texPath>
+			</li>
+		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Hare/GR_ParagonHare</texPath>
-					<drawSize>1</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Hare/GR_ParagonHare</texPath>
-					<drawSize>1.25</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
-					<drawSize>1.25</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Hare/GR_ParagonHare</texPath>
+					<texPath>Things/Pawn/Animal/Paragon/Horse/GR_ParagonEquine1</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
-						<volume>(0.32, 0.35, 0.32)</volume>
-						<offset>(0,0,0)</offset>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Hare/Dessicated_Hare</texPath>
+					<texPath>Things/Pawn/Animal/Paragon/Horse/GR_Dessicated_ParagonEquine</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Horse/GR_ParagonEquine1</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Horse/GR_Dessicated_ParagonEquine</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Horse/GR_ParagonEquine1</texPath>
+					<drawSize>2.75</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Horse/GR_Dessicated_ParagonEquine</texPath>
+					<drawSize>2.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
 		</lifeStages>
-		
-	</PawnKindDef>-->
-
-
-	<!-- Tortoise -->	  
-
-	<!--<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_ParagonTortoise</defName>
-		<label>paragon tortoise</label>
-		
-		<description>This heavily armored land-dwelling reptile is known for its slow moving speed and surprisingly vicious bite.\n\nUseful abilities: Paragon tortoises can be butchered to obtain their shells, and with a big enough tortoise farm it could probably be used as a building material.</description>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_EquineGenetic</dominantGenome>
+				<secondaryGenome>GR_EquineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	<!-- Thrumbo -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_ParagonThrumbo</defName>
+		<label>colossal paragon</label>
+		<description>todo.</description>
 		<statBases>
-			<MoveSpeed>0.5</MoveSpeed>
-			<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<MarketValue>400</MarketValue>
+			<MoveSpeed>6</MoveSpeed>
+			<MarketValue>5000</MarketValue>
+			<ComfyTemperatureMin>-85</ComfyTemperatureMin>
+			<ComfyTemperatureMax>60</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.40</ArmorRating_Heat>
+			<FilthRate>6</FilthRate>
+			<CaravanRidingSpeedFactor>1.7</CaravanRidingSpeedFactor>
 		</statBases>
+		<uiIconScale>1.75</uiIconScale>
 		<tools>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
 			<li>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>15</power>
-				<cooldownTime>3.1</cooldownTime>
-				<linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+				<power>36</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>left foot</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right foot</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>4</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>26</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_ParagonTortoiseEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_ParagonTortoiseEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>18</eggLayIntervalDays>
-				<eggCountRange>
-					<min>2</min>
-					<max>3</max>
-				</eggCountRange>
-
-
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_StampedeClouds</initialAbility>
 			</li>
-		
 		</comps>
 		<race>
-			<fleshType>GR_Normal</fleshType>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
-			<body>TurtleLike</body>
-			<baseBodySize>0.75</baseBodySize>
-			<baseHungerRate>0.75</baseHungerRate>
-			<baseHealthScale>1.5</baseHealthScale>
-			<foodType>OmnivoreRoughAnimal</foodType>
-			<useLeatherFrom>Tortoise</useLeatherFrom>
-			<useMeatFrom>Tortoise</useMeatFrom>	  
-			<wildness>0.75</wildness>
-			<gestationPeriodDays>18</gestationPeriodDays>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(3, 1)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>250</lifeExpectancy>
+			<baseBodySize>4.5</baseBodySize>
+			<baseHungerRate>1.4</baseHungerRate>
+			<baseHealthScale>9.0</baseHealthScale>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<useLeatherFrom>Thrumbo</useLeatherFrom>
+			<useMeatFrom>Thrumbo</useMeatFrom>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
+			<wildness>0.7</wildness>
+			<lifeExpectancy>4</lifeExpectancy>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -2168,72 +1455,269 @@
 				</li>
 				<li>
 					<def>AnimalJuvenile</def>
-					<minAge>0.15</minAge>
+					<minAge>0.75</minAge>
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>0.3</minAge>
-					<soundWounded>Pawn_Tortoise_Wounded</soundWounded>
-					<soundDeath>Pawn_Tortoise_Death</soundDeath>
-					<soundCall>Pawn_Tortoise_Call</soundCall>
-					<soundAngry>Pawn_Tortoise_Angry</soundAngry>
+					<minAge>0.95</minAge>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
 				</li>
 			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
-		<butcherProducts>
-			<GR_TortoiseShell>50</GR_TortoiseShell>
-		</butcherProducts>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_ParagonTortoise</defName>
-		<label>paragon tortoise</label>
-		<race>GR_ParagonTortoise</race>
-		<combatPower>55</combatPower>
+		<defName>GR_ParagonThrumbo</defName>
+		<label>colossal paragon</label>
+		<race>GR_ParagonThrumbo</race>
+		<combatPower>600</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
 			<li>
+				<label>colossal paragon calf</label>
+				<labelPlural>colossal paragon calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Tortoise/GR_ParagonTortoise</texPath>
-					<drawSize>2</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Tortoise/GR_Dessicated_Paragontortoise</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Tortoise/GR_ParagonTortoise</texPath>
+					<texPath>Things/Pawn/Animal/Paragon/Thrumbo/GR_ParagonThrumbo</texPath>
 					<drawSize>2.5</drawSize>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Tortoise/GR_Dessicated_Paragontortoise</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Tortoise/GR_ParagonTortoise</texPath>
-					<drawSize>3</drawSize>
 					<shadowData>
-						<volume>(0.45, 0.45, 0.45)</volume>
-						<offset>(0,0,0)</offset>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Paragon/Tortoise/GR_Dessicated_Paragontortoise</texPath>
-					<drawSize>3</drawSize>
+					<texPath>Things/Pawn/Animal/Paragon/Thrumbo/GR_Dessicated_ParagonThrumbo</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Thrumbo/GR_ParagonThrumbo</texPath>
+					<drawSize>4.0</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.6, 0.4)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Thrumbo/GR_Dessicated_ParagonThrumbo</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Thrumbo/GR_ParagonThrumbo</texPath>
+					<drawSize>4.8</drawSize>
+					<shadowData>
+						<volume>(1, 0.8, 0.5)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Thrumbo/GR_Dessicated_ParagonThrumbo</texPath>
+					<drawSize>4.8</drawSize>
+				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HornAttackTool</bodyPartGroup>
+					<thing>ThrumboHorn</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_ThrumboGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	<!-- Humanoid -->
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_ParagonHumanoid</defName>
+		<label>humanoid paragon</label>
+		<description>Reject humanity, return to monkey.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<MarketValue>850</MarketValue>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<body>GR_GreatApe</body>
+			<herdAnimal>true</herdAnimal>
+			<useLeatherFrom>Human</useLeatherFrom>
+			<useMeatFrom>Human</useMeatFrom>			
+			<baseBodySize>2.3</baseBodySize>
+			<baseHungerRate>0.17</baseHungerRate>
+			<baseHealthScale>3.5</baseHealthScale>
+			<foodType>VegetarianRoughAnimal</foodType>			
+			<trainability>Advanced</trainability>
+			<wildness>0.5</wildness>
+			<nameOnTameChance>1</nameOnTameChance>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			
+			<gestationPeriodDays>10</gestationPeriodDays>
+			
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3333</minAge>
+					<soundWounded>GR_Pawn_Ape_Wounded</soundWounded>
+					<soundDeath>GR_Pawn_Ape_Death</soundDeath>
+					<soundCall>GR_Pawn_Ape_Call</soundCall>
+					<soundAngry>GR_Pawn_Ape_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_ParagonHumanoid</defName>
+		<label>humanoid paragon</label>
+		<race>GR_ParagonHumanoid</race>
+		<combatPower>155</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Humanoid/GR_ParagonHumanoid</texPath>
+					<drawSize>1.1</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Humanoid/GR_Dessicated_ParagonHumanoid</texPath>
+					<drawSize>1.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Humanoid/GR_ParagonHumanoid</texPath>
+					<drawSize>1.3</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Humanoid/GR_Dessicated_ParagonHumanoid</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Humanoid/GR_ParagonHumanoid</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Paragon/Humanoid/GR_Dessicated_ParagonHumanoid</texPath>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-	</PawnKindDef>-->
-
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 </Defs>

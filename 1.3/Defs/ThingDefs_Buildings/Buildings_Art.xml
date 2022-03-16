@@ -41,9 +41,7 @@
 			</defaultIngredientFilter>
 		</recipeMaker>
 	</ThingDef>
-
 	<!--================================ Rugs ======================================-->
-
 	<ThingDef ParentName="GR_ArtBaseGround">
 		<defName>GR_HugeBearCatRug</defName>
 		<label>huge bearcat rug</label>
@@ -54,7 +52,6 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<tradeability>Sellable</tradeability>
-
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>495</WorkToBuild>
@@ -76,5 +73,97 @@
 			<GR_HugeBearCatPelt>1</GR_HugeBearCatPelt>
 		</costList>
 	</ThingDef>
-
+	<ThingDef ParentName="GR_ArtBaseGround">
+		<defName>GR_HugeBearRug</defName>
+		<label>huge bear rug</label>
+		<description>A bear pelt rug. Taxidermy seems to be in vogue on the Rim!</description>
+		<graphicData>
+			<texPath>Things/Building/GR_HugeBearRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>495</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>50</Beauty>
+			<Cleanliness>0.6</Cleanliness>
+		</statBases>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<rotatable>true</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<size>(2,2)</size>
+		<costList>
+			<GR_HugeBearPelt>1</GR_HugeBearPelt>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_ArtBaseGround">
+		<defName>GR_WolfRug</defName>
+		<label>wolf rug</label>
+		<description>A wolf pelt rug. Taxidermy seems to be in vogue on the Rim!</description>
+		<graphicData>
+			<texPath>Things/Building/GR_WolfRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>495</WorkToBuild>
+			<Mass>5</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>35</Beauty>
+			<Cleanliness>0.7</Cleanliness>
+		</statBases>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<rotatable>true</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<size>(2,2)</size>
+		<costList>
+			<GR_WolfPelt>1</GR_WolfPelt>
+		</costList>
+	</ThingDef>
+	<ThingDef ParentName="GR_ArtBaseGround">
+		<defName>GR_MuffaloRug</defName>
+		<label>muffalo pelt rug</label>
+		<description>A muffalo pelt rug. Taxidermy seems to be in vogue on the Rim!</description>
+		<graphicData>
+			<texPath>Things/Building/GR_MuffaloRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>495</WorkToBuild>
+			<Mass>8</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>40</Beauty>
+			<Cleanliness>0.6</Cleanliness>
+		</statBases>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<rotatable>true</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<size>(2,2)</size>
+		<costList>
+			<GR_MuffaloPelt>1</GR_MuffaloPelt>
+		</costList>
+	</ThingDef>
 </Defs>

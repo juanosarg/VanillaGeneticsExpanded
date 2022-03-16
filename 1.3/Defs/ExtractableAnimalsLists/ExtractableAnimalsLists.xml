@@ -87,6 +87,7 @@
 			<li>Cat</li>
 		</extractableAnimals>
 	</GeneticRim.ExtractableAnimalsList>
+	
 	<GeneticRim.ExtractableAnimalsList>
 		<defName>GR_TierOneAnimalsHumanoid</defName>
 		<tier>1</tier>
@@ -116,6 +117,16 @@
 			<li>Megaspider</li>
 			<li>Spelopede</li>
 			
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_TierTwoAnimalsEquines</defName>
+		<tier>2</tier>
+		<itemProduced>GR_EquineGenetic</itemProduced>
+		<extractableAnimals>
+			<li>Horse</li>
+			<li>Donkey</li>
+		
 		</extractableAnimals>
 	</GeneticRim.ExtractableAnimalsList>
 	

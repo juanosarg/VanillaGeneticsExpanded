@@ -547,7 +547,7 @@
 			<foodType>OmnivoreRoughAnimal</foodType>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
-			<trainability>None</trainability>
+			<trainability>Advanced</trainability>
 			<wildness>0.7</wildness>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<lifeExpectancy>4</lifeExpectancy>

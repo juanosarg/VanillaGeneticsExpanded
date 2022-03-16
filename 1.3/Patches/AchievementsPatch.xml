@@ -17,7 +17,7 @@
 
 						<AchievementsExpanded.AchievementTabDef>
 							<defName>GR_Achievements</defName>
-							<label>Genetic Rim</label>
+							<label>Vanilla Genetics Expanded</label>
 						</AchievementsExpanded.AchievementTabDef>
 
 						<AchievementsExpanded.AchievementDef Name="GR_AchievementParent" Abstract="true">					
@@ -29,7 +29,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementMyFirstLab</defName>
 							<label>Baby's First Genetics Lab</label>
-							<description>Build your first Genepod</description>							
+							<description>Build your first Genomorpher</description>							
 							<tracker Class="AchievementsExpanded.BuildingTracker">
 								<def>GR_GenePod</def>
 								<count>1</count>
@@ -41,7 +41,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementItLives</defName>
 							<label>It Lives!</label>
-							<description>Successfully hatch your first hybrid from an incubator</description>
+							<description>Successfully hatch your first hybrid from an electrowomb</description>
 							<tracker Class="AchievementsExpanded.HediffTracker">
 								<def>GR_RecentlyHatched</def>
 								<count>1</count>
@@ -62,7 +62,7 @@
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_BearchickenKind</key>
+										<key>GR_Bearchicken</key>
 										<value>1</value>
 									</li>
 									<li>
@@ -144,7 +144,7 @@
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_Catfallo</key>
+										<key>GR_Catffalo</key>
 										<value>1</value>
 									</li>
 									<li>
@@ -255,7 +255,7 @@
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_Ratfallo</key>
+										<key>GR_Ratffalo</key>
 										<value>1</value>
 									</li>
 									<li>
@@ -321,10 +321,6 @@
 										<value>1</value>
 									</li>
 									<li>
-										<key>GR_ParagonWildBoar</key>
-										<value>1</value>
-									</li>
-									<li>
 										<key>GR_ParagonBoomalope</key>
 										<value>1</value>
 									</li>
@@ -332,46 +328,52 @@
 										<key>GR_ParagonChicken</key>
 										<value>1</value>
 									</li>
-									<li>
-										<key>GR_ParagonEmu</key>
-										<value>1</value>
-									</li>
+									
 									<li>
 										<key>GR_ParagonMuffalo</key>
 										<value>1</value>
 									</li>
-									<li>
-										<key>GR_ParagonOstrich</key>
-										<value>1</value>
-									</li>
-									<li>
-										<key>GR_ParagonRhinoceros</key>
-										<value>1</value>
-									</li>
+									
 									<li>
 										<key>GR_ParagonTimberWolf</key>
 										<value>1</value>
 									</li>
-									<li>
-										<key>GR_ParagonHare</key>
-										<value>1</value>
-									</li>
+									
 									<li>
 										<key>GR_ParagonIguana</key>
 										<value>1</value>
 									</li>
-									<li>
-										<key>GR_ParagonPig</key>
-										<value>1</value>
-									</li>
+									
 									<li>
 										<key>GR_ParagonRat</key>
 										<value>1</value>
 									</li>
+									
 									<li>
-										<key>GR_ParagonTortoise</key>
+										<key>GR_ParagonHorse</key>
 										<value>1</value>
 									</li>
+									
+									<li>
+										<key>GR_ParagonThrumbo</key>
+										<value>1</value>
+									</li>
+									
+									<li>
+										<key>GR_ParagonHumanoid</key>
+										<value>1</value>
+									</li>
+									
+									<li>
+										<key>GR_ParagonCat</key>
+										<value>1</value>
+									</li>
+									
+									<li>
+										<key>GR_ParagonInsectoid</key>
+										<value>1</value>
+									</li>
+									
 								</kindDefs>
 								<requireAll>false</requireAll>
 							</tracker>
@@ -506,7 +508,7 @@
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
+						<!--<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementWeHaveTheTechnology</defName>
 							<label>We Have the Technology</label>
 							<description>Hatch a Tier 4 Mechanoid Hybrid</description>
@@ -557,7 +559,7 @@
 							</tracker>
 							<texPath>Achievements/GR_AchievementWeHaveTheTechnology</texPath>
 							<points>25</points>
-						</AchievementsExpanded.AchievementDef>
+						</AchievementsExpanded.AchievementDef>-->
 
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementTaskFailedSuccessfully</defName>
@@ -576,7 +578,7 @@
 							<points>5</points>
 						</AchievementsExpanded.AchievementDef>	
 
-						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
+						<!--<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementTeethEconomy</defName>
 							<label>Teeth Economy</label>
 							<description>Trade a total of 100 Very small teeth</description>
@@ -672,7 +674,7 @@
 
 							<texPath>Achievements/GR_AchievementTheyGrowUpSoFast</texPath>
 							<points>10</points>
-						</AchievementsExpanded.AchievementDef>
+						</AchievementsExpanded.AchievementDef>-->
 
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementHomemadeThrumboians</defName>
@@ -753,11 +755,11 @@
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementWarmAndFuzzy</defName>
 							<label>Warm and Fuzzy</label>
-							<description>Craft any item out of Thrumffalo Wool</description>
+							<description>Craft any item out of Luxuriant Hybrid Wool</description>
 
 							<tracker Class="AchievementsExpanded.ItemCraftTracker">
 
-								<madeFrom>GR_ThrumffaloWool</madeFrom>
+								<madeFrom>GR_LuxuriantHybridWool</madeFrom>
 								<count>1</count>
 							</tracker>
 
@@ -768,11 +770,11 @@
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementMlizard</defName>
 							<label>M'lizard</label>
-							<description>Craft a cowboy hat out of wolfsnake skin</description>
+							<description>Craft a cowboy hat out of hybrid scales</description>
 
 							<tracker Class="AchievementsExpanded.ItemCraftTracker">
 								<def>Apparel_CowboyHat</def>
-								<madeFrom>GR_WolfsnakeSkin</madeFrom>
+								<madeFrom>GR_HybridScales</madeFrom>
 								<count>1</count>
 							</tracker>
 
@@ -782,11 +784,11 @@
 
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementCryoHoarder</defName>
-							<label>Cryo Hoarder</label>
-							<description>Hoard 300 canisters of Cryofuel (you'll need it!)</description>
+							<label>Explosive Hoarder</label>
+							<description>Hoard 300 canisters of Compressed chemfuel</description>
 
 							<tracker Class="AchievementsExpanded.ItemTracker">
-								<def>GR_Cryofuel</def>
+								<def>GR_CompressedChemfuel</def>
 
 								<count>300</count>
 							</tracker>
@@ -797,11 +799,11 @@
 
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementMixingItUp</defName>
-							<label>Mixing It Up</label>
-							<description>Use a Recombinator to (hopefully) get new genes</description>
+							<label>Doubling It Up</label>
+							<description>Use a Recombinator to get a template genome</description>
 
 							<tracker Class="AchievementsExpanded.ItemCraftTracker">
-								<def>GR_StabilizingGenes</def>
+								<def>GR_TemplateGenetic</def>
 								<count>1</count>
 							</tracker>
 
@@ -812,9 +814,9 @@
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementSuperiorTech</defName>
 							<label>Superior Technology</label>
-							<description>Acquire a Mechanoid interface chip from a cluster or ship part</description>
+							<description>Acquire an archotech genome excavator from an abandoned lab</description>
 							<tracker Class="AchievementsExpanded.ItemTracker">
-								<def>GR_MechanoidInterfaceChip</def>
+								<def>GR_ArchotechGenomeExcavator</def>
 								<count>1</count>
 							</tracker>
 

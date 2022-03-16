@@ -77,6 +77,23 @@
 		</comps>
 	</AbilityDef>
 	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_PoisonousCloud</defName>
+		<label>release venomous cloud</label>
+		<description>Releases a cloud of poisonous gas from this creature. The animal will NOT be affected and damaged by it.</description>
+		<iconPath>ui/commands/GR_PoisonousCloud</iconPath>
+		<warmupStartSound>GR_Gas</warmupStartSound>
+		<verbProperties>
+			<range>2.9</range>
+		</verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_CreateThingDefAround">
+				<radius>3</radius>
+				<thingCreated>GR_Poison_Gas</thingCreated>
+				<thingCreatedChance>0.75</thingCreatedChance>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonatePoison</defName>
 		<label>detonate venomous chemfuel</label>
 		<description>Remotely detonate the venomous chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
@@ -194,6 +211,18 @@
 		<comps>
 			<li Class="GeneticRim.CompProperties_GiveHediff">
 				<hediffDef>GR_Burrowing</hediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_StampedeClouds</defName>
+		<label>stampede</label>
+		<description>Stampedes, moving faster and creating dust clouds that block line of view for projectile weapons. Gets the creature tired after a while.</description>
+		<iconPath>ui/commands/GR_StampedeClouds</iconPath>
+		<groupDef>GR_TwiceDayAbilitiesGroup</groupDef>
+		<comps>
+			<li Class="GeneticRim.CompProperties_GiveHediff">
+				<hediffDef>GR_Stampeding</hediffDef>
 			</li>
 		</comps>
 	</AbilityDef>

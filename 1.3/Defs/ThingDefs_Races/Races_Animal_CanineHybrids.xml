@@ -20,7 +20,6 @@
 				<power>6</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -30,7 +29,6 @@
 				<power>6</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<capacities>
@@ -39,7 +37,6 @@
 				<power>11</power>
 				<cooldownTime>2.1</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -59,7 +56,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -76,15 +72,7 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -172,11 +160,6 @@
 					<texPath>Things/Pawn/Animal/Wolf/Wolfbear/Dessicated_Wolfbear</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>FrontRightPaw</bodyPartGroup>
-					<thing>GR_WolfbearPaws</thing>
-					<allowFemale>true</allowFemale>
-				</butcherBodyPart>
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -206,7 +189,6 @@
 				<power>5</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -216,7 +198,6 @@
 				<power>5</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<capacities>
@@ -225,7 +206,6 @@
 				<power>5</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -251,23 +231,19 @@
 				<warmupTime>1.5</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>1</minRange>
-				<range>15</range>	
-				<label>fire breath</label>	  				
+				<range>15</range>
+				<label>fire breath</label>
 				<soundCast>GR_FireBreath</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_AdrenalineRush</initialAbility>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
@@ -287,15 +263,7 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -412,7 +380,6 @@
 				<power>4</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -422,7 +389,6 @@
 				<power>4</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-			
 			</li>
 			<li>
 				<capacities>
@@ -431,7 +397,6 @@
 				<power>5</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -456,11 +421,8 @@
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_AdrenalineRush</initialAbility>
 			</li>
-			
-			
 		</comps>
 		<race>
-			
 			<body>GR_QuadrupedAnimalWithBeak</body>
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -477,15 +439,7 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -602,7 +556,6 @@
 				<power>2</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -612,7 +565,6 @@
 				<power>2</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -630,7 +582,6 @@
 				<milkIntervalDays>1</milkIntervalDays>
 				<milkAmount>5</milkAmount>
 			</li>
-			
 			<li Class="CompProperties_Shearable">
 				<woolDef>GR_ThickHybridWool</woolDef>
 				<shearIntervalDays>3</shearIntervalDays>
@@ -639,10 +590,8 @@
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_AdrenalineRush</initialAbility>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>false</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -660,15 +609,7 @@
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<packAnimal>true</packAnimal>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -776,7 +717,6 @@
 			<MarketValue>275</MarketValue>
 			<FilthRate>2</FilthRate>
 		</statBases>
-		
 		<tools>
 			<li>
 				<label>left claw</label>
@@ -786,7 +726,6 @@
 				<power>5</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -796,7 +735,6 @@
 				<power>5</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-			
 			</li>
 			<li>
 				<capacities>
@@ -805,7 +743,6 @@
 				<power>8</power>
 				<cooldownTime>1</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -819,32 +756,30 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps><li Class="AnimalBehaviours.CompProperties_InitialAbility">
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_AdrenalineRush</initialAbility>
-			</li></comps>
+			</li>
+		</comps>
 		<race>
 			<fleshType>GR_Normal</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>			
-			<body>QuadrupedAnimalWithPawsAndTail</body>			
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseBodySize>0.85</baseBodySize>
 			<baseHungerRate>2</baseHungerRate>
 			<baseHealthScale>0.99</baseHealthScale>
 			<foodType>DendrovoreAnimal</foodType>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<mateMtbHours>6</mateMtbHours>
 			<gestationPeriodDays>7</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -960,7 +895,6 @@
 				<power>6</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -970,7 +904,6 @@
 				<power>6</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<capacities>
@@ -979,7 +912,6 @@
 				<power>8</power>
 				<cooldownTime>0.8</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -994,7 +926,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -1002,10 +933,8 @@
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_AdrenalineRush</initialAbility>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<fleshType>GR_Normal</fleshType>
@@ -1024,15 +953,7 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+		
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
