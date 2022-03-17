@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>GR_DisabledQuestAnimalsAlpha</defName>
+		<disabledFromQuestsPawns>
+			<li>GR_BearBug</li>
+			<li>GR_Boomalisk</li>
+			<li>GR_Needlechicken</li>
+			<li>GR_Beetlefleet</li>
+			<li>GR_Groundffalo</li>
+			<li>GR_MeadowLizard</li>
+			<li>GR_AnimusHare</li>
+			<li>GR_Nighthrumbo</li>
+			<li>GR_WolfShrimp</li>
+		</disabledFromQuestsPawns>
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+</Defs>

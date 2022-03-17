@@ -1,12 +1,10 @@
 <ModMetaData>
 	<name>Vanilla Genetics Expanded</name>
-	<author>Sarg, Oskar Potocki, Luizi</author>
+	<author>Sarg, erdelf, Oskar Potocki, Luizi, Reann Shepard</author>
 	<supportedVersions>
-      
-	  <li>1.3</li>
-	  
-   </supportedVersions>
-    <modDependencies>
+		<li>1.3</li>
+	</supportedVersions>
+	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
 			<displayName>Harmony</displayName>
@@ -24,10 +22,11 @@
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>brrainz.harmony</li>
-        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-	   <li>vanillaexpanded.achievements</li>
-	   <li>erdelf.HumanoidAlienRaces</li>    
-    </loadAfter>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>sarg.alphaanimals</li>
+		<li>vanillaexpanded.achievements</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+	</loadAfter>
 	<description>
 
 

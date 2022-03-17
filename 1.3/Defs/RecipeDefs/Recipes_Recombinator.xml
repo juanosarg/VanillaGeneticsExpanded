@@ -50,7 +50,7 @@
 			<GR_TemplateGenetic>1</GR_TemplateGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateUrsineGenome</defName>
 		<label>Duplicate Ursine genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -82,7 +82,7 @@
 			<GR_UrsineGenetic>2</GR_UrsineGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateAvianGenome</defName>
 		<label>Duplicate Avian genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -114,7 +114,7 @@
 			<GR_AvianGenetic>2</GR_AvianGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateBoomalopeGenome</defName>
 		<label>Duplicate Booma genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -146,7 +146,7 @@
 			<GR_BoomalopeGenetic>2</GR_BoomalopeGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateMuffaloGenome</defName>
 		<label>Duplicate Muffalo genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -178,7 +178,7 @@
 			<GR_MuffaloGenetic>2</GR_MuffaloGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateCanineGenome</defName>
 		<label>Duplicate Canine genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -210,7 +210,7 @@
 			<GR_CanineGenetic>2</GR_CanineGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateRodentGenome</defName>
 		<label>Duplicate Rodent genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -242,7 +242,7 @@
 			<GR_RodentGenetic>2</GR_RodentGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateFelineGenome</defName>
 		<label>Duplicate Feline genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -274,7 +274,7 @@
 			<GR_FelineGenetic>2</GR_FelineGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateEquineGenome</defName>
 		<label>Duplicate Equine genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -306,7 +306,7 @@
 			<GR_EquineGenetic>2</GR_EquineGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateInsectoidGenome</defName>
 		<label>Duplicate Insectoid genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -338,7 +338,7 @@
 			<GR_InsectoidGenetic>2</GR_InsectoidGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateReptileGenome</defName>
 		<label>Duplicate Reptile genome</label>
 		<description>Duplicate the genome using a blank template.</description>
@@ -370,7 +370,7 @@
 			<GR_ReptileGenetic>2</GR_ReptileGenetic>
 		</products>		
 	</RecipeDef>
-	<RecipeDef ParentName="GR_BoosterRecipeBase">
+	<RecipeDef ParentName="GR_RecombinatorRecipeBase">
 		<defName>GR_DuplicateHumanoidGenome</defName>
 		<label>Duplicate Humanoid genome</label>
 		<description>Duplicate the genome using a blank template.</description>

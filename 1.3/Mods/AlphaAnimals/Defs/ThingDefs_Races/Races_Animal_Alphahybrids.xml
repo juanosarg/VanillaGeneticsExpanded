@@ -11,6 +11,7 @@
 			<MarketValue>350</MarketValue>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -35,20 +36,17 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<rage>true</rage>
-				<dinostamina>true</dinostamina>
-			</li>
+			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_BearBugEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_BearBugEggFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>25</eggLayIntervalDays>
+				<eggLayIntervalDays>15</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -60,21 +58,13 @@
 			<fleshType>GR_Normal</fleshType>
 			<packAnimal>false</packAnimal>
 			<wildness>0.75</wildness>
-			<lifeExpectancy>14</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<useLeatherFrom>AA_BedBug</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -100,6 +90,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BearBug</defName>
@@ -152,6 +155,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -165,6 +174,7 @@
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<FilthRate>12</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -235,7 +245,7 @@
 			<li Class="CompProperties_Milkable">
 				<milkDef>Chemfuel</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>
-				<milkAmount>15</milkAmount>
+				<milkAmount>8</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
@@ -244,20 +254,14 @@
 				<resourceAmount>33</resourceAmount>
 				<customResourceString>BoomthreadDesc</customResourceString>
 			</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
-				<explodable>true</explodable>
+			<li Class="MVCF.Comps.CompProperties_RandomVerbs ">
+				<meleeChance>0.5</meleeChance>
 			</li>
-			<li Class="CompProperties_EggLayer">
-				<eggUnfertilizedDef>GR_BoomaliskEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_BoomaliskEggFertilized</eggFertilizedDef>
-				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>20</eggLayIntervalDays>
-				<eggCountRange>1</eggCountRange>
-			</li>
+			
+			
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
@@ -271,21 +275,14 @@
 			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
 			<packAnimal>false</packAnimal>
 			<wildness>0.90</wildness>
-			<lifeExpectancy>15</lifeExpectancy>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<useLeatherFrom>AA_Dunealisk</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -297,7 +294,7 @@
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>1.20</minAge>
+					<minAge>0.99</minAge>
 					<soundWounded>Pawn_Feralisk_Wounded</soundWounded>
 					<soundDeath>Pawn_Feralisk_Death</soundDeath>
 					<soundCall>Pawn_Feralisk_Call</soundCall>
@@ -311,6 +308,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Boomalisk</defName>
@@ -363,6 +373,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -375,6 +391,7 @@
 			<MarketValue>120</MarketValue>
 			<MeatAmount>0</MeatAmount>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -428,20 +445,17 @@
 			<li Class="AnimalBehaviours.CompProperties_LightSustenance">
 
 								</li>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
-				<chickenRimPox>true</chickenRimPox>
-			</li>
+			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_NeedlechickenEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_NeedlechickenEggFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>3</eggLayIntervalDays>
+				<eggLayIntervalDays>1.5</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>false</predator>
@@ -453,18 +467,12 @@
 			<fleshType>GR_Normal</fleshType>
 			<packAnimal>false</packAnimal>
 			<wildness>0.6</wildness>
-			<lifeExpectancy>5</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<useLeatherFrom>AA_Needlepost</useLeatherFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -493,6 +501,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Needlechicken</defName>
@@ -537,6 +558,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Insect -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -569,10 +596,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
-				<insectclouds>true</insectclouds>
-			</li>
+
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>InsectJelly</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
@@ -589,11 +613,14 @@
 				<reproductionIntervalDays>9</reproductionIntervalDays>
 				<customString>Asexual fission in: </customString>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
 		</comps>
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>2</executionRange>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -606,7 +633,7 @@
 			<packAnimal>false</packAnimal>
 			<hasGenders>false</hasGenders>
 			<wildness>0.70</wildness>
-			<lifeExpectancy>9</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
@@ -638,6 +665,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Beetlefleet</defName>
@@ -678,17 +718,24 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_InsectoidGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Groundfallo</defName>
-		<label>groundfallo</label>
-		<description>The horned groundfallo is a great pack beast (albeit a bit slow) capable of producing milk and wool, as well as mining for your colony. Compared to a Groundrunner it won't be as efficient on its mining work, but the other characteristics make up for this.\n\nUseful abilities: Produces wool, milk, acts as a pack beast and  mines rocks and minerals.</description>
+		<defName>GR_Groundffalo</defName>
+		<label>groundffalo</label>
+		<description>The horned groundffalo is a great pack beast (albeit a bit slow) capable of producing milk and wool, as well as mining for your colony. Compared to a Groundrunner it won't be as efficient on its mining work, but the other characteristics make up for this.\n\nUseful abilities: Produces wool, milk, acts as a pack beast and  mines rocks and minerals.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
 			<MarketValue>350</MarketValue>
 			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<FilthRate>16</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -747,10 +794,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
-				<carrymore>true</carrymore>
-			</li>
+			
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
 				<milkIntervalDays>1</milkIntervalDays>
@@ -769,29 +813,21 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>false</predator>
 			<body>GR_QuadrupedAnimalWithPawsHornAndTail</body>
-			<baseHungerRate>1.8</baseHungerRate>
+			<baseHungerRate>0.7</baseHungerRate>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>3</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<gestationPeriodDays>40</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<packAnimal>true</packAnimal>
 			<wildness>0.60</wildness>
-			<lifeExpectancy>18</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.35</manhunterOnDamageChance>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<fleshType>GR_Normal</fleshType>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -803,7 +839,7 @@
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>1.5</minAge>
+					<minAge>0.99</minAge>
 					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
 					<soundDeath>Pawn_Muffalo_Death</soundDeath>
 					<soundCall>Pawn_Muffalo_Call</soundCall>
@@ -817,11 +853,24 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_Groundfallo</defName>
-		<label>groundfallo</label>
-		<race>GR_Groundfallo</race>
+		<defName>GR_Groundffalo</defName>
+		<label>groundffalo</label>
+		<race>GR_Groundffalo</race>
 		<combatPower>325</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
@@ -867,13 +916,15 @@
 					<texPath>Things/Pawn/Animal/AlphaAnimals/Muffalo/GR_Dessicated_Groundfallo</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
-				<butcherBodyPart>
-					<bodyPartGroup>HornAttackTool</bodyPartGroup>
-					<thing>GR_GroundfalloHorn</thing>
-					<allowFemale>true</allowFemale>
-				</butcherBodyPart>
+				
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Reptile -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -884,6 +935,8 @@
 			<MoveSpeed>6</MoveSpeed>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
 			<MarketValue>450</MarketValue>
+			<FilthRate>4</FilthRate>
+			<CaravanRidingSpeedFactor>1.7</CaravanRidingSpeedFactor>
 		</statBases>
 		<tools>
 			<li>
@@ -931,45 +984,37 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
-				<poisonouscloud>true</poisonouscloud>
-			</li>
+			
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>GR_EggMeadowLizardFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>23</eggLayIntervalDays>
+				<eggLayIntervalDays>8</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
 			<predator>true</predator>
+			<maxPreyBodySize>1.5</maxPreyBodySize>
 			<body>Bird</body>
-			<baseHungerRate>0.55</baseHungerRate>
+			<baseHungerRate>0.2</baseHungerRate>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
-			<gestationPeriodDays>24</gestationPeriodDays>
+			
 			<packAnimal>false</packAnimal>
 			<wildness>0.75</wildness>
-			<lifeExpectancy>50</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<useLeatherFrom>AA_MeadowAve</useLeatherFrom>
 			<useMeatFrom>Iguana</useMeatFrom>
-			<litterSizeCurve>
-				<points>
-					<li>(0.99, 0)</li>
-					<li>(1, 1)</li>
-					<li>(1.01, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -991,6 +1036,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_MeadowLizard</defName>
@@ -1039,6 +1097,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_ReptileGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Rodent -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -1115,12 +1179,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
-				<burrowing>true</burrowing>
-			</li>
-		</comps>
+		
 		<race>
 			<thinkTreeMain>AA_AnimalNuzzlerDraftable</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -1134,20 +1193,13 @@
 			<trainability>Intermediate</trainability>
 			<wildness>0.65</wildness>
 			<nuzzleMtbHours>16</nuzzleMtbHours>
-			<gestationPeriodDays>10</gestationPeriodDays>
+			<gestationPeriodDays>5</gestationPeriodDays>
 			<mateMtbHours>8</mateMtbHours>
 			<useLeatherFrom>Hare</useLeatherFrom>
 			<useMeatFrom>Hare</useMeatFrom>
 			<fleshType>GR_Normal</fleshType>
-			<litterSizeCurve>
-				<points>
-					<li>(1.0, 0)</li>
-					<li>(1.5, 1)</li>
-					<li>(2.0, 1)</li>
-					<li>(2.5, 0)</li>
-				</points>
-			</litterSizeCurve>
-			<lifeExpectancy>9</lifeExpectancy>
+			
+			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1173,6 +1225,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBaseFox">
 		<defName>GR_AnimusHare</defName>
@@ -1212,6 +1277,12 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -1224,6 +1295,7 @@
 			<MarketValue>1500</MarketValue>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+			<FilthRate>6</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -1232,8 +1304,8 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>18</power>
-				<cooldownTime>1</cooldownTime>
+				<power>54</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
@@ -1241,8 +1313,8 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>15</power>
-				<cooldownTime>1.5</cooldownTime>
+				<power>30</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
@@ -1258,8 +1330,8 @@
 				<capacities>
 					<li>Scratch</li>
 				</capacities>
-				<power>15</power>
-				<cooldownTime>1.5</cooldownTime>
+				<power>30</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
@@ -1274,8 +1346,8 @@
 				<capacities>
 					<li>ToxicBite</li>
 				</capacities>
-				<power>20</power>
-				<cooldownTime>2.0</cooldownTime>
+				<power>30</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
@@ -1291,8 +1363,8 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>3</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>5</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
@@ -1317,20 +1389,20 @@
 			</li>
 		</verbs>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
-				<stampede>true</stampede>
-			</li>
+			
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>GR_EggNighthrumboFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
-				<eggLayIntervalDays>45</eggLayIntervalDays>
+				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="MVCF.Comps.CompProperties_RandomVerbs ">
+				<meleeChance>0.5</meleeChance>
+			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<body>GR_QuadrupedAnimalWithPawsHornAndTailThrumbo</body>
@@ -1341,23 +1413,15 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<packAnimal>false</packAnimal>
 			<wildness>0.80</wildness>
-			<lifeExpectancy>150</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.25</manhunterOnDamageChance>
 			<useLeatherFrom>AA_Nightling</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<fleshType>GR_Normal</fleshType>
-			<nuzzleMtbHours>50</nuzzleMtbHours>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
+			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1369,7 +1433,7 @@
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>1</minAge>
+					<minAge>0.99</minAge>
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
 					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -1383,6 +1447,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Nighthrumbo</defName>
@@ -1439,6 +1516,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_ThrumboGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -1450,6 +1533,7 @@
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>850</MarketValue>
 			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<FilthRate>3</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -1508,16 +1592,13 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_Draftable">
-				<dinostamina>true</dinostamina>
-				<adrenalineburst>true</adrenalineburst>
-			</li>
+			
 			<li Class="AnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>20</rateInTicks>
 			</li>
 		</comps>
 		<race>
-			<thinkTreeMain>GR_DraftableAnimal</thinkTreeMain>
+			
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -1526,25 +1607,17 @@
 			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<packAnimal>false</packAnimal>
 			<wildness>0.9</wildness>
-			<lifeExpectancy>25</lifeExpectancy>
+			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<useLeatherFrom>AA_RaptorShrimp</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<fleshType>GR_Normal</fleshType>
-			<litterSizeCurve>
-				<points>
-					<li>(0.5, 0)</li>
-					<li>(1, 1)</li>
-					<li>(2, 1.7)</li>
-					<li>(3, 0.7)</li>
-					<li>(3.5, 0)</li>
-				</points>
-			</litterSizeCurve>
+			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1570,6 +1643,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_WolfShrimp</defName>
@@ -1622,5 +1708,11 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_AlphaGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 </Defs>

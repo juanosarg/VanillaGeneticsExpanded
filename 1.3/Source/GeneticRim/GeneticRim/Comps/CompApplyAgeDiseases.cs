@@ -55,6 +55,7 @@ namespace GeneticRim
                     if (hediff == null)
                     {
                         pawn.health.AddHediff(randomHediff);
+                        Find.LetterStack.ReceiveLetter("GR_AgeDiseaseLabel".Translate(), "GR_AgeDiseaseText".Translate(pawn.LabelCap, randomHediff.LabelCap), LetterDefOf.NegativeEvent, pawn);
                     }
 
 

@@ -666,7 +666,7 @@
 	</PawnKindDef>
 	<!-- Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_ParagonTimberWolf</defName>
+		<defName>GR_ParagonWolf</defName>
 		<label>canine paragon</label>
 		<description>This huge wolf can be turned into a fierce, loyal companion if properly trained. Wolf pelts have long been used as trade goods.\n\nUseful abilities: The paragon timber wolf's pelt can be traded for a profit, or used to craft a wolf pelt rug, which isn't tacky at all. Nope.</description>
 		<statBases>
@@ -801,9 +801,9 @@
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_ParagonTimberWolf</defName>
+		<defName>GR_ParagonWolf</defName>
 		<label>canine paragon</label>
-		<race>GR_ParagonTimberWolf</race>
+		<race>GR_ParagonWolf</race>
 		<combatPower>95</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>

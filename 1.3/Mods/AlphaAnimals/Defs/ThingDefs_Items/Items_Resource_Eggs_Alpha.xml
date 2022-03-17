@@ -45,7 +45,7 @@
 
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>16</hatcherDaystoHatch>
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
 				<hatcherPawn>GR_BearBug</hatcherPawn>
 			</li>
 		</comps>
@@ -56,44 +56,6 @@
 
 
 
-	<!-- Boomalisk Egg -->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>GR_BoomaliskEggUnfertilized</defName>
-		<label>boomalisk egg (unfert.)</label>
-		<description>Unfertilized boomalisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-      <color>(208,207,162)</color>
-		</graphicData>
-		<tradeability>Sellable</tradeability>
-		<statBases>
-			<MarketValue>9.0</MarketValue>
-
-		</statBases>
-
-	</ThingDef>
-
-	<ThingDef ParentName="AA_EggFertBaseHot">
-		<defName>GR_BoomaliskEggFertilized</defName>
-		<label>boomalisk egg (fert.)</label>
-		<description>Fertilized boomalisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a boomalisk.</description>
-		<tradeability>None</tradeability>
-		<statBases>
-			<MarketValue>9.0</MarketValue>
-
-		</statBases>
-		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-      <color>(208,207,162)</color>
-		</graphicData>
-
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>18</hatcherDaystoHatch>
-				<hatcherPawn>GR_Boomalisk</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef>
 	
 		<!-- Needlechicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -128,7 +90,7 @@
 
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>3</hatcherDaystoHatch>
+				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
 				<hatcherPawn>GR_Needlechicken</hatcherPawn>
 			</li>
 		</comps>
@@ -153,7 +115,7 @@
 		</statBases>
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
 				<hatcherPawn>GR_Nighthrumbo</hatcherPawn>
 			</li>
 		</comps>

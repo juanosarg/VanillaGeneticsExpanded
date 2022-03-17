@@ -32,14 +32,10 @@ namespace GeneticRim
                
                 if ((corpse != null && corpse.InnerPawn == null)||!FoodUtility.IsHumanlikeCorpseOrHumanlikeMeatOrIngredient(__instance))
                 {
+                    ingester.needs.food.CurLevel -= ingester.needs.food.MaxLevel * 0.5f;
                     ingester?.jobs?.StartJob(JobMaker.MakeJob(JobDefOf.Vomit), JobCondition.InterruptForced, null, resumeCurJobAfterwards: true);
-                    float numTaken;
-                    float nutritionIngested;
-                    numTaken = Mathf.CeilToInt(nutritionWanted / __instance.GetStatValue(StatDefOf.Nutrition));
-                    numTaken = Mathf.Min(numTaken, __instance.def.ingestible.maxNumToIngestAtOnce, __instance.stackCount);
-                    numTaken = Mathf.Max(numTaken, 1);
-                    nutritionIngested = (float)numTaken * __instance.GetStatValue(StatDefOf.Nutrition);
-                    ingester.needs.food.CurLevel -= nutritionIngested;
+                   
+                    
                 }
                 
             }

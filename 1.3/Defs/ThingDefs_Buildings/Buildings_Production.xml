@@ -186,6 +186,7 @@
 	<ThingDef ParentName="BenchBase">
 		<defName>GR_TissueGrinder</defName>
 		<label>tissue grinder</label>
+		<thingClass>Building_WorkTable</thingClass>
 		<canOverlapZones>false</canOverlapZones>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -216,6 +217,12 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
@@ -239,6 +246,7 @@
 		<label>genetics tinkering table</label>
 		<canOverlapZones>false</canOverlapZones>
 		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingClass>Building_WorkTable</thingClass>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<description>An advanced and specialized workbench capable of manufacturing medical-grade implants and mixing genetic boosters specifically tuned to Genomorphers. These include but aren’t limited to boosters that improve the safety or stability of hybrids and even micro-controllers that enable direct user-input.</description>
 		<graphicData>
@@ -268,6 +276,12 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>

@@ -156,13 +156,23 @@ namespace GeneticRim
                             genomeSecondary = genome;
                         }));
                     }
-                    if (!this.genomesCanBeSecondary.Contains(this.genomeDominant))
+
+                    if (this.genomeDominant.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true)
                     {
-                        floatOptions.Add(new FloatMenuOption(this.genomeDominant.def.LabelCap, delegate
+                        foreach (var genome in this.genomes.ToList())
                         {
-                            genomeSecondary = this.genomeDominant;
-                        }));
+                            if(genome!= genomeDominant) {
+                                floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
+                                {
+                                    genomeSecondary = genome;
+                                }));
+                            }
+                            
+                        }
+
                     }
+
+
 
                     if (this.genomesCanBeSecondary.NullOrEmpty())
                     {

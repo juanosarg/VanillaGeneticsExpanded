@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--=============== Genetic Material ====================-->
+	
+	
+	<ThingDef ParentName="GR_GeneticsBaseTier2or3">
+		<defName>GR_AlphaGenetic</defName>
+		<label>alpha genome</label>
+		<description>A payload of alpha animal genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 2 genome can only be used as primary genome.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table or any genome excavator from:</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Item/GR_geneticmaterialspurple</texPath>
+		</graphicData>
+	</ThingDef>
+</Defs>
