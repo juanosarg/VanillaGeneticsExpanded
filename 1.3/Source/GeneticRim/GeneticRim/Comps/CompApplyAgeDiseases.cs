@@ -10,17 +10,23 @@ namespace GeneticRim
     {
         public int tickCounter = 0;
 
-        public const int ticksToApply = 10800000;  // 3 years
-        public const int ticksToReapply = ticksToApply-900000;  // 3 years - 15 days
+        public int ticksToApply = 10800000;  // 3 years
+        public int ticksToReapply = 900000;  // 3 years - 15 days
 
-        List<HediffDef> hediffsToApply = new List<HediffDef>() { InternalDefOf.GR_MuscleNecrosis, InternalDefOf.GR_AnimalTuberculosis, InternalDefOf.GR_AnimalAbasia };
+        List<HediffDef> hediffsToApply = new List<HediffDef>() { InternalDefOf.GR_MuscleNecrosis, InternalDefOf.GR_AnimalTuberculosis, InternalDefOf.GR_AnimalAbasia, InternalDefOf.GR_SargSyndrome };
 
         public override void PostExposeData()
         {
-            base.PostExposeData();
-
-          
+            base.PostExposeData();         
             Scribe_Values.Look(ref this.tickCounter, nameof(this.tickCounter));
+            Scribe_Values.Look(ref this.ticksToApply, nameof(this.ticksToApply));
+        }
+
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+
+            ticksToApply = (int)(parent.TryGetComp<CompHybrid>().GetLifeExpectancyFactor()*ticksToApply);
 
         }
 
@@ -53,7 +59,7 @@ namespace GeneticRim
 
 
                 }
-                tickCounter = ticksToReapply;
+                tickCounter = ticksToApply-ticksToReapply;
             }
         }
 

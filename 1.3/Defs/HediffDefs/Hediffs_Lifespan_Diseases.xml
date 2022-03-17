@@ -164,4 +164,27 @@
 	</HediffDef>
 	
 	
+	<HediffDef ParentName="DiseaseBase">
+		<defName>GR_SargSyndrome</defName>
+		<label>sarg syndrome</label>
+		<description>A rare bacterial infection of the animal brain, which causes the animal to only be able to consume human meat, no matter of previous predisposition. Consuming anything else will simply not satiate the animal hunger. A creature with Sarg Syndrome can't be tended to or cured. Feeding them with human meat is the only way to avoid malnutrition and eventually death.\n\nAny hybrid or paragon animal will get this disease 3 years after being hatched or born naturally, though this is affected by the hybrids's quality.</description>
+		<hediffClass>HediffWithComps</hediffClass>		
+		<makesSickThought>true</makesSickThought>
+		<minSeverity>0.001</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		
+		<stages>
+			
+			<li>
+				<minSeverity>0</minSeverity>
+			
+				<lifeThreatening>true</lifeThreatening>
+				
+			</li>
+		</stages>
+		
+		
+	</HediffDef>
+	
+	
 </Defs>
