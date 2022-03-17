@@ -21,7 +21,7 @@ namespace GeneticRim
     [HarmonyPatch("Ingested")]
     public static class GeneticRim_Thing_Ingested_Patch
     {
-        [HarmonyPostfix]
+        [HarmonyPrefix]
         public static void DetectSargSyndrome(Pawn ingester, float nutritionWanted, Thing __instance)
 
         {
