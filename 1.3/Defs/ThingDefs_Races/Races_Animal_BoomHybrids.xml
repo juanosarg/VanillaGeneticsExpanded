@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomabear</defName>
 		<label>boomabear</label>
-		<description>A boomalope / bear hybrid. Stronger than a standard Boomalope, and explodes with a small, concentrated burst when downed. Very dangerous in tight, confined spaces.\n\nUseful abilities: The only boomalope hybrid exploding with Bomb damage instead of Flame. Dangerous!. Decent chemfuel production.</description>
+		<description>Originally intended as a way to make boomalopes more combat viable, their powerful muscles have instead been focused on compressing its produced chemfuel as a way to store greater amounts of chemfuel without care of how dangerous it is.\n\nA boomalope hybrid with recessive ursine genes. Consumes more than twice as much compared to a boomalope but produces compressed chemfuel instead. They’re also capable of defending themselves should any predator be foolish enough to go after them.</description>
 		<statBases>
 			<MoveSpeed>3.8</MoveSpeed>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
@@ -173,7 +173,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomachicken</defName>
 		<label>boomachicken</label>
-		<description>A Boomalope / chicken hybrid. These creatures produce two types of eggs: the regular kind, and a special type of egg filled to the brim with dangerous chemicals. These aberrant eggs aren't normally laid, and they are liberated when the creature dies. In contact with the atmosphere, they explode violently in a few seconds.\n\nUseful abilities: Eggxplosion!! Weak chemfuel production.</description>
+		<description>A biological weapon in compact form, these living, breathing, shitting bombs are ideally assembled into a massive horde and sent squawking at the enemy. Allegedly, this particular hybrid has been brought up in certain court cases as the original creator thought it would be funny to create “lethal egg timers”.\n\nA boomalope hybrid with recessive avian genes. Produces edible eggs very slowly, but can lay a clutch of explosive eggs twice a day. They’re both reasonably intelligent and quick on their feet.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-5</ComfyTemperatureMin>
@@ -338,7 +338,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomffalo</defName>
 		<label>boomffalo</label>
-		<description>A Boomalope / Muffalo hybrid. A bit unstable to transport goods, so it isn't ever used as a pack animal, but it produces milk and wool. From a genetic engineering standpoint, these creatures are hard to stabilize, since the muffalo's biology is incompatible with the boomalope's chemical sacs. A cocktail of chemical refrigerants is used to maintain a delicate balance.\n\nUseful abilities: Produces low quality milk and average wool. Explodes with Frostbite damage on death. Produces a specialized cryofuel which can be used to power a cryofuel engine.</description>
+		<description>People love efficiency and having one thing to cover all their needs. Well this isn’t it, but it gets damn close. The chemfuel sacs have mixed with milk-producing glands, which make for a milk that smells like pure gasoline and could almost power a vehicle.\n\nA boomalope hybrid with recessive muffalo genes. Has a large appetite due to it producing multiple products, namely compressed chemfuel, thin wool and an unusual milk that shares properties with Chemshine.</description>
 		<statBases>
 			<MoveSpeed>3.15</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
@@ -500,7 +500,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomwolf</defName>
 		<label>boomwolf</label>
-		<description>A Boomalope / Wolf hybrid. Faster than a standard boomalope, and capable of delivering a powerful bite. \n\nUseful abilities: Explodes on death with great concussive force, stunning any creature caught in its blast radius. Produces low amounts of chemfuel every day.</description>
+		<description>For those who wished they could equip their canines with explosive vests, the Boomwolf stores pressurised - almost solidified - chemfuel which can be remotely discharged as a non-explosive gas. Thanks to thermodynamics, it is extremely cold upon release and can just as easily hurt the hybrid as well as everything nearby.\n\nA boomalope hybrid with recessive canine genes. Very intelligent, fast and dangerous, they make for an interesting combat animal. One of the few canine-type hybrids that work better solo than as a pack.</description>
 		<statBases>
 			<MoveSpeed>5.1</MoveSpeed>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
@@ -658,7 +658,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomsquirrel</defName>
 		<label>boomsquirrel</label>
-		<description>A Boomalope / Squirrel hybrid. Slightly smaller than other boomalope hybrids. While lacking in size, it is faster moving, faster breeding and faster producing chemfuel than base boomalopes.\n\nUseful abilities: Explodes on death. Produces more chemfuel than regular boomalopes. Very fast breeding. Can be slaughtered for their horns.</description>
+		<description>With adorable horns and long snoots, these squeaky lads are ideal in giving your enemy a stunning surprise. Their chemfuel mixture includes other gases that create a blinding and disorienting flashbang when remotely detonated. They’ll still make a regular boom if killed though.\n\nA boomalope hybrid with recessive rodent genes. Quite fast and intelligent, these hybrids work as excellent swarm attackers. Their rapid reproduction cycle and stunning explosion make for an ideal companion to ranged masters.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -823,7 +823,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomcat</defName>
 		<label>boomcat</label>
-		<description>A Boomalope / Cat hybrid. This is a peaceful, solitary creature that expends its time licking its fur and preferring to be left alone.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. Explodes on death creating a fine mist of hairballs that can suffocate anyone unlucky enough to be caught in them. Produces low amounts of chemfuel every day.</description>
+		<description>Combining the frequent nuzzling of a cat and the compressed chemfuel production of a primary boomalope hybrid is surely in no way going to end badly. Better not to ignore them should they complain loudly about wanting dinner.\n\nA boomalope hybrid with recessive feline genes. They make for an interesting companion for those who desire chemfuel production but also want to be able to cuddle said creatures. They can also be butchered to retrieve an internal gland filled with compressed chemfuel.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

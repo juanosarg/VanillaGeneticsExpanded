@@ -64,7 +64,7 @@ namespace GeneticRim
             }
 
             pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
-            pawn.health.AddHediff(HediffDefOf.Scaria);
+            pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
 
             this.parent.Destroy();
             

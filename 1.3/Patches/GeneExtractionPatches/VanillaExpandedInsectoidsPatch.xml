@@ -45,6 +45,15 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_Chickenspider"]/comps/li[@Name="GR_ChickenspiderEggComp"]/resourceDef</xpath>
+					<value>
+						
+							<eggUnfertilizedDef>VFEI_EggInsectoidUnfertilized</eggUnfertilizedDef>		
+						
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName= "GR_Chickenspider"]/comps/li[@Name="GR_ChickenspiderSilkComp"]/resourceDef</xpath>
 					<value>
 						

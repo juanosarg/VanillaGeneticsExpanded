@@ -184,7 +184,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenlope</defName>
 		<label>chickenlope</label>
-		<description>A chicken / boomalope hybrid. This sickly looking creature is basically useless. Now, if you gather a lot of them, and kill them in a chain reaction... \n\nUseful abilities: Explodes on death. Produces minute amounts of chemfuel every day.</description>
+		<description>The ideal companion for those who love the smell of fried eggs and napalm in the morning. Regretfully they’re far too birdbrained to receive any direction, and most owners have been noted saying “I’ve made a huge mistake”.\n\nAn avian hybrid with recessive boomalope genes. Very dangerous if allowed to breed uncontrollably, so consider liberal fireproofing and selling the excess. Produces chemfuel daily as well as an egg every 2 days.</description>
 		<statBases>
 			<MoveSpeed>2.15</MoveSpeed>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
@@ -887,7 +887,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickencat</defName>
 		<label>chickencat</label>
-		<description>Respectably intelligent as well as lethal, these egg-laying, plump beasties love nuzzling their owners and biting their enemies. Sometimes those are different people.\n\nAn avian hybrid with recessive feline genes. Quite clean with a low gestation period, they make for an average farm animal and an average combatant with good speed. They still require a pen, so they make for good home defence.</description>
+		<description>Respectably intelligent as well as lethal, these egg-laying, plump beasties love nuzzling their owners and biting their enemies. Sometimes those are different people.\n\nAn avian hybrid with recessive feline genes. Quite clean with a low gestation period, they make for an average farm animal and an average combatant with good speed. They still require a pen, so they make for good home defence.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

@@ -380,12 +380,14 @@
     <Compile Include="Harmony\Root_Play_Update.cs" />
     <Compile Include="Harmony\MapParent_RecalculateHibernatableIncidentTargets.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_RotWhenDead.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_BloodFrenzy.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_GiveHediffsInRangeExpanded.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_ImplantQuality.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_PeriodicWounds.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_Vomiting.cs" />
     <Compile Include="Hediff Comps\HediffCompImplantQuality.cs" />
+    <Compile Include="Hediff Comps\HediffComp_RotWhenDead.cs" />
     <Compile Include="Hediff Comps\HediffComp_BloodFrenzy.cs" />
     <Compile Include="Hediff Comps\HediffComp_GiveHediffsInRangeExpanded.cs" />
     <Compile Include="Hediff Comps\HediffComp_PeriodicWounds.cs" />

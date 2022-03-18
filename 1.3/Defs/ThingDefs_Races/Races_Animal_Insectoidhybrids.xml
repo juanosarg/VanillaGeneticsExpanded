@@ -303,7 +303,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="CompProperties_EggLayer">
+			<li Class="CompProperties_EggLayer" Name="GR_ChickenspiderEggComp">
 				<eggUnfertilizedDef>GR_ChickenspiderEggUnfertilized</eggUnfertilizedDef>			
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1.8</eggLayIntervalDays>

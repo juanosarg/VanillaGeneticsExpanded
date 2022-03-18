@@ -9,7 +9,6 @@
 		<makesSickThought>true</makesSickThought>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
-		
 		<stages>
 			<li>
 				<label>initial</label>
@@ -61,7 +60,6 @@
 			</li>
 		</comps>
 	</HediffDef>
-	
 	<HediffDef ParentName="DiseaseBase">
 		<defName>GR_AnimalTuberculosis</defName>
 		<label>animal tuberculosis</label>
@@ -71,7 +69,6 @@
 		<makesSickThought>true</makesSickThought>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
-		
 		<stages>
 			<li>
 				<label>initial</label>
@@ -98,7 +95,6 @@
 				<minSeverity>0.85</minSeverity>
 				<label>very damaged lungs</label>
 				<lifeThreatening>true</lifeThreatening>
-				
 				<painOffset>0.5</painOffset>
 				<capMods>
 					<li>
@@ -123,7 +119,6 @@
 			</li>
 		</comps>
 	</HediffDef>
-	
 	<HediffDef ParentName="DiseaseBase">
 		<defName>GR_AnimalAbasia</defName>
 		<label>animal abasia</label>
@@ -133,18 +128,14 @@
 		<makesSickThought>true</makesSickThought>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
-		
 		<stages>
-			
 			<li>
 				<minSeverity>0</minSeverity>
 				<label>paralyzed</label>
 				<lifeThreatening>true</lifeThreatening>
-				
-			
 				<capMods>
 					<li>
-						 <capacity>Moving</capacity>
+						<capacity>Moving</capacity>
 						<setMax>0.1</setMax>
 					</li>
 				</capMods>
@@ -159,32 +150,44 @@
 				<severityPerDayTended>-0.1</severityPerDayTended>
 				<baseTendDurationHours>24</baseTendDurationHours>
 			</li>
-			
 		</comps>
 	</HediffDef>
-	
-	
 	<HediffDef ParentName="DiseaseBase">
 		<defName>GR_SargSyndrome</defName>
 		<label>sarg syndrome</label>
 		<description>A rare bacterial infection of the animal brain, which causes the animal to only be able to consume human meat, while consuming anything else will simply not satiate the animal’s hunger and make it vomit constantly. This will spell a death sentence for herbivores, and a slow death for carnivores. A creature with Sarg Syndrome can't be tended to or cured.\n\nAny hybrid or paragon animal will get this disease 3 years after being hatched or born naturally, though this is affected by the hybrids's quality.</description>
-		<hediffClass>HediffWithComps</hediffClass>		
+		<hediffClass>HediffWithComps</hediffClass>
 		<makesSickThought>true</makesSickThought>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
-		
 		<stages>
-			
 			<li>
 				<minSeverity>0</minSeverity>
-			
 				<lifeThreatening>true</lifeThreatening>
-				
 			</li>
 		</stages>
-		
-		
 	</HediffDef>
-	
-	
+	<HediffDef>
+		<defName>GR_GreaterScaria</defName>
+		<label>greater scaria</label>
+		<description>A disease which causes affected creatures to enter berserk rages. A creature with greater scaria can't be cured and kills its host about five days after infection.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_KillAfterDays">
+				<days>5</days>
+			</li>
+			<li Class="GeneticRim.HediffCompProperties_RotWhenDead">
+				
+			</li>
+			<li Class="HediffCompProperties_CauseMentalState">
+				<animalMentalState>ManhunterPermanent</animalMentalState>
+				<animalMentalStateAlias>Manhunter</animalMentalStateAlias>
+				<humanMentalState>Berserk</humanMentalState>
+				<letterDef>ThreatSmall</letterDef>
+				<mtbDaysToCauseMentalState>1</mtbDaysToCauseMentalState>
+			</li>
+		</comps>
+	</HediffDef>
 </Defs>

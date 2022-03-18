@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfbear</defName>
 		<label>wolfbear</label>
-		<description>A Wolf / Bear hybrid. Very similar to the standard timber wolf, but with better stamina.\n\nUseful abilities: Good guard animal. Butchering gives Wolfbear paws, which can be sold.</description>
+		<description>A massively muscled boi with strong claws, sharper teeth and a mean attitude. Adorable when it’s trying to jump you to lick your face, less so when those same paws are trying to restrain you so it can bite your head off.\n\nA canine hybrid with recessive ursine genes. Stronger, more aggressive and with a bigger appetite, this hybrid’s particular lethality comes from its tendency to attack the enemy’s head to try and decapitate them.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All canine hybrids get the Adrenaline rush ability, which allows them to move at 200% speed for a short time, but be tired and move slower for half a day afterwards. There is a 25% chance that wolfbear attacks will target its victim's head, possibly decapitating enemies. Fun!</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -173,7 +173,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfalope</defName>
 		<label>wolfalope</label>
-		<description>A Wolf / Boomalope hybrid. A very dangerous predator that tends to explode when confronted with prey too large for them. Friction between the creature's pelt and the boomalope nodules constantly creates static electricity, which is suddenly liberated when the creature dies and the nodules explode.\n\nUseful abilities: Explodes on death in a dangerous electromagnetic pulse (EMP damage). Produces average amounts of chemfuel.</description>
+		<description>Some insane madman thought it would be an excellent idea to strap a flamethrower to a dog and send it out into the world to see what happens. Don’t be surprised to find out this unusual hybrid started a massive forest fire trying to hunt a rabbit.\n\nA canine hybrid with recessive boomalope genes. A bit more dim-witted compared to their baseline, due to a large amount of brain processing power dedicated to the complex internal organs that permit it to spit out burning chemfuel. Excellent flankers thanks to their increased speed and ranged ability.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All canine hybrids get the Adrenaline rush ability, which allows them to move at 200% speed for a short time, but be tired and move slower for half a day afterwards.</description>
 		<statBases>
 			<MoveSpeed>5.5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -364,7 +364,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfchicken</defName>
 		<label>wolfchicken</label>
-		<description>A Wolf / Chicken hybrid. You know the saying: when you let the wolves guard the hen house, there's bound to be a few chicken dinners. Well, not anymore.\n\nUseful abilities: Egg layer. Regularly produces feathers that can be sold for a profit.</description>
+		<description>Not many people are familiar with just how vicious a chicken can be, with them even going so far to pick at their own wounds or actively eating each other if hungry. Combining that with the sleek hunting form of a wolf and making them vegetarian creates a deadly combo. You’d go mad too if you smelled something delicious but couldn’t stomach eating it.\n\nA canine hybrid with recessive avian genes. Very quick on their feet and very filthy, care must be taken as they are far less suited to cold temperatures. The inherent viciousness of chickens has been combined with a proper combat form, vastly boosting their speed after killing its prey.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All canine hybrids get the Adrenaline rush ability, which allows them to move at 200% speed for a short time, but be tired and move slower for half a day afterwards. Blood frenzy ability: after killing prey, the wolfchicken receives 200% speed for an hour.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -540,7 +540,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolffalo</defName>
 		<label>wolffalo</label>
-		<description>A Wolf / Muffalo hybrid. Not incredibly good as a pack beast, but a very fast wool producer.\n\nActs as a pack beast. Produces small amounts of milk and wool at a quite fast rate.</description>
+		<description>While they make for a completely daft canine hybrid, they’re still smart enough not to wander off. Anyone familiar with dogs that shed enough to make another animal will feel right at home with this hybrid. Even the milk it produces comes already laden with hair for your displeasure!\n\nA canine hybrid with recessive muffalo genes. A great producer of thick wool and, regrettably, hairy milk. This allows them to survive in even more extreme colds, but they frequently make a mess, lack most of their intellect and need to eat a lot.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All canine hybrids get the Adrenaline rush ability, which allows them to move at 200% speed for a short time, but be tired and move slower for half a day afterwards.</description>
 		<statBases>
 			<MoveSpeed>5.2</MoveSpeed>
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
@@ -710,7 +710,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfbeaver</defName>
 		<label>wolfbeaver</label>
-		<description>A Wolf / Beaver hybrid. This fast breeding predator can be a drain on your tree reserves, unless you provide it with some fresh meat.\n\nUseful abilities: Fast breeding.</description>
+		<description>Probably an excellent example of a precursor to the alphabeaver, this beastie has an insane appetite and constantly growing teeth that it wears down by chewing on trees. Either consider creating a tree grove just for them to eat or moving to a jungle because they’re gonna be procreating a whole bunch.\n\nA canine hybrid with recessive rodent genes. Fast gestation period, highly intelligent, incredibly fast and lethal. The price for these benefits is that it has a constant hunger for trees and shares ancestry with another rapid dendrovore.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All canine hybrids get the Adrenaline rush ability, which allows them to move at 200% speed for a short time, but be tired and move slower for half a day afterwards.</description>
 		<statBases>
 			<MoveSpeed>7.5</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
@@ -879,7 +879,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfcat</defName>
 		<label>wolfcat</label>
-		<description>A Wolf / Cat hybrid. This tiger-like predator is intelligent, fast and quite easy to train.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period.</description>
+		<description>Dogs and cats are domesticated predators who are just the absolute cutests. So someone wanted to see how dangerous they could make something by combining these two proto predators. The results could be imagined but we’ll let them speak for themselves.\n\nA canine hybrid with recessive feline genes. A combination of two predators makes for an incredible loyal killing machine. Quick, lethal, low maintenance and a desire for companionship. If that wasn’t already enough, it can even randomly attack twice by lunging with both claws and teeth.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All canine hybrids get the Adrenaline rush ability, which allows them to move at 200% speed for a short time, but be tired and move slower for half a day afterwards. Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. Double slash: 25% of the time its attacks will strike twice.</description>
 		<statBases>
 			<MoveSpeed>6.5</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

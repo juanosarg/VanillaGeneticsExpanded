@@ -530,6 +530,88 @@
 
 
 
+<KCSG.SymbolDef>
+  <defName>GR_SignF</defName>
+  <thing>GR_SignF</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_Sink_South</defName>
+  <thing>GR_Sink</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_ArchocentipedeFormer_South</defName>
+  <thing>GR_ArchocentipedeFormer</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_MechanoidChip</defName>
+  <thing>GR_MechanoidChip</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_AncientGenomeRecombinator_West</defName>
+  <thing>GR_AncientGenomeRecombinator</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_GenePod_North</defName>
+  <thing>GR_GenePod</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_SignG</defName>
+  <thing>GR_SignG</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_Toilet_West</defName>
+  <thing>GR_Toilet</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_TissueGrowingVat_North</defName>
+  <thing>GR_TissueGrowingVat</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_Toilet_South</defName>
+  <thing>GR_Toilet</thing>
+  <rotation>South</rotation>
+</KCSG.SymbolDef>
+
+
+<KCSG.SymbolDef>
+  <defName>GR_SignH</defName>
+  <thing>GR_SignH</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_AncientGenomorpher_West</defName>
+  <thing>GR_AncientGenomorpher</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_RuinedMechanoidTinkeringTable_West</defName>
+  <thing>GR_RuinedMechanoidTinkeringTable</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
+
+
+
+
+
+
+
+
 
 
 

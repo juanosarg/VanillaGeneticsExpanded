@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catbear</defName>
 		<label>catbear</label>
-		<description>A cat / bear hybrid. Catbears are intelligent and affectionate, a perfect companion. They are also quite more resilient than your average cat.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight, and a short nuzzle period.</description>
+		<description>The perfect companion in compact form, this tiny terror is willing to throw down with its surprising bulk. And good lord, what an affectionate beefcake.\n\nA feline hybrid with recessive ursine genes. Can both take and dish out punishment disproportionate to its size while being clever enough to actively hunt for prey not much larger than itself. Incredibly easy to train and will intermittently dig up burrowed rats.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight. Stunning attacks like bear hybrids.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>150</MarketValue>
@@ -203,7 +203,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catalope</defName>
 		<label>catalope</label>
-		<description>A cat / boomalope hybrid. It's like a miniature boomalope! Or a exploding kitten! Terrifying either way.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight, and a short nuzzle period. The catalope produces small quantities of chemfuel, and explodes with a tiny hairball cloud.</description>
+		<description>Have you ever wanted to have a cat that could start fires with hairballs? No? Too bad, this one does and if you’re unlucky it’ll be outside when it’s hunting. Which won’t be often, because those fuel sacs make for a surprisingly efficient energy reserve. Exploding kittens is no longer just a game, it’s a hazard warning.\n\nA feline hybrid with recessive boomalope genes. Intelligent, low maintenance with a weak ranged flame attack, they make for an unusual companion. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<MarketValue>125</MarketValue>
@@ -380,7 +380,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catchicken</defName>
 		<label>catchicken</label>
-		<description>A cat / chicken hybrid. Catchicken might not be as intelligent as other cat hybrids, but they make up for it with their ability to lay eggs quickly.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight, and a short nuzzle period. Quite fast egg laying.</description>
+		<description>This smart little shit knows where to kick so it hurts, and that’s often the eyes. The unusual genetic makeup has made their claws as long as a human thumb, so best to pet it when it wants to and avoid touching the belly.\n\nA feline hybrid with recessive avian genes. A little slow for its size, it makes for a vicious attack animal if it can be permitted to get in melee range. Be careful as it can’t take much punishment.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight. Go for the eyes: catchicken attacks have a 25% chance to affect the victim's eyes.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<MarketValue>110</MarketValue>
@@ -534,7 +534,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catffalo</defName>
 		<label>catffalo</label>
-		<description>A cat / muffalo hybrid. The catfallo is slightly larger than other cat hybrids, and can be used as a miniature pack beast.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight, and a short nuzzle period. It produces milk and wool in small amounts.</description>
+		<description>Someone couldn’t bear being separated from their trusty feline companions when away on trips. So they decided to make one that everyone would want to take with them on long journeys. Also they look incredibly adorable with their little baggies.\n\nA feline hybrid with recessive muffalo genes. While not great as a pack animal, they make for a fantastic caravaning companion as they will actively forage for prey during trips. This creates a stacking effect of boosting the amount of food foraged for every other catffalo in the trip. They’re quite hardy too but should be kept away from combat.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight. Forages for small prey while caravaning, increasing the amount of foraged food by 10% (and it stacks per catffalo on the caravan!).</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<MarketValue>150</MarketValue>
@@ -700,7 +700,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catrabbit</defName>
 		<label>catrabbit</label>
-		<description>A cat / rabbit hybrid. This long-eared cat breeds extremely fast, and is intelligent enough to be trained in the most basic sense.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight, and a short nuzzle period. Very fast breeding.</description>
+		<description>Everyone can agree that cats and rabbits have incredibly soft fur, so can you imagine how cute and fluffy they would be if you mixed their traits together? They also love to be pet multiple times a day, so everyone can get in on this pet so fluffy it's to die for.\n\nA feline hybrid with recessive rodent genes. While a somewhat independent carnivore, this hybrid is ideal inside a colony as it not only provides a  non-stacking mood boost to those nearby from its cuteness, but it also nuzzles every few hours. They’re also very fast breeders.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight. Gives non-stacking +3 mood to everyone in a 8 tiles radius.</description>
 		<statBases>
 			<MoveSpeed>4.4</MoveSpeed>
 			<MarketValue>120</MarketValue>
@@ -895,7 +895,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catwolf</defName>
 		<label>catwolf</label>
-		<description>A cat / wolf hybrid. Catwolves are extremely intelligent cat hybrids, and they can be trained to haul. Not much, mind you, since they are quite small, but if you have an army of them the net result will be the same. Another positive note is that you will have hauling cats without needing to delve into the depths of weird weeaboo catgirl mods. NO SIR, we have enough weirdness here with the ovipositors and such.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight, and a short nuzzle period. Fast and intelligent.</description>
+		<description>For some reason people really want cats to be able to carry stuff, depicted often in consumer media. Well this palico should have you sorted, however despite numerous efforts it has proved impossible to train them in using brooms.\n\nA feline hybrid with recessive canine genes. An incredibly fast hauling companion that can also defend itself, these creatures borne forth from pop culture are incredibly smart and incredibly clean. They can’t carry much, but having a whole army won’t cause your base to fill with filth, just the normal degenerates.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight. Produces (and spreads) absolutely no filth.</description>
 		<statBases>
 			<MoveSpeed>7</MoveSpeed>
 			<MarketValue>150</MarketValue>

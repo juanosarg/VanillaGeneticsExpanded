@@ -617,7 +617,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearwolf</defName>
 		<label>bearwolf</label>
-		<description>todo.</description>
+		<description>Great care must be taken before considering raising this chonky boy, as they have a metabolism that matches their high ferocity and movement speed. Pretty useful in keeping egg-laying animal populations in check.\n\nAn ursine hybrid with recessive canine genes. A very fierce and intelligent combat hybrid with an incredible appetite. As they are almost constantly hungry, they will dig for berries when they’re hungry provided it’s growing season.</description>
 		<statBases>
 			<MoveSpeed>4.75</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -1007,7 +1007,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearcat</defName>
 		<label>bearcat</label>
-		<description>Massive, fluffy murder babies is just one of the many “cute” nicknames made for this animal, their only downside being that they’re unable to purr. Because they’re so large, they often end up knocking over the people they’re trying to show affection to before laying on top of them for warmth.\n\nAn ursine hybrid with recessive feline genes. Retaining their intelligence and being faster and more fierce in combat, they are adorable killing machines that love to nuzzle. They prefer easier prey and can be slaughtered for a valuable pelt, you monster.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. The pelt can be sold or used in the art workbench to create rugs.</description>
+		<description>Massive, fluffy murder babies is just one of the many “cute” nicknames made for this animal, their only downside being that they’re unable to purr. Because they’re so large, they often end up knocking over the people they’re trying to show affection to before laying on top of them for warmth.\n\nAn ursine hybrid with recessive feline genes. Retaining their intelligence and being faster and more fierce in combat, they are adorable killing machines that love to nuzzle. They prefer easier prey and can be slaughtered for a valuable pelt, you monster.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. The pelt can be sold or used in the art workbench to create rugs.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

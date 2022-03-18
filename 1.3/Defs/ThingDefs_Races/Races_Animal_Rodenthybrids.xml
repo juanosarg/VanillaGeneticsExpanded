@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Molebear</defName>
 		<label>molebear</label>
-		<description>A Mole / Bear hybrid. The molebear combines the resilience of a bear with the extremely low methabolic rate of a mole rat. These creatures lack pain sensitivity, so if you want to kill one, there is no "knocking it unconscious".\n\nUseful abilities: No pain sensitivity. Fast breeding.</description>
+		<description>Far too independent to be a combat animal but certainly can both dish out and take pain. Works best in the background, minding its own business and digging up metals it finds. No one is really sure why but it probably has to do with those massive whiskers.\n\nA rodent hybrid with recessive ursine genes. An independent predator with a very low metabolism and high toughness. Has an unusual behaviour where it’ll periodically dig for treasures, typically raw metals.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All rodent hybrids have fast gestation, as long as a fertility unblocker was used when creating them in the genomorpher.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -213,7 +213,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Squirralope</defName>
 		<label>squirralope</label>
-		<description>A Squirrel / Boomalope hybrid. This small and fast rodent has several nodules of chemical mixture in its back.\n\nUseful abilities: Explodes on death. Produces small amounts of chemfuel quite fast. Very fast breeding.</description>
+		<description>It’s small, it’s cute, it’s a ticking time bomb waiting for some idiot to think it looks delicious. It’s not going to be a big explosion, but that doesn’t matter much when it’s in your mouth.\n\nA rodent hybrid with recessive boomalope genes. Small, weak but fast, this hybrid suits those looking for a fuel production method in a small package. Produces chemfuel much more efficiently compared to a boomalope but it needs to be milked every day.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All rodent hybrids have fast gestation, as long as a fertility unblocker was used when creating them in the genomorpher.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -382,7 +382,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Rabbitchicken</defName>
 		<label>rabbitchicken</label>
-		<description>A Rabbit / Chicken hybrid. Isn't it adorable? Awwwww... Who's the sweetest genetic abomination in all the Rim? Actually, rabbitchickens are a pest, and they tend to breed very, very fast, even faster than other rodent hybrids, and they will consume all available food unless you have a system in place to avoid it.\n\nUseful abilities: Fastest breeding of all hybrids.</description>
+		<description>Legends say of an ancient and vicious monster, a creature so foul, so cruel that no man yet has fought with it and lived. This was a somewhat successful attempt, as its weakness lulls the enemy into a false sense of security so that it can rip their throat out. So do you feel lucky, punk?\n\nA rodent hybrid with recessive avian genes. A tiny, weak, fast-moving pest with an insane appetite for its size. Incredibly fast gestation period and a 1% chance to instantly kill when attacking.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All rodent hybrids have fast gestation, as long as a fertility unblocker was used when creating them in the genomorpher.</description>
 		<statBases>
 			<MoveSpeed>5.8</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -528,7 +528,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Ratffalo</defName>
 		<label>ratffalo</label>
-		<description>A Rat / Muffalo hybrid. This is a very large, muscular and resilient rat. It can be used as a pack animal, and also produces some milk of questionable quality.\n\nUseful abilities: Acts as a pack beast. Produces small amounts of milk and wool at a quite fast rate. Fast breeding.</description>
+		<description>An intersting pack animal that packs an incredible punch that also pisses and shits everywhere. That ain’t even the worst part, because these rodents of unusual size are also plague carriers with complete immunity to toxicity. Sometimes scientists just can’t leave well enough alone.\n\nA rodent hybrid with recessive muffalo genes. Quite clever, almost absurdly lethal and quick on its feet. While they are herbivores, they will still happily munch on corpses thanks to their large appetite. Not as short a gestation period compared to other primary rodent hybrids, but every bite transmits the plague.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All rodent hybrids have fast gestation, as long as a fertility unblocker was used when creating them in the genomorpher.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<ToxicSensitivity>0</ToxicSensitivity>
@@ -669,7 +669,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Beaverwolf</defName>
 		<label>beaverwolf</label>
-		<description>A Beaver / Wolf hybrid. Beaverwolves can eat either meat or trees, although they are not as voracious as the wolfbeaver hybrid. They are not as efficient in battle, but they produce castoreum, which can be used to cook.\n\nUseful abilities: Regularly produces a secretion called castoreum that can be used as a cooking ingredient. Fast breeding.</description>
+		<description>An incredibly quick - mentally and physically - hunter with an overactive castoreum gland, effectively allowing them to actively convert meat and trees into vegetables. Technically vegans should be fine with it since, much like bees, it needs to be harvested and the beaverwolf will absolutely let you know if it doesn’t like you touching it.\n\nA rodent hybrid with recessive canine genes. A very quick but cautious predator, this hybrid is both intelligent and frequently looking for its next meal. Able to freely roam and doesn’t require a pen, they are both carnivorous and dendrovorous while also offering daily harvests of castoreum which functions as a vegetable in dishes.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All rodent hybrids have fast gestation, as long as a fertility unblocker was used when creating them in the genomorpher.</description>
 		<statBases>
 			<MoveSpeed>6.5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -858,7 +858,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Rabbitcat</defName>
 		<label>rabbitcat</label>
-		<description>A Rabbit / Cat hybrid. The rabbitcat is a very efficient predator. Equipped with excellent hearing and a keen intelligence.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. Fast breeding. Its fangs can be used as a trophy or sold for a profit.</description>
+		<description>For a combination of two relatively small animals, the rabbitcat is fucking massive and has a robust physique. It knows no fear and will tackle anything it wants to eat. Some say this was the other attempt to create the Rabbit of Caerbannog, because who says geneticists don’t have a sick sense of humour.\n\nA rodent hybrid with recessive feline genes. Very intelligent considering the source material, these hybrids are fast, lethal and possess a robust physique with rapid natural regenerative capabilities. Quite stubborn so they require frequent, competent training but they aren’t afraid to show their appreciation.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. All rodent hybrids have fast gestation, as long as a fertility unblocker was used when creating them in the genomorpher.</description>
 		<statBases>
 			<MoveSpeed>5.75</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

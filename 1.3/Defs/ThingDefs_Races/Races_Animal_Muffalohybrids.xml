@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalobear</defName>
 		<label>muffalobear</label>
-		<description>A Muffalo / bear hybrid. The Muffalobear is a stronger variant of muffalo that doesn't produce wool. \n\nUseful abilities: Muffalobears produce a special milk, less nutritive but with a mild euphoric effect. They are pack animals that carry more weight than regular muffalos.</description>
+		<description>An absolute unit of a muffalo hybrid with muscles bursting underneath the layers of fur and fat. An excellent caravan companion for those wanting to transport lots of goods and hot muffalobear milk makes living in eternal winter seem almost worth it.\n\nA muffalo hybrid with recessive ursine genes. While they are slower and eat more compared to a regular muffalo, they are better at self defence and offer the highest carry capacity of all primary muffalo hybrids. They also produce good thick wool and delicious yet simple milk.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary muffalo hybrids have 150% carrying capacity on caravans.</description>
 		<statBases>
 			<MoveSpeed>3.6</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
@@ -157,7 +157,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalope</defName>
 		<label>muffalope</label>
-		<description>A Muffalo / boomalope hybrid. Because it's so cool when your caravans can EXPLODE. \n\nUseful abilities: Milk produced by these animals is not edible, but highly explosive, so it can be used to build IEDs. Can be sheared for low quality wool. Produces a decent amount of chemfuel.</description>
+		<description>A very naughty hybrid that can be told to relieve itself on command, creating puddles of chemfuel-infused urine around it. For those who just want to watch the world burn in the most vulgar way.\n\nA muffalo hybrid with recessive boomalope genes. A bit too slow for a caravan companion but make up for it with intelligence and an unusual chemfuel ability that lends itself for defence.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary muffalo hybrids have 150% carrying capacity on caravans.</description>
 		<statBases>
 			<MoveSpeed>3.2</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
@@ -307,7 +307,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalochicken</defName>
 		<label>muffalochicken</label>
-		<description>A Muffalo / chicken hybrid. A very strange bovine beast that lays eggs. \n\nUseful abilities: Produces high quality milk, wool and eggs.</description>
+		<description>Don’t let its adorable appearance fool you, this beastie is ready to fly off its handle at a moment's notice. The more it’s hurt, the more pissed off it gets and the faster it’ll try to rip its enemies to shreds.\n\nA muffalo hybrid with recessive avian genes. A bit too slow and weak for a caravan companion but it makes  for a vicious and suicidal protective companion. Produces a thick, chunky milk that tastes like a protein shake.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; The melee cooldown of its attacks scales with the percentage of lost health, up to 6 times faster. All primary muffalo hybrids have 150% carrying capacity on caravans.</description>
 		<statBases>
 			<MoveSpeed>3.2</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
@@ -470,7 +470,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalowolf</defName>
 		<label>muffalowolf</label>
-		<description>A Muffalo / wolf hybrid. Faster than a standard muffalo, and better able to defend itself, but has lost the capacity to produce milk. \n\nUseful abilities: Quite fast pack beast.</description>
+		<description>Someone clearly wanted multiple muffalos that would be capable of tearing foolish attackers to shreds. They eat a ton but those massive teeth of theirs aren’t just good at chewing up vegetation. Plus they’re incredibly cute when they wag their massive tails.\n\nA muffalo hybrid with recessive canine genes. The combination of lethality, speed and high intelligence makes this hybrid a fierce pack animal, both figuratively and literally. Capable of pack tactics with other muffalowolves that further increase their melee dodge, hit chance and dps.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; The pack tactics ability will give any Muffalowolves around bonuses to melee dps, melee dodge and melee hit chance. All primary muffalo hybrids have 150% carrying capacity on caravans.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
@@ -616,7 +616,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalocat</defName>
 		<label>muffalocat</label>
-		<description>A Muffalo / cat hybrid. The Muffalocat is a very intelligent muffalo hybrid that can be trained further than its brethren.\n\nUseful abilities: Muffalocats produce milk and hairball wool. They are also pack animals, though not as efficient as regular muffalos.</description>
+		<description>Combining fierce independence with an animal suited for travelling long distances might not have been the best idea. But critics have clearly never been nuzzled by a giant cat only to be buried alive in a pile of insulating hair in the winter, so what do they know.\n\nA muffalo hybrid with recessive feline genes. Not the best for caravan duty but their regular grooming produces bundles of thick wool and can be milked for a rather disgusting milk filled with hair. A low maintenance way of getting more hair than you bargained for.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Produces wool without needing to be sheared. All primary muffalo hybrids have 150% carrying capacity on caravans. Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
@@ -807,7 +807,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalorat</defName>
 		<label>muffalorat</label>
-		<description>A Muffalo / Rat hybrid. A short-lived pack beast that breeds really fast.\n\nUseful abilities: Acts as a pack beast. Produces small amounts of milk and wool at a quite fast rate. Fast breeding.</description>
+		<description>Breeding a muffalo hybrid into such a small package means they have very little capacity for either wool or milk. They’re very quick though, and your handlers better be quicker on their daily milking and shearing.\n\nA muffalo hybrid with recessive rodent genes. Very weak as a pack animal but they breed quickly and can be milked and sheared daily. The amount of product is small, but it’s thick wool and nutritious milk.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary muffalo hybrids have 150% carrying capacity on caravans.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>

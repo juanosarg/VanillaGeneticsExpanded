@@ -24,6 +24,9 @@
 		<li>GR_AbandonedLabGamma</li>
 		<li>GR_AbandonedLabDelta</li>
 		<li>GR_AbandonedLabEpsilon</li>
+		<li>GR_AbandonedLabZeta</li>
+		<li>GR_AbandonedLabEta</li>
+		<li>GR_AbandonedLabTheta</li>
        
       </structureLayoutDefs>
       <shouldRuin>false</shouldRuin>
