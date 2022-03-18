@@ -1513,7 +1513,7 @@
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="GeneticRim.CompProperties_RandomItemSpawner">
+			<li Class="GeneticRim.CompProperties_RandomItemSpawner"  Name="GR_RandomExcavatorComp">
 				<items>
 					<li>GR_GenomeExcavator</li>
 					<li>GR_ArchotechGenomeExcavator</li>
@@ -1600,7 +1600,7 @@
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
 		<comps>
-			<li Class="GeneticRim.CompProperties_RandomItemSpawner">
+			<li Class="GeneticRim.CompProperties_RandomItemSpawner" Name="GR_RandomGenomeComp">
 				<items>
 					<li>GR_UrsineGenetic</li>
 					<li>GR_AvianGenetic</li>

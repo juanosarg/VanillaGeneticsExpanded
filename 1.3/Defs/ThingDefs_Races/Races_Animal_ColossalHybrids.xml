@@ -1163,7 +1163,7 @@
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<baseBodySize>4.5</baseBodySize>
 			<baseHealthScale>16</baseHealthScale>
-			<gestationPeriodDays>30</gestationPeriodDays>
+		
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.85</wildness>
 			<willNeverEat>

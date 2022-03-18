@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		
+		
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName= "GR_RandomExcavator"]/comps/li[@Name="GR_RandomExcavatorComp"]/items</xpath>
+					<value>
+						
+							<li>GR_AlphaGenomeExcavator</li>	
+						
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName= "GR_RandomGenome"]/comps/li[@Name="GR_RandomGenomeComp"]/items</xpath>
+					<value>
+						
+							<li>GR_AlphaGenetic</li>	
+						
+					</value>
+				</li>
+			</operations>
+		
+	</Operation>
+</Patch>
+
