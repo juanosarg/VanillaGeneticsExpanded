@@ -14,6 +14,19 @@
 		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
 	</ManeuverDef>
 	<ManeuverDef>
+		<defName>GR_RabidSlash</defName>
+		<requiredCapacity>GR_RabidSlash</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>GR_RabidSlash</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	<ManeuverDef>
 		<defName>GR_BloodFrenzy</defName>
 		<requiredCapacity>GR_BloodFrenzy</requiredCapacity>
 		<verb>

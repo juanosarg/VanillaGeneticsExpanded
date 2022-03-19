@@ -37,6 +37,9 @@ namespace GeneticRim
 		public static ThingDef         GR_EggBomb;
 		public static ThingDef         GR_GenePod;
 		public static ThingDef         GR_Gas_Dust;
+		public static ThingDef         GR_Fleshling;
+		public static ThingDef         GR_FleshMonstrosity;
+
 
 		public static PawnKindDef      GR_ArchotechCentipede;
 

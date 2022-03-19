@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumbear</defName>
 		<label>thrumbear</label>
-		<description>This gargantuan beast is the result of splicing bear genes in a standard thrumbo. As strong and resilient as it is easy to anger, a thrumbear attack is something to be VERY scared of.\n\nUseful abilities: Produces very high quality wool.</description>
+		<description>If you thought Thrumbos were tough and hit like a tank, may I present to you the answer to all your prayers. If you can feed the thing, this absolute unit would work extremely well as an assault force against any force foolish enough to threaten its feedstock. Plus you get to ride it on long journeys, possibly clearing entire forests on the way.\n\nA colossal hybrid with recessive ursine genes. While proportionately it has a lower metabolism, its 50% increase in size still leaves it with a higher hunger rate than a thrumbo. They are however easier to train, hit much harder and can take even more punishment.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor.</description>
 		<statBases>
 			<MoveSpeed>5.25</MoveSpeed>
 			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
@@ -192,7 +192,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumbalope</defName>
 		<label>thrumbalope</label>
-		<description>The thrumbalope is a thrumbo that has been spliced with boomalope genes. Their huge sacs of unstable chemicals explode with unbelievable force, which has caused the colonists to nickname them "nukalopes".\n\nUseful abilities: Huge, dangerous explosion on death. Produces massive amounts of chemfuel.</description>
+		<description>Now here’s a creature you absolutely want to keep properly fed, and you’re going to need entire fields to support a single one. The ridiculous amount of chemfuel they produce means that the ceasing of their life functions is more accurately described as “thermonuclear”. So if they are going to blow up, send them as a surprise gift to friends and family who keep trying to kill you.\n\nA colossal hybrid with recessive boomalope genes. The addition of chemfuel production has vastly increased the amount of food they need to survive, but they’re also smart enough to not need a pen. Consider keeping them far away from your growing fields if the local biome can grow vegetation fast enough to support one.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
@@ -390,7 +390,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumbochicken</defName>
 		<label>thrumbochicken</label>
-		<description>The thrumbochicken is a thrumbo that has been spliced with avian genes. Although not very ravenous, these are lightning fast predators that could hunt any other creature with ease. These animals lay enormous eggs!\n\nUseful abilities: Biggest eggs of any animal.</description>
+		<description>This is probably the closest chickens will be able to get to recovering their past glory as super predators. They’ll often hunt any other animal for their next meal, multiple times a day, and you haven’t yet lived until you’ve ridden one on a long journey. If they could be further bred to cross mountains and oceans, they’d be almost perfect.\n\nA colossal hybrid with recessive avian genes. The combination of genes has turned this somewhat peaceful herbivore/dendrovore into a full carnivore, which makes it easier to support their large appetite. As an intelligent predator, it can move incredibly quickly for its size and its attacks are incredibly fierce. It also lays massive eggs that can feed entire families.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor.</description>
 		<statBases>
 			<MoveSpeed>8</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
@@ -567,7 +567,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumffalo</defName>
 		<label>thrumffalo</label>
-		<description>This massive ungulate is the result of splicing a thrumbo with muffalo genes. Capable of carrying a huge amount of materials, there is no better possible pack animal in all the Rim (yet! Science never rests).\n\nUseful abilities: Produces high quality milk and wool.</description>
+		<description>One of the largest creatures in existence, dwarfing even the thrumbo and the mighty Gallatross. Capable of transporting a massive amount of material, producing a luxurious and excellent wool as well as thick, nutritious milk, they are almost the perfect farm animal. That is as long as you don’t look at your feed costs and die of a heart attack, but the scientists that designed this hybrid never had to worry about such things. Food is something for the proles to worry about.\n\nA colossal hybrid with recessive muffalo genes. Completely herbivorous and with an appetite large enough to cause even large colonies to starve within a single season. This hybrid can prove worth the food costs as it produces thick, delicious milk every couple of days as well as luxurious wool every couple of seasons. Slightly more dimwitted than its progenitor and will attempt to wander off in search of food if not kept penned up.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-150</ComfyTemperatureMin>
@@ -765,7 +765,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumwolf</defName>
 		<label>thrumwolf</label>
-		<description>This colossal predator is the result of splicing a thrumbo with wolf genes. Fast and really hungry, all the time. Entire ecosystems can be decimated by the insane apetite of a Thrumwolf.\n\nUseful abilities: fast attacking predator which will tear through your enemies if properly trained. Needs a LOT of food, though.</description>
+		<description>There’s a saying about the scientific community, namely “your scientists were so preoccupied with whether they could, they didn’t stop to think if they should”. This is entirely relevant to this creature, a super predator with practically no equal, a single one of these is enough to require an entire rainforest to support their daily sustenance. If that wasn’t bad enough, they were made along with the Thrumbocat as part of a duo.\n\nA colossal hybrid with recessive canine genes. A large predator with an insane appetite with the necessary ferocity to support itself, very few colonies can support the diet of such a hybrid. Incredibly robust, fast and a terrifying ferocity, they will hunt multiple times a day and often go after prey much bigger than themselves.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor.</description>
 		<statBases>
 			<MoveSpeed>6.0</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -939,7 +939,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumbocat</defName>
 		<label>thrumbocat</label>
-		<description>A Thrumbo / Cat hybrid. The thrumbocat is a dangerous, agile predator. It can attack with its maws or its massive horn, as well as overpower its prey with a close range hairball attack.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. Hairball attack that suffocates its prey.</description>
+		<description>The other half of the super predator duo, along with the Thrumwolf, exchanging some ferocity and durability in exchange for going for the trachea and spitting suffocating hairballs. That might not sound that dangerous but imagine having a fistful of hair pulled from a shower drain smothering your mouth, and you’ll realise that’s still not disgusting enough. But for those that it appreciates, it will often pin them down and snuggle them given the chance.\n\nA colossal hybrid with recessive feline genes. A large predator with an insane appetite with a focus on ferocious attacks that restrict their prey’s breathing. Extremely agile with a soft spot for those it loves, best suited for biomes that support enough wildlife to sate its hunger.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -1120,7 +1120,7 @@
 	<ThingDef ParentName="GR_BaseInsect">
 		<defName>GR_Thrumbospider</defName>
 		<label>thrumbospider</label>
-		<description>A thrumbo / megaspider hybrid. The voracious appetite of the thrumbo, combined with the fast metabolism of the megaspider makes this creature very very difficult to maintain and take care of, but in combat power it is almost unbeatable, albeit slow. Unfortunately, they can't reproduce on their own.\n\nUseful abilities: If properly trained, this creature will utterly destroy your enemies.</description>
+		<description>A leftover bioweapon from a now extinct civilisation designed to completely eradicate biomes with dense vegetation. Records indicate that the local indigineous tribes were very resistant to corporate takeover and the megacorp in charge wanted to reduce profit losses. Eventually the planet starved as they were unable to stop these creatures from feasting on farmlands and food reserves.\n\nA colossal hybrid with recessive insectoid genes. A slow moving tank with limited regenerative capabilities, they are almost unkillable if it weren’t for their crippling hunger. As durable as a capital ship, any colony that could possibly support the diet of even a single one would be considered impervious to raids.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor. They are always sterile and can't reproduce, even if a fertility booster is used to create them.</description>
 		<statBases>
 			<MoveSpeed>2.25</MoveSpeed>
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
@@ -1271,7 +1271,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumbolizard</defName>
 		<label>thrumbolizard</label>
-		<description>A reptile / thrumbo hybrid. A massive, crocodilian creature with incredibly powerful jaws and a rabid venom. \n\nUseful abilities: Regularly produces enough venom to fill small ampoules. Thrumbolizard poison is 100% lethal, and there is no antidote that could act fast enough.</description>
+		<description>About as close as anyone has ever gotten in making a recreation of dragons from folklore. Capable of surviving in extreme cold or heat, the only thing really missing is a pair of wings and an innate desire to hoard piles of gold for a nest. That and the fact that it isn’t carnivorous, instead having an appetite for vegetables and wood fibres.\n\nA colossal hybrid with recessive reptile genes. With a mouth dripping with venom and tough, flexible scales covering the body, this hybrid makes for a nasty and incredibly durable combat hybrid. If that wasn’t enough, it can also breath out a fog of noxious fumes and move deceptively quickly.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor. All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
 		<statBases>
 			<MoveSpeed>5.25</MoveSpeed>
 			<ComfyTemperatureMin>-150</ComfyTemperatureMin>
@@ -1479,7 +1479,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumborat</defName>
 		<label>thrumborat</label>
-		<description>A Rat / Thrumbo hybrid. What could be scarier than a fast-breeding thrumbo?\n\nUseful abilities: Fast breeding and fast maturing for a creature of this size. Not very long-lived, though.</description>
+		<description>Practically an overgrown and intelligent pest capable of tunnelling underground, so not even a nuke could clear an infestation. And it truly would be an infestation, as it has a gestation period measured in days rather than weeks, with a single breeding pair capable of wiping out an entire agricultural planet.\n\nA colossal hybrid with recessive rodent genes. Incredibly durable and fast breeding, this surprisingly small hybrid can work as a durable screening force. One of the weakest colossal hybrids in terms of attack power but very few can outlast its incredibly robust physique.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor. Burrow underground: Thrumborats can burrow underground to make them almost immune to damage for a short while.</description>
 		<statBases>
 			<MoveSpeed>5.25</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>

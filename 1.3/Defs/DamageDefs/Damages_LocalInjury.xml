@@ -12,6 +12,15 @@
 		<workerClass>GeneticRim.DamageWorker_GoForTheEyes</workerClass>
 	</DamageDef>
 	<DamageDef ParentName="CutBase">
+		<defName>GR_RabidSlash</defName>
+		<label>rabid slash</label>
+		<additionalHediffs>
+			<li>
+				<hediff>GR_RabidSlash</hediff>				
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	<DamageDef ParentName="CutBase">
 		<defName>GR_DoubleSlash</defName>
 		<label>double slash</label>
 		<workerClass>GeneticRim.DamageWorker_Double</workerClass>

@@ -325,6 +325,8 @@
     <Compile Include="Comps\CompGrowthCell.cs" />
     <Compile Include="Comps\CompHybrid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_Detonate.cs" />
+    <Compile Include="Comps\CompDieUnlessReset.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_DieUnlessReset.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomItemSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomHybridSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
@@ -363,6 +365,7 @@
     <Compile Include="Gas\Gas_PoisonCloud.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\HediffGiver_Birthday_TryApplyAndSimulateSeverityChange.cs" />
+    <Compile Include="Harmony\JobDriver_Nuzzle_MakeNewToils.cs" />
     <Compile Include="Harmony\Thing_Ingested.cs" />
     <Compile Include="Harmony\ForagedFoodPerDayCalculator_GetForagedFoodCountPerInterval_Patch.cs" />
     <Compile Include="Harmony\GenRecipe_PostProcessProduct.cs" />
@@ -380,6 +383,7 @@
     <Compile Include="Harmony\Root_Play_Update.cs" />
     <Compile Include="Harmony\MapParent_RecalculateHibernatableIncidentTargets.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_RabidSlash.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_RotWhenDead.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_BloodFrenzy.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_GiveHediffsInRangeExpanded.cs" />
@@ -387,6 +391,7 @@
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_PeriodicWounds.cs" />
     <Compile Include="Hediff Comps\CompProperties\HediffCompProperties_Vomiting.cs" />
     <Compile Include="Hediff Comps\HediffCompImplantQuality.cs" />
+    <Compile Include="Hediff Comps\HediffComp_RabidSlash.cs" />
     <Compile Include="Hediff Comps\HediffComp_RotWhenDead.cs" />
     <Compile Include="Hediff Comps\HediffComp_BloodFrenzy.cs" />
     <Compile Include="Hediff Comps\HediffComp_GiveHediffsInRangeExpanded.cs" />

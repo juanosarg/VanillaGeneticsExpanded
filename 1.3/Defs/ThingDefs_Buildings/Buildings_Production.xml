@@ -493,7 +493,7 @@
 			<li>BuildingsProduction</li>
 		</thingCategories>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>Accelerates growth of organic structures, allowing accelerated development of genetically manipulated hybrid implants. This building is used for both hybrid animal implants and humanoid implants.</description>
+		<description>This particular machine can be explained as a simplified and miniaturized version of a Genomorpher, using only a single genome which influences an inserted Genoframe. Instead of trying to create an entire animal, it instead creates very specific limbs or organs. Due to the vastly simplified process and minimal variables, no complications arise during the process and the resulting product is similarly influenced by the quality of the Genoframe.\n\nThe Implant Augmentator can be used to create implants for animals - not just hybrids - with the quality of Genoframe dictating the deficits or bonuses those implants provide. Not all implants are created equal, some being inferior replacements and others providing new capabilities provided the animal in question can support them. Human implants are also a possibility.</description>
 		<graphicData>
 			<texPath>Things/Building/ImplantAugmentator/ImplantAugmentator</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>

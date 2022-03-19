@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonBear</defName>
 		<label>ursine paragon</label>
-		<description>This massive bear can grow to sizes dwarfing regular grizzly bears, reaching up to a metrical ton in weight. Their thick pelt is an almost perfect adaptation to cold climates, allowing them to survive for months in hibernation if necessary. While still omnivorous, their teeth are better suited to a higher degree of herbivory than grizzly bears.\n\nUseful abilities: Paragon bear pelts can be sold for profit, or converted into decorational rugs.</description>
+		<description>The absolute alpha of units, the chonkiest of bois, winner of consecutive Fat Bear Weeks before being disqualified due to winning too often.\n\nA perfect ursine animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon has a particularly powerful stun attack and can be slaughtered for a valuable pelt, which can either be used for decoration or sold.</description>
 		<statBases>
 			<MoveSpeed>4.8</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
@@ -197,7 +197,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonBoomalope</defName>
 		<label>boomalope paragon</label>
-		<description>This tall, lean ungulate usually acts as the dominant individual on a herd of boomalopes. More resistant and stronger than regular boomalopes, the paragon boomalopes also carry greater quantities of unstable chemical filled sacs, so no predator wants to even get close to them.\n\nUseful abilities: Paragon boomalopes explode when killed, with greater force than regular boomalopes. They also produce large amounts of chemfuel.</description>
+		<description>While more of a risk to keep around, they are considerably more efficient and don’t eat your crops as much. Plus their permanent sad expression just makes you want to pet them, how can you say no.\n\nA perfect boomalope animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon produces compressed chemfuel instead and explodes on death in a much more violent fashion.</description>
 		<statBases>
 			<MoveSpeed>2.75</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -347,7 +347,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonChicken</defName>
 		<label>avian paragon</label>
-		<description>This huge chicken towers above its regular brethren. Eggs laid by this species are the stuff of legends.\n\nUseful abilities: Fast breeding, more meat than regular chickens, and delicious eggs. A nice farm animal!</description>
+		<description>Sure the little blighter is more stubborn than its progenitor, but not having to gather the eggs so often and a bigger fried egg makes all the difference.\n\nA perfect avian animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon possesses inherent wildness not present in domesticated chickens but is more likely to stay put.</description>
 		<statBases>
 			<MoveSpeed>2.75</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -509,7 +509,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonMuffalo</defName>
 		<label>muffalo paragon</label>
-		<description>A huge, hairy quadruped perfectly adapted to extreme cold climates. Peaceful unless disturbed.\n\nUseful abilities: Pack animal. Produces milk and wool in slightly greater quantities than a regular muffalo. It's pelt is valuable, and can be used as a decorative rug.</description>
+		<description>A return to simpler times, when everyone could have sworn blind that muffalos used to be able to produce milk but were instead fooled by hornless paragons.\n\nA perfect muffalo animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon also produces milk and can be slaughtered for a valuable pelt, which can either be used for decoration or sold.</description>
 		<statBases>
 			<MoveSpeed>4.7</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
@@ -668,7 +668,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonWolf</defName>
 		<label>canine paragon</label>
-		<description>This huge wolf can be turned into a fierce, loyal companion if properly trained. Wolf pelts have long been used as trade goods.\n\nUseful abilities: The paragon timber wolf's pelt can be traded for a profit, or used to craft a wolf pelt rug, which isn't tacky at all. Nope.</description>
+		<description>An improved version of man’s best friend, easier to train, more assertive and dangerous to those that threaten a household. Sadly, far too proud to admit it really wants a belly rub.\n\nA perfect canine animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon can be slaughtered for a valuable pet, which can either be used for decoration or sold.</description>
 		<statBases>
 			<MoveSpeed>5.6</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -864,7 +864,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonRat</defName>
 		<label>rodent paragon</label>
-		<description>This rat is obviously disease ridden.\n\nUseful abilities: Paragon rats spread the bubonic plague when they bite. Careful!</description>
+		<description>Look, I know what you’re thinking. Why is the rat the paragon of all rodents? And even if you’re not thinking that, this is rhetorical anyway so there. What other rodent has caused civilization to collapse due to poorly held beliefs and lack of proper hygiene. As such, we give you the King Rat. Or Queen Rat, if you want a whole colony showing up.\n\nA perfect rodent animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon has a very fast gestation period and its attacks transmit the plague.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -1016,7 +1016,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonIguana</defName>
 		<label>reptile paragon</label>
-		<description>This large lizard has a beautiful iridiscent sheen on its scales. Contrary to the regular iguanas, this paragon specimen has a nasty venomous bite.\n\nUseful abilities: Lays eggs and has a venomous bite.</description>
+		<description>Small and venomous, with a deadly fart, not quite what one was expecting for the perfect reptilian form. I mean, you’d think you’d get a tyrannosaurus rex or something but no, it seems that the humble iguana is here to stay. If anything, the shock of something so small moving so fast has got to be worth something.\n\nA perfect reptile animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon is oviparous and can manually rupture neck sacs containing venomous gas.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>

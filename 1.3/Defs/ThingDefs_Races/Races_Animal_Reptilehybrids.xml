@@ -5,7 +5,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearodile</defName>		
 		<label>bearodile</label>
-		<description>A reptile / bear hybrid. The reptilian genes used to generate this hybrid have given it some ancient reptilian characteristics, with an appearance similar to reptiles in the Permian Period on Earth. It has also developed a venomous bite.\n\nUseful abilities: Highly intelligent and venomous. Excellent base defender if properly trained.</description>
+		<description>The dinosaur nerds out there should love this hybrid. Got one hell of a nasty bite and even the claws will both knock you down and make you unable to get up. Often bred for hunting by the bored one percenters who want to eat massive drumsticks, caveman style.\n\nA reptile hybrid with recessive ursine genes. Highly intelligent and an exceptional frontline trooper, with a venomous, stunning attack, fast movement speed and high health pool.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
 		<statBases>
 			<MoveSpeed>4.8</MoveSpeed>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
@@ -79,9 +79,7 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
-		</tools>
-
-		
+		</tools>		
 		<race>
 			
 			<fleshType>GR_Normal</fleshType>
@@ -204,7 +202,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomsnake</defName>
 		<label>boomsnake</label>
-		<description>A reptile / boomalope hybrid. The boomsnake is not a very strong or agile combatant. However, when it dies it explodes in a noxious cloud of venomous vapors, which can be strong enough to dissolve flesh.\n\nUseful abilities: Its toxic explosion can easily decimate an enemy raid if properly timed. Doesn't produce chemfuel.</description>
+		<description>What happens when you mix a spitting cobra, a rattlesnake and a creature designed to lactate refined fuel? This abomination, that’s what. Drive it into a corner and it’ll hurt itself to release deadly neurotoxins. Try and keep your distance and it’ll spit toxic blood right at you. Clearly someone was a sore loser in playing pretend games as a child, but had either the brains or the money to prove themselves right.\n\nA reptile hybrid with recessive boomalope genes. Decently intelligent with a nasty bite and even nastier ranged attack, both causing toxic buildup. Quite a high metabolism which supports its various combat abilities, best suited for home defence.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
@@ -395,7 +393,7 @@
 		<defName>GR_Chickenlizard</defName>
 		
 		<label>chickenlizard</label>
-		<description>A reptile / chicken hybrid. This reptilian chicken has a slightly venomous bite. Not very powerful, but considering how fast chickens breed, a horde of chickenlizards might be enough to overpower a much bigger creature with their venom.\n\nUseful abilities: Small, fast breeding, venomous chickens.</description>
+		<description>Chickens are basically an evolution of dinosaurs, so someone decided to turn them back. Unfortunately they didn’t exactly bother to check that they should still be avian rather than reptilian, so it resulted in this nasty little thing that reproduces at an insane rate and empties your fridge. But hey, they’ll spit on your enemies and their right to shit everywhere, especially where they eat.\n\nA reptile hybrid with recessive avian genes. This particular farm animal is smart enough that it doesn’t need a pen and breeds faster than other reptiles. A very large appetite for a creature so small, which supports its ability to spit out nasty toxins on their enemies and create messes on the floor. Very easy to train and has a good memory.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
@@ -589,7 +587,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalokomodo</defName>
 		<label>muffalokomodo</label>
-		<description>A reptile / muffalo hybrid. This resilient beast can carry more weight than a regular muffalo, and has a powerful venomous bite.\n\nUseful abilities: Regularly produces enough venomous saliva to fill an ampoule with a powerful poison, which acts as a potent muscle paralysing agent.</description>
+		<description>Milking snakes for venom in order to create medicine is an extremely dangerous career. While this particular beast of burden proved to be capable in other areas, it was mainly synthesised in order to provide a safer way of sourcing an anaesthetic coagulant to be used in emergencies. Or someone was trying to get high by milking a reptilian space cow, who really knows.\n\nA reptile hybrid with recessive muffalo genes. A strong pack animal with a massive appetite and a proportionate filth rate. Quite durable and will prove a fatal mistake for any animal that attempts to hunt them, as their fangs, horns and claws are all venomous. Can be milked every ten days for a vial of paralysing coagulant, best used for large animals that are suffering from multiple lacerations.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<FilthRate>12</FilthRate>
@@ -766,7 +764,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Spidersnake</defName>
 		<label>spidersnake</label>
-		<description>A reptile / insectoid hybrid. This venomous, armoured snake, can be very dangerous in high enough numbers. Strangely, they don't seem particularly attracted to hugging any faces.\n\nUseful abilities: Regularly produces Spidersnake shed skin, which can be processed in a drug lab into small amounts of neutroamine.</description>
+		<description>Neutroamine is rather difficult to manufacture due to the sterile environment needed in creating a synthetic precursor chemical. So some insane madman decided to create a living creature that can synthesise its own neutroamine. Granted it’s not a lot, but have enough of these disturbingly powerful and quick cobras and no one will ever try to rob you, or live long enough to get away.\n\nA reptile hybrid with recessive insectoid genes. For an animal so small, it has an incredibly powerful bite and can spit venom. Sadly they can’t be trained but will happily hunt smaller prey that happen to wander into their territory or fight back against any foolish predators. Can be milked once every several days for a vial of neutroamine, so they function well as part of a large drug farm.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
 		<statBases>
 			<MoveSpeed>4.8</MoveSpeed>			
 			<MarketValue>650</MarketValue>			
@@ -965,7 +963,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfsnake</defName>
 		<label>wolfsnake</label>
-		<description>A reptile / wolf hybrid. These serpentine predators are fast as lightning, and armed with a powerful, venomous bite. \n\nSpeed and poison make for a very effective base defender. Sheds wolfsnake skin from time to time.</description>
+		<description>A great doggo that sheds snakeskin instead of fur, so don’t be too alarmed when scratching at an itchy spot makes skin flake off. It’ll shed itself, even when out hunting prey, so be prepared to occasionally go on a long trek to pick up the valuable skin.\n\nA reptile hybrid with recessive canine genes. Fast, intelligent and with a nasty venomous bite, these hybrids make for an excellent hunting hound. They lack any notion of fear so they may end up going after much larger, more dangerous prey and achieving a pyrrhic victory.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
 		<statBases>
 			<MoveSpeed>6.5</MoveSpeed>	
 			<MarketValue>450</MarketValue>
@@ -1156,7 +1154,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Snakecat</defName>
 		<label>snakecat</label>
-		<description>A reptile / cat hybrid. The snakecat is like a furry snake with tiny legs. It has a venomous bite, and can be trained much further than other reptile hybrids.\n\nUseful abilities: Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period.</description>
+		<description>Possibly one of the weirdest and cutest snakes to be ever created. They have several tiny legs which are used to push its body along, while also having an invitingly soft fur. Quite a lot of people never stop freaking out from something sliding up the backs of their legs only to get softly headbutted by a purring python.\n\nA reptile hybrid with recessive feline genes. An unusually furry snake that enjoys nuzzling while also hunting for prey much weaker than itself. Incredibly intelligent and easy to train, they combine quick reflexes and an incredibly nasty bite and spitting attack.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>

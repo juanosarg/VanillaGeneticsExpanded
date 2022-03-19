@@ -1,11 +1,113 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+
+<!-- Fleshling -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Fleshling</defName>
+		<label>fleshling</label>
+		<description>Something went terribly wrong. This wretched creature is struggling to keep breathing. Whilst it doesn’t pose any real threat and it seems quite friendly, it requires a tremendous amount of love and attention for it to find the strength to live another day.</description>
+		<statBases>
+			<MoveSpeed>2.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<MarketValue>10</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>bite</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+
+
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>true</effect>
+				<effectFilth>Filth_Blood</effectFilth>
+				<message>GR_LackOfLove</message>
+				
+			</li>
+		</comps>
+		<race>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<fleshType>GR_Insectoid</fleshType>			
+			<hasGenders>false</hasGenders>
+			<body>Snake</body>	  
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<wildness>0.45</wildness>
+			<baseBodySize>0.2</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>			
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<trainability>Intermediate</trainability>
+			<nuzzleMtbHours>4</nuzzleMtbHours>
+			<lifeStageAges>
+				
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Fleshling</defName>
+		<label>fleshling</label>
+		<race>GR_Fleshling</race>
+		<combatPower>50</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Fleshbeast</texPath>
+					<drawSize>3.0</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Dessicated_Fleshbeast</texPath>
+					<drawSize>3.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridFailure">
+				<failureMin>1</failureMin>
+				<failureMax>5</failureMax>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
 	<!-- Aberrant Fleshbeast -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_AberrantFleshbeast</defName>
 		<label>aberrant fleshbeast</label>
-		<description>Something went terribly wrong. This wretched creature is struggling to keep breathing.</description>
+		<description>Something went terribly wrong. This wretched creature is struggling to keep breathing. Whilst it doesn’t pose any threat and will slowly bleed to death, attacking it can trigger its self-defense instincts.</description>
 		<statBases>
 			<MoveSpeed>1.0</MoveSpeed>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
@@ -134,6 +236,108 @@
 			<li Class="GeneticRim.DefExtension_HybridFailure">
 				<failureMin>6</failureMin>
 				<failureMax>10</failureMax>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- Aberrant Fleshbeast -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_FleshMonstrosity</defName>
+		<label>flesh monstrosity</label>
+		<description>Something went terribly wrong. This wretched creature is struggling to keep breathing. It’s rabid, and the moment it crawled out of the vat it started to look for the next unfortunate living being to destroy. It can and should be slain as soon as possible, as each additional kill only prolongs its life.</description>
+		<statBases>
+			<MoveSpeed>3.0</MoveSpeed>
+			<ComfyTemperatureMin>0</ComfyTemperatureMin>
+			<MarketValue>10</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>bite</label>
+				<capacities>
+					<li>GR_RabidSlash</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_GreaterAbasia</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>true</effect>
+				<effectFilth>Filth_Blood</effectFilth>
+				<message>GR_CellularDegeneration</message>
+				
+			</li>
+		</comps>
+		<race>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<fleshType>GR_Insectoid</fleshType>			
+			<hasGenders>false</hasGenders>
+			<body>Snake</body>	  
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<wildness>0.99</wildness>
+			<baseBodySize>5</baseBodySize>
+			<baseHealthScale>13</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>			
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<foodType>CarnivoreAnimal</foodType>
+			<trainability>None</trainability>
+			<lifeStageAges>
+				
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_FleshMonstrosity</defName>
+		<label>flesh monstrosity</label>
+		<race>GR_FleshMonstrosity</race>
+		<combatPower>250</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Fleshbeast</texPath>
+					<drawSize>3.0</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Dessicated_Fleshbeast</texPath>
+					<drawSize>3.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridFailure">
+				<failureMin>11</failureMin>
+				<failureMax>15</failureMax>
 			</li>
 		</modExtensions>
 	</PawnKindDef>
