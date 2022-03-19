@@ -1180,7 +1180,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonHorse</defName>
 		<label>equine paragon</label>
-		<description>todo.</description>
+		<description>The most majestic of horses is proud and magnificent, and doesn’t care for your rules, man. So keep them properly penned up, because they’ll try to escape to freedom so they can run wild and free. And then wonder where all the carrots, sugar cubes and salt licks have disappeared to.\n\nA perfect equine animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon makes for an excellent mount and pack animal for caravans.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>750</MarketValue>
@@ -1362,7 +1362,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonThrumbo</defName>
 		<label>colossal paragon</label>
-		<description>todo.</description>
+		<description>The gigantic, graceful creature has somehow been improved even further, proving infallibly that there’s always a taller mountain. Significantly easier to train and with a more efficient digestive system, this creature is possibly how the thrumbo originally was when first bred in a lab before it got tainted through terraforming.\n\nA perfect colossal animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon makes for an excellent mount for caravans and can forcibly rush itself, getting faster and creating dust clouds that impede ranged attacks.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>5000</MarketValue>
