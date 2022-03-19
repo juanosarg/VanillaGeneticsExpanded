@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <!-- Precepts -->
+
+  <PreceptDef>
+    <defName>GR_AutonomousWeapons_Scorned</defName>
+    <issue>AutonomousWeapons</issue>
+    <label>scorned</label>
+    <description>To create automated defences is a waste of time and good material, which could be better spent raising far deadlier animals.</description>
+    <allowedForNPCFactions>false</allowedForNPCFactions>
+    <impact>High</impact>
+    <displayOrderInIssue>15</displayOrderInIssue>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <associatedMemes>
+      <li>GR_CarefulGeneticists</li>
+	  <li>GR_MadScientists</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>GR_HasAutomatedTurrets_Scorned</thought>
+        <description>Automated turret in colony</description>
+      </li>
+      <li Class="PreceptComp_UnwillingToDo">
+        <eventDef>BuiltAutomatedTurret</eventDef>
+        <description>Build automated turret</description>
+      </li>
+    </comps>
+  </PreceptDef>
+
+  <!-- Related: Has automated turrets -->
+
+   <ThoughtDef>
+    <defName>GR_HasAutomatedTurrets_Scorned</defName>
+    <workerClass>ThoughtWorker_Precept_HasAutomatedTurrets</workerClass>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <label>automated turrets</label>
+        <description>Are we really using automated turrets? When we have the very power of creation in our fingertips? That's so lame.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  
+
+</Defs>

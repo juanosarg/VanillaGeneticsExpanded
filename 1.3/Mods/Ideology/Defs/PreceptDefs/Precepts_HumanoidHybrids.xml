@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>GR_HumanoidHybrids</defName>
+		<label>humanoid hybrids</label>
+		<iconPath>ui/Precepts/GR_HumanoidHybrids</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>GR_HumanoidHybrids_Forbidden</defName>
+		<issue>GR_HumanoidHybrids</issue>
+		<label>forbidden</label>
+		<description>Humanoid experimentation is despicable, an absolutely unforgivable sin. We will not tolerate having such monstrosities running around the colony.</description>
+		<impact>High</impact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>GR_HumanoidHybrids_Forbidden</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>GR_HumanoidHybrids_Forbidden</defName>
+		<workerClass>GeneticRim.ThoughtWorker_Precept_HumanoidHybrids</workerClass>
+		<stages>
+			<li>
+				<label>humanoid hybrids in colony</label>
+				<description>There are humanoid hybrids running around. This is horrible, an abolute perversion of science.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>GR_HumanoidHybrids_Accepted</defName>
+		<issue>GR_HumanoidHybrids</issue>
+		<label>accepted</label>
+		<description>Humanoid experimentation is just another tool at our disposal.</description>
+		<impact>High</impact>
+		<associatedMemes>
+			<li>GR_MadScientists</li>
+		</associatedMemes>
+		
+	</PreceptDef>
+</Defs>

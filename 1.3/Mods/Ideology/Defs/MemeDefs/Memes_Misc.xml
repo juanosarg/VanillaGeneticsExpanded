@@ -10,7 +10,7 @@
 		<defName>GR_CarefulGeneticists</defName>
 		<label>careful geneticists</label>
 		<exclusionTags>
-			<li>GR_Genetics</li>			
+			<li>GR_Genetics</li>
 		</exclusionTags>
 		<description>Humanity has been practicing genetic engineering for centuries, and the correct way to use it as a tool is by carefully following a strict scientific method and proper experiment security.</description>
 		<iconPath>ui/Memes/CarefulGeneticist</iconPath>
@@ -19,11 +19,11 @@
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->careful</li>
-				<li>memeAdjective->experimental</li>		
-				<li>memeAdjective->investigational</li>	
-				<li>memeAdjective->exploratory</li>	
-				<li>memeAdjective->scientific</li>	
-				<li>memeLeaderAdjective->scientific</li>					
+				<li>memeAdjective->experimental</li>
+				<li>memeAdjective->investigational</li>
+				<li>memeAdjective->exploratory</li>
+				<li>memeAdjective->scientific</li>
+				<li>memeLeaderAdjective->scientific</li>
 				<li>memeConcept->genetic engineering</li>
 				<li>memeConcept->careful experimentation</li>
 				<li>memeLeaderNoun->geneticist</li>
@@ -68,11 +68,14 @@
 					<li>introMemo(tag=meme_CarefulGeneticist)->Let me remind you that NOT adhering to a strict code of conduct and careful scientific experimentation will result in an immediate reprimand and possible loss of privileges. We haven't reached our current reputation by being sloppy!</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_CarefulGeneticist)->We will create and breed many creatures, adhering to a strict code of conduct and careful scientific experimentation.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
-
+		<requireOne>
+			<li>
+				<li>GR_AutonomousWeapons_Scorned</li>
+			</li>
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Genetics</ideoName>
@@ -80,17 +83,13 @@
 				<adjective>genetic</adjective>
 				<member>lab worker</member>
 			</li>
-
 		</symbolPacks>
-		
-	
 	</MemeDef>
-	
 	<MemeDef>
 		<defName>GR_MadScientists</defName>
 		<label>mad scientists</label>
 		<exclusionTags>
-			<li>GR_Genetics</li>			
+			<li>GR_Genetics</li>
 		</exclusionTags>
 		<description>There must be no limits to genetic engineering. The exhilaration of creating new life, of bending the genetic code until it does what it was designed for, that's what makes science worth pursuing.</description>
 		<iconPath>ui/Memes/MadScientist</iconPath>
@@ -99,11 +98,11 @@
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->innovative</li>
-				<li>memeAdjective->inventive</li>		
-				<li>memeAdjective->radical</li>	
-				<li>memeAdjective->fringe</li>	
-				<li>memeAdjective->eccentric</li>	
-				<li>memeLeaderAdjective->scientific</li>					
+				<li>memeAdjective->inventive</li>
+				<li>memeAdjective->radical</li>
+				<li>memeAdjective->fringe</li>
+				<li>memeAdjective->eccentric</li>
+				<li>memeLeaderAdjective->scientific</li>
 				<li>memeConcept->genetic engineering</li>
 				<li>memeConcept->wild experimentation</li>
 				<li>memeLeaderNoun->geneticist</li>
@@ -148,11 +147,14 @@
 					<li>introMemo(tag=meme_MadScientist)->Please, PLEASE conduct a proper inventory of your experiments after leaving the lab! A couple Bearofleets scheduled for termination escaped the genetics lab yesterday when they were left unattended and fled into the wild! Do you know what those creatures could do to the ecosystem?</li>
 					<!-- alienist -->
 					<li>alienistProphecy(tag=meme_MadScientist)->We will create and breed many creatures, experimenting endlessly on new lifeforms, unshackled by any rules or absurd bureaucratic procedures.</li>
-
 				</rulesStrings>
 			</rules>
 		</descriptionMaker>
-
+		<requireOne>
+			<li>
+				<li>GR_AutonomousWeapons_Scorned</li>
+			</li>
+		</requireOne>
 		<symbolPacks>
 			<li>
 				<ideoName>Genetics</ideoName>
@@ -160,12 +162,6 @@
 				<adjective>genetic</adjective>
 				<member>lab worker</member>
 			</li>
-
 		</symbolPacks>
-		
-	
 	</MemeDef>
-	
-	
-
 </Defs>
