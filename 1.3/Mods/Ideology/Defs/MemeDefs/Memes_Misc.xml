@@ -75,6 +75,12 @@
 			<li>
 				<li>GR_AutonomousWeapons_Scorned</li>
 			</li>
+			<li>
+				<li>GR_HumanoidHybrids_Forbidden</li>
+			</li>
+			<li>
+				<li>GR_Failures_Accepted</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -153,6 +159,12 @@
 		<requireOne>
 			<li>
 				<li>GR_AutonomousWeapons_Scorned</li>
+			</li>
+			<li>
+				<li>GR_Failures_Shameful</li>
+			</li>
+			<li>
+				<li>GR_HumanoidHybrids_Accepted</li>
 			</li>
 		</requireOne>
 		<symbolPacks>

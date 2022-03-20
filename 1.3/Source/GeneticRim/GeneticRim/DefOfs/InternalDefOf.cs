@@ -39,6 +39,7 @@ namespace GeneticRim
 		public static ThingDef         GR_Gas_Dust;
 		public static ThingDef         GR_Fleshling;
 		public static ThingDef         GR_FleshMonstrosity;
+		public static ThingDef         GR_ParagonInsectoid;
 
 
 		public static PawnKindDef      GR_ArchotechCentipede;

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>GR_Failures</defName>
+		<label>genetic failures</label>
+		<iconPath>ui/Precepts/GR_Failures</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>GR_Failures_Shameful</defName>
+		<issue>GR_Failures</issue>
+		<label>shameful</label>
+		<description>We are destined to greatness. Failure is not an option, and any unwanted results of our experimentations should be gotten rid of as soon as possible.</description>
+		<impact>High</impact>
+		<associatedMemes>
+			<li>GR_MadScientists</li>
+		</associatedMemes>
+		
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>GR_Failures_Shameful</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef>
+		<defName>GR_Failures_Shameful</defName>
+		<workerClass>GeneticRim.ThoughtWorker_Precept_Failures</workerClass>
+		<stages>
+			<li>
+				<label>genetic failures</label>
+				<description>One of our genetics experiments failed, and a misshapen monstrosity is running around uncheked. We should get rid of it as soon as possible.</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<PreceptDef>
+		<defName>GR_Failures_Accepted</defName>
+		<issue>GR_Failures</issue>
+		<label>accepted</label>
+		<description>Genetic experimentation is risky, and we must accept that failures are an unavoidable part of the process.</description>
+		<impact>Medium</impact>
+		<defaultSelectionWeight>1</defaultSelectionWeight>
+		
+	</PreceptDef>
+</Defs>

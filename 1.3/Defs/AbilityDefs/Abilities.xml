@@ -203,6 +203,30 @@
 		</comps>
 	</AbilityDef>
 	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_CatReflexes</defName>
+		<label>cat reflexes</label>
+		<description>Makes the creature much more agile, improving its chance to dodge melee attacks even further.</description>
+		<iconPath>ui/commands/GR_CatReflexes</iconPath>
+		<groupDef>GR_TwiceDayAbilitiesGroup</groupDef>
+		<comps>
+			<li Class="GeneticRim.CompProperties_GiveHediff">
+				<hediffDef>GR_CatReflexes</hediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_InsectClouds</defName>
+		<label>insect clouds</label>
+		<description>Causes the creature to release insect clouds around it, damaging every pawn that isn't an insectoid paragon.</description>
+		<iconPath>ui/commands/GR_Insectclouds</iconPath>
+		<groupDef>GR_TwiceDayAbilitiesGroup</groupDef>
+		<comps>
+			<li Class="GeneticRim.CompProperties_GiveHediff">
+				<hediffDef>GR_InsectClouds</hediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_Burrow</defName>
 		<label>burrow underground</label>
 		<description>Sends the creature underground into burrowing mode, making it very resistant to damage for a while.</description>

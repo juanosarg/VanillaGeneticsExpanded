@@ -428,8 +428,8 @@
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
 			<texPath>Things/Building/GR_NutrientVat</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.1,2.1)</drawSize>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,1)</drawSize>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
 				<cornerTR>Damage/Corner</cornerTR>
@@ -437,7 +437,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<rotatable>false</rotatable>
+		
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<castEdgeShadows>false</castEdgeShadows>
@@ -451,7 +451,7 @@
 			<Mass>40</Mass>
 			<Flammability>0.5</Flammability>
 		</statBases>
-		<size>(1,2)</size>
+		<size>(2,1)</size>
 		<costList>
 			<Steel>75</Steel>
 			

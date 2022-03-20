@@ -35,6 +35,9 @@
 				<message>GR_LackOfLove</message>
 				
 			</li>
+			<li Class="GeneticRim.CompProperties_GeneticFailure">
+				
+			</li>
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -82,17 +85,14 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Fleshbeast</texPath>
+					<texPath>Things/Pawn/Animal/Failures/Fleshling/Fleshling</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Dessicated_Fleshbeast</texPath>
-					<drawSize>3.0</drawSize>
-				</dessicatedBodyGraphicData>
+				
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -138,6 +138,9 @@
 				<ticksToCreateFilth>120</ticksToCreateFilth>
 
 			</li>
+			<li Class="GeneticRim.CompProperties_GeneticFailure">
+				
+			</li>
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -155,17 +158,10 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>Intermediate</trainability>
 			<lifeStageAges>
-				<li>
-					<def>EusocialInsectLarva</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>EusocialInsectJuvenile</def>
-					<minAge>0.03</minAge>
-				</li>
+				
 				<li>
 					<def>EusocialInsectAdult</def>
-					<minAge>0.1</minAge>
+					<minAge>0</minAge>
 					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
 					<soundDeath>Pawn_Megascarab_Death</soundDeath>
 					<soundCall>Pawn_Megascarab_Call</soundCall>
@@ -189,37 +185,10 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
+			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Fleshbeast</texPath>
-					<drawSize>2</drawSize>
-					<shadowData>
-						<volume>(0.8, 0.6, 0.6)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Dessicated_Fleshbeast</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Fleshbeast</texPath>
-					<drawSize>2.5</drawSize>
-					<shadowData>
-						<volume>(0.8, 0.6, 0.6)</volume>
-						<offset>(0,0,-0.3)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Dessicated_Fleshbeast</texPath>
-					<drawSize>2.5</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Fleshbeast</texPath>
+					<texPath>Things/Pawn/Animal/Failures/AberrantFleshbeast/Fleshbeast</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -227,7 +196,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Dessicated_Fleshbeast</texPath>
+					<texPath>Things/Pawn/Animal/Failures/AberrantFleshbeast/Dessicated_Fleshbeast</texPath>
 					<drawSize>3.0</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -273,6 +242,9 @@
 				<effect>true</effect>
 				<effectFilth>Filth_Blood</effectFilth>
 				<message>GR_CellularDegeneration</message>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_GeneticFailure">
 				
 			</li>
 		</comps>
@@ -321,17 +293,14 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Fleshbeast</texPath>
+					<texPath>Things/Pawn/Animal/Failures/FleshMonstrosity/FleshMonstrosity</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/AberrantFleshbeast/Dessicated_Fleshbeast</texPath>
-					<drawSize>3.0</drawSize>
-				</dessicatedBodyGraphicData>
+				
 			</li>
 		</lifeStages>
 		<modExtensions>

@@ -48,7 +48,7 @@ namespace GeneticRim
                         }
                         SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
                     }
-                    pawn.Kill(null);
+                    pawn.Destroy();
                 }
                 tickCounter = 0;
             }

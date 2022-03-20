@@ -14,43 +14,48 @@ namespace GeneticRim
 
         public override void Tick()
         {
-           /* base.Tick();
+            base.Tick();
             try
             {
-                    if (tickerInterval >= 30)
+                if (tickerInterval >= 30)
+                {
+
+                    HashSet<Thing> hashSet = new HashSet<Thing>(this.Position.GetThingList(this.Map));
+                    if (hashSet != null)
                     {
-                
-                        HashSet<Thing> hashSet = new HashSet<Thing>(this.Position.GetThingList(this.Map));
-                        if (hashSet!=null) { 
-                            foreach (Thing current in hashSet)
+                        foreach (Thing current in hashSet)
+                        {
+                            Pawn pawn = current as Pawn;
+
+                            if (pawn != null)
                             {
-                                Pawn pawn = current as Pawn;
-                                bool flag = (pawn != null);
-                                if (flag)
+                                if (pawn.def != InternalDefOf.GR_ParagonInsectoid)
                                 {
-                                    if (DraftingList.draftable_animals.ContainsKey(pawn))
-                                    {
-                                        if (!DraftingList.draftable_animals[pawn][5])
-                                        {
-                                            pawn.TakeDamage(new DamageInfo(DamageDefOf.Cut, 1,0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
-                                        } 
-                                    }   else pawn.TakeDamage(new DamageInfo(DamageDefOf.Cut, 1,0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
+
+                                    pawn.TakeDamage(new DamageInfo(DamageDefOf.Cut, 1, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown));
 
 
                                 }
+
+
+
                             }
 
-                        }
-                        tickerInterval = 0;
 
-                
-                   
-                    } tickerInterval++;
+                        }
+
+                    }
+                    tickerInterval = 0;
+
+
+
+                }
+                tickerInterval++;
             }
-            catch (NullReferenceException e)
+            catch (NullReferenceException)
             {
                 //A weird error is produced sometimes when GetThingList returns a NullReferenceException. I did a try-catch which is inellegant, but it works
-            }*/
+            }
 
         }
 
