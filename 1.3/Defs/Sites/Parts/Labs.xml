@@ -1,43 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
-
-  <SitePartDef>
-    <defName>GR_AbandonedLab</defName>
-    <label>abandoned lab</label>
-    <description>A recently-discovered abandoned lab.</description>
-    <siteTexture>ui/commands/GR_Microscope</siteTexture>
-    <expandingIconTexture>ui/commands/GR_Microscope</expandingIconTexture>
-    <tags>
-      <li>GR_AbandonedLab</li>
-    </tags>
-  </SitePartDef>
-
-  <GenStepDef>
-    <defName>GR_AbandonedLab</defName>
-    <linkWithSite>GR_AbandonedLab</linkWithSite>
-    <order>450</order>
-    <genStep Class="KCSG.GenStep_CustomStructureGen">
-      <structureLayoutDefs>
-        <li>GR_AbandonedLabAlpha</li>
-		<li>GR_AbandonedLabBeta</li>
-		<li>GR_AbandonedLabGamma</li>
-		<li>GR_AbandonedLabDelta</li>
-		<li>GR_AbandonedLabEpsilon</li>
-		<li>GR_AbandonedLabZeta</li>
-		<li>GR_AbandonedLabEta</li>
-		<li>GR_AbandonedLabTheta</li>
-       
-      </structureLayoutDefs>
-      <shouldRuin>false</shouldRuin>
-      <filthTypes>
-        <li>Filth_Dirt</li>
-        <li>Filth_Trash</li>
-        <li>Filth_RubbleBuilding</li>
-      </filthTypes>
-     
-    </genStep>
-  </GenStepDef>
-
- 
+	<SitePartDef>
+		<defName>GR_AbandonedLab</defName>
+		<label>abandoned lab</label>
+		<description>A recently-discovered abandoned lab.</description>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>ui/AbandonedLab</expandingIconTexture>
+		<tags>
+			<li>GR_AbandonedLab</li>
+		</tags>
+	</SitePartDef>
+	<GenStepDef>
+		<defName>GR_AbandonedLab</defName>
+		<linkWithSite>GR_AbandonedLab</linkWithSite>
+		<order>450</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>GR_AbandonedLabAlpha</li>
+				<li>GR_AbandonedLabBeta</li>
+				<li>GR_AbandonedLabGamma</li>
+				<li>GR_AbandonedLabDelta</li>
+				<li>GR_AbandonedLabEpsilon</li>
+				<li>GR_AbandonedLabZeta</li>
+				<li>GR_AbandonedLabEta</li>
+				<li>GR_AbandonedLabTheta</li>
+			</structureLayoutDefs>
+			<shouldRuin>false</shouldRuin>
+			<filthTypes>
+				<li>Filth_Dirt</li>
+				<li>Filth_Trash</li>
+				<li>Filth_RubbleBuilding</li>
+			</filthTypes>
+		</genStep>
+	</GenStepDef>
 </Defs>
