@@ -71,6 +71,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticFailure</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -86,7 +87,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Failures/Fleshling/Fleshling</texPath>
-					<drawSize>3.0</drawSize>
+					<drawSize>1</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -97,7 +98,7 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridFailure">
-				<failureMin>1</failureMin>
+				<failureMin>0</failureMin>
 				<failureMax>5</failureMax>
 			</li>
 		</modExtensions>
@@ -174,6 +175,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticFailure</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -203,7 +205,7 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridFailure">
-				<failureMin>6</failureMin>
+				<failureMin>5</failureMin>
 				<failureMax>10</failureMax>
 			</li>
 		</modExtensions>
@@ -279,6 +281,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticFailure</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
@@ -305,8 +308,8 @@
 		</lifeStages>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridFailure">
-				<failureMin>11</failureMin>
-				<failureMax>15</failureMax>
+				<failureMin>10</failureMin>
+				<failureMax>55</failureMax>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

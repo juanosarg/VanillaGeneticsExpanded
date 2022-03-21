@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <IncidentCategoryDef>
+    <defName>GR_HybridRaid</defName>
+    <needsParmsPoints>true</needsParmsPoints>
+  
+  </IncidentCategoryDef>
+
+ 
+
+</Defs>

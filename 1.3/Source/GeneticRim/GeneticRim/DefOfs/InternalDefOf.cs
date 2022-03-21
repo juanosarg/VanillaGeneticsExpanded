@@ -71,6 +71,10 @@ namespace GeneticRim
 
 		public static DamageDef        GR_Acid;
 
+		public static FactionDef GR_RoamingMonstrosities;
+
+		public static IncidentDef GR_ManhunterMonstrosities;
+
 
 
 

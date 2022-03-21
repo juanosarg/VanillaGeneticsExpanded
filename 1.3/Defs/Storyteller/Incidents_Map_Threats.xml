@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <IncidentDef>
+    <defName>GR_ManhunterMonstrosities</defName>
+    <label>roaming monstrosities</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>GeneticRim.IncidentWorker_Monstrosities</workerClass>
+    <baseChance>0</baseChance>
+    <category>GR_HybridRaid</category>
+    <pointsScaleable>true</pointsScaleable>
+  
+    <letterHyperlinkHediffDefs>
+      <li>GR_GreaterScaria</li>
+    </letterHyperlinkHediffDefs>
+  </IncidentDef>
+
+ 
+
+</Defs>

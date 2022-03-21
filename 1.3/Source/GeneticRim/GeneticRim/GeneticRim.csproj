@@ -361,8 +361,9 @@
     <Compile Include="Dev Mode\SpawnPawnWithQuality.cs" />
     <Compile Include="Dev Mode\SuperItemSpawner.cs" />
     <Compile Include="Endgame\ArchotechCountdown.cs" />
-    <Compile Include="Game and Map Components\ArchotechExtractableAnimals_MapComponent.cs" />
-    <Compile Include="Game and Map Components\GameComponent_HyperlinkInitializer.cs" />
+    <Compile Include="Game, World and Map Components\ArchotechExtractableAnimals_MapComponent.cs" />
+    <Compile Include="Game, World and Map Components\GameComponent_HyperlinkInitializer.cs" />
+    <Compile Include="Game, World and Map Components\WorldComponent_RoamingMonstrosities.cs" />
     <Compile Include="Gas\Gas_Hairballs.cs" />
     <Compile Include="Gas\Gas_InsanityCloud.cs" />
     <Compile Include="Gas\Gas_InsectClouds.cs" />
@@ -418,6 +419,7 @@
     <Compile Include="DeathActionWorkers\DeathActionWorker_StunningExplosion.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_ToxicExplosion.cs" />
     <Compile Include="Dev Mode\FixedColonyAnimalsDebug.cs" />
+    <Compile Include="Incidents\IncidentWorker_Monstrosities.cs" />
     <Compile Include="PlaceWorkers\PlaceWorker_ShowSpawnerRadius.cs" />
     <Compile Include="Settings\GeneticRim_Settings.cs" />
     <Compile Include="Hediff Comps\HediffComp_Exploder.cs" />

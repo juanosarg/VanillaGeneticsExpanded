@@ -64,6 +64,7 @@
 	<GR_NoGenoframesInMap>No valid genoframes on map</GR_NoGenoframesInMap>
 	<GR_NoBoostersInMap>No valid boosters on map</GR_NoBoostersInMap>
 	<GR_ChooseDominantGenomeFirst>Choose dominant genome first</GR_ChooseDominantGenomeFirst>
+	<GR_ChooseNoBooster>Use no booster</GR_ChooseNoBooster>
 	
 	<!-- ElectroWomb -->
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>

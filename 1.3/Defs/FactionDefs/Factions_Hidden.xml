@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<FactionDef ParentName="FactionBase">
+		<defName>GR_RoamingMonstrosities</defName>
+		<label>roaming monstrosities</label>
+		<description>The effect of hundreds of years of genetic experimentation running amok. Hordes of ravenous, maddened genetic aberrations are a threat to anyone in this planet.</description>
+		<pawnSingular>roaming monstrosity</pawnSingular>
+		<pawnsPlural>roaming monstrosities</pawnsPlural>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<fixedName>roaming monstrosities</fixedName>
+		<factionIconPath>World/WorldObjects/Expanding/Sites/Manhunters</factionIconPath>
+		<colorSpectrum>
+			<li>(0.44, 0.41, 0.32)</li>
+			<li>(0.61, 0.58, 0.49)</li>
+			<li>(0.60, 0.49, 0.36)</li>
+		</colorSpectrum>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<humanlikeFaction>false</humanlikeFaction>
+		<hidden>true</hidden>
+		<autoFlee>false</autoFlee>
+		<canUseAvoidGrid>false</canUseAvoidGrid>
+		<techLevel>Animal</techLevel>
+		<permanentEnemy>true</permanentEnemy>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<canSiege>false</canSiege>
+		<canStageAttacks>false</canStageAttacks>
+		<allowedArrivalTemperatureRange>
+			<min>-50</min>
+			<max>90</max>
+		</allowedArrivalTemperatureRange>
+		<modExtensions>
+			<li Class="VFECore.ExcludeFromQuestsExtension" />
+		</modExtensions>
+		
+	</FactionDef>
+
+</Defs>

@@ -11,10 +11,10 @@ namespace GeneticRim
     public class DefExtension_HybridChanceAlterer : DefModExtension
     {
         // Deducted from genome swap chance.       
-        public int stability;
+        public float stability;
 
         // Deducted from failure outcome chance.
-        public int safety;
+        public float safety;
 
         // Hybrid process time multiplier.
         public float timeMultiplier;

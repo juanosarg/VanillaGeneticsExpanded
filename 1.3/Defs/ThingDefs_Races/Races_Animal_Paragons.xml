@@ -1732,7 +1732,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonFeline</defName>
 		<label>feline paragon</label>
-		<description>todo.</description>
+		<description>An incredible, large fur baby that not only wants you to scratch its belly, but regularly and without fear of getting your eyes gouged out by their massive claws. Also they’re smart enough to go after prey less than half their size, but that’s more so they don’t have to spend so much time grooming themselves afterwards.\n\nA perfect feline animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon is incredibly intelligent and can be properly trained with minimal retraining, as well as being an excellent and affectionate companion.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. Cat reflexes ability: twice per day, it can use an ability that gives it further melee capabilities.</description>
 		<statBases>
 			<MoveSpeed>5.0</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -1944,7 +1944,7 @@
 	<ThingDef ParentName="GR_BaseInsect">
 		<defName>GR_ParagonInsectoid</defName>
 		<label>insectoid paragon</label>
-		<description>todo.</description>
+		<description>A terrifying callback to the original Sorne geneline, this mobile hive was originally designed to engage the mechanoid enemy head-on. By carrying an entire colony of insects with hardened mandibles, their ability to practically disassemble the mechanical menace proved just as effective at turning against their human overlords.\n\nA perfect insectoid animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon is extremely intelligent and carries a dangerous brood of warrior flies. A burst of pheromones summons the drones to protect their hive and queen, shredding apart all other nearby creatures.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All insectoid hybrids have good armor and no toxic sensitivity, but they are always sterile and can't reproduce, even if a fertility booster is used to create them. Insect clouds ability: twice a day it can create insect clouds around it that damage any animal crossing them, except insectoid paragons, which are immune.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>

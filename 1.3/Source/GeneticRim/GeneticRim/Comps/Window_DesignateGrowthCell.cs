@@ -63,7 +63,7 @@ namespace GeneticRim
                                                                  out float swapChance, out float failureChance, out PawnKindDef swapResult, out PawnKindDef failureResult);
 
             
-            float fullWeight = 1 + failureChance;
+            float fullWeight = 1f + failureChance;
 
             var xPos = inRect.x + 15;
             var explanationLabelBox = new Rect(xPos, inRect.y + 5, 300, 30);
@@ -78,11 +78,11 @@ namespace GeneticRim
             Text.Font = GameFont.Small;
 
             var firstOutcomeBox = new Rect(xPos, precictedOutComesBox.yMax + 10, 165, 165);
-            DrawPawnOutcome(firstOutcomeBox, mainResult, (1f-swapChance) / fullWeight);
+            DrawPawnOutcome(firstOutcomeBox, mainResult, (1f-swapChance- failureChance));
 
             var secondOutcomeBox = new Rect(xPos, firstOutcomeBox.yMax + 30, 95, 95);
             if(swapResult!= mainResult) {
-                DrawPawnOutcome(secondOutcomeBox, swapResult, swapChance / fullWeight);
+                DrawPawnOutcome(secondOutcomeBox, swapResult, swapChance);
 
             }
 
@@ -108,7 +108,7 @@ namespace GeneticRim
             DrawExplanation(durationExplanationRect, "GR_ProcessDurationExplanation".Translate());
 
             var failureOutcomeBox = new Rect(failureOutComeBox.x, failureOutComeBox.yMax + 10, 165, 165);
-            DrawPawnOutcome(failureOutcomeBox, failureResult, failureChance / fullWeight, false);
+            DrawPawnOutcome(failureOutcomeBox, failureResult, failureChance, false);
 
             explanationLabelBox = new Rect(inRect.x + 300, inRect.y + 80, 330, 30);
             DrawExplanation(explanationLabelBox, "GR_GenomorpherExplanationPartTwo".Translate(), TextAnchor.MiddleCenter);
@@ -161,7 +161,7 @@ namespace GeneticRim
                     {
                         foreach (var genome in this.genomes.ToList())
                         {
-                            if(genome!= genomeDominant) {
+                            if(genome.stackCount>1 && genome.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) == false) {
                                 floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
                                 {
                                     genomeSecondary = genome;
@@ -237,6 +237,14 @@ namespace GeneticRim
                     floatOptions.Add(new FloatMenuOption("GR_NoBoostersInMap".Translate(), delegate
                     {
 
+                    }));
+
+                }
+                else
+                {
+                    floatOptions.Add(new FloatMenuOption("GR_ChooseNoBooster".Translate(), delegate
+                    {
+                        this.booster = null;
                     }));
 
                 }
@@ -367,6 +375,7 @@ namespace GeneticRim
 
         private void DrawPawnOutcome(Rect outcomeBox, PawnKindDef pawnKindDef, float chance, bool percentageInfoToLeft = true)
         {
+           
             Widgets.DrawBoxSolid(outcomeBox, PawnOutcomeBackground);
             if (pawnKindDef != null)
             {

@@ -170,7 +170,7 @@
 	<HediffDef>
 		<defName>GR_GreaterScaria</defName>
 		<label>greater scaria</label>
-		<description>A disease which causes affected creatures to enter berserk rages. A creature with greater scaria can't be cured and kills its host about five days after infection.</description>
+		<description>A disease which causes affected creatures to enter berserk rages. A creature with greater scaria can't be cured and kills its host about five days after infection. Their seething rage will allow them to survive without having to eat or rest until their inevitable death.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
 		<initialSeverity>1</initialSeverity>
@@ -189,5 +189,17 @@
 				<mtbDaysToCauseMentalState>1</mtbDaysToCauseMentalState>
 			</li>
 		</comps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<lifeThreatening>true</lifeThreatening>
+				<statOffsets>
+					<HungerRateMultiplier>-10</HungerRateMultiplier>
+					<RestRateMultiplier>0.01</RestRateMultiplier>
+				</statOffsets>
+			</li>
+		</stages>
 	</HediffDef>
 </Defs>
+
+

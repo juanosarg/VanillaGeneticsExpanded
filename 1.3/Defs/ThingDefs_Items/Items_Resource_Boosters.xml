@@ -33,22 +33,7 @@
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
 
 				<safety>5</safety>
-				<addedHediffs>
-					<li>
-						<hediff>GR_BearLeg</hediff>
-						<bodyparts>
-							<li>Leg</li>
-							<li>InsectLeg</li>
-						</bodyparts>
-					</li>
-					<li>
-						<hediff>GR_CanidEye</hediff>
-						<bodyparts>
-							<li>Eye</li>
-						
-						</bodyparts>
-					</li>
-				</addedHediffs>
+				
 			</li>
 		</modExtensions>
 	</ThingDef>
