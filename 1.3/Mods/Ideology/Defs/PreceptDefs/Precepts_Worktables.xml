@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IssueDef>
+		<defName>GR_WorktableSpeeds</defName>
+		<label>genetic worktable speed</label>
+		<iconPath>ui/Precepts/GR_WorktableSpeeds</iconPath>
+	</IssueDef>
+	<!-- Precepts -->
+	<PreceptDef>
+		<defName>GR_WorktableSpeeds_Implants</defName>
+		<issue>GR_WorktableSpeeds</issue>
+		<label>implants</label>
+		<description>The key to experimentation is not being afraid of the results. We will labour incesantly to achieve new breakthroughs.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Implant augmentator work table speed: +25%.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>GR_MadScientists</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>GR_MadScientists</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+	
+	<PreceptDef>
+		<defName>GR_WorktableSpeeds_Genomorpher</defName>
+		<issue>GR_WorktableSpeeds</issue>
+		<label>genomorpher</label>
+		<description>Measure twice, cut once. A carefully designed experiment has much greater odds of success.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Genomorpher speed: +25%.</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>GR_CarefulGeneticists</li>
+		</associatedMemes>
+		<requiredMemes>
+			<li>GR_CarefulGeneticists</li>
+		</requiredMemes>
+		
+	</PreceptDef>
+	
+</Defs>

@@ -429,6 +429,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rooms\RoomRoleWorker_GeneLab.cs" />
     <Compile Include="StaticCollections\StaticCollectionsClass.cs" />
+    <Compile Include="StatPartDefs\StatPart_WorkTableImplants.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_Failures.cs" />
     <Compile Include="ThoughtWorkers\ThoughtWorker_Precept_HumanoidHybrids.cs" />
   </ItemGroup>

@@ -15,7 +15,7 @@
 		<description>Humanity has been practicing genetic engineering for centuries, and the correct way to use it as a tool is by carefully following a strict scientific method and proper experiment security.</description>
 		<iconPath>ui/Memes/CarefulGeneticist</iconPath>
 		<groupDef>GR_Genetics</groupDef>
-		<impact>2</impact>
+		<impact>1</impact>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->careful</li>
@@ -81,6 +81,9 @@
 			<li>
 				<li>GR_Failures_Accepted</li>
 			</li>
+			<li>
+				<li>GR_WorktableSpeeds_Genomorpher</li>
+			</li>
 		</requireOne>
 		<symbolPacks>
 			<li>
@@ -100,7 +103,7 @@
 		<description>There must be no limits to genetic engineering. The exhilaration of creating new life, of bending the genetic code until it does what it was designed for, that's what makes science worth pursuing.</description>
 		<iconPath>ui/Memes/MadScientist</iconPath>
 		<groupDef>GR_Genetics</groupDef>
-		<impact>2</impact>
+		<impact>1</impact>
 		<generalRules>
 			<rulesStrings>
 				<li>memeAdjective->innovative</li>
@@ -165,6 +168,9 @@
 			</li>
 			<li>
 				<li>GR_HumanoidHybrids_Accepted</li>
+			</li>
+			<li>
+				<li>GR_WorktableSpeeds_Implants</li>
 			</li>
 		</requireOne>
 		<symbolPacks>

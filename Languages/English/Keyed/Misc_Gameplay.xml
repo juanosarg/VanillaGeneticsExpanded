@@ -142,5 +142,9 @@
 	<GR_PoisonCloudRange>Poison cloud has a maximum range of 10. Get closer to the target!</GR_PoisonCloudRange>
 	<GR_InvokingInsanityRange>Invoking insanity has a maximum range of 10. Get closer to the target!</GR_InvokingInsanityRange>
 	
+	<!-- Ideology -->
+	
+	<GR_GeneticTableImplantsSpeed>Genetic worktable speed: implants precept</GR_GeneticTableImplantsSpeed>
+	
 	
 </LanguageData>

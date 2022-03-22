@@ -100,7 +100,21 @@ namespace GeneticRim
             {
                 durationTicks = (int)(durationTicks*timeMultiplier);
             }
-            
+
+            if (ModsConfig.IdeologyActive)
+            {
+                if(Current.Game.World.factionManager.OfPlayer.ideos?.GetPrecept(InternalDefOf.GR_WorktableSpeeds_Genomorpher) != null)
+                {
+                    durationTicks = (int)(durationTicks * 0.75f);
+
+                }
+
+
+            }
+
+
+
+
             var durationRect = new Rect(xPos, qualityInfoExplanationRect.yMax + 50, 300, 30);
             Text.Font = GameFont.Medium;
             Widgets.Label(durationRect, "GR_ProcessWillTake".Translate(durationTicks.ToStringTicksToDays()));

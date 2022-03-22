@@ -40,7 +40,7 @@ namespace GeneticRim
 		public static ThingDef         GR_Fleshling;
 		public static ThingDef         GR_FleshMonstrosity;
 		public static ThingDef         GR_ParagonInsectoid;
-
+		public static ThingDef         GR_TissueGrowingVat;
 
 		public static PawnKindDef      GR_ArchotechCentipede;
 
@@ -71,10 +71,14 @@ namespace GeneticRim
 
 		public static DamageDef        GR_Acid;
 
-		public static FactionDef GR_RoamingMonstrosities;
+		public static FactionDef       GR_RoamingMonstrosities;
 
-		public static IncidentDef GR_ManhunterMonstrosities;
+		public static IncidentDef      GR_ManhunterMonstrosities;
 
+		[MayRequireIdeology]
+		public static PreceptDef       GR_WorktableSpeeds_Implants;
+		[MayRequireIdeology]
+		public static PreceptDef       GR_WorktableSpeeds_Genomorpher;
 
 
 
