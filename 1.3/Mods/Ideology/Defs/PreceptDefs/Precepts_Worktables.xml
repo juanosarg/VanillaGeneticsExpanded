@@ -10,7 +10,7 @@
 		<defName>GR_WorktableSpeeds_Implants</defName>
 		<issue>GR_WorktableSpeeds</issue>
 		<label>implants</label>
-		<description>The key to experimentation is not being afraid of the results. We will labour incesantly to achieve new breakthroughs.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Implant augmentator work table speed: +25%.</description>
+		<description>The key to experimentation is not being afraid of the results. We will labour incessantly to achieve new breakthroughs.\n\n&lt;color=#E5E54C&gt;Stats:&lt;/color&gt;\n - Implant augmentator work table speed: +25%.</description>
 		<impact>Medium</impact>
 		<associatedMemes>
 			<li>GR_MadScientists</li>

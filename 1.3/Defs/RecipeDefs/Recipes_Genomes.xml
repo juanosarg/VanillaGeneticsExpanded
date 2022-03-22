@@ -14,7 +14,7 @@
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
@@ -53,7 +53,7 @@
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
@@ -103,7 +103,7 @@
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
@@ -142,7 +142,7 @@
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
@@ -183,7 +183,7 @@
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
@@ -236,7 +236,7 @@
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
@@ -292,7 +292,7 @@
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
@@ -336,7 +336,7 @@
 		<jobString>Extracting Genetic Material</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
-		<workAmount>500</workAmount>
+		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
@@ -367,22 +367,6 @@
 	
 	
 
-<!--	
-
-	
-
-					<thingDefs>
-						<li>Corpse_Mech_Centipede</li>
-						<li>Corpse_Mech_Lancer</li>
-						<li>Corpse_Mech_Scyther</li>
-						<li>Corpse_Mech_Pikeman</li>
-					</thingDefs>
-				</filter>
-			
-	
-	
-
--->
 
 
 
