@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<GeneticRim.EndgameGenomesDef>
+		<defName>GR_EndgameGenomes_CosmicHorrors</defName>
+		<genomes>
+			<li>GR_EldritchGenetic</li>
+			
+		</genomes>
+	</GeneticRim.EndgameGenomesDef>
+</Defs>

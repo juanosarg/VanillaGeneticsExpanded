@@ -238,7 +238,7 @@
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_GreaterAbasia</hediffname>
-				<hediffseverity>1</hediffseverity>
+				
 			</li>
 			<li Class="GeneticRim.CompProperties_DieUnlessReset">
 				<effect>true</effect>

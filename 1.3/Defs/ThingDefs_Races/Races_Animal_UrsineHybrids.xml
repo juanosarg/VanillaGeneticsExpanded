@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearalope</defName>
 		<label>bearalope</label>
-		<description>An unusual concoction of traits that was favoured by a particular client who was obsessed on making things explode. Earned the nickname Boom-Boom as they would often make requests along the lines of “two more booms, wasn’t paying attention”.\n\nAn ursine hybrid with recessive boomalope genes. Lacking intelligence compared to a bear while also missing out on some strength and confidence in hunting. However, they can be commanded to detonate a limited amount of fuel sacks for increased combat versatility in exchange for hurting themselves intentionally.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; The "Detonate chemfuel" ability can be used to cause a powerful "Bomb" damage type explosion surrounding the hybrid. Bear in mind (pun intended) that this will damage the hybrid too!</description>
+		<description>An unusual concoction of traits that was favoured by a particular client who was obsessed on making things explode. Earned the nickname Boom-Boom as they would often make requests along the lines of “two more booms, wasn’t paying attention”.\n\nAn ursine hybrid with recessive boomalope genes. Lacking intelligence compared to a bear while also missing out on some strength and confidence in hunting. However, they can be commanded to detonate a limited amount of fuel sacks for increased combat versatility in exchange for hurting themselves intentionally.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary bear hybrids have stun attacks. The "Detonate chemfuel" ability can be used to cause a powerful "Bomb" damage type explosion surrounding the hybrid. Bear in mind (pun intended) that this will damage the hybrid too!</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -203,7 +203,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearchicken</defName>
 		<label>bearchicken</label>
-		<description>A surprisingly clean animal dubbed the “owl-bear” by those that find them amusing as they attempt to fly by rapidly flapping their stubby vestigial wings. That is until they get their eyes pecked out and flattened by their weight.\n\nAn ursine hybrid with recessive avian genes. Slightly dumber but easier to train, they lay eggs every couple of days and have the strength to protect their clutch. Slower than a bear but their ability to hover over terrain means they perform better in harsh terrain.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Ignores movement terrain costs.</description>
+		<description>A surprisingly clean animal dubbed the “owl-bear” by those that find them amusing as they attempt to fly by rapidly flapping their stubby vestigial wings. That is until they get their eyes pecked out and flattened by their weight.\n\nAn ursine hybrid with recessive avian genes. Slightly dumber but easier to train, they lay eggs every couple of days and have the strength to protect their clutch. Slower than a bear but their ability to hover over terrain means they perform better in harsh terrain.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary bear hybrids have stun attacks. Although too heavy to fly, it can use its wings to nullify terrain movement costs.</description>
 		<statBases>
 			<MoveSpeed>3.0</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -414,7 +414,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearffalo</defName>
 		<label>bearffalo</label>
-		<description>A wonderful animal for those cold winter journeys, very popular as travellers snuggle into their fur at night to keep warm. Fights have even broken out over who gets to sleep with the oversized rug.\n\nAn ursine hybrid with recessive muffalo genes. Very filthy but a decently intelligent pack animal that produces good-quality wool and milk. Performs very well in cold environments and is more than capable of defending itself.</description>
+		<description>A wonderful animal for those cold winter journeys, very popular as travellers snuggle into their fur at night to keep warm. Fights have even broken out over who gets to sleep with the oversized rug.\n\nAn ursine hybrid with recessive muffalo genes. Very filthy but a decently intelligent pack animal that produces good-quality wool and milk. Performs very well in cold environments and is more than capable of defending itself.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary bear hybrids have stun attacks.</description>
 		<statBases>
 			<MoveSpeed>4.3</MoveSpeed>
 			<FilthRate>12</FilthRate>
@@ -617,7 +617,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearwolf</defName>
 		<label>bearwolf</label>
-		<description>Great care must be taken before considering raising this chonky boy, as they have a metabolism that matches their high ferocity and movement speed. Pretty useful in keeping egg-laying animal populations in check.\n\nAn ursine hybrid with recessive canine genes. A very fierce and intelligent combat hybrid with an incredible appetite. As they are almost constantly hungry, they will dig for berries when they’re hungry provided it’s growing season.</description>
+		<description>Great care must be taken before considering raising this chonky boy, as they have a metabolism that matches their high ferocity and movement speed. Pretty useful in keeping egg-laying animal populations in check.\n\nAn ursine hybrid with recessive canine genes. A very fierce and intelligent combat hybrid with an incredible appetite. As they are almost constantly hungry, they will dig for berries when they’re hungry provided it’s growing season.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary bear hybrids have stun attacks.</description>
 		<statBases>
 			<MoveSpeed>4.75</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
@@ -814,7 +814,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearmole</defName>
 		<label>bearmole</label>
-		<description>Not many people get to see a naked bear, and fewer still want a repeat viewing. This oversized mole-rat inspires plenty of fear with its massive teeth, but gets a lot of love and affection from those wanting a large, hairless pet that gnaws on the furniture.\n\nAn ursine hybrid with recessive rodent genes. Very slow both mentally and physically along with dietary restrictions, but very fierce in combat and immune to pain. Also they have the added benefit of having a short reproductive cycle, low metabolism and being completely fearless in hunting prey.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; No pain sensitivity. This hybrid won't be knocked down on combat due to pain.</description>
+		<description>Not many people get to see a naked bear, and fewer still want a repeat viewing. This oversized mole-rat inspires plenty of fear with its massive teeth, but gets a lot of love and affection from those wanting a large, hairless pet that gnaws on the furniture.\n\nAn ursine hybrid with recessive rodent genes. Very slow both mentally and physically along with dietary restrictions, but very fierce in combat and immune to pain. Also they have the added benefit of having a short reproductive cycle, low metabolism and being completely fearless in hunting prey.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary bear hybrids have stun attacks. No pain sensitivity. This hybrid won't be knocked down on combat due to pain.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
@@ -1007,7 +1007,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearcat</defName>
 		<label>bearcat</label>
-		<description>Massive, fluffy murder babies is just one of the many “cute” nicknames made for this animal, their only downside being that they’re unable to purr. Because they’re so large, they often end up knocking over the people they’re trying to show affection to before laying on top of them for warmth.\n\nAn ursine hybrid with recessive feline genes. Retaining their intelligence and being faster and more fierce in combat, they are adorable killing machines that love to nuzzle. They prefer easier prey and can be slaughtered for a valuable pelt, you monster.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. The pelt can be sold or used in the art workbench to create rugs.</description>
+		<description>Massive, fluffy murder babies is just one of the many “cute” nicknames made for this animal, their only downside being that they’re unable to purr. Because they’re so large, they often end up knocking over the people they’re trying to show affection to before laying on top of them for warmth.\n\nAn ursine hybrid with recessive feline genes. Retaining their intelligence and being faster and more fierce in combat, they are adorable killing machines that love to nuzzle. They prefer easier prey and can be slaughtered for a valuable pelt, you monster.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary bear hybrids have stun attacks. Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. The pelt can be sold or used in the art workbench to create rugs.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

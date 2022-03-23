@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AbilityDef ParentName="GR_TargetAbilities">
+		<defName>GR_InsanityCloud</defName>
+		<label>invoke insanity</label>
+		<groupDef>GR_TwiceDayAbilitiesGroup</groupDef>
+		<description>Invokes the insanity of That Which Man Is Not Meant to Know</description>
+		<iconPath>Item/Weapon/MiGoCasterWeapon/MiGoCasterWeaponA</iconPath>
+		
+		<verbProperties>
+			<range>10</range>
+		</verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_CreateThingDefAround">
+				<radius>3</radius>
+				<thingCreated>GR_Insanity_Cloud</thingCreated>
+				<thingCreatedChance>0.85</thingCreatedChance>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_DetonatePsionic</defName>
+		<label>detonate psionic</label>
+		<description>Remotely detonate the psionic chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>
+		<iconPath>UI/Commands/Detonate</iconPath>
+		<warmupStartSound>GR_Wick</warmupStartSound>
+		<verbProperties>
+			<range>1.9</range>
+		</verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_Detonate">
+				<radius>2.9</radius>
+				<damageType>GR_PsionicExplosion</damageType>
+				<thingCreated>Filth_Fuel</thingCreated>
+				<thingCreatedChance>0.25</thingCreatedChance>
+				<damageUser>true</damageUser>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

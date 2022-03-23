@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>GR_DarkYoungWoodLog</defName>
+		<label>eldritch wood</label>
+		<description>This wood-like material has been extracted from the tentacles of an eldritch creature. Let's make a cupboard out of them!</description>
+		<graphicData>
+			<texPath>Things/Item/GR_DarkYoungWoodLog</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.8</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.4</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<SharpDamageMultiplier>0.9</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>eldritch wooden</stuffAdjective>
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(74,60,102)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>3</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.6</MaxHitPoints>
+				<Beauty>5</Beauty>
+				<Flammability>1</Flammability>
+				<WorkToMake>1.5</WorkToMake>
+				<WorkToBuild>1.5</WorkToBuild>
+				<DoorOpenSpeed>1.1</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<tools>
+			<li>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.StuffExtension">
+				<structureGenerationCommonalityOffset>0</structureGenerationCommonalityOffset>
+				<weaponGenerationCommonalityOffset>0</weaponGenerationCommonalityOffset>
+				<apparelGenerationCommonalityOffset>0</apparelGenerationCommonalityOffset>
+				<structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+				<weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+				<apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>GR_EldritchInsectJelly</defName>
+		<label>eldritch insect jelly</label>
+		<description>Jelly stored and used as food by oversized insects. It is smooth, rich, and brings incredible joy to those who consume it. Also, it quickly erodes their sanity and turns them into insane psychopaths, but it's so tasty! Because of its unique biological properties, it can nourish almost any creature and never rots.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_EldritchInsectJelly</texPath>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>0.025</Mass>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<preferability>MealFine</preferability>
+			<joy>0.45</joy>
+			<joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ROM_SanityLoss</hediffDef>
+					<severity>0.25</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<thingCategories>
+			<li>ROM_StrangeMeatRaw</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

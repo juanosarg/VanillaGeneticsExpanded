@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+  
+
+  
+  <DamageDef>
+    <defName>GR_PsionicExplosion</defName>
+    <label>psionic explosion</label>
+	<externalViolence>false</externalViolence>	
+    <makesBlood>false</makesBlood>
+    <harmsHealth>false</harmsHealth>	
+	<hediff>ROM_Psionic</hediff>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+	<workerClass>CosmicHorror.DamageWorker_CranialPressure</workerClass>
+	<deathMessage>{0} has died from psychic shock.</deathMessage>
+  </DamageDef>
+  
+  
+
+ 
+
+</Defs>

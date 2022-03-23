@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>GR_DisabledQuestCosmicHorrors</defName>
+		<disabledFromQuestsPawns>
+			<li>GR_EldritchBear</li>
+			<li>GR_EldritchBoomalope</li>
+			<li>GR_EldritchChicken</li>
+			<li>GR_EldritchMuffalo</li>
+			<li>GR_EldritchReptile</li>
+			<li>GR_EldritchThrumbo</li>
+			<li>GR_EldritchWolf</li>
+		</disabledFromQuestsPawns>
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+</Defs>

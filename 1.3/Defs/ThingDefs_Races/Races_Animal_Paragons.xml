@@ -2034,13 +2034,13 @@
 		<alternateGraphicChance>0.8</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
-				 <color>(154,125,94)</color>
+				 <texPath>Things/Pawn/Animal/Paragon/Insectoid/GR_ParagonInsectoid</texPath>
 			</li>
 			<li>
-				 <color>(156,148,125)</color>
+				<texPath>Things/Pawn/Animal/Paragon/Insectoid/GR_ParagonInsectoid2</texPath>
 			</li>
 			<li>
-				 <color>(114,107,84)</color>
+				 <texPath>Things/Pawn/Animal/Paragon/Insectoid/GR_ParagonInsectoid3</texPath>
 			</li>
 			
 		</alternateGraphics>

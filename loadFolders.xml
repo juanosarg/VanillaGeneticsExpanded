@@ -4,6 +4,10 @@
 		<li>1.3</li>
 		<li IfModActive="sarg.alphaanimals">1.3/Mods/AlphaAnimals</li>
 		<li IfModActive="sarg.alphaanimals_copy">1.3/Mods/AlphaAnimals</li>
+		
+		<li IfModActive="rimofmadness.CallofCthulhuCosmicHorrors">1.3/Mods/CosmicHorrors</li>
+		<li IfModActive="rimofmadness.CallofCthulhuCosmicHorrors_copy">1.3/Mods/CosmicHorrors</li>
+		
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.3/Mods/Ideology</li>
 	</v1.3>
 </loadFolders>

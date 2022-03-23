@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="GR_GenomeExcavatorBase">
+		<defName>GR_EldritchExcavator</defName>
+		<label>eldritch genome excavator</label>
+		<description>A simplified genome extraction device designed to be usable by even the most simple-minded goon, as such it resembles a caulking gun that works in reverse. The best genetic material can be found in the brain and the automated, single-use design instantly compresses this material into a usable genome.\n\nThe desired subject needs to be docile and trusting of the user who intends on scooping out their brain in a process that is not-quite instantaneous. It is recommended to anesthetize the creature as any sudden movement on their part will interrupt the whole process. Alternatively, it will also work on a dead body...\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; This excavator can be used to acquire the following genomes:</description>
+		<graphicData>
+			<texPath>Things/Item/GR_EldritchExcavator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>GR_UseGenomeExcavator</useJob>
+				<useLabel>Use genome excavator</useLabel>
+				<useDuration>60</useDuration>
+			</li>
+			<li Class="GeneticRim.CompProperties_TargetableAnimalOrCorpse">				
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_TargetEffect_Extract">
+				<tier>
+					<li>eldritch</li>
+					
+				</tier>
+				<numberOfUses>1</numberOfUses>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

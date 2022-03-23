@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+
+  
+  <ThingDef ParentName="ROM_RawCHFoodBase">
+    <defName>GR_ROM_RawCHFood_FormlessMeat</defName>
+    <label>formless spawn meat</label>
+    <description>Raw meat from a formless spawn of Tsathoggua. Or... or at least a boomalope abomination that *looked* similar. Hard to know with these things.</description>
+    <graphicData>
+      <texPath>Things/Item/GR_RawCHFood_FormlessMeat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	    <tradeability>Sellable</tradeability>
+
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+    </statBases>
+    <ingestible>
+      <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+    </ingestible>
+  </ThingDef>
+
+ 
+
+</Defs>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  
+   <ThingDef ParentName="BaseGas">
+    <defName>GR_Insanity_Cloud</defName>
+    <label>insanity cloud</label>
+	<thingClass>GeneticRim.Gas_InsanityCloud</thingClass>
+
+    <graphicData>
+      <texPath>Things/Gas/Puff</texPath>
+      <drawSize>2.2</drawSize>
+      <color>(186, 0, 214)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>
+        <min>40</min>
+        <max>45</max>
+      </expireSeconds>
+      <blockTurretTracking>true</blockTurretTracking>
+      <accuracyPenalty>0.15</accuracyPenalty>
+      <rotationSpeed>10</rotationSpeed>
+    </gas>
+  </ThingDef>
+  
+ 
+    
+</Defs>

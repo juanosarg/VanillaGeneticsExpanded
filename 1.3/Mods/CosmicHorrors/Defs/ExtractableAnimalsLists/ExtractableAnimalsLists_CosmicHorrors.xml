@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_CosmicHorrors</defName>
+		<tier>eldritch</tier>
+		<itemProduced>GR_EldritchGenetic</itemProduced>
+		<extractableAnimals>
+			<li>ROM_DarkYoung</li>
+			<li>ROM_Chthonian</li>
+			<li>ROM_DeepOne</li>
+			<li>ROM_DeepOneGreat</li>
+			<li>ROM_ChthonianLarva</li>
+			<li>ROM_MiGo</li>
+			<li>ROM_Shoggoth</li>
+			<li>ROM_Cthulhid</li>
+			<li>ROM_StarVampire</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+</Defs>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========== Basic leathers ============-->
+	<ThingDef ParentName="LeatherBase">
+		<defName>GR_Shiftskin</defName>
+		<label>formless boomalope shiftskin</label>
+		<graphicData>
+			<color>(163,137,91)</color>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<stuffProps>
+			<color>(163,137,91)</color>
+			<commonality>0</commonality>
+		</stuffProps>
+		<statBases>
+			<MarketValue>7.5</MarketValue>
+			<StuffPower_Armor_Sharp>1.15</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt>
+		</statBases>
+		<modExtensions>
+			<li Class="VFECore.StuffExtension">
+				<structureGenerationCommonalityOffset>0</structureGenerationCommonalityOffset>
+				<weaponGenerationCommonalityOffset>0</weaponGenerationCommonalityOffset>
+				<apparelGenerationCommonalityOffset>0</apparelGenerationCommonalityOffset>
+				<structureGenerationCommonalityFactor>100</structureGenerationCommonalityFactor>
+				<weaponGenerationCommonalityFactor>100</weaponGenerationCommonalityFactor>
+				<apparelGenerationCommonalityFactor>100</apparelGenerationCommonalityFactor>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

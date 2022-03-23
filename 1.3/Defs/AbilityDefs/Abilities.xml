@@ -37,6 +37,32 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
+	
+	<AbilityDef Abstract="True" Name="GR_TargetAbilities">
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>true</targetRequired>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<hotKey>Misc12</hotKey>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>0.5</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<requireLineOfSight>False</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+	</AbilityDef>
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonateBomb</defName>
 		<label>detonate chemfuel</label>
@@ -56,6 +82,7 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonateAcid</defName>
 		<label>detonate acidic chemfuel</label>
@@ -265,4 +292,5 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	
 </Defs>

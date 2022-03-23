@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="WoolBase">
+		<defName>GR_EldritchWool</defName>
+		<label>eldritch wool</label>
+		<description>This purple wool seems to be irrigated by pulsing, throbbing purple veins. However, they can only be detected by sight, not by touch.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_EldritchWool</texPath>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<stuffProps>
+			<color>(120,89,145)</color>
+			<commonality>0</commonality>
+		</stuffProps>
+		<statBases>
+			<StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.2</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>36</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+		</statBases>
+		<modExtensions>
+			<li Class="VFECore.StuffExtension">
+				<structureGenerationCommonalityOffset>0</structureGenerationCommonalityOffset>
+				<weaponGenerationCommonalityOffset>0</weaponGenerationCommonalityOffset>
+				<apparelGenerationCommonalityOffset>0</apparelGenerationCommonalityOffset>
+				<structureGenerationCommonalityFactor>100</structureGenerationCommonalityFactor>
+				<weaponGenerationCommonalityFactor>100</weaponGenerationCommonalityFactor>
+				<apparelGenerationCommonalityFactor>100</apparelGenerationCommonalityFactor>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

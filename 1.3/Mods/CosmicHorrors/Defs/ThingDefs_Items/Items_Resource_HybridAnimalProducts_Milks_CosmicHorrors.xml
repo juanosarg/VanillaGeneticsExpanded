@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  	<ThingDef ParentName="ResourceBase">
+    <defName>GR_EldritchMilk</defName>
+    <label>eldritch milk</label>
+    <description>This milk is purple coloured, and its smell is indescribable. It whispers to you...</description>
+    <graphicData>
+      <texPath>Things/Item/GR_EldritchMilk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	    <tradeability>Sellable</tradeability>
+
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>40</MaxHitPoints>
+      <MarketValue>1</MarketValue>
+      <Mass>0.075</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>8</DeteriorationRate>
+	        <Nutrition>0.05</Nutrition>
+
+    </statBases>
+    <thingCategories>
+      <li>ROM_StrangeMeatRaw</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <foodType>Processed</foodType>
+	  <joy>0.06</joy>
+	  <joyKind>Gluttonous</joyKind>
+      <maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>
+      <ingestSound>Meal_Eat</ingestSound>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			  <hediffDef>ROM_SanityLoss</hediffDef>
+			  <severity>0.25</severity>
+			</li>
+		</outcomeDoers>	
+    </ingestible>
+  </ThingDef>
+
+</Defs>
