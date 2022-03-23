@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Genetic Material ====================-->
+
+
+  <ThingDef ParentName="GR_GeneticsBase">
+    <defName>GR_DinoGenetic</defName>
+    <label>dinosaur genetic material</label>
+    <description>A vial of genetic material extracted from a dinosaur.</description>
+    
+    <graphicData>
+            <texPath>Things/Item/GR_geneticmaterialsgreen</texPath>
+
+    </graphicData>
+	<statBases>
+       <MarketValue>45</MarketValue>
+    </statBases>
+    
+  </ThingDef>
+ 
+
+  
+</Defs>

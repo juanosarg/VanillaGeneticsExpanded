@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ========= Spinobear ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_SpinobearEggUnfertilized</defName>
+		<label>spinobear egg (unfert.)</label>
+		<description>Unfertilized spinobear egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_SpinobearEggFertilized</defName>
+		<label>spinobear egg (fert.)</label>
+		<description>Fertilized spinobear egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into an spinobear.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.7</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.8</Nutrition>
+
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>GR_Spinobear</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>  
+
+	<!-- ========= Parasaurolope ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_ParasaurolopeEggUnfertilized</defName>
+		<label>parasaurolope egg (unfert.)</label>
+		<description>Unfertilized parasaurolope egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.8</Nutrition>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_ParasaurolopeEggFertilized</defName>
+		<label>parasaurolope egg (fert.)</label>
+		<description>Fertilized parasaurolope egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a parasaurolope.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.8</Nutrition>
+
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>GR_Parasaurolope</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef> 
+
+	<!-- ========= Chickennathus ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_ChickennathusEggUnfertilized</defName>
+		<label>chickennathus egg (unfert.)</label>
+		<description>Unfertilized chickennathus egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.5</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.5</Nutrition>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_ChickennathusEggFertilized</defName>
+		<label>chickennathus egg (fert.)</label>
+		<description>Fertilized chickennathus egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a chickennathus.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.5</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.5</Nutrition>
+
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>GR_Chickennathus</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef> 
+
+
+
+	<!-- ========= Diplobeetle ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_DiplobeetleEggUnfertilized</defName>
+		<label>diplobeetle egg (unfert.)</label>
+		<description>Unfertilized diplobeetle egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.9</Nutrition>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_DiplobeetleEggFertilized</defName>
+		<label>diplobeetle egg (fert.)</label>
+		<description>Fertilized chickennathus egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a chickennathus.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.9</Nutrition>
+
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>GR_Diplobeetle</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef> 
+
+	<!-- ========= Triceraffalo ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_TriceraffaloEggUnfertilized</defName>
+		<label>triceraffalo egg (unfert.)</label>
+		<description>Unfertilized triceraffalo egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.8</Nutrition>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_TriceraffaloEggFertilized</defName>
+		<label>triceraffalo egg (fert.)</label>
+		<description>Fertilized triceraffalo egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a triceraffalo.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.8</Nutrition>
+
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>GR_Triceraffalo</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef> 
+
+	<!-- ========= Raptortoise ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_RaptortoiseEggUnfertilized</defName>
+		<label>raptortoise egg (unfert.)</label>
+		<description>Unfertilized raptortoise egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.75</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.6</Nutrition>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_RaptortoiseEggFertilized</defName>
+		<label>raptortoise egg (fert.)</label>
+		<description>Fertilized raptortoise egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a raptortoise.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.75</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.6</Nutrition>
+
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>GR_Raptortoise</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef> 
+
+	<!-- ========= Stegothrumbo ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_StegothrumboEggUnfertilized</defName>
+		<label>stegothrumbo egg (unfert.)</label>
+		<description>Unfertilized stegothrumbo egg. It can be eaten raw, but it's much, much better cooked. This is insanely nutritive!</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>1.5</Nutrition>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_StegothrumboEggFertilized</defName>
+		<label>stegothrumbo egg (fert.)</label>
+		<description>Fertilized stegothrumbo egg. It can be eaten raw, but it's much, much better cooked. This is insanely nutritive! If all goes well, it should hatch into a stegothrumbo.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>1.5</Nutrition>
+
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>GR_Stegothrumbo</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef> 
+
+	<!-- ========= Velociwolf ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_VelociwolfEggUnfertilized</defName>
+		<label>velociwolf egg (unfert.)</label>
+		<description>Unfertilized velociwolf egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.6</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.5</Nutrition>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_VelociwolfEggFertilized</defName>
+		<label>velociwolf egg (fert.)</label>
+		<description>Fertilized velociwolf egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a velociwolf.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>.6</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Nutrition>.5</Nutrition>
+
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>12</hatcherDaystoHatch>
+				<hatcherPawn>GR_Velociwolf</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef> 
+
+</Defs>

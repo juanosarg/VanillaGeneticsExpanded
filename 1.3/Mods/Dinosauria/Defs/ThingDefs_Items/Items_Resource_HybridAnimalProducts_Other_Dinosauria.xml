@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>GR_DinoInsectJelly</defName>
+		<label>dino insect jelly</label>
+		<description>Dinobeetles are huge beasts that produce a nutrient rich, amber-like substance. They probably would use it to build complex structures similar to bees, but they don't because... well, because they are a scientific abomination doomed from the start... Because of its unique biological properties, it can nourish almost any creature and never rots.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_DinoInsectJelly</texPath>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>8.0</MarketValue>
+			<Mass>0.025</Mass>
+			<Nutrition>0.075</Nutrition>
+
+		</statBases>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<preferability>MealFine</preferability>
+			<joy>0.075</joy>
+			<joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>GR_ScalyBearPelt</defName>
+		<label>scaly bear pelt</label>
+		<description>This enormous bear pelt is part hair and part scales. It is probably valuable as a trade good. Or it can also be repurposed as a huge rug.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_ScalyBearPelt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<stackLimit>1</stackLimit>
+		<statBases>
+			<MaxHitPoints>30</MaxHitPoints>
+			<MarketValue>175</MarketValue>
+			<Mass>8</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>GR_FossilChemfuel</defName>
+		<label>fossil chemfuel</label>
+		<description>Volatile liquid chemical compound similar to fossil fuels. Can be used to power a fossil chemfuel generator.</description>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+
+			<texPath>Things/Item/GR_FossilChemfuel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+
+		<stackLimit>400</stackLimit>
+
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>3</MarketValue>
+			<Mass>0.05</Mass>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+</Defs>

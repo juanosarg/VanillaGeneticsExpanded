@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="GR_ArtBaseGround">
+		<defName>GR_ScalyBearRug</defName>
+		<label>scaly bear rug</label>
+		<description>Really, couldn't you decorate with vinyl decals, like a normal, non-insane person? This looks horrendous. Some of the colonists seem to like it, though..</description>
+		<graphicData>
+			<texPath>Things/Building/GR_ScalyBearRug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>495</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>65</Beauty>
+			<Cleanliness>0.6</Cleanliness>
+		</statBases>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<rotatable>true</rotatable>
+		<building>
+			<isEdifice>false</isEdifice>
+		</building>
+		<size>(2,2)</size>
+		<costList>
+			<GR_ScalyBearPelt>1</GR_ScalyBearPelt>
+		</costList>
+	</ThingDef>
+</Defs>

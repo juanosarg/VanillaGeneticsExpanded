@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<GeneticRim.ExtractableAnimalsList>
+		<defName>GR_Dinosauria</defName>
+		<tier>dino</tier>
+		<itemProduced>GR_DinoGenetic</itemProduced>
+		<extractableAnimals>
+			<li>TyrannosaurusRex</li>
+			<li>Yutyrannus</li>
+			<li>Carnotaurus</li>
+			<li>Allosaurus</li>
+			<li>Spinosaurus</li>
+			<li>Baryonyx</li>
+			<li>Ankylosaurus</li>
+			<li>Minmi</li>
+			<li>Brachiosaurus</li>
+			<li>Brontosaurus</li>
+			<li>Diplodocus</li>
+			<li>Magyarosaurus</li>
+			<li>Utahraptor</li>
+			<li>Dakotaraptor</li>
+			<li>Dilophosaurus</li>
+			<li>Velociraptor</li>
+			<li>Compsognathus</li>
+			<li>Gallimimus</li>
+			<li>Gigantoraptor</li>
+			<li>Iguanodon</li>
+			<li>Parasaur</li>
+			<li>Corythosaurus</li>
+			<li>Deinocheirus</li>
+			<li>Therizinosaurus</li>
+			<li>Pachycephalosaurus</li>
+			<li>Stygimoloch</li>
+			<li>Dryosaurus</li>
+			<li>Stegosaurus</li>
+			<li>Triceratops</li>
+			<li>Protoceratops</li>
+			<li>Quetzalcoatlus</li>
+			<li>Pteranodon</li>
+		</extractableAnimals>
+	</GeneticRim.ExtractableAnimalsList>
+</Defs>

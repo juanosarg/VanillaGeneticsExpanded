@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>GR_DisabledQuestAnimalsDinosauria</defName>
+		<disabledFromQuestsPawns>
+			<li>GR_Spinobear</li>
+			<li>GR_Parasaurolope</li>
+			<li>GR_Chickennathus</li>
+			<li>GR_Diplobeetle</li>
+			<li>GR_Triceraffalo</li>
+			<li>GR_Raptortoise</li>
+			<li>GR_Stegothrumbo</li>
+			<li>GR_Velociwolf</li>
+		</disabledFromQuestsPawns>
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+</Defs>
