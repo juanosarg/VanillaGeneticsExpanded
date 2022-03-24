@@ -652,11 +652,11 @@
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<packAnimal>true</packAnimal>
-			<trainability>Intermediate</trainability>
+			<trainability>None</trainability>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
+			<wildness>0.45</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
