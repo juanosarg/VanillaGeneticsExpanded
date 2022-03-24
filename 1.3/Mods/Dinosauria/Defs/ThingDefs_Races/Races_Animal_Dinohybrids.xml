@@ -211,7 +211,7 @@
 			</li>
 		</tools>
 		<comps>
-			<li Class="GeneticRim.CompProperties_AnimalProduct">
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>GR_CompressedChemfuel</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
 				<resourceAmount>18</resourceAmount>
@@ -508,7 +508,7 @@
 	<ThingDef ParentName="GR_BaseInsect">
 		<defName>GR_Diplobeetle</defName>
 		<label>diplobeetle</label>
-		<thingClass>GeneticRim.AlternateHybridSkins</thingClass>
+	
 		<description>This huge sauropod hybrid has notable insectoid traits. It is hard to see how such a creature could have any predators, since it would probably leave its herbivorous diet and just eat them whole.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All insectoid hybrids have good armor and no toxic sensitivity, but they are always sterile and can't reproduce, even if a fertility booster is used to create them. Diplobeetles produce a very nutritive jelly.</description>
 		<statBases>
 			<MoveSpeed>3.2</MoveSpeed>
@@ -551,7 +551,7 @@
 		</tools>
 		<comps>
 			
-			<li Class="GeneticRim.CompProperties_AnimalProduct">
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>GR_DinoInsectJelly</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
 				<resourceAmount>25</resourceAmount>
