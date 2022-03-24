@@ -6,7 +6,7 @@
 	<ThingDef ParentName="WoolBase">
 		<defName>GR_DinoFeatherWool</defName>
 		<label>dino featherwool</label>
-		<description>This seems to be an amalgamation of feathers and wool, perfectly interweaved. Gives adequate defense against blunt attacks, and is quite warm.</description>
+		<description>This seems to be an amalgamation of feathers, scales and wool, perfectly interweaved. Gives adequate defense against blunt attacks, and is quite warm.</description>
 
 		<graphicData>
 			<texPath>Things/Item/GR_DinoFeatherWool</texPath>
@@ -15,8 +15,7 @@
 		<tradeability>Sellable</tradeability>
 
 		<statBases>
-			<StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
-
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
 			<StuffPower_Insulation_Cold>32</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
 		</statBases>

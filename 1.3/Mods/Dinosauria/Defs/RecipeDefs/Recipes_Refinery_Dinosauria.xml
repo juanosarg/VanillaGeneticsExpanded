@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>GR_ParasaurolopeCorpseToCompressedChemfuel</defName>
+		<label>make compressed chemfuel from a parasaurolope corpse</label>
+		<description>Make a batch of compressed chemfuel by extracting it from a parasaurolope corpse.</description>
+		<jobString>Refining compressed chemfuel from a parasaurolope corpse.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>1000</workAmount>
+		<recipeUsers>
+				<li>BiofuelRefinery</li>	  
+		</recipeUsers>	
+		<workSkill>Intellectual</workSkill>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredients>
+			<li>
+				<filter>
+				  <thingDefs>
+					<li>Corpse_GR_Parasaurolope</li>
+				  </thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Corpse_GR_Parasaurolope</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<products>
+			<GR_CompressedChemfuel>50</GR_CompressedChemfuel>
+		</products>
+	</RecipeDef>
+	
+	
+
+
+</Defs>

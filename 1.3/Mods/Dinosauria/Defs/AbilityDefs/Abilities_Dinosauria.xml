@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_Stamina</defName>
+		<label>greater stamina</label>
+		<description>Makes the creature more resistant to damage for a while.</description>
+		<iconPath>ui/commands/GR_Stamina</iconPath>
+		<groupDef>GR_TwiceDayAbilitiesGroup</groupDef>
+		<comps>
+			<li Class="GeneticRim.CompProperties_GiveHediff">
+				<hediffDef>GR_Stamina</hediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>

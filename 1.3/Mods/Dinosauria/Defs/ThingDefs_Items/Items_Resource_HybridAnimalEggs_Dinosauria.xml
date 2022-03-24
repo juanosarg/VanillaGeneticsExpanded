@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- ========= Spinobear ========= -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_SpinobearEggUnfertilized</defName>
@@ -14,11 +13,9 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-
+			<Nutrition>.25</Nutrition>
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_SpinobearEggFertilized</defName>
 		<label>spinobear egg (fert.)</label>
@@ -31,18 +28,15 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.8</Nutrition>
-
+			<Nutrition>.25</Nutrition>
 		</statBases>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
 				<hatcherPawn>GR_Spinobear</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef>  
-
+	</ThingDef>
 	<!-- ========= Parasaurolope ========= -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ParasaurolopeEggUnfertilized</defName>
@@ -56,12 +50,9 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.8</Nutrition>
-
+			<Nutrition>.3</Nutrition>
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_ParasaurolopeEggFertilized</defName>
 		<label>parasaurolope egg (fert.)</label>
@@ -74,18 +65,15 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.8</Nutrition>
-
+			<Nutrition>.3</Nutrition>
 		</statBases>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
 				<hatcherPawn>GR_Parasaurolope</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef> 
-
+	</ThingDef>
 	<!-- ========= Chickennathus ========= -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ChickennathusEggUnfertilized</defName>
@@ -100,11 +88,8 @@
 		<statBases>
 			<MarketValue>20</MarketValue>
 			<Nutrition>.5</Nutrition>
-
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_ChickennathusEggFertilized</defName>
 		<label>chickennathus egg (fert.)</label>
@@ -118,62 +103,14 @@
 		<statBases>
 			<MarketValue>20</MarketValue>
 			<Nutrition>.5</Nutrition>
-
 		</statBases>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherDaystoHatch>3</hatcherDaystoHatch>
 				<hatcherPawn>GR_Chickennathus</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef> 
-
-
-
-	<!-- ========= Diplobeetle ========= -->
-	<ThingDef ParentName="EggUnfertBase">
-		<defName>GR_DiplobeetleEggUnfertilized</defName>
-		<label>diplobeetle egg (unfert.)</label>
-		<description>Unfertilized diplobeetle egg. It can be eaten raw, but it's much, much better cooked.</description>
-		<tradeability>Sellable</tradeability>
-		<graphicData>
-			<texPath>Things/Item/GR_DinoEgg</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20</MarketValue>
-			<Nutrition>.9</Nutrition>
-
-		</statBases>
-
 	</ThingDef>
-
-	<ThingDef ParentName="EggFertBase">
-		<defName>GR_DiplobeetleEggFertilized</defName>
-		<label>diplobeetle egg (fert.)</label>
-		<description>Fertilized chickennathus egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a chickennathus.</description>
-		<tradeability>None</tradeability>
-		<graphicData>
-			<texPath>Things/Item/GR_DinoEgg</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
-		</graphicData>
-		<statBases>
-			<MarketValue>20</MarketValue>
-			<Nutrition>.9</Nutrition>
-
-		</statBases>
-
-		<comps>
-			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>5</hatcherDaystoHatch>
-				<hatcherPawn>GR_Diplobeetle</hatcherPawn>
-			</li>
-		</comps>
-	</ThingDef> 
-
 	<!-- ========= Triceraffalo ========= -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_TriceraffaloEggUnfertilized</defName>
@@ -187,12 +124,9 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.8</Nutrition>
-
+			<Nutrition>.25</Nutrition>
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_TriceraffaloEggFertilized</defName>
 		<label>triceraffalo egg (fert.)</label>
@@ -205,18 +139,15 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.8</Nutrition>
-
+			<Nutrition>.25</Nutrition>
 		</statBases>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherDaystoHatch>7</hatcherDaystoHatch>
 				<hatcherPawn>GR_Triceraffalo</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef> 
-
+	</ThingDef>
 	<!-- ========= Raptortoise ========= -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_RaptortoiseEggUnfertilized</defName>
@@ -230,12 +161,9 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.6</Nutrition>
-
+			<Nutrition>.25</Nutrition>
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_RaptortoiseEggFertilized</defName>
 		<label>raptortoise egg (fert.)</label>
@@ -248,18 +176,15 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.6</Nutrition>
-
+			<Nutrition>.25</Nutrition>
 		</statBases>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
 				<hatcherPawn>GR_Raptortoise</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef> 
-
+	</ThingDef>
 	<!-- ========= Stegothrumbo ========= -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_StegothrumboEggUnfertilized</defName>
@@ -273,12 +198,9 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>1.5</Nutrition>
-
+			<Nutrition>1</Nutrition>
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_StegothrumboEggFertilized</defName>
 		<label>stegothrumbo egg (fert.)</label>
@@ -291,18 +213,15 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>1.5</Nutrition>
-
+			<Nutrition>1</Nutrition>
 		</statBases>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherDaystoHatch>10</hatcherDaystoHatch>
 				<hatcherPawn>GR_Stegothrumbo</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef> 
-
+	</ThingDef>
 	<!-- ========= Velociwolf ========= -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_VelociwolfEggUnfertilized</defName>
@@ -316,12 +235,9 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.5</Nutrition>
-
+			<Nutrition>.25</Nutrition>
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_VelociwolfEggFertilized</defName>
 		<label>velociwolf egg (fert.)</label>
@@ -334,16 +250,13 @@
 		</graphicData>
 		<statBases>
 			<MarketValue>20</MarketValue>
-			<Nutrition>.5</Nutrition>
-
+			<Nutrition>.25</Nutrition>
 		</statBases>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
-				<hatcherDaystoHatch>12</hatcherDaystoHatch>
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
 				<hatcherPawn>GR_Velociwolf</hatcherPawn>
 			</li>
 		</comps>
-	</ThingDef> 
-
+	</ThingDef>
 </Defs>
