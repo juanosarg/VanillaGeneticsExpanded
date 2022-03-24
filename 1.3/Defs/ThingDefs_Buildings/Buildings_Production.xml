@@ -45,11 +45,7 @@
 				<basePowerConsumption>210</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>GR_NutrientVat</li>
-				</linkableFacilities>
-			</li>
+			
 			<li Class="GeneticRim.CompProperties_Genomorpher">
 				<hoursProcess>72</hoursProcess>
 			</li>
@@ -106,11 +102,7 @@
 				<basePowerConsumption>100</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>GR_NutrientVat</li>
-				</linkableFacilities>
-			</li>
+			
 			<li Class="GeneticRim.CompProperties_ElectroWomb">
 				<maxBodySize>1</maxBodySize>
 				<hoursProcess>72</hoursProcess>
@@ -168,11 +160,7 @@
 				<basePowerConsumption>150</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_AffectedByFacilities">
-				<linkableFacilities>
-					<li>GR_NutrientVat</li>
-				</linkableFacilities>
-			</li>
+			
 			<li Class="GeneticRim.CompProperties_ElectroWomb">
 				<isLarge>true</isLarge>
 				<hoursProcess>72</hoursProcess>
