@@ -25,6 +25,7 @@
 	<GR_LackOfLove>Dying due to lack of love in:</GR_LackOfLove>
 	<GR_CellularDegeneration>Cellular degeneration in:</GR_CellularDegeneration>
 	<GR_CantResurrect>Animals that have been extracted can't be resurrected.</GR_CantResurrect>
+	<GR_GeneticDiseasesIn>Genetic Diseases in: {0}</GR_GeneticDiseasesIn>
 	
 	<!-- Growth Cell -->
 	<GR_GrowthCell_InspectDominant>Dominant Gene: {0}</GR_GrowthCell_InspectDominant>

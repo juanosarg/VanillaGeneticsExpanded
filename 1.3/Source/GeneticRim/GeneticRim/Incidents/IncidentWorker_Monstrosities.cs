@@ -69,7 +69,7 @@ namespace GeneticRim
                 }
 
             }
-            //SendStandardLetter("GR_LetterLabelMonstrositiesArrived".Translate(), "GR_LetterMonstrositiesArrived".Translate(), LetterDefOf.ThreatBig, parms, list[0]);
+            SendStandardLetter("GR_LetterLabelMonstrositiesArrived".Translate(), "GR_LetterMonstrositiesArrived".Translate(), LetterDefOf.ThreatBig, parms, list[0]);
             Find.TickManager.slower.SignalForceNormalSpeedShort();
            
             return true;

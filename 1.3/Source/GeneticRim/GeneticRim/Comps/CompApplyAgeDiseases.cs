@@ -10,6 +10,9 @@ namespace GeneticRim
     {
         public int tickCounter = 0;
 
+        public const int ticksToReadQuality = 10;
+        public bool readQualityOnce = false;
+
         public int ticksToApply = 10800000;  // 3 years
         public int ticksToReapply = 900000;  // 3 years - 15 days
 
@@ -20,20 +23,24 @@ namespace GeneticRim
             base.PostExposeData();         
             Scribe_Values.Look(ref this.tickCounter, nameof(this.tickCounter));
             Scribe_Values.Look(ref this.ticksToApply, nameof(this.ticksToApply));
-        }
-
-        public override void PostSpawnSetup(bool respawningAfterLoad)
-        {
-            base.PostSpawnSetup(respawningAfterLoad);
-
-            ticksToApply = (int)(parent.TryGetComp<CompHybrid>().GetLifeExpectancyFactor()*ticksToApply);
+            Scribe_Values.Look(ref this.readQualityOnce, nameof(this.readQualityOnce));
 
         }
 
+       
         public override void CompTick()
         {
             base.CompTick();
             tickCounter++;
+
+
+            if (!readQualityOnce && tickCounter> ticksToReadQuality)
+            {
+                ticksToApply = (int)(parent.TryGetComp<CompHybrid>().GetLifeExpectancyFactor() * ticksToApply);
+
+                readQualityOnce = true;
+
+            }
 
             if (tickCounter >= ticksToApply)
             {
@@ -62,6 +69,16 @@ namespace GeneticRim
                 }
                 tickCounter = ticksToApply-ticksToReapply;
             }
+        }
+
+        public override string CompInspectStringExtra()
+        {
+
+
+            string text = base.CompInspectStringExtra();
+            string timeToLive = "GR_GeneticDiseasesIn".Translate((ticksToApply-tickCounter).ToStringTicksToPeriod(true, false, true, true));
+
+            return text + timeToLive;
         }
 
         public IEnumerable<Gizmo> GetGizmos()
