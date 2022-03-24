@@ -131,17 +131,33 @@ namespace GeneticRim
         public override void PostDraw()
         {
             base.PostDraw();
-            GenDraw.FillableBarRequest fillableBarRequest = default(GenDraw.FillableBarRequest);
-            fillableBarRequest.center      = this.parent.DrawPos + Vector3.forward * 0.1f + Vector3.left * 1.49f;
-            fillableBarRequest.size        = new Vector2(1.6f, 0.2f);
-            fillableBarRequest.fillPercent = this.progress;
-            fillableBarRequest.filledMat   = barFilledMat;
-            fillableBarRequest.unfilledMat = barUnfilledMat;
-            fillableBarRequest.margin      = 0.15f;
-            fillableBarRequest.rotation    = this.parent.Rotation.Rotated(RotationDirection.Clockwise);
-            GenDraw.DrawFillableBar(fillableBarRequest);
-            fillableBarRequest.center = this.parent.DrawPos + Vector3.forward * 0.1f + Vector3.right * 1.49f;
-            GenDraw.DrawFillableBar(fillableBarRequest);
+            if(this.parent.Rotation==Rot4.North|| this.parent.Rotation == Rot4.South) {
+                GenDraw.FillableBarRequest fillableBarRequest = default(GenDraw.FillableBarRequest);
+                fillableBarRequest.center = this.parent.DrawPos + Vector3.forward * 0.1f + Vector3.left * 1.49f;
+                fillableBarRequest.size = new Vector2(1.6f, 0.2f);
+                fillableBarRequest.fillPercent = this.progress;
+                fillableBarRequest.filledMat = barFilledMat;
+                fillableBarRequest.unfilledMat = barUnfilledMat;
+                fillableBarRequest.margin = 0.15f;
+                fillableBarRequest.rotation = this.parent.Rotation.Rotated(RotationDirection.Clockwise);
+                GenDraw.DrawFillableBar(fillableBarRequest);
+                fillableBarRequest.center = this.parent.DrawPos + Vector3.forward * 0.1f + Vector3.right * 1.49f;
+                GenDraw.DrawFillableBar(fillableBarRequest);
+            }
+            else
+            {
+                GenDraw.FillableBarRequest fillableBarRequest = default(GenDraw.FillableBarRequest);
+                fillableBarRequest.center = this.parent.DrawPos + Vector3.forward * -1.36f;
+                fillableBarRequest.size = new Vector2(1.6f, 0.2f);
+                fillableBarRequest.fillPercent = this.progress;
+                fillableBarRequest.filledMat = barFilledMat;
+                fillableBarRequest.unfilledMat = barUnfilledMat;
+                fillableBarRequest.margin = 0.15f;
+                fillableBarRequest.rotation = this.parent.Rotation.Rotated(RotationDirection.Clockwise);
+                GenDraw.DrawFillableBar(fillableBarRequest);
+                
+            }
+            
         }
 
         public override void PostExposeData()

@@ -369,6 +369,7 @@
     <Compile Include="Gas\Gas_InsectClouds.cs" />
     <Compile Include="Gas\Gas_PoisonCloud.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
+    <Compile Include="Harmony\ResurrectionUtility_Resurrect.cs" />
     <Compile Include="Harmony\HediffGiver_Birthday_TryApplyAndSimulateSeverityChange.cs" />
     <Compile Include="Harmony\JobDriver_Nuzzle_MakeNewToils.cs" />
     <Compile Include="Harmony\Thing_Ingested.cs" />
