@@ -5,6 +5,10 @@
 		<label>genetics supplier</label>
 		<stockGenerators>
 			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>750~1200</countRange>
+			</li>
+			<li Class="StockGenerator_SingleDef">
 				<thingDef>ComponentIndustrial</thingDef>
 				<countRange>30~40</countRange>
 			</li>
@@ -68,6 +72,10 @@
 		<label>genetics supplier</label>
 		<orbital>true</orbital>
 		<stockGenerators>
+			<li Class="StockGenerator_SingleDef">
+				<thingDef>Silver</thingDef>
+				<countRange>2000~4000</countRange>
+			</li>
 			<li Class="StockGenerator_SingleDef">
 				<thingDef>ComponentIndustrial</thingDef>
 				<countRange>30~40</countRange>
