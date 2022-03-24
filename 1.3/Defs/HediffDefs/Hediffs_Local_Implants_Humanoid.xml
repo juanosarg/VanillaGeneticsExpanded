@@ -13,8 +13,11 @@
 						<capacities>
 							<li>Scratch</li>
 						</capacities>
-						<power>25</power>
-						<cooldownTime>1</cooldownTime>
+						<power>16</power>
+						<cooldownTime>2</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+						<soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+						<soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
 					</li>
 				</tools>
 			</li>
@@ -57,7 +60,7 @@
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_DiggingBearClaws</defName>
 		<description>Grotesque but powerful hand blades that have been modified to be used in mining operations, increasing both speed and yield.</description>
-		<label>humanoid implant: digging bear claws</label>
+		<label>humanoid implant: digging mole claws</label>
 		<spawnThingOnRemoved>GR_DiggingBearClaws</spawnThingOnRemoved>
 		<addedPartProps>
 			<partEfficiency>1</partEfficiency>
@@ -66,11 +69,11 @@
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
 					<li>
-						<label>bear claws</label>
+						<label>mole claws</label>
 						<capacities>
 							<li>Scratch</li>
 						</capacities>
-						<power>10</power>
+						<power>5</power>
 						<cooldownTime>1</cooldownTime>
 					</li>
 				</tools>
@@ -81,55 +84,55 @@
 				<minSeverity>0</minSeverity>
 				<partEfficiencyOffset>-0.3</partEfficiencyOffset>
 				<statOffsets>
-					<MiningSpeed>0.05</MiningSpeed>
-					<MiningYield>0.03</MiningYield>
+					<MiningSpeed>0.03</MiningSpeed>
+					<MiningYield>0.01</MiningYield>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.1</minSeverity>
 				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
 				<statOffsets>
-					<MiningSpeed>0.1</MiningSpeed>
-					<MiningYield>0.1</MiningYield>
+					<MiningSpeed>0.05</MiningSpeed>
+					<MiningYield>0.02</MiningYield>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.2</minSeverity>
 				<statOffsets>
-					<MiningSpeed>0.25</MiningSpeed>
-					<MiningYield>0.15</MiningYield>
+					<MiningSpeed>0.1</MiningSpeed>
+					<MiningYield>0.04</MiningYield>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.3</minSeverity>
 				<partEfficiencyOffset>0.1</partEfficiencyOffset>
 				<statOffsets>
-					<MiningSpeed>0.27</MiningSpeed>
-					<MiningYield>0.17</MiningYield>
+					<MiningSpeed>0.125</MiningSpeed>
+					<MiningYield>0.05</MiningYield>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.4</minSeverity>
 				<partEfficiencyOffset>0.15</partEfficiencyOffset>
 				<statOffsets>
-					<MiningSpeed>0.3</MiningSpeed>
-					<MiningYield>0.2</MiningYield>
+					<MiningSpeed>0.15</MiningSpeed>
+					<MiningYield>0.1</MiningYield>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.5</minSeverity>
 				<partEfficiencyOffset>0.18</partEfficiencyOffset>
 				<statOffsets>
-					<MiningSpeed>0.32</MiningSpeed>
-					<MiningYield>0.22</MiningYield>
+					<MiningSpeed>0.175</MiningSpeed>
+					<MiningYield>0.125</MiningYield>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.6</minSeverity>
 				<partEfficiencyOffset>0.2</partEfficiencyOffset>
 				<statOffsets>
-					<MiningSpeed>0.35</MiningSpeed>
-					<MiningYield>0.25</MiningYield>
+					<MiningSpeed>0.2</MiningSpeed>
+					<MiningYield>0.15</MiningYield>
 				</statOffsets>
 			</li>
 		</stages>
@@ -1406,6 +1409,73 @@
 			<li>
 				<minSeverity>0.6</minSeverity>
 				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef ParentName="GR_HybridPartsBase">
+		<defName>GR_CatEye</defName>
+		<description>This hybrid humanoid / feline eye provides improved night vision, at the expense of a certain short-sightedness outside and during the day. Ideal for nyctophile colonists.</description>
+		<label>humanoid implant: cat eye</label>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>GR_CatEye</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.3</partEfficiencyOffset>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.01</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">-0.30</ShootingAccuracyOutdoorsLitOffset>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.05</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">-0.25</ShootingAccuracyOutdoorsLitOffset>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.10</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">-0.20</ShootingAccuracyOutdoorsLitOffset>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.125</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">-0.175</ShootingAccuracyOutdoorsLitOffset>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">-0.15</ShootingAccuracyOutdoorsLitOffset>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.175</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">-0.125</ShootingAccuracyOutdoorsLitOffset>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+				<statOffsets>
+					<ShootingAccuracyOutdoorsDarkOffset MayRequire="Ludeon.RimWorld.Ideology">0.20</ShootingAccuracyOutdoorsDarkOffset>
+					<ShootingAccuracyOutdoorsLitOffset MayRequire="Ludeon.RimWorld.Ideology">-0.10</ShootingAccuracyOutdoorsLitOffset>
+				</statOffsets>
 			</li>
 		</stages>
 	</HediffDef>

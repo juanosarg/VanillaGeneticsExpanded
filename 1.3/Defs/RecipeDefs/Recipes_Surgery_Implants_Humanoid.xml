@@ -48,10 +48,10 @@
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallDiggingBearClaws</defName>
-		<label>&lt;color=#E89D1B&gt;install digging bear claws&lt;/color&gt;</label>
-		<description>Installs digging bear claws.</description>
+		<label>&lt;color=#E89D1B&gt;install digging mole claws&lt;/color&gt;</label>
+		<description>Installs digging mole claws.</description>
 		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
-		<jobString>Installing digging bear claws.</jobString>
+		<jobString>Installing digging mole claws.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
 			<li>Human</li>
@@ -767,6 +767,50 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_CompoundEye</addsHediff>
 	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>GR_InstallCatEye</defName>
+		<label>&lt;color=#E89D1B&gt;install cat eye&lt;/color&gt;</label>
+		<description>Installs cat eye.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing cat eye.</jobString>
+		<workAmount>2000</workAmount>
+		<recipeUsers>
+			<li>Human</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_CatEye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>GR_CatEye</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li> 
+
+		</appliedOnFixedBodyParts>
+		<addsHediff>GR_CatEye</addsHediff>
+	</RecipeDef>
+	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallInsectoidAntennae</defName>

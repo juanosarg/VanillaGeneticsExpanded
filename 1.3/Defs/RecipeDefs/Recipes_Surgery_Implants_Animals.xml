@@ -204,7 +204,41 @@
 	
 		<!--=============== Tails ====================-->
 
+	<RecipeDef ParentName="GR_TailImplants">
+		<defName>GR_InstallCatTail</defName>
+		<label>&lt;color=#E89D1B&gt;install animal Implant: cat tail&lt;/color&gt;</label>
+		<description>Installs cat tail.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing cat tail.</jobString>		
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_CatTail</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>GR_CatTail</li>
+			</thingDefs>
+		</fixedIngredientFilter>
 
+		<addsHediff>GR_CatTail</addsHediff>
+	</RecipeDef>
 	<RecipeDef ParentName="GR_TailImplants">
 		<defName>GR_InstallScytherTail</defName>
 		<label>&lt;color=#E89D1B&gt;install animal Implant: scyther tail&lt;/color&gt;</label>

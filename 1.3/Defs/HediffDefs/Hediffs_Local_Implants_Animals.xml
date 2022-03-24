@@ -382,10 +382,85 @@
 		</stages>
 	</HediffDef>
 	<!--=============== Tails ====================-->
+	
+	<HediffDef ParentName="GR_HybridPartsBase">
+		<defName>GR_CatTail</defName>
+		<label>animal Implant: cat tail</label>
+		<description>A tail implant that uses genetic splicing with feline genes to substitute a broken or missing tail. This implant is not meant to replace a healthy tail.</description>
+		<spawnThingOnRemoved>GR_CatTail</spawnThingOnRemoved>
+		<addedPartProps>
+			<partEfficiency>0.7</partEfficiency>
+			<solid>true</solid>
+		</addedPartProps>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.005</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.005</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.005</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<partEfficiencyOffset>-0.1</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.01</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.2</minSeverity>
+				<statOffsets>
+					<ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.02</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<partEfficiencyOffset>0.1</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.025</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.025</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.025</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<partEfficiencyOffset>0.15</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.03</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<partEfficiencyOffset>0.18</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.035</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.035</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.035</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+				<statOffsets>
+					<ArmorRating_Sharp>0.04</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.04</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.04</ArmorRating_Heat>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_ScytherTail</defName>
 		<label>animal Implant: scyther tail</label>
-		<description>A scyther tail created by attaching a scyther blade to an animal's tail. Note that only creatures with a natural tail can use this.</description>
+		<description>A scyther tail created by attaching a scyther blade to an animal's tail.</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -474,7 +549,7 @@
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_MechaTail</defName>
 		<label>animal Implant: reinforced tail</label>
-		<description>An advanced animal tail, even more powerful than a natural one. Note that only creatures with a natural tail can use this.</description>
+		<description>An advanced animal tail, even more powerful than a natural one.</description>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>

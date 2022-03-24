@@ -130,6 +130,46 @@
 	</RecipeDef>
 	<!--=============== Tail ====================-->
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
+		<defName>GR_CatTail</defName>
+		<label>animal Implant: cat tail</label>
+		<description>Craft a tail implant that uses genetic splicing with feline genes to substitute a broken or missing tail. This implant is not meant to replace a healthy tail. Note that only creatures with a natural tail can use this.</description>
+		<jobString>Making cat tail implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>GR_Genoframes</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_FelineGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>GR_Genoframes</li>
+			</categories>
+			<thingDefs>
+			
+				<li>GR_FelineGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<GR_CatTail>1</GR_CatTail>
+		</products>
+		<skillRequirements>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_HybridProsthesisBase">
 		<defName>GR_ScytherTail</defName>
 		<label>animal Implant: scyther tail</label>
 		<description>Craft a scyther tail by attaching a scyther blade to an animal's tail. Uhmmm... where did you put all those old scyther blades? You asked around and no caravans seem to be trading them nowadays... Well, you will have to manufacture one using a cocktail of different genes. Note that only creatures with a natural tail can use this.</description>

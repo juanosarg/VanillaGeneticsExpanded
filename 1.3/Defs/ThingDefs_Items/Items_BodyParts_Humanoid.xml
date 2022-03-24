@@ -34,7 +34,7 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_HumanImplantBase">
 		<defName>GR_DiggingBearClaws</defName>
-		<label>human Implant: digging bear claws</label>
+		<label>human Implant: digging mole claws</label>
 		<description>Grotesque but powerful hand blades that have been modified to be used in mining operations, increasing both speed and yield.</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
@@ -189,6 +189,15 @@
 		<defName>GR_CompoundEye</defName>
 		<label>human Implant: compund eye</label>
 		<description>This hybrid humanoid / insectoid eye provides improved vision in a wide range of different wavelengths, including those usually outside the human range, completely modifying the way the subject perceives his surroundings.</description>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<Mass>4</Mass>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_HumanImplantBase">
+		<defName>GR_CatEye</defName>
+		<label>human Implant: cat eye</label>
+		<description>This hybrid humanoid / feline eye provides improved night vision, at the expense of a certain short-sightedness outside and during the day. Ideal for nyctophile colonists.</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
 			<Mass>4</Mass>

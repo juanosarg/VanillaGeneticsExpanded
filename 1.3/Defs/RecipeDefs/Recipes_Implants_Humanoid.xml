@@ -62,9 +62,9 @@
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HumanoidHybridProsthesisBase">
 		<defName>GR_CraftDiggingBearClaws</defName>
-		<label>Human Implant: digging bear claws</label>
-		<description>Craft digging bear claws, grotesque but powerful hand blades that have been modified to be used in mining operations, increasing both speed and yield.</description>
-		<jobString>Crafting digging bear claws</jobString>
+		<label>Human Implant: digging mole claws</label>
+		<description>Craft digging mole claws, grotesque but powerful hand blades that have been modified to be used in mining operations, increasing both speed and yield.</description>
+		<jobString>Crafting digging mole claws</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -85,7 +85,7 @@
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_UrsineGenetic</li>
+						<li>GR_RodentGenetic</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -97,7 +97,7 @@
 			</categories>
 			<thingDefs>
 				<li>GR_HumanoidGenetic</li>
-				<li>GR_UrsineGenetic</li>
+				<li>GR_RodentGenetic</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
@@ -867,6 +867,54 @@
 		</products>
 		<skillRequirements>
 			<Intellectual>7</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef ParentName="GR_HumanoidHybridProsthesisBase">
+		<defName>GR_CraftCatEye</defName>
+		<label>Human Implant: cat eye</label>
+		<description>Craft cat eye. This hybrid humanoid / feline eye provides improved night vision, at the expense of a certain short-sightedness outside and during the day. Ideal for nyctophile colonists.</description>
+		<jobString>Crafting cat eye</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>GR_Genoframes</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_HumanoidGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_FelineGenetic</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>GR_Genoframes</li>
+			</categories>
+			<thingDefs>
+				<li>GR_HumanoidGenetic</li>
+				<li>GR_FelineGenetic</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<products>
+			<GR_CatEye>1</GR_CatEye>
+		</products>
+		<skillRequirements>
+			<Intellectual>5</Intellectual>
 		</skillRequirements>
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HumanoidHybridProsthesisBase">
