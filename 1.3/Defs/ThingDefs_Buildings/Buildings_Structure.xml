@@ -193,7 +193,7 @@
     
     <statBases>
       <MaxHitPoints>160</MaxHitPoints>
-      <Flammability>1.0</Flammability>
+      <Flammability>0</Flammability>
 	  <WorkToBuild>850</WorkToBuild>
     </statBases>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>

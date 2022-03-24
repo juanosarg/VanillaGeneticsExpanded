@@ -19,8 +19,8 @@ namespace GeneticRim
 
         public override void Notify_PawnDied()
         {
-
-            CompRottable comp = this.parent.pawn.GetComp<CompRottable>();
+          
+            CompRottable comp = this.parent.pawn.Corpse.GetComp<CompRottable>();
             if (comp != null)
             {
                 comp.RotImmediately();
