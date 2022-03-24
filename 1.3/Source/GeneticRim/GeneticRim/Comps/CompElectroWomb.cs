@@ -56,6 +56,21 @@ namespace GeneticRim
 
         }
 
+        public override void PostExposeData()
+        {
+            base.PostExposeData();
+
+            Scribe_Defs.Look(ref this.growingResult, nameof(this.growingResult));
+            Scribe_Defs.Look(ref this.failureResult, nameof(this.failureResult));
+            Scribe_Defs.Look(ref this.genoframe, nameof(this.genoframe));
+            Scribe_Defs.Look(ref this.booster, nameof(this.booster));
+            Scribe_Values.Look(ref this.progress, nameof(this.progress));
+            Scribe_Values.Look(ref this.hoursProcess, nameof(this.hoursProcess));
+            Scribe_Values.Look(ref this.failure, nameof(this.failure));
+
+
+        }
+
         public override void CompTick()
         {
             base.CompTick();
@@ -79,7 +94,10 @@ namespace GeneticRim
                             pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
                                                                                       newborn: false, forceGenerateNewPawn: true));
                         }
-                        
+
+                        this.progress = 0;
+                        this.growingResult = null;
+
                         IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 5f);
                         GenSpawn.Spawn(pawn, near, this.parent.Map);
                         pawn.health.AddHediff(InternalDefOf.GR_RecentlyHatched);
@@ -108,12 +126,11 @@ namespace GeneticRim
 
                         CompHybrid compHybrid = pawn.TryGetComp<CompHybrid>();
                         if (compHybrid != null) {
-                            compHybrid.quality = this.genoframe.GetModExtension<DefExtension_Quality>().quality;
+                            compHybrid.quality = this.genoframe?.GetModExtension<DefExtension_Quality>()?.quality ?? QualityCategory.Awful;
 
                         }
 
-                        this.progress = 0;
-                        this.growingResult = null;
+                       
 
                        
                     }
@@ -149,18 +166,7 @@ namespace GeneticRim
             else return null;
         }
 
-        public override void PostExposeData()
-        {
-            base.PostExposeData();
-
-            Scribe_Defs.Look(ref this.growingResult, nameof(this.growingResult));
-            Scribe_Defs.Look(ref this.failureResult, nameof(this.failureResult));
-            Scribe_Values.Look(ref this.progress, nameof(this.progress));
-            Scribe_Values.Look(ref this.hoursProcess, nameof(this.hoursProcess));
-            Scribe_Values.Look(ref this.failure, nameof(this.failure));
-
-
-        }
+        
 
         public override void PostDraw()
         {
