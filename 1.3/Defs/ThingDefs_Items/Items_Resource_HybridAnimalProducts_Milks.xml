@@ -51,7 +51,7 @@
 	</ThingDef>
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>GR_BearffaloMilk</defName>
-		<label>bearfallo milk</label>
+		<label>bearffalo milk</label>
 		<description>Milk from a bearffalo. Quite high in fat content, and very nutritive.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/Milk</texPath>
@@ -236,7 +236,7 @@
 	</ThingDef>
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>GR_RatMilk</defName>
-		<label>ratfallo milk</label>
+		<label>ratffalo milk</label>
 		<description>This milk has a rich, thick quality to it. It's origins, however, might be a bit dubious... Unless you trust mafia guys called Tony.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_RatMilk</texPath>

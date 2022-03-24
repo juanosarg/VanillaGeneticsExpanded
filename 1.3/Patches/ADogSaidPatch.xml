@@ -1256,12 +1256,9 @@
 					<!-- "Inserting animal defNames into InstallSimpleProstheticTailAnimal surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
 					<value>
-						<li>GR_AlphaChicken</li>
-					
-						<li>GR_AlphaWolfTimber</li>
-					
-						<li>GR_AlphaIguana</li>
-					
+						<li>GR_ParagonChicken</li>					
+						<li>GR_ParagonWolf</li>					
+						<li>GR_ParagonIguana</li>					
 						<li>GR_Bearwolf</li>			
 						<li>GR_Chickenbear</li>
 						<li>GR_Chickenlope</li>
@@ -1283,7 +1280,7 @@
 						<li>GR_Mechawolf</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
-						<li>GR_Ratfallo</li>
+						<li>GR_Ratffalo</li>
 						<li>GR_Wolfbeaver</li>
 						<li>GR_Bearcat</li>
 						<li>GR_Boomcat</li>
