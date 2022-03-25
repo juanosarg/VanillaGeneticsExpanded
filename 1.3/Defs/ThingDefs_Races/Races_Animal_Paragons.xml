@@ -668,7 +668,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonWolf</defName>
 		<label>canine paragon</label>
-		<description>An improved version of man’s best friend, easier to train, more assertive and dangerous to those that threaten a household. Sadly, far too proud to admit it really wants a belly rub.\n\nA perfect canine animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon can be slaughtered for a valuable pet, which can either be used for decoration or sold.</description>
+		<description>An improved version of man’s best friend, easier to train, more assertive and dangerous to those that threaten a household. Sadly, far too proud to admit it really wants a belly rub.\n\nA perfect canine animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon can be slaughtered for a valuable pelt, which can either be used for decoration or sold.</description>
 		<statBases>
 			<MoveSpeed>5.6</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>

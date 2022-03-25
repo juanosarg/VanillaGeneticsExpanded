@@ -380,7 +380,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Catchicken</defName>
 		<label>catchicken</label>
-		<description>This smart little shit knows where to kick so it hurts, and that’s often the eyes. The unusual genetic makeup has made their claws as long as a human thumb, so best to pet it when it wants to and avoid touching the belly.\n\nA feline hybrid with recessive avian genes. A little slow for its size, it makes for a vicious attack animal if it can be permitted to get in melee range. Be careful as it can’t take much punishment.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight. Go for the eyes: catchicken attacks have a 25% chance to affect the victim's eyes.</description>
+		<description>This smart little shit knows where to kick so it hurts, and that’s often the eyes. The unusual genetic makeup has made their claws as long as a human thumb, so best to pet it when it wants to and avoid touching the belly.\n\nA feline hybrid with recessive avian genes. A little slow for its size, it makes for a vicious attack animal if it can be permitted to get in melee range. Be careful as it can’t take much punishment.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability, which in the case of these small animals is ideal to get out of a fight. Go for the eyes: Catchicken attacks have a 25% chance to affect the victim's eyes.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<MarketValue>110</MarketValue>

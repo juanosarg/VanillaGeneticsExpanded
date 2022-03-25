@@ -125,7 +125,7 @@
 	<ThingDef ParentName="GR_HumanImplantBase">
 		<defName>GR_WolfMuscularFibers</defName>
 		<label>human Implant: wolf muscular fibers</label>
-		<description>The subjects legs can be modified by weaving hybrid human/wolf muscle fibers within the base tissue, giving her a significant strength and speed boost.</description>
+		<description>The subjects legs can be modified by weaving hybrid human/wolf muscle fibers within the base tissue, giving them a significant strength and speed boost.</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
 			<Mass>4</Mass>
@@ -188,7 +188,7 @@
 	<ThingDef ParentName="GR_HumanImplantBase">
 		<defName>GR_CompoundEye</defName>
 		<label>human Implant: compund eye</label>
-		<description>This hybrid humanoid / insectoid eye provides improved vision in a wide range of different wavelengths, including those usually outside the human range, completely modifying the way the subject perceives his surroundings.</description>
+		<description>This hybrid humanoid / insectoid eye provides improved vision in a wide range of different wavelengths, including those usually outside the human range, completely modifying the way the subject perceives their surroundings.</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
 			<Mass>4</Mass>
@@ -215,7 +215,7 @@
 	<ThingDef ParentName="GR_HumanImplantBase">
 		<defName>GR_KidneyToxicFilters</defName>
 		<label>human Implant: kidney toxic filters</label>
-		<description>This is a bioelectronic kidney prosthesis that greatly improves the efficiency of the subject's kidney by using insectoid tissue, providing resistence to toxic substances.</description>
+		<description>This is a bioelectronic kidney prosthesis that greatly improves the efficiency of the subject's kidney by using insectoid tissue, providing resistance to toxic substances.</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
 			<Mass>4</Mass>

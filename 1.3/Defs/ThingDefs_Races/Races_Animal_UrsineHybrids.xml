@@ -814,7 +814,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearmole</defName>
 		<label>bearmole</label>
-		<description>Not many people get to see a naked bear, and fewer still want a repeat viewing. This oversized mole-rat inspires plenty of fear with its massive teeth, but gets a lot of love and affection from those wanting a large, hairless pet that gnaws on the furniture.\n\nAn ursine hybrid with recessive rodent genes. Very slow both mentally and physically along with dietary restrictions, but very fierce in combat and immune to pain. Also they have the added benefit of having a short reproductive cycle, low metabolism and being completely fearless in hunting prey.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary bear hybrids have stun attacks. No pain sensitivity. This hybrid won't be knocked down on combat due to pain.</description>
+		<description>Not many people get to see a naked bear, and fewer still want a repeat viewing. This oversized mole-rat inspires plenty of fear with its massive teeth, but gets a lot of love and affection from those wanting a large, hairless pet that gnaws on the furniture.\n\nAn ursine hybrid with recessive rodent genes. Very slow both mentally and physically along with dietary restrictions, but very fierce in combat and immune to pain. Also they have the added benefit of having a short reproductive cycle, low metabolism and being completely fearless in hunting prey.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All primary bear hybrids have stun attacks. No pain sensitivity. This hybrid won't be knocked down in combat due to pain.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>

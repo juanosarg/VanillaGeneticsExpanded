@@ -5,7 +5,7 @@
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_ParagonChickenEggUnfertilized</defName>
 		<label>avian paragon egg (unfert.)</label>
-		<description>Unfertilized avian paragon egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Inmaculate eggness.</description>
+		<description>Unfertilized avian paragon egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Immaculate eggness.</description>
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
@@ -15,7 +15,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_ParagonChickenEggFertilized</defName>
 		<label>avian paragon egg (fert.)</label>
-		<description>Fertilized avian paragon egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Inmaculate eggness. If all goes well, it should hatch into an avian paragon.</description>
+		<description>Fertilized avian paragon egg. It can be eaten raw, but it's much, much better cooked. These eggs are pure, pristine, perfect examples of chicken eggs. Immaculate eggness. If all goes well, it should hatch into an avian paragon.</description>
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
