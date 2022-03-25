@@ -1378,7 +1378,7 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_SmallBioLight</defName>
-		<label>ancient bioluminiscent light</label>
+		<label>ancient bioluminescent light</label>
 		<description>A metallic capsule filled with some bioluminescent compound. This one seems to still be producing some faint light.</description>
 		<size>(1,1)</size>
 		<fillPercent>0.50</fillPercent>
@@ -1408,7 +1408,7 @@
 	</ThingDef>
 	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_BioLight</defName>
-		<label>ancient bioluminiscent light</label>
+		<label>ancient bioluminescent light</label>
 		<description>A metallic capsule filled with some bioluminescent compound. This one seems to still be producing some faint light.</description>
 		<size>(1,2)</size>
 

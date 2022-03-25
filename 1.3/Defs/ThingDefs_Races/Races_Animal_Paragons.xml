@@ -353,7 +353,7 @@
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>150</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
-			<MeatAmount>120</MeatAmount>
+			
 			<FilthRate>2</FilthRate>
 		</statBases>
 		<tools>

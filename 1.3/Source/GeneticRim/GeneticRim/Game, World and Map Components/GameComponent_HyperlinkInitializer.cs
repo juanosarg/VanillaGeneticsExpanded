@@ -34,6 +34,8 @@ namespace GeneticRim
             }
 
             AddArchotechProjectHyperlinks();
+
+            AddAnimalsToGenomeHyperlinks();
         }
 
         private void AddExcavatorHyperlinks(ThingDef excavator)
@@ -117,6 +119,33 @@ namespace GeneticRim
                 former.descriptionHyperlinks.Add(thing);
 
             }
+        }
+
+        private void AddAnimalsToGenomeHyperlinks()
+        {
+            HashSet<ExtractableAnimalsList> extractableAnimalsLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
+
+            foreach (ExtractableAnimalsList extractableAnimalsList in extractableAnimalsLists)
+            {
+                if (extractableAnimalsList.extractableAnimals != null)
+                {
+                    foreach (ThingDef animal in extractableAnimalsList.extractableAnimals)
+                    {
+                        if (animal.descriptionHyperlinks == null)
+                        {
+                            animal.descriptionHyperlinks = new List<DefHyperlink>();
+                        }
+                        if (extractableAnimalsList.itemProduced != null) {
+                            animal.descriptionHyperlinks.Add(extractableAnimalsList.itemProduced);
+                        }
+                        
+                    }
+                }
+               
+
+            }
+
+           
         }
 
     }
