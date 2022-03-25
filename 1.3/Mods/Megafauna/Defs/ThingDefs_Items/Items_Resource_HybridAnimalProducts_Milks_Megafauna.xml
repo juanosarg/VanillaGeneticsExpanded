@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  	<ThingDef ParentName="ResourceBase">
+    <defName>GR_ParaMilk</defName>
+    <label>paraceramuffalo milk</label>
+    <description>Paraceramuffalo milk is rich and creamy. Probably too rich in fat, but certainly tasty.</description>
+		<graphicData>
+      <texPath>Things/Item/Resource/Milk</texPath>
+			      <graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>3.1</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+						<Nutrition>0.075</Nutrition>
+
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
+	
+	  	<ThingDef ParentName="ResourceBase">
+    <defName>GR_GreenMilk</defName>
+    <label>green milk</label>
+    <description>This Lizardochs milk is green coloured, and quite unappetizing.</description>
+		<graphicData>
+      <texPath>Things/Item/GR_GreenMilk</texPath>
+			      <graphicClass>Graphic_Single</graphicClass>
+
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>3.1</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+						<Nutrition>0.03</Nutrition>
+
+		</statBases>
+		<tradeability>Sellable</tradeability>
+		
+		<ingestible>
+			<preferability>RawBad</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+</Defs>

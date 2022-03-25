@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ========= Chickenlodon ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_ChickenlodonEggUnfertilized</defName>
+		<label>chickenlodon egg (unfert.)</label>
+		<description>Unfertilized chickenlodon egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		
+		<statBases>
+			<MarketValue>20</MarketValue>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_ChickenlodonEggFertilized</defName>
+		<label>chickenlodon egg (fert.)</label>
+		<description>Fertilized chickenlodon egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a chickenlodon.</description>
+		<tradeability>None</tradeability>
+		
+		<statBases>
+			<MarketValue>20</MarketValue>
+			
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>20</hatcherDaystoHatch>
+				<hatcherPawn>GR_Chickenlodon</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>  
+	
+		<!-- ========= Mantistanis ========= -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_MantistanisEggUnfertilized</defName>
+		<label>mantistanis egg (unfert.)</label>
+		<description>Unfertilized mantistanis egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<tradeability>Sellable</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_MantisEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+
+		</statBases>
+
+	</ThingDef>
+
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_MantistanisEggFertilized</defName>
+		<label>mantistanis egg (fert.)</label>
+		<description>Fertilized mantistanis egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a mantistanis.</description>
+		<tradeability>None</tradeability>
+		<graphicData>
+			<texPath>Things/Item/GR_MantisEgg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			
+		</statBases>
+
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>15</hatcherDaystoHatch>
+				<hatcherPawn>GR_Mantistanis</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>  
+
+	
+
+</Defs>

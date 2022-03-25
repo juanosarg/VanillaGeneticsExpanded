@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>GR_DisabledQuestAnimalsMegafauna</defName>
+		<disabledFromQuestsPawns>
+			<li>GR_Elasmobearium</li>
+			<li>GR_Boomnotherium</li>
+			<li>GR_Chickenlodon</li>
+			<li>GR_Mantistanis</li>
+			<li>GR_Paraceramuffalo</li>
+			<li>GR_Lizardochs</li>
+			<li>GR_Doedicoon</li>
+			<li>GR_Thrumdraeodon</li>
+			<li>GR_WoolyWolf</li>
+		</disabledFromQuestsPawns>
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+</Defs>
