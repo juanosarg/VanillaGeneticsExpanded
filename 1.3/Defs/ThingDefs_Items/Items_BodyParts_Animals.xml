@@ -330,7 +330,7 @@
 	<ThingDef ParentName="GR_AnimalImplantBase">
 		<defName>GR_ChitinousHeart</defName>
 		<label>animal Implant: chitinous heart</label>
-		<description>A bionic heart implant using a reinforced shell of insectoid chitin for protection. This is a heart designed to take a beating. Pun intended, but it's the last one, I promise .</description>
+		<description>A bionic heart implant using a reinforced shell of insectoid chitin for protection. This is a heart designed to take a beating. Pun intended, but it's the last one, I promise.</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
 			<Mass>1</Mass>
