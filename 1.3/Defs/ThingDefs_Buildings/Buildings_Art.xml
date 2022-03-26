@@ -32,7 +32,8 @@
 			<effectWorking>Tailor</effectWorking>
 			<soundWorking>Recipe_Tailor</soundWorking>
 			<recipeUsers>
-				<li>TableSculpting</li>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
 			</recipeUsers>
 			<defaultIngredientFilter>
 				<categories>
