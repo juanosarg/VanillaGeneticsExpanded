@@ -1201,6 +1201,7 @@
 			<useMeatFrom>Horse</useMeatFrom>
 			<gestationPeriodDays>6</gestationPeriodDays>
 			<wildness>0.4</wildness>
+			<fleshType>GR_Normal</fleshType>
 			<roamMtbDays>3</roamMtbDays>
 			<trainability>None</trainability>
 			<packAnimal>true</packAnimal>
@@ -1439,6 +1440,7 @@
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
+			<fleshType>GR_Normal</fleshType>
 			<trainability>Advanced</trainability>
 			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnDamageChance>1.00</manhunterOnDamageChance>
@@ -1622,6 +1624,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>			
 			<trainability>Advanced</trainability>
 			<wildness>0.5</wildness>
+			<fleshType>GR_Normal</fleshType>
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
@@ -1819,6 +1822,7 @@
 			<baseHungerRate>0.3</baseHungerRate>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.65</wildness>
+			<fleshType>GR_Normal</fleshType>
 			<nuzzleMtbHours>6</nuzzleMtbHours>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>

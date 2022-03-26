@@ -1,61 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-   <!-- Eldritch Egg Base -->
-  <ThingDef Abstract="True" Name="GR_EldritchEggBase" ParentName="OrganicProductBase" >
-    <graphicData>
-      <texPath>Things/Item/GR_EldritchEgg</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-	
-    <ingestible>
-      <foodType>AnimalProduct</foodType>
-      <ingestEffect>EatMeat</ingestEffect>
-      <ingestSound>RawMeat_Eat</ingestSound>
-      <tasteThought>AteRawFood</tasteThought>
-	  	<outcomeDoers>
-			<li Class="IngestionOutcomeDoer_GiveHediff">
-			  <hediffDef>ROM_SanityLoss</hediffDef>
-			  <severity>0.25</severity>
-			</li>
-		</outcomeDoers>	
-    </ingestible>
-
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <statBases>
-	      <Nutrition>0.3</Nutrition>
-
-      <Mass>0.15</Mass>
+	<!-- Eldritch Egg Base -->
+	<ThingDef Abstract="True" Name="GR_EldritchEggBase" ParentName="OrganicProductBase">
+		<graphicData>
+			<texPath>Things/Item/GR_EldritchEgg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ingestible>
+			<foodType>AnimalProduct</foodType>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>
+			<tasteThought>AteRawFood</tasteThought>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ROM_SanityLoss</hediffDef>
+					<severity>0.25</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<Nutrition>0.3</Nutrition>
+			<Mass>0.15</Mass>
 			<MaxHitPoints>20</MaxHitPoints>
 			<DeteriorationRate>2</DeteriorationRate>
-    </statBases>
-  </ThingDef>
-
-  <ThingDef Abstract="True" Name="GR_EldritchEggUnfertBase" ParentName="GR_EldritchEggBase" >
-    <ingestible>
-      <preferability>RawBad</preferability>
-    </ingestible>
-    <thingCategories>
-      <li>ROM_StrangeMeatRaw</li>
-    </thingCategories>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>25</daysToRotStart>
+		</statBases>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="GR_EldritchEggUnfertBase" ParentName="GR_EldritchEggBase">
+		<ingestible>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<thingCategories>
+			<li>ROM_StrangeMeatRaw</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>25</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 			<li Class="CompProperties_FoodPoisonable">
 			</li>
-    </comps>
-  </ThingDef>
-
-  <ThingDef Abstract="True" Name="GR_EldritchEggFertBase" ParentName="GR_EldritchEggBase" >
-    <tickerType>Normal</tickerType>
-    <ingestible>
-      <preferability>DesperateOnly</preferability>
-    </ingestible>
-    <thingCategories>
-      <li>ROM_StrangeMeatRaw</li>
-    </thingCategories>
+		</comps>
+	</ThingDef>
+	<ThingDef Abstract="True" Name="GR_EldritchEggFertBase" ParentName="GR_EldritchEggBase">
+		<tickerType>Normal</tickerType>
+		<ingestible>
+			<preferability>DesperateOnly</preferability>
+		</ingestible>
+		<thingCategories>
+			<li>ROM_StrangeMeatRaw</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_FoodPoisonable">
 			</li>
@@ -65,68 +59,55 @@
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 			</li>
 		</comps>
-  </ThingDef>
- 
- 
-  <!-- Eldritch Chicken Egg -->
-  <ThingDef ParentName="GR_EldritchEggUnfertBase">
-    <defName>GR_EldritchChickenEggUnfertilized</defName>
-    <label>chicken of Mi-go egg (unfert.)</label>
-    <description>Unfertilized chicken of Mi-go egg. It can be eaten raw, but it's much, much better cooked. The purple shell is incredibly disconcerting.</description>
-       <tradeability>Sellable</tradeability>
-
-    <statBases>
-      <MarketValue>9.0</MarketValue>
-    </statBases>
-
-  </ThingDef>
-
-  <ThingDef ParentName="GR_EldritchEggFertBase">
-    <defName>GR_EldritchChickenEggFertilized</defName>
-    <label>chicken of Mi-go egg (fert.)</label>
-    <description>Fertilized chicken of Mi-go egg. It can be eaten raw, but it's much, much better cooked. The purple shell is incredibly disconcerting. If all goes well, it should hatch into a chicken of Mi-go.</description>
-    <tradeability>None</tradeability>
-
-    <statBases>
-      <MarketValue>9.0</MarketValue>
-    </statBases>
-
-    <comps>
-      <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>7.5</hatcherDaystoHatch>
-        <hatcherPawn>GR_EldritchChicken</hatcherPawn>
-      </li>
-    </comps>
-  </ThingDef>
-  
-    <!-- Eldritch Reptile Egg -->
-  <ThingDef ParentName="GR_EldritchEggUnfertBase">
-    <defName>GR_EldritchReptileEggUnfertilized</defName>
-    <label>snake of Yig egg (unfert.)</label>
-    <description>Unfertilized snake of Yig egg. It can be eaten raw, but it's much, much better cooked. The purple shell is incredibly disconcerting.</description>
-       <tradeability>Sellable</tradeability>
-
-    <statBases>
-      <MarketValue>9.0</MarketValue>
-    </statBases>
-
-  </ThingDef>
-
-  <ThingDef ParentName="GR_EldritchEggFertBase">
-    <defName>GR_EldritchReptileEggFertilized</defName>
-    <label>snake of Yig egg (fert.)</label>
-    <description>Fertilized snake of Yig egg. It can be eaten raw, but it's much, much better cooked. The purple shell is incredibly disconcerting. If all goes well, it should hatch into an snake of Yig egg.</description>
-    <tradeability>None</tradeability>
-
-    <statBases>
-      <MarketValue>9.0</MarketValue>
-    </statBases>
-
-    <comps>
-      <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>6</hatcherDaystoHatch>
-        <hatcherPawn>GR_EldritchReptile</hatcherPawn>
-      </li>
-    </comps>
-  </ThingDef>
+	</ThingDef>
+	<!-- Eldritch Chicken Egg -->
+	<ThingDef ParentName="GR_EldritchEggUnfertBase">
+		<defName>GR_EldritchChickenEggUnfertilized</defName>
+		<label>chicken of Mi-go egg (unfert.)</label>
+		<description>Unfertilized chicken of Mi-go egg. It can be eaten raw, but it's much, much better cooked. The purple shell is incredibly disconcerting.</description>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_EldritchEggFertBase">
+		<defName>GR_EldritchChickenEggFertilized</defName>
+		<label>chicken of Mi-go egg (fert.)</label>
+		<description>Fertilized chicken of Mi-go egg. It can be eaten raw, but it's much, much better cooked. The purple shell is incredibly disconcerting. If all goes well, it should hatch into a chicken of Mi-go.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7.5</hatcherDaystoHatch>
+				<hatcherPawn>GR_EldritchChicken</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
+	<!-- Eldritch Reptile Egg -->
+	<ThingDef ParentName="GR_EldritchEggUnfertBase">
+		<defName>GR_EldritchReptileEggUnfertilized</defName>
+		<label>snake of Yig egg (unfert.)</label>
+		<description>Unfertilized snake of Yig egg. It can be eaten raw, but it's much, much better cooked. The purple shell is incredibly disconcerting.</description>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="GR_EldritchEggFertBase">
+		<defName>GR_EldritchReptileEggFertilized</defName>
+		<label>snake of Yig egg (fert.)</label>
+		<description>Fertilized snake of Yig egg. It can be eaten raw, but it's much, much better cooked. The purple shell is incredibly disconcerting. If all goes well, it should hatch into an snake of Yig egg.</description>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>9.0</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>6</hatcherDaystoHatch>
+				<hatcherPawn>GR_EldritchReptile</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>

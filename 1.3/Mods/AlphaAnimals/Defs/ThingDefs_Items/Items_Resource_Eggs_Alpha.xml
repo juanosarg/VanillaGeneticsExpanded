@@ -1,16 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-
-
-
-
-
-
-	
-		<!-- Bear bug Egg -->
+	<!-- Bear bug Egg -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_BearBugEggUnfertilized</defName>
 		<label>bear bug egg (unfert.)</label>
@@ -23,11 +13,8 @@
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
-
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_BearBugEggFertilized</defName>
 		<label>bear bug egg (fert.)</label>
@@ -35,14 +22,12 @@
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
-
 		</statBases>
 		<graphicData>
 			<texPath>Things/Item/Resource/AA_EggBeetle</texPath>
 			<color>(99,45,40)</color>
 			<drawSize>1.2</drawSize>
 		</graphicData>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>5</hatcherDaystoHatch>
@@ -50,30 +35,20 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-
-
-
-
-
-	
-		<!-- Needlechicken Egg -->
+	<!-- Needlechicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
 		<defName>GR_NeedlechickenEggUnfertilized</defName>
 		<label>needlechicken egg (unfert.)</label>
 		<description>An unfertilized needlechicken egg. It can be eaten raw, but it's much, much better cooked.</description>
 		<graphicData>
-      <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
-      <color>(212,239,192)</color>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(212,239,192)</color>
 		</graphicData>
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
-
 		</statBases>
-
 	</ThingDef>
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_NeedlechickenEggFertilized</defName>
 		<label>needlechicken egg (fert.)</label>
@@ -81,13 +56,11 @@
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>
-
 		</statBases>
 		<graphicData>
-      <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
-      <color>(212,239,192)</color>
+			<texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+			<color>(212,239,192)</color>
 		</graphicData>
-
 		<comps>
 			<li Class="CompProperties_Hatcher">
 				<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
@@ -95,13 +68,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-	
-
-	
-
 	<!-- =============== Nighthrumbo Egg =============== -->
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_EggNighthrumboFertilized</defName>
 		<label>nighthrumbo egg (fert.)</label>
@@ -110,6 +77,7 @@
 			<texPath>Things/Item/Resource/AnimalProductRaw/AA_EggNightling</texPath>
 			<drawSize>1.2</drawSize>
 		</graphicData>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>100</MarketValue>
 		</statBases>
@@ -120,10 +88,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-
 	<!-- =============== Meadow Lizard Egg =============== -->
-
-
 	<ThingDef ParentName="EggFertBase">
 		<defName>GR_EggMeadowLizardFertilized</defName>
 		<label>meadow lizard egg (fert.)</label>
@@ -132,6 +97,7 @@
 			<color>(67,88,20)</color>
 			<drawSize>1.2</drawSize>
 		</graphicData>
+		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>19.0</MarketValue>
 		</statBases>
@@ -142,8 +108,4 @@
 			</li>
 		</comps>
 	</ThingDef>
-
-
-
-
 </Defs>

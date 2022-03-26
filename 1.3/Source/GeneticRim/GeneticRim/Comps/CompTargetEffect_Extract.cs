@@ -115,13 +115,7 @@ namespace GeneticRim
 					{
 						Thing newThing = ThingMaker.MakeThing(thingToSpawn);
 						GenPlace.TryPlaceThing(newThing, target.Position, target.Map, ThingPlaceMode.Near);
-						for (int i = 0; i < 20; i++)
-						{
-							IntVec3 c;
-							CellFinder.TryFindRandomReachableCellNear(target.Position, target.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
-							FilthMaker.TryMakeFilth(c, target.Map, ThingDefOf.Filth_Blood);
-
-						}
+						
 						InternalDefOf.GR_Pop.PlayOneShot(new TargetInfo(target.Position, target.Map, false));
 						this.numberOfUses--;
 						if (numberOfUses <= 0)
@@ -132,11 +126,13 @@ namespace GeneticRim
 						{
 
 							Corpse pawn = target as Corpse;
+							popBlood(null, pawn);
 							pawn.InnerPawn.health.AddHediff(InternalDefOf.GR_ExtractedBrain);
 						}
 						else
 						{
 							Pawn pawn = target as Pawn;
+							popBlood(pawn, null);
 							pawn.health.AddHediff(InternalDefOf.GR_ExtractedBrain);
 							pawn.Kill(null);
 						}
@@ -159,5 +155,41 @@ namespace GeneticRim
 
 			}
 		}
+
+		public void popBlood(Pawn pawn, Corpse corpse)
+        {
+			IntVec3 pos= IntVec3.Zero;
+			Map map=null;
+			ThingDef blood = ThingDefOf.Filth_Blood;
+
+            if (pawn != null)
+            {
+				pos = pawn.Position;
+				map = pawn.Map;
+                if (pawn.def.race.Insect)
+                {
+					blood = ThingDef.Named("Filth_BloodInsect");
+				}
+            }
+			if (corpse != null)
+			{
+				pos = corpse.InnerPawn.Position;
+				map = corpse.InnerPawn.Map;
+				if (corpse.InnerPawn.def.race.Insect)
+				{
+					blood = ThingDef.Named("Filth_BloodInsect");
+				}
+			}
+
+
+			for (int i = 0; i < 20; i++)
+			{
+				IntVec3 c;
+				CellFinder.TryFindRandomReachableCellNear(pos, map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
+				FilthMaker.TryMakeFilth(c, map, ThingDefOf.Filth_Blood);
+
+			}
+		}
+
 	}
 }

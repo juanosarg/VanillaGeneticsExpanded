@@ -17,27 +17,22 @@
 	<NeutroglycerinProd>Neutroglycerin production</NeutroglycerinProd>
 	<ComponentIndustrialDesc>Industrial Component production</ComponentIndustrialDesc>
 	<CastoreumProd>Castoreum production</CastoreumProd>
-	
 	<!-- Age related diseases -->
-	
 	<GR_AgeDiseaseLabel>Genetic disease</GR_AgeDiseaseLabel>
 	<GR_AgeDiseaseText>{0} has reached the limit of its stable lifespan, and has acquired a genetic disease: {1}\n\nGenetic diseases are incurable. They can be treated to delay the inevitable, but the animal will eventually perish.</GR_AgeDiseaseText>
 	<GR_LackOfLove>Dying due to lack of love in:</GR_LackOfLove>
 	<GR_CellularDegeneration>Cellular degeneration in:</GR_CellularDegeneration>
 	<GR_CantResurrect>Animals that have been extracted can't be resurrected.</GR_CantResurrect>
 	<GR_GeneticDiseasesIn>Genetic Diseases in: {0}</GR_GeneticDiseasesIn>
-	
 	<!-- Growth Cell -->
 	<GR_GrowthCell_InspectDominant>Dominant Gene: {0}</GR_GrowthCell_InspectDominant>
 	<GR_GrowthCell_InspectSecondary>Secondary Gene: {0}</GR_GrowthCell_InspectSecondary>
 	<GR_GrowthCell_InspectGenoframe>Genoframe: {0}</GR_GrowthCell_InspectGenoframe>
 	<GR_GrowthCell_InspectBooster>Booster: {0}</GR_GrowthCell_InspectBooster>
 	<GR_GrowthCell_InsertInElectroWomb>Insert into {0}</GR_GrowthCell_InsertInElectroWomb>
-	
 	<GR_NoValidExtraction>No valid genes can be extracted from this animal with this extractor</GR_NoValidExtraction>
 	<GR_AlreadyExtracted>This animal has already had its genetic material extracted</GR_AlreadyExtracted>
 	<GR_ExcavatorUsesLeft>This genome excavator has {0} uses left</GR_ExcavatorUsesLeft>
-	
 	<!-- Genomorpher -->
 	<GR_Genomorpher_Progress>Progress: {0}</GR_Genomorpher_Progress>
 	<GR_DesignateGrowthCell>Designate a growth cell</GR_DesignateGrowthCell>
@@ -54,7 +49,7 @@
 	<GR_SelectGenoframeExplanation>Genoframe affects the quality level of the hybrid</GR_SelectGenoframeExplanation>
 	<GR_SelectBooster>Select booster</GR_SelectBooster>
 	<GR_SelectBoosterExplanation>Boosters affect the speed of the synthesis process as well as the failure chance</GR_SelectBoosterExplanation>
-	<GR_InitiateSynthesisExplanation>Initiating synthesis will have your colonists deliver all the required ingredients to this Genemorpher. After synthesis concludes, a growthcell of a hybrid will have to be extracted and inserted into an electrowomb where it will grow to maturity. Larger animals may require large electrowomb.</GR_InitiateSynthesisExplanation>
+	<GR_InitiateSynthesisExplanation>Initiating synthesis will have your colonists deliver all the required ingredients to this Genomorpher. After synthesis concludes, a growthcell of a hybrid will have to be extracted and inserted into an electrowomb where it will grow to maturity. Larger animals may require large electrowomb.</GR_InitiateSynthesisExplanation>
 	<GR_RandomizeAll>Randomize all</GR_RandomizeAll>
 	<GR_InitiateSynthesis>Initiate synthesis</GR_InitiateSynthesis>
 	<GR_Quality>Quality: {0}</GR_Quality>
@@ -67,10 +62,8 @@
 	<GR_NoBoostersInMap>No valid boosters on map</GR_NoBoostersInMap>
 	<GR_ChooseDominantGenomeFirst>Choose dominant genome first</GR_ChooseDominantGenomeFirst>
 	<GR_ChooseNoBooster>Use no booster</GR_ChooseNoBooster>
-	
 	<!-- ElectroWomb -->
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>
-	
 	<!-- DNA Storage -->
 	<GR_SelectGenomeToHarvest>Select genome to harvest</GR_SelectGenomeToHarvest>
 	<GR_SelectGenomeToHarvestDesc>Select genome to harvest</GR_SelectGenomeToHarvestDesc>
@@ -82,14 +75,12 @@
 	<GR_DNABankProgress>DNA amount progress: {0}</GR_DNABankProgress>
 	<GR_AreYouSureDNA>Are you sure you want to change the accepted genome? All current progress will be lost</GR_AreYouSureDNA>
 	<GR_DuplicatedGenomeSelection>There is already a DNA storage bank nearby with that genome chosen</GR_DuplicatedGenomeSelection>
-	
 	<!-- Archocentipede former -->
 	<GR_ArchoFormerGenomeProgress>{0} progress: {1}</GR_ArchoFormerGenomeProgress>
 	<GR_ArchoFormerDisabledReason>Lacking DNA bank progress</GR_ArchoFormerDisabledReason>
 	<GR_BeginArchotechGrowthCell>Create growth cell</GR_BeginArchotechGrowthCell>
 	<GR_BeginArchotechGrowthCellDesc>Begin creation of an archotech growth cell. This will need all neccessary DNA banks to be at 100% progress</GR_BeginArchotechGrowthCellDesc>
 	<GR_ArchoFormerCellProgress>Archotech Growth Cell progress: {0}</GR_ArchoFormerCellProgress>
-	
 	<!-- Archowomb -->
 	<GR_ArchotechGrowthCellNotInserted>An archotech growth cell needs to be inserted in the archowomb before the process can be started</GR_ArchotechGrowthCellNotInserted>
 	<GR_BeginArchotechCentipede>Archotech Awakening</GR_BeginArchotechCentipede>
@@ -97,7 +88,6 @@
 	<GR_BeginArchotechCentipedeText>You are ready to start the archotech centipede project.\n\nThe process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates that someone is meddling in technology that is far beyond human understanding, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first.</GR_BeginArchotechCentipedeText>
 	<GR_ArchoWombProgress>Archowomb progress: {0}</GR_ArchoWombProgress>
 	<GR_GameOverArchotech>You've activated the Archotech Project! These colonists were present for the archotech awakening:\n\n{0}\n\nThe Archotech Centipede is now under their control, and you are free to decimate your enemies and control the planet unopposed.\n\nCongratulations, you have won the game with the Vanilla Genetics Expanded mod!</GR_GameOverArchotech>
-	
 	<!--Hybrid role descriptions-->
 	<GR_HybridRole>Hybrid role</GR_HybridRole>
 	<GR_HybridRoleCombat>Combat</GR_HybridRoleCombat>
@@ -106,7 +96,6 @@
 	<GR_HybridRoleCombatDesc>Combat hybrids excel at either melee or ranged combat. These hybrids will benefit the most from implants and controller boosters.</GR_HybridRoleCombatDesc>
 	<GR_HybridRoleFarmDesc>Farm hybrids produce some sort of resource over time, but generally need to be kept inside an animal pen. These hybrids will not benefit as much from implants and controller boosters.</GR_HybridRoleFarmDesc>
 	<GR_HybridRoleUtilityDesc>Utility hybrids bring some kind of mechanic to the colony that isn't strictly used for combat or resource generation.</GR_HybridRoleUtilityDesc>
-	
 	<!-- Creature Control Commands -->
 	<GR_CreatureMindControl>Mind control creature</GR_CreatureMindControl>
 	<GR_CreatureMindControlDesc>Use mind control to order this creature around the map</GR_CreatureMindControlDesc>
@@ -143,10 +132,13 @@
 	<GR_AbilityRecharging>Ability is rechaging. Check animal's health tab</GR_AbilityRecharging>
 	<GR_PoisonCloudRange>Poison cloud has a maximum range of 10. Get closer to the target!</GR_PoisonCloudRange>
 	<GR_InvokingInsanityRange>Invoking insanity has a maximum range of 10. Get closer to the target!</GR_InvokingInsanityRange>
-	
 	<!-- Ideology -->
-	
 	<GR_GeneticTableImplantsSpeed>Genetic worktable speed: implants precept</GR_GeneticTableImplantsSpeed>
-	
-	
+	<!-- Boosters -->
+	<GR_Safety>Safety</GR_Safety>
+	<GR_Stability>Stability</GR_Stability>
+	<GR_TimeMultiplier>Time multiplier</GR_TimeMultiplier>
+	<GR_SafetyDesc>Safety is a number that gets deducted from the Failed outcome chance. For example, safety 5 reduces the risk of the failed outcome by 5% (from 10% to 5%). This value can also be negative, increasing the risk of a failed experiment.</GR_SafetyDesc>
+	<GR_StabilityDesc>Stability is a number that gets deducted from the swap chance. For example, stability 5 means that the base chance of the genes swapping turns from 10% to 5% (becoming more stable). This value can also be negative, which will mean the chance of genomes swapping their positions and resulting in an unwanted hybrid are larger.</GR_StabilityDesc>
+	<GR_TimeMultiplierDesc>Time multiplier accelerates or increases the time taken by the genomorpher to complete its task. A fractional modifier accelerates the process (for example 0.5 means it will take half the usual time), while a modifier larger than 1 slows it down (2 means it will take double the time).</GR_TimeMultiplierDesc>
 </LanguageData>

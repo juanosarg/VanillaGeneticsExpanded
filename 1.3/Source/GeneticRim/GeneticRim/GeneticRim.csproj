@@ -345,7 +345,7 @@
     <Compile Include="Comps\CompStartCharged.cs" />
     <Compile Include="Comps\CompTargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
-    <Compile Include="Comps\Window_DesignateGrowthCell.cs" />
+    <Compile Include="Windows and Dialogs\Window_DesignateGrowthCell.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="DamageWorkers\DamageWorker_DevastatingBite.cs" />
     <Compile Include="DamageWorkers\DamageWorker_Double.cs" />

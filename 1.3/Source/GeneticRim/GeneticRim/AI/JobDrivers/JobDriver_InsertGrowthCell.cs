@@ -12,8 +12,8 @@ namespace GeneticRim
     public class JobDriver_InsertGrowthCell : JobDriver
     {
         public override bool TryMakePreToilReservations(bool errorOnFailed) =>
-            this.pawn.Reserve(this.job.GetTarget(TargetIndex.A), this.job, 1, -1, null, errorOnFailed) &&
-            this.pawn.Reserve(this.job.GetTarget(TargetIndex.B), this.job, 1, -1, null, errorOnFailed);
+            this.pawn.Reserve(this.job.GetTarget(TargetIndex.A), this.job, 1, -1, null, false) &&
+            this.pawn.Reserve(this.job.GetTarget(TargetIndex.B), this.job, 1, -1, null, false);
 
         protected override IEnumerable<Toil> MakeNewToils()
         {

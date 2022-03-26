@@ -50,8 +50,10 @@ namespace GeneticRim
             base.PreOpen();
 
 
-            this.genomes    = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne)==true || x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree)==true)&&!x.IsForbidden(Faction.OfPlayer)).ToList();
-            this.genomesCanBeSecondary = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) ?? false)&&!x.IsForbidden(Faction.OfPlayer)).ToList();
+            this.genomes    = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne)==true || 
+            x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree)==true)&&!x.IsForbidden(Faction.OfPlayer) && x.def !=InternalDefOf.GR_TemplateGenetic).ToList();
+            this.genomesCanBeSecondary = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) ?? false)&&
+            !x.IsForbidden(Faction.OfPlayer) && x.def != InternalDefOf.GR_TemplateGenetic).ToList();
 
             this.boosters   = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_Boosters)        ?? false)&&!x.IsForbidden(Faction.OfPlayer)).ToList();
             this.genoframes = this.comp.parent.Map.listerThings.AllThings.Where(x => (x.def.thingCategories?.Contains(InternalDefOf.GR_Genoframes)      ?? false)&& !x.IsForbidden(Faction.OfPlayer)).ToList();
@@ -293,6 +295,8 @@ namespace GeneticRim
 
             var boosterRect = new Rect(genoframeRect.x, genoframeRect.yMax + test6, genomeDominantRect.width, genomeDominantRect.height);
             DrawThing(booster, boosterRect);
+            Text.Font = GameFont.Small;        
+            if (booster != null) { Widgets.InfoCardButton(boosterRect.x+80, boosterRect.yMax -25, booster); }
 
 
             if (Widgets.ButtonText(new Rect(inRect.x, inRect.yMax - 32, BottomButtonWidth, 32), "CloseButton".Translate()))

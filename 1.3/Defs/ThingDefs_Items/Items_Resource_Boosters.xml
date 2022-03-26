@@ -35,6 +35,19 @@
 				<safety>5</safety>
 				
 			</li>
+		
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_Safety</li>
+				</statToAdd>
+				<statValues>
+					<li>5</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_SafetyDesc</li>
+				</statDescriptions>
+			</li>
+		
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_BoosterBase">
@@ -52,6 +65,17 @@
 
 				<stability>5</stability>
 			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_Stability</li>
+				</statToAdd>
+				<statValues>
+					<li>5</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_StabilityDesc</li>
+				</statDescriptions>
+			</li>
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_BoosterBase">
@@ -68,6 +92,17 @@
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
 				<timeMultiplier>0.5</timeMultiplier>
 
+			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_TimeMultiplier</li>
+				</statToAdd>
+				<statValues>
+					<li>0.5</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_TimeMultiplierDesc</li>
+				</statDescriptions>
 			</li>
 		</modExtensions>
 
@@ -108,6 +143,21 @@
 				<safety>5</safety>
 				<stability>5</stability>
 			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_Stability</li>
+					<li>GR_Safety</li>
+				</statToAdd>
+				<statValues>
+					<li>5</li>
+					<li>5</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_StabilityDesc</li>
+					<li>GR_SafetyDesc</li>
+				</statDescriptions>
+			
+			</li>
 		</modExtensions>
 
 	</ThingDef>
@@ -126,6 +176,21 @@
 				<stability>10</stability>
 				<safety>10</safety>
 			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_Stability</li>
+					<li>GR_Safety</li>
+				</statToAdd>
+				<statValues>
+					<li>10</li>
+					<li>10</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_StabilityDesc</li>
+					<li>GR_SafetyDesc</li>
+				</statDescriptions>
+			
+			</li>
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_BoosterBase">
@@ -142,6 +207,21 @@
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
 				<isController>true</isController>
 				<safety>-5</safety>
+			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					
+					<li>GR_Safety</li>
+				</statToAdd>
+				<statValues>
+					<li>-5</li>
+					
+				</statValues>
+				<statDescriptions>
+					
+					<li>GR_SafetyDesc</li>
+				</statDescriptions>
+			
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -163,6 +243,21 @@
 				<safety>5</safety>
 				<stability>5</stability>
 			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_Stability</li>
+					<li>GR_Safety</li>
+				</statToAdd>
+				<statValues>
+					<li>5</li>
+					<li>5</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_StabilityDesc</li>
+					<li>GR_SafetyDesc</li>
+				</statDescriptions>
+			
+			</li>
 		</modExtensions>
 	</ThingDef>
 
@@ -183,6 +278,24 @@
 				<safety>15</safety>
 				<timeMultiplier>1.5</timeMultiplier>
 			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+				
+					<li>GR_Safety</li>
+					<li>GR_TimeMultiplier</li>
+				</statToAdd>
+				<statValues>
+				
+					<li>15</li>
+					<li>1.5</li>
+				</statValues>
+				<statDescriptions>
+					
+					<li>GR_SafetyDesc</li>
+					<li>GR_TimeMultiplierDesc</li>
+				</statDescriptions>
+			
+			</li>
 		</modExtensions>
 	</ThingDef>
 	<ThingDef ParentName="GR_BoosterBase">
@@ -201,6 +314,24 @@
 
 				<stability>15</stability>
 				<timeMultiplier>1.5</timeMultiplier>
+			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+				
+					<li>GR_Stability</li>
+					<li>GR_TimeMultiplier</li>
+				</statToAdd>
+				<statValues>
+				
+					<li>15</li>
+					<li>1.5</li>
+				</statValues>
+				<statDescriptions>
+					
+					<li>GR_StabilityDesc</li>
+					<li>GR_TimeMultiplierDesc</li>
+				</statDescriptions>
+			
 			</li>
 		</modExtensions>
 	</ThingDef>
@@ -222,6 +353,24 @@
 				<safety>5</safety>
 				<stability>5</stability>
 				<timeMultiplier>0.5</timeMultiplier>
+			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_Safety</li>
+					<li>GR_Stability</li>
+					<li>GR_TimeMultiplier</li>
+				</statToAdd>
+				<statValues>
+					<li>5</li>
+					<li>5</li>
+					<li>0.5</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_SafetyDesc</li>
+					<li>GR_StabilityDesc</li>
+					<li>GR_TimeMultiplierDesc</li>
+				</statDescriptions>
+			
 			</li>
 		</modExtensions>
 
