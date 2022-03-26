@@ -387,7 +387,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenlodon</defName>
 		<label>chickenlodon</label>
-		<description>The chickenlodon is a very weird cross between one of the most fearsome predators ever existing... and a chicken. A saber-toothed chicken, if you will.\n\nUseful abilities: The Chickenlodon lays eggs and is a very agile predator.</description>
+		<description>The chickenlodon is a very weird cross between one of the most fearsome predators ever existing... and a chicken. A saber-toothed chicken, if you will.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<ComfyTemperatureMin>-60</ComfyTemperatureMin>
@@ -566,14 +566,16 @@
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Insect -->
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="GR_BaseInsect">
 		<defName>GR_Mantistanis</defName>
 		<label>mantistanis</label>
-		<description>Mixing the genes of one of the biggest carnivorous birds ever existing and those of a praying mantis is either a genious idea, or anathema. The Mantistanis stalks its prey by standing incredibly still and launching itself to attack with lightning speed.\n\nUseful abilities: aggressive predator with slight regenerative properties.</description>
+		<description>Mixing the genes of one of the biggest carnivorous birds ever existing and those of a praying mantis is either a genious idea, or anathema. The Mantistanis stalks its prey by standing incredibly still and launching itself to attack with lightning speed.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All insectoid hybrids have good armor and no toxic sensitivity, but they are always sterile and can't reproduce, even if a fertility booster is used to create them. Slight regenerative properties.</description>
 		<statBases>
 			<MoveSpeed>7</MoveSpeed>
 			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 			<MarketValue>1000</MarketValue>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
 		<tools>
 			<li>
@@ -666,9 +668,7 @@
 			<baseHungerRate>0.5</baseHungerRate>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>5</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
-			<gestationPeriodDays>20</gestationPeriodDays>
-			<mateMtbHours>8</mateMtbHours>
+			<foodType>CarnivoreAnimal</foodType>			
 			<packAnimal>false</packAnimal>
 			<wildness>0.9</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
@@ -676,7 +676,7 @@
 			<maxPreyBodySize>4</maxPreyBodySize>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<leatherDef>Leather_Bird</leatherDef>
+			<useLeatherFrom>Cassowary</useLeatherFrom>
 			<useMeatFrom>Cassowary</useMeatFrom>
 			<lifeStageAges>
 				<li>
@@ -699,6 +699,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Mantistanis</defName>
@@ -752,16 +765,23 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MegafaunaGenetic</dominantGenome>
+				<secondaryGenome>GR_InsectoidGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Paraceramuffalo</defName>
 		<label>paraceramuffalo</label>
-		<description>The Paraceratherium was the biggest land mammal to ever exist. When you hibridize it with a sturdy muffalo, the resulting creature is the most powerful pack animal ever created. Incredibly stubborn and bad-tempered, though.\n\nUseful abilities: Produces wool and milk, and acts as an incredibly strong pack beast.</description>
+		<description>The Paraceratherium was the biggest land mammal to ever exist. When you hibridize it with a sturdy muffalo, the resulting creature is the most powerful pack animal ever created. Incredibly stubborn and bad-tempered, though.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Produces wool and milk, and acts as an incredibly strong -albeit slow- pack beast.</description>
 		<statBases>
-			<MoveSpeed>4</MoveSpeed>
+			<MoveSpeed>2.5</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<MarketValue>3500</MarketValue>
+			<FilthRate>24</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -799,9 +819,9 @@
 				<milkAmount>12</milkAmount>
 			</li>
 			<li Class="CompProperties_Shearable">
-				<woolDef>GR_ParaceramuffaloWool</woolDef>
+				<woolDef>GR_LuxuriantHybridWool</woolDef>
 				<shearIntervalDays>25</shearIntervalDays>
-				<woolAmount>60</woolAmount>
+				<woolAmount>80</woolAmount>
 			</li>
 		</comps>
 		<race>
@@ -814,14 +834,14 @@
 			<baseBodySize>16</baseBodySize>
 			<baseHealthScale>12</baseHealthScale>
 			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>10</gestationPeriodDays>
 			<packAnimal>true</packAnimal>
 			<wildness>0.80</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
-			<trainability>Advanced</trainability>
+			<trainability>None</trainability>
 			<manhunterOnTameFailChance>0.028</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.75</manhunterOnDamageChance>
-			<leatherDef>Leather_Rhinoceros</leatherDef>
+			<useLeatherFrom>Rhinoceros</useLeatherFrom>
 			<useMeatFrom>Rhinoceros</useMeatFrom>
 			<lifeStageAges>
 				<li>
@@ -834,7 +854,7 @@
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>1</minAge>
+					<minAge>.99</minAge>
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
 					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -848,6 +868,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Paraceramuffalo</defName>
@@ -902,18 +935,26 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MegafaunaGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Reptile -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Lizardochs</defName>
 		<label>lizardochs</label>
-		<description>The lizardochs is basically a reptilian bull, an hybrid between a lizard and the ancestor of domesticated cattle. The lizardochs needs little substenance to survive, at least for a creature of its size, and can be used as a pack animal, which makes it ideal to use in caravans through warm and dry lands such as deserts.\n\nUseful abilities: Produces milk, and acts as a pack animal that needs little food.</description>
+		<description>The lizardochs is basically a reptilian bull, an hybrid between a lizard and the ancestor of domesticated cattle. The lizardochs needs little substenance to survive, at least for a creature of its size, and can be used as a pack animal, which makes it ideal to use in caravans through warm and dry lands such as deserts.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks. Produces milk, and acts as a pack animal that needs little food.</description>
 		<statBases>
 			<MoveSpeed>4.2</MoveSpeed>
 			<ComfyTemperatureMin>10</ComfyTemperatureMin>
 			<MarketValue>900</MarketValue>
-			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>16</FilthRate>
+			
 		</statBases>
 		<tools>
 			<li>
@@ -939,8 +980,8 @@
 				<cooldownTime>1.35</cooldownTime>
 				<power>18</power>
 				<capacities>
-					<li>Blunt</li>
-					<li>Stab</li>
+					<li>GR_VeryToxicBite</li>
+					
 				</capacities>
 				<chanceFactor>0.45</chanceFactor>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
@@ -970,14 +1011,15 @@
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
-			<baseHungerRate>0.15</baseHungerRate>
+			<baseHungerRate>0.1</baseHungerRate>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>2.5</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<packAnimal>true</packAnimal>
 			<leatherDef>Leather_Heavy</leatherDef>
 			<wildness>0.6</wildness>
-			<trainability>Intermediate</trainability>
+			<roamMtbDays>7</roamMtbDays>
+			<trainability>None</trainability>
 			<useMeatFrom>Iguana</useMeatFrom>
 			<gestationPeriodDays>20</gestationPeriodDays>
 			<lifeExpectancy>4</lifeExpectancy>
@@ -1008,6 +1050,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Lizardochs</defName>
@@ -1066,18 +1121,25 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MegafaunaGenetic</dominantGenome>
+				<secondaryGenome>GR_ReptileGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Rodent -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Doedicoon</defName>
 		<label>doedicoon</label>
-		<description>This armoured rodent is an hybrid of a raccoon and a Doedicurus. The Doedicoon breeds fast, and its armor can be useful in the frontlines.\n\nUseful abilities: Armoured rodent</description>
+		<description>This armoured rodent is an hybrid of a raccoon and a Doedicurus. The Doedicoon breeds fast, and its armor can be useful in the frontlines.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All rodent hybrids have fast gestation, as long as a fertility unblocker was used when creating them in the genomorpher. Armoured rodent</description>
 		<statBases>
 			<MoveSpeed>4.1</MoveSpeed>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
 			<MarketValue>200</MarketValue>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+			<FilthRate>4</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -1089,14 +1151,7 @@
 				</capacities>
 				<chanceFactor>0.25</chanceFactor>
 				<linkedBodyPartsGroup>TailWeapon</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>9</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>left claw</label>
@@ -1125,9 +1180,7 @@
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<comps>
-			
-		</comps>
+		
 		<race>
 			
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1138,8 +1191,7 @@
 			<baseHealthScale>0.4</baseHealthScale>
 			<baseHungerRate>0.32</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<gestationPeriodDays>8</gestationPeriodDays>
-			<mateMtbHours>4</mateMtbHours>
+			<gestationPeriodDays>5</gestationPeriodDays>
 			<packAnimal>false</packAnimal>
 			<wildness>0.70</wildness>
 			<lifeExpectancy>4</lifeExpectancy>

@@ -566,7 +566,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>3</power>
+				<power>2.1</power>
 				<cooldownTime>0.4</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			</li>
