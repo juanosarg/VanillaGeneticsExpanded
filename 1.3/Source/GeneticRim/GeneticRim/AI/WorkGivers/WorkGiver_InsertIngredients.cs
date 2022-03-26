@@ -51,6 +51,10 @@ namespace GeneticRim
                         comp.duration = -1;
                         comp.progress = -1f;
                         comp.growthCell = null;
+                        comp.genomeDominant = null;
+                        comp.genomeSecondary = null;
+                        comp.frame = null;
+                        comp.booster = null;
                         return false;
                     }
 

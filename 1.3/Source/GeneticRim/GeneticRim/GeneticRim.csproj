@@ -302,10 +302,8 @@
   <ItemGroup>
     <Compile Include="Abilities\CompCreateThingDefAround.cs" />
     <Compile Include="Abilities\CompGiveHediff.cs" />
-    <Compile Include="Abilities\CompJump.cs" />
     <Compile Include="Abilities\Properties\CompProperties_CreateThingDefAround.cs" />
     <Compile Include="Abilities\Properties\CompProperties_GiveHediff.cs" />
-    <Compile Include="Abilities\Properties\CompProperties_Jump.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertArchotechGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />

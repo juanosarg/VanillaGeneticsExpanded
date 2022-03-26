@@ -42,7 +42,7 @@ namespace GeneticRim
 		public static ThingDef         GR_FleshMonstrosity;
 		public static ThingDef         GR_ParagonInsectoid;
 		public static ThingDef         GR_TissueGrowingVat;
-
+	
 		public static PawnKindDef      GR_ArchotechCentipede;
 
 		public static HediffDef        GR_AnimalControlHediff;

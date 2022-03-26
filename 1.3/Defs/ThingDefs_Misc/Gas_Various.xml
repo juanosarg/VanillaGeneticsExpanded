@@ -25,6 +25,7 @@
   <ThingDef ParentName="BaseGas">
     <defName>GR_Poison_Gas</defName>
     <label>poison gas</label>
+	<thingClass>GeneticRim.Gas_PoisonCloud</thingClass>
     <graphicData>
       <texPath>Things/Gas/Puff</texPath>
       <drawSize>2.2</drawSize>

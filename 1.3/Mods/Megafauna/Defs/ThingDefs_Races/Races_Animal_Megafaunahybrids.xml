@@ -440,9 +440,7 @@
 				<eggLayIntervalDays>10</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
-				<initialAbility>GR_Pounce</initialAbility>
-			</li>
+			
 		</comps>
 		<race>
 			

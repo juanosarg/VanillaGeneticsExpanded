@@ -309,11 +309,14 @@ namespace GeneticRim
                 RandomizeAll();
             }
 
-            if (Widgets.ButtonText(new Rect(inRect.xMax - BottomButtonWidth, inRect.yMax - 32, BottomButtonWidth, 32), "GR_InitiateSynthesis".Translate(),
-                                   active: this.genomeDominant != null && this.genomeSecondary != null && this.genoframe != null &&mainResult!=null))
-            {
-                InitiateSynthesis();
+            if(mainResult != null) {
+                if (Widgets.ButtonText(new Rect(inRect.xMax - BottomButtonWidth, inRect.yMax - 32, BottomButtonWidth, 32), "GR_InitiateSynthesis".Translate(),
+                                       active: this.genomeDominant != null && this.genomeSecondary != null && this.genoframe != null && mainResult != null))
+                {
+                    InitiateSynthesis();
+                }
             }
+            
 
             GUI.color = Color.white;
             Text.Font = GameFont.Small;
