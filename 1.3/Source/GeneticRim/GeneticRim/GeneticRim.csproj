@@ -343,6 +343,7 @@
     <Compile Include="Comps\CompStartCharged.cs" />
     <Compile Include="Comps\CompTargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
+    <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
     <Compile Include="Windows and Dialogs\Window_DesignateGrowthCell.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="DamageWorkers\DamageWorker_DevastatingBite.cs" />
@@ -364,10 +365,10 @@
     <Compile Include="Game, World and Map Components\ArchotechExtractableAnimals_MapComponent.cs" />
     <Compile Include="Game, World and Map Components\GameComponent_HyperlinkInitializer.cs" />
     <Compile Include="Game, World and Map Components\WorldComponent_RoamingMonstrosities.cs" />
-    <Compile Include="Gas\Gas_Hairballs.cs" />
-    <Compile Include="Gas\Gas_InsanityCloud.cs" />
-    <Compile Include="Gas\Gas_InsectClouds.cs" />
-    <Compile Include="Gas\Gas_PoisonCloud.cs" />
+    <Compile Include="Gas and Liquid\Gas_Hairballs.cs" />
+    <Compile Include="Gas and Liquid\Gas_InsanityCloud.cs" />
+    <Compile Include="Gas and Liquid\Gas_InsectClouds.cs" />
+    <Compile Include="Gas and Liquid\Gas_PoisonCloud.cs" />
     <Compile Include="GraphicsCache\GraphicsCache.cs" />
     <Compile Include="Harmony\ResurrectionUtility_Resurrect.cs" />
     <Compile Include="Harmony\HediffGiver_Birthday_TryApplyAndSimulateSeverityChange.cs" />

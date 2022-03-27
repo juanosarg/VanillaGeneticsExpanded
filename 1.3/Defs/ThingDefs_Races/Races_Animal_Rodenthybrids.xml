@@ -263,7 +263,7 @@
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>Chemfuel</resourceDef>
 				<gatheringIntervalDays>1</gatheringIntervalDays>
-				<resourceAmount>8</resourceAmount>
+				<resourceAmount>5</resourceAmount>
 				<customResourceString>ChemfuelProd</customResourceString>
 			</li>
 		</comps>

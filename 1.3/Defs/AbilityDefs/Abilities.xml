@@ -76,7 +76,7 @@
 			<li Class="GeneticRim.CompProperties_Detonate">
 				<radius>1.9</radius>
 				<damageType>Bomb</damageType>
-				<thingCreated>Filth_Fuel</thingCreated>
+				<thingCreated>GR_Filth_Fuel</thingCreated>
 				<thingCreatedChance>0.1</thingCreatedChance>
 				<damageUser>true</damageUser>
 			</li>
@@ -96,7 +96,7 @@
 			<li Class="GeneticRim.CompProperties_Detonate">
 				<radius>2.9</radius>
 				<damageType>GR_Acid</damageType>
-				<thingCreated>Filth_Fuel</thingCreated>
+				<thingCreated>GR_Filth_Fuel</thingCreated>
 				<soundCreated>GR_Pop</soundCreated>
 				<thingCreatedChance>0.25</thingCreatedChance>
 				<damageUser>true</damageUser>
@@ -133,7 +133,7 @@
 			<li Class="GeneticRim.CompProperties_Detonate">
 				<radius>2.9</radius>
 				<damageType>GR_ToxicExplosion</damageType>
-				<thingCreated>Filth_Fuel</thingCreated>
+				<thingCreated>GR_Filth_Fuel</thingCreated>
 				<soundCreated>GR_Pop</soundCreated>
 				<thingCreatedChance>0.25</thingCreatedChance>
 				<damageUser>true</damageUser>
@@ -194,7 +194,7 @@
 		<comps>
 			<li Class="GeneticRim.CompProperties_CreateThingDefAround">
 				<radius>3</radius>
-				<thingCreated>Filth_Fuel</thingCreated>
+				<thingCreated>GR_Filth_Fuel</thingCreated>
 				<thingCreatedChance>0.5</thingCreatedChance>
 			</li>
 		</comps>
@@ -274,6 +274,18 @@
 		<comps>
 			<li Class="GeneticRim.CompProperties_GiveHediff">
 				<hediffDef>GR_Stampeding</hediffDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_KeenSenses</defName>
+		<label>keen senses</label>
+		<description>Makes the creature more aware of its surroundings, increasing its melee capacities (affects sight, hit chance and consciousness)</description>
+		<iconPath>ui/commands/GR_KeenSenses</iconPath>
+		<groupDef>GR_TwiceDayAbilitiesGroup</groupDef>
+		<comps>
+			<li Class="GeneticRim.CompProperties_GiveHediff">
+				<hediffDef>GR_KeenSenses</hediffDef>
 			</li>
 		</comps>
 	</AbilityDef>

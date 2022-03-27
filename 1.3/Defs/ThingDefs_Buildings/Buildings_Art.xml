@@ -28,7 +28,7 @@
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Artistic</workSkill>
-			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<workAmount>1000</workAmount>
 			<effectWorking>Tailor</effectWorking>
 			<soundWorking>Recipe_Tailor</soundWorking>
 			<recipeUsers>

@@ -12,6 +12,7 @@
 			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>400</MarketValue>
 			<FilthRate>4</FilthRate>
+			<MeatAmount>75</MeatAmount>
 		</statBases>
 		
 		<tools>
@@ -594,6 +595,7 @@
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
 			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>650</MarketValue>
+			<MeatAmount>75</MeatAmount>
 		
 		</statBases>
 		<tools>

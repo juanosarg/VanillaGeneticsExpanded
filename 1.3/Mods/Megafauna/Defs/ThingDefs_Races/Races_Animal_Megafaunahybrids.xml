@@ -949,7 +949,7 @@
 		<description>The lizardochs is basically a reptilian bull, an hybrid between a lizard and the ancestor of domesticated cattle. The lizardochs needs little substenance to survive, at least for a creature of its size, and can be used as a pack animal, which makes it ideal to use in caravans through warm and dry lands such as deserts.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks. Produces milk, and acts as a pack animal that needs little food.</description>
 		<statBases>
 			<MoveSpeed>4.2</MoveSpeed>
-			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			
 			<MarketValue>900</MarketValue>
 			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
 			<ComfyTemperatureMax>75</ComfyTemperatureMax>
@@ -1225,6 +1225,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Doedicoon</defName>
@@ -1265,16 +1278,27 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MegafaunaGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumdraeodon</defName>
 		<label>thrumdraeodon</label>
-		<description>A huge, boar-like animal that will eat anything on its path. Thrumdraedons are cunning and resourceful.\n\nUseful abilities: thrumdraeodons are high-maintenance thrumbo hybrids, but they excell at combat.</description>
+		<description>A huge, boar-like animal that will eat anything on its path. Thrumdraedons are cunning and resourceful.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor. Keen senses ability: Twice a day, the Thrumdraeodon can activate an ability that gives it increased awareness of its surreoundings.</description>
 		<statBases>
 			<MoveSpeed>5.5</MoveSpeed>
 			<ComfyTemperatureMin>-50</ComfyTemperatureMin>
 			<MarketValue>2000</MarketValue>
+			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<FilthRate>8</FilthRate>
+			<CaravanRidingSpeedFactor>1.4</CaravanRidingSpeedFactor>
 		</statBases>
 		<tools>
 			<li>
@@ -1283,14 +1307,14 @@
 					<li>Scratch</li>
 					<li>Stab</li>
 				</capacities>
-				<power>28</power>
-				<cooldownTime>1.85</cooldownTime>
+				<power>45</power>
+				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
 			</li>
 			<li>
 				<label>left hoof</label>
-				<cooldownTime>1.55</cooldownTime>
-				<power>14</power>
+				<cooldownTime>3</cooldownTime>
+				<power>28</power>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
@@ -1298,16 +1322,16 @@
 			</li>
 			<li>
 				<label>right hoof</label>
-				<cooldownTime>1.55</cooldownTime>
-				<power>14</power>
+				<cooldownTime>3</cooldownTime>
+				<power>28</power>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
 			</li>
 			<li>
-				<cooldownTime>1.6</cooldownTime>
-				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+				<power>38</power>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
@@ -1323,7 +1347,9 @@
 			</li>
 		</tools>
 		<comps>
-			
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_KeenSenses</initialAbility>
+			</li>
 		</comps>
 		<race>
 		
@@ -1335,7 +1361,7 @@
 			<baseBodySize>4.5</baseBodySize>
 			<baseHealthScale>15</baseHealthScale>
 			<foodType>OmnivoreAnimal, OvivoreAnimal, DendrovoreAnimal</foodType>
-			<gestationPeriodDays>50</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<packAnimal>false</packAnimal>
 			<wildness>0.90</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
@@ -1356,7 +1382,7 @@
 				</li>
 				<li>
 					<def>AnimalAdult</def>
-					<minAge>1</minAge>
+					<minAge>0.99</minAge>
 					<soundCall>Pawn_Thrumbo_Call</soundCall>
 					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
 					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
@@ -1370,6 +1396,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Thrumdraeodon</defName>
@@ -1426,6 +1465,12 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MegafaunaGenetic</dominantGenome>
+				<secondaryGenome>GR_ThrumboGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	<!-- Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
@@ -1433,10 +1478,11 @@
 		<label>wooly Wolf</label>
 		<description>Just like Wooly Mammoths and Wooly Rhinos, the Wooly Wolf is a creature perfectly adapted to cold climates. Wooly wolves are an excellent source of high quality wool, since they produce it much faster than a mammoth.\n\nUseful abilities: Fast wool production</description>
 		<statBases>
-			<MoveSpeed>8</MoveSpeed>
+			<MoveSpeed>6</MoveSpeed>
 			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
 			<ComfyTemperatureMax>15</ComfyTemperatureMax>
 			<MarketValue>1500</MarketValue>
+			<FilthRate>3</FilthRate>
 		</statBases>
 		<tools>
 			<li>
@@ -1517,14 +1563,14 @@
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>2</baseHealthScale>
 			<foodType>CarnivoreAnimal</foodType>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<packAnimal>false</packAnimal>
 			<wildness>0.8</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<leatherDef>Leather_Elephant</leatherDef>
+			<useLeatherFrom>Elephant</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<lifeStageAges>
 				<li>
@@ -1551,6 +1597,19 @@
 		<tradeTags>
 			<li>AnimalGenetic</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_WoolyWolf</defName>
@@ -1611,5 +1670,11 @@
 				</butcherBodyPart>
 			</li>
 		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MegafaunaGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 </Defs>

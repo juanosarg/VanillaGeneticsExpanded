@@ -773,7 +773,7 @@
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>0.15</baseBodySize>
-			<baseHungerRate>0.05</baseHungerRate>
+			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>0.35</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<mateMtbHours>1</mateMtbHours>

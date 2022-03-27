@@ -401,7 +401,7 @@
 			<roamMtbDays>9</roamMtbDays>
 			<body>Bird</body>
 			<baseHungerRate>0.2</baseHungerRate>
-			<baseBodySize>0.3</baseBodySize>
+			<baseBodySize>0.5</baseBodySize>
 			<baseHealthScale>0.55</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>None</trainability>

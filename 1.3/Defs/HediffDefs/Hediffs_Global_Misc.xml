@@ -542,6 +542,10 @@
 						<offset>0.5</offset>
 					</li>
 				</capMods>
+				<statOffsets>
+					<MeleeHitChance>0.2</MeleeHitChance>
+					
+				</statOffsets>
 			</li>
 			<li>
 				<label>exhausted</label>
