@@ -8,7 +8,7 @@
 					<xpath>/Defs/ThingDef[defName= "GR_RandomExcavator"]/comps/li[@Name="GR_RandomExcavatorComp"]/items</xpath>
 					<value>
 						
-							<li>GR_AlphaGenomeExcavator</li>	
+							<li>GR_DinoGenomeExcavator</li>	
 						
 					</value>
 				</li>
@@ -16,7 +16,7 @@
 					<xpath>/Defs/ThingDef[defName= "GR_RandomGenome"]/comps/li[@Name="GR_RandomGenomeComp"]/items</xpath>
 					<value>
 						
-							<li>GR_AlphaGenetic</li>	
+							<li>GR_DinoGenetic</li>	
 						
 					</value>
 				</li>

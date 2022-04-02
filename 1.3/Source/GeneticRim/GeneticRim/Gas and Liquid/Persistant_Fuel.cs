@@ -20,7 +20,7 @@ namespace GeneticRim {
 		{
 			base.SpawnSetup(map, respawningAfterLoad);
 			spawnTick = Find.TickManager.TicksGame;
-			dissapearsIn = (int)this.def.filth.disappearsInDays.RandomInRange;
+			dissapearsIn = (int)this.def.filth.disappearsInDays.RandomInRange * GenDate.TicksPerDay;
 		}
 
 		public void Refill()

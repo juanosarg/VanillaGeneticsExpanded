@@ -30,7 +30,7 @@ namespace GeneticRim
                             if (flag)
                             {
                                
-                                    HealthUtility.AdjustSeverity(pawn, HediffDef.Named("ROM_SanityLoss"), (float)0.10);
+                                    HealthUtility.AdjustSeverity(pawn, HediffDef.Named("ROM_SanityLoss"), (float)0.15);
 
                                     this.Destroy();
                                

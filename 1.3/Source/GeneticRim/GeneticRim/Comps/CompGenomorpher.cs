@@ -87,7 +87,11 @@ namespace GeneticRim
         {
             StringBuilder sb = new StringBuilder(base.CompInspectStringExtra());
 
-            if (this.progress != -1f) { sb.AppendLine("GR_Genomorpher_Progress".Translate(this.progress.ToStringPercent())); }
+            if (this.progress != -1f) { 
+                sb.AppendLine("GR_Genomorpher_Progress".Translate(this.progress.ToStringPercent()));
+                sb.AppendLine("GR_Genomorpher_Ingredients".Translate(genomeDominant.LabelCap, genomeSecondary.LabelCap,frame.LabelCap,booster?.LabelCap ?? ""));
+
+            }
             
 
             return sb.ToString().Trim();

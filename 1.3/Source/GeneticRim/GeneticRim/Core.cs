@@ -66,6 +66,11 @@
             }
             else { swapChance = (10f - (frameExtension?.stability ?? 0f) - (boosterExtension?.stability ?? 0f)) / 100f; }
 
+            if (swapChance < 0f)
+            {
+                swapChance = 0f;
+            }
+
             float paragonFailureFactor = 0f;
 
             if (genomeDominant==genomeSecondary) {
@@ -74,6 +79,11 @@
 
             float failure = (10f - (frameExtension?.safety ?? 0f) - (boosterExtension?.safety ?? 0f));
             failureChance = (failure / 100f)+ paragonFailureFactor;
+            if (failureChance < 0f)
+            {
+                failureChance = 0f;
+                failure = 0f;
+            }
             
 
             if (!hybrids.TryGetValue(genomeSecondary, out Dictionary<ThingDef, PawnKindDef> secondaryChain) || !secondaryChain.TryGetValue(genomeDominant, out swapResult))

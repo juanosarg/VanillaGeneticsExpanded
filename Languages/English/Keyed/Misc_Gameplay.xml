@@ -20,8 +20,8 @@
 	<!-- Age related diseases -->
 	<GR_AgeDiseaseLabel>Genetic disease</GR_AgeDiseaseLabel>
 	<GR_AgeDiseaseText>{0} has reached the limit of its stable lifespan, and has acquired a genetic disease: {1}\n\nGenetic diseases are incurable. They can be treated to delay the inevitable, but the animal will eventually perish.</GR_AgeDiseaseText>
-	<GR_LackOfLove>Dying due to lack of love in:</GR_LackOfLove>
-	<GR_CellularDegeneration>Cellular degeneration in:</GR_CellularDegeneration>
+	<GR_LackOfLove>Dying due to lack of love in: {0}</GR_LackOfLove>
+	<GR_CellularDegeneration>Cellular degeneration in: {0}</GR_CellularDegeneration>
 	<GR_CantResurrect>Animals that have been extracted can't be resurrected.</GR_CantResurrect>
 	<GR_GeneticDiseasesIn>Genetic Diseases in: {0}</GR_GeneticDiseasesIn>
 	<!-- Growth Cell -->
@@ -30,9 +30,11 @@
 	<GR_GrowthCell_InspectGenoframe>Genoframe: {0}</GR_GrowthCell_InspectGenoframe>
 	<GR_GrowthCell_InspectBooster>Booster: {0}</GR_GrowthCell_InspectBooster>
 	<GR_GrowthCell_InsertInElectroWomb>Insert into {0}</GR_GrowthCell_InsertInElectroWomb>
+	<!-- Excavators -->
 	<GR_NoValidExtraction>No valid genes can be extracted from this animal with this extractor</GR_NoValidExtraction>
 	<GR_AlreadyExtracted>This animal has already had its genetic material extracted</GR_AlreadyExtracted>
 	<GR_ExcavatorUsesLeft>This genome excavator has {0} uses left</GR_ExcavatorUsesLeft>
+	<GR_ExtractionFailed>The animal can't be reached by the colonist, or is being interacted with by another colonist</GR_ExtractionFailed>
 	<!-- Genomorpher -->
 	<GR_Genomorpher_Progress>Progress: {0}</GR_Genomorpher_Progress>
 	<GR_DesignateGrowthCell>Designate a growth cell</GR_DesignateGrowthCell>
@@ -62,6 +64,7 @@
 	<GR_NoBoostersInMap>No valid boosters on map</GR_NoBoostersInMap>
 	<GR_ChooseDominantGenomeFirst>Choose dominant genome first</GR_ChooseDominantGenomeFirst>
 	<GR_ChooseNoBooster>Use no booster</GR_ChooseNoBooster>
+	<GR_Genomorpher_Ingredients>Ingredients: {0}, {1}, {2}, {3}</GR_Genomorpher_Ingredients>
 	<!-- ElectroWomb -->
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>
 	<!-- DNA Storage -->

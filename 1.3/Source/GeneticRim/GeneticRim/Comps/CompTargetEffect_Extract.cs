@@ -153,6 +153,9 @@ namespace GeneticRim
 
 
 
+			}else
+            {
+				Messages.Message("GR_ExtractionFailed".Translate(), MessageTypeDefOf.RejectInput, true);
 			}
 		}
 
