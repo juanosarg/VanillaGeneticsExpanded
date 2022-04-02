@@ -90,7 +90,7 @@
 			<texPath>Things/Item/GR_MechanoidInterfaceChip</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<stackLimit>10</stackLimit>
+		<stackLimit>1</stackLimit>
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>100</MarketValue>
