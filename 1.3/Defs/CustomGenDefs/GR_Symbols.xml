@@ -222,10 +222,7 @@
   <thing>GR_RandomBooster</thing>
 </KCSG.SymbolDef>
 
-<KCSG.SymbolDef>
-  <defName>GR_MechanoidInterfaceChip</defName>
-  <thing>GR_MechanoidInterfaceChip</thing>
-</KCSG.SymbolDef>
+
 
 <KCSG.SymbolDef>
   <defName>GR_AncientElectrowomb</defName>
@@ -251,6 +248,7 @@
 <KCSG.SymbolDef>
   <defName>GR_MechaniteBooster</defName>
   <thing>GR_MechaniteBooster</thing>
+  <maxStackSize>1</maxStackSize>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
@@ -289,6 +287,7 @@
 <KCSG.SymbolDef>
   <defName>GR_GenoframePoor</defName>
   <thing>GR_GenoframePoor</thing>
+  <maxStackSize>1</maxStackSize>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>
@@ -550,6 +549,7 @@
 <KCSG.SymbolDef>
   <defName>GR_MechanoidChip</defName>
   <thing>GR_MechanoidChip</thing>
+  <maxStackSize>1</maxStackSize>
 </KCSG.SymbolDef>
 
 <KCSG.SymbolDef>

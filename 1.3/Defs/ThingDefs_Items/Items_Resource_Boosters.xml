@@ -345,7 +345,7 @@
 		<statBases>
 			<MarketValue>1000</MarketValue>
 		</statBases>
-		<stackLimit>1</stackLimit>
+		
 		<tradeability>None</tradeability>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridChanceAlterer">
