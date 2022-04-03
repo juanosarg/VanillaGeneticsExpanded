@@ -22,6 +22,11 @@ namespace GeneticRim
         public Thing frame;
         public Thing booster;
 
+        public string genomeDominantLabel;
+        public string genomeSecondaryLabel;
+        public string frameLabel;
+        public string boosterLabel;
+
         public CompPowerTrader compPowerTrader;
 
         public CompProperties_Genomorpher Props => (CompProperties_Genomorpher)this.props;
@@ -38,6 +43,11 @@ namespace GeneticRim
             this.genomeSecondary = genomeSecondary;
             this.frame = frame;
             this.booster = booster;
+
+            genomeDominantLabel = genomeDominant.def.LabelCap;
+            genomeSecondaryLabel = genomeSecondary.def.LabelCap;
+            frameLabel = frame.def.LabelCap;
+            boosterLabel = booster?.def.LabelCap ?? "";
 
             this.duration    = durationTicks;
         }
@@ -89,7 +99,12 @@ namespace GeneticRim
 
             if (this.progress != -1f) { 
                 sb.AppendLine("GR_Genomorpher_Progress".Translate(this.progress.ToStringPercent()));
-               
+                if (boosterLabel != "") {
+                    sb.AppendLine("GR_Genomorpher_Ingredients".Translate(genomeDominantLabel,genomeSecondaryLabel,frameLabel,boosterLabel));
+                } else
+                {
+                    sb.AppendLine("GR_Genomorpher_Ingredients_NoFrame".Translate(genomeDominantLabel, genomeSecondaryLabel, frameLabel));
+                }
             }
             
 
@@ -176,6 +191,11 @@ namespace GeneticRim
             Scribe_References.Look(ref this.genomeSecondary, nameof(this.genomeSecondary));
             Scribe_References.Look(ref this.frame, nameof(this.frame));
             Scribe_References.Look(ref this.booster, nameof(this.booster));
+
+            Scribe_Values.Look(ref this.genomeDominantLabel, nameof(this.genomeDominantLabel));
+            Scribe_Values.Look(ref this.genomeSecondaryLabel, nameof(this.genomeSecondaryLabel));
+            Scribe_Values.Look(ref this.frameLabel, nameof(this.frameLabel));
+            Scribe_Values.Look(ref this.boosterLabel, nameof(this.boosterLabel));
         }
 
        

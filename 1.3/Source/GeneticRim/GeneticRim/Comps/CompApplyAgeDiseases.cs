@@ -31,44 +31,50 @@ namespace GeneticRim
         public override void CompTick()
         {
             base.CompTick();
-            tickCounter++;
 
-
-            if (!readQualityOnce && tickCounter> ticksToReadQuality)
+            if (!GeneticRim_Mod.settings.GR_DisableOldAgeDiseases)
             {
-                ticksToApply = (int)(parent.TryGetComp<CompHybrid>().GetLifeExpectancyFactor() * ticksToApply);
+                tickCounter++;
 
-                readQualityOnce = true;
 
-            }
-
-            if (tickCounter >= ticksToApply)
-            {
-                Pawn pawn = this.parent as Pawn;
-
-                if (pawn != null && pawn.Map != null)
+                if (!readQualityOnce && tickCounter > ticksToReadQuality)
                 {
-                    HediffDef randomHediff = hediffsToApply.RandomElement();
-                    Hediff hediff = null;
-                    foreach (HediffDef hediffPresent in hediffsToApply)
-                    {
-                        hediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediffPresent);
-                        if (hediff != null)
-                        {
-                            break;
-                        }
-                    }
-                  
-                    if (hediff == null)
-                    {
-                        pawn.health.AddHediff(randomHediff);
-                        Find.LetterStack.ReceiveLetter("GR_AgeDiseaseLabel".Translate(), "GR_AgeDiseaseText".Translate(pawn.LabelCap, randomHediff.LabelCap), LetterDefOf.NegativeEvent, pawn);
-                    }
+                    ticksToApply = (int)(parent.TryGetComp<CompHybrid>().GetLifeExpectancyFactor() * ticksToApply);
 
+                    readQualityOnce = true;
 
                 }
-                tickCounter = ticksToApply-ticksToReapply;
+
+                if (tickCounter >= ticksToApply)
+                {
+                    Pawn pawn = this.parent as Pawn;
+
+                    if (pawn != null && pawn.Map != null)
+                    {
+                        HediffDef randomHediff = hediffsToApply.RandomElement();
+                        Hediff hediff = null;
+                        foreach (HediffDef hediffPresent in hediffsToApply)
+                        {
+                            hediff = pawn.health.hediffSet.GetFirstHediffOfDef(hediffPresent);
+                            if (hediff != null)
+                            {
+                                break;
+                            }
+                        }
+
+                        if (hediff == null)
+                        {
+                            pawn.health.AddHediff(randomHediff);
+                            Find.LetterStack.ReceiveLetter("GR_AgeDiseaseLabel".Translate(), "GR_AgeDiseaseText".Translate(pawn.LabelCap, randomHediff.LabelCap), LetterDefOf.NegativeEvent, pawn);
+                        }
+
+
+                    }
+                    tickCounter = ticksToApply - ticksToReapply;
+                }
             }
+
+            
         }
 
         public override string CompInspectStringExtra()
@@ -76,7 +82,11 @@ namespace GeneticRim
 
 
             string text = base.CompInspectStringExtra();
-            string timeToLive = "GR_GeneticDiseasesIn".Translate((ticksToApply-tickCounter).ToStringTicksToPeriod(true, false, true, true));
+            string timeToLive = "";
+            if (!GeneticRim_Mod.settings.GR_DisableOldAgeDiseases) {
+                timeToLive = "GR_GeneticDiseasesIn".Translate((ticksToApply - tickCounter).ToStringTicksToPeriod(true, false, true, true));
+            } 
+             
 
             return text + timeToLive;
         }

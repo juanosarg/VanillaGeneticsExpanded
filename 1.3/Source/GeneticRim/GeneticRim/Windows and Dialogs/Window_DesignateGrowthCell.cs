@@ -95,7 +95,7 @@ namespace GeneticRim
             var qualityInfoExplanationRect = new Rect(xPos, qualityInfoRect.yMax + 5, 240, 30);
             DrawExplanation(qualityInfoExplanationRect, "GR_QualityExplanation".Translate());
 
-            durationTicks = this.comp.Props.hoursProcess * GenDate.TicksPerHour;
+            durationTicks = (int)(this.comp.Props.hoursProcess * GenDate.TicksPerHour * GeneticRim_Mod.settings.GR_GenomorpherSpeedMultiplier);
             float? timeMultiplier = this.booster?.def?.GetModExtension<DefExtension_HybridChanceAlterer>()?.timeMultiplier;
 
             if (timeMultiplier != null && timeMultiplier!=0)

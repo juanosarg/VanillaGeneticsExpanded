@@ -3,12 +3,7 @@
   
  
    
-  <JobDef>
-    <defName>GR_UseHybridInjector</defName>
-    <driverClass>JobDriver_UseItem</driverClass>
-    <reportString>using hybrid genes injector.</reportString>
-    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-  </JobDef>
+  
   
   <JobDef>
     <defName>GR_UseGenomeExcavator</defName>
@@ -21,28 +16,28 @@
     <defName>GR_InsertIngredients</defName>
     <driverClass>GeneticRim.JobDriver_InsertIngredients</driverClass>
     <reportString>inserting ingredients on TargetA.</reportString>
-	  <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	  <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
 
   <JobDef>
     <defName>GR_InsertGrowthCell</defName>
     <driverClass>GeneticRim.JobDriver_InsertGrowthCell</driverClass>
     <reportString>inserting growth cell on TargetA.</reportString>
-	  <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	  <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
   
    <JobDef>
     <defName>GR_InsertArchotechGrowthCell</defName>
     <driverClass>GeneticRim.JobDriver_InsertArchotechGrowthCell</driverClass>
     <reportString>inserting archotech growth cell on TargetA.</reportString>
-	  <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	  <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
   
   <JobDef>
     <defName>GR_ArchotechDNAExtractionJob</defName>
     <driverClass>GeneticRim.JobDriver_ArchotechDNAExtraction</driverClass>
     <reportString>carrying TargetA to TargetB.</reportString>
-	  <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	  <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
   
 </Defs>

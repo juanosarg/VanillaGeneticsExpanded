@@ -58,6 +58,8 @@ namespace GeneticRim
 
 		public override void DoEffectOn(Pawn user, Thing target)
 		{
+
+			
 			if (user.IsColonistPlayerControlled && user.CanReserveAndReach(target, PathEndMode.Touch, Danger.Deadly))
 			{
 
@@ -193,6 +195,8 @@ namespace GeneticRim
 
 			}
 		}
+
+		
 
 	}
 }

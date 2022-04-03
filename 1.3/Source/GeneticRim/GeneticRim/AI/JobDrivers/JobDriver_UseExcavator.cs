@@ -50,12 +50,14 @@ namespace GeneticRim
 			use.initAction = delegate
 			{
 				Pawn actor = use.actor;
-				actor.CurJob.targetA.Thing.TryGetComp<CompUsable>().UsedBy(actor);
+				actor.CurJob.targetA.Thing.TryGetComp<CompTargetEffect_Extract>().DoEffectOn(actor,job.targetB.Thing);
+				
 				
 			};
 			use.defaultCompleteMode = ToilCompleteMode.Instant;
 			yield return use;
 			yield break;
+			
 		}
 	}
 }

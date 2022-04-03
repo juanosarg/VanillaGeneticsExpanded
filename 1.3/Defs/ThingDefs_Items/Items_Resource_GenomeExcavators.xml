@@ -38,8 +38,7 @@
 				<useDuration>60</useDuration>
 			</li>
 			<li Class="GeneticRim.CompProperties_TargetableAnimalOrCorpse">				
-				
-			</li>
+			</li>	
 			<li Class="GeneticRim.CompProperties_TargetEffect_Extract">
 				<tier>
 					<li>1</li>

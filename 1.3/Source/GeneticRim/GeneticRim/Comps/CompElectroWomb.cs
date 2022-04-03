@@ -245,6 +245,8 @@ namespace GeneticRim
                 hoursProcess = (int)(hoursProcess * timeMultiplier);
             }
 
+            hoursProcess = (int)(hoursProcess*GeneticRim_Mod.settings.GR_WombSpeedMultiplier);
+
             growthCell.Destroy();
 
            

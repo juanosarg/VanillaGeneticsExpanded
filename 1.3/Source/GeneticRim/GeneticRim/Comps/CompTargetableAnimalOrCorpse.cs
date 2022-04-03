@@ -30,7 +30,7 @@ namespace GeneticRim
                 canTargetItems = true,
                 canTargetBuildings = false,
                 mapObjectTargetsMustBeAutoAttackable = false,
-                validator = (TargetInfo x) => BaseTargetValidator(x.Thing) && ((x.Thing is Corpse)||(x.Thing is Pawn && x.Thing.Faction == Faction.OfPlayer))
+                validator = (TargetInfo x) =>  ((x.Thing is Corpse)||(x.Thing is Pawn && x.Thing.Faction == Faction.OfPlayer))
             };
         }
 

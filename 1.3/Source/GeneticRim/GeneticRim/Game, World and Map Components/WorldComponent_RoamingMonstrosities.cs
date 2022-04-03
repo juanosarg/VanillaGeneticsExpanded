@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RimWorld;
+using RimWorld.Planet;
+using Verse;
 
 namespace GeneticRim
 {
-    using RimWorld;
-    using RimWorld.Planet;
-    using Verse;
+
 
 
     public class WorldComponent_RoamingMonstrosities : WorldComponent
@@ -33,29 +29,34 @@ namespace GeneticRim
         {
             base.WorldComponentTick();
 
-            if (Current.Game.storyteller.difficultyDef != DifficultyDefOf.Peaceful)
+
+            if (!GeneticRim_Mod.settings.GR_DisableHybridRaids)
             {
-
-
-                if (tickCounter > ticksToNextAssault)
+                if (Current.Game.storyteller.difficultyDef != DifficultyDefOf.Peaceful)
                 {
-                    if (Find.FactionManager.FirstFactionOfDef(InternalDefOf.GR_RoamingMonstrosities) != null)
+
+
+                    if (tickCounter > ticksToNextAssault)
                     {
-                        IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, this.world);
-                        IncidentDef def = InternalDefOf.GR_ManhunterMonstrosities;
-                        if (def.Worker.CanFireNow(parms))
+                        if (Find.FactionManager.FirstFactionOfDef(InternalDefOf.GR_RoamingMonstrosities) != null)
                         {
-                            def.Worker.TryExecute(parms);
+                            IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, this.world);
+                            IncidentDef def = InternalDefOf.GR_ManhunterMonstrosities;
+                            if (def.Worker.CanFireNow(parms))
+                            {
+                                def.Worker.TryExecute(parms);
+                            }
+                            ticksToNextAssault = 60000 * Rand.RangeInclusive(10, 30);
+                            tickCounter = 0;
                         }
-                        ticksToNextAssault = 60000 * Rand.RangeInclusive(10,30);
-                        tickCounter = 0;
+
+
+
                     }
-
-                    
-
+                    tickCounter++;
                 }
-                tickCounter++;
             }
+            
 
 
 

@@ -77,7 +77,7 @@
                 paragonFailureFactor = 0.15f;
             }
 
-            float failure = (10f - (frameExtension?.safety ?? 0f) - (boosterExtension?.safety ?? 0f));
+            float failure = (GeneticRim_Mod.settings.GR_FailureRate - (frameExtension?.safety ?? 0f) - (boosterExtension?.safety ?? 0f));
             failureChance = (failure / 100f)+ paragonFailureFactor;
             if (failureChance < 0f)
             {

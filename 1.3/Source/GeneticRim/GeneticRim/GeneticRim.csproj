@@ -343,7 +343,10 @@
     <Compile Include="Comps\CompStartCharged.cs" />
     <Compile Include="Comps\CompTargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
+    <Compile Include="Game, World and Map Components\WorldComponent_LabQuests.cs" />
     <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
+    <Compile Include="Settings\GeneticRim_SettingsController.cs" />
+    <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="Windows and Dialogs\Window_DesignateGrowthCell.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="DamageWorkers\DamageWorker_DevastatingBite.cs" />

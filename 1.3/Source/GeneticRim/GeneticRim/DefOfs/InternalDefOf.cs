@@ -76,6 +76,8 @@ namespace GeneticRim
 
 		public static IncidentDef      GR_ManhunterMonstrosities;
 
+		public static QuestScriptDef   GR_OpportunitySite_AbandonedLab;
+
 		[MayRequireIdeology]
 		public static PreceptDef       GR_WorktableSpeeds_Implants;
 		[MayRequireIdeology]

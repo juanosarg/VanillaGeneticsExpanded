@@ -3,10 +3,10 @@
 
   <QuestScriptDef>
     <defName>GR_OpportunitySite_AbandonedLab</defName>
-    <rootSelectionWeight>0.6</rootSelectionWeight>
+    <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
-    <defaultChallengeRating>1</defaultChallengeRating>
+  
     <questNameRules>
       <rulesStrings>
         <li>questName(priority=1)->[journey] the [adjectiveLab] [ruins]</li>

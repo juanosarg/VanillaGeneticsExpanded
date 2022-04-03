@@ -62,7 +62,10 @@ namespace GeneticRim
                 }
                 foreach (ThingDef thing in allExcavatorsLinks)
                 {
-                    excavator.descriptionHyperlinks.Add(thing);
+                    if (!excavator.descriptionHyperlinks.Contains(thing)) {
+                        excavator.descriptionHyperlinks.Add(thing);
+
+                    }
 
                 }
 
@@ -94,8 +97,12 @@ namespace GeneticRim
             }
             foreach (ThingDef thing in allGenomesLinks)
             {
-                genome.descriptionHyperlinks.Add(thing);
+                
+                if (!genome.descriptionHyperlinks.Contains(thing))
+                {
+                    genome.descriptionHyperlinks.Add(thing);
 
+                }
             }
         }
 
@@ -116,8 +123,12 @@ namespace GeneticRim
             
             foreach (ThingDef thing in allGenomesLinks)
             {
-                former.descriptionHyperlinks.Add(thing);
+                
+                if (!former.descriptionHyperlinks.Contains(thing))
+                {
+                   former.descriptionHyperlinks.Add(thing);
 
+                }
             }
         }
 
@@ -136,7 +147,13 @@ namespace GeneticRim
                             animal.descriptionHyperlinks = new List<DefHyperlink>();
                         }
                         if (extractableAnimalsList.itemProduced != null) {
-                            animal.descriptionHyperlinks.Add(extractableAnimalsList.itemProduced);
+
+                            if (!animal.descriptionHyperlinks.Contains(extractableAnimalsList.itemProduced))
+                            {
+                                animal.descriptionHyperlinks.Add(extractableAnimalsList.itemProduced);
+
+                            }
+                            
                         }
                         
                     }

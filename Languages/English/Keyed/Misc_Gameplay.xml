@@ -65,6 +65,7 @@
 	<GR_ChooseDominantGenomeFirst>Choose dominant genome first</GR_ChooseDominantGenomeFirst>
 	<GR_ChooseNoBooster>Use no booster</GR_ChooseNoBooster>
 	<GR_Genomorpher_Ingredients>Ingredients: {0}, {1}, {2}, {3}</GR_Genomorpher_Ingredients>
+	<GR_Genomorpher_Ingredients_NoFrame>Ingredients: {0}, {1}, {2}</GR_Genomorpher_Ingredients_NoFrame>
 	<!-- ElectroWomb -->
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>
 	<!-- DNA Storage -->
@@ -144,4 +145,19 @@
 	<GR_SafetyDesc>Safety is a number that gets deducted from the Failed outcome chance. For example, safety 5 reduces the risk of the failed outcome by 5% (from 10% to 5%). This value can also be negative, increasing the risk of a failed experiment.</GR_SafetyDesc>
 	<GR_StabilityDesc>Stability is a number that gets deducted from the swap chance. For example, stability 5 means that the base chance of the genes swapping turns from 10% to 5% (becoming more stable). This value can also be negative, which will mean the chance of genomes swapping their positions and resulting in an unwanted hybrid are larger.</GR_StabilityDesc>
 	<GR_TimeMultiplierDesc>Time multiplier accelerates or increases the time taken by the genomorpher to complete its task. A fractional modifier accelerates the process (for example 0.5 means it will take half the usual time), while a modifier larger than 1 slows it down (2 means it will take double the time).</GR_TimeMultiplierDesc>
+	
+	<!-- Mod options -->
+	<GR_GenomorpherSpeedMultiplier>Genomorpher speed multiplier</GR_GenomorpherSpeedMultiplier>
+	<GR_GenomorpherSpeedMultiplierTooltip>The speed of the Genomorpher process is multiplied by this number. Numbers below 1 decrease the time, while numbers above it increase it.</GR_GenomorpherSpeedMultiplierTooltip>
+	<GR_WombSpeedMultiplier>Womb speed multiplier</GR_WombSpeedMultiplier>
+	<GR_WombMultiplierTooltip>The speed of the electrowomb process is multiplied by this number. Numbers below 1 decrease the time, while numbers above it increase it.</GR_WombMultiplierTooltip>
+	<GR_FailureRate>Base failure rate</GR_FailureRate>
+	<GR_FailureRateTooltip>By default, a genomorpher process will fail 10% of the time. This can be affected by boosters and other factors. This setting modifies that 10% base failure rate.</GR_FailureRateTooltip>
+	<GR_QuestRate>Abandoned lab quests rate multiplier</GR_QuestRate>
+	<GR_QuestRateTooltip>The frequency of the abandoned lab quest being offered is multiplied by this number (with a multiplier of 1, it is offered every between 10 and 30 days at random). Numbers below 1 decrease the time, while numbers above it increase it.</GR_QuestRateTooltip>
+	<GR_DisableOldAgeDiseases>Disable all genetic diseases</GR_DisableOldAgeDiseases>
+	<GR_DisableOldAgeDiseasesTooltip>Disables all genetic diseases that afflict the hybrids after a given time, depending on their quality. Bear in mind that this effectively means the hybrids won't ever die of old age, as they don't receive "old age" diseases such as dementia.</GR_DisableOldAgeDiseasesTooltip>
+	<GR_DisableHybridRaids>Disable "Roaming monstrosities" raids</GR_DisableHybridRaids>
+	<GR_DisableHybridRaidsTooltip>Disables the roaming, manhunting hybrids attacking your colony periodically</GR_DisableHybridRaidsTooltip>
+	<GR_Reset>Reset</GR_Reset>
 </LanguageData>
