@@ -33,7 +33,19 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
+	<HediffDef>
+		<defName>GR_LowRest</defName>
+		<description>This creature has very little need for sleep, and can stay awake for a long time.</description>
+		<label>needs very little sleep</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<restFallFactor>0.5</restFallFactor>
+			</li>
+		</stages>
+	</HediffDef>
 	<HediffDef ParentName="RoleStatBuff">
 		<defName>GR_PackTactics</defName>
 		<label>pack tactics</label>

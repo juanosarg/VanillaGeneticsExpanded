@@ -324,11 +324,13 @@
     <Compile Include="Comps\CompElectroWomb.cs" />
     <Compile Include="Comps\CompArchotechGrowthCell.cs" />
     <Compile Include="Comps\CompGrowthCell.cs" />
+    <Compile Include="Comps\CompHorseHybrid.cs" />
     <Compile Include="Comps\CompHumanoidHybrid.cs" />
     <Compile Include="Comps\CompHybrid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_Detonate.cs" />
     <Compile Include="Comps\CompDieUnlessReset.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_GeneticFailure.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_HorseHybrid.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_HumanoidHybrid.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_DieUnlessReset.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomItemSpawner.cs" />
@@ -345,6 +347,7 @@
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
     <Compile Include="Game, World and Map Components\WorldComponent_LabQuests.cs" />
     <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
+    <Compile Include="Harmony\Caravan_NightResting.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="Windows and Dialogs\Window_DesignateGrowthCell.cs" />

@@ -50,15 +50,21 @@ namespace GeneticRim
            
           
 
-            if (compMother != null && compFather != null)
+            if (compMother != null)
             {
                 QualityCategory qualityMother = compMother.quality;
-                QualityCategory qualityFather = compFather.quality;
+                QualityCategory qualityFather = QualityCategory.Awful;
+                if (compFather != null) { qualityFather = compFather.quality; }
+                
 
                 CompHybrid compHybrid = pawn.TryGetComp<CompHybrid>();
                 if (compHybrid != null)
                 {
-                    compHybrid.quality = (QualityCategory)Math.Min((sbyte)qualityMother, (sbyte)qualityFather);
+                    if (compFather != null) { compHybrid.quality = (QualityCategory)Math.Min((sbyte)qualityMother, (sbyte)qualityFather); } else
+                    {
+                        compHybrid.quality = qualityMother;
+                    }
+                    
 
                 }
                 

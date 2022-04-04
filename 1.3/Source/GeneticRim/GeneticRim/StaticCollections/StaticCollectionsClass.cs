@@ -15,6 +15,9 @@ namespace GeneticRim
         // A list of humanoid hybrids in the colony
         public static HashSet<Thing> humanoid_hybrids = new HashSet<Thing>();
 
+        // A list of horse hybrids in the colony
+        public static HashSet<Pawn> horse_hybrids = new HashSet<Pawn>();
+
         // A list of genetic failures in the map
         public static HashSet<Thing> failures_in_map = new HashSet<Thing>();
 
@@ -32,6 +35,25 @@ namespace GeneticRim
             if (humanoid_hybrids.Contains(thing))
             {
                 humanoid_hybrids.Remove(thing);
+            }
+
+        }
+
+        public static void AddHorseHybridToList(Pawn thing)
+        {
+            
+            if (!horse_hybrids.Contains(thing))
+            {
+                horse_hybrids.Add(thing);
+             
+            }
+        }
+
+        public static void RemoveHorseHybridFromList(Pawn thing)
+        {
+            if (horse_hybrids.Contains(thing))
+            {
+                horse_hybrids.Remove(thing);
             }
 
         }

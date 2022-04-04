@@ -30,9 +30,13 @@ namespace GeneticRim
                             if (flag)
                             {
                                
+                                    
+                                if (pawn.GetStatValue(StatDefOf.PsychicSensitivity) > 0)
+                                {
                                     HealthUtility.AdjustSeverity(pawn, HediffDef.Named("ROM_SanityLoss"), (float)0.15);
 
-                                    this.Destroy();
+                                }
+                                this.Destroy();
                                
 
 

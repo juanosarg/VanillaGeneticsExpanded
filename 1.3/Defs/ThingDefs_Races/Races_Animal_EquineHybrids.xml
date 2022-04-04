@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Bear - Horse -->
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Bearhorse</defName>
+		<label>bearhorse</label>
+	
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<MarketValue>850</MarketValue>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>			
+			<FilthRate>12</FilthRate>
+			<CaravanRidingSpeedFactor>1.2</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.1</uiIconScale>
+		<race>
+			<fleshType>GR_Normal</fleshType>
+			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<body>QuadrupedAnimalWithHooves</body>
+			<baseBodySize>3.5</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<baseHungerRate>0.425</baseHungerRate>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<predator>true</predator>
+			<maxPreyBodySize>2</maxPreyBodySize>
+			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
+			<useMeatFrom>Bear_Grizzly</useMeatFrom>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<wildness>0.4</wildness>			
+			<trainability>Intermediate</trainability>			
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3333</minAge>
+					<soundWounded>Pawn_Horse_Wounded</soundWounded>
+					<soundDeath>Pawn_Horse_Death</soundDeath>
+					<soundCall>Pawn_Horse_Call</soundCall>
+					<soundAngry>Pawn_Horse_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_LowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_HorseHybrid">
+				
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2.9</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>18</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>18</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>18</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Bearhorse</defName>
+		<label>bearhorse</label>
+		<labelMale>bearhorse stallion</labelMale>
+		<labelFemale>bearhorse mare</labelFemale>
+		<race>GR_Bearhorse</race>
+		<combatPower>180</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		
+		<lifeStages>
+			<li>
+				<label>bearhorse foal</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Bearhorse</texPath>
+					<drawSize>1.3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Dessicated_Bearhorse</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Bearhorse</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Dessicated_Bearhorse</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Bearhorse</texPath>
+					<drawSize>2.1</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Dessicated_Bearhorse</texPath>
+					<drawSize>2.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_EquineGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- Boomalope - Horse -->
+
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Boomhorse</defName>
+		<label>boomhorse</label>
+	
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<statBases>
+			<MoveSpeed>3.75</MoveSpeed>
+			<MarketValue>750</MarketValue>
+			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<FilthRate>16</FilthRate>
+			<CaravanRidingSpeedFactor>1.3</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.1</uiIconScale>
+		<race>
+			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
+			<executionRange>6</executionRange>
+			<fleshType>GR_Normal</fleshType>
+			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<body>QuadrupedAnimalWithHooves</body>
+			<baseBodySize>2</baseBodySize>
+			<baseHealthScale>1.25</baseHealthScale>
+			<baseHungerRate>0.3</baseHungerRate>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<useLeatherFrom>Boomalope</useLeatherFrom>
+			<useMeatFrom>Boomalope</useMeatFrom>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<wildness>0.4</wildness>
+			<roamMtbDays>2</roamMtbDays>
+			<trainability>None</trainability>			
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3333</minAge>
+					<soundWounded>Pawn_Horse_Wounded</soundWounded>
+					<soundDeath>Pawn_Horse_Death</soundDeath>
+					<soundCall>Pawn_Horse_Call</soundCall>
+					<soundAngry>Pawn_Horse_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.9</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+			<li>
+				<label>left hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right hoof</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.5</chanceFactor>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Boomhorse</defName>
+		<label>boomhorse</label>
+		<labelMale>boomhorse stallion</labelMale>
+		<labelFemale>boomhorse mare</labelFemale>
+		<race>GR_Boomhorse</race>
+		<combatPower>150</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		
+		<lifeStages>
+			<li>
+				<label>boomhorse foal</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Boomhorse</texPath>
+					<drawSize>1.3</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Dessicated_Boomhorse</texPath>
+					<drawSize>1.3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Boomhorse</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Dessicated_Boomhorse</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Boomhorse</texPath>
+					<drawSize>2.1</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Dessicated_Boomhorse</texPath>
+					<drawSize>2.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_EquineGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+</Defs>
