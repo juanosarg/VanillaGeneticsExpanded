@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <InteractionDef>
+    <defName>GR_TalkingToHumans</defName>
+    <label>chitchat</label>
+    <workerClass>InteractionWorker_Chitchat</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <recipientThought>Chitchat</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [animalthings].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [talkedabout] [animalthings] with [RECIPIENT_nameDef].</li>
+        <li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [animalthings] to [RECIPIENT_nameDef].</li>
+
+        <li>talkedabout(p=4)->chatted about</li>
+        <li>talkedabout->shared a word about</li>
+        <li>talkedabout->spoke about</li>
+        <li>talkedabout->gabbed about</li>
+        <li>talkedabout->talked about</li>
+        <li>talkedabout->mumbled about</li>
+        <li>talkedabout->quipped about</li>
+
+        <li>commentedabout->said something about</li>
+        <li>commentedabout->stammered about</li>
+        <li>commentedabout->made a comment about</li>
+        <li>commentedabout->commented about</li>
+        <li>commentedabout->mused about</li>
+		
+		<li>animalthings->the futility of the human condition</li>
+		<li>animalthings->rejecting humanity, returning to monkey</li>
+		<li>animalthings->an ancient movie where monkeys inherited the planet</li>
+		<li>animalthings->the transcendental aesthetic of the totality our faculties</li>
+		<li>animalthings->the never-ending regress in the series of empirical conditions</li>
+		<li>animalthings->how enlightenment is man's release from his self-incurred tutelage</li>
+		<li>animalthings->how language is the house of being</li>
+		<li>animalthings->existance being suffering</li>
+		<li>animalthings->the reasons for being created</li>
+		<li>animalthings->release from the constant suffering of life</li>
+		<li>animalthings->fucking magnets, how do they work?</li>
+		<li>animalthings->eating without a table, and the barbarism of Man</li>
+		<li>animalthings->what the deal is with Thrumbos, huh? Are they aliens, or what?</li>
+		<li>animalthings->bloat, as dumb, stupid animals are wont to do</li>
+		<li>animalthings->the necessity of a killbox to protect the colony</li>
+		<li>animalthings->the ethical concerns of human cloning</li>
+		<li>animalthings->all those anime mods. What are people thinking?</li>
+		<li>animalthings->the forbidden mod</li>
+		<li>animalthings->Bearofleets</li>
+
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+
+  
+</Defs>

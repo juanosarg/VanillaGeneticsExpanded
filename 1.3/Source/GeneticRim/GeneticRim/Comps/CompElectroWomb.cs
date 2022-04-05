@@ -106,12 +106,12 @@ namespace GeneticRim
                         if (!failure) {
                             DefExtension_HybridChanceAlterer extension = this.booster?.GetModExtension<DefExtension_HybridChanceAlterer>();
 
-                            if (extension?.isFertilityUnblocker != true)
+                            if (extension?.isFertilityUnblocker != true && !GeneticRim_Mod.settings.GR_MakeAllHybridsFertile)
                             {
                                 pawn.health.AddHediff(HediffDefOf.Sterilized);
                             }
 
-                            if (extension?.isController == true)
+                            if (extension?.isController == true || GeneticRim_Mod.settings.GR_MakeAllHybridsControllable)
                             {
                                 pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
                             }

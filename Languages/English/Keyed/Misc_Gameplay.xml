@@ -159,5 +159,9 @@
 	<GR_DisableOldAgeDiseasesTooltip>Disables all genetic diseases that afflict the hybrids after a given time, depending on their quality. Bear in mind that this effectively means the hybrids won't ever die of old age, as they don't receive "old age" diseases such as dementia.</GR_DisableOldAgeDiseasesTooltip>
 	<GR_DisableHybridRaids>Disable "Roaming monstrosities" raids</GR_DisableHybridRaids>
 	<GR_DisableHybridRaidsTooltip>Disables the roaming, manhunting hybrids attacking your colony periodically</GR_DisableHybridRaidsTooltip>
+	<GR_MakeAllHybridsControllable>Make all hybrids controllable</GR_MakeAllHybridsControllable>
+	<GR_MakeAllHybridsControllableTooltip>Makes all hybrids draftable, being able to be ordered around by the player, without the need to use a controller booster</GR_MakeAllHybridsControllableTooltip>
+	<GR_MakeAllHybridsFertile>Make all hybrids fertile</GR_MakeAllHybridsFertile>
+	<GR_MakeAllHybridsFertileTooltip>Makes all hybrids popping up from an electrowomb be fertile, and thus able to breed, without needing a fertility unlocker booster. Bear in mind this will still not work on insectoid hybrids, as eusocial insects aren't ever fertile.</GR_MakeAllHybridsFertileTooltip>
 	<GR_Reset>Reset</GR_Reset>
 </LanguageData>

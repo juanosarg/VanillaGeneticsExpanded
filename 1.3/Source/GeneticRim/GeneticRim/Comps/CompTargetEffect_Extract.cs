@@ -191,7 +191,7 @@ namespace GeneticRim
 			{
 				IntVec3 c;
 				CellFinder.TryFindRandomReachableCellNear(pos, map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
-				FilthMaker.TryMakeFilth(c, map, ThingDefOf.Filth_Blood);
+				FilthMaker.TryMakeFilth(c, map, blood);
 
 			}
 		}

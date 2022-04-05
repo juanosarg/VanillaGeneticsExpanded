@@ -28,6 +28,8 @@ namespace GeneticRim
 
         public bool GR_DisableOldAgeDiseases = false;
         public bool GR_DisableHybridRaids = false;
+        public bool GR_MakeAllHybridsFertile = false;
+        public bool GR_MakeAllHybridsControllable = false;
 
 
 
@@ -46,6 +48,8 @@ namespace GeneticRim
 
             Scribe_Values.Look(ref GR_DisableOldAgeDiseases, "GR_DisableOldAgeDiseases",false);
             Scribe_Values.Look(ref GR_DisableHybridRaids, "GR_DisableHybridRaids", false);
+            Scribe_Values.Look(ref GR_MakeAllHybridsFertile, "GR_MakeAllHybridsFertile", false);
+            Scribe_Values.Look(ref GR_MakeAllHybridsControllable, "GR_MakeAllHybridsControllable", false);
 
 
 
@@ -61,6 +65,9 @@ namespace GeneticRim
             listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("GR_DisableOldAgeDiseases".Translate(), ref GR_DisableOldAgeDiseases, "GR_DisableOldAgeDiseasesTooltip".Translate());
             listingStandard.CheckboxLabeled("GR_DisableHybridRaids".Translate(), ref GR_DisableHybridRaids, "GR_DisableHybridRaidsTooltip".Translate());
+            listingStandard.CheckboxLabeled("GR_MakeAllHybridsFertile".Translate(), ref GR_MakeAllHybridsFertile, "GR_MakeAllHybridsFertileTooltip".Translate());
+            listingStandard.CheckboxLabeled("GR_MakeAllHybridsControllable".Translate(), ref GR_MakeAllHybridsControllable, "GR_MakeAllHybridsControllableTooltip".Translate());
+
 
             var GenomorpherSpeedMultiplierLabel = listingStandard.LabelPlusButton("GR_GenomorpherSpeedMultiplier".Translate() + ": " + GR_GenomorpherSpeedMultiplier, "GR_GenomorpherSpeedMultiplierTooltip".Translate());
             GR_GenomorpherSpeedMultiplier = (float)Math.Round(listingStandard.Slider(GR_GenomorpherSpeedMultiplier, 0.1f, 2f), 2);

@@ -308,7 +308,9 @@
     <Compile Include="AI\JobDrivers\JobDriver_InsertArchotechGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertIngredients.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_Talk.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Talk.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
     <Compile Include="Buildings\Building_ArchocentipedeFormer.cs" />
@@ -350,6 +352,7 @@
     <Compile Include="Harmony\Caravan_NightResting.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_HumanoidHybrid.cs" />
     <Compile Include="Windows and Dialogs\Window_DesignateGrowthCell.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="DamageWorkers\DamageWorker_DevastatingBite.cs" />

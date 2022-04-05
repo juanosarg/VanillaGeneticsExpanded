@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThinkTreeDef>
+		<defName>GR_HumanoidHybridBehaviour</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="GeneticRim.ThinkNode_HumanoidHybrid">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>0.1</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="GeneticRim.JobGiver_Talk"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

@@ -6,6 +6,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticsTinkeringTable</li>
 		</recipeUsers>

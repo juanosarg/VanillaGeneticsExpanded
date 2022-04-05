@@ -67,6 +67,7 @@ namespace GeneticRim
         public static JobDef           GR_InsertGrowthCell;
 		public static JobDef           GR_InsertArchotechGrowthCell;
 		public static JobDef           GR_ArchotechDNAExtractionJob;
+		public static JobDef           GR_HumanoidHybridTalk;
 
 		public static SoundDef         GR_Pop;
 
@@ -75,6 +76,8 @@ namespace GeneticRim
 		public static FactionDef       GR_RoamingMonstrosities;
 
 		public static IncidentDef      GR_ManhunterMonstrosities;
+
+		public static InteractionDef   GR_TalkingToHumans;
 
 		public static QuestScriptDef   GR_OpportunitySite_AbandonedLab;
 

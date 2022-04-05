@@ -2,11 +2,12 @@
 <Defs>
 	<!--=============== Human Hybrid Implants ====================-->
 	<RecipeDef Name="GR_HumanoidHybridProsthesisBase" Abstract="True">
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+	
 		<effectWorking>Smith</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<workAmount>25000</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
 		<recipeUsers>
 			<li>GR_TissueGrowingVat</li>

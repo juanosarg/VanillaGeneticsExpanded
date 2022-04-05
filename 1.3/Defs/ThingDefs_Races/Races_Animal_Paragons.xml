@@ -1656,6 +1656,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">

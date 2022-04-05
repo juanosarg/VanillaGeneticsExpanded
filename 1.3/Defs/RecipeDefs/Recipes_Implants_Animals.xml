@@ -2,7 +2,7 @@
 <Defs>
 	<!--=============== Animal Hybrid Implants ====================-->
 	<RecipeDef Name="GR_HybridProsthesisBase" Abstract="True">
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		
 		<effectWorking>Smith</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<workAmount>25000</workAmount>
@@ -11,6 +11,7 @@
 		</recipeUsers>
 		<researchPrerequisite>GR_HybridImplantology</researchPrerequisite>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
 	</RecipeDef>
 	<!--=============== Legs ====================-->

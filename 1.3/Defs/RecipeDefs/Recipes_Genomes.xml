@@ -16,6 +16,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
 		</recipeUsers>	
@@ -55,6 +56,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
 		</recipeUsers>	
@@ -105,6 +107,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
 		</recipeUsers>	
@@ -144,6 +147,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
 		</recipeUsers>	
@@ -185,6 +189,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
 		</recipeUsers>	
@@ -238,6 +243,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
 		</recipeUsers>	
@@ -294,6 +300,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
 		</recipeUsers>	
@@ -338,6 +345,7 @@
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>2500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
 		<recipeUsers>
 			<li>GR_GeneticExtractionTable</li>	  
 		</recipeUsers>	

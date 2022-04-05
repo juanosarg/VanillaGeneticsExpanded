@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
- 
-   
-  
-  
-  <JobDef>
-    <defName>GR_UseGenomeExcavator</defName>
-    <driverClass>GeneticRim.JobDriver_UseExcavator</driverClass>
-    <reportString>using genome excavator.</reportString>
-    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-  </JobDef>
-  
-  <JobDef>
-    <defName>GR_InsertIngredients</defName>
-    <driverClass>GeneticRim.JobDriver_InsertIngredients</driverClass>
-    <reportString>inserting ingredients on TargetA.</reportString>
-	  <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
-  </JobDef>
-
-  <JobDef>
-    <defName>GR_InsertGrowthCell</defName>
-    <driverClass>GeneticRim.JobDriver_InsertGrowthCell</driverClass>
-    <reportString>inserting growth cell on TargetA.</reportString>
-	  <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
-  </JobDef>
-  
-   <JobDef>
-    <defName>GR_InsertArchotechGrowthCell</defName>
-    <driverClass>GeneticRim.JobDriver_InsertArchotechGrowthCell</driverClass>
-    <reportString>inserting archotech growth cell on TargetA.</reportString>
-	  <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
-  </JobDef>
-  
-  <JobDef>
-    <defName>GR_ArchotechDNAExtractionJob</defName>
-    <driverClass>GeneticRim.JobDriver_ArchotechDNAExtraction</driverClass>
-    <reportString>carrying TargetA to TargetB.</reportString>
-	  <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
-  </JobDef>
-  
+	<JobDef>
+		<defName>GR_UseGenomeExcavator</defName>
+		<driverClass>GeneticRim.JobDriver_UseExcavator</driverClass>
+		<reportString>using genome excavator.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
+		<defName>GR_HumanoidHybridTalk</defName>
+		<driverClass>GeneticRim.JobDriver_Talk</driverClass>
+		<reportString>talking with TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
+		<defName>GR_InsertIngredients</defName>
+		<driverClass>GeneticRim.JobDriver_InsertIngredients</driverClass>
+		<reportString>inserting ingredients on TargetA.</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
+		<defName>GR_InsertGrowthCell</defName>
+		<driverClass>GeneticRim.JobDriver_InsertGrowthCell</driverClass>
+		<reportString>inserting growth cell on TargetA.</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
+		<defName>GR_InsertArchotechGrowthCell</defName>
+		<driverClass>GeneticRim.JobDriver_InsertArchotechGrowthCell</driverClass>
+		<reportString>inserting archotech growth cell on TargetA.</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
+		<defName>GR_ArchotechDNAExtractionJob</defName>
+		<driverClass>GeneticRim.JobDriver_ArchotechDNAExtraction</driverClass>
+		<reportString>carrying TargetA to TargetB.</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
 </Defs>
