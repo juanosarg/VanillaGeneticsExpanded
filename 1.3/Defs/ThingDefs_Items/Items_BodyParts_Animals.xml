@@ -60,7 +60,7 @@
 	<!--=============== Tails ====================-->
 	<ThingDef ParentName="GR_AnimalImplantBase">
 		<defName>GR_CatTail</defName>
-		<label>animal Implant: scyther tail</label>
+		<label>animal Implant: cat tail</label>
 		<description>A tail implant that uses genetic splicing with feline genes to substitute a broken or missing tail. This implant is not meant to replace a healthy tail. Note that only creatures with a natural tail can use this.</description>
 		<statBases>
 			<MarketValue>250</MarketValue>
