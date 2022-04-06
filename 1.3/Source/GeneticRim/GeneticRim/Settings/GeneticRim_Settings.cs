@@ -26,6 +26,9 @@ namespace GeneticRim
         public const float GR_QuestRateBase = 1;
         public float GR_QuestRate = GR_QuestRateBase;
 
+        public const float GR_RaidsRateBase = 1;
+        public float GR_RaidsRate = GR_RaidsRateBase;
+
         public bool GR_DisableOldAgeDiseases = false;
         public bool GR_DisableHybridRaids = false;
         public bool GR_MakeAllHybridsFertile = false;
@@ -45,6 +48,10 @@ namespace GeneticRim
             Scribe_Values.Look(ref GR_WombSpeedMultiplier, "GR_WombSpeedMultiplier", GR_WombSpeedMultiplierBase);
             Scribe_Values.Look(ref GR_GenomorpherSpeedMultiplier, "GR_GenomorpherSpeedMultiplier", GR_GenomorpherSpeedMultiplierBase);
             Scribe_Values.Look(ref GR_FailureRate, "GR_FailureRate", GR_FailureRateBase);
+            Scribe_Values.Look(ref GR_QuestRate, "GR_QuestRate", GR_QuestRateBase);
+            Scribe_Values.Look(ref GR_RaidsRate, "GR_RaidsRate", GR_RaidsRateBase);
+
+
 
             Scribe_Values.Look(ref GR_DisableOldAgeDiseases, "GR_DisableOldAgeDiseases",false);
             Scribe_Values.Look(ref GR_DisableHybridRaids, "GR_DisableHybridRaids", false);
@@ -95,6 +102,13 @@ namespace GeneticRim
             if (listingStandard.Settings_Button("GR_Reset".Translate(), new Rect(0f, QuestRateLabel.position.y + 35, 180f, 29f)))
             {
                 GR_QuestRate = GR_QuestRateBase;
+            }
+
+            var RaidsRateLabel = listingStandard.LabelPlusButton("GR_RaidsRate".Translate() + ": " + GR_RaidsRate, "GR_RaidsRateTooltip".Translate());
+            GR_RaidsRate = (float)Math.Round(listingStandard.Slider(GR_RaidsRate, 0.1f, 5f), 1);
+            if (listingStandard.Settings_Button("GR_Reset".Translate(), new Rect(0f, RaidsRateLabel.position.y + 35, 180f, 29f)))
+            {
+                GR_RaidsRate = GR_RaidsRateBase;
             }
 
 

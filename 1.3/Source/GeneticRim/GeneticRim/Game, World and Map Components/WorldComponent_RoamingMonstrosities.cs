@@ -46,7 +46,7 @@ namespace GeneticRim
                             {
                                 def.Worker.TryExecute(parms);
                             }
-                            ticksToNextAssault = 60000 * Rand.RangeInclusive(10, 30);
+                            ticksToNextAssault = (int)(60000 * Rand.RangeInclusive(10, 30) * GeneticRim_Mod.settings.GR_RaidsRate);
                             tickCounter = 0;
                         }
 

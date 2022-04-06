@@ -154,7 +154,9 @@
 	<GR_FailureRate>Base failure rate</GR_FailureRate>
 	<GR_FailureRateTooltip>By default, a genomorpher process will fail 10% of the time. This can be affected by boosters and other factors. This setting modifies that 10% base failure rate.</GR_FailureRateTooltip>
 	<GR_QuestRate>Abandoned lab quests rate multiplier</GR_QuestRate>
-	<GR_QuestRateTooltip>The frequency of the abandoned lab quest being offered is multiplied by this number (with a multiplier of 1, it is offered every between 10 and 30 days at random). Numbers below 1 decrease the time, while numbers above it increase it.</GR_QuestRateTooltip>
+	<GR_QuestRateTooltip>The frequency of the abandoned lab quest being offered is multiplied by this number (with a multiplier of 1, it is offered every between 10 and 30 days at random). Numbers below 1 decrease the time, while numbers above it increase it. Note that this event doesn't "replace" normal quests, it works independently.</GR_QuestRateTooltip>
+	<GR_RaidsRate>"Roaming monstrosities" raids rate multiplier</GR_RaidsRate>
+	<GR_RaidsRateTooltip>The frequency of the roaming, manhunting hybrids attacking your colony event is multiplied by this number (with a multiplier of 1, it is offered every between 10 and 30 days at random). Numbers below 1 decrease the time, while numbers above it increase it. Note that this event doesn't "replace" normal raids, it works independently.</GR_RaidsRateTooltip>
 	<GR_DisableOldAgeDiseases>Disable all genetic diseases</GR_DisableOldAgeDiseases>
 	<GR_DisableOldAgeDiseasesTooltip>Disables all genetic diseases that afflict the hybrids after a given time, depending on their quality. Bear in mind that this effectively means the hybrids won't ever die of old age, as they don't receive "old age" diseases such as dementia.</GR_DisableOldAgeDiseasesTooltip>
 	<GR_DisableHybridRaids>Disable "Roaming monstrosities" raids</GR_DisableHybridRaids>
