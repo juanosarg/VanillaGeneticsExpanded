@@ -37,7 +37,6 @@
 			</targetParams>
 		</verbProperties>
 	</AbilityDef>
-	
 	<AbilityDef Abstract="True" Name="GR_TargetAbilities">
 		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>true</targetRequired>
@@ -82,7 +81,6 @@
 			</li>
 		</comps>
 	</AbilityDef>
-	
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonateAcid</defName>
 		<label>detonate acidic chemfuel</label>
@@ -304,5 +302,23 @@
 			</li>
 		</comps>
 	</AbilityDef>
-	
+	<VFECore.Abilities.AbilityDef>
+		<defName>GR_Pounce</defName>
+		<label>pounce</label>
+		<description>Jumps.</description>
+		<abilityClass>GeneticRim.Ability_Pounce</abilityClass>
+		<targetMode>Location</targetMode>
+		<castTime>120</castTime>
+		<range>10</range>
+		<cooldownTime>5000</cooldownTime>
+		<iconPath>ui/commands/GR_Pounce</iconPath>
+	</VFECore.Abilities.AbilityDef>
+	<ThingDef ParentName="PawnFlyerBase">
+		<defName>GR_SlowFlyer</defName>
+		<thingClass>VFECore.Abilities.AbilityPawnFlyer</thingClass>
+		<pawnFlyer>
+			<flightDurationMin>1</flightDurationMin>
+			<flightSpeed>10</flightSpeed>
+		</pawnFlyer>
+	</ThingDef>
 </Defs>

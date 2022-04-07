@@ -431,5 +431,36 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- Horse / Chicken Egg -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_ChickenhorseEggUnfertilized</defName>
+		<label>chickenhorse egg (unfert.)</label>
+		<description>Unfertilized chickenhorse egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(250,240,240)</color>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_ChickenhorseEggFertilized</defName>
+		<label>chickenhorse egg (fert.)</label>
+		<description>Fertilized chickenhorse egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(250,240,240)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>5</hatcherDaystoHatch>
+				<hatcherPawn>GR_Chickenhorse</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	
 </Defs>

@@ -300,6 +300,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\Ability_Pounce.cs" />
     <Compile Include="Abilities\CompCreateThingDefAround.cs" />
     <Compile Include="Abilities\CompGiveHediff.cs" />
     <Compile Include="Abilities\Properties\CompProperties_CreateThingDefAround.cs" />

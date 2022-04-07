@@ -17,6 +17,7 @@
 	<NeutroglycerinProd>Neutroglycerin production</NeutroglycerinProd>
 	<ComponentIndustrialDesc>Industrial Component production</ComponentIndustrialDesc>
 	<CastoreumProd>Castoreum production</CastoreumProd>
+
 	<!-- Age related diseases -->
 	<GR_AgeDiseaseLabel>Genetic disease</GR_AgeDiseaseLabel>
 	<GR_AgeDiseaseText>{0} has reached the limit of its stable lifespan, and has acquired a genetic disease: {1}\n\nGenetic diseases are incurable. They can be treated to delay the inevitable, but the animal will eventually perish.</GR_AgeDiseaseText>
