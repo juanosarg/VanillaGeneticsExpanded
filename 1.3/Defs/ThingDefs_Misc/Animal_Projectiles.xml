@@ -393,8 +393,8 @@
 				
 		<projectile>
 			<speed>20</speed>
-			<damageDef>GR_LightToxicGas</damageDef>
-			<damageAmountBase>2</damageAmountBase>
+			<damageDef>GR_ToxicGas</damageDef>
+			<damageAmountBase>1</damageAmountBase>
 			<flyOverhead>false</flyOverhead>
 
 

@@ -328,7 +328,7 @@
 		<abilityClass>GeneticRim.Ability_Charge</abilityClass>
 		<targetMode>Pawn</targetMode>
 		<castTime>60</castTime>
-		<power>45</power>
+		<power>100</power>
 		<range>15</range>
 		<cooldownTime>5000</cooldownTime>
 		<iconPath>ui/commands/GR_StraightCharge</iconPath>

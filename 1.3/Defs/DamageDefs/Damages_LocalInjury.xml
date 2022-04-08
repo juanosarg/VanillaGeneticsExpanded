@@ -80,17 +80,7 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	<DamageDef ParentName="Bite">
-		<defName>GR_LightToxicGas</defName>
-		<label>light toxic gas</label>
-		<additionalHediffs>
-			<li>
-				<hediff>ToxicBuildup</hediff>
-				<severityPerDamageDealt>0.0005</severityPerDamageDealt>
-				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
-			</li>
-		</additionalHediffs>
-	</DamageDef>
+	
 	<DamageDef ParentName="Bite">
 		<defName>GR_HairballProjectileDamage</defName>
 		<label>hairball</label>
@@ -127,6 +117,24 @@
 			<li>
 				<hediff>GR_ToxicDamage</hediff>
 				<severityPerDamageDealt>0.035</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	<DamageDef>
+		<defName>GR_ToxicGas</defName>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<label>toxic explosion</label>
+		<hediff>Shredded</hediff>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>true</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been poisoned to death.</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>GR_ToxicDamage</hediff>
+				<severityPerDamageDealt>0.0035</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 			</li>
 		</additionalHediffs>
