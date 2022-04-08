@@ -178,8 +178,8 @@ namespace GeneticRim
             }
 			if (corpse != null)
 			{
-				pos = corpse.InnerPawn.Position;
-				map = corpse.InnerPawn.Map;
+				pos = corpse.Position;
+				map = corpse.Map;
 				if (corpse.InnerPawn.def.race.Insect)
 				{
 					blood = ThingDef.Named("Filth_BloodInsect");
