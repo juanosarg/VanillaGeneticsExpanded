@@ -1667,4 +1667,215 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	
+	<!-- Thrumbo - Horse -->
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Thrumhorse</defName>
+		<label>thrumhorse</label>
+	
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<statBases>
+			<MoveSpeed>5.8</MoveSpeed>
+			
+			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
+			<MarketValue>4500</MarketValue>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<FilthRate>6</FilthRate>
+			<CaravanRidingSpeedFactor>2.1</CaravanRidingSpeedFactor>
+		</statBases>
+		<uiIconScale>1.1</uiIconScale>
+		<race>
+			<fleshType>GR_Normal</fleshType>
+			<herdAnimal>true</herdAnimal>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body>
+			<baseBodySize>4.5</baseBodySize>
+			<baseHealthScale>9</baseHealthScale>
+			<baseHungerRate>1.8</baseHungerRate>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<wildness>0.7</wildness>
+			
+			<useLeatherFrom>Thrumbo</useLeatherFrom>
+			<useMeatFrom>Thrumbo</useMeatFrom>
+			<trainability>Advanced</trainability>
+	
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<comps>
+			
+			<li Class="GeneticRim.CompProperties_HorseHybrid">
+				
+			</li>
+			<li Class="VFECore.CompProperties_ShieldBubble">
+				<compClass>VFECore.Abilities.CompAbilities</compClass>
+				<blockRangedAttack>False</blockRangedAttack>
+				<blockMeleeAttack>False</blockMeleeAttack>
+				<showAlways>True</showAlways>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+			
+		</comps>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+		<tools>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>3.0</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>left foot</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right foot</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+	</ThingDef>
+	<PawnKindDef  ParentName="AnimalKindBase">
+		<defName>GR_Thrumhorse</defName>
+		<label>thrumhorse</label>
+	
+		<labelMale>thrumhorse stallion</labelMale>
+		<labelFemale>thrumhorse mare</labelFemale>
+		<race>GR_Thrumhorse</race>
+		<combatPower>400</combatPower>
+		<ecoSystemWeight>1.1</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+	
+		<lifeStages>
+			<li>
+				<label>foal</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Thrumhorse</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Thrumhorse</texPath>
+					<drawSize>4</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
+					<drawSize>4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Thrumhorse</texPath>
+					<drawSize>4.8</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
+					<drawSize>4.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_EquineGenetic</secondaryGenome>
+			</li>
+			<li Class="VFECore.Abilities.PawnKindAbilityExtension">
+				<giveAbilities>
+					<li>GR_StraightCharge</li>
+				</giveAbilities>
+				<giveRandomAbilities>false</giveRandomAbilities>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 </Defs>

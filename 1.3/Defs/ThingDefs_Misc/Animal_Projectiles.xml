@@ -35,6 +35,22 @@
 			<explosionDelay>100</explosionDelay>
 		</projectile>
 	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>GR_Web</defName>
+		<label>web</label>		
+		<graphicData>
+			<texPath>Things/Projectile/GR_Web</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
 
 	<ThingDef ParentName="GR_BaseAnimalProjectile">
 		<defName>GR_PlasmaBurst</defName>
@@ -365,5 +381,24 @@
 			<speed>20</speed>
 		</projectile>
 	</VFECore.ExpandableProjectileDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>GR_PoisonBreath</defName>
+		<label>poison breath</label>
+		<graphicData>
+			<texPath>Things/Projectile/GR_PoisonBreath</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+				
+		<projectile>
+			<speed>20</speed>
+			<damageDef>GR_LightToxicGas</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<flyOverhead>false</flyOverhead>
+
+
+		</projectile>
+	</ThingDef>
 
 </Defs>

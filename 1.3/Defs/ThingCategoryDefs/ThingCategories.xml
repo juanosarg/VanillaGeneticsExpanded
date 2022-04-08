@@ -48,6 +48,11 @@
 		<parent>Corpses</parent>
 	</ThingCategoryDef>
 	<ThingCategoryDef>
+		<defName>GR_HumanoidCorpses</defName>
+		<label>humanoid hybrid corpses</label>
+		<parent>Corpses</parent>
+	</ThingCategoryDef>
+	<ThingCategoryDef>
 		<defName>GR_ImplantCategory</defName>
 		<label>hybrid implants</label>
 		<parent>BodyParts</parent>

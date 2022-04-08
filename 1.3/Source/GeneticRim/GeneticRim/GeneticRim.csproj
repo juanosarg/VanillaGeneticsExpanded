@@ -300,6 +300,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abilities\AbilityStraightPawnFlyer.cs" />
+    <Compile Include="Abilities\Ability_Charge.cs" />
     <Compile Include="Abilities\Ability_Pounce.cs" />
     <Compile Include="Abilities\CompCreateThingDefAround.cs" />
     <Compile Include="Abilities\CompGiveHediff.cs" />

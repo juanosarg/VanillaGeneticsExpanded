@@ -81,6 +81,17 @@
 		</additionalHediffs>
 	</DamageDef>
 	<DamageDef ParentName="Bite">
+		<defName>GR_LightToxicGas</defName>
+		<label>light toxic gas</label>
+		<additionalHediffs>
+			<li>
+				<hediff>ToxicBuildup</hediff>
+				<severityPerDamageDealt>0.0005</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	<DamageDef ParentName="Bite">
 		<defName>GR_HairballProjectileDamage</defName>
 		<label>hairball</label>
 		<additionalHediffs>

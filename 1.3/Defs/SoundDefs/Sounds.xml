@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
-
-<SoundDef>
+	<SoundDef>
 		<defName>GR_FireBreath</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -21,11 +19,29 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-
+	<SoundDef>
+		<defName>GR_PoisonBreath</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>GR_PoisonBreath</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9652174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 	<SoundDef>
 		<defName>GR_LaserSound</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -44,7 +60,7 @@
 	<SoundDef>
 		<defName>GR_Gas</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -63,7 +79,7 @@
 	<SoundDef>
 		<defName>GR_Wick</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -82,7 +98,7 @@
 	<SoundDef>
 		<defName>GR_Spill</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -98,11 +114,10 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-
 	<SoundDef>
 		<defName>GR_Pop</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -118,12 +133,10 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-
-
 	<SoundDef>
 		<defName>GR_DisintegratorSound</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -139,11 +152,10 @@
 			</li>
 		</subSounds>
 	</SoundDef>
-
 	<SoundDef>
 		<defName>GR_Buzz</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -156,15 +168,13 @@
 					<min>0.9652174</min>
 					<max>1.042391</max>
 				</pitchRange>
-
 			</li>
 		</subSounds>
 	</SoundDef>
-
 	<SoundDef>
 		<defName>GR_PoisonBlast</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -177,15 +187,13 @@
 					<min>0.9652174</min>
 					<max>1.042391</max>
 				</pitchRange>
-
 			</li>
 		</subSounds>
 	</SoundDef>
-
 	<SoundDef>
 		<defName>GR_Liquid</defName>
 		<context>MapOnly</context>
-		<eventNames />
+		<eventNames/>
 		<maxSimultaneous>1</maxSimultaneous>
 		<subSounds>
 			<li>
@@ -198,124 +206,140 @@
 					<min>0.9652174</min>
 					<max>1.042391</max>
 				</pitchRange>
-
 			</li>
 		</subSounds>
 	</SoundDef>
-
-<SoundDef>
-    <defName>GR_Pawn_Ape_Angry</defName>
-    <context>MapOnly</context>
-    <eventNames />
-    <maxVoices>2</maxVoices>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>GR_GreatApe/Pawn_Ape_Angry</clipFolderPath>
-          </li>
-        </grains>
-        <volumeRange>
-          <min>35</min>
-          <max>35</max>
-        </volumeRange>
-        <pitchRange>
-          <min>0.9</min>
-          <max>1.1</max>
-        </pitchRange>
-        <distRange>
-          <min>0</min>
-          <max>70</max>
-        </distRange>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <SoundDef>
-    <defName>GR_Pawn_Ape_Wounded</defName>
-    <context>MapOnly</context>
-    <eventNames />
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>GR_GreatApe/Pawn_Ape_Wounded</clipFolderPath>
-          </li>
-        </grains>
-        <volumeRange>
-          <min>37</min>
-          <max>37</max>
-        </volumeRange>
-        <pitchRange>
-          <min>0.9</min>
-          <max>1.1</max>
-        </pitchRange>
-        <distRange>
-          <min>0</min>
-          <max>70</max>
-        </distRange>
-        <repeatMode>NeverTwice</repeatMode>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <SoundDef>
-    <defName>GR_Pawn_Ape_Death</defName>
-    <context>MapOnly</context>
-    <eventNames />
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>GR_GreatApe/Pawn_Ape_Death</clipFolderPath>
-          </li>
-        </grains>
-        <volumeRange>
-          <min>40</min>
-          <max>40</max>
-        </volumeRange>
-        <pitchRange>
-          <min>0.9</min>
-          <max>1.1</max>
-        </pitchRange>
-        <distRange>
-          <min>0</min>
-          <max>70</max>
-        </distRange>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-  
-    <SoundDef>
-    <defName>GR_Pawn_Ape_Call</defName>
-    <context>MapOnly</context>
-    <eventNames />
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>GR_GreatApe/Pawn_Ape_Call</clipFolderPath>
-          </li>
-        </grains>
-        <volumeRange>
-          <min>35</min>
-          <max>35</max>
-        </volumeRange>
-        <pitchRange>
-          <min>0.9</min>
-          <max>1.1</max>
-        </pitchRange>
-        <distRange>
-          <min>0</min>
-          <max>70</max>
-        </distRange>
-        <sustainLoop>False</sustainLoop>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-
+	<SoundDef>
+		<defName>GR_Pawn_Ape_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>GR_GreatApe/Pawn_Ape_Angry</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>
+					<max>35</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>GR_Pawn_Ape_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>GR_GreatApe/Pawn_Ape_Wounded</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>37</min>
+					<max>37</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>GR_Pawn_Ape_Death</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>GR_GreatApe/Pawn_Ape_Death</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>GR_Pawn_Ape_Call</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>GR_GreatApe/Pawn_Ape_Call</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>35</min>
+					<max>35</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>GR_Throw</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>GR_Throw</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 </Defs>

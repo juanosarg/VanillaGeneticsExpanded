@@ -1,8 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
 	<ThoughtDef>
 		<defName>AA_BeenPsionicallyNuzzled</defName>
 		<durationDays>1</durationDays>
@@ -19,12 +16,10 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-	
 	<ThoughtDef>
 		<defName>GR_BunnyAround</defName>
 		<durationDays>1</durationDays>
 		<stackLimit>1</stackLimit>
-		
 		<nullifyingTraits>
 			<li>Psychopath</li>
 		</nullifyingTraits>
@@ -36,7 +31,29 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-
-
-
+	<ThoughtDef>
+		<defName>GR_InsultedByHumanoidMood</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>2</stackLimit>		
+		<stages>
+			<li>
+				<label>insulted by humanoid hybrid</label>
+				<description>I've been directly insulted by a genetic abomination! What an awful creature!</description>
+				<baseMoodEffect>-15</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>GR_EngagedByHumanoidMood</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>5</stackLimit>
+		
+		<stages>
+			<li>
+				<label>kind comversation with humanoid hybrid</label>
+				<description>That was such an interesting conversation! What a nice creature!</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
 </Defs>

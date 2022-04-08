@@ -197,7 +197,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonBoomalope</defName>
 		<label>boomalope paragon</label>
-		<description>While more of a risk to keep around, they are considerably more efficient and don’t eat your crops as much. Plus their permanent sad expression just makes you want to pet them, how can you say no.\n\nA perfect boomalope animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon produces compressed chemfuel instead and explodes on death in a much more violent fashion.</description>
+		<description>While more of a risk to keep around, they are considerably more efficient and don’t eat your crops as much. Plus their permanent sad expression just makes you want to pet them, how can you say no.\n\nA perfect boomalope animal, paragon of all similar animals with no needless junk genetic data. Besides the various improvements to the baseline animal’s abilities, this paragon produces deepchem instead and explodes on death in a much more violent fashion.</description>
 		<statBases>
 			<MoveSpeed>2.75</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
@@ -1624,7 +1624,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>			
 			<trainability>Advanced</trainability>
 			<wildness>0.5</wildness>
-			<fleshType>GR_Normal</fleshType>
+			<fleshType>GR_HumanMeat</fleshType>
 			<nameOnTameChance>1</nameOnTameChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
@@ -1858,6 +1858,10 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		
+		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
 				<statToAdd>

@@ -32,6 +32,25 @@
       </li>
     </genericWounds>
   </FleshTypeDef>
+  
+   <FleshTypeDef>
+    <defName>GR_HumanMeat</defName>
+    <damageEffecter>Damage_HitFlesh</damageEffecter>
+	<ateDirect>AteHumanlikeMeatDirect</ateDirect>
+    <ateAsIngredient>AteHumanlikeMeatAsIngredient</ateAsIngredient>
+    <corpseCategory>GR_HumanoidCorpses</corpseCategory>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC</texture>
+      </li>
+    </genericWounds>
+  </FleshTypeDef>
 
   <FleshTypeDef>
     <defName>GR_Insectoid</defName>

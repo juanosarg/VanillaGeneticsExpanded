@@ -462,6 +462,59 @@
 							<texPath>Achievements/GR_AchievementLizardPeople</texPath>
 							<points>15</points>
 						</AchievementsExpanded.AchievementDef>
+						
+						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
+							<defName>GR_AchievementDerby</defName>
+							<label>Derby</label>
+							<description>Hatch a Tier 2 Equine Hybrid</description>
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>GR_Bearhorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Boomhorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Chickenhorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Cathorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Molehorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Wolfhorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Muffalohorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Crocorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Spiderhorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Hurseman</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+								<requireAll>false</requireAll>
+							</tracker>
+							<texPath>Achievements/GR_AchievementDerby</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
 
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementSmarterThanYou</defName>
@@ -499,6 +552,10 @@
 									</li>
 									<li>
 										<key>GR_Thrumbocat</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Thrumhorse</key>
 										<value>1</value>
 									</li>
 								</kindDefs>
@@ -785,7 +842,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementCryoHoarder</defName>
 							<label>Explosive Hoarder</label>
-							<description>Hoard 300 canisters of Compressed chemfuel</description>
+							<description>Hoard 300 canisters of Deepchem</description>
 
 							<tracker Class="AchievementsExpanded.ItemTracker">
 								<def>GR_CompressedChemfuel</def>

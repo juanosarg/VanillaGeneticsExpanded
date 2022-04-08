@@ -32,8 +32,8 @@
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_CompressedChemfuel</defName>
-		<label>compressed chemfuel</label>
-		<description>A very volatile sludge with a tar-like appearance. Can be used defensively or converted to regular Chemfuel in a refinery.</description>
+		<label>deepchem</label>
+		<description>A very volatile sludge with a tar-like appearance. Can be used defensively or converted to regular chemfuel in a refinery.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>Things/Item/GR_CompressedChemfuel</texPath>

@@ -305,11 +305,11 @@
 	<VFECore.Abilities.AbilityDef>
 		<defName>GR_Pounce</defName>
 		<label>pounce</label>
-		<description>Jumps.</description>
+		<description>This hybrid can jump into combat, quickly closing the distance between it and its enemies.</description>
 		<abilityClass>GeneticRim.Ability_Pounce</abilityClass>
 		<targetMode>Location</targetMode>
-		<castTime>120</castTime>
-		<range>10</range>
+		<castTime>60</castTime>
+		<range>15</range>
 		<cooldownTime>5000</cooldownTime>
 		<iconPath>ui/commands/GR_Pounce</iconPath>
 	</VFECore.Abilities.AbilityDef>
@@ -317,8 +317,28 @@
 		<defName>GR_SlowFlyer</defName>
 		<thingClass>VFECore.Abilities.AbilityPawnFlyer</thingClass>
 		<pawnFlyer>
-			<flightDurationMin>1</flightDurationMin>
-			<flightSpeed>10</flightSpeed>
+			<flightDurationMin>0.5</flightDurationMin>
+			<flightSpeed>15</flightSpeed>
+		</pawnFlyer>
+	</ThingDef>
+	<VFECore.Abilities.AbilityDef>
+		<defName>GR_StraightCharge</defName>
+		<label>charge</label>
+		<description>This hybrid can charge into combat, quickly closing the distance between it and its enemies and damaging them.</description>
+		<abilityClass>GeneticRim.Ability_Charge</abilityClass>
+		<targetMode>Pawn</targetMode>
+		<castTime>60</castTime>
+		<power>45</power>
+		<range>15</range>
+		<cooldownTime>5000</cooldownTime>
+		<iconPath>ui/commands/GR_StraightCharge</iconPath>
+	</VFECore.Abilities.AbilityDef>
+	<ThingDef ParentName="PawnFlyerBase">
+		<defName>GR_StraightFlyer</defName>
+		<thingClass>GeneticRim.AbilityStraightPawnFlyer</thingClass>
+		<pawnFlyer>
+			<flightDurationMin>0.5</flightDurationMin>
+			<flightSpeed>15</flightSpeed>
 		</pawnFlyer>
 	</ThingDef>
 </Defs>

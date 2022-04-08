@@ -4,9 +4,9 @@
 
 	<RecipeDef>
 		<defName>GR_CompressedChemfuelToFuel</defName>
-		<label>make chemfuel from compressed chemfuel</label>
-		<description>Make a batch of chemfuel by converting compressed chemfuel.</description>
-		<jobString>Refining chemfuel from compressed chemfuel.</jobString>
+		<label>make chemfuel from deepchem</label>
+		<description>Make a batch of chemfuel by converting deepchem.</description>
+		<jobString>Refining chemfuel from deepchem.</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>4000</workAmount>

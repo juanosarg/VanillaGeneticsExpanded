@@ -1,12 +1,14 @@
-﻿namespace GeneticRim
+﻿using System;
+using RimWorld;
+using Verse;
+
+namespace GeneticRim
 {
-    using System;
-    using RimWorld;
-    using Verse;
+   
 
     public class CompHybrid : ThingComp
     {
-        public QualityCategory quality;
+        public QualityCategory quality = QualityCategory.Normal;
 
         public float GetStatFactor(StatDef stat)
         {

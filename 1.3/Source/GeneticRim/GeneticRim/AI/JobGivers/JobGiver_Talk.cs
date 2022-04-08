@@ -11,7 +11,12 @@ namespace GeneticRim
 
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-			
+
+            if (pawn.Faction == null)
+            {
+				return null;
+            }
+
 			if (!(from p in pawn.Map.mapPawns.SpawnedPawnsInFaction(pawn.Faction)
 				  where !p.NonHumanlikeOrWildMan() && p != pawn && p.Position.InHorDistOf(pawn.Position, MaxTalkingDistance) && pawn.GetRoom() == p.GetRoom() && !p.Position.IsForbidden(pawn) && p.CanCasuallyInteractNow()
 				  select p).TryRandomElement(out var result))

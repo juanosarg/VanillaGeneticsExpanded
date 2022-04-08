@@ -43,6 +43,7 @@ namespace GeneticRim
 		public static ThingDef         GR_ParagonInsectoid;
 		public static ThingDef         GR_TissueGrowingVat;
 		public static ThingDef         GR_SlowFlyer;
+		public static ThingDef         GR_StraightFlyer;
 
 
 		public static PawnKindDef      GR_ArchotechCentipede;

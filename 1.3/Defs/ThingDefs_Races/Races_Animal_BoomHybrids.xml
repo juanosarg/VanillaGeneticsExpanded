@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomabear</defName>
 		<label>boomabear</label>
-		<description>Originally intended as a way to make boomalopes more combat viable, their powerful muscles have instead been focused on compressing its produced chemfuel as a way to store greater amounts of chemfuel without care of how dangerous it is.\n\nA boomalope hybrid with recessive ursine genes. Consumes more than twice as much compared to a boomalope but produces compressed chemfuel instead. They’re also capable of defending themselves should any predator be foolish enough to go after them.</description>
+		<description>Originally intended as a way to make boomalopes more combat viable, their powerful muscles have instead been focused on compressing its produced chemfuel as a way to store greater amounts of chemfuel without care of how dangerous it is.\n\nA boomalope hybrid with recessive ursine genes. Consumes more than twice as much compared to a boomalope but produces deepchem instead. They’re also capable of defending themselves should any predator be foolish enough to go after them.</description>
 		<statBases>
 			<MoveSpeed>3.8</MoveSpeed>
 			<ComfyTemperatureMin>-35</ComfyTemperatureMin>
@@ -338,7 +338,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomffalo</defName>
 		<label>boomffalo</label>
-		<description>People love efficiency and having one thing to cover all their needs. Well this isn’t it, but it gets damn close. The chemfuel sacs have mixed with milk-producing glands, which make for a milk that smells like pure gasoline and could almost power a vehicle.\n\nA boomalope hybrid with recessive muffalo genes. Has a large appetite due to it producing multiple products, namely compressed chemfuel, thin wool and an unusual milk that shares properties with Chemshine.</description>
+		<description>People love efficiency and having one thing to cover all their needs. Well this isn’t it, but it gets damn close. The chemfuel sacs have mixed with milk-producing glands, which make for a milk that smells like pure gasoline and could almost power a vehicle.\n\nA boomalope hybrid with recessive muffalo genes. Has a large appetite due to it producing multiple products, namely deepchem, thin wool and an unusual milk that shares properties with Chemshine.</description>
 		<statBases>
 			<MoveSpeed>3.15</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
@@ -823,7 +823,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomcat</defName>
 		<label>boomcat</label>
-		<description>Combining the frequent nuzzling of a cat and the compressed chemfuel production of a primary boomalope hybrid is surely in no way going to end badly. Better not to ignore them should they complain loudly about wanting dinner.\n\nA boomalope hybrid with recessive feline genes. They make for an interesting companion for those who desire chemfuel production but also want to be able to cuddle said creatures. They can also be butchered to retrieve an internal gland filled with compressed chemfuel.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period.</description>
+		<description>Combining the frequent nuzzling of a cat and the deepchem production of a primary boomalope hybrid is surely in no way going to end badly. Better not to ignore them should they complain loudly about wanting dinner.\n\nA boomalope hybrid with recessive feline genes. They make for an interesting companion for those who desire chemfuel production but also want to be able to cuddle said creatures. They can also be butchered to retrieve an internal gland filled with deepchem.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<ComfyTemperatureMin>-25</ComfyTemperatureMin>

@@ -91,6 +91,17 @@
 			<li>GR_Catrabbit</li>
 			<li>GR_Catffalo</li>
 			<li>GR_Catwolf</li>
+			<li>GR_Bearhorse</li>
+			<li>GR_Boomhorse</li>
+			<li>GR_Chickenhorse</li>
+			<li>GR_Cathorse</li>
+			<li>GR_Molehorse</li>
+			<li>GR_Wolfhorse</li>
+			<li>GR_Muffalohorse</li>
+			<li>GR_Crocorse</li>
+			<li>GR_Spiderhorse</li>
+			<li>GR_Hurseman</li>
+			<li>GR_Thrumhorse</li>
 		</disabledFromQuestsPawns>
 	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
 </Defs>

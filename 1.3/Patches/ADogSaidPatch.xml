@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>A Dog Said... Animal Prosthetics</li>
 		</mods>
-
 		<match Class="PatchOperationSequence">
 			<operations>
-			
-
-			
-		
 				<li Class="PatchOperationAdd">
-					
 					<xpath>/Defs/RecipeDef[@Name = "OldWoundsAnimal"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -103,27 +96,35 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
-
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-			
-
 				<!-- Organ installing recipes == should be most animals -->
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallBionicAnimalStomach surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -200,25 +201,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
-
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallBionicAnimalKidney surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -295,25 +305,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
-
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallBionicAnimalLiver surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -390,25 +409,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
-
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallBionicAnimalLung surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -485,24 +513,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallBionicAnimalHeart surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -579,24 +617,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallAnimalBrainStimulator surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -673,24 +721,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallSpineAnimalBionic surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallSpineAnimalBionic" or defName = "InstallSpineAnimalSimple"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -767,26 +825,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
-
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallJawAnimalBionic surgery <recipeUsers> -->
 					<xpath>/Defs/RecipeDef[defName = "InstallJawAnimalBionic" or defName ="InstallJawAnimalSimple"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -863,26 +929,33 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
-
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallNoseAnimalSimple surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-								
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -893,10 +966,8 @@
 						<li>GR_Boomachicken</li>
 						<li>GR_Boomffalo</li>
 						<li>GR_Boomwolf</li>
-						
 						<li>GR_Bearscarab</li>
 						<li>GR_Boombeetle</li>
-						
 						<li>GR_Muffalopede</li>
 						<li>GR_Thrumbospider</li>
 						<li>GR_Wolfscarab</li>
@@ -906,7 +977,6 @@
 						<li>GR_Muffalowolf</li>
 						<li>GR_Bearodile</li>
 						<li>GR_Boomsnake</li>
-						
 						<li>GR_Muffalokomodo</li>
 						<li>GR_Spidersnake</li>
 						<li>GR_Thrumbolizard</li>
@@ -956,24 +1026,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallBionicEyeAnimal surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -1050,24 +1130,34 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallEarAnimalSimple surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallEarAnimalSimple" or defName ="InstallEarAnimalBionic"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -1144,28 +1234,35 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
-
-
-
 				<!-- Leg installing recipes == should be most animals -->
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallPegLegAnimal surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or defName ="InstallSimpleProstheticLegAnimal" or defName ="InstallBionicLegAnimal"]/recipeUsers</xpath>
 					<value>
 						<li>GR_AberrantFleshbeast</li>
-						<li>GR_ParagonBear</li>						
+						<li>GR_ParagonBear</li>
 						<li>GR_ParagonBoomalope</li>
-						<li>GR_ParagonChicken</li>				
-						<li>GR_ParagonMuffalo</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_ParagonRat</li>		
-						<li>GR_ParagonHorse</li>		
-						<li>GR_ParagonThrumbo</li>		
-						<li>GR_ParagonHumanoid</li>		
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonMuffalo</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_ParagonRat</li>
+						<li>GR_ParagonHorse</li>
+						<li>GR_ParagonThrumbo</li>
+						<li>GR_ParagonHumanoid</li>
 						<li>GR_ParagonFeline</li>
 						<li>GR_ParagonInsectoid</li>
 						<li>GR_Bearalope</li>
@@ -1242,24 +1339,28 @@
 						<li>GR_Catrabbit</li>
 						<li>GR_Catffalo</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Boomhorse</li>
+						<li>GR_Chickenhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Molehorse</li>
+						<li>GR_Wolfhorse</li>
+						<li>GR_Muffalohorse</li>
+						<li>GR_Crocorse</li>
+						<li>GR_Spiderhorse</li>
+						<li>GR_Hurseman</li>
+						<li>GR_Thrumhorse</li>
 					</value>
 				</li>
-
-
-
-
-
-
-
 				<!-- Tail installing recipe == Only for animal with tail-->
 				<li Class="PatchOperationAdd">
 					<!-- "Inserting animal defNames into InstallSimpleProstheticTailAnimal surgery <recipeUsers>" -->
 					<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
 					<value>
-						<li>GR_ParagonChicken</li>					
-						<li>GR_ParagonWolf</li>					
-						<li>GR_ParagonIguana</li>					
-						<li>GR_Bearwolf</li>			
+						<li>GR_ParagonChicken</li>
+						<li>GR_ParagonWolf</li>
+						<li>GR_ParagonIguana</li>
+						<li>GR_Bearwolf</li>
 						<li>GR_Chickenbear</li>
 						<li>GR_Chickenlope</li>
 						<li>GR_Chickenffalo</li>
@@ -1274,8 +1375,8 @@
 						<li>GR_Thrumbochicken</li>
 						<li>GR_Wolfbear</li>
 						<li>GR_Wolfalope</li>
-						<li>GR_Wolffalo</li>			
-						<li>GR_Mechachicken</li>		
+						<li>GR_Wolffalo</li>
+						<li>GR_Mechachicken</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
 						<li>GR_Squirralope</li>
@@ -1284,25 +1385,22 @@
 						<li>GR_Wolfbeaver</li>
 						<li>GR_Bearcat</li>
 						<li>GR_Boomcat</li>
-						<li>GR_Chickencat</li>			
+						<li>GR_Chickencat</li>
 						<li>GR_Wolfcat</li>
-						<li>GR_Snakecat</li>			
+						<li>GR_Snakecat</li>
 						<li>GR_Mechacat</li>
 						<li>GR_Catbear</li>
-						<li>GR_Catalope</li>			
-						<li>GR_Catrabbit</li>			
+						<li>GR_Catalope</li>
+						<li>GR_Catrabbit</li>
 						<li>GR_Catwolf</li>
+						<li>GR_Bearhorse</li>
+						<li>GR_Cathorse</li>
+						<li>GR_Wolfhorse</li>
 					</value>
 				</li>
-
-
-
 			</operations>
 		</match>
-		
 	</Operation>
-
-
 </Patch>
 
 	

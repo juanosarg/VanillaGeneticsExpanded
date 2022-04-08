@@ -11,7 +11,7 @@ namespace GeneticRim
 
 		protected override bool Satisfied(Pawn pawn)
 		{
-			if (pawn.def.tradeTags.Contains("AnimalHumanoidHybrid"))
+			if (pawn.def?.tradeTags?.Contains("AnimalHumanoidHybrid")==true)
 			{
 				return true;
 			}
