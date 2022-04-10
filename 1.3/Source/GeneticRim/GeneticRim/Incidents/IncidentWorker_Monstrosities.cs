@@ -25,7 +25,7 @@ namespace GeneticRim
 
             float totalPoints = parms.points/2;
             Log.Message(parms.points.ToString());
-            HashSet<PawnKindDef> hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race.tradeTags?.Contains("AnimalGenetic") == true) && (x.race.tradeTags?.Contains("AnimalGeneticFailure") == false) && x.defName != "GR_ArchotechCentipede").ToHashSet();
+            HashSet<PawnKindDef> hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race.tradeTags?.Contains("AnimalGenetic") == true) && (x.race.tradeTags?.Contains("AnimalGeneticFailure") == false) && (x.race.tradeTags?.Contains("AnimalGeneticMechanoid") == false)).ToHashSet();
             List<Pawn> list = new List<Pawn>();
 
             PawnKindDef firstPawn;

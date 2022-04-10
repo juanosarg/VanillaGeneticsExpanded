@@ -13,9 +13,7 @@
 		</graphicData>
 		<stackLimit>1</stackLimit>
 		<tradeability>None</tradeability>
-		<statBases>
-			<MarketValue>10000</MarketValue>
-		</statBases>
+		
 		<thingClass>ThingWithComps</thingClass>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<useHitPoints>true</useHitPoints>
@@ -24,6 +22,7 @@
 			<Mass>0.2</Mass>
 			<DeteriorationRate>2.0</DeteriorationRate>
 			<Flammability>0.2</Flammability>
+			<MarketValue>10000</MarketValue>
 		</statBases>
 		<thingCategories>
 			<li>Artifacts</li>

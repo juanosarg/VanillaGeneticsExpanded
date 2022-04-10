@@ -59,14 +59,11 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>5</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
 			</li>
-			
+		
 		</comps>
 		<race>
 			
@@ -85,8 +82,6 @@
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<wildness>0.6</wildness>
 			<lifeExpectancy>2500</lifeExpectancy>
-			<mateMtbHours>10000</mateMtbHours>
-			<gestationPeriodDays>10000</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>
@@ -102,6 +97,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>50</Steel>
@@ -244,6 +240,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>50</Steel>
@@ -387,6 +384,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>25</Steel>
@@ -521,6 +519,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>50</Steel>
@@ -669,6 +668,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>50</Steel>
@@ -803,6 +803,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>10</Steel>
@@ -937,6 +938,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>40</Steel>
@@ -1071,6 +1073,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>35</Steel>
@@ -1207,6 +1210,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>100</Steel>
@@ -1348,6 +1352,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>30</Steel>

@@ -309,7 +309,7 @@ namespace GeneticRim
                 RandomizeAll();
             }
 
-            if(mainResult != null) {
+            if(mainResult != null && genoframe!=null) {
                 if (Widgets.ButtonText(new Rect(inRect.xMax - BottomButtonWidth, inRect.yMax - 32, BottomButtonWidth, 32), "GR_InitiateSynthesis".Translate(),
                                        active: this.genomeDominant != null && this.genomeSecondary != null && this.genoframe != null && mainResult != null))
                 {
