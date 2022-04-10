@@ -60,7 +60,7 @@
 			<li>GR_GeneticEngineering</li>
 		</prerequisites>
 
-		<researchViewX>1</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>1</researchViewY>
 	</ResearchProjectDef>
 	
@@ -75,8 +75,25 @@
 			<li>GR_HybridImplantology</li>
 		</prerequisites>
 
-		<researchViewX>1</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>2</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>GR_GeneticMechahybridization</defName>
+		<label>genetic mechahybridization</label>
+		<tab>GR_GeneticReseach</tab>
+		<techLevel>Spacer</techLevel>
+		<description>Create Biomechanical Lab beacons to find mechahybridizers, and construct mechahybrid antennas to support more mechanoid hybrids.</description>
+		<baseCost>5000</baseCost>
+		<prerequisites>
+			<li>GR_GeneticEngineering</li>
+			<li>GR_GeneticAlteration</li>
+			<li>GR_GeneticDuplication</li>
+		</prerequisites>
+
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 	

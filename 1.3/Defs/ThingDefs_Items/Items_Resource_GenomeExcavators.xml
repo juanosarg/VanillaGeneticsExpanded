@@ -81,19 +81,5 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="GR_GenomeExcavatorBase">
-		<defName>GR_MechanoidChip</defName>
-		<label>todo: mechanoid chip</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; todo</description>
-		<graphicData>
-			<texPath>Things/Item/GR_MechanoidInterfaceChip</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<stackLimit>1</stackLimit>
-		<tradeability>None</tradeability>
-		<statBases>
-			<MarketValue>100</MarketValue>
-		</statBases>
-		
-	</ThingDef>
+	
 </Defs>

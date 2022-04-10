@@ -901,8 +901,8 @@
 				</li>
 			</lifeStageAges>
 			<soundCallIntervalRange>
-				<min>1000</min>
-				<max>2000</max>
+				<min>30000</min>
+				<max>40000</max>
 			</soundCallIntervalRange>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
