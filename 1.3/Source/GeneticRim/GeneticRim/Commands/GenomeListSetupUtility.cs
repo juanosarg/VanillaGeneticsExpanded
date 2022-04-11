@@ -37,6 +37,20 @@ namespace GeneticRim
             };
         }
 
+        public static Command_SetParagonList SetParagonListCommand(Building_Mechahybridizer building, Map map)
+        {
+            return new Command_SetParagonList()
+            {
+                defaultDesc = "GR_SelectParagonToConvertDesc".Translate(),
+                defaultLabel = "GR_SelectParagonToConvert".Translate(),
+                icon = ContentFinder<Texture2D>.Get("ui/commands/MechahybridizeParagon", true),
+                hotKey = KeyBindingDefOf.Misc1,
+                map = map,
+                building = building
+
+            };
+        }
+
 
     }
 }

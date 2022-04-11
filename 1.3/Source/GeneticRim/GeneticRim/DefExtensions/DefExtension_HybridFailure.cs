@@ -1,6 +1,7 @@
-﻿namespace GeneticRim
+﻿using Verse;
+namespace GeneticRim
 {
-    using Verse;
+    
 
     public class DefExtension_HybridFailure : DefModExtension
     {

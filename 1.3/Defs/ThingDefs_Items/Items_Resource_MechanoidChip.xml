@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
 
-	
+
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_MechanoidChip</defName>
 		<label>mechanoid chip</label>
-		<description>This strange stellated octahedron seems to house an assembly of complex computer chips. It appears to be self-powered, and a faint beeping noise emmanates from its core. It is constantly emmiting encoded radio waves, and perhaps these could be suitably amplified if the technology behind it could be properly reverse engineered.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mechanoid chips can only be found in abandoned labs, and can be used to build beomechanical lab beacons, that will allow you to find a biomechanical lab complex, as well as mechahybrid antennas.</description>
+		<description>This strange stellated octahedron seems to house an assembly of complex computer chips. It appears to be self-powered, and a faint beeping noise emanates from its core. It is constantly emitting encoded radio waves, and perhaps these could be suitably amplified if the technology behind it could be properly reverse engineered.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mechanoid chips can only be found in abandoned labs, and can be used to build beomechanical lab beacons, that will allow you to find a biomechanical lab complex, as well as mechahybrid antennas.</description>
 		<graphicData>
 			<texPath>Things/Item/GR_MechanoidInterfaceChip</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<stackLimit>1</stackLimit>
 		<tradeability>None</tradeability>
-		
+
 		<thingClass>ThingWithComps</thingClass>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<useHitPoints>true</useHitPoints>
@@ -31,5 +31,6 @@
 		<tradeTags>
 			<li>ExoticMisc</li>
 		</tradeTags>
+		
 	</ThingDef>
 </Defs>

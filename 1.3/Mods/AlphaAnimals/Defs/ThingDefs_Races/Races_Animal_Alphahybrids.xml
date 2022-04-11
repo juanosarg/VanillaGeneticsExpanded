@@ -254,9 +254,9 @@
 				<resourceAmount>33</resourceAmount>
 				<customResourceString>BoomthreadDesc</customResourceString>
 			</li>
-			<li Class="MVCF.Comps.CompProperties_RandomVerbs ">
+			<!--<li Class="MVCF.Comps.CompProperties_RandomVerbs ">
 				<meleeChance>0.5</meleeChance>
-			</li>
+			</li>-->
 			
 			
 		</comps>
@@ -1397,9 +1397,9 @@
 				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
 				<eggCountRange>1</eggCountRange>
 			</li>
-			<li Class="MVCF.Comps.CompProperties_RandomVerbs ">
+			<!--<li Class="MVCF.Comps.CompProperties_RandomVerbs ">
 				<meleeChance>0.5</meleeChance>
-			</li>
+			</li>-->
 		</comps>
 		<race>
 			

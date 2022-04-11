@@ -277,7 +277,7 @@
 	<RecipeDef ParentName="GR_BoosterRecipeBase">
 		<defName>GR_CraftStabilizator</defName>
 		<label>Craft Stabilizator</label>
-		<description>Craft an stabilizator.</description>
+		<description>Craft a stabilizator.</description>
 		<ingredients>
 			<li>
 				<filter>

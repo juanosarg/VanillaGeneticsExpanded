@@ -1622,5 +1622,55 @@
 		</comps>
 
 	</ThingDef>
+	
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_Ruined_Mechahybridizer</defName>
+		<label>ancient mechahybridizer</label>
+		<description>The broken maws of this ancient factory will never be able to close again.</description>
+		<size>(5,5)</size>
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_Ruined_Mechahybridizer</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>10000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+	</ThingDef>
+	
+	<ThingDef ParentName="GR_JunkBuildingBase">
+		<defName>GR_Ruined_Mechahybrid_Antenna</defName>
+		<label>ancient mechahybrid antenna</label>
+		<description>A collapsed antenna that is completely unable of transmitting anything ever again.</description>
+		<size>(3,3)</size>
+		<rotatable>false</rotatable>
+		<fillPercent>0.50</fillPercent>
+		<graphicData>
+			<texPath>Things/Building/Ruined/GR_Ruined_Mechahybrid_Antenna</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5, 5)</drawSize>
+		</graphicData>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+	</ThingDef>
 
 </Defs>

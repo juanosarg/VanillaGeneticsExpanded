@@ -607,10 +607,43 @@
 
 
 
+<KCSG.SymbolDef>
+  <defName>GR_MechLabWall</defName>
+  <thing>GR_MechLabWall</thing>
+</KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>GR_RustedMechTile</defName>
+  <isTerrain>true</isTerrain>
+  <terrain>GR_RustedMechTile</terrain>
+</KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>GR_MechTile</defName>
+  <isTerrain>true</isTerrain>
+  <terrain>GR_MechTile</terrain>
+</KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>GR_Ruined_Mechahybrid_Antenna</defName>
+  <thing>GR_Ruined_Mechahybrid_Antenna</thing>
+</KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>GR_Mechafuse</defName>
+  <thing>GR_Mechafuse</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_Mechahybridizer</defName>
+  <thing>GR_Mechahybridizer</thing>
+</KCSG.SymbolDef>
+
+<KCSG.SymbolDef>
+  <defName>GR_Ruined_Mechahybridizer_North</defName>
+  <thing>GR_Ruined_Mechahybridizer</thing>
+  <rotation>North</rotation>
+</KCSG.SymbolDef>
 
 
 

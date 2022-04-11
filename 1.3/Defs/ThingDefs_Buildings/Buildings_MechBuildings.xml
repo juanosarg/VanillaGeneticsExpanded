@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ThingDef Name="GR_MechBuildingBase" Abstract="true" ParentName="BuildingBase">
+
+	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>GR_BiomechanicalLabBeacon</defName>
+		<label>biomechanical lab beacon</label>
+		<description>This strange stellated octahedron seems to house an assembly of complex computer chips. It appears to be self-powered, and a faint beeping noise emanates from its core. The radio waves it is constantly emitting are being decoded, but the process seems to have destabilized its power source, and it will blow up soon!</description>
+		<thingClass>GeneticRim.Building_BiomechanicalLabBeacon</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Mech/BiomechanicalLabBeacon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<designationCategory>GR_GeneticsTab</designationCategory>
+		<uiIconScale>0.75</uiIconScale>
+		<rotatable>false</rotatable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<passability>Standable</passability>
+		<fillPercent>1</fillPercent>
+		<costList>
+			<GR_MechanoidChip>1</GR_MechanoidChip>
+		</costList>
+		<statBases>
+			<WorkToBuild>20000</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<building>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>false</ai_chillDestination>
+			<artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		</building>
+		<researchPrerequisites>
+			<li>GR_GeneticMechahybridization</li>
+		</researchPrerequisites>
+	</ThingDef>
+	
+	<ThingDef ParentName="GR_MechBuildingBase">
+		<defName>GR_Mechahybridizer</defName>
+		<label>mechahybridizer</label>
+		<thingClass>GeneticRim.Building_Mechahybridizer</thingClass>
+		<description>todo.</description>
+		<graphicData>
+			<texPath>Things/Building/Mech/Mechahybridizer_Open</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<rotatable>false</rotatable>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>4000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			
+		</statBases>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-3)</interactionCellOffset>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<size>(5,5)</size>
+		
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>GR_Mechafuse</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="GR_MechBuildingBase">
+		<defName>GR_Mechafuse</defName>
+		<label>mechafuse</label>
+		<description>todo</description>
+		<thingClass>GeneticRim.Building_Mechafuse</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Mech/Mechafuse</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<uiIconScale>0.75</uiIconScale>
+		<rotatable>false</rotatable>
+		
+		<drawerType>RealtimeOnly</drawerType>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>4000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(1,1)</size>
+		<comps>
+			<li Class="CompProperties_Facility">
+				
+				<maxSimultaneous>10</maxSimultaneous>
+				<maxDistance>15</maxDistance>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+	</ThingDef>
+	
+</Defs>

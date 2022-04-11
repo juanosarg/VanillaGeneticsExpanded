@@ -36,4 +36,10 @@
 		<reportString>carrying TargetA to TargetB.</reportString>
 		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
 	</JobDef>
+	<JobDef>
+		<defName>GR_ParagonConversionJob</defName>
+		<driverClass>GeneticRim.JobDriver_ParagonConversion</driverClass>
+		<reportString>carrying TargetA to TargetB.</reportString>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+	</JobDef>
 </Defs>

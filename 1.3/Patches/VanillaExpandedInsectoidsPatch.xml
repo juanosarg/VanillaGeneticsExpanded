@@ -47,38 +47,38 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName= "GR_Chickenspider"]/comps/li[@Name="GR_ChickenspiderEggComp"]/eggUnfertilizedDef</xpath>
 					<value>
-						
-							<eggUnfertilizedDef>VFEI_EggInsectoidUnfertilized</eggUnfertilizedDef>		
-						
+
+						<eggUnfertilizedDef>VFEI_EggInsectoidUnfertilized</eggUnfertilizedDef>		
+
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName= "GR_Chickenspider"]/comps/li[@Name="GR_ChickenspiderSilkComp"]/resourceDef</xpath>
 					<value>
-						
-							<resourceDef>VFEI_Spidersilk</resourceDef>
-						
+
+						<resourceDef>VFEI_Spidersilk</resourceDef>
+
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName= "GR_Muffalopede"]/comps/li[@Name="GR_MuffalopedeJellyComp"]/resourceDef</xpath>
 					<value>
-						
-							<resourceDef>VFEI_RoyalInsectJelly</resourceDef>
-						
+
+						<resourceDef>VFEI_RoyalInsectJelly</resourceDef>
+
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName= "GR_Muffalopede"]/comps/li[@Name="GR_MuffalopedeChitinComp"]/woolDef</xpath>
 					<value>
-						
-							<woolDef>VFEI_Chitin</woolDef>
-						
+
+						<woolDef>VFEI_Chitin</woolDef>
+
 					</value>
 				</li>
-				
+
 
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs</xpath>
@@ -124,7 +124,7 @@
 							<skillRequirements>
 								<Intellectual>5</Intellectual>
 							</skillRequirements>
-							
+
 						</RecipeDef>
 
 						<RecipeDef>
@@ -167,7 +167,7 @@
 							<skillRequirements>
 								<Intellectual>5</Intellectual>
 							</skillRequirements>
-							
+
 						</RecipeDef>
 
 						<RecipeDef>
@@ -210,20 +210,41 @@
 							<skillRequirements>
 								<Intellectual>5</Intellectual>
 							</skillRequirements>
-							
+
 						</RecipeDef>
 
-						
+
 
 
 
 					</value>
 				</li>	
-				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<ResearchProjectDef>
+							<defName>GR_InsectoidBioengineering</defName>
+							<label>insectoid bioengineering</label>
+							<tab>GR_GeneticReseach</tab>
+							<techLevel>Industrial</techLevel>
+							<description>Construct the bio-engineering incubator to create new lab-grown insectoids.</description>
+							<baseCost>2500</baseCost>
+							<prerequisites>
+								<li>Electricity</li>
+							</prerequisites>
+
+							<researchViewX>0</researchViewX>
+							<researchViewY>3</researchViewY>
+						</ResearchProjectDef>
+					</value>
+				</li>	
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName="VFEI_BioengineeringIncubator"]</xpath>
 					<value>
 						<designationCategory>GR_GeneticsTab</designationCategory>
+						<researchPrerequisites>
+							<li>GR_InsectoidBioengineering</li>
+						</researchPrerequisites>
 					</value>
 				</li>	
 				<li Class="PatchOperationAdd">
@@ -232,8 +253,8 @@
 						<GR_GenoframeLegendary>1</GR_GenoframeLegendary>
 					</value>
 				</li>				
-				
-				
+
+
 
 
 

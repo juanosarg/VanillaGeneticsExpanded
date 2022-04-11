@@ -80,6 +80,36 @@
     </costList>
    
   </TerrainDef>
+  
+  <TerrainDef ParentName="GR_FloorBase">
+    <defName>GR_MechTile</defName>
+    <label>mech laboratory tile</label>
+    <renderPrecedence>231</renderPrecedence>
+    <description>Mech lab tiles.</description>
+    <texturePath>Terrain/Surfaces/GR_MechTile</texturePath>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+   
+  </TerrainDef>
+  
+   <TerrainDef ParentName="GR_FloorBase">
+    <defName>GR_RustedMechTile</defName>
+    <label>rusted mech laboratory tile</label>
+    <renderPrecedence>231</renderPrecedence>
+    <description>Rusted mech lab tiles.</description>
+    <texturePath>Terrain/Surfaces/GR_RustedMechTile</texturePath>
+    <statBases>
+      <WorkToBuild>300</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>1</Steel>
+    </costList>
+   
+  </TerrainDef>
 
  
 

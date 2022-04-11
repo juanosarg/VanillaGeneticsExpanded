@@ -123,7 +123,18 @@
 		</requiredCapacities>
 	</WorkGiverDef>
 	
-	
+	<WorkGiverDef>
+		<defName>GR_ParagonConversion</defName>
+		<label>bringing paragon to convert</label>
+		<giverClass>GeneticRim.WorkGiver_ParagonConversion</giverClass>
+		<workType>GR_Genetics</workType>
+		<verb>bring paragon to</verb>
+		<gerund>bringing paragon to</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 	
 	
 

@@ -5,10 +5,10 @@ using Verse;
 using Verse.AI;
 namespace GeneticRim
 {
-	public class JobDriver_ArchotechDNAExtraction : JobDriver
+	public class JobDriver_ParagonConversion : JobDriver
 	{
-		
-	
+
+
 
 		public override bool TryMakePreToilReservations(bool errorOnFailed)
 		{
@@ -39,33 +39,13 @@ namespace GeneticRim
 			use.initAction = delegate
 			{
 				Pawn pawn = job.targetA.Pawn;
-				this.Map.GetComponent<ArchotechExtractableAnimals_MapComponent>().RemoveAnimalToCarry(pawn);
+				this.Map.GetComponent<ArchotechExtractableAnimals_MapComponent>().RemoveParagonToCarry(pawn);
 
-				float ParagonOrHybridFactor = 0.5f;
-
-				if (pawn.kindDef.GetModExtension<DefExtension_Hybrid>()?.dominantGenome == pawn.kindDef.GetModExtension<DefExtension_Hybrid>()?.secondaryGenome)
-				{
-					ParagonOrHybridFactor = 1f;
-				}
+				Building_Mechahybridizer building = (Building_Mechahybridizer)job.targetB.Thing;
+				building.TryAcceptThing(pawn);
+				building.progress = 0;
+				building.Map.mapDrawer.MapMeshDirty(building.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
 				
-
-				float DNAExtractionFactor = pawn.TryGetComp<CompHybrid>()?.GetDNAExtractionFactor() ?? 0f;
-
-				Building_DNAStorageBank building = (Building_DNAStorageBank)job.targetB.Thing;
-
-				float totalProgress = building.progress + (DNAExtractionFactor * ParagonOrHybridFactor);
-
-                if (totalProgress >= 1)
-                {
-					building.progress = 1;
-
-                }
-                else { 
-					building.progress += DNAExtractionFactor * ParagonOrHybridFactor; 
-				}
-				
-
-				pawn.Destroy();
 
 			};
 			use.defaultCompleteMode = ToilCompleteMode.Instant;

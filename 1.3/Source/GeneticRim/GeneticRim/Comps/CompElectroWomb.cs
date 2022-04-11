@@ -113,7 +113,7 @@ namespace GeneticRim
 
                             if (extension?.isController == true || GeneticRim_Mod.settings.GR_MakeAllHybridsControllable)
                             {
-                                pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
+                                
                             }
 
                             if (extension?.addedHediffs != null)

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<SitePartDef>
+		<defName>GR_BiomechanicalLab</defName>
+		<label>biomechanical lab complex</label>
+		<description>A recently-discovered biomechanical lab complex.</description>
+		<siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+		<expandingIconTexture>ui/BiomechanicalLabComplex</expandingIconTexture>
+		<tags>
+			<li>GR_BiomechanicalLab</li>
+		</tags>
+	</SitePartDef>
+	<GenStepDef>
+		<defName>GR_BiomechanicalLab</defName>
+		<linkWithSite>GR_BiomechanicalLab</linkWithSite>
+		<order>450</order>
+		<genStep Class="KCSG.GenStep_CustomStructureGen">
+			<structureLayoutDefs>
+				<li>GR_BiomechanicalLabAlpha</li>
+				
+			</structureLayoutDefs>
+			<shouldRuin>false</shouldRuin>
+			<filthTypes>
+				<li>Filth_Dirt</li>
+				<li>Filth_Trash</li>
+				<li>Filth_RubbleBuilding</li>
+			</filthTypes>
+		</genStep>
+	</GenStepDef>
+</Defs>

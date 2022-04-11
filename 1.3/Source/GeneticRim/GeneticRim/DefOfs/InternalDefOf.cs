@@ -44,7 +44,7 @@ namespace GeneticRim
 		public static ThingDef         GR_TissueGrowingVat;
 		public static ThingDef         GR_SlowFlyer;
 		public static ThingDef         GR_StraightFlyer;
-
+		public static ThingDef         GR_BiomechanicalLabBeacon;
 
 		public static PawnKindDef      GR_ArchotechCentipede;
 
@@ -70,9 +70,11 @@ namespace GeneticRim
         public static JobDef           GR_InsertGrowthCell;
 		public static JobDef           GR_InsertArchotechGrowthCell;
 		public static JobDef           GR_ArchotechDNAExtractionJob;
+		public static JobDef           GR_ParagonConversionJob;
 		public static JobDef           GR_HumanoidHybridTalk;
 
 		public static SoundDef         GR_Pop;
+		public static SoundDef         GR_Beep;
 
 		public static DamageDef        GR_Acid;
 
@@ -83,6 +85,7 @@ namespace GeneticRim
 		public static InteractionDef   GR_TalkingToHumans;
 
 		public static QuestScriptDef   GR_OpportunitySite_AbandonedLab;
+		public static QuestScriptDef   GR_OpportunitySite_BiomechanicalLab;
 
 		[MayRequireIdeology]
 		public static PreceptDef       GR_WorktableSpeeds_Implants;

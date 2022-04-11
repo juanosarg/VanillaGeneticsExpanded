@@ -191,6 +191,10 @@
 				<dominantGenome>GR_UrsineGenetic</dominantGenome>
 				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
 			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechabear</mechToConvertTo>
+				
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Boomalope -->

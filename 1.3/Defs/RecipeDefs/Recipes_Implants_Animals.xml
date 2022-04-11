@@ -219,7 +219,7 @@
 	</RecipeDef>
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
 		<defName>GR_MechaTail</defName>
-		<label>animal Implant: reinfoced tail</label>
+		<label>animal Implant: reinforced tail</label>
 		<description>Craft an advanced animal tail, even more powerful than a natural one. Note that only creatures with a natural tail can use this.</description>
 		<jobString>Making reinforced tail implant.</jobString>
 		<ingredients>
@@ -987,7 +987,7 @@
 	<RecipeDef ParentName="GR_HybridProsthesisBase">
 		<defName>GR_ChitinousHeart</defName>
 		<label>animal Implant: chitinous heart</label>
-		<description>Craft a bionic heart implant using a reinforced shell of insectoid chitin for protection. This is a heart designed to take a beating. Pun intended, but it's the last one, I promise .</description>
+		<description>Craft a bionic heart implant using a reinforced shell of insectoid chitin for protection. This is a heart designed to take a beating. Pun intended, but it's the last one, I promise.</description>
 		<jobString>Making chitinous heart implant.</jobString>
 		<ingredients>
 			<li>

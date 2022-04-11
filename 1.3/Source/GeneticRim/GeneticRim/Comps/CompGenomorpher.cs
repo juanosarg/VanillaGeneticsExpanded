@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
+using RimWorld;
+using UnityEngine;
 
 namespace GeneticRim
 {
-    using RimWorld;
-    using UnityEngine;
+    
 
     [StaticConstructorOnStartup]
     public class CompGenomorpher : ThingComp

@@ -17,7 +17,7 @@
 	<RecipeDef ParentName="GR_ExcavatorRecipeBase">
 		<defName>GR_CraftGenomeExcavator</defName>
 		<label>Craft Genome excavator</label>
-		<description>Craft an genome excavator to extract genomes from tamed or dead animals. This excavator can extract tier 1 and tier 2 genomes.</description>
+		<description>Craft a genome excavator to extract genomes from tamed or dead animals. This excavator can extract tier 1 and tier 2 genomes.</description>
 		<ingredients>
 			<li>
 				<filter>
