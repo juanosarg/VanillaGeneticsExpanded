@@ -1674,7 +1674,7 @@
 		<defName>GR_Thrumhorse</defName>
 		<label>thrumhorse</label>
 	
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>A very nice combination of two highly adaptive baseline creatures which arguably results in the best riding companion man could ask for. While this isn’t apparent in their speed, it definitely is so once a rider experiences the thundering beats of this horsey positively barreling through entire forests and marshland in order to earn its next sugar cube the size of a fist.\n\nA colossal hybrid with recessive equine genes. While they have a lower muscle-to-fat ratio compared to their progenitor, the overall placement and shape of the horn vastly reduces their combat efficiency. Instead, they more than make up for this shortfall with an incredible endurance even compared to paragons. An excellent riding companion that is easier to train and can even carry an acceptable amount of luggage, the majority of which contains feed.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM. Always starts as draftable, even if not using a controller booster to create it. Charge ability: when drafted, the player can use the charge ability to make the hybrid jump towards a target and cause massive damage with its horn to a single random body part. The ability can be triggered every 2 hours.</description>
 		<statBases>
 			<MoveSpeed>5.8</MoveSpeed>
 			

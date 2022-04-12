@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearhorse</defName>
 		<label>bearhorse</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>While they’re surprisingly tireless when they have a home to rest at, these manned mares are quite reluctant to hurry along when made to carry loads in a caravan. Their body’s efficiency means they’ll get a task done when it needs to, and not a moment sooner. What makes it worse is that they’re smart enough to know that they’re cute - and powerful - enough to get away with it.\n\nAn equine hybrid with recessive ursine genes. The inherent hibernating nature of bears has combined with the high energy of horses to create this particular hybrid that requires little in the way of rest and a much more efficient and versatile digestive system. They are quite a bit slower as a consequence, along with their higher body mass.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>850</MarketValue>
@@ -209,7 +209,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Boomhorse</defName>
 		<label>boomhorse</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>Inherently less effective at refining chemfuel when allowed to rest at its leisure while also being a good pack animal and riding companion. During distant travels, the long periods of engagement for their muscles actively puts their glands into overdrive. Quite effective should there be a vehicle that uses chemfuel, but don’t ask how that would work out. Maybe it’s the desire to compete against machinery or knowing that if the vehicle breaks down it's gonna have to do all that bloody walking again.\n\nAn equine hybrid with recessive boomalope genes. While they are comparatively slower, their inherent need to exercise means that their capability in producing chemfuel is severely hampered if their muscles aren’t engaged for long periods of time. When travelling as part of a caravan, their chemfuel production speed is effectively quadrupled.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>3.75</MoveSpeed>
 			<MarketValue>750</MarketValue>
@@ -400,7 +400,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Chickenhorse</defName>
 		<label>chickenhorse</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>An agile avian that most people expect to be more yellow in colour and go “wark” every now and then. A delightfully speedy mount that can pull off some impressive turns, this hybrid has been bred even further with other species to make for more colourful and genetically stable bird mounts. Some speculate that this particular creature is the original ancestor of the Ave, while the Royal Ave came from those that were bred more for plumage than performance.\n\nAn equine hybrid with recessive avian genes. Comparatively smaller than a purebred, but incredibly fast both in a singular location and as part of a caravan. A rather unusual hybrid in that it reproduces very slowly in a safe, similar environment, however this changes on caravan trips. Constant new sights and experiences puts their reproductive cycle into overdrive as it tries to spread its species over a broad horizon, however these eggs are genetically sterile so that they instead provide a healthy protein supplement for those who can only gather fruits and vegetables.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>7.5</MoveSpeed>
 			<MarketValue>550</MarketValue>
@@ -589,7 +589,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Cathorse</defName>
 		<label>cathorse</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>Tell me, do you want a cat large enough to ride at speeds that would be illegal on most urbworld city streets? Of course you do, and if you say otherwise you’re a coward. This ferocious feline is ready to tear up the track and hunt prey comically smaller than itself. They’re also incredibly smart and have a tendency to stalk their owners when their backs are turned. Don’t worry though, it only wants to pin you down and drown you in fur and saliva.\n\nAn equine hybrid with recessive feline genes. Quite durable and combat capable for a pack animal, they can be drafted to execute at-will pouncing to close distance with the enemy. They are only slightly less effective as horses in riding but have better stamina, in exchange they are pure carnivores so their diet can be rather restrictive.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM. Like all cat hybrids, they have an improved melee dodge ability, making them perfect for the front lines, and a short nuzzle period. Always starts as draftable, even if not using a controller booster to create it. Pounce ability: when drafted, the player can use the pounce ability to make the hybrid jump around. The ability can be triggered every 2 hours.</description>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
 			<MarketValue>750</MarketValue>
@@ -785,7 +785,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Molehorse</defName>
 		<label>molehorse</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>An oversized naked mole-rat with frighteningly large chompers, however they’re not as dangerous as they look as they are quite timid and use said teeth for chewing up tough vegetables. Objectively cute when you give them a good brushing, but have a nasty habit of overshooting hand-fed snacks and biting on hands due to poor eyesight. A saddle is recommended for riding, as there is little fat and no fur to cushion their boney structure and loose skin.\n\nAn equine hybrid with recessive rodent genes. Quite small and lacking in durability, but surprisingly capable as a mount. Exceedingly filthy for an animal that eats so little, however this is tied to its rapid gestation and faint regenerative capabilities.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<MarketValue>750</MarketValue>
@@ -965,7 +965,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Wolfhorse</defName>
 		<label>wolfhorse</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>Combining two of the most renowned endurance hunters in human history has resulted in man’s best friend whom you can also ride into battle with. Needless to say, the creation of this capricious canine was celebrated by many wealthy families who otherwise caused unfortunate accidents when they tried to ride their household dog when they clearly became too old or heavy for them to carry. What was not appreciated was their tendency to overestimate their - admittedly formidable - predatory capabilities.\n\nAn equine hybrid with recessive canine genes. A fast and ferocious dedicated carnivore sharing the hyperactive nature of sled dogs. Requires slightly more frequent retraining compared to similar hybrids but is overall better due to not having any extra features.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>6.5</MoveSpeed>
 			<MarketValue>850</MarketValue>
@@ -1138,7 +1138,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffalohorse</defName>
 		<label>muffalohorse</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>Belligerent bulls with a penchant for the tastes of the wild wastes. A herd of these creatures can be occasionally seen trawling through regions, consuming practically all edible vegetation and leaving fertile waste in their path. Some argue that this is the ideal form of muffalo for nomad tribes, as they produce everything they need to survive winters and are large enough to feed said tribe through the harshest of seasons.\n\nAn equine hybrid with recessive muffalo genes. Very unusual in that it doesn’t help a caravan speed along, largely due to it excessively foraging and eating various vegetation from new locations, as well as roughage to help with digestion. The benefit from this behaviour is that this stimulation is the only way it’ll produce milk and wool, so herds of these hybrids can be taken on a long journey to provide produce vital to small and starting colonies.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<MarketValue>950</MarketValue>
@@ -1327,7 +1327,7 @@
 		<defName>GR_Crocorse</defName>
 		<label>crocorse</label>
 	
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>A rather muscular hybrid with an impressively long snout, this ravenous reptile combines adaptability with mobility. Unusually, its terrifyingly long maw filled with curved teeth is not used to tear flesh to eat but to imbue toxins and the required muscles to spray those toxins out. This means they have to eat a lot more due to their subpar digestive system and their favourite activities include lounging in the sun and moving with disturbing quickness when the dinner bell is sounded. Also it… kinda looks like a weird shoe if you look at it, but, uh, don’t put your foot in there.\n\nAn equine hybrid with recessive reptile genes. A rather slow hybrid for its category, its main advantage is that it is very durable and it has a ranged toxic breath attack. Quite durable and comfortable in a wide range of temperatures, they present a hidden danger for those foolish enough to attack an otherwise easy target.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<MarketValue>950</MarketValue>
@@ -1533,7 +1533,7 @@
 		<defName>GR_Spiderhorse</defName>
 		<label>spiderhorse</label>
 	
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>Arachnophobia is no joke for many people, and the researcher that created this armoured arachnid had an inherent desire to share their fear with others. Granted they passed out, frothing at the mouth, when the creature emerged from the pod, but damn it it’s hard to argue with results in a riding companion that can not only keep up with the competition, but also disable them and eat them on the go as a tasty snack.\n\nAn equine hybrid with recessive insectoid genes. A rather slow and filthy hybrid of this category, but it works very well as a ride due to the multiple legs easing the burden of long distance travel inherent to caravaning. However, their main advantage is that they are also incredibly capable in combat, being armour plated and capable of both high damage and ranged stunning attacks by shooting globs of sticky threads.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<MarketValue>850</MarketValue>
@@ -1678,7 +1678,7 @@
 		<defName>GR_Hurseman</defName>
 		<label>hurseman</label>
 	
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
+		<description>An extremely cursed riding companion that can vocally explain in excruciating detail the troubles it goes through as a beast of burden. Most people don’t like to be reminded that animals are capable of feeling, especially if they can vocalise themselves in human speech. Don’t be surprised if no one wants to eat or wear butchered parts of this creature, as it looks like a misshapen human with cloven hands.\n\nAn equine hybrid with recessive humanoid genes. Very intelligent and relatively low maintenance, they make for a decent rideable pack animal. Their main advantage comes in their ability to cheer up the travellers in a caravan, however it doesn’t understand social cues and can throw out some devastating social commentary.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM. Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). The hurseman engages caravan members too while caravaning, causing mood boosts (up to +15). 10% of the time however it will insult them, making them loose mood (up to -30). If using Ideology, humanoid hybrids are subject to precepts.</description>
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<MarketValue>750</MarketValue>

@@ -1595,7 +1595,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_ParagonHumanoid</defName>
 		<label>humanoid paragon</label>
-		<description>Reject humanity, return to monkey.</description>
+		<description>Reject humanity, return to monkey..\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<MarketValue>850</MarketValue>
