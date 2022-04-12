@@ -292,7 +292,7 @@
 		<defName>GR_GeneticExtractionTable</defName>
 		<label>genome extractor table</label>
 		<thingClass>Building_WorkTable</thingClass>
-		<description>A specialized extraction module that is equipped to extract the genomes from a subject’s corpse. The material is converted into a soupish-mixture which is then condensed into the relevant genome. Processing speed is influenced by intelligence, as it relies on knowing which button to press, when to press it and where to find it under the intimidating number of submenus.</description>
+		<description>A specialized extraction module that is equipped to extract the genomes from a subject’s corpse. The material is converted into a soupish-mixture which is then condensed into the relevant genome. Processing speed is influenced by intelligence, as it relies on knowing which button to press, when to press it and where to find it under the intimidating number of submenus.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; The genome extractor table will only work for tier 1 genomes. For tier 2 (insectoids, reptiles, equines) and tier 3 (colossals) you will need genome excavators, built on the genetics tinkering table or found on abandoned labs.</description>
 		<graphicData>
 			<texPath>Things/Building/TableGeneticExtraction/TableGeneticExtraction</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
