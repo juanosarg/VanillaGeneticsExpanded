@@ -18,7 +18,10 @@ namespace GeneticRim
         protected bool contentsKnown;
         public float duration = 30000; // 2500 ticks per hour * 12 hours
         public float progress = -1;
+        public int mechRaidProgress = 0;
+        public const int mechRaidInterval = 15000;
         Graphic usedGraphic;
+        Building_Mechafuse unSpentFuse;
 
 
         public Building_Mechahybridizer()
@@ -92,39 +95,94 @@ namespace GeneticRim
             }
         }
 
+
+        public void Setup()
+        {
+            unSpentFuse = null;
+            List<Thing> listFacilities = this.TryGetComp<CompAffectedByFacilities>()?.LinkedFacilitiesListForReading;
+            List<Building_Mechafuse> listFuses = new List<Building_Mechafuse>();
+            foreach (Thing facility in listFacilities)
+            {
+                Building_Mechafuse fuse = facility as Building_Mechafuse;
+                listFuses.Add(fuse);
+            }
+            listFuses.Where(x => (x.active == true)).TryRandomElement(out unSpentFuse);
+            progress = 0;
+            this.Map.mapDrawer.MapMeshDirty(this.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+        }
+
+
         public override void Tick()
         {
             base.Tick();
 
-            if (this.progress >= 0)
+            if (progress >= 0)
             {
 
-                this.progress += 1f / this.duration;
+                progress += 1f / this.duration;
 
-                if (this.progress >= 1)
+                if(unSpentFuse == null)
+                {
+                    mechRaidProgress++;
+
+                    if (mechRaidProgress > mechRaidInterval) {
+                        if (Find.FactionManager.FirstFactionOfDef(FactionDefOf.Mechanoid) != null)
+                        {
+                            IncidentParms parms = new IncidentParms();
+                            parms.target = this.Map;
+                            parms.faction = Faction.OfMechanoids;
+                            parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target) * 2.5f;
+                            parms.raidStrategy = RaidStrategyDefOf.ImmediateAttack;
+                            parms.raidArrivalMode = PawnsArrivalModeDefOf.CenterDrop;
+                            IncidentDef def = IncidentDefOf.RaidEnemy;
+                            def.Worker.TryExecute(parms);
+                        }
+                        mechRaidProgress = 0;
+                    }
+                    
+                    
+
+                }
+
+                if (progress >= 1)
                 {
 
-                    this.progress = -1f;
+                    progress = -1f;
                    
                     this.Map.mapDrawer.MapMeshDirty(this.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
 
                     Pawn innerPawn = this.innerContainer?.FirstOrFallback() as Pawn;
                     PawnKindDef kindDef = innerPawn?.kindDef.GetModExtension<DefExtension_Paragon>()?.mechToConvertTo;
-                    Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kindDef, null, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
+                    Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kindDef, Faction.OfPlayer, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
                                                                                          newborn: false, forceGenerateNewPawn: true));
                     IntVec3 near = CellFinder.StandableCellNear(this.Position, this.Map, 5f);
                     GenSpawn.Spawn(pawn, near, this.Map);
                     pawn.health.AddHediff(InternalDefOf.GR_RecentlyHatched);
                     pawn.health.AddHediff(InternalDefOf.GR_AnimalControlHediff);
-                    List<Thing> listFacilities = this.TryGetComp<CompAffectedByFacilities>()?.LinkedFacilitiesListForReading;
-                    List<Building_Mechafuse> listFuses = new List<Building_Mechafuse>();
-                    foreach (Thing facility in listFacilities)
+
+                    if (innerPawn.Name != null && !innerPawn.Name.ToString().UncapitalizeFirst().Contains(innerPawn.def.label))
                     {
-                        Building_Mechafuse fuse = facility as Building_Mechafuse;
-                        listFuses.Add(fuse);
+                        pawn.Name = innerPawn.Name;
                     }
-                    Building_Mechafuse unSpentFuse = listFuses.Where(x => (x.active==true)).RandomElement();
-                    if (unSpentFuse != null) { unSpentFuse.active = false; }
+                    if (innerPawn.training != null)
+                    {
+                        pawn.training = innerPawn.training;
+                    }
+                    if (innerPawn.relations != null)
+                    {
+                        pawn.relations = innerPawn.relations;
+                    }
+                    if (innerPawn.playerSettings != null && innerPawn.playerSettings.AreaRestriction != null)
+                    {
+                        pawn.playerSettings.AreaRestriction = innerPawn.playerSettings.AreaRestriction;
+                    }
+
+
+
+                    if (unSpentFuse != null) { 
+                        unSpentFuse.active = false;
+                        GenExplosion.DoExplosion(unSpentFuse.Position, this.Map, 2.9f, DamageDefOf.Flame, this, -1, -1, null, null, null, null, null, 0f, 1, false, null, 0f, 1);
+                    }
 
                     this.DestroyContents();
 
@@ -141,6 +199,8 @@ namespace GeneticRim
             //Save all the key variables so they work on game save / load
             base.ExposeData();
             Scribe_Deep.Look<ThingOwner>(ref this.innerContainer, "innerContainer", new object[] { this });
+            Scribe_Deep.Look<Building_Mechafuse>(ref this.unSpentFuse, "unSpentFuse", new object[] { this });
+            Scribe_Values.Look(ref this.mechRaidProgress, nameof(this.mechRaidProgress));
             Scribe_Values.Look(ref this.progress, nameof(this.progress));
         }
 

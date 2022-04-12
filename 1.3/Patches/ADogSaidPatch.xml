@@ -66,7 +66,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -74,7 +74,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -171,7 +174,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -179,7 +182,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -275,7 +281,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -283,7 +289,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -379,7 +388,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -387,7 +396,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -483,7 +495,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -491,7 +503,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -587,7 +602,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -595,7 +610,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -691,7 +709,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -699,7 +717,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -795,7 +816,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -803,7 +824,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -899,7 +923,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -907,7 +931,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -996,7 +1023,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -1004,7 +1031,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -1100,7 +1130,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -1108,7 +1138,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -1204,7 +1237,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -1212,7 +1245,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -1309,7 +1345,7 @@
 						<li>GR_Wolfalope</li>
 						<li>GR_Wolfchicken</li>
 						<li>GR_Wolffalo</li>
-						<!--<li>GR_Mechabear</li>
+						<li>GR_Mechabear</li>
 						<li>GR_Mechalope</li>
 						<li>GR_Mechachicken</li>
 						<li>GR_Mechaspider</li>
@@ -1317,7 +1353,10 @@
 						<li>GR_Mecharat</li>
 						<li>GR_Mechaturtle</li>
 						<li>GR_Mechawolf</li>
-						<li>GR_Mechathrumbo</li>-->
+						<li>GR_Mechathrumbo</li>
+						<li>GR_Mechacat</li>
+						<li>GR_Mechahorse</li>
+						<li>GR_Mechamime</li>
 						<li>GR_Molebear</li>
 						<li>GR_Squirralope</li>
 						<li>GR_Rabbitchicken</li>
@@ -1395,7 +1434,9 @@
 						<li>GR_Catwolf</li>
 						<li>GR_Bearhorse</li>
 						<li>GR_Cathorse</li>
-						<li>GR_Wolfhorse</li>
+						<li>GR_Wolfhorse</li>						
+						<li>GR_Mechacat</li>
+					
 					</value>
 				</li>
 			</operations>

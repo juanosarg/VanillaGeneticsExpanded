@@ -1863,6 +1863,10 @@
 					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HornAttackTool</bodyPartGroup>
+					<thing>ThrumboHorn</thing>
+				</butcherBodyPart>
 			</li>
 		</lifeStages>
 		<modExtensions>

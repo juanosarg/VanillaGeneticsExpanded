@@ -29,8 +29,20 @@ namespace GeneticRim
         {
             base.ProcessInput(ev);
             List<FloatMenuOption> list = new List<FloatMenuOption>();
-           
 
+            List<Thing> listFacilities = building.TryGetComp<CompAffectedByFacilities>()?.LinkedFacilitiesListForReading;
+            List<Building_Mechafuse> listFuses = new List<Building_Mechafuse>();
+            foreach (Thing facility in listFacilities)
+            {
+                Building_Mechafuse fuse = facility as Building_Mechafuse;
+                listFuses.Add(fuse);
+            }
+            Building_Mechafuse unSpentFuse;
+            listFuses.Where(x => (x.active == true)).TryRandomElement(out unSpentFuse);
+            if (unSpentFuse == null)
+            {
+                Messages.Message("GR_WarningNoFusesLeft".Translate(), building, MessageTypeDefOf.NeutralEvent);
+            }
 
 
 

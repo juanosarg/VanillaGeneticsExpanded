@@ -345,6 +345,10 @@
 				<dominantGenome>GR_BoomalopeGenetic</dominantGenome>
 				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
 			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechalope</mechToConvertTo>
+				
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Chicken -->
@@ -507,6 +511,10 @@
 				<dominantGenome>GR_AvianGenetic</dominantGenome>
 				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
 			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechachicken</mechToConvertTo>
+				
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Muffalo -->
@@ -665,6 +673,10 @@
 				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
 				<carryingIncrease>true</carryingIncrease>
 				<carryingFactor>1.5</carryingFactor>
+			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechamuffalo</mechToConvertTo>
+				
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -862,6 +874,10 @@
 				<dominantGenome>GR_CanineGenetic</dominantGenome>
 				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
 			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechawolf</mechToConvertTo>
+				
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Rat -->
@@ -1013,6 +1029,10 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_RodentGenetic</dominantGenome>
 				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mecharat</mechToConvertTo>
+				
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -1178,6 +1198,10 @@
 				<dominantGenome>GR_ReptileGenetic</dominantGenome>
 				<secondaryGenome>GR_ReptileGenetic</secondaryGenome>
 			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechaturtle</mechToConvertTo>
+				
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Horse -->
@@ -1196,6 +1220,7 @@
 		<uiIconScale>1.1</uiIconScale>
 		<race>
 			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>3</baseBodySize>
 			<baseHealthScale>2.25</baseHealthScale>
@@ -1290,7 +1315,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	<PawnKindDef Name="Horse" ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_ParagonHorse</defName>
 		<label>equine paragon</label>
 		<race>GR_ParagonHorse</race>
@@ -1360,6 +1385,10 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_EquineGenetic</dominantGenome>
 				<secondaryGenome>GR_EquineGenetic</secondaryGenome>
+			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechahorse</mechToConvertTo>
+				
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -1555,6 +1584,10 @@
 				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
 				<secondaryGenome>GR_ThrumboGenetic</secondaryGenome>
 			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechathrumbo</mechToConvertTo>
+				
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	<!-- Humanoid -->
@@ -1620,6 +1653,7 @@
 		<race>
 			<body>GR_GreatApe</body>
 			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<useLeatherFrom>Human</useLeatherFrom>
 			<useMeatFrom>Human</useMeatFrom>			
 			<baseBodySize>2.3</baseBodySize>
@@ -1731,6 +1765,10 @@
 				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
 				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
 			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechamime</mechToConvertTo>
+				
+			</li>
 		</modExtensions>
 	</PawnKindDef>
 	
@@ -1823,6 +1861,7 @@
 		<race>      
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<herdAnimal>false</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
 			<baseHungerRate>0.3</baseHungerRate>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
@@ -1948,6 +1987,10 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_FelineGenetic</dominantGenome>
 				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechacat</mechToConvertTo>
+				
 			</li>
 		</modExtensions>
 	</PawnKindDef>
@@ -2079,6 +2122,10 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_InsectoidGenetic</dominantGenome>
 				<secondaryGenome>GR_InsectoidGenetic</secondaryGenome>
+			</li>
+			<li Class="GeneticRim.DefExtension_Paragon">
+				<mechToConvertTo>GR_Mechaspider</mechToConvertTo>
+				
 			</li>
 		</modExtensions>
 	</PawnKindDef>

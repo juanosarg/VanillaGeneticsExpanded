@@ -37,8 +37,24 @@ namespace GeneticRim
         {
             //Save all the key variables so they work on game save / load
             base.ExposeData();
-           
+
             Scribe_Values.Look(ref this.active, nameof(this.active));
         }
+
+        public override string Label
+        {
+            get {
+
+                if (active)
+                {
+                    return base.Label;
+                } else return base.Label+ " (Spent)";
+
+
+            }
+
+
+        }
+
     }
 }

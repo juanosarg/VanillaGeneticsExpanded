@@ -8,6 +8,7 @@ namespace GeneticRim
     public class CompDieUnlessReset : ThingComp
     {
         public int tickCounter = 0;
+        public bool manhunter = false;
 
         public CompProperties_DieUnlessReset Props
         {
@@ -22,6 +23,7 @@ namespace GeneticRim
             base.PostExposeData();
 
             Scribe_Values.Look(ref this.tickCounter, nameof(this.tickCounter));
+            Scribe_Values.Look(ref this.manhunter, nameof(this.manhunter));
 
 
         }
@@ -29,29 +31,42 @@ namespace GeneticRim
         public override void CompTick()
         {
             base.CompTick();
-            tickCounter++;
-
-            if (tickCounter >= Props.timeToDieInTicks)
+            if (!manhunter)
             {
-                Pawn pawn = this.parent as Pawn;
+                tickCounter++;
 
-                if (pawn != null && pawn.Map != null)
+                if (tickCounter >= Props.timeToDieInTicks)
                 {
+                    Pawn pawn = this.parent as Pawn;
 
-                    if (Props.effect)
+                    if (pawn != null && pawn.Map != null)
                     {
-                        for (int i = 0; i < 20; i++)
+                        if (Props.manhunterButNotDie)
                         {
-                            IntVec3 c;
-                            CellFinder.TryFindRandomReachableCellNear(this.parent.Position, this.parent.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
-                            FilthMaker.TryMakeFilth(c, this.parent.Map, Props.effectFilth);
+                            pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
+                            pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
+                            manhunter = true;
+
                         }
-                        SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
+                        else
+                        {
+                            if (Props.effect)
+                            {
+                                for (int i = 0; i < 20; i++)
+                                {
+                                    IntVec3 c;
+                                    CellFinder.TryFindRandomReachableCellNear(this.parent.Position, this.parent.Map, 2, TraverseParms.For(TraverseMode.NoPassClosedDoors, Danger.Deadly, false), null, null, out c);
+                                    FilthMaker.TryMakeFilth(c, this.parent.Map, Props.effectFilth);
+                                }
+                                SoundDefOf.Hive_Spawn.PlayOneShot(new TargetInfo(this.parent.Position, this.parent.Map, false));
+                            }
+                            pawn.Destroy();
+                        }
                     }
-                    pawn.Destroy();
+                    tickCounter = 0;
                 }
-                tickCounter = 0;
             }
+            
         }
 
         public void ResetTimer()
@@ -62,13 +77,15 @@ namespace GeneticRim
         public override string CompInspectStringExtra()
         {
 
+            if (!manhunter) {
+                string text = base.CompInspectStringExtra();
+                string timeToLive = Props.message.Translate((Props.timeToDieInTicks - tickCounter).ToStringTicksToPeriod(true, false, true, true));
 
-            string text = base.CompInspectStringExtra();
-            string timeToLive = Props.message.Translate((Props.timeToDieInTicks - tickCounter).ToStringTicksToPeriod(true, false, true, true));
 
 
+                return text + timeToLive;
+            }else return base.CompInspectStringExtra();
 
-            return text + timeToLive;
         }
 
     }

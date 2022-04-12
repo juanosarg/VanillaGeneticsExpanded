@@ -17,6 +17,8 @@
 		<genStep Class="KCSG.GenStep_CustomStructureGen">
 			<structureLayoutDefs>
 				<li>GR_BiomechanicalLabAlpha</li>
+				<li>GR_BiomechanicalLabBeta</li>
+				<li>GR_BiomechanicalLabGamma</li>
 				
 			</structureLayoutDefs>
 			<shouldRuin>false</shouldRuin>

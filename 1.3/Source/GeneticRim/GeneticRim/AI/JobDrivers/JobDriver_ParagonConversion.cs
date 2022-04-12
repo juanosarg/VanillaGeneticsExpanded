@@ -43,8 +43,9 @@ namespace GeneticRim
 
 				Building_Mechahybridizer building = (Building_Mechahybridizer)job.targetB.Thing;
 				building.TryAcceptThing(pawn);
-				building.progress = 0;
-				building.Map.mapDrawer.MapMeshDirty(building.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+				building.Setup();
+				/*building.progress = 0;
+				building.Map.mapDrawer.MapMeshDirty(building.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);*/
 				
 
 			};

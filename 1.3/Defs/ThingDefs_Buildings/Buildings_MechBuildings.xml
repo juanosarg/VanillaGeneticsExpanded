@@ -40,6 +40,41 @@
 			<li>GR_GeneticMechahybridization</li>
 		</researchPrerequisites>
 	</ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>GR_MechahybridAntenna</defName>
+		<label>mechahybrid antenna</label>
+		<description>todo</description>
+		<thingClass>GeneticRim.Building_MechahybridAntenna</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Mech/Mechahybrid_Antenna</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(5,5)</drawSize>
+		</graphicData>
+		<designationCategory>GR_GeneticsTab</designationCategory>
+		<uiIconScale>0.75</uiIconScale>
+		 <uiIconPath>Things/Building/Mech/Mechahybrid_Antenna_MenuIcon</uiIconPath>
+		<rotatable>false</rotatable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>	
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<passability>Standable</passability>
+		<fillPercent>1</fillPercent>
+		<costList>
+			<GR_MechanoidChip>1</GR_MechanoidChip>
+			<Steel>150</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToBuild>20000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<MaxHitPoints>500</MaxHitPoints>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(3,3)</size>		
+		<researchPrerequisites>
+			<li>GR_GeneticMechahybridization</li>
+		</researchPrerequisites>
+	</ThingDef>
 	
 	<ThingDef ParentName="GR_MechBuildingBase">
 		<defName>GR_Mechahybridizer</defName>

@@ -8,6 +8,7 @@ namespace GeneticRim
       
 
         public int timeToDieInTicks = 60000;
+        public bool manhunterButNotDie = false;
         public bool effect = false;
         public ThingDef effectFilth;
         public string message;

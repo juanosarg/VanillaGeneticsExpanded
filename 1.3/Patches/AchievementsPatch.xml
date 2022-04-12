@@ -565,10 +565,10 @@
 							<points>25</points>
 						</AchievementsExpanded.AchievementDef>
 
-						<!--<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
+						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementWeHaveTheTechnology</defName>
 							<label>We Have the Technology</label>
-							<description>Hatch a Tier 4 Mechanoid Hybrid</description>
+							<description>Convert a paragon into a Mechanoid Hybrid</description>
 							<tracker Class="AchievementsExpanded.KindDefTracker">
 								<kindDefs>
 									<li>
@@ -611,12 +611,20 @@
 										<key>GR_Mechacat</key>
 										<value>1</value>
 									</li>
+									<li>
+										<key>GR_Mechahorse</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Mechamime</key>
+										<value>1</value>
+									</li>
 								</kindDefs>
 								<requireAll>false</requireAll>
 							</tracker>
 							<texPath>Achievements/GR_AchievementWeHaveTheTechnology</texPath>
 							<points>25</points>
-						</AchievementsExpanded.AchievementDef>-->
+						</AchievementsExpanded.AchievementDef>
 
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementTaskFailedSuccessfully</defName>

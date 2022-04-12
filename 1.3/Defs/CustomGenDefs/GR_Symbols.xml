@@ -645,8 +645,23 @@
   <rotation>North</rotation>
 </KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>GR_AncientGenomeRecombinator_East</defName>
+  <thing>GR_AncientGenomeRecombinator</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>GR_AncientTissueGrinder_West</defName>
+  <thing>GR_AncientTissueGrinder</thing>
+  <rotation>West</rotation>
+</KCSG.SymbolDef>
 
+<KCSG.SymbolDef>
+  <defName>GR_AncientTissueGrinder_East</defName>
+  <thing>GR_AncientTissueGrinder</thing>
+  <rotation>East</rotation>
+</KCSG.SymbolDef>
 
 
 

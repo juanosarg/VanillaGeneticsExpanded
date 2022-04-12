@@ -323,6 +323,7 @@
     <Compile Include="Buildings\Building_BiomechanicalLabBeacon.cs" />
     <Compile Include="Buildings\Building_DNAStorageBank.cs" />
     <Compile Include="Buildings\Building_Mechafuse.cs" />
+    <Compile Include="Buildings\Building_MechahybridAntenna.cs" />
     <Compile Include="Buildings\Building_Mechahybridizer.cs" />
     <Compile Include="Commands\Command_SetParagonList.cs" />
     <Compile Include="Commands\Command_SetAnimalList.cs" />
