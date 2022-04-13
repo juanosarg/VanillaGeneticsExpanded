@@ -43,7 +43,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_MechahybridAntenna</defName>
 		<label>mechahybrid antenna</label>
-		<description>todo</description>
+		<description>A large broadcasting server that is specifically tuned to maintain the tameness of mechahybrids. Without this server, the self-replicating mechanites within the mechahybrids will eventually no longer be able to register friendlies as their IFF updates and branches, causing them to go manhunter.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; It is important to note that a single antenna can only broadcast to a limited number of mechahybrids, specifically up to 10 of them regardless of their size or complexity. Any additionally mechahybrid present beyond the initial 10 will no longer receive updates and will eventually lose their “tameness”.</description>
 		<thingClass>GeneticRim.Building_MechahybridAntenna</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Mech/Mechahybrid_Antenna</texPath>
@@ -80,7 +80,7 @@
 		<defName>GR_Mechahybridizer</defName>
 		<label>mechahybridizer</label>
 		<thingClass>GeneticRim.Building_Mechahybridizer</thingClass>
-		<description>todo.</description>
+		<description>A massive factory designed to improve upon genetically perfect animals by adding doses of mechanites in a controlled fashion and influencing the process to ensure the it is a success and there is no rejection of foreign materials. Once the operation begins on a creature designated as "paragon", the factory closes with hermetic seals and broadcasts a recovery signal to the nearest orbital mechanoid hive.\n\nOriginally designed to be part of an automated mechanoid factory placed on animal worlds, the intent was to herd animals into the system, weaponize them, and send them off for their deployment. Due to the invasive nature of the mechanites, the creature absolutely had to lack junk genetic data lest the subject perish and waste materials. Later on, the lack of such paragons resulted in it being installed in facilities with genetic modification equipment on hand and external bypasses to reduce the waste material produced from summoning a retrieval team.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If there are no intact fuses around a mechahybridizer, a mechanoid raid will arrive via drop-pod in 6 hours if the mechahybridization process is attempted.</description>
 		<graphicData>
 			<texPath>Things/Building/Mech/Mechahybridizer_Open</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -119,7 +119,7 @@
 	<ThingDef ParentName="GR_MechBuildingBase">
 		<defName>GR_Mechafuse</defName>
 		<label>mechafuse</label>
-		<description>todo</description>
+		<description>This piece of technology is unusual in that its design isn’t linked to the original Mechahybridizer, having been developed later on while trying to emulate the system internals. This is due to the fact that the Mechahybridizer broadcasts a signal to a nearby orbital mechanoid hive to protect the process and then recover the potential resulting mechahybrid to be dispatched into assignments. However, this process is extremely expensive and often there would be enough recovery personnel on-site, so this device was developed to reduce costs.\n\nIn the event that the Mechahybridizer attempts to send a signal once it begins the operation, this device intercepts the signal before it can extend to a sufficient distance. Upon capture, the device self-destructs to fool the system that the signal has been received and a unit has been dispatched.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; If there are no intact fuses around a mechahybridizer, a mechanoid raid will arrive via drop-pod in 6 hours if the mechahybridization process is attempted.</description>
 		<thingClass>GeneticRim.Building_Mechafuse</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Mech/Mechafuse</texPath>
