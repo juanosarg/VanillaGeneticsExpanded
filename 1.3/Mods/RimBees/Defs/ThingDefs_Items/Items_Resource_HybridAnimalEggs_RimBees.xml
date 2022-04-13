@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>RB_BeeEggsActive</defName>
+    <label>chickenbee egg (fert.)</label>
+    <description>Fertilized chickenbee egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a chickenbee.</description>
+	<tradeability>None</tradeability>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+   	</statBases>
+	 <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+	  <drawSize>0.6</drawSize>
+    </graphicData>	
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>GR_BeeHybrid_Chickenbee</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+  
+   
+</Defs>

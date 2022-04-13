@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+    <ThingDef ParentName="BaseBullet">
+    <defName>RB_Quill</defName>
+    <label>quill</label>
+	<thingClass>GeneticAnimalRangeUnlocker.AnimalProjectile</thingClass>
+    <graphicData>
+      <texPath>Things/Projectiles/RB_Quill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>GR_ToxicExplosion</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>20</speed>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="GR_BaseAnimalProjectile">
+		<defName>RB_BeeBomb</defName>
+		<label>bee shell</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/GR_Smokebomb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >6</explosionRadius >
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>1</damageAmountBase>
+			<explosionDelay>1</explosionDelay>
+			<postExplosionSpawnThingDef>GR_InsectCloudMotes</postExplosionSpawnThingDef>
+			<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+
+		</projectile>
+	</ThingDef>
+  
+  
+  
+
+  
+  
+</Defs>

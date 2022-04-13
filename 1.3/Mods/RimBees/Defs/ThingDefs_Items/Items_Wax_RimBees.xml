@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<ThingDef ParentName="RB_BeesWaxBase">
+		<defName>RB_Genewax</defName>
+		<label>genewax</label>
+		<description>Genewax is extracted from combs of the Genetic family (any Genetic Rim hybrid bees) and is much less resistant than regular beeswax. Its only practical application is that it can be used to build incubators to replace standard steel ones.</description>
+		<graphicData>
+			<texPath>Things/Item/Product/RB_Genewax</texPath>			
+		</graphicData>
+		<statBases>
+			<MarketValue>4</MarketValue>
+			<Mass>0.01</Mass>
+			<MaxHitPoints>40</MaxHitPoints>
+			<DeteriorationRate>6.0</DeteriorationRate>			
+		</statBases>
+		<stuffProps>
+			<color>(96,149,113)</color>
+			<statOffsets>
+				<Beauty>1</Beauty>
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>0.15</MaxHitPoints>
+				<Beauty>1</Beauty>
+				<WorkToMake>0.5</WorkToMake>
+				<WorkToBuild>0.5</WorkToBuild>
+				<DoorOpenSpeed>0.75</DoorOpenSpeed>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+
+
+</Defs>

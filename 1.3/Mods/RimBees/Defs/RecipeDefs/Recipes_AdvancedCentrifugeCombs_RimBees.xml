@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RecipeDef>
+		<defName>RB_CentrifugeOrganicCombBulk</defName>
+		<label>bulk extract from organic comb</label>
+		<description>Centrifuges an organic comb to bulk extract honey, wax and organic pulp</description>
+		<jobString>Extracting honey, wax and organic pulp</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Organic_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Organic_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_BaseHoney>50</RB_BaseHoney>
+			<RB_Beeswax>50</RB_Beeswax>
+			<GR_OrganicPulp>10</GR_OrganicPulp>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeHybernatingCombBulk</defName>
+		<label>bulk extract from hybernating comb</label>
+		<description>Centrifuges a hybernating comb to bulk extract genetic honey, genewax and bear genetic material</description>
+		<jobString>Extracting genetic honey, genewax and bear genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Hybernating_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Hybernating_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_GeneticHoney>50</RB_GeneticHoney>
+			<RB_Genewax>50</RB_Genewax>
+			<GR_BearGenetic>10</GR_BearGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeCluckingCombBulk</defName>
+		<label>bulk extract from clucking comb</label>
+		<description>Centrifuges a clucking comb to bulk extract bee eggs, genewax and chicken genetic material</description>
+		<jobString>Extracting bee eggs, genewax and chicken genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Clucking_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Clucking_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_BeeEggs>70</RB_BeeEggs>
+			<RB_Genewax>50</RB_Genewax>
+			<GR_ChickenGenetic>10</GR_ChickenGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeExplodingCombBulk</defName>
+		<label>bulk extract from exploding comb</label>
+		<description>Centrifuges an exploding comb to bulk extract genetic honey, chemfuel, and boomalope genetic material</description>
+		<jobString>Extracting genetic honey, chemfuel, and boomalope genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Exploding_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Exploding_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_GeneticHoney>50</RB_GeneticHoney>
+			<Chemfuel>100</Chemfuel>
+			<GR_BoomalopeGenetic>10</GR_BoomalopeGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeHornedCombBulk</defName>
+		<label>bulk extract from horned comb</label>
+		<description>Centrifuges a horned comb to bulk extract genetic honey, genewax, and thrumbo genetic material</description>
+		<jobString>Extracting genetic honey, genewax, and thrumbo genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Horned_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Horned_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_GeneticHoney>400</RB_GeneticHoney>
+			<RB_Genewax>400</RB_Genewax>
+			<GR_ThrumboGenetic>10</GR_ThrumboGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeHoundCombBulk</defName>
+		<label>bulk extract from hound comb</label>
+		<description>Centrifuges a hound comb to bulk extract genetic honey, genewax and canine genetic material</description>
+		<jobString>Extracting genetic honey, genewax and canine genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Hound_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Hound_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_GeneticHoney>50</RB_GeneticHoney>
+			<RB_Genewax>50</RB_Genewax>
+			<GR_WolfGenetic>10</GR_WolfGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+		<RecipeDef>
+		<defName>RB_CentrifugeMechaCombBulk</defName>
+		<label>bulk extract from mecha comb</label>
+		<description>Centrifuges a mecha comb to bulk extract genetic honey, genewax and mechanoid active components</description>
+		<jobString>Extracting genetic honey, genewax and mechanoid active components</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Mecha_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Mecha_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_GeneticHoney>500</RB_GeneticHoney>
+			<RB_Genewax>500</RB_Genewax>
+			<GR_MechanoidGenetic>10</GR_MechanoidGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>RB_CentrifugeMegaspideryCombBulk</defName>
+		<label>bulk extract from megaspidery comb</label>
+		<description>Centrifuges a megaspidery comb to bulk extract insect jelly, genewax and insectoid genetic material</description>
+		<jobString>Extracting insect jelly, genewax and insectoid genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Megaspidery_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Megaspidery_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<InsectJelly>100</InsectJelly>
+			<RB_Genewax>50</RB_Genewax>
+			<GR_InsectoidGenetic>10</GR_InsectoidGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeMousyCombBulk</defName>
+		<label>bulk extract from mousy comb</label>
+		<description>Centrifuges a mousy comb to bulk extract genetic honey, genewax and rodent genetic material</description>
+		<jobString>Extracting genetic honey, genewax and rodent genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Mousy_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Mousy_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_GeneticHoney>50</RB_GeneticHoney>
+			<RB_Genewax>50</RB_Genewax>
+			<GR_RodentGenetic>10</GR_RodentGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>RB_CentrifugePurringCombBulk</defName>
+		<label>bulk extract from purring comb</label>
+		<description>Centrifuges a purring comb to bulk extract genetic honey, genewax and feline genetic material</description>
+		<jobString>Extracting genetic honey, genewax and feline genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Purring_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Purring_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_GeneticHoney>50</RB_GeneticHoney>
+			<RB_Genewax>50</RB_Genewax>
+			<GR_FelineGenetic>10</GR_FelineGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeScalyCombBulk</defName>
+		<label>bulk extract from scaly comb</label>
+		<description>Centrifuges a scaly comb to bulk extract genetic honey, genewax and reptilian genetic material</description>
+		<jobString>Extracting genetic honey, genewax and reptilian genetic material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Scaly_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Scaly_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_GeneticHoney>50</RB_GeneticHoney>
+			<RB_Genewax>50</RB_Genewax>
+			<GR_ReptilianGenetic>10</GR_ReptilianGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RB_CentrifugeCattleCombBulk</defName>
+		<label>bulk extract from cattle comb</label>
+		<description>Centrifuges a cattle comb to bulk extract milk, wool and muffalo genetic material.</description>
+		<jobString>Extracting milk, wool and muffalo genetic material.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_Advanced_Honey_Centrifuge</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Cattle_Honeycomb</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				<li>RB_Cattle_Honeycomb</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Milk>50</Milk>
+			<WoolMuffalo>50</WoolMuffalo>
+			<GR_MuffaloGenetic>10</GR_MuffaloGenetic>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	
+	
+</Defs>

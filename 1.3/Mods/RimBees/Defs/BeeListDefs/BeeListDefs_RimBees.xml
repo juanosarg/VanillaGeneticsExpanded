@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RimBees.BeeListDef>
+		<defName>RB_OrganicBeeList</defName>
+		<beeDroneDef>RB_Bee_Organic_Drone</beeDroneDef>
+		<beeDroneTag>RB_Organic_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Organic_Queen</beeQueenDef>
+		<beeQueenTag>RB_Organic_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_CattleBeeList</defName>
+		<beeDroneDef>RB_Bee_Cattle_Drone</beeDroneDef>
+		<beeDroneTag>RB_Cattle_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Cattle_Queen</beeQueenDef>
+		<beeQueenTag>RB_Cattle_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_CluckingBeeList</defName>
+		<beeDroneDef>RB_Bee_Clucking_Drone</beeDroneDef>
+		<beeDroneTag>RB_Clucking_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Clucking_Queen</beeQueenDef>
+		<beeQueenTag>RB_Clucking_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_ExplodingBeeList</defName>
+		<beeDroneDef>RB_Bee_Exploding_Drone</beeDroneDef>
+		<beeDroneTag>RB_Exploding_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Exploding_Queen</beeQueenDef>
+		<beeQueenTag>RB_Exploding_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_HornedBeeList</defName>
+		<beeDroneDef>RB_Bee_Horned_Drone</beeDroneDef>
+		<beeDroneTag>RB_Horned_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Horned_Queen</beeQueenDef>
+		<beeQueenTag>RB_Horned_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_HoundBeeList</defName>
+		<beeDroneDef>RB_Bee_Hound_Drone</beeDroneDef>
+		<beeDroneTag>RB_Hound_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Hound_Queen</beeQueenDef>
+		<beeQueenTag>RB_Hound_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_HybernatingBeeList</defName>
+		<beeDroneDef>RB_Bee_Hybernating_Drone</beeDroneDef>
+		<beeDroneTag>RB_Hybernating_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Hybernating_Queen</beeQueenDef>
+		<beeQueenTag>RB_Hybernating_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_MechaBeeList</defName>
+		<beeDroneDef>RB_Bee_Mecha_Drone</beeDroneDef>
+		<beeDroneTag>RB_Mecha_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Mecha_Queen</beeQueenDef>
+		<beeQueenTag>RB_Mecha_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_MegaspideryBeeList</defName>
+		<beeDroneDef>RB_Bee_Megaspidery_Drone</beeDroneDef>
+		<beeDroneTag>RB_Megaspidery_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Megaspidery_Queen</beeQueenDef>
+		<beeQueenTag>RB_Megaspidery_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_MousyBeeList</defName>
+		<beeDroneDef>RB_Bee_Mousy_Drone</beeDroneDef>
+		<beeDroneTag>RB_Mousy_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Mousy_Queen</beeQueenDef>
+		<beeQueenTag>RB_Mousy_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_PurringBeeList</defName>
+		<beeDroneDef>RB_Bee_Purring_Drone</beeDroneDef>
+		<beeDroneTag>RB_Purring_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Purring_Queen</beeQueenDef>
+		<beeQueenTag>RB_Purring_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+	
+	<RimBees.BeeListDef>
+		<defName>RB_ScalyBeeList</defName>
+		<beeDroneDef>RB_Bee_Scaly_Drone</beeDroneDef>
+		<beeDroneTag>RB_Scaly_Drone_Tag</beeDroneTag>
+		<beeQueenDef>RB_Bee_Scaly_Queen</beeQueenDef>
+		<beeQueenTag>RB_Scaly_Queen_Tag</beeQueenTag>
+	</RimBees.BeeListDef>
+
+
+
+</Defs>

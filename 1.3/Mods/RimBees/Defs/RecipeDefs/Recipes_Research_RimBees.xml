@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>RB_CreateGeneticTierResearch</defName>
+		<label>create genetic tier bee research</label>
+		<description>Research bee combinations to create genetic tier bees. This research is random and you may get duplicate results.</description>
+		<jobString>Researching bees</jobString>
+		<allowMixingIngredients>true</allowMixingIngredients>
+
+		<workAmount>500</workAmount>
+		<recipeUsers>
+			<li>RB_BeeResearchTable</li>	
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_BeeswaxCategory</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_Honeys</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GR_OrganicPulp</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<categories>
+				<li>RB_BeeswaxCategory</li>
+				<li>RB_Honeys</li>
+			</categories>
+			<thingDefs>
+				<li>GR_OrganicPulp</li>
+
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_RandomGeneticResearch>1</RB_RandomGeneticResearch>
+
+		</products>
+		<skillRequirements>
+			<Intellectual>3</Intellectual>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+
+	</RecipeDef>
+
+
+
+</Defs>

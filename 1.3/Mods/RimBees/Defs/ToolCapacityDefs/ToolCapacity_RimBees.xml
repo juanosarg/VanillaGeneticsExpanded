@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+
+
+	<ToolCapacityDef>
+		<defName>RB_ToxicSting</defName>
+		<label>toxic sting</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>RB_VeryToxicSting</defName>
+		<label>very toxic sting</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>RB_ChemfuelSting</defName>
+		<label>chemfuel sting</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>RB_ParalyzingSting</defName>
+		<label>paralyzing sting</label>
+	</ToolCapacityDef>
+	
+	<ToolCapacityDef>
+		<defName>RB_BlindingSting</defName>
+		<label>blinding sting</label>
+	</ToolCapacityDef>
+	
+	
+
+
+</Defs>

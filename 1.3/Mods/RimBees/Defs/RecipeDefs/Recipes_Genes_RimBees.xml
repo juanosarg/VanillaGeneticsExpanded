@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<RecipeDef>
+		<defName>GR_ExtractBeeGenes</defName>
+		<label>extract genes from several bees</label>
+		<description>Extract genetic material from several bees.</description>
+		<jobString>Extracting Genetic Material</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	  
+		</recipeUsers>	
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>RB_BeesAndQueens</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<categories>
+				<li>RB_BeesAndQueens</li>
+				
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<GR_BeeGenetic>1</GR_BeeGenetic>
+		</products>
+		<skillRequirements>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</RecipeDef>
+
+	
+
+
+
+
+</Defs>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+	
+	<ThingCategoryDef>
+      <defName>RB_BeeResearchTierGenetic</defName>
+      <label>bee research, genetic tier</label>
+      <parent>RB_BeeResearch</parent>
+	  <iconPath>Things/Item/RB_BeeResearchNotes</iconPath>
+      
+    </ThingCategoryDef>
+	
+
+
+	
+
+
+</Defs>

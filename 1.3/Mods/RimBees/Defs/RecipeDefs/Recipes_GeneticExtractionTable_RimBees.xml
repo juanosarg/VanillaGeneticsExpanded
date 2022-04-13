@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<RecipeDef>
+		<defName>GR_OrganicBeeCreation</defName>
+		<label>create basic genetic bees</label>
+		<description>Create basic genetically enhanced bees that can later be hybridized with other creatures.</description>
+		<jobString>creating basic genetic bees</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>2500</workAmount>
+		<workSpeedStat>ResearchSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<recipeUsers>
+			<li>GR_GeneticExtractionTable</li>	 
+			
+		</recipeUsers>	
+		<ingredients>
+			
+			<li>
+				<filter>
+
+					<thingDefs>
+						<li>WoodLog</li>
+
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+
+			<thingDefs>
+				
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<RB_Bee_Organic_Drone>1</RB_Bee_Organic_Drone>
+			<RB_Bee_Organic_Queen>1</RB_Bee_Organic_Queen>
+
+		</products>
+
+	</RecipeDef>
+
+
+
+
+
+
+
+</Defs>

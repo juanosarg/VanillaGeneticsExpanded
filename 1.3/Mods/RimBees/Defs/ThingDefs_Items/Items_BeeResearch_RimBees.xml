@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!-- Genetic Tier research -->
+	<ThingDef Name="RB_ResearchPapersBaseGenetic" ParentName="RB_ResearchPapersBase" Abstract="True">
+		<label>bee research papers (genetic)</label>
+
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>RB_RandomGeneticResearch</defName>
+		<label>bee research (unfinished)</label>
+		<description>This research is in progress.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/RB_BeeResearchNotes</texPath>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MaxHitPoints>5</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Mass>10</Mass>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+			<li>RB_BeeResearch</li>
+		</thingCategories>
+		<stackLimit>1</stackLimit>
+		<comps>
+			<li Class="RimBees.CompProperties_RandomResearch">
+				<labelString>bee research papers (genetic)</labelString>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgWood</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgWood</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Woodland = Hybernating</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgWool</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgWool</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Wooly = Cattle</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgEgg</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgEgg</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Egglaying = Clucking</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgOily</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgOily</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Oily = Exploding</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgPsy</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgPsy</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Psychic = Horned</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgPet</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgPet</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Pet = Hound OR Purring</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgElec</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgElec</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Electronic = Mecha</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>		
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgInsect</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgInsect</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Insectoid = Megaspidery</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>		
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgAgri</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgAgri</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Agricultural = Mousy</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>		
+
+	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+		<defName>RB_ResearchPapersOrgDesert</defName>		
+		<comps>
+			<li Class="RimBees.CompProperties_BeeResearchImages">
+				<imageNameInGraphicsCache>BeeResearchOrgDesert</imageNameInGraphicsCache>
+				<textForTheImage>Organic + Desert = Scaly</textForTheImage>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>RB_BeeResearchTierGenetic</li>
+		</thingCategories>	
+	</ThingDef>		
+
+</Defs>

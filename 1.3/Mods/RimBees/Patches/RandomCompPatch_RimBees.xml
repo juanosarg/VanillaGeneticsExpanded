@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		
+		
+			<operations>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName= "GR_RandomGenome"]/comps/li[@Name="GR_RandomGenomeComp"]/items</xpath>
+					<value>
+						
+							<li>GR_BeeGenetic</li>	
+						
+					</value>
+				</li>
+			</operations>
+		
+	</Operation>
+</Patch>
+

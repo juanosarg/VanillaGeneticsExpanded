@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>GR_DisabledQuestAnimalsBees</defName>
+		<disabledFromQuestsPawns>
+			<li>GR_BeeHybrid_Bearbee</li>
+			<li>GR_BeeHybrid_Boombee</li>
+			<li>GR_BeeHybrid_Catbee</li>
+			<li>GR_BeeHybrid_Chickenbee</li>
+			<li>GR_BeeHybrid_Spiderbee</li>
+			<li>GR_BeeHybrid_Mechabee</li>
+			<li>GR_BeeHybrid_Muffalobee</li>
+			<li>GR_BeeHybrid_Lizardbee</li>
+			<li>GR_BeeHybrid_Mousebee</li>
+			<li>GR_BeeHybrid_Thrumbee</li>
+			<li>GR_BeeHybrid_Wolfbee</li>
+		</disabledFromQuestsPawns>
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+</Defs>

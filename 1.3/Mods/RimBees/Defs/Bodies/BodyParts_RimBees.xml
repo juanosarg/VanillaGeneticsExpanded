@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===================== Misc =====================-->
+
+
+	<BodyPartDef>
+		<defName>RB_Thorax</defName>
+		<label>thorax</label>
+		<hitPoints>60</hitPoints>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>RB_InsectMouth</defName>
+		<label>mouth</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+		</tags>
+	</BodyPartDef>
+	
+		<BodyPartDef>
+		<defName>RB_Abdomen</defName>
+		<label>abdomen</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>RB_InsectWing</defName>
+		<label>wing</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>RB_SmallInsectLeg</defName>
+		<label>small leg</label>
+		<hitPoints>5</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>RB_InsectSting</defName>
+		<label>stinger</label>
+		<hitPoints>3</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+
+	</BodyPartDef>
+	
+	
+
+</Defs>

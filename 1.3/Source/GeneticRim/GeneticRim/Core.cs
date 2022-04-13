@@ -94,10 +94,26 @@
             if (!hybrids.TryGetValue(genomeSecondary, out Dictionary<ThingDef, PawnKindDef> secondaryChain) || !secondaryChain.TryGetValue(genomeDominant, out swapResult))
                 swapResult = null;
             failureResult = failures.FirstOrDefault(td => td.GetModExtension<DefExtension_HybridFailure>().InRange(failure +paragonFailureFactor*100)) ?? failures.RandomElement();
-            
-            if (hybrids.TryGetValue(genomeDominant, out secondaryChain))
+
+            PawnKindDef resultGlobal = null;
+            if (hybrids.TryGetValue(genomeDominant, out secondaryChain)) {
                 if (secondaryChain.TryGetValue(genomeSecondary, out PawnKindDef result))
+                {
+                    resultGlobal = result;
                     return result;
+
+                }
+                    
+
+            }
+
+            if (resultGlobal == null && swapResult != null)
+            {
+                swapChance = 0f;
+                resultGlobal = swapResult;
+                swapResult = null;
+                return resultGlobal;
+            }
             
             return null;
         }

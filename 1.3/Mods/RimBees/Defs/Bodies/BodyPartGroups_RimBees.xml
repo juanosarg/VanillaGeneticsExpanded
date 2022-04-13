@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<BodyPartGroupDef>
+		<defName>RB_Sting</defName>
+		<label>stinger</label>
+	</BodyPartGroupDef>
+
+	<BodyPartGroupDef>
+		<defName>RB_LegAttackTool</defName>
+		<label>leg</label>
+	</BodyPartGroupDef>
+
+</Defs>

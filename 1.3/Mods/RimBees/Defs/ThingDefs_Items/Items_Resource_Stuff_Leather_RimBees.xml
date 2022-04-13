@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+	<!--========== Bee Leather ============-->
+
+	<ThingDef ParentName="LeatherBase">
+		<defName>RB_Bee_Leather</defName>
+		<label>bee leather</label>
+		<description>Hard overlapping scales of insect chitin laid over a thick layer of semi-rigid leather. Quite durable in combat, but provides little protection from weather.</description>
+		<graphicData>
+			<texPath>Things/Item/BeeLeather</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			
+		</graphicData>
+		<statBases>
+			<MarketValue>3.25</MarketValue>
+			<StuffPower_Armor_Sharp>1.15</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>14</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>14</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(92,82,3)</color>
+			<commonality>0</commonality>
+			<statFactors>
+				<MaxHitPoints>1.25</MaxHitPoints>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+
+
+</Defs>

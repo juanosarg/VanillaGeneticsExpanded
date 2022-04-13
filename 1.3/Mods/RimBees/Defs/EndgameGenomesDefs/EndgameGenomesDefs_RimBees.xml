@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<GeneticRim.EndgameGenomesDef>
+		<defName>GR_EndgameGenomes_Bees</defName>
+		<genomes>
+			<li>GR_BeeGenetic</li>
+			
+		</genomes>
+	</GeneticRim.EndgameGenomesDef>
+</Defs>

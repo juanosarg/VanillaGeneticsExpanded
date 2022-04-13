@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ======= Basic quality thoughts ========= -->
+
+
+
+  <ThoughtDef>
+	<thoughtClass>RimBeesGeneticPatch.Thought_Hediff</thoughtClass>
+	<hediff>RB_Stamina</hediff>
+    <defName>RB_AteGeneticHoney</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate genetic honey</label>
+        <description>That genetic honey has given me a boost of strength. I feel good.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+	
+  </ThoughtDef>
+
+  <ThoughtDef>
+	<thoughtClass>RimBeesGeneticPatch.Thought_Hediff</thoughtClass>
+	<hediff>RB_Stamina</hediff>
+    <defName>RB_AteGeneticHoneyIngredient</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate genetic honey</label>
+        <description>The genetic honey that meal was made with has given me a boost of strength. I feel good.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ 
+
+</Defs>

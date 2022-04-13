@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+
+	<!-- Genetic Tier Combinations -->	
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_1</defName>
+		<bee1>Organic</bee1>
+		<bee2>Woodland</bee2>
+		<result>
+			<li>Hybernating</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_2</defName>
+		<bee1>Organic</bee1>
+		<bee2>Wooly</bee2>
+		<result>
+			<li>Cattle</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_3</defName>
+		<bee1>Organic</bee1>
+		<bee2>Egglaying</bee2>
+		<result>
+			<li>Clucking</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_4</defName>
+		<bee1>Organic</bee1>
+		<bee2>Oily</bee2>
+		<result>
+			<li>Exploding</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_5</defName>
+		<bee1>Organic</bee1>
+		<bee2>Psychic</bee2>
+		<result>
+			<li>Horned</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_6</defName>
+		<bee1>Organic</bee1>
+		<bee2>Pet</bee2>
+		<result>
+			<li>Hound</li>
+			<li>Purring</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_7</defName>
+		<bee1>Organic</bee1>
+		<bee2>Electronic</bee2>
+		<result>
+			<li>Mecha</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_8</defName>
+		<bee1>Organic</bee1>
+		<bee2>Insectoid</bee2>
+		<result>
+			<li>Megaspidery</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_9</defName>
+		<bee1>Organic</bee1>
+		<bee2>Agricultural</bee2>
+		<result>
+			<li>Mousy</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+	<RimBees.BeeCombinationDef>
+		<defName>RB_CombinationTierGenetic_10</defName>
+		<bee1>Organic</bee1>
+		<bee2>Desert</bee2>
+		<result>
+			<li>Scaly</li>
+		</result>				
+	</RimBees.BeeCombinationDef>
+
+
+
+
+
+
+
+
+
+
+
+</Defs>

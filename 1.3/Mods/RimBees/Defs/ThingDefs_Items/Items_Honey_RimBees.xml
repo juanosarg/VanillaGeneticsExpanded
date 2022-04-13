@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="RB_HoneyBase">
+		<defName>RB_GeneticHoney</defName>
+		<label>genetic honey</label>
+		<description>This honey has been extracted from any genetic honeycomb, and has a very strange greenish tone that makes it less appetizing. Decays incredibly fast, but it can be consumed as a potent physically enhancing drug that doesn't cause any side effects. This honey can be consumed raw or cooked with other ingredients, and its properties transfer to the resulting meal.</description>  
+		<graphicData>
+			<texPath>Things/Item/Product/RB_GeneticHoneyJar</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.9</MarketValue>
+			<Nutrition>0.025</Nutrition>
+		</statBases>
+		<ingestible>
+			<tasteThought>RB_AteGeneticHoney</tasteThought>
+			<specialThoughtAsIngredient>RB_AteGeneticHoneyIngredient</specialThoughtAsIngredient>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>2</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+</Defs>

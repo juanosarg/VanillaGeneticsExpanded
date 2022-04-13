@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Organic_Honeycomb</defName>
+		<label>organic honeycomb</label>
+		<description>This is a honeycomb produced by organic bees. Organic bees are genetically modified bees that extract cellulose fibers from nearby plants and convert it into organic pulp, which they store on their honeycombs. Honeycombs can be procesed in a Honey Extractor to get honey, beeswax and organic pulp.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Organic_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BaseHoney>5</RB_BaseHoney>
+			<RB_Beeswax>5</RB_Beeswax>
+			<GR_OrganicPulp>1</GR_OrganicPulp>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Cattle_Honeycomb</defName>
+		<label>cattle honeycomb</label>
+		<description>This is a honeycomb produced by cattle bees. Cattle bees have muffalo genes spliced in their genome. They are covered in a thick white pelt, and produce milk, wool and muffalo genetic material. Honeycombs can be procesed in a Honey Extractor to get milk, wool and muffalo genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Cattle_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<Milk>5</Milk>
+			<WoolMuffalo>5</WoolMuffalo>
+			<GR_MuffaloGenetic>1</GR_MuffaloGenetic>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Clucking_Honeycomb</defName>
+		<label>clucking honeycomb</label>
+		<description>This is a honeycomb produced by clucking bees. Clucking bees have chicken genes spliced in their genome. They are covered in feathers, and produce eggs and chicken genetic material. Honeycombs can be procesed in a Honey Extractor to get bee eggs, genewax and chicken genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Clucking_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_BeeEggs>7</RB_BeeEggs>
+			<RB_Genewax>5</RB_Genewax>
+			<GR_ChickenGenetic>1</GR_ChickenGenetic>
+		</butcherProducts>
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Exploding_Honeycomb</defName>
+		<label>exploding honeycomb</label>
+		<description>This is a honeycomb produced by exploding bees. Exploding bees have boomalope genes spliced in their genome. This bees produce genetic honey, chemfuel, and boomalope genetic material. Honeycombs can be procesed in a Honey Extractor to get genetic honey, chemfuel, and boomalope genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Exploding_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_GeneticHoney>5</RB_GeneticHoney>
+			<Chemfuel>10</Chemfuel>
+			<GR_BoomalopeGenetic>1</GR_BoomalopeGenetic>
+		</butcherProducts>
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Horned_Honeycomb</defName>
+		<label>horned honeycomb</label>
+		<description>This is a honeycomb produced by horned bees. Horned bees have thrumbo genes spliced in their genome. They take a very long time to generate honeycombs, but they produce highly sought after thrumbo genetic material. Honeycombs can be procesed in a Honey Extractor to get genetic honey, genewax, and thrumbo genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Horned_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_GeneticHoney>40</RB_GeneticHoney>
+			<RB_Genewax>40</RB_Genewax>
+			<GR_ThrumboGenetic>1</GR_ThrumboGenetic>
+		</butcherProducts>
+	</ThingDef>	
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Hound_Honeycomb</defName>
+		<label>hound honeycomb</label>
+		<description>This is a honeycomb produced by hound bees. Hound bees have wolf genes spliced in their genome. They produce canine genetic material. Honeycombs can be procesed in a Honey Extractor to get genetic honey, genewax and canine genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Hound_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_GeneticHoney>5</RB_GeneticHoney>
+			<RB_Genewax>5</RB_Genewax>
+			<GR_WolfGenetic>1</GR_WolfGenetic>
+		</butcherProducts>
+	</ThingDef>
+
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Hybernating_Honeycomb</defName>
+		<label>hybernating honeycomb</label>
+		<description>This is a honeycomb produced by hybernating bees. Hybernating bees have grizzly bear genes spliced in their genome. They are covered in a soft fur. Honeycombs can be procesed in a Honey Extractor to get genetic honey, genewax and bear genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Hybernating_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_GeneticHoney>5</RB_GeneticHoney>
+			<RB_Genewax>5</RB_Genewax>
+			<GR_BearGenetic>1</GR_BearGenetic>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Mecha_Honeycomb</defName>
+		<label>mecha honeycomb</label>
+		<description>This is a honeycomb produced by mecha bees. These are bee sized mechanoids, apparently under the colonists' control. Mecha bees produce mechanoid active components, which are used to create mechanoid hybrids, but they take a very long time to do so. They'll need a stockpile with a Advanced Components nearby to start refining the mechanites. Honeycombs can be procesed in a Honey Extractor to get genetic honey, genewax and mechanoid active components.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Mecha_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_GeneticHoney>50</RB_GeneticHoney>
+			<RB_Genewax>50</RB_Genewax>
+			<GR_MechanoidGenetic>1</GR_MechanoidGenetic>
+		</butcherProducts>
+	</ThingDef>
+
+		<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Megaspidery_Honeycomb</defName>
+		<label>megaspidery honeycomb</label>
+		<description>This is a honeycomb produced by megaspidery bees. Megaspidery bees have alien insectoid genes spliced in their genome. They are covered in chitinous plates and produce insect jelly and insectoid genetic materials. Honeycombs can be procesed in a Honey Extractor to get insect jelly, genewax and insectoid genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Megaspidery_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<InsectJelly>10</InsectJelly>
+			<RB_Genewax>5</RB_Genewax>
+			<GR_InsectoidGenetic>1</GR_InsectoidGenetic>
+		</butcherProducts>
+	</ThingDef>
+
+		<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Mousy_Honeycomb</defName>
+		<label>mousy honeycomb</label>
+		<description>This is a honeycomb produced by mousy bees. Mousy bees have rodent genes spliced in their genome. They produce rodent genetic materials and many find their constant high-pitched squeaking sounds to be quite distracting. Honeycombs can be procesed in a Honey Extractor to get genetic honey, genewax and rodent genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Mousy_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_GeneticHoney>5</RB_GeneticHoney>
+			<RB_Genewax>5</RB_Genewax>
+			<GR_RodentGenetic>1</GR_RodentGenetic>
+		</butcherProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Purring_Honeycomb</defName>
+		<label>purring honeycomb</label>
+		<description>This is a honeycomb produced by purring bees. Purring bees have cat genes spliced in their genome. They produce feline genetic materials and a lot of videos on the internet. Honeycombs can be procesed in a Honey Extractor to get genetic honey, genewax and feline genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Purring_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_GeneticHoney>5</RB_GeneticHoney>
+			<RB_Genewax>5</RB_Genewax>
+			<GR_FelineGenetic>1</GR_FelineGenetic>
+		</butcherProducts>
+	</ThingDef>
+	
+	<ThingDef ParentName="RB_CombBase">
+		<defName>RB_Scaly_Honeycomb</defName>
+		<label>scaly honeycomb</label>
+		<description>TScaly bees have reptilian genes spliced in their genome. They are covered in tough looking scales and produce reptilian genetic materials. Honeycombs can be procesed in a Honey Extractor to get genetic honey, genewax and reptilian genetic material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Combs/RB_Scaly_Honeycomb</texPath>
+		</graphicData>	
+		<butcherProducts>
+			<RB_GeneticHoney>5</RB_GeneticHoney>
+			<RB_Genewax>5</RB_Genewax>
+			<GR_ReptilianGenetic>1</GR_ReptilianGenetic>
+		</butcherProducts>
+	</ThingDef>
+</Defs>
