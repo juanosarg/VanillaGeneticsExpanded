@@ -40,6 +40,11 @@
                         if (!pawnKindDef.race.HasComp(typeof(CompApplyAgeDiseases)))
                             pawnKindDef.race.comps.Add(new CompProperties(typeof(CompApplyAgeDiseases)));
                     }
+
+                    if (pawnKindDef.race.tradeTags?.Contains("AnimalGeneticMechanoid") == true) {
+                        if (!pawnKindDef.race.HasComp(typeof(CompHybrid)))
+                            pawnKindDef.race.comps.Add(new CompProperties(typeof(CompHybrid)));
+                    }
                 }
             }
         }

@@ -5,7 +5,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechabear</defName>
 		<label>mechabear</label>
-		<description>This cybernetic beast has been mutated far beyond its original form. Heavily armoured to withstand heavy fire, and armed with a terrifying plasma cannon. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, the mechabear is an effective weapons platform, akin to a rocket turret. Like all mechanoid hybrids it produces industrial components every couple days.</description>
+		<description>This cybernetic beast has been mutated far beyond its original form. Heavily armoured to withstand heavy fire, and armed with a terrifying plasma cannon.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechabear an effective weapons platform, akin to a rocket turret. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>2.3</MoveSpeed>
@@ -65,6 +65,18 @@
 				<hediffname>GR_VeryLowRest</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
+			</li>
 
 		</comps>
 		<race>
@@ -84,8 +96,8 @@
 			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.9</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>
@@ -138,7 +150,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechalope</defName>
 		<label>mechalope</label>
-		<description>This cybernetic boomalope has been outfitted with four mechanized chemfuel reservoirs. The creature can use these reservoirs to produce a jet of burning fuel similar to a flamethrower, not incredibly harmful, but perfect for starting huge fires. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, the mechalope is an effective weapons platform, akin to a flamethrower. Like all mechanoid hybrids it produces industrial components every couple days, and chemfuel like any other boomalope.</description>
+		<description>This cybernetic boomalope has been outfitted with four mechanized chemfuel reservoirs. The creature can use these reservoirs to produce a jet of burning fuel similar to a flamethrower, not incredibly harmful, but perfect for starting huge fires.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mechanoid hybrids are always created with a controller booster, making the mechalope an effective weapons platform, akin to a flamethrower. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>3.2</MoveSpeed>
@@ -194,18 +206,28 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>5</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
-			</li>
+			
 			<li Class="CompProperties_Milkable">
 				<milkDef>Chemfuel</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>20</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
 			</li>
 
 		</comps>
@@ -230,7 +252,7 @@
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<useMeatFrom>Boomalope</useMeatFrom>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<lifeExpectancy>100</lifeExpectancy>
 			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>
@@ -283,7 +305,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechachicken</defName>
 		<label>mecha-chicken</label>
-		<description>This cybernetic organism is adept at reconnaissance and infiltration, due to its small size and speed. It is armed with a small sniper flechette gun. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, the mecha-chicken can strike targets from very far away. Like all mechanoid hybrids it produces industrial components every couple days, and eggs. I'm not sure I'd eat the eggs, though.</description>
+		<description>This cybernetic organism is adept at reconnaissance and infiltration, due to its small size and speed. It is armed with a small sniper flechette gun. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mechanoid hybrids are always created with a controller booster, making the mecha-chicken an effective weapons platform with very long range sniper attacks. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>9</MoveSpeed>
@@ -329,7 +351,7 @@
 				<warmupTime>3.5</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>15</minRange>
-				<range>55</range>
+				<range>100</range>
 				<soundCast>Bow_Small</soundCast>
 				<muzzleFlashScale>9</muzzleFlashScale>
 
@@ -340,13 +362,7 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>10</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
-			</li>
+			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ElectroEgg</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_ElectroEgg</eggFertilizedDef>
@@ -354,6 +370,22 @@
 				<eggLayIntervalDays>1</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 				<eggLayFemaleOnly>false</eggLayFemaleOnly>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
 			</li>
 
 		</comps>
@@ -373,8 +405,8 @@
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.9</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<useMeatFrom>Chicken</useMeatFrom>
 			<useLeatherFrom>Chicken</useLeatherFrom>
 			<lifeStageAges>
@@ -430,7 +462,7 @@
 		<defName>GR_Mechaspider</defName>
 
 		<label>mechaspider</label>
-		<description>This cybernetic organism has traits from both its insectoid and mechanoid origins. The mechaspider is armed with a powerful twin-coiled laser machine gun, perfect to obliterate enemies in a rain of laser fire. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, the mechaspider can rain death upon enemies. Like all mechanoid hybrids it produces industrial components every couple days.</description>
+		<description>This cybernetic organism has traits from both its insectoid and mechanoid origins. The mechaspider is armed with a powerful twin-coiled laser machine gun, perfect to obliterate enemies in a rain of laser fire.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mechanoid hybrids are always created with a controller booster, making the mechaspider an effective weapons platform with a very high fire rate. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
@@ -485,12 +517,21 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>5</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
 			</li>
 
 		</comps>
@@ -510,8 +551,8 @@
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.9</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<useLeatherFrom>Megaspider</useLeatherFrom>
 			<lifeStageAges>
@@ -567,7 +608,7 @@
 		<defName>GR_Mechamuffalo</defName>
 
 		<label>mecha-muffalo</label>
-		<description>This hulking cybernetic organism has been reinforced with an adaptive plasteel mesh, enabling it to carry an incredible amount of stuff. The mecha-muffalo is the perfect pack animal, but it is quite useless in an offensive role. Defensively, however, it is armed with a smoke cannon that it can use to cover the battlefield in a dense cloud of dust. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components. (due to game limitations, the Mechamuffalo consumes around 0.01 nutrition, enough to avoid messing up caravan calculations)\n\nUseful abilities: As long as a tamer is near to direct it, the mecha-muffalo can use its smoke cannon to scramble enemy sight. Like all mechanoid hybrids it produces industrial components every couple days. It also produces a weird metallic wool, and metallic tasting milk.</description>
+		<description>This hulking cybernetic organism has been reinforced with an adaptive plasteel mesh, enabling it to carry an incredible amount of stuff. The mecha-muffalo is the perfect pack animal, but it is quite useless in an offensive role. Defensively, however, it is armed with a smoke cannon that it can use to cover the battlefield in a dense cloud of dust.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mechanoid hybrids are always created with a controller booster, making the mecha-muffalo capable of laying a screen of smoke for defensive purposes. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>3.2</MoveSpeed>
@@ -623,13 +664,7 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>5</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
-			</li>
+			
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_MechaMilk</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>
@@ -641,6 +676,22 @@
 				<woolDef>GR_MechaWool</woolDef>
 				<shearIntervalDays>25</shearIntervalDays>
 				<woolAmount>50</woolAmount>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
 			</li>
 
 		</comps>
@@ -661,8 +712,8 @@
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.9</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<lifeStageAges>
@@ -717,7 +768,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mecharat</defName>
 		<label>mecha-rat</label>
-		<description>This tiny cybernetic organism can be mass-produced as a kind of "suicide weapon". It is very fast, and armed with a short ranged stun gun, so hordes of mecha-rats can be sent to the front lines to keep enemies stunned and in check. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, mecha-rats can be sent to the enemy to stun them. Like all mechanoid hybrids it produces industrial components every couple days.</description>
+		<description>This tiny cybernetic organism can be mass-produced as a kind of "suicide weapon". It is very fast, and armed with a short ranged stun gun, so hordes of mecha-rats can be sent to the front lines to keep enemies stunned and in check. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, allowing the colonists to send the mecha-rat to the front lines to quickly stun enemies. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>12</MoveSpeed>
@@ -773,14 +824,22 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>10</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
 			</li>
-
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
@@ -798,8 +857,8 @@
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.9</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<useMeatFrom>Rat</useMeatFrom>
 			<useLeatherFrom>Rat</useLeatherFrom>
 			<lifeStageAges>
@@ -855,7 +914,7 @@
 		<defName>GR_Mechaturtle</defName>
 
 		<label>mechaturtle</label>
-		<description>This cybernetic beast is heavily armoured with a plasteel-encased biomechanical shell. It is armed with a poison spitting cannon. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, the mechaturtle can hurl poison projectiles to the enemy. Like all mechanoid hybrids it produces industrial components every couple days. It is, of course, quite slow.</description>
+		<description>This slow, cybernetic beast is heavily armoured with a plasteel-encased biomechanical shell. It is armed with a poison spitting cannon.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechaturtle an effective weapons platform that fires venomous projectiles. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>1</MoveSpeed>
@@ -865,8 +924,8 @@
 			<ToxicSensitivity>0</ToxicSensitivity>
 			<Flammability>0</Flammability>
 			<MarketValue>2000</MarketValue>
-			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
@@ -910,14 +969,23 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>5</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
+			
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
 			</li>
-
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
@@ -935,8 +1003,8 @@
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.9</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<useMeatFrom>Tortoise</useMeatFrom>
 			<useLeatherFrom>Tortoise</useLeatherFrom>
 			<lifeStageAges>
@@ -992,7 +1060,7 @@
 		<defName>GR_Mechawolf</defName>
 
 		<label>mechawolf</label>
-		<description>This cybernetic beast has been augmented with a powerful synthetic structure capable of generating waves of cryogenic liquid. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, the mechawolf can launch cryo projectiles that freeze the ground (and enemies!) in contact. Like all mechanoid hybrids it produces industrial components every couple days.</description>
+		<description>This cybernetic beast has been augmented with a powerful synthetic structure capable of generating waves of cryogenic liquid. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechawolf an effective weapons platform that fires frost projectiles. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>6</MoveSpeed>
@@ -1047,14 +1115,22 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>5</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
 			</li>
-
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
@@ -1072,8 +1148,8 @@
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.9</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<lifeStageAges>
@@ -1130,7 +1206,7 @@
 		<defName>GR_Mechathrumbo</defName>
 
 		<label>mechathrumbo</label>
-		<description>This hulking cybernetic behemoth is why you don't need tanks in the Rim. Its huge plasteel carapace hides a miniaturized synchrotron that constantly generates small amounts of antimatter, which is instantly used to fill a miniature antigrain warhead. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, the mechathrumbo is like a mortar turret, armed with self-replenishing miniature antigrain warheads. This is SO end game... Like all mechanoid hybrids it produces industrial components every couple days.</description>
+		<description>This hulking cybernetic behemoth is why you don't need tanks in the Rim. Its huge plasteel carapace hides a miniaturized synchrotron that constantly generates small amounts of antimatter, which is instantly used to fill a miniature antigrain warhead. Slow, but quite effective.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechathrumbo effective mobile artillery. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
@@ -1171,7 +1247,7 @@
 				<accuracyLong>0.8</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>GR_Warhead</defaultProjectile>
-				<warmupTime>5</warmupTime>
+				<warmupTime>30</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>10</minRange>
 				<range>60</range>
@@ -1186,14 +1262,23 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>4</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
+			
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
 			</li>
-
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
+			</li>
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
@@ -1211,8 +1296,8 @@
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.95</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<lifeStageAges>
@@ -1242,7 +1327,7 @@
 		<defName>GR_Mechathrumbo</defName>
 		<label>mechathrumbo</label>
 		<race>GR_Mechathrumbo</race>
-		<combatPower>1000</combatPower>
+		<combatPower>500</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
@@ -1271,7 +1356,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechacat</defName>		
 		<label>mechacat</label>
-		<description>The tail of this robotic creature has been crafted from an amalgamation of scyther blades and mechanite self-replicators. This allows the mechacat to use its tail as a throwable weapon, and quickly regenerate it to use it again. Like all mechanoid hybrids, it doesn't need to eat, it can't reproduce and it doesn't age. It needs to rest a bit to recharge its organic components.\n\nUseful abilities: As long as a tamer is near to direct it, the mechacat can use its tail as a dangerous throwable scythe. Like all mechanoid hybrids it produces industrial components every couple days.</description>
+		<description>The tail of this robotic creature has been crafted from an amalgamation of scyther blade structures and mechanite self-replicators. This allows the mechacat to use its tail as a throwable weapon, and quickly regenerate it to use it again. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechacat capable of attacking with slashing attacks from a range. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
@@ -1312,7 +1397,7 @@
 				<accuracyLong>1</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>GR_RazorProjectile</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>2</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>2</minRange>
 				<range>25</range>
@@ -1326,14 +1411,23 @@
 		</verbs>
 
 		<comps>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>ComponentIndustrial</resourceDef>
-				<gatheringIntervalDays>6</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>ComponentIndustrialDesc</customResourceString>
-
+			
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
 			</li>
-
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
+			</li>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -1355,8 +1449,8 @@
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
-			<wildness>0.6</wildness>
-			<lifeExpectancy>2500</lifeExpectancy>
+			<wildness>0.9</wildness>
+			<lifeExpectancy>100</lifeExpectancy>
 			<useMeatFrom>Cat</useMeatFrom>
 			<useLeatherFrom>Cat</useLeatherFrom>
 			<lifeStageAges>
@@ -1439,11 +1533,11 @@
 			<useMeatFrom>Horse</useMeatFrom>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<hasGenders>false</hasGenders>
-			<wildness>0.4</wildness>
+			<wildness>0.9</wildness>
 			<fleshType>GR_Mechanoid</fleshType>		
 			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
-			<lifeExpectancy>3000</lifeExpectancy>
+			<lifeExpectancy>100</lifeExpectancy>
 			<lifeStageAges>
 				
 				<li>
@@ -1463,6 +1557,28 @@
 			<li>AnimalGenetic</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_HorseHybrid">
+				
+			</li>
+		
+		</comps>
 		<tools>
 			<li>
 				<label>head</label>
@@ -1634,7 +1750,25 @@
 			</li>
 		</tools>
 		<comps>
-			
+				<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_VeryLowRest</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_DieUnlessReset">
+				<effect>false</effect>
+				<message>GR_IFFCoherence</message>
+				<manhunterButNotDie>true</manhunterButNotDie>
+				<timeToDieInTicks>300000</timeToDieInTicks>
+				<expressTimeInPercentage>true</expressTimeInPercentage>
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
+				
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
 		</comps>
 
 		<race>
@@ -1644,10 +1778,10 @@
 			<baseHungerRate>0.001</baseHungerRate>
 			<useLeatherFrom>Human</useLeatherFrom>
 			<useMeatFrom>Human</useMeatFrom>	
-			<lifeExpectancy>850</lifeExpectancy>
+			<lifeExpectancy>100</lifeExpectancy>
 			<foodType>CarnivoreAnimal</foodType>
 
-			<wildness>0.6</wildness>
+			<wildness>0.9</wildness>
 			<fleshType>GR_Mechanoid</fleshType>	
 			<herdMigrationAllowed>false</herdMigrationAllowed>			
 		

@@ -92,6 +92,8 @@ namespace GeneticRim
 		[MayRequireIdeology]
 		public static PreceptDef       GR_WorktableSpeeds_Genomorpher;
 
+		public static AbilityDef       GR_DeathRay;
+
 
 
 	}

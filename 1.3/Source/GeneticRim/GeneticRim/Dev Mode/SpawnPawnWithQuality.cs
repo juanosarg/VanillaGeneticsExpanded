@@ -16,7 +16,7 @@ namespace GeneticRim
 		private static void SpawnPawnQuality()
 		{
 			List<DebugMenuOption> list = new List<DebugMenuOption>();
-			foreach (PawnKindDef item in DefDatabase<PawnKindDef>.AllDefs.Where(x => x.GetModExtension<DefExtension_Hybrid>()!=null).OrderBy((PawnKindDef kd) => kd.defName))
+			foreach (PawnKindDef item in DefDatabase<PawnKindDef>.AllDefs.Where(x => x.GetModExtension<DefExtension_Hybrid>()!=null || x.race.tradeTags?.Contains("AnimalGeneticMechanoid")==true).OrderBy((PawnKindDef kd) => kd.defName))
 			{
 				PawnKindDef localKindDef = item;
 				list.Add(new DebugMenuOption(localKindDef.defName, DebugMenuOptionMode.Tool, delegate

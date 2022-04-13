@@ -304,8 +304,10 @@
     <Compile Include="Abilities\Ability_Charge.cs" />
     <Compile Include="Abilities\Ability_Pounce.cs" />
     <Compile Include="Abilities\CompCreateThingDefAround.cs" />
+    <Compile Include="Abilities\CompDeathRay.cs" />
     <Compile Include="Abilities\CompGiveHediff.cs" />
     <Compile Include="Abilities\Properties\CompProperties_CreateThingDefAround.cs" />
+    <Compile Include="Abilities\Properties\CompProperties_DeathRay.cs" />
     <Compile Include="Abilities\Properties\CompProperties_GiveHediff.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertArchotechGrowthCell.cs" />
@@ -345,6 +347,8 @@
     <Compile Include="Comps\CompProperties\CompProperties_HorseHybrid.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_HumanoidHybrid.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_DieUnlessReset.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_RegisterMechHybridWithAntenna.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_RegisterMechAntenna.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomItemSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_RandomHybridSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
@@ -354,6 +358,8 @@
     <Compile Include="Comps\CompProperties\CompProperties_TargetEffect_Extract.cs" />
     <Compile Include="Comps\CompRandomHybridSpawner.cs" />
     <Compile Include="Comps\CompRandomItemSpawner.cs" />
+    <Compile Include="Comps\CompRegisterMechAntenna.cs" />
+    <Compile Include="Comps\CompRegisterMechHybridWithAntenna.cs" />
     <Compile Include="Comps\CompStartCharged.cs" />
     <Compile Include="Comps\CompTargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
@@ -361,6 +367,7 @@
     <Compile Include="Game, World and Map Components\WorldComponent_LabQuests.cs" />
     <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
     <Compile Include="Harmony\Caravan_NightResting.cs" />
+    <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="ThinkNodes\ThinkNode_HumanoidHybrid.cs" />

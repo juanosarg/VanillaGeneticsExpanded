@@ -17,7 +17,6 @@
 	<NeutroglycerinProd>Neutroglycerin production</NeutroglycerinProd>
 	<ComponentIndustrialDesc>Industrial Component production</ComponentIndustrialDesc>
 	<CastoreumProd>Castoreum production</CastoreumProd>
-
 	<!-- Age related diseases -->
 	<GR_AgeDiseaseLabel>Genetic disease</GR_AgeDiseaseLabel>
 	<GR_AgeDiseaseText>{0} has reached the limit of its stable lifespan, and has acquired a genetic disease: {1}\n\nGenetic diseases are incurable. They can be treated to delay the inevitable, but the animal will eventually perish.</GR_AgeDiseaseText>
@@ -92,15 +91,17 @@
 	<GR_BeginArchotechCentipedeDesc>Create the Archotech centipede. The process will take about 15 days, and the energy signature will be detectable from a long distance away.</GR_BeginArchotechCentipedeDesc>
 	<GR_BeginArchotechCentipedeText>You are ready to start the archotech centipede project.\n\nThe process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates that someone is meddling in technology that is far beyond human understanding, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first.</GR_BeginArchotechCentipedeText>
 	<GR_ArchoWombProgress>Archowomb progress: {0}</GR_ArchoWombProgress>
-	<GR_GameOverArchotech>You've activated the Archotech Project! These colonists were present for the archotech awakening:\n\n{0}\n\nThe Archotech Centipede is now under their control, and you are free to decimate your enemies and control the planet unopposed.\n\nCongratulations, you have won the game with the Vanilla Genetics Expanded mod!</GR_GameOverArchotech>
-	
+	<GR_GameOverArchotech>You've activated the Archotech Project! These colonists were present for the archotech awakening:\n\n{0}\n\nThe Archotech Centipede is now under their control, and you are free to decimate your enemies and control the planet unopposed.\n\nCongratulations, you have won the game with the Vanilla Genetics Expanded mod!</GR_GameOverArchotech>	
 	<!-- Biomechanical lab beacon -->
 	<GR_DecodingRadioSignals>Decoding strange radio signals in {0}</GR_DecodingRadioSignals>
 	<!-- Mechahybridizer -->
 	<GR_SelectParagonToConvert>Select paragon to convert</GR_SelectParagonToConvert>
 	<GR_SelectParagonToConvertDesc>Select paragon for the mechahybridization process. This animal will be brought to the mechahybridizer and converted into a mechanoid hybrid under the player's control. This process will take 12 hours and blow up one of the nearby mechafuses.</GR_SelectParagonToConvertDesc>
 	<GR_NoValidParagonsToConvert>No colony paragon hybrids present</GR_NoValidParagonsToConvert>
-	<GR_WarningNoFusesLeft>Warning: Due to the mechahybridizer not being shielded with any mechafuses, an ancient mechanoid raid will be on its way from orbit</GR_WarningNoFusesLeft>
+	<GR_WarningNoFusesLeft>Warning: Due to the mechahybridizer not being shielded by any mechafuses, an ancient mechanoid raid will be on its way from orbit</GR_WarningNoFusesLeft>
+	<!-- Mecha antenna -->
+	<GR_IFFCoherence>IFF Coherence: {0}</GR_IFFCoherence>
+	<GR_MechsInThisAntenna>Mech hybrids affected by this antenna:</GR_MechsInThisAntenna>
 	<!-- Hybrid role descriptions-->
 	<GR_HybridRole>Hybrid role</GR_HybridRole>
 	<GR_HybridRoleCombat>Combat</GR_HybridRoleCombat>

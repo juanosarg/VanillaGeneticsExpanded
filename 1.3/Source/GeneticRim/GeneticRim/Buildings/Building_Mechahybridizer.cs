@@ -176,7 +176,13 @@ namespace GeneticRim
                     {
                         pawn.playerSettings.AreaRestriction = innerPawn.playerSettings.AreaRestriction;
                     }
+                    QualityCategory quality = innerPawn.TryGetComp<CompHybrid>()?.quality ?? QualityCategory.Normal;
 
+                    CompHybrid comp = pawn.TryGetComp<CompHybrid>();
+                    if (comp != null)
+                    {
+                        comp.quality = quality;
+                    }
 
 
                     if (unSpentFuse != null) { 

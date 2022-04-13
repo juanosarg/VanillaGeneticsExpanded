@@ -31,7 +31,7 @@ namespace GeneticRim
         public override void CompTick()
         {
             base.CompTick();
-            if (!manhunter)
+            if (!manhunter && parent.Map!=null)
             {
                 tickCounter++;
 
@@ -45,6 +45,11 @@ namespace GeneticRim
                         {
                             pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
                             pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
+                            if (pawn.health.hediffSet.HasHediff(InternalDefOf.GR_AnimalControlHediff))
+                            {
+                                Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.GR_AnimalControlHediff);
+                                pawn.health.RemoveHediff(hediff);
+                            }
                             manhunter = true;
 
                         }
@@ -78,12 +83,19 @@ namespace GeneticRim
         {
 
             if (!manhunter) {
-                string text = base.CompInspectStringExtra();
-                string timeToLive = Props.message.Translate((Props.timeToDieInTicks - tickCounter).ToStringTicksToPeriod(true, false, true, true));
 
+                if (Props.expressTimeInPercentage) {
+                    string text = base.CompInspectStringExtra();
+                    string timeToLive = Props.message.Translate((1-((float)tickCounter/Props.timeToDieInTicks)).ToStringPercent());
+                    return text + timeToLive;
 
-
-                return text + timeToLive;
+                } else
+                {
+                    string text = base.CompInspectStringExtra();
+                    string timeToLive = Props.message.Translate((Props.timeToDieInTicks - tickCounter).ToStringTicksToPeriod(true, false, true, true));
+                    return text + timeToLive;
+                }
+               
             }else return base.CompInspectStringExtra();
 
         }

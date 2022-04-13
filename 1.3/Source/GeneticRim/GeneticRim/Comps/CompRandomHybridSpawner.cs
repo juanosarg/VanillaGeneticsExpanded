@@ -19,7 +19,18 @@ namespace GeneticRim
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-           hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race.tradeTags?.Contains("AnimalGenetic") == true) && x.race.tradeTags?.Contains("AnimalGeneticMechanoid") == false).ToHashSet();
+
+            if (StaticCollectionsClass.AnyMechAntennas())
+            {
+                hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race.tradeTags?.Contains("AnimalGenetic") == true) && x.race.tradeTags?.Contains("AnimalGeneticCentipede") == false).ToHashSet();
+
+            }
+            else
+            {
+                hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race.tradeTags?.Contains("AnimalGenetic") == true) && x.race.tradeTags?.Contains("AnimalGeneticMechanoid") == false).ToHashSet();
+
+            }
+
 
         }
 

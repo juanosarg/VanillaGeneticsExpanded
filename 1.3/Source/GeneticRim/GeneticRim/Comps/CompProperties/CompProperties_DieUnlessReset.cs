@@ -12,6 +12,7 @@ namespace GeneticRim
         public bool effect = false;
         public ThingDef effectFilth;
         public string message;
+        public bool expressTimeInPercentage = false;
 
         public CompProperties_DieUnlessReset()
         {

@@ -9,6 +9,10 @@
 		<cooldownTicks>30000</cooldownTicks>
 	</AbilityGroupDef>
 	<AbilityGroupDef>
+		<defName>GR_ThriceDayAbilitiesGroup</defName>
+		<cooldownTicks>20000</cooldownTicks>
+	</AbilityGroupDef>
+	<AbilityGroupDef>
 		<defName>GR_OnceADayAbilitiesGroup</defName>
 		<cooldownTicks>60000</cooldownTicks>
 	</AbilityGroupDef>
@@ -61,6 +65,24 @@
 				<canTargetMechs>false</canTargetMechs>
 			</targetParams>
 		</verbProperties>
+	</AbilityDef>
+	
+	<AbilityDef ParentName="GR_TargetAbilities">
+		<defName>GR_DeathRay</defName>
+		<label>orbital heat ray</label>
+		<groupDef>GR_ThriceDayAbilitiesGroup</groupDef>
+		<description>Redirects an orbital mechanoid satellite to fire upon a selected location.</description>
+		<iconPath>ui/commands/GR_Orbital</iconPath>
+		
+		<verbProperties>
+			<range>200</range>
+		</verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_DeathRay">
+				<duration>600</duration>
+				
+			</li>
+		</comps>
 	</AbilityDef>
 	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonateBomb</defName>

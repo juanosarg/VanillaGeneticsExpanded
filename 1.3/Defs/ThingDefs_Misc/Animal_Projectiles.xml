@@ -63,7 +63,7 @@
 		<projectile>
 			<explosionRadius >4</explosionRadius >
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>15</damageAmountBase>
 			<explosionDelay>1</explosionDelay>
 		</projectile>
 	</ThingDef>

@@ -21,6 +21,9 @@ namespace GeneticRim
         // A list of genetic failures in the map
         public static HashSet<Thing> failures_in_map = new HashSet<Thing>();
 
+        // A list of mech antennas in the world
+        public static HashSet<Building_MechahybridAntenna> mech_antennas = new HashSet<Building_MechahybridAntenna>();
+
         public static void AddHumanoidHybridToList(Thing thing)
         {
 
@@ -74,6 +77,30 @@ namespace GeneticRim
                 failures_in_map.Remove(thing);
             }
 
+        }
+
+        public static void AddMechAntennaToList(Building_MechahybridAntenna thing)
+        {
+
+            if (!mech_antennas.Contains(thing))
+            {
+                mech_antennas.Add(thing);
+            }
+        }
+
+        public static void RemoveMechAntennaFromList(Building_MechahybridAntenna thing)
+        {
+            if (mech_antennas.Contains(thing))
+            {
+                mech_antennas.Remove(thing);
+            }
+
+        }
+
+        public static bool AnyMechAntennas()
+        {
+
+            return mech_antennas.Count > 0;
         }
 
 

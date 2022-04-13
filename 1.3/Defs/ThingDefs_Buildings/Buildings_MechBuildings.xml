@@ -43,7 +43,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_MechahybridAntenna</defName>
 		<label>mechahybrid antenna</label>
-		<description>A large broadcasting server that is specifically tuned to maintain the tameness of mechahybrids. Without this server, the self-replicating mechanites within the mechahybrids will eventually no longer be able to register friendlies as their IFF updates and branches, causing them to go manhunter.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; It is important to note that a single antenna can only broadcast to a limited number of mechahybrids, specifically up to 10 of them regardless of their size or complexity. Any additionally mechahybrid present beyond the initial 10 will no longer receive updates and will eventually lose their “tameness”.</description>
+		<description>A large broadcasting server that is specifically tuned to maintain the tameness of mechahybrids. Without this server, the self-replicating mechanites within the mechahybrids will eventually no longer be able to register friendlies as their IFF updates and branches, causing them to go manhunter.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; It is important to note that a single antenna can only broadcast to a limited number of mechahybrids, specifically up to 5 of them regardless of their size or complexity. Any additionally mechahybrid present beyond the initial 5 will no longer receive updates and will eventually lose their "tameness". Part of the broadcast will reach nearby settlements and ruins, attracting maddened mechahybrids, so they will appear from the moment you have a mechahybrid antenna in the periodic roaming monstrosities raids.</description>
 		<thingClass>GeneticRim.Building_MechahybridAntenna</thingClass>
 		<graphicData>
 			<texPath>Things/Building/Mech/Mechahybrid_Antenna</texPath>
@@ -55,7 +55,7 @@
 		 <uiIconPath>Things/Building/Mech/Mechahybrid_Antenna_MenuIcon</uiIconPath>
 		<rotatable>false</rotatable>
 		<drawerType>MapMeshAndRealTime</drawerType>
-		<altitudeLayer>Building</altitudeLayer>	
+		<altitudeLayer>BuildingOnTop</altitudeLayer>	
 		<scatterableOnMapGen>false</scatterableOnMapGen>
 		<passability>Standable</passability>
 		<fillPercent>1</fillPercent>
@@ -74,6 +74,11 @@
 		<researchPrerequisites>
 			<li>GR_GeneticMechahybridization</li>
 		</researchPrerequisites>
+		<comps>
+		<li Class="GeneticRim.CompProperties_RegisterMechAntenna">
+				
+				
+			</li></comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="GR_MechBuildingBase">
