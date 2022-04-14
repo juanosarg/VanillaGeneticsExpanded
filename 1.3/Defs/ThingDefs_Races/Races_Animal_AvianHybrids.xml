@@ -1194,7 +1194,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenbear/Chickenbear</texPath>
+					<texPath>Things/Pawn/Animal/Chicken/Turkeyman/GR_Turkeyman</texPath>
 					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -1204,7 +1204,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenbear/Chickenbear</texPath>
+					<texPath>Things/Pawn/Animal/Chicken/Turkeyman/GR_Turkeyman</texPath>
 					<drawSize>1.4</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
