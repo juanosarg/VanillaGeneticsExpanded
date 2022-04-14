@@ -1247,11 +1247,14 @@
 				<accuracyLong>0.8</accuracyLong>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>GR_Warhead</defaultProjectile>
-				<warmupTime>30</warmupTime>
+				<warmupTime>25</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<minRange>10</minRange>
-				<range>60</range>
-				<forcedMissRadius>2</forcedMissRadius>
+				<range>100</range>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>		
+				<forcedMissRadius>3</forcedMissRadius>
 				<soundCast>Mortar_LaunchA</soundCast>
 				<muzzleFlashScale>15</muzzleFlashScale>
 				<label>antigrain artillery</label>

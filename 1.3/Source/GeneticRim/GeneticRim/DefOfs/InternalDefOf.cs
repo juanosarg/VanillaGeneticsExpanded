@@ -45,6 +45,7 @@ namespace GeneticRim
 		public static ThingDef         GR_SlowFlyer;
 		public static ThingDef         GR_StraightFlyer;
 		public static ThingDef         GR_BiomechanicalLabBeacon;
+		public static ThingDef         GR_Turkeyman;
 
 		public static PawnKindDef      GR_ArchotechCentipede;
 

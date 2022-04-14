@@ -42,6 +42,11 @@ namespace GeneticRim
 
         }
 
+        public static bool IsHumanoidHybrid(Thing thing)
+        {
+            return humanoid_hybrids.Contains(thing);
+        }
+
         public static void AddHorseHybridToList(Pawn thing)
         {
             

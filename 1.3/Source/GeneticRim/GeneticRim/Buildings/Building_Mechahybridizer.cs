@@ -5,6 +5,7 @@ using UnityEngine;
 using Verse;
 using RimWorld;
 using System.Linq;
+using System.Text;
 
 
 namespace GeneticRim
@@ -18,6 +19,7 @@ namespace GeneticRim
         protected bool contentsKnown;
         public float duration = 30000; // 2500 ticks per hour * 12 hours
         public float progress = -1;
+        public bool oneRaidPerProgress = false;
         public int mechRaidProgress = 0;
         public const int mechRaidInterval = 15000;
         Graphic usedGraphic;
@@ -109,6 +111,7 @@ namespace GeneticRim
             listFuses.Where(x => (x.active == true)).TryRandomElement(out unSpentFuse);
             progress = 0;
             this.Map.mapDrawer.MapMeshDirty(this.Position, MapMeshFlag.Things | MapMeshFlag.Buildings);
+            oneRaidPerProgress = false;
         }
 
 
@@ -121,7 +124,7 @@ namespace GeneticRim
 
                 progress += 1f / this.duration;
 
-                if(unSpentFuse == null)
+                if(unSpentFuse == null && !oneRaidPerProgress)
                 {
                     mechRaidProgress++;
 
@@ -136,6 +139,7 @@ namespace GeneticRim
                             parms.raidArrivalMode = PawnsArrivalModeDefOf.CenterDrop;
                             IncidentDef def = IncidentDefOf.RaidEnemy;
                             def.Worker.TryExecute(parms);
+                            oneRaidPerProgress = true;
                         }
                         mechRaidProgress = 0;
                     }
@@ -199,6 +203,22 @@ namespace GeneticRim
             }
         }
 
+        public override string GetInspectString()
+        {
+            StringBuilder sb = new StringBuilder(base.GetInspectString());
+            if (this.progress != -1)
+            {
+                sb.AppendLine("GR_MechahybridizerProgress".Translate(this.progress.ToStringPercent()));
+
+            }
+          
+
+
+
+
+            return sb.ToString().Trim();
+        }
+
 
         public override void ExposeData()
         {
@@ -208,6 +228,8 @@ namespace GeneticRim
             Scribe_Deep.Look<Building_Mechafuse>(ref this.unSpentFuse, "unSpentFuse", new object[] { this });
             Scribe_Values.Look(ref this.mechRaidProgress, nameof(this.mechRaidProgress));
             Scribe_Values.Look(ref this.progress, nameof(this.progress));
+            Scribe_Values.Look(ref this.oneRaidPerProgress, nameof(this.oneRaidPerProgress));
+
         }
 
         public ThingOwner GetDirectlyHeldThings()

@@ -462,5 +462,36 @@
 			</li>
 		</comps>
 	</ThingDef>
+	<!-- Chicken / Humanoid Egg -->
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>GR_TurkeymanEggUnfertilized</defName>
+		<label>turkeyman egg (unfert.)</label>
+		<description>Unfertilized turkeyman egg. It can be eaten raw, but it's much, much better cooked.</description>
+		<graphicData>
+			<color>(250,250,240)</color>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="EggFertBase">
+		<defName>GR_TurkeymanEggFertilized</defName>
+		<label>turkeyman egg (fert.)</label>
+		<description>Fertilized turkeyman egg. If all goes well, it should hatch into one of these abominations. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+			<color>(250,250,240)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>7.0</MarketValue>
+		</statBases>
+		<tradeability>None</tradeability>
+		<comps>
+			<li Class="CompProperties_Hatcher">
+				<hatcherDaystoHatch>7</hatcherDaystoHatch>
+				<hatcherPawn>GR_Turkeyman</hatcherPawn>
+			</li>
+		</comps>
+	</ThingDef>
 	
 </Defs>

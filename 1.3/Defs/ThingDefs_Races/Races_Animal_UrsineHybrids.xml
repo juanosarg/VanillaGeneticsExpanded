@@ -1198,4 +1198,232 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	
+	<!-- Bear - Humanoid -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Bearman</defName>
+		<label>bearman</label>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+						<ComfyTemperatureMax>35</ComfyTemperatureMax>
+
+			<MarketValue>650</MarketValue>			
+			<FilthRate>2</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>12</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.0</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>12</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>18</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>GoJuice</resourceDef>
+				<gatheringIntervalDays>5</gatheringIntervalDays>
+				<resourceAmount>2</resourceAmount>
+				<customResourceString>GR_GoJuice</customResourceString>
+			</li>
+		</comps>
+		<race>
+			<fleshType>GR_Normal</fleshType>
+			<herdAnimal>false</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<predator>true</predator>
+			<maxPreyBodySize>2</maxPreyBodySize>
+			<body>QuadrupedAnimalWithPaws</body>
+			<baseHungerRate>0.35</baseHungerRate>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>	
+			<wildness>0.5</wildness>
+			<baseBodySize>1.25</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<useLeatherFrom>Bear_Grizzly</useLeatherFrom>
+			<useMeatFrom>Bear_Grizzly</useMeatFrom>
+			<trainability>Advanced</trainability>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+					<soundWounded>Pawn_Bear_Injured</soundWounded>
+					<soundDeath>Pawn_Bear_Death</soundDeath>
+					<soundCall>Pawn_Bear_Call</soundCall>
+					<soundAngry>Pawn_Bear_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="BearBase">
+		<defName>GR_Bearman</defName>
+		<label>bearman</label>
+		<race>GR_Bearman</race>
+		<combatPower>180</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<labelMale>bearman</labelMale>
+		<labelFemale>bearwoman</labelFemale>
+		<alternateGraphics>
+			<li>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
+					<color>(226, 161, 154)</color>
+			</li>
+			<li>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
+					<color>(228, 158, 90)</color>
+			</li>
+			<li>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
+					<color>(255, 239, 189)</color>
+			</li>
+			<li>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
+					<color>(130, 91, 48)</color>
+			</li>
+			
+		</alternateGraphics>
+		<lifeStages>
+			<li>
+				<label>bearbaby</label>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman1</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Dessicated_Bearman</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman1</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Dessicated_Bearman</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman1</texPath>
+					<drawSize>3.0</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Dessicated_Bearman</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_UrsineGenetic</dominantGenome>
+				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 </Defs>

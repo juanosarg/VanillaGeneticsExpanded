@@ -1646,7 +1646,23 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>200</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
-	
+	<alternateGraphicChance>1</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+					<texPath>Things/Pawn/Animal/Horse/Spiderhorse/GR_Spiderhorse</texPath>
+					<color>(156,148,125)</color>
+			</li>
+			<li>
+					<texPath>Things/Pawn/Animal/Horse/Spiderhorse/GR_Spiderhorse</texPath>
+					<color>(114,107,84)</color>
+			</li>
+			<li>
+					<texPath>Things/Pawn/Animal/Horse/Spiderhorse/GR_Spiderhorse</texPath>
+					<color>(154,125,94)</color>
+			</li>
+
+			
+		</alternateGraphics>
 		<lifeStages>
 			
 			<li>
@@ -1814,7 +1830,26 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>100</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
-	
+		<alternateGraphicChance>0.8</alternateGraphicChance>
+		<alternateGraphics>
+			<li>
+					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman</texPath>
+					<color>(226, 161, 154)</color>
+			</li>
+			<li>
+					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman</texPath>
+					<color>(228, 158, 90)</color>
+			</li>
+			<li>
+					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman</texPath>
+					<color>(255, 239, 189)</color>
+			</li>
+			<li>
+					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman</texPath>
+					<color>(130, 91, 48)</color>
+			</li>
+			
+		</alternateGraphics>
 		<lifeStages>
 			<li>
 				<label>hurseman foal</label>

@@ -316,6 +316,7 @@
     <Compile Include="AI\JobDrivers\JobDriver_ParagonConversion.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_Talk.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Flick.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Talk.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_ParagonConversion.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_ArchotechDNAExtraction.cs" />
@@ -371,6 +372,7 @@
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="ThinkNodes\ThinkNode_HumanoidHybrid.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Turkeyman.cs" />
     <Compile Include="Windows and Dialogs\Window_DesignateGrowthCell.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="DamageWorkers\DamageWorker_DevastatingBite.cs" />

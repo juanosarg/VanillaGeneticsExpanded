@@ -9,6 +9,7 @@
 	<SilkGrowth>Silk growth</SilkGrowth>
 	<PoisonGrowth>Poison fullness</PoisonGrowth>
 	<GR_Neutroamine>Neutroamine production time</GR_Neutroamine>
+	<GR_GoJuice>Go-Juice production</GR_GoJuice>
 	<TentacleGrowth>Trimmable tentacle growth</TentacleGrowth>
 	<JellyGrowthEldritch>Eldritch jelly fullness</JellyGrowthEldritch>
 	<ChocolateEgg>Chocolate egg growth</ChocolateEgg>
@@ -99,6 +100,7 @@
 	<GR_SelectParagonToConvertDesc>Select paragon for the mechahybridization process. This animal will be brought to the mechahybridizer and converted into a mechanoid hybrid under the player's control. This process will take 12 hours and blow up one of the nearby mechafuses.</GR_SelectParagonToConvertDesc>
 	<GR_NoValidParagonsToConvert>No colony paragon hybrids present</GR_NoValidParagonsToConvert>
 	<GR_WarningNoFusesLeft>Warning: Due to the mechahybridizer not being shielded by any mechafuses, an ancient mechanoid raid will be on its way from orbit</GR_WarningNoFusesLeft>
+	<GR_MechahybridizerProgress>Mechahybridization progress: {0}</GR_MechahybridizerProgress>
 	<!-- Mecha antenna -->
 	<GR_IFFCoherence>IFF Coherence: {0}</GR_IFFCoherence>
 	<GR_MechsInThisAntenna>Mech hybrids affected by this antenna:</GR_MechsInThisAntenna>

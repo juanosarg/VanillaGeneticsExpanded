@@ -54,7 +54,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="GR_AchievementParent">
 							<defName>GR_AchievementBearlyPossible</defName>
 							<label>Bearly Possible</label>
-							<description>Get all six Tier 1 Bear Hybrids</description>
+							<description>Get all seven Tier 1 Bear Hybrids</description>
 							<tracker Class="AchievementsExpanded.KindDefTracker">
 								<kindDefs>
 									<li>
@@ -79,6 +79,10 @@
 									</li>
 									<li>
 										<key>GR_Bearcat</key>
+										<value>1</value>
+									</li>
+									<li>
+										<key>GR_Bearman</key>
 										<value>1</value>
 									</li>
 								</kindDefs>

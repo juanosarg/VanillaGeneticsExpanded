@@ -5,13 +5,13 @@ using Verse.AI;
 
 namespace GeneticRim
 {
-	public class ThinkNode_HumanoidHybrid : ThinkNode_Conditional
+	public class ThinkNode_Turkeyman : ThinkNode_Conditional
 	{
-		
+
 
 		protected override bool Satisfied(Pawn pawn)
 		{
-			if (StaticCollectionsClass.IsHumanoidHybrid(pawn))
+			if (pawn.def == InternalDefOf.GR_Turkeyman)
 			{
 				return true;
 			}
