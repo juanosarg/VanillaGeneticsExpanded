@@ -1180,9 +1180,12 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<labelMale>turkeyman</labelMale>
 		<labelFemale>turkeywoman</labelFemale>
+		<labelMalePlural>turkeymen</labelMalePlural>
+		<labelFemalePlural>turkeywomen</labelFemalePlural>
 		<lifeStages>
 			<li>
 				<label>turkeybaby</label>
+				<labelPlural>turkeybabies</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Chicken/Turkeyman/GR_Turkeyman</texPath>
 					<drawSize>0.8</drawSize>

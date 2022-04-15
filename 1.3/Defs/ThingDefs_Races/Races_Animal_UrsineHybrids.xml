@@ -1355,6 +1355,8 @@
 		<alternateGraphicChance>0.8</alternateGraphicChance>
 		<labelMale>bearman</labelMale>
 		<labelFemale>bearwoman</labelFemale>
+		<labelMalePlural>bearmen</labelMalePlural>
+		<labelFemalePlural>bearwomen</labelFemalePlural>
 		<alternateGraphics>
 			<li>
 					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
@@ -1377,6 +1379,7 @@
 		<lifeStages>
 			<li>
 				<label>bearbaby</label>
+				<labelPlural>bearbabies</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman1</texPath>
 					<drawSize>1.8</drawSize>

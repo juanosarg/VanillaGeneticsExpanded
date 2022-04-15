@@ -49,4 +49,54 @@
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
+	
+	<ThinkTreeDef>
+		<defName>GR_MuffalomanBehaviour</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>120</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="GeneticRim.ThinkNode_Muffaloman">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>2</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="GeneticRim.JobGiver_Clean"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+	<ThinkTreeDef>
+		<defName>GR_DogmanBehaviour</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>130</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="GeneticRim.ThinkNode_Dogman">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>2</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="GeneticRim.JobGiver_Slaughter"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
 </Defs>

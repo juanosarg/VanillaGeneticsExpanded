@@ -1038,25 +1038,23 @@
 			</li>
 		</comps>
 		<race>
-			<body>QuadrupedAnimalWithPawsAndTail</body>
-			<deathActionWorkerClass>GeneticRim.DeathActionWorker_HairballExplosion</deathActionWorkerClass>
+			<body>QuadrupedAnimalWithHoovesAndHump</body>
+			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<fleshType>GR_Normal</fleshType>
-			<nuzzleMtbHours>12</nuzzleMtbHours>
-			<baseBodySize>1.5</baseBodySize>
-			<baseHungerRate>0.535</baseHungerRate>
-			<baseHealthScale>1.3</baseHealthScale>
+			<fleshType>GR_Normal</fleshType>			
+			<baseBodySize>1.25</baseBodySize>
+			<baseHungerRate>0.4</baseHungerRate>
+			<baseHealthScale>1.15</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
-			<trainability>None</trainability>
-			<roamMtbDays>4</roamMtbDays>
-			<wildness>0.6</wildness>
+			<trainability>Advanced</trainability>
+			<wildness>0.5</wildness>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<lifeExpectancy>4</lifeExpectancy>
-			<manhunterOnTameFailChance>0.050</manhunterOnTameFailChance>
+			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1069,9 +1067,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
-					<soundWounded>Pawn_Cougar_Injured</soundWounded>
-					<soundDeath>Pawn_Cougar_Death</soundDeath>
-					<soundAngry>Pawn_Cougar_Angry</soundAngry>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -1080,6 +1079,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1087,31 +1087,33 @@
 					<li>GR_HybridRole</li>
 				</statToAdd>
 				<statValues>
-					<li>GR_HybridRoleFarm</li>
+					<li>GR_HybridRoleUtility</li>
 				</statValues>
 				<statDescriptions>
-					<li>GR_HybridRoleFarmDesc</li>
+					<li>GR_HybridRoleUtilityDesc</li>
 				</statDescriptions>
 			</li>
 		</modExtensions>
-		<butcherProducts>
-			<GR_CompressedChemfuel>10</GR_CompressedChemfuel>
-		</butcherProducts>
+		
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>GR_Boomcat</defName>
-		<label>boomcat</label>
-		<race>GR_Boomcat</race>
-		<combatPower>120</combatPower>
+		<defName>GR_Booman</defName>
+		<label>booman</label>
+		<race>GR_Booman</race>
+		<combatPower>80</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
+		<labelMale>booman</labelMale>
+		<labelFemale>wooman</labelFemale>
+		<labelMalePlural>boomen</labelMalePlural>
+		<labelFemalePlural>woomen</labelFemalePlural>
 		<lifeStages>
 			<li>
-				<label>boomcat kitten</label>
-				<labelPlural>boomcat kittens</labelPlural>
+				<label>boombaby</label>
+				<labelPlural>boombabies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomacat/GR_Boomacat</texPath>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Animal/Boomalope/Booman/GR_Booman</texPath>
+					<drawSize>1.75</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1119,14 +1121,14 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomacat/GR_Dessicated_Boomacat</texPath>
-					<drawSize>1.5</drawSize>
+					<texPath>Things/Pawn/Animal/Boomalope/Booman/GR_Dessicated_Booman</texPath>
+					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomacat/GR_Boomacat</texPath>
-					<drawSize>1.75</drawSize>
+					<texPath>Things/Pawn/Animal/Boomalope/Booman/GR_Booman</texPath>
+					<drawSize>2.25</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1134,14 +1136,14 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomacat/GR_Dessicated_Boomacat</texPath>
-					<drawSize>1.75</drawSize>
+					<texPath>Things/Pawn/Animal/Boomalope/Booman/GR_Dessicated_Booman</texPath>
+					<drawSize>2.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomacat/GR_Boomacat</texPath>
-					<drawSize>2</drawSize>
+					<texPath>Things/Pawn/Animal/Boomalope/Booman/GR_Booman</texPath>
+					<drawSize>2.5</drawSize>
 					<shaderType>CutoutComplex</shaderType>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1149,15 +1151,15 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomacat/GR_Dessicated_Boomacat</texPath>
-					<drawSize>2</drawSize>
+					<texPath>Things/Pawn/Animal/Boomalope/Booman/GR_Dessicated_Booman</texPath>
+					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_BoomalopeGenetic</dominantGenome>
-				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

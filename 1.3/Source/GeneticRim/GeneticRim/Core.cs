@@ -114,7 +114,13 @@
                 swapResult = null;
                 return resultGlobal;
             }
-            
+
+            if (resultGlobal != null && swapResult == null)
+            {
+                swapChance = 0f;                
+                return resultGlobal;
+            }
+
             return null;
         }
 

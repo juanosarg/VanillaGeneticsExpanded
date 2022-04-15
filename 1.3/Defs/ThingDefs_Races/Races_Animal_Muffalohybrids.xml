@@ -955,4 +955,163 @@
 		</modExtensions>
 	</PawnKindDef>
 	
+	<!-- Muffalo - Humanoid -->
+	
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Muffaloman</defName>
+		<label>muffaloman</label>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. All primary muffalo hybrids have 150% carrying capacity on caravans. Muffalomen are clean muffalo hybrids that will periodically clean around the colony.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<MarketValue>450</MarketValue>
+			<FilthRate>2</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<comps>
+			
+			
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+			<li Class="CompProperties_Shearable">
+				<woolDef>GR_ThickHybridWool</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>50</woolAmount>
+			</li>
+		</comps>
+		<race>
+			
+			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<fleshType>GR_Normal</fleshType>
+			<trainability>Advanced</trainability>			
+			<body>QuadrupedAnimalWithHooves</body>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>1.25</baseHealthScale>
+			<baseHungerRate>0.4</baseHungerRate>
+			<useLeatherFrom>Muffalo</useLeatherFrom>
+			<useMeatFrom>Muffalo</useMeatFrom>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<wildness>0.5</wildness>
+			<packAnimal>true</packAnimal>
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Muffaloman</defName>
+		<label>muffaloman</label>
+		<race>GR_Muffaloman</race>
+		<combatPower>80</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<labelMale>muffaloman</labelMale>
+		<labelFemale>muffalowoman</labelFemale>
+		<labelMalePlural>muffalomen</labelMalePlural>
+		<labelFemalePlural>muffalowomen</labelFemalePlural>
+		<lifeStages>
+			<li>
+				<label>muffalobaby</label>
+				<labelPlural>muffalobabies</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffaloman/GR_Muffaloman</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffaloman/GR_Dessicated_Muffaloman</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffaloman/GR_Muffaloman</texPath>
+					<drawSize>2.25</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffaloman/GR_Dessicated_Muffaloman</texPath>
+					<drawSize>2.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffaloman/GR_Muffaloman</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Muffalo/Muffaloman/GR_Dessicated_Muffaloman</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_MuffaloGenetic</dominantGenome>
+				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
+				<carryingIncrease>true</carryingIncrease>
+				<carryingFactor>1.5</carryingFactor>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
 </Defs>
