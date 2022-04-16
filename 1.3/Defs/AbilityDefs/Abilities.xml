@@ -324,6 +324,21 @@
 			</li>
 		</comps>
 	</AbilityDef>
+	<AbilityDef ParentName="RoleAuraBuffBase">
+		<defName>GR_ResearchDrive</defName>
+		<label>research drive</label>
+		<description>Offer investigative insights to nearby researches, allowing them to more easily reach a breakthrough.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; "My fellow scientist, have you considered rejecting humanity, and returning to monkey? Food for thought".</description>
+		<iconPath>ui/commands/GR_Microscope</iconPath>
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>GR_ResearchDrive</hediffDef>
+				<onlyBrain>True</onlyBrain>
+				<onlyApplyToSelf>True</onlyApplyToSelf>
+				<replaceExisting>true</replaceExisting>
+			</li>
+		</comps>
+	</AbilityDef>
 	<VFECore.Abilities.AbilityDef>
 		<defName>GR_Pounce</defName>
 		<label>pounce</label>

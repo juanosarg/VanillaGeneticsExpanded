@@ -59,9 +59,10 @@
 			</li>
 		</stages>
 	</HediffDef>
-	<HediffDef ParentName="RoleStatBuff">
+	<HediffDef>
 		<defName>GR_PackTactics</defName>
 		<label>pack tactics</label>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<description>This hybrid is collaborating with other nearby muffalowolves to bring down prey.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<comps>
@@ -71,7 +72,7 @@
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			<li Class="GeneticRim.HediffCompProperties_GiveHediffsInRangeExpanded">
 				<range>9.9</range>
-				<mote>Mote_CombatCommand</mote>
+				<mote>GR_Ability_Mote</mote>
 				<hideMoteWhenNotDrafted>false</hideMoteWhenNotDrafted>
 				<targetingParameters>
 					<canTargetBuildings>false</canTargetBuildings>
@@ -94,16 +95,73 @@
 		</stages>
 		<isBad>false</isBad>
 	</HediffDef>
-	<HediffDef ParentName="CombatRoleAuraBuffHediffBase">
+	<HediffDef>
 		<defName>GR_PackTacticsBuff</defName>
 		<label>pack tactics</label>
 		<description>This hybrid is collaborating with other nearby muffalowolves to bring down prey.</description>
+		 <hediffClass>HediffWithComps</hediffClass>
+		 <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
 		<stages>
 			<li>
 				<statOffsets>
 					<MeleeDodgeChance>20</MeleeDodgeChance>
 					<MeleeHitChance>20</MeleeHitChance>
 					<MeleeDPS>0.5</MeleeDPS>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>GR_ResearchDrive</defName>
+		<label>research drive</label>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<description>Offer investigative insights to nearby researches, allowing them to more easily reach a breakthrough.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; "My fellow scientist, have you considered rejecting humanity, and returning to monkey? Food for thought".</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="GeneticRim.HediffCompProperties_GiveHediffsInRangeExpanded">
+				<range>15.9</range>
+				<mote>GR_Ability_Mote</mote>
+				<hideMoteWhenNotDrafted>false</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>GR_ResearchDriveBuff</hediff>
+				<affectSameDef>false</affectSameDef>
+			</li>
+		</comps>
+		<isBad>false</isBad>
+	</HediffDef>
+	<HediffDef>
+		<defName>GR_ResearchDriveBuff</defName>
+		<label>research drive</label>
+		<description>Being offered investigative insights.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; "My fellow scientist, have you considered rejecting humanity, and returning to monkey? Food for thought".</description>
+		 <hediffClass>HediffWithComps</hediffClass>
+		 <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>
+					<ResearchSpeed>0.10</ResearchSpeed>
 				</statOffsets>
 			</li>
 		</stages>
@@ -118,25 +176,20 @@
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>true</isBad>
 		<comps>
-			
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>-2</severityPerDayNotImmune>
 			</li>
 			<li Class="GeneticRim.HediffCompProperties_BloodFrenzy">
 				
 			</li>
-			
 		</comps>
 		<stages>
 			<li>
-				
 				<capMods>
-					
 					<li>
 						<capacity>Moving</capacity>
 						<offset>-0.05</offset>
 					</li>
-					
 				</capMods>
 			</li>
 		</stages>
@@ -151,25 +204,20 @@
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>true</isBad>
 		<comps>
-			
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>-2</severityPerDayNotImmune>
 			</li>
 			<li Class="GeneticRim.HediffCompProperties_RabidSlash">
 				
 			</li>
-			
 		</comps>
 		<stages>
 			<li>
-				
 				<capMods>
-					
 					<li>
 						<capacity>Moving</capacity>
 						<offset>-0.05</offset>
 					</li>
-					
 				</capMods>
 			</li>
 		</stages>
@@ -192,7 +240,6 @@
 					<max>1</max>
 				</severityIndices>
 			</li>
-			
 			<li Class="HediffCompProperties_Disappears">
 				<disappearsAfterTicks>
 					<min>6000</min>
@@ -209,7 +256,6 @@
 					</li>
 				</capMods>
 			</li>
-			
 		</stages>
 	</HediffDef>
 	<HediffDef>
@@ -405,7 +451,6 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>0.001</initialSeverity>
 		<comps>
-			
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>60</severityPerDay>
 			</li>
@@ -569,7 +614,6 @@
 				</capMods>
 				<statOffsets>
 					<MeleeHitChance>0.2</MeleeHitChance>
-					
 				</statOffsets>
 			</li>
 			<li>
@@ -757,7 +801,6 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
 	<HediffDef>
 		<defName>GR_VentedExhaust</defName>
 		<label>recently vented exhaust gasses</label>
@@ -814,5 +857,4 @@
 			</li>
 		</stages>
 	</HediffDef>
-	
 </Defs>
