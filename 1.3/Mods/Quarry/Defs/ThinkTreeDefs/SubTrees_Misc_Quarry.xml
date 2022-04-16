@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<ThinkTreeDef>
+		<defName>GR_MolemanBehaviour_Quarry</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>150</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="GeneticRim.ThinkNode_Moleman">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>1</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="GeneticRim.JobGiver_TryQuarryJob"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
+</Defs>

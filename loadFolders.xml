@@ -17,6 +17,9 @@
 		<li IfModActive="sarg.rimbees">1.3/Mods/RimBees</li>
 		<li IfModActive="sarg.rimbees_copy">1.3/Mods/RimBees</li>
 		
+		<li IfModActive="Ogliss.TheWhiteCrayon.Quarry">1.3/Mods/Quarry</li>
+		<li IfModActive="Ogliss.TheWhiteCrayon.Quarry_copy">1.3/Mods/Quarry</li>		
+		
 		<li IfModActive="Ludeon.RimWorld.Ideology">1.3/Mods/Ideology</li>
 	</v1.3>
 </loadFolders>

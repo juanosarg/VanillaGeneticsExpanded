@@ -316,10 +316,12 @@
     <Compile Include="AI\JobDrivers\JobDriver_ParagonConversion.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_Talk.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Mine.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Slaughter.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Clean.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Flick.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Talk.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_TryQuarryJob.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_ParagonConversion.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_InsertIngredients.cs" />
@@ -373,6 +375,7 @@
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Moleman.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Dogman.cs" />
     <Compile Include="ThinkNodes\ThinkNode_HumanoidHybrid.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Muffaloman.cs" />

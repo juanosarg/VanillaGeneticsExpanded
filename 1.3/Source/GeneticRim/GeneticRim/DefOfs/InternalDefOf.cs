@@ -48,6 +48,7 @@ namespace GeneticRim
 		public static ThingDef         GR_Turkeyman;
 		public static ThingDef         GR_Muffaloman;
 		public static ThingDef         GR_Dogman;
+		public static ThingDef         GR_Moleman;
 
 		public static PawnKindDef      GR_ArchotechCentipede;
 

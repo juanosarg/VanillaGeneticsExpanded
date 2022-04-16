@@ -99,4 +99,29 @@
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
+	
+	<ThinkTreeDef>
+		<defName>GR_MolemanBehaviour</defName>
+		<insertTag>Animal_PreWander</insertTag>
+		<insertPriority>140</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="GeneticRim.ThinkNode_Moleman">
+					<subNodes>
+						<li Class="ThinkNode_ChancePerHour_Constant">
+							<mtbHours>1</mtbHours>
+							<subNodes>
+								<li Class="ThinkNode_Tagger">
+									<tagToGive>Misc</tagToGive>
+									<subNodes>
+										<li Class="GeneticRim.JobGiver_Mine"/>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+			</subNodes>
+		</thinkRoot>
+	</ThinkTreeDef>
 </Defs>
