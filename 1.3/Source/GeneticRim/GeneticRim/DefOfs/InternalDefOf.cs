@@ -80,7 +80,8 @@ namespace GeneticRim
         public static JobDef GR_ParagonConversionJob;
         public static JobDef GR_HumanoidHybridTalk;
         public static JobDef GR_AnimalDeconstructJob;
-   
+        public static JobDef GR_AnimalHuntJob;
+
         public static SoundDef GR_Pop;
         public static SoundDef GR_Beep;
 

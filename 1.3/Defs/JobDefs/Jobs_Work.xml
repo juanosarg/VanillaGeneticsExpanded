@@ -18,7 +18,12 @@
 		<reportString>deconstructing TargetA.</reportString>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
-	
+	<JobDef>
+		<defName>GR_AnimalHuntJob</defName>
+		<driverClass>GeneticRim.JobDriver_AnimalHuntJob</driverClass>
+		<reportString>hunting TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
 	<JobDef>
 		<defName>GR_InsertIngredients</defName>
 		<driverClass>GeneticRim.JobDriver_InsertIngredients</driverClass>
