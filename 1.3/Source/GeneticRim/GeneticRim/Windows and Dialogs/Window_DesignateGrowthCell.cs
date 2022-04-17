@@ -167,10 +167,14 @@ namespace GeneticRim
                 } else {
                     foreach (var genome in this.genomesCanBeSecondary.ToList())
                     {
-                        floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
-                        {
-                            genomeSecondary = genome;
-                        }));
+                        if(genome != genomeDominant || genome.stackCount > 1) {
+                            floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
+                            {
+                                genomeSecondary = genome;
+                            }));
+
+                        }
+                        
                     }
 
                     if (this.genomeDominant.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true)

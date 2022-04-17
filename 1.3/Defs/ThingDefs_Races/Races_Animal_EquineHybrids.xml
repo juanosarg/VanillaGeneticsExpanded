@@ -157,7 +157,7 @@
 			<li>
 				<label>bearhorse foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Bearhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Bearhorse/GR_Bearhorse</texPath>
 					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -165,13 +165,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Dessicated_Bearhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Bearhorse/GR_Dessicated_Bearhorse</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Bearhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Bearhorse/GR_Bearhorse</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -179,13 +179,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Dessicated_Bearhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Bearhorse/GR_Dessicated_Bearhorse</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Bearhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Bearhorse/GR_Bearhorse</texPath>
 					<drawSize>2.1</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -193,7 +193,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Bearhorse/GR_Dessicated_Bearhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Bearhorse/GR_Dessicated_Bearhorse</texPath>
 					<drawSize>2.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -348,7 +348,7 @@
 			<li>
 				<label>boomhorse foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Boomhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Boomhorse/GR_Boomhorse</texPath>
 					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -356,13 +356,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Dessicated_Boomhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Boomhorse/GR_Dessicated_Boomhorse</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Boomhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Boomhorse/GR_Boomhorse</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -370,13 +370,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Dessicated_Boomhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Boomhorse/GR_Dessicated_Boomhorse</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Boomhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Boomhorse/GR_Boomhorse</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -384,7 +384,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Boomhorse/GR_Dessicated_Boomhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Boomhorse/GR_Dessicated_Boomhorse</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -537,7 +537,7 @@
 			<li>
 				<label>chickenhorse foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Chickenhorse/GR_Chickenhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Chickenhorse/GR_Chickenhorse</texPath>
 					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -545,13 +545,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Chickenhorse/GR_Dessicated_Chickenhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Chickenhorse/GR_Dessicated_Chickenhorse</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Chickenhorse/GR_Chickenhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Chickenhorse/GR_Chickenhorse</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -559,13 +559,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Chickenhorse/GR_Dessicated_Chickenhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Chickenhorse/GR_Dessicated_Chickenhorse</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Chickenhorse/GR_Chickenhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Chickenhorse/GR_Chickenhorse</texPath>
 					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -573,7 +573,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Chickenhorse/GR_Dessicated_Chickenhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Chickenhorse/GR_Dessicated_Chickenhorse</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -727,7 +727,7 @@
 			<li>
 				<label>cathorse foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Cathorse/GR_Cathorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Cathorse/GR_Cathorse</texPath>
 					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -735,13 +735,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Cathorse/GR_Dessicated_Cathorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Cathorse/GR_Dessicated_Cathorse</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Cathorse/GR_Cathorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Cathorse/GR_Cathorse</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -749,13 +749,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Cathorse/GR_Dessicated_Cathorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Cathorse/GR_Dessicated_Cathorse</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Cathorse/GR_Cathorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Cathorse/GR_Cathorse</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -763,7 +763,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Cathorse/GR_Dessicated_Cathorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Cathorse/GR_Dessicated_Cathorse</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -913,7 +913,7 @@
 			<li>
 				<label>molehorse foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Molehorse/GR_Molehorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Molehorse/GR_Molehorse</texPath>
 					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -921,13 +921,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Molehorse/GR_Dessicated_Molehorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Molehorse/GR_Dessicated_Molehorse</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Molehorse/GR_Molehorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Molehorse/GR_Molehorse</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -935,13 +935,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Molehorse/GR_Dessicated_Molehorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Molehorse/GR_Dessicated_Molehorse</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Molehorse/GR_Molehorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Molehorse/GR_Molehorse</texPath>
 					<drawSize>1.9</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -949,7 +949,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Molehorse/GR_Dessicated_Molehorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Molehorse/GR_Dessicated_Molehorse</texPath>
 					<drawSize>1.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1086,7 +1086,7 @@
 			<li>
 				<label>wolfhorse foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Wolfhorse/GR_Wolfhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Wolfhorse/GR_Wolfhorse</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1094,13 +1094,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Wolfhorse/GR_Dessicated_Wolfhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Wolfhorse/GR_Dessicated_Wolfhorse</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Wolfhorse/GR_Wolfhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Wolfhorse/GR_Wolfhorse</texPath>
 					<drawSize>2.25</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1108,13 +1108,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Wolfhorse/GR_Dessicated_Wolfhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Wolfhorse/GR_Dessicated_Wolfhorse</texPath>
 					<drawSize>2.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Wolfhorse/GR_Wolfhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Wolfhorse/GR_Wolfhorse</texPath>
 					<drawSize>2.8</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1122,7 +1122,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Wolfhorse/GR_Dessicated_Wolfhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Wolfhorse/GR_Dessicated_Wolfhorse</texPath>
 					<drawSize>2.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1273,7 +1273,7 @@
 			<li>
 				<label>muffalohorse foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Muffalohorse/GR_Muffalohorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Muffalohorse/GR_Muffalohorse</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1281,13 +1281,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Muffalohorse/GR_Dessicated_Muffalohorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Muffalohorse/GR_Dessicated_Muffalohorse</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Muffalohorse/GR_Muffalohorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Muffalohorse/GR_Muffalohorse</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1295,13 +1295,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Muffalohorse/GR_Dessicated_Muffalohorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Muffalohorse/GR_Dessicated_Muffalohorse</texPath>
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Muffalohorse/GR_Muffalohorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Muffalohorse/GR_Muffalohorse</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1309,7 +1309,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Muffalohorse/GR_Dessicated_Muffalohorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Muffalohorse/GR_Dessicated_Muffalohorse</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1477,7 +1477,7 @@
 			<li>
 				<label>crocorse foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Crocorse/GR_Crocorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Crocorse/GR_Crocorse</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1485,13 +1485,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Crocorse/GR_Dessicated_Crocorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Crocorse/GR_Dessicated_Crocorse</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Crocorse/GR_Crocorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Crocorse/GR_Crocorse</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1499,13 +1499,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Crocorse/GR_Dessicated_Crocorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Crocorse/GR_Dessicated_Crocorse</texPath>
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Crocorse/GR_Crocorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Crocorse/GR_Crocorse</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1513,7 +1513,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Crocorse/GR_Dessicated_Crocorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Crocorse/GR_Dessicated_Crocorse</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1649,15 +1649,15 @@
 	<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
-					<texPath>Things/Pawn/Animal/Horse/Spiderhorse/GR_Spiderhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
 					<color>(156,148,125)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Horse/Spiderhorse/GR_Spiderhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
 					<color>(114,107,84)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Horse/Spiderhorse/GR_Spiderhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
 					<color>(154,125,94)</color>
 			</li>
 
@@ -1667,7 +1667,7 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Spiderhorse/GR_Spiderhorse1</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse1</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1675,7 +1675,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Spiderhorse/GR_Dessicated_Spiderhorse</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Dessicated_Spiderhorse</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1833,19 +1833,19 @@
 		<alternateGraphicChance>0.8</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
 					<color>(226, 161, 154)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
 					<color>(228, 158, 90)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
 					<color>(255, 239, 189)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
 					<color>(130, 91, 48)</color>
 			</li>
 			
@@ -1854,7 +1854,7 @@
 			<li>
 				<label>hurseman foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman1</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman1</texPath>
 					<drawSize>1.3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1862,13 +1862,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Dessicated_Hurseman</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Dessicated_Hurseman</texPath>
 					<drawSize>1.3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman1</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman1</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1876,13 +1876,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Dessicated_Hurseman</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Dessicated_Hurseman</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Hurseman1</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman1</texPath>
 					<drawSize>2.1</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1890,7 +1890,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Horse/Hurseman/GR_Dessicated_Hurseman</texPath>
+					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Dessicated_Hurseman</texPath>
 					<drawSize>2.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

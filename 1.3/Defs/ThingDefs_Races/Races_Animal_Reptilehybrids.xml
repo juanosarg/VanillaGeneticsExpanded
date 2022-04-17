@@ -150,7 +150,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearodile/Bearodile</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Bearodile/Bearodile</texPath>
 					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -164,7 +164,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearodile/Bearodile</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Bearodile/Bearodile</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -178,7 +178,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearodile/Bearodile</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Bearodile/Bearodile</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -340,7 +340,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsnake/Boomsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Boomsnake/Boomsnake</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -348,13 +348,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsnake/Dessicated_Boomsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Boomsnake/Dessicated_Boomsnake</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsnake/Boomsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Boomsnake/Boomsnake</texPath>
 					<drawSize>1.9</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -362,13 +362,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsnake/Dessicated_Boomsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Boomsnake/Dessicated_Boomsnake</texPath>
 					<drawSize>1.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsnake/Boomsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Boomsnake/Boomsnake</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -376,7 +376,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boomsnake/Dessicated_Boomsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Boomsnake/Dessicated_Boomsnake</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -535,7 +535,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlizard/Chickenlizard</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Chickenlizard/Chickenlizard</texPath>
 					<drawSize>1.2</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -543,13 +543,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlizard/Dessicated_Chickenlizard</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Chickenlizard/Dessicated_Chickenlizard</texPath>
 					<drawSize>1.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlizard/Chickenlizard</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Chickenlizard/Chickenlizard</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -557,13 +557,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlizard/Dessicated_Chickenlizard</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Chickenlizard/Dessicated_Chickenlizard</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlizard/Chickenlizard</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Chickenlizard/Chickenlizard</texPath>
 					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -571,7 +571,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlizard/Dessicated_Chickenlizard</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Chickenlizard/Dessicated_Chickenlizard</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -713,7 +713,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalokomodo/Muffalokomodo</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Muffalokomodo/Muffalokomodo</texPath>
 					<drawSize>1.75</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -721,13 +721,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalokomodo/Dessicated_Muffalokomodo</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Muffalokomodo/Dessicated_Muffalokomodo</texPath>
 					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalokomodo/Muffalokomodo</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Muffalokomodo/Muffalokomodo</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -735,13 +735,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalokomodo/Dessicated_Muffalokomodo</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Muffalokomodo/Dessicated_Muffalokomodo</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalokomodo/Muffalokomodo</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Muffalokomodo/Muffalokomodo</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -749,7 +749,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalokomodo/Dessicated_Muffalokomodo</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Muffalokomodo/Dessicated_Muffalokomodo</texPath>
 					<drawSize>3.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1107,17 +1107,17 @@
 				<label>wolfsnake puppy</label>
 				<labelPlural>wolfsnake puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Wolfsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Wolfsnake/Wolfsnake</texPath>
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Dessicated_Wolfsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Wolfsnake/Dessicated_Wolfsnake</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Wolfsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Wolfsnake/Wolfsnake</texPath>
 					<drawSize>1.75</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -1125,13 +1125,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Dessicated_Wolfsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Wolfsnake/Dessicated_Wolfsnake</texPath>
 					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Wolfsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Wolfsnake/Wolfsnake</texPath>
 					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -1139,7 +1139,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfsnake/Dessicated_Wolfsnake</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Wolfsnake/Dessicated_Wolfsnake</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1295,7 +1295,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Snakecat</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Snakecat</texPath>
 					<drawSize>1.25</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1303,13 +1303,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Dessicated_Snakecat</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Dessicated_Snakecat</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Snakecat</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Snakecat</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1317,13 +1317,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Dessicated_Snakecat</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Dessicated_Snakecat</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Snakecat</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Snakecat</texPath>
 					<drawSize>1.75</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1331,7 +1331,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Snakecat/GR_Dessicated_Snakecat</texPath>
+					<texPath>Things/Pawn/Animal/Reptile/Snakecat/GR_Dessicated_Snakecat</texPath>
 					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1340,6 +1340,169 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_ReptileGenetic</dominantGenome>
 				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- Reptile - Humanoid -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Lizardman</defName>
+		<label>lizardman</label>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. All reptile hybrids have good temperature tolerance ranges and venomous attacks. Lizardmen will obey order to slaughter other colony animals, as well as execute prisoners of the colony.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+			<MarketValue>550</MarketValue>
+		</statBases>
+		<comps>		
+			
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<capacities>
+					<li>GR_VeryToxicBite</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		
+
+
+		<race>
+			<fleshType>GR_Normal</fleshType>		
+			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
+			<predator>true</predator>
+			<maxPreyBodySize>0.35</maxPreyBodySize>    
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>1</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<useLeatherFrom>Cobra</useLeatherFrom>
+			<useMeatFrom>Cobra</useMeatFrom>
+			<wildness>0.5</wildness>
+			<trainability>Advanced</trainability>
+			<herdMigrationAllowed>false</herdMigrationAllowed>	
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Lizardman</defName>
+		<label>lizardman</label>
+		<race>GR_Lizardman</race>
+		<combatPower>100</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<labelMale>lizardman</labelMale>
+		<labelFemale>lizardwoman</labelFemale>
+		<labelMalePlural>lizardmen</labelMalePlural>
+		<labelFemalePlural>lizardwomen</labelFemalePlural>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Reptile/Lizardman/GR_Lizardman</texPath>
+					<drawSize>1.25</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Reptile/Lizardman/GR_Dessicated_Lizardman</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Reptile/Lizardman/GR_Lizardman</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Reptile/Lizardman/GR_Dessicated_Lizardman</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Reptile/Lizardman/GR_Lizardman</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Reptile/Lizardman/GR_Dessicated_Lizardman</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ReptileGenetic</dominantGenome>
+				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

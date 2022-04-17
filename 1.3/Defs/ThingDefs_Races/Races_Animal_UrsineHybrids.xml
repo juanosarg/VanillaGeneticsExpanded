@@ -151,7 +151,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearalope/Bearalope</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearalope/Bearalope</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -165,7 +165,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearalope/Bearalope</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearalope/Bearalope</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -179,7 +179,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearalope/Bearalope</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearalope/Bearalope</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -362,7 +362,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearchicken/Bearchicken</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearchicken/Bearchicken</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -370,13 +370,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearchicken/Dessicated_Bearchicken</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearchicken/Dessicated_Bearchicken</texPath>
 					<drawSize>1.9</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearchicken/Bearchicken</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearchicken/Bearchicken</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -384,13 +384,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearchicken/Dessicated_Bearchicken</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearchicken/Dessicated_Bearchicken</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearchicken/Bearchicken</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearchicken/Bearchicken</texPath>
 					<drawSize>3.2</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -398,7 +398,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearchicken/Dessicated_Bearchicken</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearchicken/Dessicated_Bearchicken</texPath>
 					<drawSize>3.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -565,7 +565,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearffalo/Bearffalo</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearffalo/Bearffalo</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -579,7 +579,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearffalo/Bearffalo</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearffalo/Bearffalo</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -593,7 +593,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearffalo/Bearffalo</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearffalo/Bearffalo</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -761,7 +761,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Bearwolf</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearwolf/Bearwolf</texPath>
 					<drawSize>2.4</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -769,13 +769,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Dessicated_Bearwolf</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearwolf/Dessicated_Bearwolf</texPath>
 					<drawSize>2.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Bearwolf</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearwolf/Bearwolf</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -783,13 +783,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Dessicated_Bearwolf</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearwolf/Dessicated_Bearwolf</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Bearwolf</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearwolf/Bearwolf</texPath>
 					<drawSize>3.7</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -797,7 +797,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearwolf/Dessicated_Bearwolf</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearwolf/Dessicated_Bearwolf</texPath>
 					<drawSize>3.7</drawSize>
 				</dessicatedBodyGraphicData>
 				
@@ -959,17 +959,17 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearmole/Bearmole</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearmole/Bearmole</texPath>
 					<drawSize>1.25</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearmole/Dessicated_Bearmole</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearmole/Dessicated_Bearmole</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearmole/Bearmole</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearmole/Bearmole</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -977,13 +977,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearmole/Dessicated_Bearmole</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearmole/Dessicated_Bearmole</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearmole/Bearmole</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearmole/Bearmole</texPath>
 					<drawSize>2.0</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -991,7 +991,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearmole/Dessicated_Bearmole</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearmole/Dessicated_Bearmole</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1150,17 +1150,17 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearcat/GR_Bearcat</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearcat/GR_Bearcat</texPath>
 					<drawSize>2.0</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearcat/GR_Dessicated_Bearcat</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearcat/GR_Dessicated_Bearcat</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearcat/GR_Bearcat</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearcat/GR_Bearcat</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -1168,13 +1168,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearcat/GR_Dessicated_Bearcat</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearcat/GR_Dessicated_Bearcat</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearcat/GR_Bearcat</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearcat/GR_Bearcat</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -1182,7 +1182,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearcat/GR_Dessicated_Bearcat</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearcat/GR_Dessicated_Bearcat</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -1359,19 +1359,19 @@
 		<labelFemalePlural>bearwomen</labelFemalePlural>
 		<alternateGraphics>
 			<li>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
 					<color>(226, 161, 154)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
 					<color>(228, 158, 90)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
 					<color>(255, 239, 189)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
 					<color>(130, 91, 48)</color>
 			</li>
 			
@@ -1381,7 +1381,7 @@
 				<label>bearbaby</label>
 				<labelPlural>bearbabies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman1</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman1</texPath>
 					<drawSize>1.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1389,13 +1389,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Dessicated_Bearman</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Dessicated_Bearman</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman1</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman1</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1403,13 +1403,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Dessicated_Bearman</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Dessicated_Bearman</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Bearman1</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman1</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1417,7 +1417,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearman/GR_Dessicated_Bearman</texPath>
+					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Dessicated_Bearman</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

@@ -159,7 +159,7 @@
 			<li>
 				<label>catbear kitten</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catbear/GR_Catbear</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catbear/GR_Catbear</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -169,7 +169,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catbear/GR_Catbear</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catbear/GR_Catbear</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -179,7 +179,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catbear/GR_Catbear</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catbear/GR_Catbear</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -336,7 +336,7 @@
 			<li>
 				<label>catalope kitten</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catalope/GR_Catalope</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -346,7 +346,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catalope/GR_Catalope</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -356,7 +356,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catalope/GR_Catalope</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catalope/GR_Catalope</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -490,7 +490,7 @@
 			<li>
 				<label>catchicken kitten</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catchicken/GR_Catchicken</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catchicken/GR_Catchicken</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -500,7 +500,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catchicken/GR_Catchicken</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catchicken/GR_Catchicken</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -510,7 +510,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catchicken/GR_Catchicken</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catchicken/GR_Catchicken</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -656,7 +656,7 @@
 			<li>
 				<label>catffalo kitten</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catffalo/GR_Catffalo</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -666,7 +666,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catffalo/GR_Catffalo</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -676,7 +676,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catffalo/GR_Catffalo</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catffalo/GR_Catffalo</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -851,7 +851,7 @@
 			<li>
 				<label>catrabbit kitten</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catrabbit/GR_Catrabbit</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catrabbit/GR_Catrabbit</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -861,7 +861,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catrabbit/GR_Catrabbit</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catrabbit/GR_Catrabbit</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -871,7 +871,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catrabbit/GR_Catrabbit</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catrabbit/GR_Catrabbit</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -1043,7 +1043,7 @@
 			<li>
 				<label>catwolf kitten</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catwolf/GR_Catwolf</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catwolf/GR_Catwolf</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -1053,7 +1053,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catwolf/GR_Catwolf</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catwolf/GR_Catwolf</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -1063,7 +1063,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Catwolf/GR_Catwolf</texPath>
+					<texPath>Things/Pawn/Animal/Feline/Catwolf/GR_Catwolf</texPath>
 					<drawSize>3.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -1080,6 +1080,166 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_FelineGenetic</dominantGenome>
 				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- Cat - Humanoid -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Catman</defName>
+		<label>catman</label>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Catmen are compassionate animals that will help with feeding medical patients around the colony.</description>
+		<statBases>
+			<MoveSpeed>3.75</MoveSpeed>
+			<MarketValue>175</MarketValue>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+		</statBases>
+		<tools>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_MeleeDodge</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+		</comps>
+		<race>
+			
+			<fleshType>GR_Normal</fleshType>
+			<body>GR_HandedCat</body>
+			<predator>true</predator>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<maxPreyBodySize>0.25</maxPreyBodySize>
+			<baseBodySize>0.255</baseBodySize>
+			<baseHungerRate>0.05</baseHungerRate>
+			<baseHealthScale>0.35</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<useLeatherFrom>Cat</useLeatherFrom>
+			<useMeatFrom>Cat</useMeatFrom>
+			<wildness>0.36</wildness>
+			<trainability>Advanced</trainability>
+			<intelligence>ToolUser</intelligence>
+			<nuzzleMtbHours>8</nuzzleMtbHours>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>			
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.4</minAge>
+					<soundWounded>Pawn_Cat_Injured</soundWounded>
+					<soundDeath>Pawn_Cat_Death</soundDeath>
+					<soundCall>Pawn_Cat_Call</soundCall>
+					<soundAngry>Pawn_Cat_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Catman</defName>
+		<label>catman</label>
+		<race>GR_Catman</race>
+		<combatPower>45</combatPower>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<canArriveManhunter>false</canArriveManhunter>
+		<labelMale>catman</labelMale>
+		<labelFemale>catgirl</labelFemale>
+		<labelMalePlural>catmen</labelMalePlural>
+		<labelFemalePlural>catgirls</labelFemalePlural>
+		<lifeStages>
+			<li>
+				<label>catbaby</label>
+				<labelPlural>catbabies</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Feline/Catman/GR_Catman</texPath>
+					<drawSize>0.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+					<drawSize>0.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Feline/Catman/GR_Catman</texPath>
+					<drawSize>0.8</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+					<drawSize>0.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Feline/Catman/GR_Catman</texPath>
+					<drawSize>1</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Cat/Dessicated_Cat</texPath>
+					<drawSize>1.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_FelineGenetic</dominantGenome>
+				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

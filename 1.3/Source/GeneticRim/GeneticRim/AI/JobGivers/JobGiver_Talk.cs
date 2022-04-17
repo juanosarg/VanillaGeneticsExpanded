@@ -24,7 +24,7 @@ namespace GeneticRim
 				return null;
 			}
 			Job job = JobMaker.MakeJob(InternalDefOf.GR_HumanoidHybridTalk, result);
-			job.locomotionUrgency = LocomotionUrgency.Walk;
+			job.locomotionUrgency = LocomotionUrgency.Sprint;
 			job.expiryInterval = 3000;
 			return job;
 		}

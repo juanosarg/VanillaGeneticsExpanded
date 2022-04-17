@@ -1133,13 +1133,14 @@
 		<combatPower>95</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-			<labelMale>moleman</labelMale>
+		<labelMale>moleman</labelMale>
 		<labelFemale>molewoman</labelFemale>
 		<labelMalePlural>molemen</labelMalePlural>
 		<labelFemalePlural>molewomen</labelFemalePlural>
 		<lifeStages>
 			<li>
 				<label>molebaby</label>
+				<labelPlural>molebabies</labelPlural>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Rodent/Moleman/GR_Moleman</texPath>
 					<drawSize>2.0</drawSize>

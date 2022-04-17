@@ -82,7 +82,7 @@ namespace GeneticRim
 
             Predicate<Thing> predicate = (Thing x) => HasJobOnThing(pawn, x);
             Thing t = GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForGroup(ThingRequestGroup.Pawn),
-                PathEndMode.OnCell, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 100f, predicate, PotentialWorkThingsGlobal(pawn));
+                PathEndMode, TraverseParms.For(pawn, Danger.Some, TraverseMode.ByPawn), 100f, predicate, PotentialWorkThingsGlobal(pawn));
             if (t is null)
             {
                 return null;

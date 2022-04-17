@@ -309,6 +309,7 @@
     <Compile Include="Abilities\Properties\CompProperties_CreateThingDefAround.cs" />
     <Compile Include="Abilities\Properties\CompProperties_DeathRay.cs" />
     <Compile Include="Abilities\Properties\CompProperties_GiveHediff.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_AnimalDeconstruct.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_ArchotechDNAExtraction.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertArchotechGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
@@ -316,6 +317,9 @@
     <Compile Include="AI\JobDrivers\JobDriver_ParagonConversion.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_Talk.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Execute.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_FeedPatient.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Deconstruct.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Mine.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Slaughter.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Clean.cs" />
@@ -375,6 +379,9 @@
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Catman.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Lizardman.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Manscarab.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Moleman.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Dogman.cs" />
     <Compile Include="ThinkNodes\ThinkNode_HumanoidHybrid.cs" />

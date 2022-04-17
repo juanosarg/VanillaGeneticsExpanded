@@ -111,7 +111,7 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearscarab/Bearscarab</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Bearscarab/Bearscarab</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.5, 0.37)</volume>
@@ -119,7 +119,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Bears/Bearscarab/Dessicated_Bearscarab</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Bearscarab/Dessicated_Bearscarab</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -247,7 +247,7 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boombeetle/Boombeetle</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Boombeetle/Boombeetle</texPath>
 					<drawSize>2</drawSize>
 					
 					<shadowData>
@@ -256,7 +256,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Boomalope/Boombeetle/Dessicated_Boombeetle</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Boombeetle/Dessicated_Boombeetle</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -371,7 +371,7 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenspider/Chickenspider</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Chickenspider/Chickenspider</texPath>
 					<drawSize>2.75</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.5, 0.37)</volume>
@@ -379,7 +379,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Dessicated_Chicken</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -501,7 +501,7 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalopede/Muffalopede</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Muffalopede/Muffalopede</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.5, 0.37)</volume>
@@ -509,7 +509,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Muffalo/Muffalopede/Dessicated_Muffalopede</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Muffalopede/Dessicated_Muffalopede</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -611,7 +611,7 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfscarab/Wolfscarab</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Wolfscarab/Wolfscarab</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -619,7 +619,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfscarab/Dessicated_Wolfscarab</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Wolfscarab/Dessicated_Wolfscarab</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -750,7 +750,7 @@
 			
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Spidercat</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Spidercat</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -758,7 +758,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Cats/Spidercat/GR_Dessicated_Spidercat</texPath>
+					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Dessicated_Spidercat</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -767,6 +767,132 @@
 			<li Class="GeneticRim.DefExtension_Hybrid">
 				<dominantGenome>GR_InsectoidGenetic</dominantGenome>
 				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- Insectoid - Humanoid -->
+	<ThingDef ParentName="GR_BaseInsect">
+		<defName>GR_Manscarab</defName>
+		<label>manscarab</label>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. All insectoid hybrids have good armor and no toxic sensitivity, but they are always sterile and can't reproduce, even if a fertility booster is used to create them. Menscarab will take building deconstruction orders around the colony.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<MarketValue>550</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>mandibles</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.95</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		
+		<comps>
+			
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+		</comps>
+		<race>
+			
+			<body>BeetleLike</body>
+			<maxPreyBodySize>0.5</maxPreyBodySize>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<predator>true</predator>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<wildness>0.5</wildness>
+			<lifeExpectancy>4</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<fleshType>GR_Insectoid</fleshType>
+		
+			<lifeStageAges>
+				
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Manscarab</defName>
+		<label>manscarab</label>
+		<race>GR_Manscarab</race>
+		<combatPower>80</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<labelMale>manscarab</labelMale>
+		<labelFemale>womanscarab</labelFemale>
+		<labelMalePlural>menscarab</labelMalePlural>
+		<labelFemalePlural>womenscarab</labelFemalePlural>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Insectoid/Manscarab/GR_Manscarab</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Insectoid/Manscarab/GR_Dessicated_Manscarab</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_InsectoidGenetic</dominantGenome>
+				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

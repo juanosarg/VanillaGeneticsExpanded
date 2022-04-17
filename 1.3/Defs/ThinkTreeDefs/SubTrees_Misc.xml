@@ -19,109 +19,130 @@
 								</li>
 							</subNodes>
 						</li>
-					</subNodes>
-				</li>
-			</subNodes>
-		</thinkRoot>
-	</ThinkTreeDef>
-	
-	<ThinkTreeDef>
-		<defName>GR_TurkeymanBehaviour</defName>
-		<insertTag>Animal_PreWander</insertTag>
-		<insertPriority>110</insertPriority>
-		<thinkRoot Class="ThinkNode_Priority">
-			<subNodes>
-				<li Class="GeneticRim.ThinkNode_Turkeyman">
-					<subNodes>
-						<li Class="ThinkNode_ChancePerHour_Constant">
-							<mtbHours>1</mtbHours>
+						<li Class="GeneticRim.ThinkNode_Turkeyman">
 							<subNodes>
-								<li Class="ThinkNode_Tagger">
-									<tagToGive>Misc</tagToGive>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>1</mtbHours>
 									<subNodes>
-										<li Class="GeneticRim.JobGiver_Flick"/>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Flick"/>
+											</subNodes>
+										</li>
 									</subNodes>
 								</li>
 							</subNodes>
 						</li>
-					</subNodes>
-				</li>
-			</subNodes>
-		</thinkRoot>
-	</ThinkTreeDef>
-	
-	<ThinkTreeDef>
-		<defName>GR_MuffalomanBehaviour</defName>
-		<insertTag>Animal_PreWander</insertTag>
-		<insertPriority>120</insertPriority>
-		<thinkRoot Class="ThinkNode_Priority">
-			<subNodes>
-				<li Class="GeneticRim.ThinkNode_Muffaloman">
-					<subNodes>
-						<li Class="ThinkNode_ChancePerHour_Constant">
-							<mtbHours>2</mtbHours>
+						<li Class="GeneticRim.ThinkNode_Muffaloman">
 							<subNodes>
-								<li Class="ThinkNode_Tagger">
-									<tagToGive>Misc</tagToGive>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>2</mtbHours>
 									<subNodes>
-										<li Class="GeneticRim.JobGiver_Clean"/>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Clean"/>
+											</subNodes>
+										</li>
 									</subNodes>
 								</li>
 							</subNodes>
 						</li>
-					</subNodes>
-				</li>
-			</subNodes>
-		</thinkRoot>
-	</ThinkTreeDef>
-	
-	<ThinkTreeDef>
-		<defName>GR_DogmanBehaviour</defName>
-		<insertTag>Animal_PreWander</insertTag>
-		<insertPriority>130</insertPriority>
-		<thinkRoot Class="ThinkNode_Priority">
-			<subNodes>
-				<li Class="GeneticRim.ThinkNode_Dogman">
-					<subNodes>
-						<li Class="ThinkNode_ChancePerHour_Constant">
-							<mtbHours>2</mtbHours>
+						<li Class="GeneticRim.ThinkNode_Dogman">
 							<subNodes>
-								<li Class="ThinkNode_Tagger">
-									<tagToGive>Misc</tagToGive>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>2</mtbHours>
 									<subNodes>
-										<li Class="GeneticRim.JobGiver_Slaughter"/>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Slaughter"/>
+											</subNodes>
+										</li>
 									</subNodes>
 								</li>
 							</subNodes>
 						</li>
-					</subNodes>
-				</li>
-			</subNodes>
-		</thinkRoot>
-	</ThinkTreeDef>
-	
-	<ThinkTreeDef>
-		<defName>GR_MolemanBehaviour</defName>
-		<insertTag>Animal_PreWander</insertTag>
-		<insertPriority>140</insertPriority>
-		<thinkRoot Class="ThinkNode_Priority">
-			<subNodes>
-				<li Class="GeneticRim.ThinkNode_Moleman">
-					<subNodes>
-						<li Class="ThinkNode_ChancePerHour_Constant">
-							<mtbHours>1</mtbHours>
+						<li Class="GeneticRim.ThinkNode_Moleman">
 							<subNodes>
-								<li Class="ThinkNode_Tagger">
-									<tagToGive>Misc</tagToGive>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>1</mtbHours>
 									<subNodes>
-										<li Class="GeneticRim.JobGiver_Mine"/>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Mine"/>
+											</subNodes>
+										</li>
 									</subNodes>
 								</li>
 							</subNodes>
 						</li>
+						<li Class="GeneticRim.ThinkNode_Catman">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>1</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_FeedPatient"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						<li Class="GeneticRim.ThinkNode_Manscarab">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>1</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Deconstruct"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						<li Class="GeneticRim.ThinkNode_Lizardman">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>0.1</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Execute"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>2</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Slaughter"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+
 					</subNodes>
 				</li>
 			</subNodes>
 		</thinkRoot>
 	</ThinkTreeDef>
+
+
+
+
 </Defs>

@@ -125,17 +125,17 @@
 				<label>wolfbear puppy</label>
 				<labelPlural>wolfbear puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbear/Wolfbear</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbear/Wolfbear</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbear/Dessicated_Wolfbear</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbear/Dessicated_Wolfbear</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbear/Wolfbear</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbear/Wolfbear</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -143,13 +143,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbear/Dessicated_Wolfbear</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbear/Dessicated_Wolfbear</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbear/Wolfbear</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbear/Wolfbear</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -157,7 +157,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbear/Dessicated_Wolfbear</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbear/Dessicated_Wolfbear</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -316,17 +316,17 @@
 				<label>wolfalope puppy</label>
 				<labelPlural>wolfalope puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfalope/Wolfalope</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfalope/Wolfalope</texPath>
 					<drawSize>1.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfalope/Dessicated_Wolfalope</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfalope/Dessicated_Wolfalope</texPath>
 					<drawSize>1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfalope/Wolfalope</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfalope/Wolfalope</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -334,13 +334,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfalope/Dessicated_Wolfalope</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfalope/Dessicated_Wolfalope</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfalope/Wolfalope</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfalope/Wolfalope</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -348,7 +348,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfalope/Dessicated_Wolfalope</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfalope/Dessicated_Wolfalope</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -492,7 +492,7 @@
 				<label>wolfchicken puppy</label>
 				<labelPlural>wolfchicken puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfchicken/Wolfchicken</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfchicken/Wolfchicken</texPath>
 					<drawSize>1.05</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -502,7 +502,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfchicken/Wolfchicken</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfchicken/Wolfchicken</texPath>
 					<drawSize>1.7</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -516,7 +516,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfchicken/Wolfchicken</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfchicken/Wolfchicken</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -662,17 +662,17 @@
 				<label>wolffalo puppy</label>
 				<labelPlural>wolffalo puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolffalo/Wolffalo</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolffalo/Wolffalo</texPath>
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolffalo/Dessicated_Wolffalo</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolffalo/Dessicated_Wolffalo</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolffalo/Wolffalo</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolffalo/Wolffalo</texPath>
 					<drawSize>2.25</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -680,13 +680,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolffalo/Dessicated_Wolffalo</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolffalo/Dessicated_Wolffalo</texPath>
 					<drawSize>2.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolffalo/Wolffalo</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolffalo/Wolffalo</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -694,7 +694,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolffalo/Dessicated_Wolffalo</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolffalo/Dessicated_Wolffalo</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -831,17 +831,17 @@
 				<label>wolfbeaver puppy</label>
 				<labelPlural>wolfbeaver puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbeaver/Wolfbeaver</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbeaver/Wolfbeaver</texPath>
 					<drawSize>1.75</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbeaver/Dessicated_Wolfbeaver</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbeaver/Dessicated_Wolfbeaver</texPath>
 					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbeaver/Wolfbeaver</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbeaver/Wolfbeaver</texPath>
 					<drawSize>2.2</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -849,13 +849,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbeaver/Dessicated_Wolfbeaver</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbeaver/Dessicated_Wolfbeaver</texPath>
 					<drawSize>2.2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbeaver/Wolfbeaver</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbeaver/Wolfbeaver</texPath>
 					<drawSize>3</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -863,7 +863,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfbeaver/Dessicated_Wolfbeaver</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfbeaver/Dessicated_Wolfbeaver</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1006,17 +1006,17 @@
 				<label>wolfcat puppy</label>
 				<labelPlural>wolfcat puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfcat/GR_Wolfcat</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfcat/GR_Wolfcat</texPath>
 					<drawSize>1.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfcat/GR_Dessicated_Wolfcat</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfcat/GR_Dessicated_Wolfcat</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfcat/GR_Wolfcat</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfcat/GR_Wolfcat</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -1024,13 +1024,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfcat/GR_Dessicated_Wolfcat</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfcat/GR_Dessicated_Wolfcat</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfcat/GR_Wolfcat</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfcat/GR_Wolfcat</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -1038,7 +1038,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Wolfcat/GR_Dessicated_Wolfcat</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Wolfcat/GR_Dessicated_Wolfcat</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1182,19 +1182,19 @@
 		
 		<alternateGraphics>
 			<li>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dogman</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
 					<color>(226, 161, 154)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dogman</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
 					<color>(228, 158, 90)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dogman</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
 					<color>(255, 239, 189)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dogman</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
 					<color>(130, 91, 48)</color>
 			</li>
 			
@@ -1204,17 +1204,17 @@
 				<label>dogman puppy-baby</label>
 				<labelPlural>dogman puppy-babies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dogman1</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman1</texPath>
 					<drawSize>1.1</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dessicated_Dogman</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dessicated_Dogman</texPath>
 					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dogman1</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman1</texPath>
 					<drawSize>1.25</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -1222,13 +1222,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dessicated_Dogman</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dessicated_Dogman</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dogman1</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman1</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -1236,7 +1236,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Wolf/Dogman/GR_Dessicated_Dogman</texPath>
+					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dessicated_Dogman</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>

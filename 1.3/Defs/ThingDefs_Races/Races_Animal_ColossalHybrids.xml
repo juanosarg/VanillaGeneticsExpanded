@@ -136,7 +136,7 @@
 				<label>thrumbear calf</label>
 				<labelPlural>thrumbear calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbear/Thrumbear</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbear/Thrumbear</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -144,13 +144,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbear/Dessicated_Thrumbear</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbear/Dessicated_Thrumbear</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbear/Thrumbear</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbear/Thrumbear</texPath>
 					<drawSize>4.0</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
@@ -158,13 +158,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbear/Dessicated_Thrumbear</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbear/Dessicated_Thrumbear</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbear/Thrumbear</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbear/Thrumbear</texPath>
 					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(1, 0.8, 0.5)</volume>
@@ -172,7 +172,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbear/Dessicated_Thrumbear</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbear/Dessicated_Thrumbear</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -334,7 +334,7 @@
 				<label>thrumbalope calf</label>
 				<labelPlural>thrumbalope calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbalope/Thrumbalope</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbalope/Thrumbalope</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -342,13 +342,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbalope/Dessicated_Thrumbalope</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbalope/Dessicated_Thrumbalope</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbalope/Thrumbalope</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbalope/Thrumbalope</texPath>
 					<drawSize>4.0</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
@@ -356,13 +356,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbalope/Dessicated_Thrumbalope</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbalope/Dessicated_Thrumbalope</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbalope/Thrumbalope</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbalope/Thrumbalope</texPath>
 					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(1, 0.8, 0.5)</volume>
@@ -370,7 +370,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbalope/Dessicated_Thrumbalope</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbalope/Dessicated_Thrumbalope</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -511,7 +511,7 @@
 				<label>thrumbochicken chick</label>
 				<labelPlural>thrumbochicken chicks</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbochicken/Thrumbochicken</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbochicken/Thrumbochicken</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -519,13 +519,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbochicken/Dessicated_Thrumbochicken</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbochicken/Dessicated_Thrumbochicken</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbochicken/Thrumbochicken</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbochicken/Thrumbochicken</texPath>
 					<drawSize>4.0</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
@@ -533,13 +533,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbochicken/Dessicated_Thrumbochicken</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbochicken/Dessicated_Thrumbochicken</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbochicken/Thrumbochicken</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbochicken/Thrumbochicken</texPath>
 					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(1, 0.8, 0.5)</volume>
@@ -547,7 +547,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbochicken/Dessicated_Thrumbochicken</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbochicken/Dessicated_Thrumbochicken</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -709,7 +709,7 @@
 				<label>thrumffalo calf</label>
 				<labelPlural>thrumffalo calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumffalo/Thrumffalo</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumffalo/Thrumffalo</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -717,13 +717,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumffalo/Dessicated_Thrumffalo</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumffalo/Dessicated_Thrumffalo</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumffalo/Thrumffalo</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumffalo/Thrumffalo</texPath>
 					<drawSize>4.0</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
@@ -731,13 +731,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumffalo/Dessicated_Thrumffalo</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumffalo/Dessicated_Thrumffalo</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumffalo/Thrumffalo</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumffalo/Thrumffalo</texPath>
 					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(1, 0.8, 0.5)</volume>
@@ -745,7 +745,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumffalo/Dessicated_Thrumffalo</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumffalo/Dessicated_Thrumffalo</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -895,31 +895,31 @@
 				<label>thrumwolf pup</label>
 				<labelPlural>thrumwolf puppies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumwolf/Dessicated_Thrumwolf</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>2.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumwolf/Dessicated_Thrumwolf</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Thrumwolf</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumwolf/Thrumwolf</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumwolf/Dessicated_Thrumwolf</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumwolf/Dessicated_Thrumwolf</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -1076,31 +1076,31 @@
 				<label>thrumbocat kitten</label>
 				<labelPlural>thrumbocat kittens</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbocat/GR_Thrumbocat</texPath>
 					<drawSize>2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbocat/GR_Thrumbocat</texPath>
 					<drawSize>2.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Thrumbocat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbocat/GR_Thrumbocat</texPath>
 					<drawSize>3</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbocat/GR_Dessicated_Thrumbocat</texPath>
 					<drawSize>3</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -1223,27 +1223,27 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Thrumbospider</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbospider/Thrumbospider</texPath>
 					<drawSize>2.5</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Dessicated_Thrumbospider</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbospider/Dessicated_Thrumbospider</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Thrumbospider</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbospider/Thrumbospider</texPath>
 					<drawSize>4</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Dessicated_Thrumbospider</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbospider/Dessicated_Thrumbospider</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Thrumbospider</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbospider/Thrumbospider</texPath>
 					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.5, 0.37)</volume>
@@ -1251,7 +1251,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbospider/Dessicated_Thrumbospider</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbospider/Dessicated_Thrumbospider</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -1423,7 +1423,7 @@
 				<label>thrumbolizard calf</label>
 				<labelPlural>thrumbolizard calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Thrumbolizard</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbolizard/Thrumbolizard</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1431,13 +1431,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Thrumbolizard</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbolizard/Thrumbolizard</texPath>
 					<drawSize>4.0</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
@@ -1445,13 +1445,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Thrumbolizard</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbolizard/Thrumbolizard</texPath>
 					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(1, 0.8, 0.5)</volume>
@@ -1459,7 +1459,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumbolizard/Dessicated_Thrumbolizard</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -1615,7 +1615,7 @@
 				<label>thrumborat calf</label>
 				<labelPlural>thrumborat calves</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumborat/Thrumborat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumborat/Thrumborat</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1623,13 +1623,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumborat/Dessicated_Thrumborat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumborat/Dessicated_Thrumborat</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumborat/Thrumborat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumborat/Thrumborat</texPath>
 					<drawSize>4.0</drawSize>
 					<shadowData>
 						<volume>(0.7, 0.6, 0.4)</volume>
@@ -1637,13 +1637,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumborat/Dessicated_Thrumborat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumborat/Dessicated_Thrumborat</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumborat/Thrumborat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumborat/Thrumborat</texPath>
 					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(1, 0.8, 0.5)</volume>
@@ -1651,7 +1651,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumborat/Dessicated_Thrumborat</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumborat/Dessicated_Thrumborat</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
@@ -1824,7 +1824,7 @@
 			<li>
 				<label>foal</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Thrumhorse</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumhorse/GR_Thrumhorse</texPath>
 					<drawSize>2.5</drawSize>
 					<shadowData>
 						<volume>(0.4, 0.3, 0.3)</volume>
@@ -1832,13 +1832,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Thrumhorse</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumhorse/GR_Thrumhorse</texPath>
 					<drawSize>4</drawSize>
 					<shadowData>
 						<volume>(0.6, 0.45, 0.45)</volume>
@@ -1846,13 +1846,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Thrumhorse</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumhorse/GR_Thrumhorse</texPath>
 					<drawSize>4.8</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
@@ -1860,7 +1860,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Thrumbos/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumhorse/GR_Dessicated_Thrumhorse</texPath>
 					<drawSize>4.8</drawSize>
 				</dessicatedBodyGraphicData>
 				<butcherBodyPart>
