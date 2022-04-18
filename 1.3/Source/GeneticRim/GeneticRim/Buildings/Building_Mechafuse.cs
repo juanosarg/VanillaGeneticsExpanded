@@ -15,6 +15,11 @@ namespace GeneticRim
         public bool active = true;
         Graphic usedGraphic;
 
+        public Building_Mechafuse()
+        {
+
+        }
+
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);

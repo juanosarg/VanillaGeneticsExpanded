@@ -41,11 +41,10 @@ namespace GeneticRim
                         if (Find.FactionManager.FirstFactionOfDef(InternalDefOf.GR_RoamingMonstrosities) != null)
                         {
                             IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, this.world);
+                            parms.target = Find.AnyPlayerHomeMap;
                             IncidentDef def = InternalDefOf.GR_ManhunterMonstrosities;
-                            if (def.Worker.CanFireNow(parms))
-                            {
-                                def.Worker.TryExecute(parms);
-                            }
+                            def.Worker.TryExecute(parms);
+                            
                             ticksToNextAssault = (int)(60000 * Rand.RangeInclusive(10, 30) * GeneticRim_Mod.settings.GR_RaidsRate);
                             tickCounter = 0;
                         }

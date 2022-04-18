@@ -7,11 +7,11 @@ using Verse;
 
 namespace GeneticRim
 {
-
+    
  
     public class CompProperties_RegisterMechHybridWithAntenna : CompProperties
     {
-       
+        public int timer = 1000;
 
         public CompProperties_RegisterMechHybridWithAntenna()
         {

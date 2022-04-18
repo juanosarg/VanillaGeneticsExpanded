@@ -1882,4 +1882,242 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	
+	<!-- Humanoid - Thrumbo -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Thrumboman</defName>
+		<label>thrumboman</label>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor. Thrumbomen will obey orders to cut and harvest plants around the colony.</description>
+		<statBases>
+			<MoveSpeed>4</MoveSpeed>
+			<ComfyTemperatureMin>-16</ComfyTemperatureMin>
+			<MarketValue>4000</MarketValue>
+			<MeatAmount>20</MeatAmount>
+			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.30</ArmorRating_Heat>
+			<FilthRate>6</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>horn</label>
+				<capacities>
+					<li>Scratch</li>
+					<li>Stab</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>24</power>
+				<cooldownTime>3.0</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>left foot</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right foot</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+		</comps>
+		<race>
+			<body>QuadrupedAnimalWithHoovesAndHorn</body>			
+			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<fleshType>GR_Normal</fleshType>
+			<baseBodySize>4</baseBodySize>
+			<baseHungerRate>1.25</baseHungerRate>
+			<baseHealthScale>8.0</baseHealthScale>
+			<foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+			<useLeatherFrom>Thrumbo</useLeatherFrom>
+			<useMeatFrom>Thrumbo</useMeatFrom>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<wildness>0.5</wildness>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
+			<lifeExpectancy>4</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+					<soundCall>Pawn_Thrumbo_Call</soundCall>
+					<soundAngry>Pawn_Thrumbo_Angry</soundAngry>
+					<soundWounded>Pawn_Thrumbo_Pain</soundWounded>
+					<soundDeath>Pawn_Thrumbo_Death</soundDeath>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Thrumboman</defName>
+		<label>thrumboman</label>
+		<race>GR_Thrumboman</race>
+		<combatPower>400</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<labelMale>thrumboman</labelMale>
+		<labelFemale>thrumwoman</labelFemale>
+		<labelMalePlural>thrumbomen</labelMalePlural>
+		<labelFemalePlural>thrumwomen</labelFemalePlural>
+		<lifeStages>
+			<li>
+				<label>thrumbaby</label>
+				<labelPlural>thrumbabies</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Thrumboman_Male</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Dessicated_Thrumboman_Male</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+				
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Thrumboman_Female</texPath>
+					<drawSize>2.25</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Dessicated_Thrumboman_Female</texPath>
+					<drawSize>2.25</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Thrumboman_Male</texPath>
+					<drawSize>4.0</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.6, 0.4)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Dessicated_Thrumboman_Male</texPath>
+					<drawSize>4</drawSize>
+				</dessicatedBodyGraphicData>
+				
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Thrumboman_Female</texPath>
+					<drawSize>3.6</drawSize>
+					<shadowData>
+						<volume>(0.7, 0.6, 0.4)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Dessicated_Thrumboman_Female</texPath>
+					<drawSize>3.6</drawSize>
+				</femaleDessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Thrumboman_Male</texPath>
+					<drawSize>4.8</drawSize>
+					<shadowData>
+						<volume>(1, 0.8, 0.5)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Dessicated_Thrumboman_Male</texPath>
+					<drawSize>4.8</drawSize>
+				</dessicatedBodyGraphicData>
+				
+				<femaleGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Thrumboman_Female</texPath>
+					<drawSize>4.2</drawSize>
+					<shadowData>
+						<volume>(1, 0.8, 0.5)</volume>
+						<offset>(0,0,-0.5)</offset>
+					</shadowData>
+				</femaleGraphicData>
+				<femaleDessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Colossal/Thrumboman/GR_Dessicated_Thrumboman_Female</texPath>
+					<drawSize>4.2</drawSize>
+				</femaleDessicatedBodyGraphicData>
+				<butcherBodyPart>
+					<bodyPartGroup>HornAttackTool</bodyPartGroup>
+					<thing>ThrumboHorn</thing>
+				</butcherBodyPart>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_ThrumboGenetic</dominantGenome>
+				<secondaryGenome>GR_HumanoidGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 </Defs>

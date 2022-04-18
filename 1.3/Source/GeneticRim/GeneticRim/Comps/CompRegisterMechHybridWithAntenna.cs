@@ -6,8 +6,7 @@ namespace GeneticRim
 {
     class CompRegisterMechHybridWithAntenna : ThingComp
     {
-
-
+       
         public CompProperties_RegisterMechHybridWithAntenna Props
         {
             get
@@ -16,10 +15,26 @@ namespace GeneticRim
             }
         }
 
+        public override void CompTick()
+        {
+            base.CompTick();
+
+            if (this.parent.IsHashIntervalTick(Props.timer))
+            {
+                CheckForAntenna();
+            }
+        }
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
-            if (this.parent.Faction == Faction.OfPlayer) {
+            CheckForAntenna();
+
+        }
+
+        public void CheckForAntenna()
+        {
+            if (this.parent.Faction == Faction.OfPlayer)
+            {
                 bool alreadyRegistered = false;
                 foreach (Building_MechahybridAntenna antenna in StaticCollectionsClass.mech_antennas)
                 {
@@ -41,7 +56,6 @@ namespace GeneticRim
                 }
 
             }
-            
 
         }
 

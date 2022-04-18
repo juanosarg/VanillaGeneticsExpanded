@@ -225,7 +225,10 @@ namespace GeneticRim
             //Save all the key variables so they work on game save / load
             base.ExposeData();
             Scribe_Deep.Look<ThingOwner>(ref this.innerContainer, "innerContainer", new object[] { this });
-            Scribe_Deep.Look<Building_Mechafuse>(ref this.unSpentFuse, "unSpentFuse", new object[] { this });
+            
+            Scribe_References.Look(ref this.unSpentFuse, nameof(this.unSpentFuse));
+
+
             Scribe_Values.Look(ref this.mechRaidProgress, nameof(this.mechRaidProgress));
             Scribe_Values.Look(ref this.progress, nameof(this.progress));
             Scribe_Values.Look(ref this.oneRaidPerProgress, nameof(this.oneRaidPerProgress));

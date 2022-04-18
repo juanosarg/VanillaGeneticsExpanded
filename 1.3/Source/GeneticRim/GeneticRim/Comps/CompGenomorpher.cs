@@ -22,6 +22,7 @@ namespace GeneticRim
         public Thing genomeSecondary;
         public Thing frame;
         public Thing booster;
+        public PawnKindDef mainResult;
 
         public string genomeDominantLabel;
         public string genomeSecondaryLabel;
@@ -38,12 +39,13 @@ namespace GeneticRim
             this.compPowerTrader = this.parent.GetComp<CompPowerTrader>();
         }
        
-        public void Initialize(Thing genomeDominant, Thing genomeSecondary, Thing frame, Thing booster, int durationTicks)
+        public void Initialize(Thing genomeDominant, Thing genomeSecondary, Thing frame, Thing booster, int durationTicks, PawnKindDef mainResult)
         {
             this.genomeDominant = genomeDominant;
             this.genomeSecondary = genomeSecondary;
             this.frame = frame;
             this.booster = booster;
+            this.mainResult = mainResult;
 
             genomeDominantLabel = genomeDominant.def.LabelCap;
             genomeSecondaryLabel = genomeSecondary.def.LabelCap;
@@ -61,6 +63,7 @@ namespace GeneticRim
             cell.genomeSecondary = this.genomeSecondary.def;
             cell.genoframe       = this.frame.def;
             cell.booster         = this.booster?.def;
+            cell.mainResult = this.mainResult;
 
             
 
@@ -68,7 +71,8 @@ namespace GeneticRim
             this.genomeSecondary = null;
             this.frame           = null;
             this.booster         = null;
-            
+            this.mainResult = null;
+
             this.progress = 0f;
         }
 
@@ -192,6 +196,8 @@ namespace GeneticRim
             Scribe_References.Look(ref this.genomeSecondary, nameof(this.genomeSecondary));
             Scribe_References.Look(ref this.frame, nameof(this.frame));
             Scribe_References.Look(ref this.booster, nameof(this.booster));
+            Scribe_Deep.Look(ref this.mainResult, nameof(this.mainResult));
+
 
             Scribe_Values.Look(ref this.genomeDominantLabel, nameof(this.genomeDominantLabel));
             Scribe_Values.Look(ref this.genomeSecondaryLabel, nameof(this.genomeSecondaryLabel));

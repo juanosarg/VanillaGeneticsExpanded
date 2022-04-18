@@ -316,8 +316,11 @@
     <Compile Include="AI\JobDrivers\JobDriver_InsertGrowthCell.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_InsertIngredients.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_ParagonConversion.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_PlantCut.cs" />
+    <Compile Include="AI\JobDrivers\JobDriver_Recruit.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_Talk.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_Harvest.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Hunt.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Execute.cs" />
     <Compile Include="AI\JobGivers\JobGiver_FeedPatient.cs" />
@@ -326,6 +329,7 @@
     <Compile Include="AI\JobGivers\JobGiver_Slaughter.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Clean.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Flick.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_TryRecruit.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Talk.cs" />
     <Compile Include="AI\JobGivers\JobGiver_TryQuarryJob.cs" />
     <Compile Include="AI\WorkGivers\WorkGiver_ParagonConversion.cs" />
@@ -378,9 +382,12 @@
     <Compile Include="Game, World and Map Components\WorldComponent_LabQuests.cs" />
     <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
     <Compile Include="Harmony\Caravan_NightResting.cs" />
+    <Compile Include="Harmony\ExecutionUtility_ExecutionInt.cs" />
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Manbear.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Thrumboman.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Catman.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Lizardman.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Manscarab.cs" />

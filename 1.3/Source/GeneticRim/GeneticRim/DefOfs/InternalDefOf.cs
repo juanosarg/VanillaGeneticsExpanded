@@ -52,6 +52,8 @@ namespace GeneticRim
         public static ThingDef GR_Catman;
         public static ThingDef GR_Manscarab;
         public static ThingDef GR_Lizardman;
+        public static ThingDef GR_Thrumboman;
+        public static ThingDef GR_Manbear;
 
         public static PawnKindDef GR_ArchotechCentipede;
 
@@ -64,6 +66,7 @@ namespace GeneticRim
         public static HediffDef GR_AnimalAbasia;
         public static HediffDef GR_SargSyndrome;
         public static HediffDef GR_GreaterScaria;
+        public static HediffDef GR_SadisticAdrenaline;
 
         public static ThingCategoryDef GR_GeneticMaterial;
         public static ThingCategoryDef GR_GeneticMaterialTierOne;
@@ -81,6 +84,8 @@ namespace GeneticRim
         public static JobDef GR_HumanoidHybridTalk;
         public static JobDef GR_AnimalDeconstructJob;
         public static JobDef GR_AnimalHuntJob;
+        public static JobDef GR_AnimalHarvestJob;
+        public static JobDef GR_HumanoidHybridRecruit;
 
         public static SoundDef GR_Pop;
         public static SoundDef GR_Beep;

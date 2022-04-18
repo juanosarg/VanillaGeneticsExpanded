@@ -416,6 +416,7 @@
 			<wildness>0.36</wildness>
 			<mateMtbHours>7</mateMtbHours>
 			<lifeExpectancy>4</lifeExpectancy>
+			<useMeatFrom>Chicken</useMeatFrom>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBabyTiny</def>

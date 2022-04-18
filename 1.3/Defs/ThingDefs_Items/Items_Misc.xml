@@ -53,7 +53,7 @@
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Explosive">
-				<explosiveRadius>15</explosiveRadius>
+				<explosiveRadius>10</explosiveRadius>
 				<explosiveDamageType>Flame</explosiveDamageType>
 				<explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
 				<startWickOnDamageTaken>
@@ -62,11 +62,12 @@
 				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
 				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
 				<preExplosionSpawnChance>1</preExplosionSpawnChance>
-				<wickTicks>
-					<min>70</min>
-					<max>150</max>
-				</wickTicks>
+				<wickTicks>70~150</wickTicks>
 			</li>
 		</comps>
+		
+		
+		
+		
 	</ThingDef>
 </Defs>

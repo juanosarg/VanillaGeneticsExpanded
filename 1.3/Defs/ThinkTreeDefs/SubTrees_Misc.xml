@@ -9,7 +9,7 @@
 				<li Class="GeneticRim.ThinkNode_HumanoidHybrid">
 					<subNodes>
 						<li Class="ThinkNode_ChancePerHour_Constant">
-							<mtbHours>0.1</mtbHours>
+							<mtbHours>3</mtbHours>
 							<subNodes>
 								<li Class="ThinkNode_Tagger">
 									<tagToGive>Misc</tagToGive>
@@ -112,7 +112,7 @@
 						<li Class="GeneticRim.ThinkNode_Lizardman">
 							<subNodes>
 								<li Class="ThinkNode_ChancePerHour_Constant">
-									<mtbHours>0.1</mtbHours>
+									<mtbHours>2</mtbHours>
 									<subNodes>
 										<li Class="ThinkNode_Tagger">
 											<tagToGive>Misc</tagToGive>
@@ -129,6 +129,36 @@
 											<tagToGive>Misc</tagToGive>
 											<subNodes>
 												<li Class="GeneticRim.JobGiver_Slaughter"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						<li Class="GeneticRim.ThinkNode_Thrumboman">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>0.2</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Harvest"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+						<li Class="GeneticRim.ThinkNode_Manbear">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>12</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_TryRecruit"/>
 											</subNodes>
 										</li>
 									</subNodes>

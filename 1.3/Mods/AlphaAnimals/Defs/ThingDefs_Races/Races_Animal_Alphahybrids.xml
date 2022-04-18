@@ -467,12 +467,13 @@
 			<fleshType>GR_Normal</fleshType>
 			<packAnimal>false</packAnimal>
 			<wildness>0.6</wildness>
+			
 			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.5</manhunterOnDamageChance>
 			<useLeatherFrom>AA_Needlepost</useLeatherFrom>
-			
+			<useMeatFrom>Chicken</useMeatFrom>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>

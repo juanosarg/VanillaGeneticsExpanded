@@ -13,6 +13,12 @@
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	<JobDef>
+		<defName>GR_HumanoidHybridRecruit</defName>
+		<driverClass>GeneticRim.JobDriver_Recruit</driverClass>
+		<reportString>convincing TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
 		<defName>GR_AnimalDeconstructJob</defName>
 		<driverClass>GeneticRim.JobDriver_AnimalDeconstruct</driverClass>
 		<reportString>deconstructing TargetA.</reportString>
@@ -25,33 +31,39 @@
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	<JobDef>
+		<defName>GR_AnimalHarvestJob</defName>
+		<driverClass>GeneticRim.JobDriver_PlantCut</driverClass>
+		<reportString>harvesting TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	<JobDef>
 		<defName>GR_InsertIngredients</defName>
 		<driverClass>GeneticRim.JobDriver_InsertIngredients</driverClass>
 		<reportString>inserting ingredients on TargetA.</reportString>
-		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	<JobDef>
 		<defName>GR_InsertGrowthCell</defName>
 		<driverClass>GeneticRim.JobDriver_InsertGrowthCell</driverClass>
 		<reportString>inserting growth cell on TargetA.</reportString>
-		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	<JobDef>
 		<defName>GR_InsertArchotechGrowthCell</defName>
 		<driverClass>GeneticRim.JobDriver_InsertArchotechGrowthCell</driverClass>
 		<reportString>inserting archotech growth cell on TargetA.</reportString>
-		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	<JobDef>
 		<defName>GR_ArchotechDNAExtractionJob</defName>
 		<driverClass>GeneticRim.JobDriver_ArchotechDNAExtraction</driverClass>
 		<reportString>carrying TargetA to TargetB.</reportString>
-		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 	<JobDef>
 		<defName>GR_ParagonConversionJob</defName>
 		<driverClass>GeneticRim.JobDriver_ParagonConversion</driverClass>
 		<reportString>carrying TargetA to TargetB.</reportString>
-		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 	</JobDef>
 </Defs>

@@ -54,6 +54,7 @@
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>Intermediate</trainability>
 			<nuzzleMtbHours>4</nuzzleMtbHours>
+			<useMeatFrom>GR_AberrantFleshbeast</useMeatFrom>
 			<lifeStageAges>
 				
 				<li>
@@ -158,6 +159,7 @@
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<trainability>Intermediate</trainability>
+			<meatLabel>aberrant meat</meatLabel>
 			<lifeStageAges>
 				
 				<li>
@@ -263,6 +265,7 @@
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<foodType>CarnivoreAnimal</foodType>
+			<useMeatFrom>GR_AberrantFleshbeast</useMeatFrom>
 			<trainability>None</trainability>
 			<lifeStageAges>
 				

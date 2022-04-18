@@ -28,6 +28,7 @@ namespace GeneticRim
         public Thing genomeSecondary;
         public Thing genoframe;
         public Thing booster;
+        public PawnKindDef mainResult;
 
         public int durationTicks;
 
@@ -61,7 +62,7 @@ namespace GeneticRim
 
         public override void DoWindowContents(Rect inRect)
         {
-            PawnKindDef mainResult = Core.GetHybrid(this.genomeDominant?.def, this.genomeSecondary?.def, this.genoframe?.def, this.booster?.def, 
+            mainResult = Core.GetHybrid(this.genomeDominant?.def, this.genomeSecondary?.def, this.genoframe?.def, this.booster?.def, 
                                                                  out float swapChance, out float failureChance, out PawnKindDef swapResult, out PawnKindDef failureResult);
 
             
@@ -386,9 +387,9 @@ namespace GeneticRim
 
             if (timeMultiplier != null&& timeMultiplier != 0)
             {
-                this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, (int)(GenDate.TicksPerHour * this.comp.Props.hoursProcess * timeMultiplier));
+                this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, (int)(GenDate.TicksPerHour * this.comp.Props.hoursProcess * timeMultiplier),this.mainResult);
             }
-            else { this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, GenDate.TicksPerHour * this.comp.Props.hoursProcess); }
+            else { this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, GenDate.TicksPerHour * this.comp.Props.hoursProcess, this.mainResult); }
             
             this.Close();
         }

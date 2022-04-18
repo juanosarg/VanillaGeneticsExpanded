@@ -21,7 +21,7 @@ namespace GeneticRim
         {
             base.ExposeData();
 
-            Scribe_Collections.Look(ref assignedMechs, "assignedMechs", LookMode.Def);
+            Scribe_Collections.Look(ref assignedMechs, "assignedMechs", LookMode.Reference);
 
         }
 

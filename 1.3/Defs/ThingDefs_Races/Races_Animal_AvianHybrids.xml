@@ -128,34 +128,34 @@
 			<li>
 				<label>chickenbear chick</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenbear/Chickenbear</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenbear/Chickenbear</texPath>
 					<drawSize>0.55</drawSize>
 					<color>(223,219,108)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.55</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<labelMale>chickenbear cockerel</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenbear/Chickenbear</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenbear/Chickenbear</texPath>
 					<drawSize>0.85</drawSize>
 					<color>(200,150,85)</color>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenbear/Chickenbear</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenbear/Chickenbear</texPath>
 					<drawSize>0.83</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenbear/Chickenbear</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenbear/Chickenbear</texPath>
 					<drawSize>0.97</drawSize>
 					<color>(200,150,85)</color>
 					<shadowData>
@@ -164,11 +164,11 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenbear/Chickenbear</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenbear/Chickenbear</texPath>
 					<drawSize>0.95</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.95</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -310,34 +310,34 @@
 			<li>
 				<label>chickenlope chick</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlope/Chickenlope</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenlope/Chickenlope</texPath>
 					<drawSize>0.45</drawSize>
 					<color>(223,219,108)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<labelMale>chickenlope cockerel</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlope/Chickenlope</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenlope/Chickenlope</texPath>
 					<drawSize>0.75</drawSize>
 					<color>(200,150,85)</color>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlope/Chickenlope</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenlope/Chickenlope</texPath>
 					<drawSize>0.73</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlope/Chickenlope</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenlope/Chickenlope</texPath>
 					<drawSize>0.87</drawSize>
 					<color>(200,150,85)</color>
 					<shadowData>
@@ -346,11 +346,11 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenlope/Chickenlope</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenlope/Chickenlope</texPath>
 					<drawSize>0.85</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -488,34 +488,34 @@
 			<li>
 				<label>chickenffalo chick</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenffalo/Chickenffalo</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenffalo/Chickenffalo</texPath>
 					<drawSize>0.45</drawSize>
 					<color>(223,219,108)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<labelMale>chickenffalo cockerel</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenffalo/Chickenffalo</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenffalo/Chickenffalo</texPath>
 					<drawSize>0.75</drawSize>
 					<color>(200,150,85)</color>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenffalo/Chickenffalo</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenffalo/Chickenffalo</texPath>
 					<drawSize>0.73</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenffalo/Chickenffalo</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenffalo/Chickenffalo</texPath>
 					<drawSize>0.87</drawSize>
 					<color>(200,150,85)</color>
 					<shadowData>
@@ -524,11 +524,11 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenffalo/Chickenffalo</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenffalo/Chickenffalo</texPath>
 					<drawSize>0.85</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -661,34 +661,34 @@
 			<li>
 				<label>chickenwolf chick</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenwolf/Chickenwolf</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenwolf/Chickenwolf</texPath>
 					<drawSize>0.45</drawSize>
 					<color>(223,219,108)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<labelMale>chickenwolf cockerel</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenwolf/Chickenwolf</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenwolf/Chickenwolf</texPath>
 					<drawSize>0.75</drawSize>
 					<color>(200,150,85)</color>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenwolf/Chickenwolf</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenwolf/Chickenwolf</texPath>
 					<drawSize>0.73</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenwolf/Chickenwolf</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenwolf/Chickenwolf</texPath>
 					<drawSize>0.87</drawSize>
 					<color>(200,150,85)</color>
 					<shadowData>
@@ -697,11 +697,11 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenwolf/Chickenwolf</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenwolf/Chickenwolf</texPath>
 					<drawSize>0.85</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -839,17 +839,17 @@
 			<li>
 				<label>chickenrabbit chick</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenrabbit/Chickenrabbit</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenrabbit/Chickenrabbit</texPath>
 					<drawSize>0.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>.6</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenrabbit/Chickenrabbit</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenrabbit/Chickenrabbit</texPath>
 					<drawSize>1.1</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -857,13 +857,13 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>1.1</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickenrabbit/Chickenrabbit</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickenrabbit/Chickenrabbit</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>
@@ -871,7 +871,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>1.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1008,34 +1008,34 @@
 			<li>
 				<label>chickencat chick</label>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickencat/GR_Chickencat</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickencat/GR_Chickencat</texPath>
 					<drawSize>0.45</drawSize>
 					<color>(223,219,108)</color>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.45</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<labelMale>chickencat cockerel</labelMale>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickencat/GR_Chickencat</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickencat/GR_Chickencat</texPath>
 					<drawSize>0.75</drawSize>
 					<color>(200,150,85)</color>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickencat/GR_Chickencat</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickencat/GR_Chickencat</texPath>
 					<drawSize>0.73</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.7</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickencat/GR_Chickencat</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickencat/GR_Chickencat</texPath>
 					<drawSize>0.87</drawSize>
 					<color>(200,150,85)</color>
 					<shadowData>
@@ -1044,11 +1044,11 @@
 					</shadowData>
 				</bodyGraphicData>
 				<femaleGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Chickencat/GR_Chickencat</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Chickencat/GR_Chickencat</texPath>
 					<drawSize>0.85</drawSize>
 				</femaleGraphicData>
 				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Dessicated_Chicken</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Dessicated_Chicken</texPath>
 					<drawSize>0.85</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
@@ -1187,7 +1187,7 @@
 				<label>turkeybaby</label>
 				<labelPlural>turkeybabies</labelPlural>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Turkeyman/GR_Turkeyman</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Turkeyman/GR_Turkeyman</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -1197,7 +1197,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Turkeyman/GR_Turkeyman</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Turkeyman/GR_Turkeyman</texPath>
 					<drawSize>1.2</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -1207,7 +1207,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Chicken/Turkeyman/GR_Turkeyman</texPath>
+					<texPath>Things/Pawn/Animal/Avian/Turkeyman/GR_Turkeyman</texPath>
 					<drawSize>1.4</drawSize>
 					<shadowData>
 						<volume>(0.3, 0.4, 0.3)</volume>

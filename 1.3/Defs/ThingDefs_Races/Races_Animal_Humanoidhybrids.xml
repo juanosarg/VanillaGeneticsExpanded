@@ -1,0 +1,1352 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Humanoid - Bear -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Manbear</defName>		
+		<label>manbear</label>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<MarketValue>400</MarketValue>
+			<FilthRate>2</FilthRate>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+
+		</statBases>
+
+		<tools>
+
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>6</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>6</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+
+		</tools>	
+		<comps>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+			
+			
+		</comps>		
+		<race>
+
+			<fleshType>GR_HumanMeat</fleshType>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<body>Monkey</body>
+			<baseBodySize>0.35</baseBodySize>
+			  <baseHungerRate>0.125</baseHungerRate>
+			  <baseHealthScale>0.35</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
+			<useLeatherFrom>Human</useLeatherFrom>
+			<useMeatFrom>Human</useMeatFrom>		
+			<wildness>0.5</wildness>  
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<intelligence>Animal</intelligence>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<trainability>Advanced</trainability>
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+					 <soundWounded>Pawn_Monkey_Wounded</soundWounded>
+					  <soundDeath>Pawn_Monkey_Death</soundDeath>
+					  <soundCall>Pawn_Monkey_Call</soundCall>
+					  <soundAngry>Pawn_Monkey_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>AnimalHumanoidHybrid</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleUtility</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleUtilityDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Manbear</defName>		
+		<label>manbear</label>
+		<race>GR_Manbear</race>
+		<combatPower>30</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<labelMale>manbear</labelMale>
+		<labelFemale>womanbear</labelFemale>
+		<labelMalePlural>menbear</labelMalePlural>
+		<labelFemalePlural>womenbear</labelFemalePlural>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Manbear</texPath>
+					<drawSize>1</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Dessicated_Manbear</texPath>
+					<drawSize>1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Manbear</texPath>
+					<drawSize>1.25</drawSize>
+					<shadowData>
+						<volume>(0.2, 0.2, 0.2)</volume>
+            <offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Dessicated_Manbear</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Manbear</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						 <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Dessicated_Manbear</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- Humanoid - Boomalope -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Manalope</defName>
+		<label>manalope</label>
+		<description>What happens when you mix a spitting cobra, a rattlesnake and a creature designed to lactate refined fuel? This abomination, that’s what. Drive it into a corner and it’ll hurt itself to release deadly neurotoxins. Try and keep your distance and it’ll spit toxic blood right at you. Clearly someone was a sore loser in playing pretend games as a child, but had either the brains or the money to prove themselves right.\n\nA reptile hybrid with recessive boomalope genes. Decently intelligent with a nasty bite and even nastier ranged attack, both causing toxic buildup. Quite a high metabolism which supports its various combat abilities, best suited for home defence.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<MarketValue>400</MarketValue>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+		</statBases>
+
+		<tools>
+			<li>
+				<capacities>
+					<li>GR_VeryToxicBite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
+
+		<race>
+			<fleshType>GR_Normal</fleshType>			
+			<body>Snake</body>
+			<trainability>Intermediate</trainability>
+			<deathActionWorkerClass>GeneticRim.DeathActionWorker_ToxicExplosion</deathActionWorkerClass>
+			<executionRange>6</executionRange>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHungerRate>0.535</baseHungerRate>
+			<baseHealthScale>0.75</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<useLeatherFrom>Human</useLeatherFrom>
+			<useMeatFrom>Human</useMeatFrom>		
+			<wildness>0.6</wildness>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<intelligence>Animal</intelligence>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Manalope</defName>
+		<label>manalope</label>
+		<race>GR_Manalope</race>
+		<combatPower>150</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
+					<drawSize>1.9</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
+					<drawSize>1.9</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- Humanoid - Chicken -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Manchicken</defName>
+		<label>manchicken</label>
+		<description>Chickens are basically an evolution of dinosaurs, so someone decided to turn them back. Unfortunately they didn’t exactly bother to check that they should still be avian rather than reptilian, so it resulted in this nasty little thing that reproduces at an insane rate and empties your fridge. But hey, they’ll spit on your enemies and their right to shit everywhere, especially where they eat.\n\nA reptile hybrid with recessive avian genes. This particular farm animal is smart enough that it doesn’t need a pen and breeds faster than other reptiles. A very large appetite for a creature so small, which supports its ability to spit out nasty toxins on their enemies and create messes on the floor. Very easy to train and has a good memory.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<statBases>
+			<MoveSpeed>3</MoveSpeed>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>4</FilthRate>
+			<MarketValue>150</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>GR_LightToxicBite</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>GR_LightToxicBite</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+
+		<comps>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>GR_ChickenlizardEggUnfertilized</eggUnfertilizedDef>
+				<eggFertilizedDef>GR_ChickenlizardEggFertilized</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>1.2</eggLayIntervalDays>
+				<eggCountRange>1</eggCountRange>
+			</li>
+
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
+		<race>
+
+			<body>Bird</body>
+			<fleshType>GR_Normal</fleshType>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<baseBodySize>0.3</baseBodySize>
+			<baseHungerRate>.35</baseHungerRate>
+			<baseHealthScale>0.75</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<useLeatherFrom>Chicken</useLeatherFrom>
+			<useMeatFrom>Chicken</useMeatFrom>
+			<wildness>0.36</wildness>
+			<mateMtbHours>8</mateMtbHours>
+			<intelligence>Animal</intelligence>
+			<trainability>Intermediate</trainability>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.12</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.3</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Manchicken</defName>
+		<label>manchicken</label>
+		<race>GR_Manchicken</race>
+		<combatPower>40</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manchicken/GR_Manchicken</texPath>
+					<drawSize>1.2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manchicken/GR_Dessicated_Manchicken</texPath>
+					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manchicken/GR_Manchicken</texPath>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manchicken/GR_Dessicated_Manchicken</texPath>
+					<drawSize>1.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manchicken/GR_Manchicken</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manchicken/GR_Dessicated_Manchicken</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- Humanoid - Muffalo -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Manffalo</defName>
+		<label>manffalo</label>
+		<description>Milking snakes for venom in order to create medicine is an extremely dangerous career. While this particular beast of burden proved to be capable in other areas, it was mainly synthesised in order to provide a safer way of sourcing an anaesthetic coagulant to be used in emergencies. Or someone was trying to get high by milking a reptilian space cow, who really knows.\n\nA reptile hybrid with recessive muffalo genes. A strong pack animal with a massive appetite and a proportionate filth rate. Quite durable and will prove a fatal mistake for any animal that attempts to hunt them, as their fangs, horns and claws are all venomous. Can be milked every ten days for a vial of paralysing coagulant, best used for large animals that are suffering from multiple lacerations.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<statBases>
+			<MoveSpeed>3.5</MoveSpeed>
+			<FilthRate>12</FilthRate>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<MarketValue>650</MarketValue>
+			
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+
+		</statBases>
+		<tools>
+			<li>
+				<capacities>
+					<li>GR_VeryToxicBite</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			</li>
+
+		</tools>
+
+		<comps>
+
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>GR_PoisonAmpoule</resourceDef>
+				<gatheringIntervalDays>10</gatheringIntervalDays>
+				<resourceAmount>1</resourceAmount>
+				<customResourceString>PoisonGrowth</customResourceString>
+
+			</li>
+
+		</comps>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>15</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
+		<race>
+
+			<body>QuadrupedAnimalWithHooves</body>
+			<herdAnimal>true</herdAnimal>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<fleshType>GR_Normal</fleshType>
+			<roamMtbDays>2</roamMtbDays>
+			<baseBodySize>3.5</baseBodySize>
+			<baseHungerRate>.85</baseHungerRate>
+			<baseHealthScale>2</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<useLeatherFrom>Human</useLeatherFrom>
+			<useMeatFrom>Human</useMeatFrom>		
+			<wildness>0.5</wildness>
+			<packAnimal>true</packAnimal>
+			<intelligence>Animal</intelligence>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.25</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Manffalo</defName>
+		<label>manffalo</label>
+		<race>GR_Manffalo</race>
+		<combatPower>100</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manffalo/GR_Manffalo_Male</texPath>
+					<drawSize>1.75</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manffalo/GR_Dessicated_Manffalo_Male</texPath>
+					<drawSize>1.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manffalo/GR_Manffalo_Male</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manffalo/GR_Dessicated_Manffalo_Male</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manffalo/GR_Manffalo_Male</texPath>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manffalo/GR_Dessicated_Manffalo_Male</texPath>
+					<drawSize>3.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+
+
+	<!-- Humanoid - Wolf -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Manwolf</defName>
+		<label>manwolf</label>
+		<description>A great doggo that sheds snakeskin instead of fur, so don’t be too alarmed when scratching at an itchy spot makes skin flake off. It’ll shed itself, even when out hunting prey, so be prepared to occasionally go on a long trek to pick up the valuable skin.\n\nA reptile hybrid with recessive canine genes. Fast, intelligent and with a nasty venomous bite, these hybrids make for an excellent hunting hound. They lack any notion of fear so they may end up going after much larger, more dangerous prey and achieving a pyrrhic victory.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<statBases>
+			<MoveSpeed>6.5</MoveSpeed>	
+			<MarketValue>450</MarketValue>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>GR_VeryToxicBite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>GR_VeryToxicBite</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+				<capacities>
+					<li>GR_VeryToxicBite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+
+		<comps>
+
+
+			<li Class="CompProperties_Spawner">
+				<thingToSpawn>GR_HybridScales</thingToSpawn>
+				<spawnCount>90</spawnCount>
+				<spawnIntervalRange>1500000</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
+			</li>
+
+		</comps>
+
+		<race>
+
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<fleshType>GR_Normal</fleshType>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<predator>true</predator>
+			<baseBodySize>1.0</baseBodySize>
+			<baseHungerRate>0.25</baseHungerRate>
+			<baseHealthScale>1.35</baseHealthScale>
+			<foodType>CarnivoreAnimalStrict</foodType>
+			<useLeatherFrom>Human</useLeatherFrom>
+			<useMeatFrom>Human</useMeatFrom>		
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<trainability>Advanced</trainability>
+			<wildness>0.80</wildness>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+
+
+			<lifeExpectancy>4</lifeExpectancy>
+
+
+
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.2</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.45</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Manwolf</defName>
+		<label>manwolf</label>
+		<race>GR_Manwolf</race>
+		<combatPower>100</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<label>wolfsnake puppy</label>
+				<labelPlural>wolfsnake puppies</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manwolf/GR_Manwolf</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manwolf/GR_Dessicated_Manwolf</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manwolf/GR_Manwolf</texPath>
+					<drawSize>1.75</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manwolf/GR_Dessicated_Manwolf</texPath>
+					<drawSize>1.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manwolf/GR_Manwolf</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manwolf/GR_Dessicated_Manwolf</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<!-- Humanoid - Cat -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Mancat</defName>
+		<label>mancat</label>
+		<description>Possibly one of the weirdest and cutest snakes to be ever created. They have several tiny legs which are used to push its body along, while also having an invitingly soft fur. Quite a lot of people never stop freaking out from something sliding up the backs of their legs only to get softly headbutted by a purring python.\n\nA reptile hybrid with recessive feline genes. An unusually furry snake that enjoys nuzzling while also hunting for prey much weaker than itself. Incredibly intelligent and easy to train, they combine quick reflexes and an incredibly nasty bite and spitting attack.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<statBases>
+			<MoveSpeed>4.5</MoveSpeed>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+			<MarketValue>400</MarketValue>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+		</statBases>
+		<comps>		
+
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_MeleeDodge</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<capacities>
+					<li>GR_VeryToxicBite</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>20</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
+
+
+		<race>
+			<fleshType>GR_Normal</fleshType>
+
+			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
+			<predator>true</predator>
+			<maxPreyBodySize>0.35</maxPreyBodySize>    
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHungerRate>0.3</baseHungerRate>
+			<baseHealthScale>0.75</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
+			<useLeatherFrom>Human</useLeatherFrom>
+			<useMeatFrom>Human</useMeatFrom>		
+			<wildness>0.6</wildness>
+			<trainability>Advanced</trainability>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Mancat</defName>
+		<label>mancat</label>
+		<race>GR_Mancat</race>
+		<combatPower>150</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Mancat</texPath>
+					<drawSize>1.25</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Dessicated_Mancat</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Mancat</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Dessicated_Mancat</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Mancat</texPath>
+					<drawSize>1.75</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Dessicated_Mancat</texPath>
+					<drawSize>1.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+<!-- Humanoid - Rodent -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_Mansquirrel</defName>
+		<label>mansquirrel</label>
+		<description>Possibly one of the weirdest and cutest snakes to be ever created. They have several tiny legs which are used to push its body along, while also having an invitingly soft fur. Quite a lot of people never stop freaking out from something sliding up the backs of their legs only to get softly headbutted by a purring python.\n\nA reptile hybrid with recessive feline genes. An unusually furry snake that enjoys nuzzling while also hunting for prey much weaker than itself. Incredibly intelligent and easy to train, they combine quick reflexes and an incredibly nasty bite and spitting attack.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<statBases>
+			<MoveSpeed>4.5</MoveSpeed>
+			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<FilthRate>2</FilthRate>
+			<MarketValue>400</MarketValue>
+			<MeatAmount>20</MeatAmount>
+			<LeatherAmount>20</LeatherAmount>
+		</statBases>
+		<comps>		
+
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_MeleeDodge</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<capacities>
+					<li>GR_VeryToxicBite</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>20</range>
+				<soundCast>GR_PoisonBlast</soundCast>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>poison spit</label>
+				<commonality>1</commonality>
+			</li>
+
+
+		</verbs>
+
+
+		<race>
+			<fleshType>GR_Normal</fleshType>
+
+			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
+			<predator>true</predator>
+			<maxPreyBodySize>0.35</maxPreyBodySize>    
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHungerRate>0.3</baseHungerRate>
+			<baseHealthScale>0.75</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<gestationPeriodDays>20</gestationPeriodDays>
+			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
+			<useLeatherFrom>Human</useLeatherFrom>
+			<useMeatFrom>Human</useMeatFrom>		
+			<wildness>0.6</wildness>
+			<trainability>Advanced</trainability>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+
+			<lifeStageAges>
+
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.15</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.5</minAge>
+					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
+					<soundDeath>Pawn_Cobra_Death</soundDeath>
+					<soundCall>Pawn_Cobra_Call</soundCall>
+					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_Mansquirrel</defName>
+		<label>mansquirrel</label>
+		<race>GR_Mansquirrel</race>
+		<combatPower>150</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mansquirrel/GR_Mansquirrel</texPath>
+					<drawSize>1.25</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mansquirrel/GR_Dessicated_Mansquirrel</texPath>
+					<drawSize>1.25</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mansquirrel/GR_Mansquirrel</texPath>
+					<drawSize>1.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mansquirrel/GR_Dessicated_Mansquirrel</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mansquirrel/GR_Mansquirrel</texPath>
+					<drawSize>1.75</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Mansquirrel/GR_Dessicated_Mansquirrel</texPath>
+					<drawSize>1.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_HumanoidGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

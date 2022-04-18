@@ -857,4 +857,65 @@
 			</li>
 		</stages>
 	</HediffDef>
+	<HediffDef>
+		<defName>GR_SadisticAdrenaline</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>sadistic adrenaline</label>
+		<description>The lizardman has slaughtered a colony prisoner in cold blood, triggering the release of a potent hormone complex that is making it faster and stronger. This will last for a few hours.</description>
+		<defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-2</severityPerDayNotImmune>
+			</li>
+			
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+					<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+					<MeleeWeapon_DamageMultiplier>1.25</MeleeWeapon_DamageMultiplier>
+				</statOffsets>
+				<painFactor>0.1</painFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.30</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>1</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>1</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>2</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>2</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.50</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

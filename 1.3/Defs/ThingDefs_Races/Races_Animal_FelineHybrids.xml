@@ -1129,7 +1129,7 @@
 		<race>
 			
 			<fleshType>GR_Normal</fleshType>
-			<body>GR_HandedCat</body>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<maxPreyBodySize>0.25</maxPreyBodySize>
@@ -1141,7 +1141,7 @@
 			<useMeatFrom>Cat</useMeatFrom>
 			<wildness>0.36</wildness>
 			<trainability>Advanced</trainability>
-			<intelligence>ToolUser</intelligence>
+			
 			<nuzzleMtbHours>8</nuzzleMtbHours>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>			

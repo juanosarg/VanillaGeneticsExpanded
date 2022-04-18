@@ -1,7 +1,7 @@
 ﻿namespace GeneticRim
 {
     using System.Collections.Generic;
-    using System.Linq;
+    using System;
     using System.Text;
     using Verse;
     using Verse.AI;
@@ -12,6 +12,7 @@
         public ThingDef genomeSecondary;
         public ThingDef genoframe;
         public ThingDef booster;
+        public PawnKindDef mainResult;
 
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn selPawn)
         {
@@ -22,13 +23,20 @@
             {
                 if (building.TryGetComp<CompElectroWomb>()?.Free ?? false)
                 {
-                    yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap), () =>
+                    yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap,mainResult.LabelCap,mainResult.race.race.baseBodySize.ToString()), () =>
                                                                                                                        {
-                                                                                                                           Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertGrowthCell, building,
-                                                                                                                               this.parent);
-                                                                                                                           makeJob.haulMode = HaulMode.ToCellNonStorage;
-                                                                                                                           makeJob.count    = 1;
-                                                                                                                           selPawn.jobs.StartJob(makeJob, JobCondition.InterruptForced);
+
+                                                                                                                           if (selPawn.CanReserveAndReach(building, PathEndMode.OnCell, Danger.Deadly)&&
+                                                                                                                           selPawn.CanReserveAndReach(this.parent, PathEndMode.OnCell, Danger.Deadly)) {
+                                                                                                                               Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertGrowthCell, building,
+                                                                                                                                  this.parent);
+                                                                                                                               makeJob.haulMode = HaulMode.ToCellNonStorage;
+                                                                                                                               makeJob.count = 1;
+                                                                                                                               selPawn.jobs.TryTakeOrderedJob(makeJob);
+
+
+                                                                                                                           }
+                                                                                                                           
                                                                                                                        });
                 }
             }
@@ -55,6 +63,7 @@
             Scribe_Defs.Look(ref this.genomeSecondary, nameof(this.genomeSecondary));
             Scribe_Defs.Look(ref this.genoframe, nameof(this.genoframe));
             Scribe_Defs.Look(ref this.booster, nameof(this.booster));
+            Scribe_Defs.Look(ref this.mainResult, nameof(this.mainResult));
         }
     }
 }

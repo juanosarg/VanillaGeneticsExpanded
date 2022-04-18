@@ -4,7 +4,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Spinobear</defName>
 		<label>spinobear</label>
-		<description>This hybrid therapod has bear-like characteristics. There are several theories concerning the use of the Spinosaur's spinal fan-sail, but in the case of the Spinobear it is clear what use it has: kicking your ass.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All bear hybrids have stun attacks. Aside from obviously being a very powerful creature, they produce a weid mixture of wool and scales that can be sheared and used in textile operations. They can also be slaughtered for their pelts. Like all dinosaur hybrids, they are oviparous.</description>
+		<description>This hybrid therapod has bear-like characteristics. There are several theories concerning the use of the Spinosaur's spinal fan-sail, but in the case of the Spinobear it is clear what use it has: kicking your ass.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All bear hybrids have stun attacks. Aside from obviously being a very powerful creature, they produce a weird mixture of wool and scales that can be sheared and used in textile operations. They can also be slaughtered for their pelts. Like all dinosaur hybrids, they are oviparous.</description>
 		<statBases>
 			<MoveSpeed>5.5</MoveSpeed>
 			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
