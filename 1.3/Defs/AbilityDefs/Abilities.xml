@@ -16,6 +16,10 @@
 		<defName>GR_OnceADayAbilitiesGroup</defName>
 		<cooldownTicks>60000</cooldownTicks>
 	</AbilityGroupDef>
+	<AbilityGroupDef>
+		<defName>GR_EveryThreeDaysAbilitiesGroup</defName>
+		<cooldownTicks>180000</cooldownTicks>
+	</AbilityGroupDef>
 	<AbilityDef Abstract="True" Name="GR_NoTargetAbilities">
 		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>False</targetRequired>
@@ -81,6 +85,21 @@
 			<li Class="GeneticRim.CompProperties_DeathRay">
 				<duration>600</duration>
 				
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_SetTrap</defName>
+		<label>set chemfuel trap</label>
+		<description>Sets an explosive trap. The Manalope won't trigger it.</description>
+		<iconPath>ui/commands/GR_SetTrap</iconPath>
+		<groupDef>GR_EveryThreeDaysAbilitiesGroup</groupDef>
+		
+		<comps>
+			<li Class="GeneticRim.CompProperties_CreateThingDefAround">
+				
+				<thingCreated>GR_TrapIED_Boom</thingCreated>
+				<createSingleThing>true</createSingleThing>
 			</li>
 		</comps>
 	</AbilityDef>

@@ -206,7 +206,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Manalope</defName>
 		<label>manalope</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Set trap ability: once every 3 days the manalope can set up an explosive IED. Hovers over terrain, ignoring terrain costs, and doesn't trigger ANY traps.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
@@ -244,6 +244,9 @@
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_Floating">
 
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_SetTrap</initialAbility>
 			</li>
 		</comps>
 		
@@ -317,34 +320,34 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
-					<drawSize>1</drawSize>
-					
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
-					<drawSize>1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
-					<drawSize>1.1</drawSize>
-					
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
-					<drawSize>1.1</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
 					<drawSize>1.2</drawSize>
 					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
 					<drawSize>1.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
+					<drawSize>1.5</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
+					<drawSize>1.75</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
+					<drawSize>1.75</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -360,14 +363,16 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Manchicken</defName>
 		<label>manchicken</label>
-		<description>Chickens are basically an evolution of dinosaurs, so someone decided to turn them back. Unfortunately they didn’t exactly bother to check that they should still be avian rather than reptilian, so it resulted in this nasty little thing that reproduces at an insane rate and empties your fridge. But hey, they’ll spit on your enemies and their right to shit everywhere, especially where they eat.\n\nA reptile hybrid with recessive avian genes. This particular farm animal is smart enough that it doesn’t need a pen and breeds faster than other reptiles. A very large appetite for a creature so small, which supports its ability to spit out nasty toxins on their enemies and create messes on the floor. Very easy to train and has a good memory.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
 		<statBases>
-			<MoveSpeed>3</MoveSpeed>
-			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
-			<ComfyTemperatureMax>75</ComfyTemperatureMax>
-			<FilthRate>4</FilthRate>
-			<MarketValue>150</MarketValue>
+			<MoveSpeed>2</MoveSpeed>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<FilthRate>16</FilthRate>
+			<MarketValue>1050</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			
 		</statBases>
 		<tools>
 			<li>

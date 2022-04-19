@@ -12,6 +12,7 @@ namespace GeneticRim
         public ThingDef thingCreated = null;
         public float thingCreatedChance = 0;
         public int count =0;
+        public bool createSingleThing = false;
 
         public CompProperties_CreateThingDefAround()
         {

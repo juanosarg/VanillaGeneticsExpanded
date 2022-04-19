@@ -19,6 +19,7 @@
 		<label>body</label>
 		<hitPoints>30</hitPoints>
 		<skinCovered>true</skinCovered>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
 		<tags>
 			<li>MovingLimbCore</li>
 		</tags>
