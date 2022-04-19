@@ -13,8 +13,7 @@ namespace GeneticRim
 	{
 		private int MinTicksSinceThickened = 600;
 		public PathEndMode PathEndMode => PathEndMode.Touch;
-		public ThingRequest PotentialWorkThingRequest => ThingRequest.ForGroup(ThingRequestGroup.Filth);
-		public int MaxRegionsToScanBeforeGlobalSearch => 4;
+	
 		public IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
 		{
 			return pawn.Map.listerFilthInHomeArea.FilthInHomeArea;

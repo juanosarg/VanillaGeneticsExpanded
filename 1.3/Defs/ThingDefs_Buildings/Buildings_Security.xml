@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+  <ThingDef ParentName="TrapIEDBase">
+    <defName>GR_TrapIED_Boom</defName>
+    <label>boom-pustule trap</label>
+    <description>An improvised explosive trap built out of... best if you don't think about it. Cannot be placed adjacent to other traps. Animals can sense these when calm. Less potent than regular high-explosive shell traps.</description>
+    <graphicData>
+      <texPath>Things/Building/GR_IEDBoom</texPath>
+    </graphicData>
+    <designationHotKey>Misc7</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>15</wickTicks>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+      </li>
+    </comps>
+    <specialDisplayRadius>2.9</specialDisplayRadius>
+  </ThingDef>
+
+
+
+</Defs>

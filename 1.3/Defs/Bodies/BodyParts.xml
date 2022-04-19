@@ -13,6 +13,49 @@
     <alive>false</alive>
     <bleedRate>0</bleedRate>
   </BodyPartDef>
+  
+  <BodyPartDef>
+		<defName>GR_JellyfishMainBody</defName>
+		<label>body</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>GR_HydrogenSac</defName>
+		<label>hydrogen-chemfuel sac</label>
+		<hitPoints>20</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	
+
+	
+
+	<BodyPartDef>
+		<defName>GR_Nucleus</defName>
+		<label>baby body</label>
+		<hitPoints>50</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>SightSource</li>
+			<li>EatingSource</li>
+
+		</tags>
+	</BodyPartDef>
 
  
   

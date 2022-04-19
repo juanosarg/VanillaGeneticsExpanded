@@ -378,9 +378,11 @@
     <Compile Include="Comps\CompStartCharged.cs" />
     <Compile Include="Comps\CompTargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionWorker_SmallAcidExplosion.cs" />
     <Compile Include="DefExtensions\DefExtension_Paragon.cs" />
     <Compile Include="Game, World and Map Components\WorldComponent_LabQuests.cs" />
     <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
+    <Compile Include="Harmony\Building_Trap_CheckSpring.cs" />
     <Compile Include="Harmony\Caravan_NightResting.cs" />
     <Compile Include="Harmony\ExecutionUtility_ExecutionInt.cs" />
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />

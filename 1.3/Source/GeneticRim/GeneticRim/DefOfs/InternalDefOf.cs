@@ -54,6 +54,7 @@ namespace GeneticRim
         public static ThingDef GR_Lizardman;
         public static ThingDef GR_Thrumboman;
         public static ThingDef GR_Manbear;
+        public static ThingDef GR_Manalope;
 
         public static PawnKindDef GR_ArchotechCentipede;
 
