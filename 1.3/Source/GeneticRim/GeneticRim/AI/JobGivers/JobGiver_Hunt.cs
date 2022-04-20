@@ -66,6 +66,7 @@ namespace GeneticRim
 			{
 				return null;
 			}
+			
 			return JobMaker.MakeJob(InternalDefOf.GR_AnimalHuntJob, t);
 		}
 	}

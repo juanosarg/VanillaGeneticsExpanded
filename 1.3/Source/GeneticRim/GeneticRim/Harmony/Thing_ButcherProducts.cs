@@ -31,7 +31,7 @@ namespace GeneticRim
                 if ((__instance.def.butcherProducts != null) && (__instance.def.defName == "GR_Manchicken") )
                 {
                     
-                    int baseCalculation = 140;
+                    int baseCalculation = 70;
                    
                     ThingDefCountClass ta = __instance.def.butcherProducts[0];
                     float num = pawn.health.hediffSet.GetCoverageOfNotMissingNaturalParts(pawn.RaceProps.body.corePart);

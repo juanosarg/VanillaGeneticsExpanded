@@ -165,6 +165,21 @@
 								</li>
 							</subNodes>
 						</li>
+						<li Class="GeneticRim.ThinkNode_Manwolf">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>1</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_Hunt"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
 
 					</subNodes>
 				</li>

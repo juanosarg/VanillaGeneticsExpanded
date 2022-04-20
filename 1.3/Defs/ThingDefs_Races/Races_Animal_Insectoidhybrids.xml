@@ -826,7 +826,7 @@
 			<wildness>0.5</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
-			<fleshType>GR_Insectoid</fleshType>
+			<fleshType>GR_HumanMeat</fleshType>
 		
 			<lifeStageAges>
 				

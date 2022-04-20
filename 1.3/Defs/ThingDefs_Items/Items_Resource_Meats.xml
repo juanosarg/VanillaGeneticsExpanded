@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--  Bases  -->
+	<ThingDef Name="GR_RawMeatBase" Abstract="True" ParentName="OrganicProductBase">
+		
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>6</daysToRotStart>
+				<rotDestroys>True</rotDestroys>
+			</li>
+		</comps>
+		<statBases>
+			<Nutrition>0.1</Nutrition>
+			<Flammability>0.5</Flammability>
+			
+		</statBases>
+		<ingestible>
+			<foodType>Meat</foodType>
+			<preferability>DesperateOnly</preferability>
+			<ingestEffect>EatMeat</ingestEffect>
+			<ingestSound>RawMeat_Eat</ingestSound>		
+		</ingestible>
+		<thingCategories>
+			<li>MeatRaw</li>
+		</thingCategories>
+	</ThingDef>
+
+	
+	
+	<ThingDef ParentName="GR_RawMeatBase">
+		<defName>GR_TastyMeat</defName>
+		<label>crispy meat</label>
+		<description>Raw meat from a manchicken. Unbelievably tasty, and unbelievably unethical. Light, nutritive and with no poisoning chance.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_TastyMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>0.01</Mass>
+			<MarketValue>4</MarketValue>
+		</statBases>
+		<ingestible>
+			<specialThoughtDirect>AteRawFood</specialThoughtDirect>
+		</ingestible>
+	</ThingDef>
+	
+	
+
+
+
+
+</Defs>

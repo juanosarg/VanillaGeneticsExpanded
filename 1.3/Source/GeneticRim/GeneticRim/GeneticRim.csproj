@@ -389,6 +389,7 @@
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Manwolf.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Manbear.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Thrumboman.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Catman.cs" />
