@@ -1055,7 +1055,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Dogman</defName>
 		<label>dogman</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Dogmen will periodically obey commands to slaughter other colony (tamed) animals.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Dogmen will periodically obey commands to slaughter other colony (tamed) animals.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>

@@ -34,7 +34,7 @@
 	<ThoughtDef>
 		<defName>GR_InsultedByHumanoidMood</defName>
 		<durationDays>2</durationDays>
-		<stackLimit>2</stackLimit>		
+		<stackLimit>2</stackLimit>
 		<stages>
 			<li>
 				<label>insulted by humanoid hybrid</label>
@@ -47,12 +47,43 @@
 		<defName>GR_EngagedByHumanoidMood</defName>
 		<durationDays>2</durationDays>
 		<stackLimit>5</stackLimit>
-		
 		<stages>
 			<li>
-				<label>kind comversation with humanoid hybrid</label>
+				<label>kind conversation with humanoid hybrid</label>
 				<description>That was such an interesting conversation! What a nice creature!</description>
 				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>GR_Uwuchat</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>2</stackLimit>
+		
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>uwu pounced</label>
+				<description>That was weird. Am I a degenerate?</description>
+				<baseMoodEffect>2</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	<ThoughtDef>
+		<defName>GR_DisgustingUwuchat</defName>
+		<durationDays>2</durationDays>
+		<stackLimit>2</stackLimit>
+		
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>intense cringe</label>
+				<description>I feel so dirty... what a disgusting experience</description>
+				<baseMoodEffect>-5</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

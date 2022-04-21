@@ -180,6 +180,21 @@
 								</li>
 							</subNodes>
 						</li>
+						<li Class="GeneticRim.ThinkNode_Mansquirrel">
+							<subNodes>
+								<li Class="ThinkNode_ChancePerHour_Constant">
+									<mtbHours>1</mtbHours>
+									<subNodes>
+										<li Class="ThinkNode_Tagger">
+											<tagToGive>Misc</tagToGive>
+											<subNodes>
+												<li Class="GeneticRim.JobGiver_ClearSnow"/>
+											</subNodes>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
 
 					</subNodes>
 				</li>

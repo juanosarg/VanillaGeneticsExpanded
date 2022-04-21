@@ -320,6 +320,7 @@
     <Compile Include="AI\JobDrivers\JobDriver_Recruit.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_Talk.cs" />
     <Compile Include="AI\JobDrivers\JobDriver_UseExcavator.cs" />
+    <Compile Include="AI\JobGivers\JobGiver_ClearSnow.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Harvest.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Hunt.cs" />
     <Compile Include="AI\JobGivers\JobGiver_Execute.cs" />
@@ -348,6 +349,7 @@
     <Compile Include="Commands\GenomeListSetupUtility.cs" />
     <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Comps\CompApplyAgeDiseases.cs" />
+    <Compile Include="Comps\CompExperienceFromCaravan.cs" />
     <Compile Include="Comps\CompGeneticFailure.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
@@ -358,6 +360,7 @@
     <Compile Include="Comps\CompHybrid.cs" />
     <Compile Include="Abilities\Properties\CompProperties_Detonate.cs" />
     <Compile Include="Comps\CompDieUnlessReset.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_ExperienceFromCaravan.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_GeneticFailure.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_HorseHybrid.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_HumanoidHybrid.cs" />
@@ -380,6 +383,7 @@
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_SmallAcidExplosion.cs" />
     <Compile Include="DefExtensions\DefExtension_Paragon.cs" />
+    <Compile Include="Game, World and Map Components\GameComponent_ManffaloExperience.cs" />
     <Compile Include="Game, World and Map Components\WorldComponent_LabQuests.cs" />
     <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
     <Compile Include="Harmony\Building_Trap_CheckSpring.cs" />
@@ -389,6 +393,7 @@
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="ThinkNodes\ThinkNode_Mansquirrel.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Manwolf.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Manbear.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Thrumboman.cs" />

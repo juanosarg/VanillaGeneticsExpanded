@@ -26,19 +26,29 @@ namespace GeneticRim
         public static void MakeHybridsCarryMore(Pawn p, ref float __result)
 
         {
-            bool flagIsCreatureMine = p.Faction != null && p.Faction.IsPlayer;
-            //bool flagIsCreatureDraftable = AnimalBehaviours.AnimalCollectionClass.draftable_animals.Contains(p);
-            bool flagCanCreatureCarryMore = false;
-            if (flagIsCreatureMine)
+            if (StaticCollectionsClass.manffalo_and_experience.ContainsKey(p)) {
+
+                __result = (p.BodySize * MassUtility.MassCapacityPerBodySize) * StaticCollectionsClass.manffalo_and_experience[p];
+
+
+            } else
             {
-                flagCanCreatureCarryMore = (p.kindDef?.GetModExtension<DefExtension_Hybrid>()?.carryingIncrease) ?? false;
+                bool flagIsCreatureMine = p.Faction != null && p.Faction.IsPlayer;
+                //bool flagIsCreatureDraftable = AnimalBehaviours.AnimalCollectionClass.draftable_animals.Contains(p);
+                bool flagCanCreatureCarryMore = false;
+                if (flagIsCreatureMine)
+                {
+                    flagCanCreatureCarryMore = (p.kindDef?.GetModExtension<DefExtension_Hybrid>()?.carryingIncrease) ?? false;
+                }
+
+                if (flagCanCreatureCarryMore)
+                {
+                    float factor = p.kindDef?.GetModExtension<DefExtension_Hybrid>()?.carryingFactor ?? 1f;
+                    __result = (p.BodySize * MassUtility.MassCapacityPerBodySize) * 1.5f;
+                }
             }
 
-            if (flagCanCreatureCarryMore)
-            {
-                float factor = p.kindDef?.GetModExtension<DefExtension_Hybrid>()?.carryingFactor ?? 1f;
-                __result = (p.BodySize * MassUtility.MassCapacityPerBodySize) * 1.5f;
-            }
+            
 
         }
     }

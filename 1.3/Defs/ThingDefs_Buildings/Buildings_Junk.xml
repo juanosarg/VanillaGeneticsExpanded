@@ -692,7 +692,7 @@
 	<ThingDef ParentName="GR_JunkBuildingBase">
 		<defName>GR_CommsTable</defName>
 		<label>ancient comms table</label>
-		<description>This was once a smart table. But now it's dmb.</description>
+		<description>This was once a smart table. But now it's dumb.</description>
 		<size>(3,3)</size>
 		<rotatable>false</rotatable>
 		<fillPercent>0.50</fillPercent>

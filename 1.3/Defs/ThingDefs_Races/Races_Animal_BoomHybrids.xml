@@ -992,7 +992,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Booman</defName>
 		<label>booman</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Boomen periodically refuel some machines powered by chemfuel in a 10 tile radius (chemfuel generators and pod launchers).</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Boomen periodically refuel some machines powered by chemfuel in a 10 tile radius (chemfuel generators and pod launchers).</description>
 		<statBases>
 			<MoveSpeed>2.5</MoveSpeed>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>

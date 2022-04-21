@@ -1887,7 +1887,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Thrumboman</defName>
 		<label>thrumboman</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor. Thrumbomen will obey orders to cut and harvest plants around the colony.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. All colossal hybrids have very slow attacks, but hit very hard, and possess natural armor. Thrumbomen will obey orders to cut and harvest plants around the colony.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<ComfyTemperatureMin>-16</ComfyTemperatureMin>

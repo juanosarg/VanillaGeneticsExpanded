@@ -24,6 +24,10 @@ namespace GeneticRim
         // A list of mech antennas in the world
         public static HashSet<Building_MechahybridAntenna> mech_antennas = new HashSet<Building_MechahybridAntenna>();
 
+        // A dictionary on Manffalos and their experience
+        public static Dictionary<Pawn, float> manffalo_and_experience = new Dictionary<Pawn, float>();
+
+
         public static void AddHumanoidHybridToList(Thing thing)
         {
 
@@ -106,6 +110,33 @@ namespace GeneticRim
         {
 
             return mech_antennas.Count > 0;
+        }
+
+        public static void AddManffaloAndExperience(Pawn pawn)
+        {
+            if (!manffalo_and_experience.ContainsKey(pawn))
+            {
+                manffalo_and_experience.Add(pawn, 1);
+            }
+            
+        }
+
+        public static void SetManffaloExperience(Pawn pawn, float xp)
+        {
+            if (!manffalo_and_experience.ContainsKey(pawn))
+            {
+                manffalo_and_experience[pawn] = xp;
+            }
+
+        }
+
+        public static void RemoveManffaloAndExperience(Pawn pawn)
+        {
+            if (manffalo_and_experience.ContainsKey(pawn))
+            {
+                manffalo_and_experience.Remove(pawn);
+            }
+
         }
 
 

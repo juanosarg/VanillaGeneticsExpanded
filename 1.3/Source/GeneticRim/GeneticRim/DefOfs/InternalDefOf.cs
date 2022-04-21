@@ -56,6 +56,8 @@ namespace GeneticRim
         public static ThingDef GR_Manbear;
         public static ThingDef GR_Manalope;
         public static ThingDef GR_Manwolf;
+        public static ThingDef GR_Mansquirrel;
+        public static ThingDef GR_Mancat;
 
         public static PawnKindDef GR_ArchotechCentipede;
 
@@ -99,6 +101,7 @@ namespace GeneticRim
         public static IncidentDef GR_ManhunterMonstrosities;
 
         public static InteractionDef GR_TalkingToHumans;
+        public static InteractionDef GR_UwUTalkingToHumans;
 
         public static QuestScriptDef GR_OpportunitySite_AbandonedLab;
         public static QuestScriptDef GR_OpportunitySite_BiomechanicalLab;
@@ -110,7 +113,7 @@ namespace GeneticRim
 
         public static AbilityDef GR_DeathRay;
 
-
-
+        public static ThoughtDef GR_Uwuchat;
+        public static ThoughtDef GR_DisgustingUwuchat;
     }
 }

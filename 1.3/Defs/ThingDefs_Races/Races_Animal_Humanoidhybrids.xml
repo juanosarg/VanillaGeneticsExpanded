@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- Humanoid - Bear -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Manbear</defName>		
+		<defName>GR_Manbear</defName>
 		<label>manbear</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Menbear are adept conversationalists and will help in recruiting prisoners.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Menbear are adept conversationalists and will help in recruiting prisoners.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
@@ -14,11 +13,8 @@
 			<FilthRate>2</FilthRate>
 			<MeatAmount>20</MeatAmount>
 			<LeatherAmount>20</LeatherAmount>
-
 		</statBases>
-
 		<tools>
-
 			<li>
 				<label>left fist</label>
 				<capacities>
@@ -73,35 +69,30 @@
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
-
-		</tools>	
+		</tools>
 		<comps>
 			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
 				
 			</li>
-			
-			
-		</comps>		
+		</comps>
 		<race>
-
 			<fleshType>GR_HumanMeat</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<body>Monkey</body>
 			<baseBodySize>0.35</baseBodySize>
-			  <baseHungerRate>0.125</baseHungerRate>
-			  <baseHealthScale>0.35</baseHealthScale>
+			<baseHungerRate>0.125</baseHungerRate>
+			<baseHealthScale>0.35</baseHealthScale>
 			<lifeExpectancy>4</lifeExpectancy>
 			<gestationPeriodDays>20</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
 			<useLeatherFrom>Human</useLeatherFrom>
-			<useMeatFrom>Human</useMeatFrom>		
-			<wildness>0.5</wildness>  
+			<useMeatFrom>Human</useMeatFrom>
+			<wildness>0.5</wildness>
 			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<intelligence>Animal</intelligence>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<trainability>Advanced</trainability>
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -113,10 +104,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.8</minAge>
-					 <soundWounded>Pawn_Monkey_Wounded</soundWounded>
-					  <soundDeath>Pawn_Monkey_Death</soundDeath>
-					  <soundCall>Pawn_Monkey_Call</soundCall>
-					  <soundAngry>Pawn_Monkey_Angry</soundAngry>
+					<soundWounded>Pawn_Monkey_Wounded</soundWounded>
+					<soundDeath>Pawn_Monkey_Death</soundDeath>
+					<soundCall>Pawn_Monkey_Call</soundCall>
+					<soundAngry>Pawn_Monkey_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -142,8 +133,7 @@
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
-		<defName>GR_Manbear</defName>		
+		<defName>GR_Manbear</defName>
 		<label>manbear</label>
 		<race>GR_Manbear</race>
 		<combatPower>30</combatPower>
@@ -151,15 +141,12 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<labelMale>manbear</labelMale>
 		<labelFemale>womanbear</labelFemale>
-		
 		<lifeStages>
 			<li>
 				<label>babybear</label>
-			
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Manbear</texPath>
 					<drawSize>1</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Dessicated_Manbear</texPath>
@@ -172,7 +159,7 @@
 					<drawSize>1.25</drawSize>
 					<shadowData>
 						<volume>(0.2, 0.2, 0.2)</volume>
-            <offset>(0,0,-0.2)</offset>
+						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -185,8 +172,8 @@
 					<texPath>Things/Pawn/Animal/Humanoid/Manbear/GR_Manbear</texPath>
 					<drawSize>1.5</drawSize>
 					<shadowData>
-						 <volume>(0.3, 0.3, 0.3)</volume>
-            <offset>(0,0,-0.2)</offset>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -202,12 +189,11 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Humanoid - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Manalope</defName>
 		<label>manalope</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Set trap ability: once every 3 days the manalope can set up an explosive IED. Hovers over terrain, ignoring terrain costs, and doesn't trigger ANY traps.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Set trap ability: once every 3 days the manalope can set up an explosive IED. Hovers over terrain, ignoring terrain costs, and doesn't trigger ANY traps.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
@@ -216,7 +202,6 @@
 			<MeatAmount>20</MeatAmount>
 			<LeatherAmount>20</LeatherAmount>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -225,7 +210,6 @@
 				<power>10</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -250,10 +234,8 @@
 				<initialAbility>GR_SetTrap</initialAbility>
 			</li>
 		</comps>
-		
-
 		<race>
-			<fleshType>GR_HumanMeat</fleshType>			
+			<fleshType>GR_HumanMeat</fleshType>
 			<body>GR_JellyfishBody</body>
 			<trainability>Intermediate</trainability>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_SmallAcidExplosion</deathActionWorkerClass>
@@ -262,17 +244,13 @@
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>0.75</baseHealthScale>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>20</gestationPeriodDays>			
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Human</useLeatherFrom>
-			<useMeatFrom>Human</useMeatFrom>		
+			<useMeatFrom>Human</useMeatFrom>
 			<wildness>0.45</wildness>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-
-
-
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -284,7 +262,6 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
-					
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -310,7 +287,6 @@
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Manalope</defName>
 		<label>manalope</label>
 		<race>GR_Manalope</race>
@@ -319,14 +295,12 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<labelMale>manalope</labelMale>
 		<labelFemale>womanlope</labelFemale>
-		
 		<lifeStages>
 			<li>
 				<label>babylope</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
 					<drawSize>1.2</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
@@ -337,7 +311,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
 					<drawSize>1.5</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
@@ -348,7 +321,6 @@
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Manalope</texPath>
 					<drawSize>1.75</drawSize>
-					
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manalope/GR_Dessicated_Manalope</texPath>
@@ -363,12 +335,11 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Humanoid - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Manchicken</defName>
 		<label>manchicken</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Doesn't lay eggs, but can be butchered for large amounts of a very nutritive meat that doesn't have poisoning chance and takes 6 days to rot.</description>
 		<statBases>
 			<MoveSpeed>2</MoveSpeed>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
@@ -377,7 +348,6 @@
 			<MarketValue>1050</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
-			
 		</statBases>
 		<tools>
 			<li>
@@ -413,28 +383,22 @@
 			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
 				
 			</li>
-			
 		</comps>
-	
 		<race>
-
 			<body>Bird</body>
 			<fleshType>GR_Normal</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseBodySize>2</baseBodySize>
 			<baseHungerRate>.4</baseHungerRate>
 			<baseHealthScale>1</baseHealthScale>
-			<lifeExpectancy>4</lifeExpectancy>		
+			<lifeExpectancy>4</lifeExpectancy>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Chicken</useLeatherFrom>
 			<useMeatFrom>Chicken</useMeatFrom>
 			<wildness>0.36</wildness>
 			<trainability>None</trainability>
 			<roamMtbDays>8</roamMtbDays>
-
-
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -482,7 +446,6 @@
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Manchicken</defName>
 		<label>manchicken</label>
 		<race>GR_Manchicken</race>
@@ -491,7 +454,6 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<labelMale>manchicken</labelMale>
 		<labelFemale>womanchicken</labelFemale>
-	
 		<lifeStages>
 			<li>
 				<label>babychicken</label>
@@ -544,89 +506,67 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Humanoid - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Manffalo</defName>
 		<label>manffalo</label>
-		<description>Milking snakes for venom in order to create medicine is an extremely dangerous career. While this particular beast of burden proved to be capable in other areas, it was mainly synthesised in order to provide a safer way of sourcing an anaesthetic coagulant to be used in emergencies. Or someone was trying to get high by milking a reptilian space cow, who really knows.\n\nA reptile hybrid with recessive muffalo genes. A strong pack animal with a massive appetite and a proportionate filth rate. Quite durable and will prove a fatal mistake for any animal that attempts to hunt them, as their fangs, horns and claws are all venomous. Can be milked every ten days for a vial of paralysing coagulant, best used for large animals that are suffering from multiple lacerations.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. The manffalo starts as a poor caravaning animal, but learns as time progresses. Every hour spent in a caravan will increase its cargo capacity by 1%, up to a maximum of a 100% increase from base.</description>
 		<statBases>
-			<MoveSpeed>3.5</MoveSpeed>
+			<MoveSpeed>4.5</MoveSpeed>
 			<FilthRate>12</FilthRate>
-			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
+			<ComfyTemperatureMin>-16</ComfyTemperatureMin>
 			<ComfyTemperatureMax>75</ComfyTemperatureMax>
 			<MarketValue>650</MarketValue>
-			
-			<MeatAmount>20</MeatAmount>
 			<LeatherAmount>20</LeatherAmount>
-
 		</statBases>
 		<tools>
 			<li>
+				<label>head</label>
 				<capacities>
-					<li>GR_VeryToxicBite</li>
+					<li>Blunt</li>
 				</capacities>
-				<power>13</power>
+				<power>10</power>
 				<cooldownTime>1.65</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<comps>
-
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-				<resourceDef>GR_PoisonAmpoule</resourceDef>
-				<gatheringIntervalDays>10</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>PoisonGrowth</customResourceString>
-
+			<li Class="CompProperties_Milkable">
+				<milkDef>Milk</milkDef>
+				<milkIntervalDays>2</milkIntervalDays>
+				<milkAmount>10</milkAmount>
 			</li>
-
+			<li Class="CompProperties_Shearable">
+				<woolDef>GR_ThickHybridWool</woolDef>
+				<shearIntervalDays>15</shearIntervalDays>
+				<woolAmount>50</woolAmount>
+			</li>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
+			</li>
+			<li Class="GeneticRim.CompProperties_ExperienceFromCaravan">
+				
+			</li>
 		</comps>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>1</accuracyShort>
-				<accuracyMedium>1</accuracyMedium>
-				<accuracyLong>1</accuracyLong>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
-				<warmupTime>5</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<minRange>2</minRange>
-				<range>15</range>
-				<soundCast>GR_PoisonBlast</soundCast>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<label>poison spit</label>
-				<commonality>1</commonality>
-			</li>
-
-
-		</verbs>
 		<race>
-
 			<body>QuadrupedAnimalWithHooves</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_HumanMeat</fleshType>
 			<roamMtbDays>2</roamMtbDays>
-			<baseBodySize>3.5</baseBodySize>
-			<baseHungerRate>.85</baseHungerRate>
+			<baseBodySize>2.4</baseBodySize>
+			<baseHungerRate>.9</baseHungerRate>
 			<baseHealthScale>2</baseHealthScale>
 			<lifeExpectancy>4</lifeExpectancy>
 			<gestationPeriodDays>20</gestationPeriodDays>
-			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Human</useLeatherFrom>
-			<useMeatFrom>Human</useMeatFrom>		
+			<useMeatFrom>Human</useMeatFrom>
 			<wildness>0.5</wildness>
 			<packAnimal>true</packAnimal>
-			<intelligence>Animal</intelligence>
-			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -638,10 +578,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+					<soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+					<soundDeath>Pawn_Muffalo_Death</soundDeath>
+					<soundCall>Pawn_Muffalo_Call</soundCall>
+					<soundAngry>Pawn_Muffalo_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -667,7 +607,6 @@
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Manffalo</defName>
 		<label>manffalo</label>
 		<race>GR_Manffalo</race>
@@ -676,10 +615,9 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<labelMale>manffalo</labelMale>
 		<labelFemale>womanffalo</labelFemale>
-	
 		<lifeStages>
 			<li>
-			<label>babyffalo</label>
+				<label>babyffalo</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manffalo/GR_Manffalo_Male</texPath>
 					<drawSize>1.75</drawSize>
@@ -729,23 +667,19 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-
-
 	<!-- Humanoid - Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Manwolf</defName>
 		<label>manwolf</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid paragons will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
 		<statBases>
-			<MoveSpeed>6.5</MoveSpeed>	
+			<MoveSpeed>6.5</MoveSpeed>
 			<MarketValue>550</MarketValue>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
 			<ComfyTemperatureMax>50</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
 			<MeatAmount>20</MeatAmount>
 			<LeatherAmount>20</LeatherAmount>
-
 		</statBases>
 		<tools>
 			<li>
@@ -756,7 +690,6 @@
 				<power>12</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-
 			</li>
 			<li>
 				<label>right claw</label>
@@ -766,7 +699,6 @@
 				<power>12</power>
 				<cooldownTime>1.5</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-
 			</li>
 			<li>
 				<capacities>
@@ -775,7 +707,6 @@
 				<power>12</power>
 				<cooldownTime>2.0</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-
 			</li>
 			<li>
 				<label>head</label>
@@ -789,9 +720,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-
 		<comps>
-
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_AdrenalineRush</initialAbility>
 			</li>
@@ -801,11 +730,8 @@
 			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
 				
 			</li>
-
 		</comps>
-
 		<race>
-
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<fleshType>GR_HumanMeat</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -815,17 +741,13 @@
 			<baseHealthScale>3</baseHealthScale>
 			<foodType>CarnivoreAnimalStrict</foodType>
 			<useLeatherFrom>Human</useLeatherFrom>
-			<useMeatFrom>Human</useMeatFrom>		
+			<useMeatFrom>Human</useMeatFrom>
 			<gestationPeriodDays>20</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
 			<wildness>0.5</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
-
-
-
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -866,7 +788,6 @@
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Manwolf</defName>
 		<label>manwolf</label>
 		<race>GR_Manwolf</race>
@@ -878,7 +799,6 @@
 		<lifeStages>
 			<li>
 				<label>babywolf</label>
-				
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Manwolf/GR_Manwolf</texPath>
 					<drawSize>1.5</drawSize>
@@ -924,44 +844,38 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Humanoid - Cat -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mancat</defName>
 		<label>mancat</label>
-		<description>Possibly one of the weirdest and cutest snakes to be ever created. They have several tiny legs which are used to push its body along, while also having an invitingly soft fur. Quite a lot of people never stop freaking out from something sliding up the backs of their legs only to get softly headbutted by a purring python.\n\nA reptile hybrid with recessive feline genes. An unusually furry snake that enjoys nuzzling while also hunting for prey much weaker than itself. Incredibly intelligent and easy to train, they combine quick reflexes and an incredibly nasty bite and spitting attack.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with (subject to diminishing returns like all joy types). In the case of the mancat, these interactions will 90% of the time increase the targets' social joy by 15%, but the rest of the time they'll just make the target very annoyed... If using Ideology, humanoid hybrids are subject to precepts.</description>
 		<statBases>
-			<MoveSpeed>4.5</MoveSpeed>
-			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
-			<ComfyTemperatureMax>75</ComfyTemperatureMax>
+			<MoveSpeed>4</MoveSpeed>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<FilthRate>2</FilthRate>
-			<MarketValue>400</MarketValue>
+			<MarketValue>550</MarketValue>
 			<MeatAmount>20</MeatAmount>
 			<LeatherAmount>20</LeatherAmount>
 		</statBases>
-		<comps>		
-
+		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
+			</li>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
 			</li>
 		</comps>
 		<tools>
 			<li>
 				<capacities>
-					<li>GR_VeryToxicBite</li>
+					<li>Bite</li>
 				</capacities>
-				<power>16</power>
+				<power>10</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				
 			</li>
 			<li>
 				<label>head</label>
@@ -975,52 +889,26 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>1</accuracyShort>
-				<accuracyMedium>1</accuracyMedium>
-				<accuracyLong>1</accuracyLong>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<minRange>2</minRange>
-				<range>20</range>
-				<soundCast>GR_PoisonBlast</soundCast>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<label>poison spit</label>
-				<commonality>1</commonality>
-			</li>
-
-
-		</verbs>
-
-
+		
 		<race>
 			<fleshType>GR_HumanMeat</fleshType>
-
-			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
-			<maxPreyBodySize>0.35</maxPreyBodySize>    
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<maxPreyBodySize>0.35</maxPreyBodySize>
+			<foodType>CarnivoreAnimal</foodType>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHungerRate>0.3</baseHungerRate>
-			<baseHealthScale>0.75</baseHealthScale>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseHealthScale>1.5</baseHealthScale>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>20</gestationPeriodDays>
-			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
+			<gestationPeriodDays>20</gestationPeriodDays>			
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<useLeatherFrom>Human</useLeatherFrom>
-			<useMeatFrom>Human</useMeatFrom>		
-			<wildness>0.6</wildness>
+			<useMeatFrom>Human</useMeatFrom>
+			<wildness>0.5</wildness>
 			<trainability>Advanced</trainability>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -1032,10 +920,10 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+					<soundWounded>Pawn_Cat_Injured</soundWounded>
+					<soundDeath>Pawn_Cat_Death</soundDeath>
+					<soundCall>Pawn_Cat_Call</soundCall>
+					<soundAngry>Pawn_Cat_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
@@ -1052,16 +940,15 @@
 					<li>GR_HybridRole</li>
 				</statToAdd>
 				<statValues>
-					<li>GR_HybridRoleCombat</li>
+					<li>GR_HybridRoleUtility</li>
 				</statValues>
 				<statDescriptions>
-					<li>GR_HybridRoleCombatDesc</li>
+					<li>GR_HybridRoleUtilityDesc</li>
 				</statDescriptions>
 			</li>
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Mancat</defName>
 		<label>mancat</label>
 		<race>GR_Mancat</race>
@@ -1072,7 +959,7 @@
 		<labelFemale>womancat</labelFemale>
 		<lifeStages>
 			<li>
-			<label>babycat</label>
+				<label>babycat</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Mancat</texPath>
 					<drawSize>1.25</drawSize>
@@ -1103,7 +990,7 @@
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Mancat</texPath>
-					<drawSize>1.75</drawSize>
+					<drawSize>2</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
 						<offset>(0,0,-0.3)</offset>
@@ -1111,7 +998,7 @@
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Mancat/GR_Dessicated_Mancat</texPath>
-					<drawSize>1.75</drawSize>
+					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
@@ -1122,103 +1009,79 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-<!-- Humanoid - Rodent -->
+	<!-- Humanoid - Rodent -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mansquirrel</defName>
 		<label>mansquirrel</label>
-		<description>Possibly one of the weirdest and cutest snakes to be ever created. They have several tiny legs which are used to push its body along, while also having an invitingly soft fur. Quite a lot of people never stop freaking out from something sliding up the backs of their legs only to get softly headbutted by a purring python.\n\nA reptile hybrid with recessive feline genes. An unusually furry snake that enjoys nuzzling while also hunting for prey much weaker than itself. Incredibly intelligent and easy to train, they combine quick reflexes and an incredibly nasty bite and spitting attack.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All reptile hybrids have good temperature tolerance ranges and venomous attacks.</description>
+		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. The mansquirrel is a nocturnal animal that sleeps during the day. Will obey orders to clear snow around the colony.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
-			<ComfyTemperatureMin>-75</ComfyTemperatureMin>
-			<ComfyTemperatureMax>75</ComfyTemperatureMax>
-			<FilthRate>2</FilthRate>
-			<MarketValue>400</MarketValue>
+			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<MarketValue>200</MarketValue>
 			<MeatAmount>20</MeatAmount>
 			<LeatherAmount>20</LeatherAmount>
 		</statBases>
-		<comps>		
-
-			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
-				<hediffname>GR_MeleeDodge</hediffname>
-				<hediffseverity>1</hediffseverity>
+		<comps>
+			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
+				
 			</li>
 		</comps>
 		<tools>
 			<li>
+				<label>left claw</label>
 				<capacities>
-					<li>GR_VeryToxicBite</li>
+					<li>Scratch</li>
 				</capacities>
-				<power>16</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
+				<chanceFactor>0.7</chanceFactor>
 			</li>
 			<li>
 				<label>head</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>1</power>
-				<cooldownTime>1.65</cooldownTime>
+				<power>2</power>
+				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<accuracyTouch>1</accuracyTouch>
-				<accuracyShort>1</accuracyShort>
-				<accuracyMedium>1</accuracyMedium>
-				<accuracyLong>1</accuracyLong>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GR_PoisonBlast</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<burstShotCount>1</burstShotCount>
-				<minRange>2</minRange>
-				<range>20</range>
-				<soundCast>GR_PoisonBlast</soundCast>
-				<muzzleFlashScale>9</muzzleFlashScale>
-				<label>poison spit</label>
-				<commonality>1</commonality>
-			</li>
-
-
-		</verbs>
-
-
 		<race>
 			<fleshType>GR_HumanMeat</fleshType>
-
-			<body>QuadrupedAnimalWithClawsTailAndJowl</body>
-			<predator>true</predator>
-			<maxPreyBodySize>0.35</maxPreyBodySize>    
-			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
-			<baseBodySize>1.5</baseBodySize>
-			<baseHungerRate>0.3</baseHungerRate>
-			<baseHealthScale>0.75</baseHealthScale>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<foodType>VegetarianRoughAnimal</foodType>
+			<baseBodySize>0.3</baseBodySize>
+			<baseHungerRate>0.1</baseHungerRate>
+			<baseHealthScale>0.25</baseHealthScale>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>20</gestationPeriodDays>
-			<manhunterOnTameFailChance>0.08</manhunterOnTameFailChance>
-			<nuzzleMtbHours>12</nuzzleMtbHours>
+			<gestationPeriodDays>8</gestationPeriodDays>
 			<useLeatherFrom>Human</useLeatherFrom>
-			<useMeatFrom>Human</useMeatFrom>		
-			<wildness>0.6</wildness>
+			<useMeatFrom>Human</useMeatFrom>
+			<wildness>0.5</wildness>
 			<trainability>Advanced</trainability>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalBaby</def>
 					<minAge>0</minAge>
@@ -1230,15 +1093,15 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
-					<soundWounded>Pawn_Cobra_Wounded</soundWounded>
-					<soundDeath>Pawn_Cobra_Death</soundDeath>
-					<soundCall>Pawn_Cobra_Call</soundCall>
-					<soundAngry>Pawn_Cobra_Angry</soundAngry>
+					<soundWounded>Pawn_Rodent_Wounded</soundWounded>
+					<soundDeath>Pawn_Rodent_Death</soundDeath>
+					<soundCall>Pawn_Rodent_Call</soundCall>
+					<soundAngry>Pawn_Rodent_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
@@ -1250,16 +1113,15 @@
 					<li>GR_HybridRole</li>
 				</statToAdd>
 				<statValues>
-					<li>GR_HybridRoleCombat</li>
+					<li>GR_HybridRoleUtility</li>
 				</statValues>
 				<statDescriptions>
-					<li>GR_HybridRoleCombatDesc</li>
+					<li>GR_HybridRoleUtilityDesc</li>
 				</statDescriptions>
 			</li>
 		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Mansquirrel</defName>
 		<label>mansquirrel</label>
 		<race>GR_Mansquirrel</race>
@@ -1270,7 +1132,7 @@
 		<labelFemale>womansquirrel</labelFemale>
 		<lifeStages>
 			<li>
-			<label>babysquirrel</label>
+				<label>babysquirrel</label>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Humanoid/Mansquirrel/GR_Mansquirrel</texPath>
 					<drawSize>1.25</drawSize>
@@ -1320,5 +1182,4 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
 </Defs>

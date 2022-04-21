@@ -53,6 +53,41 @@
     </logRulesInitiator>
   </InteractionDef>
   
+  <InteractionDef>
+    <defName>GR_UwUTalkingToHumans</defName>
+    <label>UwU pounce</label>
+    <workerClass>InteractionWorker_Chitchat</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <recipientThought>Chitchat</recipientThought>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] approached [RECIPIENT_nameDef] with a playful pounce and [talkedabout] [animalthings].</li>
+        <li>r_logentry->[INITIATOR_nameDef], purring seductively, [talkedabout] [animalthings] with [RECIPIENT_nameDef].</li>
+		<li>r_logentry->[INITIATOR_nameDef] said "UwU, what's this?" and [talkedabout] [animalthings] with [RECIPIENT_nameDef].</li>
+
+        <li>talkedabout(p=4)->stammered abouwt</li>
+        <li>talkedabout->sputtered abouwt</li>
+        <li>talkedabout->hesitantly mused abouwt</li>
+        <li>talkedabout->tawked abouwt</li>
+		<li>talkedabout->squirmed abouwt</li>
+		<li>talkedabout->shyly conversed abouwt</li>
+           
+		
+		<li>animalthings->if a squiwwew couwd tawk duwu uwu think iwt wouwd have a weawwy high voice ow a weawwy wow voice?</li>
+		<li>animalthings->whawt wouwd youw dweam job combination be? Mine wouwd be a space-cowboy!</li>
+		<li>animalthings->how mozzawewwa iws juwst the best type of cheese</li>
+		<li>animalthings->needing tuwu be punished</li>
+		<li>animalthings->nuzzling a necky wecky</li>
+		<li>animalthings->the x3 nyeccesity fow c-comfowt and secuwity in these t-twying times</li>
+		<li>animalthings->eating without a t-tabwe, and the x3 bawbawism of Man</li>
+		<li>animalthings->the x3 dangews inhewent t-to wiving in a smaww *starts twerking* communyity ;;w;; in the x3 W-W-Wim</li>
+		<li>animalthings->the Empiwe *sweats* and theiw i-incwedibwy advanced technyowogy</li>
+		
+
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
 
   
 </Defs>
