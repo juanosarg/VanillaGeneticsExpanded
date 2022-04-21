@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-<!-- Fleshling -->
+	<!-- Fleshling -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Fleshling</defName>
 		<label>fleshling</label>
@@ -25,15 +23,12 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
-
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="GeneticRim.CompProperties_DieUnlessReset">
 				<effect>true</effect>
 				<effectFilth>Filth_Blood</effectFilth>
 				<message>GR_LackOfLove</message>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_GeneticFailure">
 				
@@ -41,14 +36,14 @@
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<fleshType>GR_Insectoid</fleshType>			
+			<fleshType>GR_Insectoid</fleshType>
 			<hasGenders>false</hasGenders>
-			<body>Snake</body>	  
+			<body>Snake</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<wildness>0.45</wildness>
 			<baseBodySize>0.2</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
-			<lifeExpectancy>4</lifeExpectancy>			
+			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -56,7 +51,6 @@
 			<nuzzleMtbHours>4</nuzzleMtbHours>
 			<useMeatFrom>GR_AberrantFleshbeast</useMeatFrom>
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -72,11 +66,11 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticFailure</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_Fleshling</defName>
 		<label>fleshling</label>
 		<race>GR_Fleshling</race>
@@ -84,7 +78,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Failures/Fleshling/Fleshling</texPath>
@@ -94,7 +87,6 @@
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
-				
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -104,7 +96,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Aberrant Fleshbeast -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_AberrantFleshbeast</defName>
@@ -128,17 +119,13 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
-
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
-
-				<filthType>GR_FilthMucus</filthType> 
-				<rate>1</rate> 
-				<radius>1</radius> 
+				<filthType>GR_FilthMucus</filthType>
+				<rate>1</rate>
+				<radius>1</radius>
 				<ticksToCreateFilth>120</ticksToCreateFilth>
-
 			</li>
 			<li Class="GeneticRim.CompProperties_GeneticFailure">
 				
@@ -146,9 +133,9 @@
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<fleshType>GR_Insectoid</fleshType>			
+			<fleshType>GR_Insectoid</fleshType>
 			<hasGenders>false</hasGenders>
-			<body>Snake</body>	  
+			<body>Snake</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<wildness>0.9</wildness>
 			<baseBodySize>5</baseBodySize>
@@ -161,7 +148,6 @@
 			<trainability>Intermediate</trainability>
 			<meatLabel>aberrant meat</meatLabel>
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -177,11 +163,11 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticFailure</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_AberrantFleshbeast</defName>
 		<label>aberrant fleshbeast</label>
 		<race>GR_AberrantFleshbeast</race>
@@ -189,7 +175,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Failures/AberrantFleshbeast/Fleshbeast</texPath>
@@ -212,7 +197,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Flesh Monstrosity -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_FleshMonstrosity</defName>
@@ -236,17 +220,14 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_GreaterScaria</hediffname>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_DieUnlessReset">
 				<effect>true</effect>
 				<effectFilth>Filth_Blood</effectFilth>
 				<message>GR_CellularDegeneration</message>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_GeneticFailure">
 				
@@ -254,21 +235,20 @@
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<fleshType>GR_Insectoid</fleshType>			
+			<fleshType>GR_Insectoid</fleshType>
 			<hasGenders>false</hasGenders>
-			<body>Snake</body>	  
+			<body>Snake</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<wildness>0.99</wildness>
 			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>13</baseHealthScale>
-			<lifeExpectancy>4</lifeExpectancy>			
+			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<foodType>CarnivoreAnimal</foodType>
 			<useMeatFrom>GR_AberrantFleshbeast</useMeatFrom>
 			<trainability>None</trainability>
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -284,11 +264,11 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticFailure</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_FleshMonstrosity</defName>
 		<label>flesh monstrosity</label>
 		<race>GR_FleshMonstrosity</race>
@@ -296,7 +276,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Failures/FleshMonstrosity/FleshMonstrosity</texPath>
@@ -306,7 +285,6 @@
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
-				
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -316,7 +294,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Flesh Growth -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_FleshGrowth</defName>
@@ -340,30 +317,27 @@
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 			</li>
 		</tools>
-
 		<comps>
 			<li Class="GeneticRim.CompProperties_SpawnFleshGrowths">
 				
 			</li>
-			
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<fleshType>GR_Insectoid</fleshType>			
+			<fleshType>GR_Insectoid</fleshType>
 			<hasGenders>false</hasGenders>
-			<body>Snake</body>	  
+			<body>Snake</body>
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<wildness>0.99</wildness>
 			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>13</baseHealthScale>
-			<lifeExpectancy>4</lifeExpectancy>			
+			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<foodType>CarnivoreAnimal</foodType>
 			<useMeatFrom>GR_AberrantFleshbeast</useMeatFrom>
 			<trainability>None</trainability>
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -379,11 +353,11 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticFailure</li>
 		</tradeTags>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-
 		<defName>GR_FleshGrowth</defName>
 		<label>flesh growth</label>
 		<race>GR_FleshGrowth</race>
@@ -391,7 +365,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Failures/Fleshgrowth/FleshgrowthA</texPath>
@@ -401,7 +374,6 @@
 						<offset>(0,0,-0.3)</offset>
 					</shadowData>
 				</bodyGraphicData>
-				
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -411,7 +383,4 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-
-
-
 </Defs>

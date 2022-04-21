@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- Mechanoid - Bear -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechabear</defName>
@@ -21,8 +20,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -32,11 +29,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -56,10 +51,7 @@
 				<label>plasma burst</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
@@ -71,16 +63,13 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
 				
 			</li>
-
 		</comps>
 		<race>
-
 			<body>QuadrupedAnimalWithPaws</body>
 			<fleshType>GR_Mechanoid</fleshType>
 			<herdAnimal>false</herdAnimal>
@@ -113,6 +102,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -145,7 +135,6 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Boomalope -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechalope</defName>
@@ -166,8 +155,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -177,11 +164,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -201,12 +186,8 @@
 				<label>chemfuel flamethrower</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
-			
 			<li Class="CompProperties_Milkable">
 				<milkDef>Chemfuel</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>
@@ -223,20 +204,16 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
 				
 			</li>
-
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
-
 			<body>QuadrupedAnimalWithHoovesAndHump</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -247,7 +224,6 @@
 			<trainability>Advanced</trainability>
 			<needsRest>true</needsRest>
 			<hasGenders>false</hasGenders>
-			
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<useMeatFrom>Boomalope</useMeatFrom>
@@ -268,6 +244,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -300,7 +277,6 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Chicken -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechachicken</defName>
@@ -321,8 +297,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -332,11 +306,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<label>sniper flechette</label>
@@ -354,15 +326,10 @@
 				<range>100</range>
 				<soundCast>Bow_Small</soundCast>
 				<muzzleFlashScale>9</muzzleFlashScale>
-
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ElectroEgg</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_ElectroEgg</eggFertilizedDef>
@@ -381,18 +348,14 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
 				
 			</li>
-
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
-
 			<body>Bird</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -424,6 +387,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -456,11 +420,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Insectoid -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechaspider</defName>
-
 		<label>mechaspider</label>
 		<description>This cybernetic organism has traits from both its insectoid and mechanoid origins. The mechaspider is armed with a powerful twin-coiled laser machine gun, perfect to obliterate enemies in a rain of laser fire.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mechanoid hybrids are always created with a controller booster, making the mechaspider an effective weapons platform with a very high fire rate. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -478,8 +440,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -489,11 +449,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -512,10 +470,7 @@
 				<label>twin-coiled laser</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
@@ -527,18 +482,14 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
 				
 			</li>
-
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
-
 			<body>BeetleLikeWithClaw</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -570,6 +521,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -602,11 +554,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Muffalo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechamuffalo</defName>
-
 		<label>mecha-muffalo</label>
 		<description>This hulking cybernetic organism has been reinforced with an adaptive plasteel mesh, enabling it to carry an incredible amount of stuff. The mecha-muffalo is the perfect pack animal, but it is quite useless in an offensive role. Defensively, however, it is armed with a smoke cannon that it can use to cover the battlefield in a dense cloud of dust.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Mechanoid hybrids are always created with a controller booster, making the mecha-muffalo capable of laying a screen of smoke for defensive purposes. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -624,8 +574,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -635,11 +583,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -659,18 +605,13 @@
 				<label>smoke cannon</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
-			
 			<li Class="CompProperties_Milkable">
 				<milkDef>GR_MechaMilk</milkDef>
 				<milkIntervalDays>2</milkIntervalDays>
 				<milkAmount>1</milkAmount>
 				<milkFemaleOnly>false</milkFemaleOnly>
-
 			</li>
 			<li Class="CompProperties_Shearable">
 				<woolDef>GR_MechaWool</woolDef>
@@ -687,19 +628,15 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
 				
 			</li>
-
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
 			<packAnimal>true</packAnimal>
-
 			<body>QuadrupedAnimalWithHooves</body>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -731,6 +668,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -763,7 +701,6 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Rodent -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mecharat</defName>
@@ -784,8 +721,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -795,14 +730,11 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
-
 				<verbClass>Verb_Shoot</verbClass>
 				<accuracyTouch>1</accuracyTouch>
 				<accuracyShort>1</accuracyShort>
@@ -819,10 +751,7 @@
 				<label>stun bolt</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
@@ -834,7 +763,6 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
@@ -843,8 +771,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
-
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -876,6 +802,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -908,11 +835,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Reptile -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechaturtle</defName>
-
 		<label>mechaturtle</label>
 		<description>This slow, cybernetic beast is heavily armoured with a plasteel-encased biomechanical shell. It is armed with a poison spitting cannon.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechaturtle an effective weapons platform that fires venomous projectiles. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -930,8 +855,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -941,11 +864,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -964,12 +885,8 @@
 				<label>poison blast</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -980,7 +897,6 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
@@ -989,8 +905,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
-
 			<body>TurtleLike</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1022,6 +936,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -1054,11 +969,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Wolf -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechawolf</defName>
-
 		<label>mechawolf</label>
 		<description>This cybernetic beast has been augmented with a powerful synthetic structure capable of generating waves of cryogenic liquid. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechawolf an effective weapons platform that fires frost projectiles. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -1076,8 +989,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -1087,11 +998,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -1110,10 +1019,7 @@
 				<label>cryo cannon</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
@@ -1125,7 +1031,6 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
@@ -1134,8 +1039,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
-
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1167,6 +1070,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -1199,12 +1103,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
-
 	<!-- Mechanoid - Thrumbo -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechathrumbo</defName>
-
 		<label>mechathrumbo</label>
 		<description>This hulking cybernetic behemoth is why you don't need tanks in the Rim. Its huge plasteel carapace hides a miniaturized synchrotron that constantly generates small amounts of antimatter, which is instantly used to fill a miniature antigrain warhead. Slow, but quite effective.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechathrumbo effective mobile artillery. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -1222,8 +1123,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -1233,11 +1132,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -1253,19 +1150,15 @@
 				<range>100</range>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
-				</targetParams>		
+				</targetParams>
 				<forcedMissRadius>3</forcedMissRadius>
 				<soundCast>Mortar_LaunchA</soundCast>
 				<muzzleFlashScale>15</muzzleFlashScale>
 				<label>antigrain artillery</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -1276,7 +1169,6 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
@@ -1285,8 +1177,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
-
 			<body>QuadrupedAnimalWithHoovesAndHorn</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1318,6 +1208,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -1354,10 +1245,9 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Cat -->
 	<ThingDef ParentName="AnimalThingBase">
-		<defName>GR_Mechacat</defName>		
+		<defName>GR_Mechacat</defName>
 		<label>mechacat</label>
 		<description>The tail of this robotic creature has been crafted from an amalgamation of scyther blade structures and mechanite self-replicators. This allows the mechacat to use its tail as a throwable weapon, and quickly regenerate it to use it again. \n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mechacat capable of attacking with slashing attacks from a range. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -1375,8 +1265,6 @@
 			<LeatherAmount>0</LeatherAmount>
 		</statBases>
 		<tools>
-
-
 			<li>
 				<label>head</label>
 				<capacities>
@@ -1386,11 +1274,9 @@
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>      
+				<chanceFactor>0.2</chanceFactor>
 			</li>
-
 		</tools>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -1409,12 +1295,8 @@
 				<label>razor tail</label>
 				<commonality>1</commonality>
 			</li>
-
-
 		</verbs>
-
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
 				<hediffseverity>1</hediffseverity>
@@ -1425,7 +1307,6 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
@@ -1438,8 +1319,6 @@
 		</comps>
 		<race>
 			<fleshType>GR_Mechanoid</fleshType>
-
-
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1471,6 +1350,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -1503,7 +1383,6 @@
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 	<!-- Mechanoid - Horse -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechahorse</defName>
@@ -1537,18 +1416,17 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<hasGenders>false</hasGenders>
 			<wildness>0.9</wildness>
-			<fleshType>GR_Mechanoid</fleshType>		
+			<fleshType>GR_Mechanoid</fleshType>
 			<trainability>Advanced</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>100</lifeExpectancy>
 			<lifeStageAges>
-				
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
 					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
-					<soundCall>Pawn_Mech_Centipede_Call</soundCall>					
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
 					<soundAngry>Pawn_Horse_Angry</soundAngry>
 				</li>
 			</lifeStageAges>
@@ -1558,6 +1436,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
 		<comps>
@@ -1571,7 +1450,6 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
@@ -1580,7 +1458,6 @@
 			<li Class="GeneticRim.CompProperties_HorseHybrid">
 				
 			</li>
-		
 		</comps>
 		<tools>
 			<li>
@@ -1649,9 +1526,7 @@
 		<combatPower>250</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-		
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mechanoid/Mechahorse/GR_Mechanoid_Horse</texPath>
@@ -1667,18 +1542,14 @@
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-		
 	</PawnKindDef>
-	
 	<!-- Mechanoid - Humanoid -->
-	
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Mechamime</defName>
 		<label>mecha-mime</label>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<description>todo.</description>
 		<statBases>
-			
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 			<ComfyTemperatureMax>250</ComfyTemperatureMax>
 			<PsychicSensitivity>0</PsychicSensitivity>
@@ -1686,12 +1557,10 @@
 			<Flammability>0</Flammability>
 			<MarketValue>1800</MarketValue>
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>			
+			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<MeatAmount>0</MeatAmount>
-			<LeatherAmount>0</LeatherAmount>		
+			<LeatherAmount>0</LeatherAmount>
 			<MoveSpeed>5.6</MoveSpeed>
-			
-
 		</statBases>
 		<tools>
 			<li>
@@ -1753,7 +1622,7 @@
 			</li>
 		</tools>
 		<comps>
-				<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
@@ -1763,7 +1632,6 @@
 				<manhunterButNotDie>true</manhunterButNotDie>
 				<timeToDieInTicks>300000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
-				
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">
 				
@@ -1773,48 +1641,40 @@
 				
 			</li>
 		</comps>
-
 		<race>
 			<body>Human</body>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>6</baseHealthScale>
 			<baseHungerRate>0.001</baseHungerRate>
 			<useLeatherFrom>Human</useLeatherFrom>
-			<useMeatFrom>Human</useMeatFrom>	
+			<useMeatFrom>Human</useMeatFrom>
 			<lifeExpectancy>100</lifeExpectancy>
 			<foodType>CarnivoreAnimal</foodType>
-
 			<wildness>0.9</wildness>
-			<fleshType>GR_Mechanoid</fleshType>	
-			<herdMigrationAllowed>false</herdMigrationAllowed>			
-		
-			<hasGenders>false</hasGenders>			
+			<fleshType>GR_Mechanoid</fleshType>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>			
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
-
 			<lifeStageAges>
-
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
 					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
-				  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
-				  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-
 		</race>
-
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalGeneticMechanoid</li>
 		</tradeTags>
-		
-		
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Mechamime</defName>
@@ -1823,9 +1683,7 @@
 		<combatPower>120</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
-		
 		<lifeStages>
-
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Mechanoid/Mechahumanoid/GR_Mechanoid_Humanoid</texPath>
@@ -1839,9 +1697,7 @@
 					<texPath>Things/Pawn/Animal/Mechanoid/Mechahumanoid/GR_Dessicated_Mechanoid_Humanoid</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
-				
 			</li>
 		</lifeStages>
 	</PawnKindDef>
-
 </Defs>

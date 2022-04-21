@@ -72,7 +72,6 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -98,6 +97,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -263,7 +263,6 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -289,6 +288,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -439,7 +439,6 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -465,6 +464,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -609,7 +609,6 @@
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<packAnimal>true</packAnimal>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -635,6 +634,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -779,7 +779,6 @@
 			<gestationPeriodDays>7</gestationPeriodDays>
 			<trainability>Advanced</trainability>
 			<wildness>0.75</wildness>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -805,6 +804,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -953,7 +953,6 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
-		
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -979,6 +978,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1050,7 +1050,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Dog - Humanoid -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Dogman</defName>
@@ -1101,7 +1100,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<comps>
 			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
 				
@@ -1111,7 +1109,7 @@
 			</li>
 		</comps>
 		<race>
-			<body>QuadrupedAnimalWithPawsAndTail</body>			
+			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<predator>true</predator>
 			<maxPreyBodySize>1</maxPreyBodySize>
 			<fleshType>GR_Normal</fleshType>
@@ -1123,9 +1121,9 @@
 			<gestationPeriodDays>15</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
 			<trainability>Advanced</trainability>
-			<wildness>0.5</wildness>			
+			<wildness>0.5</wildness>
 			<useLeatherFrom>Wolf_Timber</useLeatherFrom>
-			<useMeatFrom>Wolf_Timber</useMeatFrom>			
+			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -1151,6 +1149,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -1179,25 +1178,23 @@
 		<labelMalePlural>dogmen</labelMalePlural>
 		<labelFemalePlural>dogwomen</labelFemalePlural>
 		<alternateGraphicChance>0.8</alternateGraphicChance>
-		
 		<alternateGraphics>
 			<li>
-					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
-					<color>(226, 161, 154)</color>
+				<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
+				<color>(226, 161, 154)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
-					<color>(228, 158, 90)</color>
+				<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
+				<color>(228, 158, 90)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
-					<color>(255, 239, 189)</color>
+				<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
+				<color>(255, 239, 189)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
-					<color>(130, 91, 48)</color>
+				<texPath>Things/Pawn/Animal/Canine/Dogman/GR_Dogman</texPath>
+				<color>(130, 91, 48)</color>
 			</li>
-			
 		</alternateGraphics>
 		<lifeStages>
 			<li>

@@ -100,6 +100,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -282,6 +283,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -460,6 +462,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -633,6 +636,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -811,6 +815,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -980,6 +985,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1155,6 +1161,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>

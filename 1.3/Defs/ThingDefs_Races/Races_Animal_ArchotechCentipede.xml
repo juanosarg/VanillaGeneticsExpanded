@@ -145,6 +145,7 @@
 			<li>AnimalGenetic</li>
 			<li>AnimalGeneticMechanoid</li>
 			<li>AnimalGeneticCentipede</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<butcherProducts>
 			<Steel>1000</Steel>

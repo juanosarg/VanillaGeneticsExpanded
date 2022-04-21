@@ -116,6 +116,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -270,6 +271,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -426,6 +428,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<butcherProducts>
@@ -590,6 +593,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -771,6 +775,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -875,7 +880,6 @@
 				<power>10</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -889,7 +893,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<race>
 			<fleshType>GR_HumanMeat</fleshType>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -900,14 +903,13 @@
 			<baseHungerRate>0.2</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>20</gestationPeriodDays>			
+			<gestationPeriodDays>20</gestationPeriodDays>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<useLeatherFrom>Human</useLeatherFrom>
 			<useMeatFrom>Human</useMeatFrom>
 			<wildness>0.5</wildness>
 			<trainability>Advanced</trainability>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -932,6 +934,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -1105,6 +1108,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>

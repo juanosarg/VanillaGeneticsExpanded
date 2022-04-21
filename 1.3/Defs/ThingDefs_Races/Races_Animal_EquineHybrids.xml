@@ -55,6 +55,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
@@ -263,6 +264,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProductOnCaravan">
@@ -450,6 +452,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_AnimalProductOnCaravan">
@@ -642,6 +645,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -836,6 +840,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_Regeneration">
@@ -1014,11 +1019,14 @@
 			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
 		</race>
-		<comps><li Class="GeneticRim.CompProperties_HorseHybrid">
+		<comps>
+			<li Class="GeneticRim.CompProperties_HorseHybrid">
 				
-			</li></comps>
+			</li>
+		</comps>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1188,6 +1196,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1321,12 +1330,10 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Reptile - Horse -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Crocorse</defName>
 		<label>crocorse</label>
-	
 		<description>A rather muscular hybrid with an impressively long snout, this ravenous reptile combines adaptability with mobility. Unusually, its terrifyingly long maw filled with curved teeth is not used to tear flesh to eat but to imbue toxins and the required muscles to spray those toxins out. This means they have to eat a lot more due to their subpar digestive system and their favourite activities include lounging in the sun and moving with disturbing quickness when the dinner bell is sounded. Also it… kinda looks like a weird shoe if you look at it, but, uh, don’t put your foot in there.\n\nAn equine hybrid with recessive reptile genes. A rather slow hybrid for its category, its main advantage is that it is very durable and it has a ranged toxic breath attack. Quite durable and comfortable in a wide range of temperatures, they present a hidden danger for those foolish enough to attack an otherwise easy target.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
@@ -1348,11 +1355,9 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<wildness>0.45</wildness>
-		
 			<useLeatherFrom>Cobra</useLeatherFrom>
 			<useMeatFrom>Horse</useMeatFrom>
 			<trainability>Intermediate</trainability>
-	
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
@@ -1379,6 +1384,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1450,20 +1456,17 @@
 				<minRange>1</minRange>
 				<range>15</range>
 				<soundCast>GR_PoisonBreath</soundCast>
-				<muzzleFlashScale>0</muzzleFlashScale>				
+				<muzzleFlashScale>0</muzzleFlashScale>
 				<commonality>0.8</commonality>
 			</li>
-
-
 		</verbs>
 		<comps>
-			
 			<li Class="GeneticRim.CompProperties_HorseHybrid">
 				
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef  ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Crocorse</defName>
 		<label>crocorse</label>
 		<labelMale>crocorse stallion</labelMale>
@@ -1472,7 +1475,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>100</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
-	
 		<lifeStages>
 			<li>
 				<label>crocorse foal</label>
@@ -1523,21 +1525,17 @@
 				<dominantGenome>GR_EquineGenetic</dominantGenome>
 				<secondaryGenome>GR_ReptileGenetic</secondaryGenome>
 			</li>
-			
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Insectoid - Horse -->
-	
 	<ThingDef ParentName="GR_BaseInsect">
 		<defName>GR_Spiderhorse</defName>
 		<label>spiderhorse</label>
-	
 		<description>Arachnophobia is no joke for many people, and the researcher that created this armoured arachnid had an inherent desire to share their fear with others. Granted they passed out, frothing at the mouth, when the creature emerged from the pod, but damn it it’s hard to argue with results in a riding companion that can not only keep up with the competition, but also disable them and eat them on the go as a tasty snack.\n\nAn equine hybrid with recessive insectoid genes. A rather slow and filthy hybrid of this category, but it works very well as a ride due to the multiple legs easing the burden of long distance travel inherent to caravaning. However, their main advantage is that they are also incredibly capable in combat, being armour plated and capable of both high damage and ranged stunning attacks by shooting globs of sticky threads.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<MarketValue>850</MarketValue>
-			<ComfyTemperatureMin>-25</ComfyTemperatureMin>		
+			<ComfyTemperatureMin>-25</ComfyTemperatureMin>
 			<FilthRate>12</FilthRate>
 			<CaravanRidingSpeedFactor>1.7</CaravanRidingSpeedFactor>
 			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
@@ -1550,15 +1548,14 @@
 			<body>BeetleLikeWithClaw</body>
 			<baseBodySize>2.4</baseBodySize>
 			<baseHealthScale>3</baseHealthScale>
-			<baseHungerRate>0.425</baseHungerRate>		
+			<baseHungerRate>0.425</baseHungerRate>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.5</wildness>
 			<useMeatFrom>Megaspider</useMeatFrom>
-			<trainability>Intermediate</trainability>	
+			<trainability>Intermediate</trainability>
 			<packAnimal>true</packAnimal>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
-				
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
@@ -1574,6 +1571,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1627,17 +1625,14 @@
 				<label>web</label>
 				<commonality>.8</commonality>
 			</li>
-
-
 		</verbs>
 		<comps>
-			
 			<li Class="GeneticRim.CompProperties_HorseHybrid">
 				
 			</li>
 		</comps>
 	</ThingDef>
-	<PawnKindDef  ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Spiderhorse</defName>
 		<label>spiderhorse</label>
 		<labelMale>spiderhorse stallion</labelMale>
@@ -1646,25 +1641,22 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<combatPower>200</combatPower>
 		<ecoSystemWeight>1.1</ecoSystemWeight>
-	<alternateGraphicChance>1</alternateGraphicChance>
+		<alternateGraphicChance>1</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
-					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
-					<color>(156,148,125)</color>
+				<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
+				<color>(156,148,125)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
-					<color>(114,107,84)</color>
+				<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
+				<color>(114,107,84)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
-					<color>(154,125,94)</color>
+				<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse</texPath>
+				<color>(154,125,94)</color>
 			</li>
-
-			
 		</alternateGraphics>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Equine/Spiderhorse/GR_Spiderhorse1</texPath>
@@ -1687,13 +1679,10 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Humanoid - Horse -->
-	
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Hurseman</defName>
 		<label>hurseman</label>
-	
 		<description>An extremely cursed riding companion that can vocally explain in excruciating detail the troubles it goes through as a beast of burden. Most people don’t like to be reminded that animals are capable of feeling, especially if they can vocalise themselves in human speech. Don’t be surprised if no one wants to eat or wear butchered parts of this creature, as it looks like a misshapen human with cloven hands.\n\nAn equine hybrid with recessive humanoid genes. Very intelligent and relatively low maintenance, they make for a decent rideable pack animal. Their main advantage comes in their ability to cheer up the travellers in a caravan, however it doesn’t understand social cues and can throw out some devastating social commentary.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All equine hybrids are good for caravaning. A caravan with one of them needs a shorter resting period, only stopping to rest between 23:30 PM and 4 AM. Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). The hurseman engages caravan members too while caravaning, causing mood boosts (up to +15). 10% of the time however it will insult them, making them loose mood (up to -30). If using Ideology, humanoid hybrids are subject to precepts.</description>
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
@@ -1716,7 +1705,7 @@
 			<foodType>OmnivoreAnimal</foodType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<gestationPeriodDays>10</gestationPeriodDays>
-			<wildness>0.4</wildness>			
+			<wildness>0.4</wildness>
 			<useLeatherFrom>Human</useLeatherFrom>
 			<useMeatFrom>Human</useMeatFrom>
 			<trainability>Advanced</trainability>
@@ -1746,10 +1735,10 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<comps>
-			
 			<li Class="GeneticRim.CompProperties_HorseHybrid">
 				
 			</li>
@@ -1819,9 +1808,7 @@
 			</li>
 		</tools>
 	</ThingDef>
-	
-	
-	<PawnKindDef  ParentName="AnimalKindBase">
+	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Hurseman</defName>
 		<label>hurseman</label>
 		<labelMale>hurseman stallion</labelMale>
@@ -1833,22 +1820,21 @@
 		<alternateGraphicChance>0.8</alternateGraphicChance>
 		<alternateGraphics>
 			<li>
-					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
-					<color>(226, 161, 154)</color>
+				<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
+				<color>(226, 161, 154)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
-					<color>(228, 158, 90)</color>
+				<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
+				<color>(228, 158, 90)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
-					<color>(255, 239, 189)</color>
+				<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
+				<color>(255, 239, 189)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
-					<color>(130, 91, 48)</color>
+				<texPath>Things/Pawn/Animal/Equine/Hurseman/GR_Hurseman</texPath>
+				<color>(130, 91, 48)</color>
 			</li>
-			
 		</alternateGraphics>
 		<lifeStages>
 			<li>
@@ -1902,6 +1888,4 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
-	
 </Defs>

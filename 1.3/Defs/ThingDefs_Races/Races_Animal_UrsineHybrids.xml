@@ -126,6 +126,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -335,6 +336,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -540,6 +542,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -687,14 +690,18 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		<comps><li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
-
-				<customThingsToDig><li>RawBerries</li></customThingsToDig>
-				<customAmountsToDig><li>15</li></customAmountsToDig>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+				<customThingsToDig>
+					<li>RawBerries</li>
+				</customThingsToDig>
+				<customAmountsToDig>
+					<li>15</li>
+				</customAmountsToDig>
 				<spawnForbidden>true</spawnForbidden>
 				<digOnlyOnGrowingSeason>true</digOnlyOnGrowingSeason>
-
-			</li></comps>
+			</li>
+		</comps>
 		<race>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<baseBodySize>1</baseBodySize>
@@ -736,6 +743,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -800,7 +808,6 @@
 					<texPath>Things/Pawn/Animal/Ursine/Bearwolf/Dessicated_Bearwolf</texPath>
 					<drawSize>3.7</drawSize>
 				</dessicatedBodyGraphicData>
-				
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -908,7 +915,6 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<useLeatherFrom>Alphabeaver</useLeatherFrom>
 			<useMeatFrom>Alphabeaver</useMeatFrom>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -934,6 +940,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1125,6 +1132,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1198,7 +1206,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Bear - Humanoid -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearman</defName>
@@ -1207,9 +1214,8 @@
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-						<ComfyTemperatureMax>35</ComfyTemperatureMax>
-
-			<MarketValue>650</MarketValue>			
+			<ComfyTemperatureMax>35</ComfyTemperatureMax>
+			<MarketValue>650</MarketValue>
 			<FilthRate>2</FilthRate>
 		</statBases>
 		<tools>
@@ -1294,7 +1300,7 @@
 			<maxPreyBodySize>2</maxPreyBodySize>
 			<body>QuadrupedAnimalWithPaws</body>
 			<baseHungerRate>0.35</baseHungerRate>
-			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>	
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.5</wildness>
 			<baseBodySize>1.25</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
@@ -1329,6 +1335,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -1359,22 +1366,21 @@
 		<labelFemalePlural>bearwomen</labelFemalePlural>
 		<alternateGraphics>
 			<li>
-					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
-					<color>(226, 161, 154)</color>
+				<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
+				<color>(226, 161, 154)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
-					<color>(228, 158, 90)</color>
+				<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
+				<color>(228, 158, 90)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
-					<color>(255, 239, 189)</color>
+				<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
+				<color>(255, 239, 189)</color>
 			</li>
 			<li>
-					<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
-					<color>(130, 91, 48)</color>
+				<texPath>Things/Pawn/Animal/Ursine/Bearman/GR_Bearman</texPath>
+				<color>(130, 91, 48)</color>
 			</li>
-			
 		</alternateGraphics>
 		<lifeStages>
 			<li>

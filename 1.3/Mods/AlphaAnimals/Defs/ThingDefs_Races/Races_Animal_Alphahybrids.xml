@@ -36,7 +36,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_BearBugEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_BearBugEggFertilized</eggFertilizedDef>
@@ -46,7 +45,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -64,7 +62,6 @@
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<useLeatherFrom>AA_BedBug</useLeatherFrom>
 			<useMeatFrom>Bear_Grizzly</useMeatFrom>
-			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -89,6 +86,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -257,11 +255,8 @@
 			<!--<li Class="MVCF.Comps.CompProperties_RandomVerbs ">
 				<meleeChance>0.5</meleeChance>
 			</li>-->
-			
-			
 		</comps>
 		<race>
-			
 			<deathActionWorkerClass>DeathActionWorker_BigExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>true</herdAnimal>
@@ -282,7 +277,6 @@
 			<manhunterOnDamageChance>0.15</manhunterOnDamageChance>
 			<useLeatherFrom>AA_Dunealisk</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
-			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -307,6 +301,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -445,7 +440,6 @@
 			<li Class="AnimalBehaviours.CompProperties_LightSustenance">
 
 								</li>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_NeedlechickenEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_NeedlechickenEggFertilized</eggFertilizedDef>
@@ -455,7 +449,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>false</predator>
@@ -467,7 +460,6 @@
 			<fleshType>GR_Normal</fleshType>
 			<packAnimal>false</packAnimal>
 			<wildness>0.6</wildness>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Intermediate</trainability>
 			<manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
@@ -501,6 +493,7 @@
 		</butcherProducts>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -597,7 +590,6 @@
 			</li>
 		</tools>
 		<comps>
-
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>InsectJelly</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
@@ -621,7 +613,6 @@
 		<race>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>2</executionRange>
-			
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -665,6 +656,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -795,7 +787,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="CompProperties_Milkable">
 				<milkDef>Milk</milkDef>
 				<milkIntervalDays>1</milkIntervalDays>
@@ -828,7 +819,6 @@
 			<useLeatherFrom>Muffalo</useLeatherFrom>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<fleshType>GR_Normal</fleshType>
-			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -853,6 +843,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -917,7 +908,6 @@
 					<texPath>Things/Pawn/Animal/AlphaAnimals/Muffalo/GR_Dessicated_Groundfallo</texPath>
 					<drawSize>4</drawSize>
 				</dessicatedBodyGraphicData>
-				
 			</li>
 		</lifeStages>
 		<modExtensions>
@@ -985,7 +975,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>GR_EggMeadowLizardFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
@@ -995,7 +984,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -1006,7 +994,6 @@
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>1.5</baseHealthScale>
 			<foodType>OmnivoreAnimal, AnimalProduct</foodType>
-			
 			<packAnimal>false</packAnimal>
 			<wildness>0.75</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
@@ -1015,7 +1002,6 @@
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<useLeatherFrom>AA_MeadowAve</useLeatherFrom>
 			<useMeatFrom>Iguana</useMeatFrom>
-			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1036,6 +1022,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1180,7 +1167,6 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<race>
 			<thinkTreeMain>AA_AnimalNuzzlerDraftable</thinkTreeMain>
 			<body>QuadrupedAnimalWithPawsAndTail</body>
@@ -1199,7 +1185,6 @@
 			<useLeatherFrom>Hare</useLeatherFrom>
 			<useMeatFrom>Hare</useMeatFrom>
 			<fleshType>GR_Normal</fleshType>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -1225,6 +1210,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1390,7 +1376,6 @@
 			</li>
 		</verbs>
 		<comps>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggFertilizedDef>GR_EggNighthrumboFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
@@ -1403,7 +1388,6 @@
 			</li>-->
 		</comps>
 		<race>
-			
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<body>GR_QuadrupedAnimalWithPawsHornAndTailThrumbo</body>
@@ -1421,8 +1405,6 @@
 			<useLeatherFrom>AA_Nightling</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<fleshType>GR_Normal</fleshType>
-			
-			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1447,6 +1429,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1593,13 +1576,11 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_Regeneration">
 				<rateInTicks>20</rateInTicks>
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>false</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -1618,7 +1599,6 @@
 			<useLeatherFrom>AA_RaptorShrimp</useLeatherFrom>
 			<useMeatFrom>Wolf_Timber</useMeatFrom>
 			<fleshType>GR_Normal</fleshType>
-			
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1643,6 +1623,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">

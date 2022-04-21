@@ -33,10 +33,8 @@
 				<shearIntervalDays>15</shearIntervalDays>
 				<woolAmount>110</woolAmount>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -76,6 +74,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -176,15 +175,11 @@
 			</li>
 		</tools>
 		<comps>
-			
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_ChemfuelDischarge</initialAbility>
 			</li>
-		
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -226,6 +221,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -344,12 +340,9 @@
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_LastStand">
 				<finalCoolDownMultiplier>6</finalCoolDownMultiplier>
-			
 			</li>
-			
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -389,6 +382,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -492,10 +486,8 @@
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_PackTactics</initialAbility>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -535,6 +527,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -670,7 +663,6 @@
 				<milkIntervalDays>1</milkIntervalDays>
 				<milkAmount>15</milkAmount>
 			</li>
-			
 			<li Class="CompProperties_Spawner">
 				<thingToSpawn>GR_ThickHybridWool</thingToSpawn>
 				<spawnCount>50</spawnCount>
@@ -684,7 +676,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
@@ -726,6 +717,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -831,16 +823,13 @@
 				<milkIntervalDays>1</milkIntervalDays>
 				<milkAmount>6</milkAmount>
 			</li>
-			
 			<li Class="CompProperties_Shearable">
 				<woolDef>GR_ThickHybridWool</woolDef>
 				<shearIntervalDays>1</shearIntervalDays>
 				<woolAmount>5</woolAmount>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<body>QuadrupedAnimalWithPawsAndTail</body>
 			<roamMtbDays>2</roamMtbDays>
 			<predator>false</predator>
@@ -881,6 +870,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -954,9 +944,7 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Muffalo - Humanoid -->
-	
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Muffaloman</defName>
 		<label>muffaloman</label>
@@ -979,8 +967,6 @@
 			</li>
 		</tools>
 		<comps>
-			
-			
 			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
 				
 			</li>
@@ -991,11 +977,10 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<fleshType>GR_Normal</fleshType>
-			<trainability>Advanced</trainability>			
+			<trainability>Advanced</trainability>
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHealthScale>1.25</baseHealthScale>
@@ -1031,6 +1016,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -1113,5 +1099,4 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 </Defs>

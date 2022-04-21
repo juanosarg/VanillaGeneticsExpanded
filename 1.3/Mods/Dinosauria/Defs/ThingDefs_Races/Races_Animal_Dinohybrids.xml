@@ -108,6 +108,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -207,7 +208,6 @@
 				<power>15</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				
 			</li>
 		</tools>
 		<comps>
@@ -217,7 +217,6 @@
 				<resourceAmount>18</resourceAmount>
 				<customResourceString>Cryofuel</customResourceString>
 			</li>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ParasaurolopeEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_ParasaurolopeEggFertilized</eggFertilizedDef>
@@ -227,7 +226,6 @@
 			</li>
 		</comps>
 		<race>
-		
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_BiggerExplosion</deathActionWorkerClass>
 			<executionRange>6</executionRange>
 			<herdAnimal>false</herdAnimal>
@@ -266,6 +264,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -384,7 +383,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_ChickennathusEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_ChickennathusEggFertilized</eggFertilizedDef>
@@ -394,7 +392,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<body>TheropodWithClaws</body>
@@ -431,6 +428,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -508,7 +506,6 @@
 	<ThingDef ParentName="GR_BaseInsect">
 		<defName>GR_Diplobeetle</defName>
 		<label>diplobeetle</label>
-	
 		<description>This huge sauropod hybrid has notable insectoid traits. It is hard to see how such a creature could have any predators, since it would probably leave its herbivorous diet and just eat them whole.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All insectoid hybrids have good armor and no toxic sensitivity, but they are always sterile and can't reproduce, even if a fertility booster is used to create them. Diplobeetles produce a very nutritive jelly.</description>
 		<statBases>
 			<MoveSpeed>3.2</MoveSpeed>
@@ -527,7 +524,7 @@
 				</capacities>
 				<power>30</power>
 				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>TailAttackTool</linkedBodyPartsGroup>				
+				<linkedBodyPartsGroup>TailAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 			<li>
@@ -550,7 +547,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>GR_DinoInsectJelly</resourceDef>
 				<gatheringIntervalDays>2</gatheringIntervalDays>
@@ -559,7 +555,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
 			<body>Sauropod</body>
@@ -599,6 +594,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -708,7 +704,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_TriceraffaloEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_TriceraffaloEggFertilized</eggFertilizedDef>
@@ -728,7 +723,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
 			<body>Ceratopsid</body>
@@ -769,6 +763,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -895,7 +890,6 @@
 			</li>
 		</tools>
 		<comps>
-		
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_RaptortoiseEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_RaptortoiseEggFertilized</eggFertilizedDef>
@@ -905,7 +899,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<body>TheropodWithClaws</body>
@@ -941,6 +934,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -955,7 +949,6 @@
 				</statDescriptions>
 			</li>
 		</modExtensions>
-		
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_Raptortoise</defName>
@@ -1055,7 +1048,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_StegothrumboEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_StegothrumboEggUnfertilized</eggFertilizedDef>
@@ -1068,7 +1060,6 @@
 			</li>
 		</comps>
 		<race>
-		
 			<herdAnimal>false</herdAnimal>
 			<predator>false</predator>
 			<body>ThyreophoraeWithSpikes</body>
@@ -1108,6 +1099,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1230,7 +1222,6 @@
 			</li>
 		</tools>
 		<comps>
-			
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_VelociwolfEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizedDef>GR_VelociwolfEggFertilized</eggFertilizedDef>
@@ -1243,7 +1234,6 @@
 			</li>
 		</comps>
 		<race>
-			
 			<herdAnimal>false</herdAnimal>
 			<predator>true</predator>
 			<body>TheropodWithClaws</body>
@@ -1279,6 +1269,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">

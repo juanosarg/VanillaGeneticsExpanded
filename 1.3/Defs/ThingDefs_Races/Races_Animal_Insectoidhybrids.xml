@@ -54,9 +54,7 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<race>
-			
 			<body>BeetleLikeWithClaw</body>
 			<trainability>Advanced</trainability>
 			<nameOnTameChance>1</nameOnTameChance>
@@ -64,12 +62,11 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>3</baseBodySize>
-			<baseHealthScale>1.9</baseHealthScale>			
+			<baseHealthScale>1.9</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.4</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -85,6 +82,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -108,7 +106,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Insectoid/Bearscarab/Bearscarab</texPath>
@@ -189,23 +186,21 @@
 			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
 				<initialAbility>GR_DetonateAcid</initialAbility>
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Insectoid</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>			
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<deathActionWorkerClass>GeneticRim.DeathActionWorker_AcidExplosion</deathActionWorkerClass>
 			<executionRange>2</executionRange>
 			<body>BeetleLikeWithClaw</body>
 			<trainability>Intermediate</trainability>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHealthScale>0.65</baseHealthScale>			
+			<baseHealthScale>0.65</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.8</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -221,6 +216,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -244,12 +240,10 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Insectoid/Boombeetle/Boombeetle</texPath>
 					<drawSize>2</drawSize>
-					
 					<shadowData>
 						<volume>(0.4, 0.5, 0.37)</volume>
 						<offset>(0,0,-0.15)</offset>
@@ -304,7 +298,7 @@
 		</tools>
 		<comps>
 			<li Class="CompProperties_EggLayer" Name="GR_ChickenspiderEggComp">
-				<eggUnfertilizedDef>GR_ChickenspiderEggUnfertilized</eggUnfertilizedDef>			
+				<eggUnfertilizedDef>GR_ChickenspiderEggUnfertilized</eggUnfertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>1.8</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
@@ -315,21 +309,20 @@
 				<resourceAmount>40</resourceAmount>
 				<customResourceString>SilkGrowth</customResourceString>
 			</li>
-			
 		</comps>
 		<race>
 			<fleshType>GR_Insectoid</fleshType>
-			<herdMigrationAllowed>false</herdMigrationAllowed>			
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<body>BeetleLikeWithClaw</body>
 			<baseHungerRate>0.15</baseHungerRate>
 			<baseBodySize>1.1</baseBodySize>
-			<baseHealthScale>2.5</baseHealthScale>		
+			<baseHealthScale>2.5</baseHealthScale>
 			<trainability>None</trainability>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.8</wildness>
 			<roamMtbDays>5</roamMtbDays>
 			<lifeExpectancy>4</lifeExpectancy>
-			<lifeStageAges>				
+			<lifeStageAges>
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
@@ -345,6 +338,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -368,7 +362,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Insectoid/Chickenspider/Chickenspider</texPath>
@@ -438,10 +431,8 @@
 				<shearIntervalDays>10</shearIntervalDays>
 				<woolAmount>45</woolAmount>
 			</li>
-			
 		</comps>
 		<race>
-			
 			<fleshType>GR_Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<herdAnimal>true</herdAnimal>
@@ -451,7 +442,7 @@
 			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
 			<baseHungerRate>0.535</baseHungerRate>
 			<baseBodySize>1.5</baseBodySize>
-			<baseHealthScale>1.9</baseHealthScale>			
+			<baseHealthScale>1.9</baseHealthScale>
 			<body>BeetleLikeWithClaw</body>
 			<roamMtbDays>2</roamMtbDays>
 			<packAnimal>true</packAnimal>
@@ -459,7 +450,6 @@
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.8</wildness>
 			<lifeStageAges>
-				
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0</minAge>
@@ -475,6 +465,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -498,7 +489,6 @@
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Insectoid/Muffalopede/Muffalopede</texPath>
@@ -555,13 +545,11 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<race>
-			
 			<body>BeetleLikeWithClaw</body>
 			<baseHungerRate>0.25</baseHungerRate>
 			<baseBodySize>0.85</baseBodySize>
-			<baseHealthScale>1</baseHealthScale>			
+			<baseHealthScale>1</baseHealthScale>
 			<useMeatFrom>Megaspider</useMeatFrom>
 			<wildness>0.75</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
@@ -569,7 +557,6 @@
 			<fleshType>GR_Insectoid</fleshType>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -585,6 +572,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -608,7 +596,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Insectoid/Wolfscarab/Wolfscarab</texPath>
@@ -686,14 +673,12 @@
 			</li>
 		</verbs>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
 		</comps>
 		<race>
-			
 			<body>BeetleLike</body>
 			<maxPreyBodySize>0.85</maxPreyBodySize>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -708,7 +693,6 @@
 			<fleshType>GR_Insectoid</fleshType>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -724,6 +708,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -747,7 +732,6 @@
 		<canArriveManhunter>false</canArriveManhunter>
 		<ecoSystemWeight>1</ecoSystemWeight>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Insectoid/Spidercat/GR_Spidercat</texPath>
@@ -770,7 +754,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Insectoid - Humanoid -->
 	<ThingDef ParentName="GR_BaseInsect">
 		<defName>GR_Manscarab</defName>
@@ -806,15 +789,12 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
-		
 		<comps>
-			
 			<li Class="GeneticRim.CompProperties_HumanoidHybrid">
 				
 			</li>
 		</comps>
 		<race>
-			
 			<body>BeetleLike</body>
 			<maxPreyBodySize>0.5</maxPreyBodySize>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -827,9 +807,7 @@
 			<lifeExpectancy>4</lifeExpectancy>
 			<trainability>Advanced</trainability>
 			<fleshType>GR_HumanMeat</fleshType>
-		
 			<lifeStageAges>
-				
 				<li>
 					<def>EusocialInsectAdult</def>
 					<minAge>0</minAge>
@@ -845,6 +823,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
@@ -873,7 +852,6 @@
 		<labelMalePlural>menscarab</labelMalePlural>
 		<labelFemalePlural>womenscarab</labelFemalePlural>
 		<lifeStages>
-			
 			<li>
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/Insectoid/Manscarab/GR_Manscarab</texPath>

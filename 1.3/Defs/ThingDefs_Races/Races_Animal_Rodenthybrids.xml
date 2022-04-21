@@ -114,7 +114,6 @@
 			<useLeatherFrom>Rat</useLeatherFrom>
 			<useMeatFrom>Rat</useMeatFrom>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -140,6 +139,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -283,7 +283,6 @@
 			<wildness>0.5</wildness>
 			<useLeatherFrom>Boomalope</useLeatherFrom>
 			<useMeatFrom>Boomalope</useMeatFrom>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -309,6 +308,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -425,7 +425,6 @@
 			<wildness>0.65</wildness>
 			<useLeatherFrom>Hare</useLeatherFrom>
 			<useMeatFrom>Hare</useMeatFrom>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -455,6 +454,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -596,6 +596,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -784,6 +785,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -918,7 +920,6 @@
 			<trainability>Advanced</trainability>
 			<wildness>0.85</wildness>
 			<nuzzleMtbHours>12</nuzzleMtbHours>
-			
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -943,6 +944,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="AnimalBehaviours.AnimalStatExtension">
@@ -1013,7 +1015,6 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Rodent - Humanoid -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Moleman</defName>
@@ -1034,7 +1035,6 @@
 				<power>6</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>right claw</label>
@@ -1044,7 +1044,6 @@
 				<power>6</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<capacities>
@@ -1053,7 +1052,6 @@
 				<power>5</power>
 				<cooldownTime>2.1</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				
 			</li>
 			<li>
 				<label>head</label>
@@ -1073,18 +1071,18 @@
 			</li>
 		</comps>
 		<race>
-			<body>QuadrupedAnimalWithPaws</body>			
+			<body>QuadrupedAnimalWithPaws</body>
 			<fleshType>GR_Normal</fleshType>
 			<baseBodySize>1.5</baseBodySize>
 			<baseHungerRate>0.1</baseHungerRate>
 			<baseHealthScale>1.5</baseHealthScale>
-			<foodType>OmnivoreAnimal</foodType>			
-			<gestationPeriodDays>8</gestationPeriodDays>		
+			<foodType>OmnivoreAnimal</foodType>
+			<gestationPeriodDays>8</gestationPeriodDays>
 			<trainability>Advanced</trainability>
-			<wildness>0.4</wildness>			
+			<wildness>0.4</wildness>
 			<useLeatherFrom>Rat</useLeatherFrom>
 			<useMeatFrom>Rat</useMeatFrom>
-			<herdMigrationAllowed>false</herdMigrationAllowed>			
+			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>
 				<li>
@@ -1110,6 +1108,7 @@
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 			<li>AnimalHumanoidHybrid</li>
 		</tradeTags>
 		<modExtensions>
