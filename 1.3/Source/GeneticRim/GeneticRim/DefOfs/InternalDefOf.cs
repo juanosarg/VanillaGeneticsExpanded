@@ -59,6 +59,7 @@ namespace GeneticRim
         public static ThingDef GR_Mansquirrel;
         public static ThingDef GR_Mancat;
 
+        public static PawnKindDef GR_FleshGrowth;
         public static PawnKindDef GR_ArchotechCentipede;
 
         public static HediffDef GR_AnimalControlHediff;

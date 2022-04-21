@@ -213,7 +213,7 @@
 		</modExtensions>
 	</PawnKindDef>
 	
-	<!-- Aberrant Fleshbeast -->
+	<!-- Flesh Monstrosity -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_FleshMonstrosity</defName>
 		<label>flesh monstrosity</label>
@@ -312,7 +312,102 @@
 		<modExtensions>
 			<li Class="GeneticRim.DefExtension_HybridFailure">
 				<failureMin>10</failureMin>
-				<failureMax>55</failureMax>
+				<failureMax>16</failureMax>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+	
+	<!-- Flesh Growth -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_FleshGrowth</defName>
+		<label>flesh growth</label>
+		<description>Something went terribly wrong. A huge and weird growth has spawned within the electrowomb, breaking it completely and spreading all around. This growth is a hatchery for small flies that can devour any living creature to the bone. It seems to be sensitive to daylight, but no one knows how far it can spread at night.</description>
+		<statBases>
+			<MoveSpeed>0</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<MarketValue>10</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>bite</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+
+		<comps>
+			<li Class="GeneticRim.CompProperties_SpawnFleshGrowths">
+				
+			</li>
+			
+		</comps>
+		<race>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<fleshType>GR_Insectoid</fleshType>			
+			<hasGenders>false</hasGenders>
+			<body>Snake</body>	  
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<wildness>0.99</wildness>
+			<baseBodySize>5</baseBodySize>
+			<baseHealthScale>13</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>			
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<foodType>CarnivoreAnimal</foodType>
+			<useMeatFrom>GR_AberrantFleshbeast</useMeatFrom>
+			<trainability>None</trainability>
+			<lifeStageAges>
+				
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>AnimalGeneticFailure</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>GR_FleshGrowth</defName>
+		<label>flesh growth</label>
+		<race>GR_FleshGrowth</race>
+		<combatPower>250</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Failures/Fleshgrowth/FleshgrowthA</texPath>
+					<drawSize>3.0</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_HybridFailure">
+				<failureMin>16</failureMin>
+				<failureMax>200</failureMax>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

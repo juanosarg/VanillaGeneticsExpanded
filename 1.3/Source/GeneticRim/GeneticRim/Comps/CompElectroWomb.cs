@@ -87,8 +87,10 @@ namespace GeneticRim
                         Pawn pawn = null;
                         if (failure) {
 
+                            
                             pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.failureResult, null, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
                                                                                          newborn: false, forceGenerateNewPawn: true));
+                            
                         }
                         else {
                             pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
@@ -129,10 +131,11 @@ namespace GeneticRim
                             compHybrid.quality = this.genoframe?.GetModExtension<DefExtension_Quality>()?.quality ?? QualityCategory.Awful;
 
                         }
+                        if (failureResult == InternalDefOf.GR_FleshGrowth) { this.parent.Destroy(); }
 
-                       
 
-                       
+
+
                     }
 
                 }

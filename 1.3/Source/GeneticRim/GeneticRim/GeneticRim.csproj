@@ -371,6 +371,7 @@
     <Compile Include="Comps\CompProperties\CompProperties_RandomHybridSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_ElectroWomb.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_SpawnFleshGrowths.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_StartCharged.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_TargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_TargetEffect_Extract.cs" />
@@ -378,6 +379,7 @@
     <Compile Include="Comps\CompRandomItemSpawner.cs" />
     <Compile Include="Comps\CompRegisterMechAntenna.cs" />
     <Compile Include="Comps\CompRegisterMechHybridWithAntenna.cs" />
+    <Compile Include="Comps\CompSpawnFleshGrowths.cs" />
     <Compile Include="Comps\CompStartCharged.cs" />
     <Compile Include="Comps\CompTargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
