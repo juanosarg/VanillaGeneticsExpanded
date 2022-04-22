@@ -99,8 +99,8 @@
 		<defName>GR_PackTacticsBuff</defName>
 		<label>pack tactics</label>
 		<description>This hybrid is collaborating with other nearby muffalowolves to bring down prey.</description>
-		 <hediffClass>HediffWithComps</hediffClass>
-		 <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>false</showRemainingTime>
@@ -149,8 +149,8 @@
 		<defName>GR_ResearchDriveBuff</defName>
 		<label>research drive</label>
 		<description>Being offered investigative insights.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; "My fellow scientist, have you considered rejecting humanity, and returning to monkey? Food for thought".</description>
-		 <hediffClass>HediffWithComps</hediffClass>
-		 <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
 		<comps>
 			<li Class="HediffCompProperties_Disappears">
 				<showRemainingTime>false</showRemainingTime>
@@ -867,11 +867,9 @@
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
 		<comps>
-			
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>-2</severityPerDayNotImmune>
 			</li>
-			
 		</comps>
 		<stages>
 			<li>
@@ -917,5 +915,55 @@
 				</capMods>
 			</li>
 		</stages>
+	</HediffDef>
+	<HediffDef ParentName="InjuryBase">
+		<defName>GR_DistortionHediff</defName>
+		<label>warping</label>
+		<description>This body part has been terribly warped by being exposed to a dangerous spatial distortion. Warping is very painful, and warped body parts are often lost.</description>
+		<displayWound>false</displayWound>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>tended</labelTendedWellInner>
+				<labelSolidTendedWell>tended</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.25</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>warped scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0175</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.009</averagePainPerSeverityPermanent>
+			<canMerge>true</canMerge>
+			<destroyedLabel>Lost to warping</destroyedLabel>
+		</injuryProps>
+	</HediffDef>
+	<HediffDef ParentName="InjuryBase">
+		<defName>GR_PermanentBurn</defName>
+		<label>permanent burn</label>
+		<description>A permanent burn scar that cannot be treated.</description>
+		<labelNoun>a permanent burn</labelNoun>
+		<comps>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.30</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>permanent burn</permanentLabel>
+				<becomePermanentChanceFactor>100</becomePermanentChanceFactor>
+			</li>
+			<li Class="AnimalBehaviours.HediffCompProperties_AutoPermanentInjury">
+        
+      </li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.10</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.05</averagePainPerSeverityPermanent>
+			<canMerge>true</canMerge>
+			<destroyedLabel>Burned off</destroyedLabel>
+			<destroyedOutLabel>Burned out</destroyedOutLabel>
+		</injuryProps>
 	</HediffDef>
 </Defs>

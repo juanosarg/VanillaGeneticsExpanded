@@ -1388,7 +1388,7 @@
 		<defName>GR_Mechahorse</defName>
 		<label>mecha-horse</label>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-		<description>todo.</description>
+		<description>More machine than horse, the mecha-horse has an agile frame covered by ablative panels. Though well-liked by riders for its speed and agility, it has a significant design flaw: it heats up considerably during extended travels, needing to periodically vent excess heated air generated on their internal machinery.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster, making the mecha-horse capable of using its "vent heated exhaust" ability to scorch enemies on the surrounding tiles. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.</description>
 		<statBases>
 			<MoveSpeed>7</MoveSpeed>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
@@ -1457,6 +1457,9 @@
 			</li>
 			<li Class="GeneticRim.CompProperties_HorseHybrid">
 				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>GR_VentHeatedExhaust</initialAbility>
 			</li>
 		</comps>
 		<tools>
@@ -1548,7 +1551,7 @@
 		<defName>GR_Mechamime</defName>
 		<label>mecha-mime</label>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-		<description>todo.</description>
+		<description>The ultimate violation of all ethical concerns in genetic engineering: a humanlike mechanoid creature with obvious malevolence. Created by warping humanoid genes into a dangerous Mime, and then further modifying it with self-replicating mechanites by using forgotten technology, the mecha-mime will need to be kept in a short leash, lest its IFF system goes haywire and decides to enact its very own judgement day.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt;Mechanoid hybrids are always created with a controller booster. The mecha-mime has lost the infiltration abilities of a regular mime, but in exchange it possesses a powerful spatial warping cannon that ignores enemy's armor. Mechanoid hybrids need very little food or rest, don't have psychic or toxic sensitivity, and have devastating ranged attacks. They have however high wildness, making them harder to keep tamed, and they will need a mechahybrid antenna to be built somewhere on the planet, or their IFF sensors will malfunction in 5 days. One antenna is needed for each five mech hybrids under the colony's control.\n\n&lt;color=#E5E54C&gt;Warning:&lt;/color&gt; A mecha-mime's IFF sensors will fail in only 2 days, instead of 5.</description>
 		<statBases>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 			<ComfyTemperatureMax>250</ComfyTemperatureMax>
@@ -1621,6 +1624,26 @@
 				<chanceFactor>0.2</chanceFactor>
 			</li>
 		</tools>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>1</accuracyShort>
+				<accuracyMedium>1</accuracyMedium>
+				<accuracyLong>1</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GR_Distortion</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<minRange>2</minRange>
+				<range>35</range>
+				<soundCast>GR_Singularity</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<label>spatial distortion</label>
+				<forcedMissRadius>2</forcedMissRadius>
+				<commonality>1</commonality>
+			</li>
+		</verbs>
 		<comps>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_VeryLowRest</hediffname>
@@ -1630,7 +1653,7 @@
 				<effect>false</effect>
 				<message>GR_IFFCoherence</message>
 				<manhunterButNotDie>true</manhunterButNotDie>
-				<timeToDieInTicks>300000</timeToDieInTicks>
+				<timeToDieInTicks>120000</timeToDieInTicks>
 				<expressTimeInPercentage>true</expressTimeInPercentage>
 			</li>
 			<li Class="GeneticRim.CompProperties_RegisterMechHybridWithAntenna">

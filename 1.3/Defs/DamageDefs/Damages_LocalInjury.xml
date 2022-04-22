@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<DamageDef ParentName="CutBase">
 		<defName>GR_GoForTheHead</defName>
 		<label>vicious slash</label>
@@ -16,7 +15,7 @@
 		<label>rabid slash</label>
 		<additionalHediffs>
 			<li>
-				<hediff>GR_RabidSlash</hediff>				
+				<hediff>GR_RabidSlash</hediff>
 			</li>
 		</additionalHediffs>
 	</DamageDef>
@@ -54,7 +53,6 @@
 		<additionalHediffs>
 			<li>
 				<hediff>GR_BloodFrenzy</hediff>
-				
 			</li>
 		</additionalHediffs>
 	</DamageDef>
@@ -80,7 +78,6 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	
 	<DamageDef ParentName="Bite">
 		<defName>GR_HairballProjectileDamage</defName>
 		<label>hairball</label>
@@ -173,5 +170,15 @@
 		<defaultDamage>95</defaultDamage>
 		<defaultStoppingPower>2.0</defaultStoppingPower>
 		<defaultArmorPenetration>1.30</defaultArmorPenetration>
+	</DamageDef>
+	<DamageDef>
+		<defName>GR_DistortionDamage</defName>
+		<label>warping</label>
+		<workerClass>DamageWorker_Frostbite</workerClass>
+		<externalViolence>false</externalViolence>
+		<deathMessage>{0} has succumbed to a warped body.</deathMessage>
+		<hediff>GR_DistortionHediff</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
 	</DamageDef>
 </Defs>

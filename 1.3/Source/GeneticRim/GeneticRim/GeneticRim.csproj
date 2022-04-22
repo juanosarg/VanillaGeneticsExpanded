@@ -350,6 +350,7 @@
     <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Comps\CompApplyAgeDiseases.cs" />
     <Compile Include="Comps\CompExperienceFromCaravan.cs" />
+    <Compile Include="Comps\CompFleshGrowth.cs" />
     <Compile Include="Comps\CompGeneticFailure.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
     <Compile Include="Comps\CompElectroWomb.cs" />
@@ -371,6 +372,7 @@
     <Compile Include="Comps\CompProperties\CompProperties_RandomHybridSpawner.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_Genomorpher.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_ElectroWomb.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_FleshGrowth.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_SpawnFleshGrowths.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_StartCharged.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_TargetableAnimalOrCorpse.cs" />
@@ -393,6 +395,7 @@
     <Compile Include="Harmony\ExecutionUtility_ExecutionInt.cs" />
     <Compile Include="Harmony\Thing_ButcherProducts.cs" />
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
+    <Compile Include="Projectiles\Projectile_Distortion.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Mansquirrel.cs" />

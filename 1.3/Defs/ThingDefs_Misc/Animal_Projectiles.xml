@@ -67,6 +67,31 @@
 			<explosionDelay>1</explosionDelay>
 		</projectile>
 	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="GR_BaseAnimalProjectile">
+		<defName>GR_Distortion</defName>
+		<label>spatial distortion</label>
+		<graphicData>
+			<texPath>Things/Projectile/GR_Singularity</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>4</drawSize>
+			
+		</graphicData>
+		<thingClass>GeneticRim.Projectile_Distortion</thingClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>GR_DistortionDamage</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<explosionRadius>1.1</explosionRadius>
+			<stoppingPower>2</stoppingPower>
+			<armorPenetrationBase>2</armorPenetrationBase>
+			<speed>20</speed>
+			<soundExplode>Interact_Ignite</soundExplode>
+			
+		</projectile>
+	</ThingDef>
 
 	<ThingDef ParentName="GR_BaseAnimalProjectile">
 		<defName>GR_SmokeBomb</defName>

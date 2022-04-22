@@ -39,6 +39,25 @@
 		</subSounds>
 	</SoundDef>
 	<SoundDef>
+		<defName>GR_Singularity</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<maxSimultaneous>10</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>GR_Singularity</clipFolderPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9652174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
 		<defName>GR_PoisonBreath</defName>
 		<context>MapOnly</context>
 		<eventNames/>

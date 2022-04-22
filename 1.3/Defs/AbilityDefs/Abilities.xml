@@ -123,6 +123,26 @@
 		</comps>
 	</AbilityDef>
 	<AbilityDef ParentName="GR_NoTargetAbilities">
+		<defName>GR_VentHeatedExhaust</defName>
+		<label>vent heated exhaust</label>
+		<description>Vents the heated gasses produced by this mechanoid hybrid's internal processes. This creates a wave of superheated ait that will affect the surrounding tiles. It will not affect the hybrid.</description>
+		<iconPath>ui/commands/GR_MechaBlast</iconPath>
+		<warmupStartSound>GR_Wick</warmupStartSound>
+		<verbProperties>
+			<range>1.9</range>
+		</verbProperties>
+		<comps>
+			<li Class="GeneticRim.CompProperties_Detonate">
+				<radius>1.9</radius>
+				<damageType>Bomb</damageType>
+				<thingCreated>GR_Filth_Fuel</thingCreated>
+				<thingCreatedChance>0</thingCreatedChance>
+				<damageUser>false</damageUser>
+				<damageAmount>65</damageAmount>
+			</li>
+		</comps>
+	</AbilityDef>
+	<AbilityDef ParentName="GR_NoTargetAbilities">
 		<defName>GR_DetonateAcid</defName>
 		<label>detonate acidic chemfuel</label>
 		<description>Remotely detonate the acidic chemfuel reservoirs of this creature. The animal will be affected and damaged by the resulting explosion.</description>

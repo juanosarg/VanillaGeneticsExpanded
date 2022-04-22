@@ -57,7 +57,7 @@
     <defName>GR_UwUTalkingToHumans</defName>
     <label>UwU pounce</label>
     <workerClass>InteractionWorker_Chitchat</workerClass>
-    <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+    <symbol>ui/commands/UwuPounce</symbol>
     <recipientThought>Chitchat</recipientThought>
     <logRulesInitiator>
       <rulesStrings>

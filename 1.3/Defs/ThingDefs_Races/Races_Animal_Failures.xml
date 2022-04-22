@@ -300,7 +300,7 @@
 		<label>flesh growth</label>
 		<description>Something went terribly wrong. A huge and weird growth has spawned within the electrowomb, breaking it completely and spreading all around. This growth is a hatchery for small flies that can devour any living creature to the bone. It seems to be sensitive to daylight, but no one knows how far it can spread at night.</description>
 		<statBases>
-			<MoveSpeed>0</MoveSpeed>
+			<MoveSpeed>0.1</MoveSpeed>
 			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
 			<MarketValue>10</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
@@ -382,5 +382,94 @@
 				<failureMax>200</failureMax>
 			</li>
 		</modExtensions>
+	</PawnKindDef>
+	<!-- Flesh Flies -->
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>GR_FleshFlies</defName>
+		<label>flesh flies</label>
+		<description>A swarm of small, deadly flies. Almost impossible to hit using rudimentary weapons, the ideal way of dealing with fleshflies is by using fire, to which they are highly susceptible.</description>
+		<statBases>
+			<MoveSpeed>0.5</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<MarketValue>10</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			
+		</statBases>
+		<tools>
+			<li>
+				<label>bite</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<comps>
+			<li Class="GeneticRim.CompProperties_GeneticFailure">
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_HighlyFlammable">
+				<hediffToInflict>GR_PermanentBurn</hediffToInflict>
+
+			</li>
+		</comps>
+		<race>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<fleshType>GR_Insectoid</fleshType>
+			<hasGenders>false</hasGenders>
+			<body>BeetleLike</body>
+			<canBePredatorPrey>false</canBePredatorPrey>
+			<wildness>0.99</wildness>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>25</baseHealthScale>
+			<lifeExpectancy>4</lifeExpectancy>
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<foodType>CarnivoreAnimal</foodType>
+			<useMeatFrom>GR_AberrantFleshbeast</useMeatFrom>
+			<trainability>None</trainability>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+					<soundDeath>Pawn_Megascarab_Death</soundDeath>
+					<soundCall>Pawn_Megascarab_Call</soundCall>
+					<soundAngry>Pawn_Megascarab_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
+			<li>AnimalGeneticFailure</li>
+		</tradeTags>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_FleshFlies</defName>
+		<label>flesh flies</label>
+		<race>GR_FleshFlies</race>
+		<combatPower>250</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Failures/Fleshflies/FleshFliesA</texPath>
+					<drawSize>3.0</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+	
 	</PawnKindDef>
 </Defs>

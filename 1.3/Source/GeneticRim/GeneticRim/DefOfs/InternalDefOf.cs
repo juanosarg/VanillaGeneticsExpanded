@@ -58,9 +58,13 @@ namespace GeneticRim
         public static ThingDef GR_Manwolf;
         public static ThingDef GR_Mansquirrel;
         public static ThingDef GR_Mancat;
+        public static ThingDef GR_ElectroWomb;
+        public static ThingDef GR_LargeElectroWomb;
+        public static ThingDef GR_FleshGrowth_Building;
 
         public static PawnKindDef GR_FleshGrowth;
         public static PawnKindDef GR_ArchotechCentipede;
+        public static PawnKindDef GR_FleshFlies;
 
         public static HediffDef GR_AnimalControlHediff;
         public static HediffDef GR_ExtractedBrain;
