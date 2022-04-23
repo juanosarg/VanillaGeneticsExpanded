@@ -62,7 +62,7 @@
 				</angle>
 			</li>
 		</children>
-	</EffecterDef>
+	</EffecterDef> 
 	
 	 <ThingDef ParentName="MoteBase">
     <defName>GR_FleshFliesGas</defName>
