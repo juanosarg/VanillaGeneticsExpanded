@@ -966,4 +966,30 @@
 			<destroyedOutLabel>Burned out</destroyedOutLabel>
 		</injuryProps>
 	</HediffDef>
+	<HediffDef>
+		<defName>GR_HighlyFlammable</defName>
+		<label>highly flammable</label>
+		<description>This creature will die quickly if set on fire.</description>
+		<makesSickThought>false</makesSickThought>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(255,95,95)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>GR_FleshFliesEffecter</stateEffecter>
+				<severityIndices>
+					<min>0</min>
+					<max>1</max>
+				</severityIndices>
+			</li>
+			
+		</comps>
+		<stages>
+			<li>
+				
+			</li>
+		</stages>
+	</HediffDef>
 </Defs>

@@ -955,6 +955,7 @@
 			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<wildness>0.36</wildness>
+			<roamMtbDays>7</roamMtbDays>
 			<mateMtbHours>8</mateMtbHours>
 			<lifeExpectancy>4</lifeExpectancy>
 			<lifeStageAges>

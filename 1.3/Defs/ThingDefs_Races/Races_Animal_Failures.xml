@@ -394,6 +394,9 @@
 			<MarketValue>10</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
+			<ArmorRating_Heat>-100</ArmorRating_Heat>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
 			
 		</statBases>
 		<tools>
@@ -415,6 +418,10 @@
 				<hediffToInflict>GR_PermanentBurn</hediffToInflict>
 
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_HighlyFlammable</hediffname>
+			</li>
+			
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -424,7 +431,7 @@
 			<canBePredatorPrey>false</canBePredatorPrey>
 			<wildness>0.99</wildness>
 			<baseBodySize>1</baseBodySize>
-			<baseHealthScale>25</baseHealthScale>
+			<baseHealthScale>3</baseHealthScale>
 			<lifeExpectancy>4</lifeExpectancy>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -461,7 +468,7 @@
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/Failures/Fleshflies/FleshFliesA</texPath>
+					<texPath>Things/Pawn/Animal/Special/GR_Transparent</texPath>
 					<drawSize>3.0</drawSize>
 					<shadowData>
 						<volume>(0.8, 0.6, 0.6)</volume>
