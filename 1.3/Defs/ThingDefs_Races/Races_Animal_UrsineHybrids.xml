@@ -1210,7 +1210,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Bearman</defName>
 		<label>bearman</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
+		<description>A terrifying combination of the raw power of a bear and the intellect of a human, resulting in a creature that loves to abuse its prey. Not quite as strong due to the strange hand-paw shapes, but very energetic and eager to get their victims to catch these hands.\n\nAn ursine hybrid with recessive humanoid genes. Very high intellect but comparatively fragile compared to similar hybrids. Their bodies contain oversized and overstimulated adrenal glands that are found just under the surface of the skin, which can be regularly extracted for a substance analogous to Go-Juice.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts.</description>
 		<statBases>
 			<MoveSpeed>4.0</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>

@@ -1019,7 +1019,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Moleman</defName>
 		<label>moleman</label>
-		<description>todo.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Molemen will periodically obey commands to mine. This will also work with the Quarry mod.</description>
+		<description>A hulking monstrosity that is genuinely caring for those around them, taking great joy and actual personal pleasure through working diligently and caring for those it considers friends and family. Evidently, it was bred specifically by megacorporations to work in dangerous mines, because human greed never changes.\n\nA rodent hybrid with recessive humanoid genes. Very low hunger rate and very intelligent, these gentle giants enjoy digging with their hands. They will sometimes work mining orders given the chance but they’re very slow due to their bulk.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Molemen will periodically obey commands to mine. This will also work with the Quarry mod.</description>
 		<statBases>
 			<MoveSpeed>2</MoveSpeed>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>

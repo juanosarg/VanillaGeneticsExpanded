@@ -1071,7 +1071,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_Turkeyman</defName>
 		<label>turkeyman</label>
-		<description>.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Turkeymen periodically flick switches around the colony (any building that can be toggled on / off by a colonist).</description>
+		<description>A cheeky little shit that likes to go around and play with switches, to satisfy their curiosity much like how an ignorant child would. Perhaps a little too smart for their own good. Their behaviour is similar to failed service animals that learn how to operate household items without restraint.\n\nAn avian hybrid with recessive humanoid genes. Surprisingly hardy, quick and very intelligent, these creatures make for a particularly filthy and hungry egg-layer. Their little wings are quite dextrous and can be used to flick switches.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Humanoid hybrids will periodically engage other colonists in conversation, talking about a variety of topics. This increases the social recreation needs of those they interact with by 10% (subject to diminishing returns like all joy types). If using Ideology, humanoid hybrids are subject to precepts. Turkeymen periodically flick switches around the colony (any building that can be toggled on / off by a colonist).</description>
 		<statBases>
 			<MoveSpeed>3.5</MoveSpeed>
 			<ComfyTemperatureMin>-8</ComfyTemperatureMin>
