@@ -90,11 +90,19 @@ namespace GeneticRim
                             
                             pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.failureResult, null, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
                                                                                          newborn: false, forceGenerateNewPawn: true));
-                            
+                            if(!GeneticRim_Mod.settings.GR_DisableWombAlerts)
+                            {
+                                Messages.Message("GR_ElectroWomb_Finished_Failure".Translate(), this.parent, MessageTypeDefOf.NegativeEvent, true);
+                            }
+
                         }
                         else {
                             pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(this.growingResult, Faction.OfPlayer, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
                                                                                       newborn: false, forceGenerateNewPawn: true));
+                            if (!GeneticRim_Mod.settings.GR_DisableWombAlerts)
+                            {
+                                Messages.Message("GR_ElectroWomb_Finished".Translate(), this.parent, MessageTypeDefOf.PositiveEvent, true);
+                            }
                         }
 
                         this.progress = 0;

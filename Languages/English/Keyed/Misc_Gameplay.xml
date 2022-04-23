@@ -68,8 +68,11 @@
 	<GR_ChooseNoBooster>Use no booster</GR_ChooseNoBooster>
 	<GR_Genomorpher_Ingredients>Ingredients: {0}, {1}, {2}, {3}</GR_Genomorpher_Ingredients>
 	<GR_Genomorpher_Ingredients_NoFrame>Ingredients: {0}, {1}, {2}</GR_Genomorpher_Ingredients_NoFrame>
+	<GR_Genomorpher_Finished>A growth cell has been produced</GR_Genomorpher_Finished>
 	<!-- ElectroWomb -->
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>
+	<GR_ElectroWomb_Finished>A creature has hatched from an electrowomb</GR_ElectroWomb_Finished>
+	<GR_ElectroWomb_Finished_Failure>A creature has hatched from an electrowomb... but something went terribly wrong!</GR_ElectroWomb_Finished_Failure>
 	<!-- DNA Storage -->
 	<GR_SelectGenomeToHarvest>Select genome to harvest</GR_SelectGenomeToHarvest>
 	<GR_SelectGenomeToHarvestDesc>Select genome to harvest</GR_SelectGenomeToHarvestDesc>
@@ -181,4 +184,9 @@
 	<GR_MakeAllHybridsFertile>Make all hybrids fertile</GR_MakeAllHybridsFertile>
 	<GR_MakeAllHybridsFertileTooltip>Makes all hybrids popping up from an electrowomb be fertile, and thus able to breed, without needing a fertility unlocker booster. Bear in mind this will still not work on insectoid hybrids, as eusocial insects aren't ever fertile.</GR_MakeAllHybridsFertileTooltip>
 	<GR_Reset>Reset</GR_Reset>
+	<GR_DisableGrowthCellAlerts>Disable growth cell alerts</GR_DisableGrowthCellAlerts>
+	<GR_DisableGrowthCellAlertsTooltip>Disable the pop up message that appears when a growth cell is finished by a genomorpher</GR_DisableGrowthCellAlertsTooltip>
+	<GR_DisableWombAlerts>Disable electrowomb alerts</GR_DisableWombAlerts>
+	<GR_DisableWombAlertsTooltip>Disable the pop up message that appears when a creature finishes growing in an electrowomb</GR_DisableWombAlertsTooltip>
+	
 </LanguageData>

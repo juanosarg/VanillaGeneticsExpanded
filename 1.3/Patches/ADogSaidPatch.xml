@@ -110,6 +110,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<!-- Organ installing recipes == should be most animals -->
@@ -218,6 +235,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -325,6 +359,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -432,6 +483,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -539,6 +607,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -646,6 +731,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -753,6 +855,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -860,6 +979,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -967,6 +1103,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -1067,6 +1220,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -1174,6 +1344,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -1281,6 +1468,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<!-- Leg installing recipes == should be most animals -->
@@ -1389,6 +1593,23 @@
 						<li>GR_Spiderhorse</li>
 						<li>GR_Hurseman</li>
 						<li>GR_Thrumhorse</li>
+						<li>GR_Lizardman</li>
+						<li>GR_Moleman</li>
+						<li>GR_Bearman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Booman</li>
+						<li>GR_Dogman</li>
+						<li>GR_Thrumboman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manscarab</li>
+						<li>GR_Muffaloman</li>
+						<li>GR_Manbear</li>
+						<li>GR_Manalope</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manffalo</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 				<!-- Tail installing recipe == Only for animal with tail-->
@@ -1434,9 +1655,15 @@
 						<li>GR_Catwolf</li>
 						<li>GR_Bearhorse</li>
 						<li>GR_Cathorse</li>
-						<li>GR_Wolfhorse</li>						
+						<li>GR_Wolfhorse</li>
 						<li>GR_Mechacat</li>
-					
+						<li>GR_Lizardman</li>
+						<li>GR_Turkeyman</li>
+						<li>GR_Catman</li>
+						<li>GR_Manchicken</li>
+						<li>GR_Manwolf</li>
+						<li>GR_Mancat</li>
+						<li>GR_Mansquirrel</li>
 					</value>
 				</li>
 			</operations>

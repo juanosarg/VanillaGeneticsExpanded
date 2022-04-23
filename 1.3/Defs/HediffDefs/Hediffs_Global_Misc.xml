@@ -975,14 +975,11 @@
 		<isBad>false</isBad>
 		<defaultLabelColor>(255,95,95)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
-		<initialSeverity>0</initialSeverity>
+		
 		<comps>
 			<li Class="HediffCompProperties_Effecter">
 				<stateEffecter>GR_FleshFliesEffecter</stateEffecter>
-				<severityIndices>
-					<min>0</min>
-					<max>1</max>
-				</severityIndices>
+				
 			</li>
 			
 		</comps>

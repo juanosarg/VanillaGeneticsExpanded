@@ -33,8 +33,11 @@ namespace GeneticRim
         public bool GR_DisableHybridRaids = false;
         public bool GR_MakeAllHybridsFertile = false;
         public bool GR_MakeAllHybridsControllable = false;
+        public bool GR_DisableGrowthCellAlerts = false;
+        public bool GR_DisableWombAlerts = false;
 
 
+        private static Vector2 scrollPosition = Vector2.zero;
 
 
 
@@ -57,6 +60,8 @@ namespace GeneticRim
             Scribe_Values.Look(ref GR_DisableHybridRaids, "GR_DisableHybridRaids", false);
             Scribe_Values.Look(ref GR_MakeAllHybridsFertile, "GR_MakeAllHybridsFertile", false);
             Scribe_Values.Look(ref GR_MakeAllHybridsControllable, "GR_MakeAllHybridsControllable", false);
+            Scribe_Values.Look(ref GR_DisableGrowthCellAlerts, "GR_DisableGrowthCellAlerts", false);
+            Scribe_Values.Look(ref GR_DisableWombAlerts, "GR_DisableWombAlerts", false);
 
 
 
@@ -68,14 +73,38 @@ namespace GeneticRim
         {
             Listing_Standard listingStandard = new Listing_Standard();
 
+            var scrollContainer = inRect.ContractedBy(10);
+            scrollContainer.height -= listingStandard.CurHeight;
+            scrollContainer.y += listingStandard.CurHeight;
+            Widgets.DrawBoxSolid(scrollContainer, Color.grey);
+            var innerContainer = scrollContainer.ContractedBy(1);
+            Widgets.DrawBoxSolid(innerContainer, new ColorInt(42, 43, 44).ToColor);
+            var frameRect = innerContainer.ContractedBy(5);
+            frameRect.y += 15;
+            frameRect.height -= 15;
+            var contentRect = frameRect;
+            contentRect.x = 0;
+            contentRect.y = 0;
+            contentRect.width -= 20;
 
-            listingStandard.Begin(inRect);
+
+            
+
+            contentRect.height = 800f;
+
+           
+            Widgets.BeginScrollView(frameRect, ref scrollPosition, contentRect, true);
+            listingStandard.Begin(contentRect.AtZero());
+
+
+            //listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("GR_DisableOldAgeDiseases".Translate(), ref GR_DisableOldAgeDiseases, "GR_DisableOldAgeDiseasesTooltip".Translate());
             listingStandard.CheckboxLabeled("GR_DisableHybridRaids".Translate(), ref GR_DisableHybridRaids, "GR_DisableHybridRaidsTooltip".Translate());
             listingStandard.CheckboxLabeled("GR_MakeAllHybridsFertile".Translate(), ref GR_MakeAllHybridsFertile, "GR_MakeAllHybridsFertileTooltip".Translate());
             listingStandard.CheckboxLabeled("GR_MakeAllHybridsControllable".Translate(), ref GR_MakeAllHybridsControllable, "GR_MakeAllHybridsControllableTooltip".Translate());
-
-
+            listingStandard.CheckboxLabeled("GR_DisableGrowthCellAlerts".Translate(), ref GR_DisableGrowthCellAlerts, "GR_DisableGrowthCellAlertsTooltip".Translate());
+            listingStandard.CheckboxLabeled("GR_DisableWombAlerts".Translate(), ref GR_DisableWombAlerts, "GR_DisableWombAlertsTooltip".Translate());
+            listingStandard.GapLine();
             var GenomorpherSpeedMultiplierLabel = listingStandard.LabelPlusButton("GR_GenomorpherSpeedMultiplier".Translate() + ": " + GR_GenomorpherSpeedMultiplier, "GR_GenomorpherSpeedMultiplierTooltip".Translate());
             GR_GenomorpherSpeedMultiplier = (float)Math.Round(listingStandard.Slider(GR_GenomorpherSpeedMultiplier, 0.1f, 2f), 2);
             if (listingStandard.Settings_Button("GR_Reset".Translate(), new Rect(0f, GenomorpherSpeedMultiplierLabel.position.y + 35, 180f, 29f)))
@@ -113,8 +142,8 @@ namespace GeneticRim
 
 
             listingStandard.End();
+            Widgets.EndScrollView();
 
-           
             base.Write();
 
         }

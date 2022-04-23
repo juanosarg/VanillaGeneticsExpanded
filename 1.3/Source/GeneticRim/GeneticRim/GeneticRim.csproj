@@ -350,7 +350,6 @@
     <Compile Include="Abilities\CompDetonate.cs" />
     <Compile Include="Comps\CompApplyAgeDiseases.cs" />
     <Compile Include="Comps\CompExperienceFromCaravan.cs" />
-    <Compile Include="Comps\CompFleshFlies.cs" />
     <Compile Include="Comps\CompFleshGrowth.cs" />
     <Compile Include="Comps\CompGeneticFailure.cs" />
     <Compile Include="Comps\CompGenomorpher.cs" />
@@ -363,7 +362,6 @@
     <Compile Include="Abilities\Properties\CompProperties_Detonate.cs" />
     <Compile Include="Comps\CompDieUnlessReset.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_ExperienceFromCaravan.cs" />
-    <Compile Include="Comps\CompProperties\CompProperties_FleshFlies.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_GeneticFailure.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_HorseHybrid.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_HumanoidHybrid.cs" />

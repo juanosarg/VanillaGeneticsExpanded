@@ -91,6 +91,10 @@ namespace GeneticRim
                         this.duration = -1;
                         this.progress = -1f;
                         this.growthCell = null;
+                        if (!GeneticRim_Mod.settings.GR_DisableGrowthCellAlerts)
+                        {
+                            Messages.Message("GR_Genomorpher_Finished".Translate(), this.parent,MessageTypeDefOf.PositiveEvent, true);
+                        }
                     }
 
                 }

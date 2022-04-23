@@ -54,7 +54,7 @@ namespace GeneticRim
         {
             base.CompTick();
 
-            if (this.parent.IsHashIntervalTick(2500))
+            if (this.parent.IsHashIntervalTick(7500))
             {
 
                 float num = this.parent.Map.glowGrid.GameGlowAt(this.parent.Position, false);
@@ -69,33 +69,53 @@ namespace GeneticRim
                     {
                         current = rect.Cells.RandomElement();
                     }
-                    Room room = current.GetRoom(this.parent.Map);
-                    if (current.InBounds(parent.Map) && room?.OutdoorsForWork == false)
+                    bool buildingFound = false;
+                    List<Thing> list = parent.Map.thingGrid.ThingsListAt(current);
+                    for (int i = 0; i < list.Count; i++)
                     {
-
-                        Thing thing = ThingMaker.MakeThing(InternalDefOf.GR_FleshGrowth_Building, null);
-                        thing.Rotation = Rot4.North;
-                        thing.Position = current;
-
-                        thing.SpawnSetup(parent.Map, false);
-
-
+                        if (list[i].def == InternalDefOf.GR_FleshGrowth_Building )
+                        {
+                            buildingFound = true;
+                        }
                     }
+
+
+                    if (!buildingFound) {
+                        Room room = current.GetRoom(this.parent.Map);
+                        if (current.InBounds(parent.Map) && room?.OutdoorsForWork == false)
+                        {
+
+                            Thing thing = ThingMaker.MakeThing(InternalDefOf.GR_FleshGrowth_Building, null);
+                            thing.Rotation = Rot4.North;
+                            thing.Position = current;
+
+                            thing.SpawnSetup(parent.Map, false);
+
+
+                        }
+                    }
+                    
 
                 }
 
 
             }
-            if (this.parent.IsHashIntervalTick(10000)) {
+            if (this.parent.IsHashIntervalTick(30000))
+            {
 
                 Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(InternalDefOf.GR_FleshFlies, null, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
                                                                                            newborn: false, forceGenerateNewPawn: true));
                 IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 1f);
 
-                GenSpawn.Spawn(pawn, near, this.parent.Map);
-                                
-                pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
-                pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
+                if (near.InBounds(parent.Map))
+                {
+                    GenSpawn.Spawn(pawn, near, this.parent.Map);
+
+                    pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
+                    pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
+                }
+
+
 
             }
 
@@ -103,9 +123,9 @@ namespace GeneticRim
 
         public override string CompInspectStringExtra()
         {
-            
-                return "GR_FleshGrowth".Translate();
-            
+
+            return "GR_FleshGrowth".Translate();
+
         }
     }
 

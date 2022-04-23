@@ -296,7 +296,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
-			<li>Waist</li> 
+			<li>Sternum</li> 
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_MuffaloMammaries</addsHediff>
 	</RecipeDef>

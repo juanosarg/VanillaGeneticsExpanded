@@ -27,6 +27,7 @@
 			<texPath>Things/Pawn/Animal/Failures/Fleshgrowth</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<drawSize>(2,2)</drawSize>
+			 <onGroundRandomRotateAngle>50</onGroundRandomRotateAngle>
 		</graphicData>
 	</ThingDef>
 </Defs>

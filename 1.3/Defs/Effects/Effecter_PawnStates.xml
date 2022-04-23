@@ -49,12 +49,12 @@
 					<min>3</min>
 					<max>3</max>
 				</scale>
-				<chancePerTick>0.05</chancePerTick>
+				<chancePerTick>0.025</chancePerTick>
 				<positionRadius>0.3</positionRadius>
 				<moteDef>GR_FleshFliesGas</moteDef>
 				<speed>
-					<min>0.18</min>
-					<max>0.18</max>
+					<min>0.25</min>
+					<max>0.3</max>
 				</speed>
 				<angle>
 					<min>10</min>
@@ -70,14 +70,16 @@
 	
     <graphicData>
 	<texPath>Things/Pawn/Animal/Failures/Fleshflies/FleshfliesA</texPath>
-      <drawSize>3</drawSize>
+      <drawSize>1</drawSize>
 	 
     </graphicData>
+	<thingClass>MoteThrownAttached</thingClass>
+		<altitudeLayer>MetaOverlays</altitudeLayer>
     <mote>
 			<fadeInTime>0.50</fadeInTime>
 			<solidTime>1.5</solidTime>
 			<fadeOutTime>2</fadeOutTime>
-			
+			<attachedDrawOffset>(0.2, 0, 0.2)</attachedDrawOffset>
 		</mote>
   </ThingDef>
   

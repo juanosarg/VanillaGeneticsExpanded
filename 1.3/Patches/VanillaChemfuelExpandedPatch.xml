@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Chemfuel Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_ParagonBoomalope"]/comps/li[@Class="AnimalBehaviours.CompProperties_AnimalProduct"]/resourceDef</xpath>
+					<value>
+						<resourceDef>VCHE_Deepchem</resourceDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_Boomabear"]/comps/li[@Class="AnimalBehaviours.CompProperties_AnimalProduct"]/resourceDef</xpath>
+					<value>
+						<resourceDef>VCHE_Deepchem</resourceDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_Boomffalo"]/comps/li[@Class="AnimalBehaviours.CompProperties_AnimalProduct"]/resourceDef</xpath>
+					<value>
+						<resourceDef>VCHE_Deepchem</resourceDef>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_Boomcat"]/butcherProducts</xpath>
+					<value>
+						<butcherProducts>
+							<VCHE_Deepchem>10</VCHE_Deepchem>
+						</butcherProducts>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName= "GR_Boomcat"]/comps/li[@Class="AnimalBehaviours.CompProperties_AnimalProduct"]/resourceDef</xpath>
+					<value>
+						<resourceDef>VCHE_Deepchem</resourceDef>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>/Defs/RecipeDef[defName= "GR_CompressedChemfuelToFuel"]</xpath>
+					
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
