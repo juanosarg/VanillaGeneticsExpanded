@@ -20,7 +20,7 @@
 						<li>RB_BeeswaxCategory</li>
 					</categories>
 				</filter>
-				<count>40</count>
+				<count>10</count>
 			</li>
 			<li>
 				<filter>
@@ -28,15 +28,15 @@
 						<li>RB_Honeys</li>
 					</categories>
 				</filter>
-				<count>40</count>
+				<count>20</count>
 			</li>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>GR_OrganicPulp</li>
+						<li>GR_GenoframeAwful</li>
 					</thingDefs>
 				</filter>
-				<count>5</count>
+				<count>1</count>
 			</li>
 
 		</ingredients>
@@ -47,7 +47,7 @@
 				<li>RB_Honeys</li>
 			</categories>
 			<thingDefs>
-				<li>GR_OrganicPulp</li>
+				<li>GR_GenoframeAwful</li>
 
 			</thingDefs>
 		</fixedIngredientFilter>

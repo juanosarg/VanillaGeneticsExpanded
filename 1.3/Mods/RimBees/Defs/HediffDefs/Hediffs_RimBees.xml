@@ -407,7 +407,7 @@
 	<maxSeverity>1.0</maxSeverity>
     <comps>
     
-	  <li Class="RimBeesGeneticPatch.HediffCompProperties_WhileHavingThoughts">
+	  <li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
         <thoughtDefs>
 			<li>RB_AteGeneticHoney</li>
 			<li>RB_AteGeneticHoneyIngredient</li>

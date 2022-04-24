@@ -18,7 +18,7 @@
     </graphicData>	
     <comps>
       <li Class="CompProperties_Hatcher">
-        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherDaystoHatch>13</hatcherDaystoHatch>
         <hatcherPawn>GR_BeeHybrid_Chickenbee</hatcherPawn>
       </li>
     </comps>

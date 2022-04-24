@@ -27,11 +27,21 @@
 
 					</thingDefs>
 				</filter>
-				<count>50</count>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>GR_Genoframes</li>
+					</categories>
+				</filter>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
-
+			<categories>
+				<li>GR_Genoframes</li>
+			</categories>
 			<thingDefs>
 				
 				<li>WoodLog</li>

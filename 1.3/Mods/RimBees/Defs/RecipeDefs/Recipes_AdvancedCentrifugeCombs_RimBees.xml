@@ -6,8 +6,8 @@
 	<RecipeDef>
 		<defName>RB_CentrifugeOrganicCombBulk</defName>
 		<label>bulk extract from organic comb</label>
-		<description>Centrifuges an organic comb to bulk extract honey, wax and organic pulp</description>
-		<jobString>Extracting honey, wax and organic pulp</jobString>
+		<description>Centrifuges an organic comb to bulk extract honey, wax and template genomes</description>
+		<jobString>Extracting honey, wax and template genomes</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
@@ -35,7 +35,7 @@
 		<products>
 			<RB_BaseHoney>50</RB_BaseHoney>
 			<RB_Beeswax>50</RB_Beeswax>
-			<GR_OrganicPulp>10</GR_OrganicPulp>
+			<GR_TemplateGenetic>10</GR_TemplateGenetic>
 		</products>
 		<skillRequirements>
 			<Crafting>8</Crafting>
@@ -74,7 +74,7 @@
 		<products>
 			<RB_GeneticHoney>50</RB_GeneticHoney>
 			<RB_Genewax>50</RB_Genewax>
-			<GR_BearGenetic>10</GR_BearGenetic>
+			<GR_UrsineGenetic>10</GR_UrsineGenetic>
 		</products>
 		<skillRequirements>
 			<Crafting>10</Crafting>
@@ -115,7 +115,7 @@
 		<products>
 			<RB_BeeEggs>70</RB_BeeEggs>
 			<RB_Genewax>50</RB_Genewax>
-			<GR_ChickenGenetic>10</GR_ChickenGenetic>
+			<GR_AvianGenetic>10</GR_AvianGenetic>
 		</products>
 		<skillRequirements>
 			<Crafting>10</Crafting>
@@ -232,14 +232,14 @@
 		<products>
 			<RB_GeneticHoney>50</RB_GeneticHoney>
 			<RB_Genewax>50</RB_Genewax>
-			<GR_WolfGenetic>10</GR_WolfGenetic>
+			<GR_CanineGenetic>10</GR_CanineGenetic>
 		</products>
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>
 	</RecipeDef>
 	
-		<RecipeDef>
+<!--		<RecipeDef>
 		<defName>RB_CentrifugeMechaCombBulk</defName>
 		<label>bulk extract from mecha comb</label>
 		<description>Centrifuges a mecha comb to bulk extract genetic honey, genewax and mechanoid active components</description>
@@ -276,7 +276,7 @@
 		<skillRequirements>
 			<Crafting>15</Crafting>
 		</skillRequirements>
-	</RecipeDef>
+	</RecipeDef>-->
 	<RecipeDef>
 		<defName>RB_CentrifugeMegaspideryCombBulk</defName>
 		<label>bulk extract from megaspidery comb</label>
@@ -425,7 +425,7 @@
 		<products>
 			<RB_GeneticHoney>50</RB_GeneticHoney>
 			<RB_Genewax>50</RB_Genewax>
-			<GR_ReptilianGenetic>10</GR_ReptilianGenetic>
+			<GR_ReptileGenetic>10</GR_ReptileGenetic>
 		</products>
 		<skillRequirements>
 			<Crafting>10</Crafting>

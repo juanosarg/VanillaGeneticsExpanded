@@ -5,8 +5,8 @@
 	<RecipeDef>
 		<defName>RB_CentrifugeOrganicComb</defName>
 		<label>extract from organic comb</label>
-		<description>Centrifuges an organic comb to extract honey, wax and organic pulp</description>
-		<jobString>Extracting honey, wax and organic pulp</jobString>
+		<description>Centrifuges an organic comb to extract honey, wax and template genomes</description>
+		<jobString>Extracting honey, wax and template genomes</jobString>
 		<effectWorking>Cremate</effectWorking>
 		<soundWorking>Recipe_Cremate</soundWorking>
 		<workAmount>500</workAmount>
@@ -261,7 +261,7 @@
 		</skillRequirements>
 	</RecipeDef>
 	
-	<RecipeDef>
+<!--	<RecipeDef>
 		<defName>RB_CentrifugeMechaComb</defName>
 		<label>extract from mecha comb</label>
 		<description>Centrifuges a hound comb to extract genetic honey, genewax and mechanoid active components</description>
@@ -296,7 +296,7 @@
 		<skillRequirements>
 			<Crafting>10</Crafting>
 		</skillRequirements>
-	</RecipeDef>
+	</RecipeDef>-->
 	
 	<RecipeDef>
 		<defName>RB_CentrifugeMegaspideryComb</defName>

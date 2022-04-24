@@ -57,13 +57,13 @@
 		<beeQueenTag>RB_Hybernating_Queen_Tag</beeQueenTag>
 	</RimBees.BeeListDef>
 	
-	<RimBees.BeeListDef>
+	<!--<RimBees.BeeListDef>
 		<defName>RB_MechaBeeList</defName>
 		<beeDroneDef>RB_Bee_Mecha_Drone</beeDroneDef>
 		<beeDroneTag>RB_Mecha_Drone_Tag</beeDroneTag>
 		<beeQueenDef>RB_Bee_Mecha_Queen</beeQueenDef>
 		<beeQueenTag>RB_Mecha_Queen_Tag</beeQueenTag>
-	</RimBees.BeeListDef>
+	</RimBees.BeeListDef>-->
 	
 	<RimBees.BeeListDef>
 		<defName>RB_MegaspideryBeeList</defName>

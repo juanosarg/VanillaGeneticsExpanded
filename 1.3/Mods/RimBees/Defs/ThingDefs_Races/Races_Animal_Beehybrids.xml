@@ -1,19 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
 	<!-- Bear -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Bearbee</defName>
-		<label>bearbee</label>	  
-		
+		<label>bearbee</label>
 		<description>A Bear / Bee hybrid. This huge bee hybrid is fiercely agressive and territorial. It will act as a very powerful attack animal with venomous attacks if properly trained.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. They also have a very nasty venomous sting. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-45</ComfyTemperatureMin>
 			<MarketValue>450</MarketValue>
+			<FilthRate>4</FilthRate>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -23,7 +20,6 @@
 				<power>12</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -34,8 +30,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<capacities>
@@ -45,24 +39,20 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Hybernating_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>RB_BeeHoneyCombProduction</customResourceString>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
 
+			</li>
 		</comps>
-
 		<race>
-
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -80,7 +70,7 @@
 			<meatLabel>bee hybrid meat</meatLabel>
 			<leatherDef>RB_Bee_Leather</leatherDef>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>35</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -93,39 +83,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Bearbee</defName>
 		<label>bearbee</label>
-
 		<race>GR_BeeHybrid_Bearbee</race>
 		<combatPower>150</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Bear/RB_Bearbee</texPath>
 					<drawSize>1.5</drawSize>
@@ -158,29 +150,30 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_UrsineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Boomalope -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Boombee</defName>
-		<label>boombee</label>	  
-		
+		<label>boombee</label>
 		<description>A Boomalope / Bee hybrid. This bee hybrid is covered in chemfuel pustules and it is highly unstable.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. The boombee injects chemfuel with its stinger, instead of venom, which is as painful as it sounds. It will also explode in a cloud of bees when it dies, which is incredibly stupid from a scientific standpoint, but it is cool, so meh. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>2</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>350</MarketValue>
+			<FilthRate>4</FilthRate>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -190,7 +183,6 @@
 				<power>6</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -201,8 +193,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<capacities>
@@ -212,24 +202,21 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-		
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Exploding_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>RB_BeeHoneyCombProduction</customResourceString>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
 
+			</li>
 		</comps>
-
 		<race>
-			<deathActionWorkerClass>RimBeesGeneticPatch.DeathActionWorker_BeeExplosion</deathActionWorkerClass>
-			
+			<deathActionWorkerClass>GeneticRim.DeathActionWorker_BeeExplosion</deathActionWorkerClass>
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>false</predator>
@@ -247,7 +234,7 @@
 			<useMeatFrom>GR_BeeHybrid_Bearbee</useMeatFrom>
 			<leatherDef>RB_Bee_Leather</leatherDef>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>24</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -260,39 +247,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Boombee</defName>
 		<label>boombee</label>
-
 		<race>GR_BeeHybrid_Boombee</race>
 		<combatPower>100</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Boomalope/RB_Boombee</texPath>
 					<drawSize>1</drawSize>
@@ -325,29 +314,30 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_BoomalopeGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Cat -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Catbee</defName>
-		<label>catbee</label>	  
-		
+		<label>catbee</label>
 		<description>A Cat / Bee hybrid. The agile catbee is an affectionate pet that will also sting your enemies to death.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. The catbee has a powerful venomous sting that makes its prey blind for a while. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>250</MarketValue>
+			<FilthRate>2</FilthRate>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -357,7 +347,6 @@
 				<power>6</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -368,8 +357,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<capacities>
@@ -379,12 +366,9 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Purring_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
@@ -395,11 +379,11 @@
 				<hediffname>GR_MeleeDodge</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
 		</comps>
-
 		<race>
-
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -410,8 +394,8 @@
 			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.6</wildness>
-			<nuzzleMtbHours>20</nuzzleMtbHours>
-			<gestationPeriodDays>24</gestationPeriodDays>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
@@ -432,39 +416,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Catbee</defName>
 		<label>catbee</label>
-
 		<race>GR_BeeHybrid_Catbee</race>
 		<combatPower>100</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Cat/RB_Catbee</texPath>
 					<drawSize>1</drawSize>
@@ -497,29 +483,30 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>1.8</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Chicken -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Chickenbee</defName>
-		<label>chickenbee</label>	  
-		
-		<description>A Chicken / Bee hybrid. As it is often the case with chicken hybrids, they are not very strong on their own, but when used in high enough numbers they can be a real nuisance.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. The chickenbee is an excellent egg layer. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
+		<label>chickenbee</label>
+		<description>A Chicken / Bee hybrid. As it is often the case with avian hybrids, they are not very strong on their own, but when used in high enough numbers they can be a real nuisance.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. The chickenbee is an excellent egg layer. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>1.5</MoveSpeed>
 			<ComfyTemperatureMin>0</ComfyTemperatureMin>
 			<MarketValue>55</MarketValue>
+			<FilthRate>6</FilthRate>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -529,7 +516,6 @@
 				<power>3</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -540,8 +526,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<capacities>
@@ -551,12 +535,9 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Clucking_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
@@ -570,11 +551,11 @@
 				<eggLayIntervalDays>1.2</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
 		</comps>
-
 		<race>
-
-			
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -584,7 +565,7 @@
 			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<wildness>0.6</wildness>
-			<gestationPeriodDays>14</gestationPeriodDays>
+			<roamMtbDays>5</roamMtbDays>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<trainability>None</trainability>
@@ -605,39 +586,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.2</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Chickenbee</defName>
 		<label>chickenbee</label>
-
 		<race>GR_BeeHybrid_Chickenbee</race>
 		<combatPower>35</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Chicken/RB_Chickenbee</texPath>
 					<drawSize>1</drawSize>
@@ -670,22 +653,23 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>1.4</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_AvianGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
 	<!-- Insect -->
-
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="GR_BaseInsect">
 		<defName>GR_BeeHybrid_Spiderbee</defName>
-		<label>spiderbee</label>	  
-		
+		<label>spiderbee</label>
 		<description>A Megaspider / Bee hybrid. A powerful, armoured bee hybrid that cannot reproduce on its own. It has a dangerous ranged attack.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. They also have a very nasty venomous sting, and a ranged sting attack. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>2.5</MoveSpeed>
@@ -713,8 +697,6 @@
 				<!--Commanility determines how frequent this range verb is chosen.-->
 				<commonality>0.75</commonality>
 			</li>
-
-
 		</verbs>
 		<tools>
 			<li>
@@ -725,7 +707,6 @@
 				<power>10</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -736,8 +717,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<label>slicing mandibles</label>
@@ -748,24 +727,20 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Megaspidery_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>RB_BeeHoneyCombProduction</customResourceString>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
 
+			</li>
 		</comps>
-
 		<race>
-
-			
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -784,7 +759,6 @@
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>GR_BeeHybrid_Bearbee</useMeatFrom>
 			<lifeExpectancy>4</lifeExpectancy>
-
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -797,39 +771,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Spiderbee</defName>
 		<label>spiderbee</label>
-
 		<race>GR_BeeHybrid_Spiderbee</race>
 		<combatPower>150</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Insectoid/RB_Spiderbee</texPath>
 					<drawSize>1.5</drawSize>
@@ -862,31 +838,31 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_InsectoidGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
-	
-
 	<!-- Muffalo -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Muffalobee</defName>
-		<label>muffalobee</label>	  
+		<label>muffalobee</label>
 		<description>A Muffalo / Bee hybrid. This docile bee hybrid is a versatile pack beast, since it ignores terrain movement costs. Apart from its honeycombs, it also produces additional small amounts of milk and wool.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. They also have a very nasty venomous sting. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>4</MoveSpeed>
 			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
 			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MarketValue>300</MarketValue>
+			<FilthRate>6</FilthRate>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -896,7 +872,6 @@
 				<power>8</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -907,8 +882,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<capacities>
@@ -918,12 +891,9 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Cattle_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
@@ -931,7 +901,7 @@
 				<customResourceString>RB_BeeHoneyCombProduction</customResourceString>
 			</li>
 			<li Class="CompProperties_Milkable">
-				<milkDef>Milk</milkDef>
+				<milkDef>RB_BeeMilk</milkDef>
 				<milkIntervalDays>1</milkIntervalDays>
 				<milkAmount>4</milkAmount>
 			</li>
@@ -940,12 +910,11 @@
 				<shearIntervalDays>5</shearIntervalDays>
 				<woolAmount>15</woolAmount>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
 
+			</li>
 		</comps>
-
 		<race>
-
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<packAnimal>true</packAnimal>
@@ -957,13 +926,14 @@
 			<wildness>0.65</wildness>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
-			<trainability>Intermediate</trainability>
+			<trainability>None</trainability>
+			<roamMtbDays>2</roamMtbDays>
 			<fleshType>GR_Insectoid</fleshType>
 			<bloodDef>Filth_BloodInsect</bloodDef>
 			<useMeatFrom>GR_BeeHybrid_Bearbee</useMeatFrom>
 			<leatherDef>RB_Bee_Leather</leatherDef>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>28</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -976,39 +946,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.5</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleFarm</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleFarmDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Muffalobee</defName>
 		<label>muffalobee</label>
-
 		<race>GR_BeeHybrid_Muffalobee</race>
 		<combatPower>150</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Muffalo/RB_Muffalobee</texPath>
 					<drawSize>1.5</drawSize>
@@ -1041,22 +1013,23 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>2.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_MuffaloGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
-		<!-- reptile -->
-
+	<!-- reptile -->
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Lizardbee</defName>
-		<label>lizardbee</label>	  
-		
+		<label>lizardbee</label>
 		<description>A Lizard / Bee hybrid. This bee hybrid is covered in scales, providing it with a thick natural armor.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. Lizardbees have a very potent venom. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>2</MoveSpeed>
@@ -1066,7 +1039,6 @@
 			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -1076,7 +1048,6 @@
 				<power>6</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -1087,8 +1058,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<capacities>
@@ -1098,24 +1067,20 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Scaly_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>RB_BeeHoneyCombProduction</customResourceString>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
 
+			</li>
 		</comps>
-
 		<race>
-			
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -1134,7 +1099,7 @@
 			<useMeatFrom>GR_BeeHybrid_Bearbee</useMeatFrom>
 			<leatherDef>RB_Bee_Leather</leatherDef>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>35</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1147,39 +1112,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.8</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Lizardbee</defName>
 		<label>lizardbee</label>
-
 		<race>GR_BeeHybrid_Lizardbee</race>
 		<combatPower>100</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Reptile/RB_Lizardbee</texPath>
 					<drawSize>1</drawSize>
@@ -1212,29 +1179,29 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_ReptileGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Rodent -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Mousebee</defName>
-		<label>mousebee</label>	  
-		
+		<label>mousebee</label>
 		<description>A Mouse / Bee hybrid. These diminutive bee hybrids reproduce really fast.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. The mousebee reproduces with blinding speed. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>1.5</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>25</MarketValue>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -1266,19 +1233,17 @@
 			</li>
 		</tools>
 		<comps>
-			 
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Mousy_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>RB_BeeHoneyCombProduction</customResourceString>
 			</li>
-			
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
 		</comps>
-
 		<race>
-
-		
 			<herdAnimal>true</herdAnimal>
 			<predator>false</predator>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1310,39 +1275,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.1</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Mousebee</defName>
 		<label>mousebee</label>
-
 		<race>GR_BeeHybrid_Mousebee</race>
 		<combatPower>25</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Rodent/RB_Mousebee</texPath>
 					<drawSize>1</drawSize>
@@ -1375,29 +1342,30 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>1.25</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_RodentGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-	
 	<!-- Thrumbo -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Thrumbee</defName>
-		<label>thrumbee</label>	  
-		
+		<label>thrumbee</label>
 		<description>A Thrumbo / Bee hybrid. This gigantic bee hybrid is very intelligent, and it can easily be the backbone of a colony's defense if trained to do it.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. They also have a very nasty venomous sting. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>3</MoveSpeed>
 			<ComfyTemperatureMin>-65</ComfyTemperatureMin>
 			<MarketValue>1450</MarketValue>
+			<FilthRate>6</FilthRate>
 		</statBases>
-
 		<tools>
 			<li>
 				<label>horn</label>
@@ -1417,7 +1385,6 @@
 				<power>18</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -1428,8 +1395,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<capacities>
@@ -1439,24 +1404,20 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Horned_Honeycomb</resourceDef>
 				<gatheringIntervalDays>20</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>RB_BeeHoneyCombProduction</customResourceString>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_Floating">
 
+			</li>
 		</comps>
-
 		<race>
-
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>false</predator>
@@ -1474,7 +1435,7 @@
 			<useMeatFrom>GR_BeeHybrid_Bearbee</useMeatFrom>
 			<leatherDef>RB_Bee_Leather</leatherDef>
 			<lifeExpectancy>4</lifeExpectancy>
-			<gestationPeriodDays>55</gestationPeriodDays>
+			<gestationPeriodDays>30</gestationPeriodDays>
 			<lifeStageAges>
 				<li>
 					<def>AnimalBaby</def>
@@ -1487,39 +1448,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>1</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Thrumbee</defName>
 		<label>thrumbee</label>
-
 		<race>GR_BeeHybrid_Thrumbee</race>
 		<combatPower>450</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Thrumbo/RB_Thrumbee</texPath>
 					<drawSize>2</drawSize>
@@ -1552,30 +1515,30 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>4.5</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_ThrumboGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
-	
 	<!-- Wolf -->
-
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>GR_BeeHybrid_Wolfbee</defName>
-		<label>wolfbee</label>	  
-		
+		<label>wolfbee</label>
 		<description>A Wolf / Bee hybrid. A fearsome flying predator. One of the fastest creatures on the Rim, due to its ability to ignore rugged terrain. Perfect for chasing down intruders.\n\nUseful abilities: All bee hybrids slowly produce their appropriate honeycombs every few days. The wolfbee has a powerful venomous sting that paralyzes its prey. Finally, they will ignore terrain movement costs, since they hover over the ground, except over water, where their movement is slightly impeded.</description>
 		<statBases>
 			<MoveSpeed>4.5</MoveSpeed>
 			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 			<MarketValue>250</MarketValue>
+			<FilthRate>2</FilthRate>
 		</statBases>
-
 		<tools>
 			<li>
 				<capacities>
@@ -1585,7 +1548,6 @@
 				<power>8</power>
 				<linkedBodyPartsGroup>RB_Sting</linkedBodyPartsGroup>
 				<chanceFactor>0.8</chanceFactor>
-
 			</li>
 			<li>
 				<label>claws</label>
@@ -1596,8 +1558,6 @@
 				<cooldownTime>1.55</cooldownTime>
 				<linkedBodyPartsGroup>RB_LegAttackTool</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
-
 			</li>
 			<li>
 				<capacities>
@@ -1607,24 +1567,20 @@
 				<cooldownTime>1.85</cooldownTime>
 				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
 				<chanceFactor>0.1</chanceFactor>
-
 			</li>
-
 		</tools>
 		<comps>
-			
 			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
 				<resourceDef>RB_Hound_Honeycomb</resourceDef>
 				<gatheringIntervalDays>3</gatheringIntervalDays>
 				<resourceAmount>1</resourceAmount>
 				<customResourceString>RB_BeeHoneyCombProduction</customResourceString>
 			</li>
-			
+			<li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
 		</comps>
-
 		<race>
-
-			
 			<herdAnimal>true</herdAnimal>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<predator>true</predator>
@@ -1635,8 +1591,7 @@
 			<baseHungerRate>0.15</baseHungerRate>
 			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<wildness>0.6</wildness>
-			<nuzzleMtbHours>72</nuzzleMtbHours>
-			<gestationPeriodDays>26</gestationPeriodDays>
+			<gestationPeriodDays>15</gestationPeriodDays>
 			<manhunterOnDamageChance>0.10</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 			<trainability>Advanced</trainability>
@@ -1657,39 +1612,41 @@
 				<li>
 					<def>AnimalAdult</def>
 					<minAge>0.4</minAge>
-					<soundWounded>RB_HybridBee_Wounded</soundWounded>					
+					<soundWounded>RB_HybridBee_Wounded</soundWounded>
 					<soundDeath>RB_HybridBee_Death</soundDeath>
 					<soundAngry>RB_HybridBee_Angry</soundAngry>
-
 				</li>
 			</lifeStageAges>
 			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
 			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-
-
-
-
 		</race>
 		<tradeTags>
 			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
 		</tradeTags>
-
-
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
 	</ThingDef>
-
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_BeeHybrid_Wolfbee</defName>
 		<label>wolfbee</label>
-
 		<race>GR_BeeHybrid_Wolfbee</race>
 		<combatPower>100</combatPower>
 		<canArriveManhunter>false</canArriveManhunter>
-
-
 		<lifeStages>
 			<li>
-
 				<bodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/Wolf/RB_Wolfbee</texPath>
 					<drawSize>1</drawSize>
@@ -1722,15 +1679,17 @@
 						<offset>(0,0,-0.2)</offset>
 					</shadowData>
 				</bodyGraphicData>
-
 				<dessicatedBodyGraphicData>
 					<texPath>Things/Pawn/Animal/BeeHybrids/RB_Dessicated_Bee</texPath>
 					<drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
 		</lifeStages>
-
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_BeeGenetic</dominantGenome>
+				<secondaryGenome>GR_CanineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
-
-	
 </Defs>

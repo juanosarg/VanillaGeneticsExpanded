@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RecipeDef ParentName="GR_GenoframeRecipeBase">
+		<defName>GR_GenoframeAwfulRecipeFromWax</defName>
+		<label>Create Genoframe (Awful) from Genewax</label>
+		<description>Create an awful quality genoframe from genewax.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RB_Genewax</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RB_Genewax</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		
+		<products>
+			<GR_GenoframeAwful>1</GR_GenoframeAwful>
+		</products>		
+	</RecipeDef>
+	
+</Defs>

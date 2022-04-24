@@ -6,7 +6,7 @@
 
 
   <ThoughtDef>
-	<thoughtClass>RimBeesGeneticPatch.Thought_Hediff</thoughtClass>
+	<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 	<hediff>RB_Stamina</hediff>
     <defName>RB_AteGeneticHoney</defName>
     <durationDays>1</durationDays>
@@ -21,7 +21,7 @@
   </ThoughtDef>
 
   <ThoughtDef>
-	<thoughtClass>RimBeesGeneticPatch.Thought_Hediff</thoughtClass>
+	<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
 	<hediff>RB_Stamina</hediff>
     <defName>RB_AteGeneticHoneyIngredient</defName>
     <durationDays>1</durationDays>

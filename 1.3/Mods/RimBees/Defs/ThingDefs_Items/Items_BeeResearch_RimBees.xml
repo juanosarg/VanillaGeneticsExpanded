@@ -117,7 +117,7 @@
 		</thingCategories>	
 	</ThingDef>	
 
-	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
+	<!--<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
 		<defName>RB_ResearchPapersOrgElec</defName>		
 		<comps>
 			<li Class="RimBees.CompProperties_BeeResearchImages">
@@ -128,7 +128,7 @@
 		<thingCategories>
 			<li>RB_BeeResearchTierGenetic</li>
 		</thingCategories>	
-	</ThingDef>		
+	</ThingDef>		-->
 
 	<ThingDef ParentName="RB_ResearchPapersBaseGenetic" >
 		<defName>RB_ResearchPapersOrgInsect</defName>		

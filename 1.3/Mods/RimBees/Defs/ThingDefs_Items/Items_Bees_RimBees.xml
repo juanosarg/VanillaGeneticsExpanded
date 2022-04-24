@@ -8,7 +8,7 @@
 	<!--=============== Organic ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_OrganicBeeBase" Abstract="True" >
-		<description>Organic bees are genetically modified bees that extract cellulose fibers from nearby plants and convert it into organic pulp, which they store on their honeycombs.\n\nBee Traits:\n\nProduction time: 24 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Organic bees are genetically modified bees that extract cellulose fibers from nearby plants and convert it into a slurry of genetic material which can be refined into template genomes. The main use of these bees, however, is to hybridize them with other bees to create genetic bees of different subspecies.\n\nBee Traits:\n\nProduction time: 5 days hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -20,7 +20,7 @@
 			<li Class="RimBees.CompProperties_Bees">
 				<species>Organic</species>
 				<comb>RB_Organic_Honeycomb</comb>
-				<combtimedays>1</combtimedays>
+				<combtimedays>5</combtimedays>
 				<nocturnal>false</nocturnal>
 				<pluviophile>false</pluviophile>
 				<weirdplantneeded>no</weirdplantneeded>
@@ -86,7 +86,7 @@
 	<!--=============== Clucking ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_CluckingBeeBase" Abstract="True" >
-		<description>Clucking bees have chicken genes spliced in their genome. They are covered in feathers, and produce eggs and chicken genetic material.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Clucking bees have chicken genes spliced in their genome. They are covered in feathers, and produce eggs and avian genetic material.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -122,7 +122,7 @@
 	<!--=============== Exploding ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_ExplodingBeeBase" Abstract="True" >
-		<description>Exploding bees have boomalope genes spliced in their genome. This bees produce chemfuel, and boomalope genetic material.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Chemfuel\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
+		<description>Exploding bees have boomalope genes spliced in their genome. These bees produce chemfuel, and boom genetic material.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: Chemfuel\nMinimum Temperature: 0ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -158,7 +158,7 @@
 	<!--=============== Horned ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_HornedBeeBase" Abstract="True" >
-		<description>Horned bees have thrumbo genes spliced in their genome. They take a very long time to generate honeycombs, but they produce highly sought after thrumbo genetic material.\n\nBee Traits:\n\nProduction time: 20 days\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: -30ºC\nMaximum temperature: 30ºC</description>
+		<description>Horned bees have thrumbo genes spliced in their genome. They take a very long time to generate honeycombs, but they produce highly sought after colossal genetic material.\n\nBee Traits:\n\nProduction time: 20 days\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: -30ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -229,7 +229,7 @@
 	<!--=============== Hybernating ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_HybernatingBeeBase" Abstract="True" >
-		<description>Hybernating bees have grizzly bear genes spliced in their genome. They are covered in a soft fur and produce bear genetic materials.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: -10ºC\nMaximum temperature: 30ºC</description>
+		<description>Hybernating bees have grizzly bear genes spliced in their genome. They are covered in a soft fur and produce ursine genetic materials.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: -10ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -263,7 +263,7 @@
 	</ThingDef>
 	<!--=============== Mecha ====================-->
 
-	<ThingDef ParentName="RB_BeeBase" Name="RB_MechaBeeBase" Abstract="True" >
+	<!--<ThingDef ParentName="RB_BeeBase" Name="RB_MechaBeeBase" Abstract="True" >
 		<description>These are bee sized mechanoids, apparently under the colonists' control. Mecha bees produce mechanoid active components, which are used to create mechanoid hybrids, but they take a very long time to do so. They'll need a stockpile with a Advanced Components nearby to start refining the mechanites.\n\nBee Traits:\n\nProduction time: 30 days\nNocturnal: No\nPluviophile: Yes\nUnusual plants needed: Advanced Components\nMinimum Temperature: -10ºC\nMaximum temperature: 30ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -295,12 +295,12 @@
 		<graphicData>
 			<texPath>Things/Item/Bees/RB_Bee_Mecha_Queen</texPath>
 		</graphicData> 		
-	</ThingDef>
+	</ThingDef>-->
 	
 	<!--=============== Megaspidery ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_MegaspideryBeeBase" Abstract="True" >
-		<description>Megaspidery bees have alien insectoid genes spliced in their genome. They are covered in chitinous plates and produce insect jelly and insectoid genetic materials.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description>
+		<description>Megaspidery bees have insectoid genes spliced in their genome. They are covered in chitinous plates and produce insect jelly and insectoid genetic materials.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 40ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   
@@ -408,7 +408,7 @@
 	<!--=============== Scaly ====================-->
 
 	<ThingDef ParentName="RB_BeeBase" Name="RB_ScalyBeeBase" Abstract="True" >
-		<description>Scaly bees have reptilian genes spliced in their genome. They are covered in tough looking scales and produce reptilian genetic materials.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 50ºC</description>
+		<description>Scaly bees have reptile genes spliced in their genome. They are covered in tough looking scales and produce reptile genetic materials.\n\nBee Traits:\n\nProduction time: 72 hours\nNocturnal: No\nPluviophile: No\nUnusual plants needed: No\nMinimum Temperature: 0ºC\nMaximum temperature: 50ºC</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>   

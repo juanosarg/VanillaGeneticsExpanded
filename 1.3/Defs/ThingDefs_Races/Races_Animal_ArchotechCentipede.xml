@@ -93,6 +93,10 @@
 				<hediffname>GR_VeryLowRest</hediffname>
 				<hediffseverity>1</hediffseverity>
 			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_MeleeDodge</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
 			<li Class="AnimalBehaviours.CompProperties_NoTamingDecay">
 				
 			</li>

@@ -59,14 +59,14 @@
 		</result>				
 	</RimBees.BeeCombinationDef>
 
-	<RimBees.BeeCombinationDef>
+	<!--<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTierGenetic_7</defName>
 		<bee1>Organic</bee1>
 		<bee2>Electronic</bee2>
 		<result>
 			<li>Mecha</li>
 		</result>				
-	</RimBees.BeeCombinationDef>
+	</RimBees.BeeCombinationDef>-->
 
 	<RimBees.BeeCombinationDef>
 		<defName>RB_CombinationTierGenetic_8</defName>

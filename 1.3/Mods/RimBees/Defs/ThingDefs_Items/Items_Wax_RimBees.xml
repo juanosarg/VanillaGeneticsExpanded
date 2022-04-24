@@ -7,7 +7,7 @@
 	<ThingDef ParentName="RB_BeesWaxBase">
 		<defName>RB_Genewax</defName>
 		<label>genewax</label>
-		<description>Genewax is extracted from combs of the Genetic family (any Genetic Rim hybrid bees) and is much less resistant than regular beeswax. Its only practical application is that it can be used to build incubators to replace standard steel ones.</description>
+		<description>Genewax is extracted from combs of the Genetic family (any Vanilla Genetics Expanded hybrid bees) and is much less resistant than regular beeswax. Its only practical application is that it can be used to create genoframes, instead of corpses.</description>
 		<graphicData>
 			<texPath>Things/Item/Product/RB_Genewax</texPath>			
 		</graphicData>

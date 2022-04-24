@@ -6,9 +6,9 @@
     <ThingDef ParentName="BaseBullet">
     <defName>RB_Quill</defName>
     <label>quill</label>
-	<thingClass>GeneticAnimalRangeUnlocker.AnimalProjectile</thingClass>
+	
     <graphicData>
-      <texPath>Things/Projectiles/RB_Quill</texPath>
+      <texPath>Things/Projectile/RB_Quill</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>

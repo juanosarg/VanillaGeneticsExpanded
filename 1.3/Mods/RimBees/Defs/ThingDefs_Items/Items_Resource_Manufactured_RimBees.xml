@@ -3,21 +3,17 @@
 
   <!--=============== Genetic Material ====================-->
 
+	<ThingDef ParentName="GR_GeneticsBase">
+		<defName>GR_BeeGenetic</defName>
+		<label>bee genome</label>
+		<description>A payload of bee genetic material. Can be used at the genomorpher to create a growth cell of a hybrid animal. This tier 1 genome can be used only as a primary genome.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; All bee hybrids hover over terrain.\n\n&lt;color=#E5E54C&gt;Extraction:&lt;/color&gt; Can be extracted via the genome extractor table from a combination of 10 bees.</description>
+		<graphicData>
+			<texPath>Things/Item/GR_BeeGenetic</texPath>
+		</graphicData>
+	</ThingDef>
 
-  <ThingDef ParentName="GR_GeneticsBase">
-    <defName>GR_BeeGenetic</defName>
-    <label>bee genetic material</label>
-    <description>A vial of genetic material extracted from several bees.</description>
-    
-    <graphicData>
-            <texPath>Things/Item/GR_BeeGenetic</texPath>
 
-    </graphicData>
-	<statBases>
-       <MarketValue>45</MarketValue>
-    </statBases>
-    
-  </ThingDef>
+  
  
 
   
