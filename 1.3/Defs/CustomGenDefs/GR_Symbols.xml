@@ -1,670 +1,547 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-<KCSG.SymbolDef>
-  <defName>GR_CrackedConcrete</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>GR_CrackedConcrete</terrain>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_SignC</defName>
-  <thing>GR_SignC</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RustedWallA</defName>
-  <thing>GR_RustedWallA</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RustedWallB</defName>
-  <thing>GR_RustedWallB</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedBarrelDouble</defName>
-  <thing>GR_RuinedBarrelDouble</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedLabBarrel</defName>
-  <thing>GR_RuinedLabBarrel</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_PavedTile</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>GR_PavedTile</terrain>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_LabDoor</defName>
-  <thing>GR_LabDoor</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_SmallBioLight</defName>
-  <thing>GR_SmallBioLight</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_BioLight_North</defName>
-  <thing>GR_BioLight</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_MonitorBank_North</defName>
-  <thing>GR_MonitorBank</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_LabLockerBank</defName>
-  <thing>GR_LabLockerBank</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_LooseCables</defName>
-  <thing>GR_LooseCables</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedVials</defName>
-  <thing>GR_RuinedVials</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientCratePile</defName>
-  <thing>GR_AncientCratePile</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedLabShelf_North</defName>
-  <thing>GR_RuinedLabShelf</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_BioLight_West</defName>
-  <thing>GR_BioLight</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedTissueGrowingVat</defName>
-  <thing>GR_RuinedTissueGrowingVat</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Sink_East</defName>
-  <thing>GR_Sink</thing>
-  <rotation>East</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Sink_West</defName>
-  <thing>GR_Sink</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientElectrowombSpawner</defName>
-  <thing>GR_AncientElectrowombSpawner</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Toilet_North</defName>
-  <thing>GR_Toilet</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedGeneticStorage</defName>
-  <thing>GR_RuinedGeneticStorage</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedHexagelPlant</defName>
-  <thing>GR_RuinedHexagelPlant</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_WhiteTile</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>GR_WhiteTile</terrain>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedLabShelf_South</defName>
-  <thing>GR_RuinedLabShelf</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedLabShelf_West</defName>
-  <thing>GR_RuinedLabShelf</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedIncubator</defName>
-  <thing>GR_RuinedIncubator</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedGenomeSequencer</defName>
-  <thing>GR_RuinedGenomeSequencer</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientCrate</defName>
-  <thing>GR_AncientCrate</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedGeneticExtractionTable_North</defName>
-  <thing>GR_RuinedGeneticExtractionTable</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Rack</defName>
-  <thing>GR_Rack</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedGeneticDatabase</defName>
-  <thing>GR_RuinedGeneticDatabase</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedNutrientVat</defName>
-  <thing>GR_RuinedNutrientVat</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedMutaniteCentrifuge</defName>
-  <thing>GR_RuinedMutaniteCentrifuge</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGeneticsTinkeringTable_South</defName>
-  <thing>GR_AncientGeneticsTinkeringTable</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomeExtractor_South</defName>
-  <thing>GR_AncientGenomeExtractor</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedRefrigeratedCoils</defName>
-  <thing>GR_RuinedRefrigeratedCoils</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_DNAStorageBank</defName>
-  <thing>GR_DNAStorageBank</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGeneticsTinkeringTable_North</defName>
-  <thing>GR_AncientGeneticsTinkeringTable</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RandomBooster</defName>
-  <thing>GR_RandomBooster</thing>
-</KCSG.SymbolDef>
-
-
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientElectrowomb</defName>
-  <thing>GR_AncientElectrowomb</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_ElectroWomb</defName>
-  <thing>GR_ElectroWomb</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomorpher_North</defName>
-  <thing>GR_AncientGenomorpher</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_ArchoWomb</defName>
-  <thing>GR_ArchoWomb</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_MechaniteBooster</defName>
-  <thing>GR_MechaniteBooster</thing>
-  <maxStackSize>1</maxStackSize>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedArchotechPlatform</defName>
-  <thing>GR_RuinedArchotechPlatform</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientTechCrate_West</defName>
-  <thing>GR_AncientTechCrate</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_BioLight_South</defName>
-  <thing>GR_BioLight</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Sink_North</defName>
-  <thing>GR_Sink</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RandomGenoframe</defName>
-  <thing>GR_RandomGenoframe</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RandomGenome</defName>
-  <thing>GR_RandomGenome</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_GenoframePoor</defName>
-  <thing>GR_GenoframePoor</thing>
-  <maxStackSize>1</maxStackSize>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientTechCrate_North</defName>
-  <thing>GR_AncientTechCrate</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RandomExcavator</defName>
-  <thing>GR_RandomExcavator</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientElectrowombLarge</defName>
-  <thing>GR_AncientElectrowombLarge</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_LargeElectroWomb</defName>
-  <thing>GR_LargeElectroWomb</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedPulper</defName>
-  <thing>GR_RuinedPulper</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientCryofreezer</defName>
-  <thing>GR_AncientCryofreezer</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientBioBattery_North</defName>
-  <thing>GR_AncientBioBattery</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedAncientBioBattery</defName>
-  <thing>GR_RuinedAncientBioBattery</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomeRecombinator_South</defName>
-  <thing>GR_AncientGenomeRecombinator</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedPulpRecycler</defName>
-  <thing>GR_RuinedPulpRecycler</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomeRecombinator_North</defName>
-  <thing>GR_AncientGenomeRecombinator</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedMechanoidTinkeringTable_North</defName>
-  <thing>GR_RuinedMechanoidTinkeringTable</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedGeneDuplicator</defName>
-  <thing>GR_RuinedGeneDuplicator</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Toilet_East</defName>
-  <thing>GR_Toilet</thing>
-  <rotation>East</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientTissueGrinder_North</defName>
-  <thing>GR_AncientTissueGrinder</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedAnimalControlHub</defName>
-  <thing>GR_RuinedAnimalControlHub</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedGenePod</defName>
-  <thing>GR_RuinedGenePod</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedAncientGeneTailoringPod</defName>
-  <thing>GR_RuinedAncientGeneTailoringPod</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_TissueGrinder_North</defName>
-  <thing>GR_TissueGrinder</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedAnimalEnrichmentCenter</defName>
-  <thing>GR_RuinedAnimalEnrichmentCenter</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_SignB</defName>
-  <thing>GR_SignB</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_PavedTileClean</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>GR_PavedTileClean</terrain>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomeExtractor_North</defName>
-  <thing>GR_AncientGenomeExtractor</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_GeneticExtractionTable_North</defName>
-  <thing>GR_GeneticExtractionTable</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientCrateDouble_North</defName>
-  <thing>GR_AncientCrateDouble</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomorpher_South</defName>
-  <thing>GR_AncientGenomorpher</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_CommsTable</defName>
-  <thing>GR_CommsTable</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_ArchocentipedeFormer_North</defName>
-  <thing>GR_ArchocentipedeFormer</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_BioLight_East</defName>
-  <thing>GR_BioLight</thing>
-  <rotation>East</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_SignE</defName>
-  <thing>GR_SignE</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientBioBattery_West</defName>
-  <thing>GR_AncientBioBattery</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedGeneRecombinator</defName>
-  <thing>GR_RuinedGeneRecombinator</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_MonitorBank_East</defName>
-  <thing>GR_MonitorBank</thing>
-  <rotation>East</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientCrateDouble_West</defName>
-  <thing>GR_AncientCrateDouble</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientTissueGrinder_South</defName>
-  <thing>GR_AncientTissueGrinder</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-
-<KCSG.SymbolDef>
-  <defName>GR_SignD</defName>
-  <thing>GR_SignD</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedMechanoidTinkeringTable_South</defName>
-  <thing>GR_RuinedMechanoidTinkeringTable</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_MonitorBank_West</defName>
-  <thing>GR_MonitorBank</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_GeneticsTinkeringTable_North</defName>
-  <thing>GR_GeneticsTinkeringTable</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-
-
-<KCSG.SymbolDef>
-  <defName>GR_SignA</defName>
-  <thing>GR_SignA</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_GeneRecombinator_North</defName>
-  <thing>GR_GeneRecombinator</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedMechanoidTinkeringTable_East</defName>
-  <thing>GR_RuinedMechanoidTinkeringTable</thing>
-  <rotation>East</rotation>
-</KCSG.SymbolDef>
-
-
-
-<KCSG.SymbolDef>
-  <defName>GR_SignF</defName>
-  <thing>GR_SignF</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Sink_South</defName>
-  <thing>GR_Sink</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_ArchocentipedeFormer_South</defName>
-  <thing>GR_ArchocentipedeFormer</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_MechanoidChip</defName>
-  <thing>GR_MechanoidChip</thing>
-  <maxStackSize>1</maxStackSize>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomeRecombinator_West</defName>
-  <thing>GR_AncientGenomeRecombinator</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_GenePod_North</defName>
-  <thing>GR_GenePod</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_SignG</defName>
-  <thing>GR_SignG</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Toilet_West</defName>
-  <thing>GR_Toilet</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_TissueGrowingVat_North</defName>
-  <thing>GR_TissueGrowingVat</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Toilet_South</defName>
-  <thing>GR_Toilet</thing>
-  <rotation>South</rotation>
-</KCSG.SymbolDef>
-
-
-<KCSG.SymbolDef>
-  <defName>GR_SignH</defName>
-  <thing>GR_SignH</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomorpher_West</defName>
-  <thing>GR_AncientGenomorpher</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RuinedMechanoidTinkeringTable_West</defName>
-  <thing>GR_RuinedMechanoidTinkeringTable</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-
-
-<KCSG.SymbolDef>
-  <defName>GR_MechLabWall</defName>
-  <thing>GR_MechLabWall</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_RustedMechTile</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>GR_RustedMechTile</terrain>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_MechTile</defName>
-  <isTerrain>true</isTerrain>
-  <terrain>GR_MechTile</terrain>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Ruined_Mechahybrid_Antenna</defName>
-  <thing>GR_Ruined_Mechahybrid_Antenna</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Mechafuse</defName>
-  <thing>GR_Mechafuse</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Mechahybridizer</defName>
-  <thing>GR_Mechahybridizer</thing>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_Ruined_Mechahybridizer_North</defName>
-  <thing>GR_Ruined_Mechahybridizer</thing>
-  <rotation>North</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientGenomeRecombinator_East</defName>
-  <thing>GR_AncientGenomeRecombinator</thing>
-  <rotation>East</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientTissueGrinder_West</defName>
-  <thing>GR_AncientTissueGrinder</thing>
-  <rotation>West</rotation>
-</KCSG.SymbolDef>
-
-<KCSG.SymbolDef>
-  <defName>GR_AncientTissueGrinder_East</defName>
-  <thing>GR_AncientTissueGrinder</thing>
-  <rotation>East</rotation>
-</KCSG.SymbolDef>
-
-
-
-
-
+	<KCSG.SymbolDef>
+		<defName>GR_CrackedConcrete</defName>
+		<isTerrain>true</isTerrain>
+		<terrain>GR_CrackedConcrete</terrain>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SignC</defName>
+		<thing>GR_SignC</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RustedWallA</defName>
+		<thing>GR_RustedWallA</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RustedWallB</defName>
+		<thing>GR_RustedWallB</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedBarrelDouble</defName>
+		<thing>GR_RuinedBarrelDouble</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedLabBarrel</defName>
+		<thing>GR_RuinedLabBarrel</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_PavedTile</defName>
+		<isTerrain>true</isTerrain>
+		<terrain>GR_PavedTile</terrain>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_LabDoor</defName>
+		<thing>GR_LabDoor</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SmallBioLight</defName>
+		<thing>GR_SmallBioLight</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_BioLight_North</defName>
+		<thing>GR_BioLight</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_MonitorBank_North</defName>
+		<thing>GR_MonitorBank</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_LabLockerBank</defName>
+		<thing>GR_LabLockerBank</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_LooseCables</defName>
+		<thing>GR_LooseCables</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedVials</defName>
+		<thing>GR_RuinedVials</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientCratePile</defName>
+		<thing>GR_AncientCratePile</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedLabShelf_North</defName>
+		<thing>GR_RuinedLabShelf</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_BioLight_West</defName>
+		<thing>GR_BioLight</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedTissueGrowingVat</defName>
+		<thing>GR_RuinedTissueGrowingVat</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Sink_East</defName>
+		<thing>GR_Sink</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Sink_West</defName>
+		<thing>GR_Sink</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientElectrowombSpawner</defName>
+		<thing>GR_AncientElectrowombSpawner</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Toilet_North</defName>
+		<thing>GR_Toilet</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedGeneticStorage</defName>
+		<thing>GR_RuinedGeneticStorage</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedHexagelPlant</defName>
+		<thing>GR_RuinedHexagelPlant</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_WhiteTile</defName>
+		<isTerrain>true</isTerrain>
+		<terrain>GR_WhiteTile</terrain>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedLabShelf_South</defName>
+		<thing>GR_RuinedLabShelf</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedLabShelf_West</defName>
+		<thing>GR_RuinedLabShelf</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedIncubator</defName>
+		<thing>GR_RuinedIncubator</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedGenomeSequencer</defName>
+		<thing>GR_RuinedGenomeSequencer</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientCrate</defName>
+		<thing>GR_AncientCrate</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedGeneticExtractionTable_North</defName>
+		<thing>GR_RuinedGeneticExtractionTable</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Rack</defName>
+		<thing>GR_Rack</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedGeneticDatabase</defName>
+		<thing>GR_RuinedGeneticDatabase</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedNutrientVat</defName>
+		<thing>GR_RuinedNutrientVat</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedMutaniteCentrifuge</defName>
+		<thing>GR_RuinedMutaniteCentrifuge</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGeneticsTinkeringTable_South</defName>
+		<thing>GR_AncientGeneticsTinkeringTable</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomeExtractor_South</defName>
+		<thing>GR_AncientGenomeExtractor</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedRefrigeratedCoils</defName>
+		<thing>GR_RuinedRefrigeratedCoils</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_DNAStorageBank</defName>
+		<thing>GR_DNAStorageBank</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGeneticsTinkeringTable_North</defName>
+		<thing>GR_AncientGeneticsTinkeringTable</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RandomBooster</defName>
+		<thing>GR_RandomBooster</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientElectrowomb</defName>
+		<thing>GR_AncientElectrowomb</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_ElectroWomb</defName>
+		<thing>GR_ElectroWomb</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomorpher_North</defName>
+		<thing>GR_AncientGenomorpher</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_ArchoWomb</defName>
+		<thing>GR_ArchoWomb</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_MechaniteBooster</defName>
+		<thing>GR_MechaniteBooster</thing>
+		<maxStackSize>1</maxStackSize>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedArchotechPlatform</defName>
+		<thing>GR_RuinedArchotechPlatform</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientTechCrate_West</defName>
+		<thing>GR_AncientTechCrate</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_BioLight_South</defName>
+		<thing>GR_BioLight</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Sink_North</defName>
+		<thing>GR_Sink</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RandomGenoframe</defName>
+		<thing>GR_RandomGenoframe</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RandomGenome</defName>
+		<thing>GR_RandomGenome</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_GenoframePoor</defName>
+		<thing>GR_GenoframePoor</thing>
+		<maxStackSize>1</maxStackSize>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientTechCrate_North</defName>
+		<thing>GR_AncientTechCrate</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RandomExcavator</defName>
+		<thing>GR_RandomExcavator</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientElectrowombLarge</defName>
+		<thing>GR_AncientElectrowombLarge</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_LargeElectroWomb</defName>
+		<thing>GR_LargeElectroWomb</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedPulper</defName>
+		<thing>GR_RuinedPulper</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientCryofreezer</defName>
+		<thing>GR_AncientCryofreezer</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientBioBattery_North</defName>
+		<thing>GR_AncientBioBattery</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedAncientBioBattery</defName>
+		<thing>GR_RuinedAncientBioBattery</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomeRecombinator_South</defName>
+		<thing>GR_AncientGenomeRecombinator</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedPulpRecycler</defName>
+		<thing>GR_RuinedPulpRecycler</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomeRecombinator_North</defName>
+		<thing>GR_AncientGenomeRecombinator</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedMechanoidTinkeringTable_North</defName>
+		<thing>GR_RuinedMechanoidTinkeringTable</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedGeneDuplicator</defName>
+		<thing>GR_RuinedGeneDuplicator</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Toilet_East</defName>
+		<thing>GR_Toilet</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientTissueGrinder_North</defName>
+		<thing>GR_AncientTissueGrinder</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedAnimalControlHub</defName>
+		<thing>GR_RuinedAnimalControlHub</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedGenePod</defName>
+		<thing>GR_RuinedGenePod</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedAncientGeneTailoringPod</defName>
+		<thing>GR_RuinedAncientGeneTailoringPod</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_TissueGrinder_North</defName>
+		<thing>GR_TissueGrinder</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedAnimalEnrichmentCenter</defName>
+		<thing>GR_RuinedAnimalEnrichmentCenter</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SignB</defName>
+		<thing>GR_SignB</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_PavedTileClean</defName>
+		<isTerrain>true</isTerrain>
+		<terrain>GR_PavedTileClean</terrain>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomeExtractor_North</defName>
+		<thing>GR_AncientGenomeExtractor</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_GeneticExtractionTable_North</defName>
+		<thing>GR_GeneticExtractionTable</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientCrateDouble_North</defName>
+		<thing>GR_AncientCrateDouble</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomorpher_South</defName>
+		<thing>GR_AncientGenomorpher</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_CommsTable</defName>
+		<thing>GR_CommsTable</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_ArchocentipedeFormer_North</defName>
+		<thing>GR_ArchocentipedeFormer</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_BioLight_East</defName>
+		<thing>GR_BioLight</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SignE</defName>
+		<thing>GR_SignE</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientBioBattery_West</defName>
+		<thing>GR_AncientBioBattery</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedGeneRecombinator</defName>
+		<thing>GR_RuinedGeneRecombinator</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_MonitorBank_East</defName>
+		<thing>GR_MonitorBank</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientCrateDouble_West</defName>
+		<thing>GR_AncientCrateDouble</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientTissueGrinder_South</defName>
+		<thing>GR_AncientTissueGrinder</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SignD</defName>
+		<thing>GR_SignD</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedMechanoidTinkeringTable_South</defName>
+		<thing>GR_RuinedMechanoidTinkeringTable</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_MonitorBank_West</defName>
+		<thing>GR_MonitorBank</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_GeneticsTinkeringTable_North</defName>
+		<thing>GR_GeneticsTinkeringTable</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SignA</defName>
+		<thing>GR_SignA</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_GeneRecombinator_North</defName>
+		<thing>GR_GeneRecombinator</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedMechanoidTinkeringTable_East</defName>
+		<thing>GR_RuinedMechanoidTinkeringTable</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SignF</defName>
+		<thing>GR_SignF</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Sink_South</defName>
+		<thing>GR_Sink</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_ArchocentipedeFormer_South</defName>
+		<thing>GR_ArchocentipedeFormer</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_MechanoidChip</defName>
+		<thing>GR_MechanoidChip</thing>
+		<maxStackSize>1</maxStackSize>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomeRecombinator_West</defName>
+		<thing>GR_AncientGenomeRecombinator</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_GenePod_North</defName>
+		<thing>GR_GenePod</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SignG</defName>
+		<thing>GR_SignG</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Toilet_West</defName>
+		<thing>GR_Toilet</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_TissueGrowingVat_North</defName>
+		<thing>GR_TissueGrowingVat</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Toilet_South</defName>
+		<thing>GR_Toilet</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_SignH</defName>
+		<thing>GR_SignH</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomorpher_West</defName>
+		<thing>GR_AncientGenomorpher</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RuinedMechanoidTinkeringTable_West</defName>
+		<thing>GR_RuinedMechanoidTinkeringTable</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_MechLabWall</defName>
+		<thing>GR_MechLabWall</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_RustedMechTile</defName>
+		<isTerrain>true</isTerrain>
+		<terrain>GR_RustedMechTile</terrain>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_MechTile</defName>
+		<isTerrain>true</isTerrain>
+		<terrain>GR_MechTile</terrain>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Ruined_Mechahybrid_Antenna</defName>
+		<thing>GR_Ruined_Mechahybrid_Antenna</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Mechafuse</defName>
+		<thing>GR_Mechafuse</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Mechahybridizer</defName>
+		<thing>GR_Mechahybridizer</thing>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_Ruined_Mechahybridizer_North</defName>
+		<thing>GR_Ruined_Mechahybridizer</thing>
+		<rotation>North</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomeRecombinator_East</defName>
+		<thing>GR_AncientGenomeRecombinator</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientTissueGrinder_West</defName>
+		<thing>GR_AncientTissueGrinder</thing>
+		<rotation>West</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientTissueGrinder_East</defName>
+		<thing>GR_AncientTissueGrinder</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientGenomeExtractor_East</defName>
+		<thing>GR_AncientGenomeExtractor</thing>
+		<rotation>East</rotation>
+	</KCSG.SymbolDef>
+	<KCSG.SymbolDef>
+		<defName>GR_AncientCrateDouble_South</defName>
+		<thing>GR_AncientCrateDouble</thing>
+		<rotation>South</rotation>
+	</KCSG.SymbolDef>
 </Defs>

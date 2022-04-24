@@ -43,7 +43,7 @@
 			<wildness>0.45</wildness>
 			<baseBodySize>0.2</baseBodySize>
 			<baseHealthScale>1</baseHealthScale>
-			<lifeExpectancy>4</lifeExpectancy>
+			<lifeExpectancy>50</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0.05</manhunterOnDamageChance>
 			<foodType>VegetarianRoughAnimal</foodType>
@@ -140,7 +140,7 @@
 			<wildness>0.9</wildness>
 			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>13</baseHealthScale>
-			<lifeExpectancy>0.5</lifeExpectancy>
+			<lifeExpectancy>50</lifeExpectancy>
 			<gestationPeriodDays>100</gestationPeriodDays>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
@@ -242,7 +242,7 @@
 			<wildness>0.99</wildness>
 			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>13</baseHealthScale>
-			<lifeExpectancy>4</lifeExpectancy>
+			<lifeExpectancy>50</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<foodType>CarnivoreAnimal</foodType>
@@ -331,7 +331,7 @@
 			<wildness>0.99</wildness>
 			<baseBodySize>5</baseBodySize>
 			<baseHealthScale>13</baseHealthScale>
-			<lifeExpectancy>4</lifeExpectancy>
+			<lifeExpectancy>50</lifeExpectancy>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<foodType>CarnivoreAnimal</foodType>
@@ -432,7 +432,7 @@
 			<wildness>0.99</wildness>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>3</baseHealthScale>
-			<lifeExpectancy>4</lifeExpectancy>
+			<lifeExpectancy>50</lifeExpectancy>
 			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<foodType>CarnivoreAnimal</foodType>

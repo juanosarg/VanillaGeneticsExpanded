@@ -20,6 +20,12 @@
 		<thingCategories>
 			<li>BuildingsMisc</li>
 		</thingCategories>
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>25</Plasteel>
+			<Uranium>25</Uranium>
+			<Gold>100</Gold>
+		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<blockWind>true</blockWind>
@@ -67,7 +73,12 @@
 		<fillPercent>1</fillPercent>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
-		
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>50</Plasteel>
+			<Uranium>35</Uranium>
+			<Gold>100</Gold>
+		</costList>
 		<statBases>
 			<WorkToBuild>50000</WorkToBuild>
 			<MaxHitPoints>400</MaxHitPoints>
@@ -109,6 +120,12 @@
 		<fillPercent>1</fillPercent>
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
+		<costList>
+			<Steel>100</Steel>
+			<Plasteel>50</Plasteel>
+			<Uranium>35</Uranium>
+			<Gold>100</Gold>
+		</costList>
 		<statBases>
 			<WorkToBuild>50000</WorkToBuild>
 			<MaxHitPoints>400</MaxHitPoints>

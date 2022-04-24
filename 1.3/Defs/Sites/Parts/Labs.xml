@@ -24,6 +24,8 @@
 				<li>GR_AbandonedLabZeta</li>
 				<li>GR_AbandonedLabEta</li>
 				<li>GR_AbandonedLabTheta</li>
+				<li>GR_AbandonedLabIota</li>
+				<li>GR_AbandonedLabKappa</li>
 			</structureLayoutDefs>
 			<shouldRuin>false</shouldRuin>
 			<filthTypes>
