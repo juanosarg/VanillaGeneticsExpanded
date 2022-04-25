@@ -6,7 +6,7 @@
   <InteractionDef>
     <defName>GR_TalkingToHumans</defName>
     <label>chitchat</label>
-    <workerClass>InteractionWorker_Chitchat</workerClass>
+    <workerClass>GeneticRim.InteractionWorker_AnimalSpeak</workerClass>
     <symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
     <recipientThought>Chitchat</recipientThought>
     <logRulesInitiator>
@@ -56,7 +56,7 @@
   <InteractionDef>
     <defName>GR_UwUTalkingToHumans</defName>
     <label>UwU pounce</label>
-    <workerClass>InteractionWorker_Chitchat</workerClass>
+    <workerClass>GeneticRim.InteractionWorker_UWUSpeak</workerClass>
     <symbol>ui/commands/UwuPounce</symbol>
     <recipientThought>Chitchat</recipientThought>
     <logRulesInitiator>

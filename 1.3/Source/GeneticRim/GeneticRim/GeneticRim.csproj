@@ -396,6 +396,8 @@
     <Compile Include="Harmony\ExecutionUtility_ExecutionInt.cs" />
     <Compile Include="Harmony\Thing_ButcherProducts.cs" />
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
+    <Compile Include="InteractionWorkers\InteractionWorker_AnimalSpeak.cs" />
+    <Compile Include="InteractionWorkers\InteractionWorker_UWUSpeak.cs" />
     <Compile Include="Projectiles\Projectile_Distortion.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
