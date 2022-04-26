@@ -32,7 +32,7 @@ namespace GeneticRim
                 if (pawn.Downed)
                 {
                   
-                    pawn.Destroy();
+                    pawn.Kill(null);
 
                 }
 

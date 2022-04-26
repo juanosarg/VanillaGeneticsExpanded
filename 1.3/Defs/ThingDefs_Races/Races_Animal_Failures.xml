@@ -397,7 +397,6 @@
 			<ArmorRating_Blunt>1</ArmorRating_Blunt>
 			<ArmorRating_Heat>-100</ArmorRating_Heat>
 			<ArmorRating_Sharp>1</ArmorRating_Sharp>
-			
 		</statBases>
 		<tools>
 			<li>
@@ -416,7 +415,6 @@
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_HighlyFlammable">
 				<hediffToInflict>GR_PermanentBurn</hediffToInflict>
-
 			</li>
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_HighlyFlammable</hediffname>
@@ -459,6 +457,11 @@
 			<li>NonContractable</li>
 			<li>AnimalGeneticFailure</li>
 		</tradeTags>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<destroyCorpse>true</destroyCorpse>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
 		<defName>GR_FleshFlies</defName>
@@ -479,6 +482,5 @@
 				</bodyGraphicData>
 			</li>
 		</lifeStages>
-	
 	</PawnKindDef>
 </Defs>
