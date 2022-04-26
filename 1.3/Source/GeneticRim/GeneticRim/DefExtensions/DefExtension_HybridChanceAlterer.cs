@@ -29,6 +29,10 @@ namespace GeneticRim
         // Add initial hediffs to hybrid.
         public List<HediffToBodyparts> addedHediffs;
 
+        // Hybrid gender toggle.
+        public bool forceFemale = false;
+        public bool forceMale = false;
+
 
 
         public bool isBooster;

@@ -131,6 +131,16 @@ namespace GeneticRim
                                 AddInitialHybridHediffs(extension, pawn);
                             }
 
+                            if (extension?.forceFemale != false)
+                            {
+                                pawn.gender = Gender.Female;
+                            }
+
+                            if (extension?.forceMale != false)
+                            {
+                                pawn.gender = Gender.Male;
+                            }
+
                         }
                        
 
