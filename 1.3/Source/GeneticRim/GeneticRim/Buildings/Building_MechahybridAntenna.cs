@@ -13,7 +13,7 @@ namespace GeneticRim
     public class Building_MechahybridAntenna : Building
     {
         public HashSet<Pawn> assignedMechs = new HashSet<Pawn>();
-        public const int maxMechs = 5;
+        public int maxMechs = 5;
         public const int checkingPeriod = 600;
 
 
@@ -30,6 +30,7 @@ namespace GeneticRim
             base.Tick();
             if (this.IsHashIntervalTick(checkingPeriod))
             {
+                maxMechs = GeneticRim_Mod.settings.GR_HybridsPerAntenna;
                 foreach (Pawn pawn in assignedMechs)
                 {
                     CompDieUnlessReset comp = pawn.TryGetComp<CompDieUnlessReset>();

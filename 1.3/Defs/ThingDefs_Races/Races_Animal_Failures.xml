@@ -421,7 +421,9 @@
 			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
 				<hediffname>GR_HighlyFlammable</hediffname>
 			</li>
-			
+			<li Class="GeneticRim.CompProperties_FleshFlies">
+				
+			</li>
 		</comps>
 		<race>
 			<herdMigrationAllowed>false</herdMigrationAllowed>

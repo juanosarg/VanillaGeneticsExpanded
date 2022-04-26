@@ -73,6 +73,7 @@
 	<GR_ElectroWomb_Progress>Progress: {0}</GR_ElectroWomb_Progress>
 	<GR_ElectroWomb_Finished>A creature has hatched from an electrowomb</GR_ElectroWomb_Finished>
 	<GR_ElectroWomb_Finished_Failure>A creature has hatched from an electrowomb... but something went terribly wrong!</GR_ElectroWomb_Finished_Failure>
+	<GR_MustPlaceRoofed>This building needs to be placed in an indoors, roofed area</GR_MustPlaceRoofed>
 	<!-- DNA Storage -->
 	<GR_SelectGenomeToHarvest>Select genome to harvest</GR_SelectGenomeToHarvest>
 	<GR_SelectGenomeToHarvestDesc>Select genome to harvest</GR_SelectGenomeToHarvestDesc>
@@ -190,5 +191,7 @@
 	<GR_DisableWombAlertsTooltip>Disable the pop up message that appears when a creature finishes growing in an electrowomb</GR_DisableWombAlertsTooltip>
 	<GR_DisableMechanoidIFF>Disable mech hybrid IFF sensors</GR_DisableMechanoidIFF>
 	<GR_DisableMechanoidIFFTooltip>Disable mechanoid hybrids having a need for a mechahybrid antenna. With this setting ON, mechanoid hybrids will always remain tamed (with base game animal trainability mechanics still present) and you won't need to build any mechahybrid antennas, ever.</GR_DisableMechanoidIFFTooltip>
+	<GR_HybridsPerAntenna>Mechanoid hybrids supported per antenna</GR_HybridsPerAntenna>
+	<GR_HybridsPerAntennaTooltip>Choose the amount of hybrids that will be supported for each mechahybrid antenna. Default is five.</GR_HybridsPerAntennaTooltip>
 	
 </LanguageData>

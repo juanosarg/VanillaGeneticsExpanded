@@ -29,6 +29,9 @@ namespace GeneticRim
         public const float GR_RaidsRateBase = 1;
         public float GR_RaidsRate = GR_RaidsRateBase;
 
+        public const int GR_HybridsPerAntennaBase = 5;
+        public int GR_HybridsPerAntenna = GR_HybridsPerAntennaBase;
+
         public bool GR_DisableOldAgeDiseases = false;
         public bool GR_DisableHybridRaids = false;
         public bool GR_MakeAllHybridsFertile = false;
@@ -54,6 +57,7 @@ namespace GeneticRim
             Scribe_Values.Look(ref GR_FailureRate, "GR_FailureRate", GR_FailureRateBase);
             Scribe_Values.Look(ref GR_QuestRate, "GR_QuestRate", GR_QuestRateBase);
             Scribe_Values.Look(ref GR_RaidsRate, "GR_RaidsRate", GR_RaidsRateBase);
+            Scribe_Values.Look(ref GR_HybridsPerAntenna, "GR_HybridsPerAntenna", GR_HybridsPerAntennaBase);
 
 
 
@@ -142,6 +146,13 @@ namespace GeneticRim
             if (listingStandard.Settings_Button("GR_Reset".Translate(), new Rect(0f, RaidsRateLabel.position.y + 35, 180f, 29f)))
             {
                 GR_RaidsRate = GR_RaidsRateBase;
+            }
+
+            var HybridsPerAntennaLabel = listingStandard.LabelPlusButton("GR_HybridsPerAntenna".Translate() + ": " + GR_HybridsPerAntenna, "GR_HybridsPerAntennaTooltip".Translate());
+            GR_HybridsPerAntenna = (int)(listingStandard.Slider(GR_HybridsPerAntenna, 1f, 50f));
+            if (listingStandard.Settings_Button("GR_Reset".Translate(), new Rect(0f, HybridsPerAntennaLabel.position.y + 35, 180f, 29f)))
+            {
+                GR_HybridsPerAntenna = GR_HybridsPerAntennaBase;
             }
 
 

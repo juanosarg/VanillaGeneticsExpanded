@@ -54,6 +54,9 @@
 			<li>GR_GeneticEngineering</li>
 		</researchPrerequisites>
 		<designationCategory>GR_GeneticsTab</designationCategory>
+		<placeWorkers>
+			<li>GeneticRim.PlaceWorker_MustBeRoofed</li>
+		</placeWorkers>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_ElectroWomb</defName>
@@ -112,6 +115,9 @@
 			<li>GR_GeneticEngineering</li>
 		</researchPrerequisites>
 		<designationCategory>GR_GeneticsTab</designationCategory>
+		<placeWorkers>
+			<li>GeneticRim.PlaceWorker_MustBeRoofed</li>
+		</placeWorkers>
 	</ThingDef>
 	<ThingDef ParentName="BuildingBase">
 		<defName>GR_LargeElectroWomb</defName>
@@ -170,6 +176,9 @@
 			<li>GR_GeneticEngineering</li>
 		</researchPrerequisites>
 		<designationCategory>GR_GeneticsTab</designationCategory>
+		<placeWorkers>
+			<li>GeneticRim.PlaceWorker_MustBeRoofed</li>
+		</placeWorkers>
 	</ThingDef>
 	<ThingDef ParentName="BenchBase">
 		<defName>GR_TissueGrinder</defName>

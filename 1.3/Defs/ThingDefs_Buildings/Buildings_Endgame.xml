@@ -145,6 +145,9 @@
 			</li>
 		</comps>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>GeneticRim.PlaceWorker_MustBeRoofed</li>
+		</placeWorkers>
 	</ThingDef>
 	
 </Defs>
