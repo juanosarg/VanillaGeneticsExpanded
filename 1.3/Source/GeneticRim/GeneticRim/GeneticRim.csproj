@@ -390,6 +390,9 @@
     <Compile Include="DeathActionWorkers\DeathActionWorker_BeeExplosion.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_SmallAcidExplosion.cs" />
     <Compile Include="DefExtensions\DefExtension_Paragon.cs" />
+    <Compile Include="Dev Mode\GenerateMechLabQuest.cs" />
+    <Compile Include="Dev Mode\SpawnHybridRaid.cs" />
+    <Compile Include="Dev Mode\GenerateAbandonedLabQuest.cs" />
     <Compile Include="Game, World and Map Components\GameComponent_ManffaloExperience.cs" />
     <Compile Include="Game, World and Map Components\WorldComponent_LabQuests.cs" />
     <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
