@@ -43,14 +43,18 @@ namespace GeneticRim
                     {
                         if (Props.manhunterButNotDie)
                         {
-                            pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
-                            pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
-                            if (pawn.health.hediffSet.HasHediff(InternalDefOf.GR_AnimalControlHediff))
-                            {
-                                Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.GR_AnimalControlHediff);
-                                pawn.health.RemoveHediff(hediff);
+                            if (!GeneticRim_Mod.settings.GR_DisableMechanoidIFF || pawn.def?.tradeTags?.Contains("AnimalGeneticMechanoid")==false) {
+                                pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
+                                pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
+                                if (pawn.health.hediffSet.HasHediff(InternalDefOf.GR_AnimalControlHediff))
+                                {
+                                    Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(InternalDefOf.GR_AnimalControlHediff);
+                                    pawn.health.RemoveHediff(hediff);
+                                }
+                                manhunter = true;
+
                             }
-                            manhunter = true;
+                            
 
                         }
                         else
@@ -85,9 +89,14 @@ namespace GeneticRim
             if (!manhunter) {
 
                 if (Props.expressTimeInPercentage) {
-                    string text = base.CompInspectStringExtra();
-                    string timeToLive = Props.message.Translate((1-((float)tickCounter/Props.timeToDieInTicks)).ToStringPercent());
-                    return text + timeToLive;
+                    if (!GeneticRim_Mod.settings.GR_DisableMechanoidIFF || this.parent.def?.tradeTags?.Contains("AnimalGeneticMechanoid") == false)
+                    {
+                        string text = base.CompInspectStringExtra();
+                        string timeToLive = Props.message.Translate((1 - ((float)tickCounter / Props.timeToDieInTicks)).ToStringPercent());
+                        return text + timeToLive;
+                    }
+                    else return base.CompInspectStringExtra();
+
 
                 } else
                 {

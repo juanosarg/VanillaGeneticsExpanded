@@ -35,6 +35,7 @@ namespace GeneticRim
         public bool GR_MakeAllHybridsControllable = false;
         public bool GR_DisableGrowthCellAlerts = false;
         public bool GR_DisableWombAlerts = false;
+        public bool GR_DisableMechanoidIFF = false;
 
 
         private static Vector2 scrollPosition = Vector2.zero;
@@ -62,6 +63,7 @@ namespace GeneticRim
             Scribe_Values.Look(ref GR_MakeAllHybridsControllable, "GR_MakeAllHybridsControllable", false);
             Scribe_Values.Look(ref GR_DisableGrowthCellAlerts, "GR_DisableGrowthCellAlerts", false);
             Scribe_Values.Look(ref GR_DisableWombAlerts, "GR_DisableWombAlerts", false);
+            Scribe_Values.Look(ref GR_DisableMechanoidIFF, "GR_DisableMechanoidIFF", false);
 
 
 
@@ -104,6 +106,8 @@ namespace GeneticRim
             listingStandard.CheckboxLabeled("GR_MakeAllHybridsControllable".Translate(), ref GR_MakeAllHybridsControllable, "GR_MakeAllHybridsControllableTooltip".Translate());
             listingStandard.CheckboxLabeled("GR_DisableGrowthCellAlerts".Translate(), ref GR_DisableGrowthCellAlerts, "GR_DisableGrowthCellAlertsTooltip".Translate());
             listingStandard.CheckboxLabeled("GR_DisableWombAlerts".Translate(), ref GR_DisableWombAlerts, "GR_DisableWombAlertsTooltip".Translate());
+            listingStandard.CheckboxLabeled("GR_DisableMechanoidIFF".Translate(), ref GR_DisableMechanoidIFF, "GR_DisableMechanoidIFFTooltip".Translate());
+
             listingStandard.GapLine();
             var GenomorpherSpeedMultiplierLabel = listingStandard.LabelPlusButton("GR_GenomorpherSpeedMultiplier".Translate() + ": " + GR_GenomorpherSpeedMultiplier, "GR_GenomorpherSpeedMultiplierTooltip".Translate());
             GR_GenomorpherSpeedMultiplier = (float)Math.Round(listingStandard.Slider(GR_GenomorpherSpeedMultiplier, 0.1f, 2f), 2);

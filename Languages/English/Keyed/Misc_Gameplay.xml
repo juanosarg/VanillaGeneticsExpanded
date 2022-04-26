@@ -188,5 +188,7 @@
 	<GR_DisableGrowthCellAlertsTooltip>Disable the pop up message that appears when a growth cell is finished by a genomorpher</GR_DisableGrowthCellAlertsTooltip>
 	<GR_DisableWombAlerts>Disable electrowomb alerts</GR_DisableWombAlerts>
 	<GR_DisableWombAlertsTooltip>Disable the pop up message that appears when a creature finishes growing in an electrowomb</GR_DisableWombAlertsTooltip>
+	<GR_DisableMechanoidIFF>Disable mech hybrid IFF sensors</GR_DisableMechanoidIFF>
+	<GR_DisableMechanoidIFFTooltip>Disable mechanoid hybrids having a need for a mechahybrid antenna. With this setting ON, mechanoid hybrids will always remain tamed (with base game animal trainability mechanics still present) and you won't need to build any mechahybrid antennas, ever.</GR_DisableMechanoidIFFTooltip>
 	
 </LanguageData>
