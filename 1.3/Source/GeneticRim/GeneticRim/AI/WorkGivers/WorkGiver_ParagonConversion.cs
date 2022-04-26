@@ -11,7 +11,7 @@ namespace GeneticRim
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn)
         {
 
-            return pawn.Map.GetComponent<ArchotechExtractableAnimals_MapComponent>().paragonsToCarry.Keys;
+            return pawn.Map?.GetComponent<ArchotechExtractableAnimals_MapComponent>()?.paragonsToCarry?.Keys;
 
 
         }
