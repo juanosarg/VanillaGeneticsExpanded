@@ -361,7 +361,10 @@ namespace GeneticRim
             if (!this.genomesCanBeSecondary.NullOrEmpty())
             {
                 this.genomeSecondary = this.genomesCanBeSecondary.RandomElement();
-               
+               if(genomeDominant== genomeSecondary && genomeDominant.stackCount <= 1)
+                {
+                    genomeSecondary = null;
+                }
 
             }
             if (!this.genoframes.NullOrEmpty())

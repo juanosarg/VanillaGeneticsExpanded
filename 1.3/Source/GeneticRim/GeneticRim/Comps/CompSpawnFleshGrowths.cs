@@ -60,16 +60,29 @@ namespace GeneticRim
                     if (current.InBounds(parent.Map) && room?.OutdoorsForWork==false)
                     {
 
-                        if (totalCreated < totalToMake)
+                        bool doorFound = false;
+                        List<Thing> list = parent.Map.thingGrid.ThingsListAt(current);
+                        for (int i = 0; i < list.Count; i++)
                         {
-                            Thing thing = ThingMaker.MakeThing(InternalDefOf.GR_FleshGrowth_Building, null);
-                            thing.Rotation = Rot4.North;
-                            thing.Position = current;
-
-                            thing.SpawnSetup(parent.Map, false);
-
-                            totalCreated++;
+                            if (list[i].def.IsDoor)
+                            {
+                                doorFound = true;
+                            }
                         }
+
+                        if (!doorFound) {
+                            if (totalCreated < totalToMake)
+                            {
+                                Thing thing = ThingMaker.MakeThing(InternalDefOf.GR_FleshGrowth_Building, null);
+                                thing.Rotation = Rot4.North;
+                                thing.Position = current;
+
+                                thing.SpawnSetup(parent.Map, false);
+
+                                totalCreated++;
+                            }
+                        }
+                        
 
 
                     }

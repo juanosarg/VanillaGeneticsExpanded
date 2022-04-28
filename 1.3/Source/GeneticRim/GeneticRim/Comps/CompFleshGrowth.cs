@@ -73,7 +73,7 @@ namespace GeneticRim
                     List<Thing> list = parent.Map.thingGrid.ThingsListAt(current);
                     for (int i = 0; i < list.Count; i++)
                     {
-                        if (list[i].def == InternalDefOf.GR_FleshGrowth_Building )
+                        if ((list[i].def == InternalDefOf.GR_FleshGrowth_Building)|| list[i].def.IsDoor)
                         {
                             buildingFound = true;
                         }
