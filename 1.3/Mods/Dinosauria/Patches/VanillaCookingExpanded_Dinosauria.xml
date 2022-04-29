@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+
+
+
+				<!-- Dino Milk -->
+
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs</xpath>
+					<value>
+						<ItemProcessor.CombinationDef>
+							<defName>VCE_DinoMilkIntoCheese</defName>
+							<building>VCE_CheesePress</building>
+							<items>
+								<li>GR_DinoMilk</li>
+							</items>	
+							<amount>
+								<li>50</li>
+							</amount>
+							<result>VCE_DinoCheese</result>	
+							<yield>25</yield>
+							<useQualityIncreasing>true</useQualityIncreasing>
+							<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+							<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+							<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+							<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+							<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+							<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+							<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
+						</ItemProcessor.CombinationDef>
+					</value>
+				</li>
+
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs</xpath>
+					<value>
+
+
+						<ThingDef ParentName="MealBase">
+							<defName>VCE_DinoCheese</defName>
+							<label>dino "cheese"</label>
+							<description>A fake cheese, from a fake milk. Best not to think where this came from.</description>
+							<graphicData>
+								<texPath>Things/Items/Cheese/VCE_DinoCheese</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<tradeability>Sellable</tradeability>
+							<stackLimit>75</stackLimit>
+							<statBases>
+								<MarketValue>12</MarketValue>
+								<Nutrition>0.18</Nutrition>
+							</statBases>
+							<thingCategories>
+								<li>VCE_Cheese</li>
+							</thingCategories>
+							<ingestible>
+								<preferability>MealLavish</preferability>
+								<ingestEffect>EatMeat</ingestEffect>
+								<ingestSound>Meal_Eat</ingestSound>
+								<maxNumToIngestAtOnce>6</maxNumToIngestAtOnce>	
+							</ingestible>
+							<comps>
+								<li Class="CompProperties_Rottable">
+									<daysToRotStart>120</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+								</li>
+								<li>
+									<compClass>CompQuality</compClass>
+								</li>
+								<li Class="VanillaCookingExpanded.CompProperties_StackByQuality" />
+								<li Class="VFECore.CompProperties_IngestedThoughtFromQuality">
+									<ingestedThought>VCE_AteCheese</ingestedThought>
+								</li>
+							</comps>
+
+						</ThingDef>
+
+
+					</value>
+				</li>
+
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<success>Always</success>
+					<xpath>/Defs/ItemProcessor.ItemAcceptedDef[defName = "IP_CheesePressFirstItem"]/items</xpath>
+					<value>
+						<li>GR_DinoMilk</li>
+
+
+					</value>
+				</li>
+
+
+
+
+
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
