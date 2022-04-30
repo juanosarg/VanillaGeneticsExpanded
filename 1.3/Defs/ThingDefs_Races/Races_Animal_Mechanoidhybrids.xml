@@ -223,6 +223,7 @@
 			<baseHungerRate>0.001</baseHungerRate>
 			<trainability>Advanced</trainability>
 			<needsRest>true</needsRest>
+			<wildness>0.8</wildness>
 			<hasGenders>false</hasGenders>
 			<manhunterOnDamageChance>1</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
