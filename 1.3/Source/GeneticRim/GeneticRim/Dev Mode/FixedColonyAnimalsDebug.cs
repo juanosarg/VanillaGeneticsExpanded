@@ -60,7 +60,7 @@ namespace GeneticRim
             if (flags.Contains(ColonyMakerFlag.Animals))
             {
                 foreach (PawnKindDef pawnKindDef in from k in DefDatabase<PawnKindDef>.AllDefs
-                                                    where k.RaceProps.Animal
+                                                    where k.RaceProps.Animal && k != InternalDefOf.GR_FleshFlies
                                                     select k)
                 {
                     CellRect cellRect;
