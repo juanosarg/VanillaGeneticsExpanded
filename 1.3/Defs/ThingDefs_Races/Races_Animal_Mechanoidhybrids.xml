@@ -1410,7 +1410,7 @@
 			<body>QuadrupedAnimalWithHooves</body>
 			<baseBodySize>4</baseBodySize>
 			<baseHealthScale>4</baseHealthScale>
-			<baseHungerRate>0.001</baseHungerRate>
+			<baseHungerRate>0.02</baseHungerRate>
 			<foodType>VegetarianRoughAnimal</foodType>
 			<useLeatherFrom>Horse</useLeatherFrom>
 			<useMeatFrom>Horse</useMeatFrom>
