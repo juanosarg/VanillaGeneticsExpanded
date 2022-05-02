@@ -62,10 +62,23 @@ namespace GeneticRim
                 }
                 foreach (ThingDef thing in allExcavatorsLinks)
                 {
-                    if (!excavator.descriptionHyperlinks.Contains(thing)) {
-                        excavator.descriptionHyperlinks.Add(thing);
+
+                    bool linkFound = false;
+
+                    foreach (DefHyperlink link in excavator.descriptionHyperlinks)
+                    {
+                        if (link.def == thing)
+                        {
+                            linkFound = true;
+                        }
 
                     }
+                    if (!linkFound)
+                    {
+                        excavator.descriptionHyperlinks.Add(thing);
+                    }
+
+                   
 
                 }
 
@@ -97,12 +110,21 @@ namespace GeneticRim
             }
             foreach (ThingDef thing in allGenomesLinks)
             {
-                
-                if (!genome.descriptionHyperlinks.Contains(thing))
+                bool linkFound = false;
+
+                foreach (DefHyperlink link in genome.descriptionHyperlinks)
                 {
-                    genome.descriptionHyperlinks.Add(thing);
+                    if (link.def == thing)
+                    {
+                        linkFound = true;
+                    }
 
                 }
+                if (!linkFound)
+                {
+                    genome.descriptionHyperlinks.Add(thing);
+                }
+                
             }
         }
 
@@ -123,12 +145,21 @@ namespace GeneticRim
             
             foreach (ThingDef thing in allGenomesLinks)
             {
-                
-                if (!former.descriptionHyperlinks.Contains(thing))
+                bool linkFound = false;
+
+                foreach (DefHyperlink link in former.descriptionHyperlinks)
                 {
-                   former.descriptionHyperlinks.Add(thing);
+                    if (link.def == thing)
+                    {
+                        linkFound = true;
+                    }
 
                 }
+                if (!linkFound)
+                {
+                    former.descriptionHyperlinks.Add(thing);
+                }
+               
             }
         }
 
@@ -147,12 +178,22 @@ namespace GeneticRim
                             animal.descriptionHyperlinks = new List<DefHyperlink>();
                         }
                         if (extractableAnimalsList.itemProduced != null) {
+                            bool linkFound = false;
 
-                            if (!animal.descriptionHyperlinks.Contains(extractableAnimalsList.itemProduced))
+                            foreach (DefHyperlink link in animal.descriptionHyperlinks)
+                            {
+                                if(link.def== extractableAnimalsList.itemProduced)
+                                {
+                                    linkFound = true;
+                                }
+                            
+                            }
+                            if (!linkFound)
                             {
                                 animal.descriptionHyperlinks.Add(extractableAnimalsList.itemProduced);
-
                             }
+
+                             
                             
                         }
                         

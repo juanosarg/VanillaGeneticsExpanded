@@ -23,7 +23,7 @@ namespace GeneticRim
 
                 if (womb!=null)
                 {
-                    yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap), () =>
+                    yield return new FloatMenuOption("GR_ArchoGrowthCell_InsertInElectroWomb".Translate(building.LabelCap), () =>
                                                                                                                        {
                                                                                                                            Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertArchotechGrowthCell, womb,
                                                                                                                                this.parent);

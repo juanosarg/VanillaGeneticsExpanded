@@ -12,7 +12,7 @@
 		<rotatable>false</rotatable>
 		<tickerType>Normal</tickerType>
 		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>2.0</Flammability>
 		</statBases>
 		<comps>
