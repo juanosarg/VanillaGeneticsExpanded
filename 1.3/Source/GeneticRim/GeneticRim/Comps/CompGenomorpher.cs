@@ -148,7 +148,22 @@ namespace GeneticRim
                         
                 };
                 yield return command_Action;
-               
+
+                Command_Action command_Action2 = new Command_Action();
+                command_Action2.defaultLabel = "DEBUG: Reset All";
+                command_Action2.action = delegate
+                {
+                    duration = -1;
+                    progress = -1f;
+                    growthCell = null;
+                    genomeDominant = null;
+                    genomeSecondary = null;
+                    frame = null;
+                    booster = null;
+
+                };
+                yield return command_Action2;
+
             }
         }
 
