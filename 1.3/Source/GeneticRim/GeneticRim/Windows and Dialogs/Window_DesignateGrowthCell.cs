@@ -178,17 +178,21 @@ namespace GeneticRim
                         
                     }
 
-                    if (this.genomeDominant.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true)
+                    
+
+                    if(this.genomeDominant.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierTwoOrThree) == true)
                     {
                         foreach (var genome in this.genomes.ToList())
                         {
-                            if(genome.stackCount>1 && genome.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) == false) {
+                            if (((genome.stackCount > 1) || (genome != genomeDominant)) && genome.def.thingCategories?.Contains(InternalDefOf.GR_GeneticMaterialTierOne) == false)
+                            {
                                 floatOptions.Add(new FloatMenuOption(genome.def.LabelCap, delegate
                                 {
                                     genomeSecondary = genome;
                                 }));
                             }
-                            
+
+
                         }
 
                     }
@@ -360,8 +364,12 @@ namespace GeneticRim
             }
             if (!this.genomesCanBeSecondary.NullOrEmpty())
             {
+
+             
                 this.genomeSecondary = this.genomesCanBeSecondary.RandomElement();
-               if(genomeDominant== genomeSecondary && genomeDominant.stackCount <= 1)
+
+
+               if(genomeDominant == genomeSecondary && genomeDominant.stackCount <= 1)
                 {
                     genomeSecondary = null;
                 }
