@@ -58,6 +58,9 @@
 			<commonality>0</commonality>
 			<color>(233,233,233)</color>
 		</stuffProps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="WoolBase">
 		<defName>GR_HybridSilk</defName>
@@ -173,5 +176,8 @@
 			<commonality>0</commonality>
 			<color>(202,202,202)</color>
 		</stuffProps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 </Defs>

@@ -19,6 +19,9 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!--=============== Legs ====================-->
 	<ThingDef ParentName="GR_AnimalImplantBase">

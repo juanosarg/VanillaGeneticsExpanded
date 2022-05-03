@@ -27,6 +27,9 @@
 				<hatcherPawn>GR_ParagonChicken</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Paragon Iguana Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -64,6 +67,9 @@
 				<hatcherPawn>GR_ParagonIguana</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Bear / Chicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -95,6 +101,9 @@
 				<hatcherPawn>GR_Bearchicken</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Chicken / Bear Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -126,6 +135,9 @@
 				<hatcherPawn>GR_Chickenbear</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Chicken / Boomalope Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -157,6 +169,9 @@
 				<hatcherPawn>GR_Chickenlope</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Chicken / Muffalo Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -188,6 +203,9 @@
 				<hatcherPawn>GR_Chickenffalo</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Chicken / Wolf Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -219,6 +237,9 @@
 				<hatcherPawn>GR_Chickenwolf</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Chicken / Rabbit Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -252,6 +273,9 @@
 				<hatcherPawn>GR_Chickenrabbit</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Chicken / Cat Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -283,6 +307,9 @@
 				<hatcherPawn>GR_Chickencat</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	
 	
@@ -317,6 +344,9 @@
 				<hatcherPawn>GR_Boomachicken</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Wolf / Chicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -348,6 +378,9 @@
 				<hatcherPawn>GR_Wolfchicken</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Thrumbochicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -384,6 +417,9 @@
 				<hatcherPawn>GR_Thrumbochicken</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Chickenspider Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -430,6 +466,9 @@
 				<hatcherPawn>GR_Chickenlizard</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Horse / Chicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -461,6 +500,9 @@
 				<hatcherPawn>GR_Chickenhorse</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Chicken / Humanoid Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -492,6 +534,9 @@
 				<hatcherPawn>GR_Turkeyman</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	
 </Defs>

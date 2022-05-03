@@ -17,6 +17,9 @@
 		<tradeTags>
 			<li>ExoticMisc</li>
 		</tradeTags>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="GR_GenomeExcavatorBase">
 		<defName>GR_GenomeExcavator</defName>

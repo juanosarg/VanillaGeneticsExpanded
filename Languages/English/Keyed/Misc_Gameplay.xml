@@ -33,6 +33,7 @@
 	<GR_GrowthCell_InspectBooster>Booster: {0}</GR_GrowthCell_InspectBooster>
 	<GR_GrowthCell_InsertInElectroWomb>Insert {1} cell (size {2}) into {0}</GR_GrowthCell_InsertInElectroWomb>
 	<GR_ArchoGrowthCell_InsertInElectroWomb>Insert archotech growth cell into {0}</GR_ArchoGrowthCell_InsertInElectroWomb>
+	<GR_DestroyedByTemp>{0} has been destroyed by temperature (needs between 0 and 50 ºC)</GR_DestroyedByTemp>
 	<!-- Excavators -->
 	<GR_NoValidExtraction>No valid genes can be extracted from this animal with this extractor</GR_NoValidExtraction>
 	<GR_AlreadyExtracted>This animal has already had its genetic material extracted</GR_AlreadyExtracted>

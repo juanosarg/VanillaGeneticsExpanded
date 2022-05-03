@@ -31,6 +31,9 @@
 				<safety>10</safety>
 			</li>
 		</modExtensions>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef Name="GR_GeneticsBaseTier2or3" ParentName="GR_GeneticsBase" Abstract="True">
 		

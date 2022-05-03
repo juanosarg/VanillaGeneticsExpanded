@@ -29,6 +29,9 @@
 				<explosionForce>3</explosionForce>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_CompressedChemfuel</defName>

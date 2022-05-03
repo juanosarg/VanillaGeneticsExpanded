@@ -17,7 +17,7 @@ namespace GeneticRim
             foreach (FloatMenuOption option in base.CompFloatMenuOptions(selPawn)) 
                 yield return option;
 
-            foreach (Building building in this.parent.Map.listerBuildings.allBuildingsColonist)
+            foreach (Building building in this.parent?.Map?.listerBuildings?.allBuildingsColonist)
             {
                 Building_ArchoWomb womb = building as Building_ArchoWomb;
 

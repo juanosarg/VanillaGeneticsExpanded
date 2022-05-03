@@ -17,6 +17,9 @@
 		<thingCategories>
 			<li>GR_Boosters</li>
 		</thingCategories>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="GR_BoosterBase">

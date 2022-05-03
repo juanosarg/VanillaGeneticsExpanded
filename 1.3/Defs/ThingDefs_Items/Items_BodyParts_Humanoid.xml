@@ -18,6 +18,9 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!--=============== Human Hybrid Implants ====================-->
 	<ThingDef ParentName="GR_HumanImplantBase">

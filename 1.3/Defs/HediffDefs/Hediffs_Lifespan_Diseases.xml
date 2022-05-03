@@ -194,9 +194,10 @@
 			<li>
 				<minSeverity>0</minSeverity>
 				<lifeThreatening>true</lifeThreatening>
+				<restFallFactor>0.01</restFallFactor>
 				<statOffsets>
 					<HungerRateMultiplier>-10</HungerRateMultiplier>
-					<RestRateMultiplier>0.01</RestRateMultiplier>
+					
 				</statOffsets>
 			</li>
 		</stages>

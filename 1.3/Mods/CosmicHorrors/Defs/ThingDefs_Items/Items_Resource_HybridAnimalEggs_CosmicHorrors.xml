@@ -59,6 +59,9 @@
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Eldritch Chicken Egg -->
 	<ThingDef ParentName="GR_EldritchEggUnfertBase">

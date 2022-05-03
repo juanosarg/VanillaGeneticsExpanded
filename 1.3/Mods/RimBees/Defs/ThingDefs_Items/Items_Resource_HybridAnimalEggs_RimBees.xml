@@ -22,6 +22,9 @@
         <hatcherPawn>GR_BeeHybrid_Chickenbee</hatcherPawn>
       </li>
     </comps>
+	<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
   </ThingDef>
   
    

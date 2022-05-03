@@ -19,11 +19,11 @@
             foreach (FloatMenuOption option in base.CompFloatMenuOptions(selPawn)) 
                 yield return option;
 
-            foreach (Building building in this.parent.Map.listerBuildings.allBuildingsColonist)
+            foreach (Building building in this.parent?.Map?.listerBuildings?.allBuildingsColonist)
             {
                 if (building.TryGetComp<CompElectroWomb>()?.Free ?? false)
                 {
-                    yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap,mainResult.LabelCap,mainResult.race.race.baseBodySize.ToString()), () =>
+                    yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap,mainResult.LabelCap,mainResult?.race?.race?.baseBodySize.ToString()), () =>
                                                                                                                        {
 
                                                                                                                            if (selPawn.CanReserveAndReach(building, PathEndMode.OnCell, Danger.Deadly)&&

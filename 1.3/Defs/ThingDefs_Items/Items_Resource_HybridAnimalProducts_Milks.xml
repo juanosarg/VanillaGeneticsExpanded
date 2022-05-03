@@ -48,6 +48,9 @@
 		<thingCategories>
 			<li>AnimalProductRaw</li>
 		</thingCategories>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>GR_BearffaloMilk</defName>

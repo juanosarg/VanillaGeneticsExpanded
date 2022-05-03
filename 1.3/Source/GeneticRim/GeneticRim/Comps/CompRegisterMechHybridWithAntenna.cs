@@ -33,12 +33,14 @@ namespace GeneticRim
 
         public void CheckForAntenna()
         {
-            if (this.parent.Faction == Faction.OfPlayer)
+            Pawn pawn = this.parent as Pawn;
+
+            if (pawn.Faction == Faction.OfPlayer)
             {
                 bool alreadyRegistered = false;
                 foreach (Building_MechahybridAntenna antenna in StaticCollectionsClass.mech_antennas)
                 {
-                    if (antenna.assignedMechs.Contains((Pawn)this.parent))
+                    if (antenna.assignedMechs.Contains((Pawn)pawn))
                     {
                         alreadyRegistered = true;
                     }
@@ -48,7 +50,7 @@ namespace GeneticRim
                 {
                     foreach (Building_MechahybridAntenna antenna in StaticCollectionsClass.mech_antennas)
                     {
-                        if (antenna.AddMechToList((Pawn)this.parent))
+                        if (antenna.AddMechToList((Pawn)pawn))
                         {
                             break;
                         }

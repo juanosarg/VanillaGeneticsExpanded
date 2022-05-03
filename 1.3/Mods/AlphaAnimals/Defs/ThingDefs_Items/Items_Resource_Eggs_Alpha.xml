@@ -34,6 +34,9 @@
 				<hatcherPawn>GR_BearBug</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- Needlechicken Egg -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -67,6 +70,9 @@
 				<hatcherPawn>GR_Needlechicken</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- =============== Nighthrumbo Egg =============== -->
 	<ThingDef ParentName="EggFertBase">
@@ -87,6 +93,9 @@
 				<hatcherPawn>GR_Nighthrumbo</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- =============== Meadow Lizard Egg =============== -->
 	<ThingDef ParentName="EggFertBase">
@@ -107,5 +116,8 @@
 				<hatcherPawn>GR_MeadowLizard</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 </Defs>

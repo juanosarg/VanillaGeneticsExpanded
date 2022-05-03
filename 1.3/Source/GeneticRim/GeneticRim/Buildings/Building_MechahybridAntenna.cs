@@ -33,6 +33,12 @@ namespace GeneticRim
                 maxMechs = GeneticRim_Mod.settings.GR_HybridsPerAntenna;
                 foreach (Pawn pawn in assignedMechs)
                 {
+
+                    if (pawn.Dead || pawn.health?.hediffSet?.GetFirstHediffOfDef(InternalDefOf.GR_GreaterScaria)!=null)
+                    {
+                        RemoveMechFromList(pawn);
+                    }
+
                     CompDieUnlessReset comp = pawn.TryGetComp<CompDieUnlessReset>();
                     if (comp != null)
                     {

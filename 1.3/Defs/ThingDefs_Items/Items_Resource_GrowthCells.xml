@@ -20,10 +20,13 @@
 		<thingCategories>
 			<li>GR_Incubators</li>
 		</thingCategories>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 		<stackLimit>1</stackLimit>
 		<comps>
 
-			<li Class="CompProperties_TemperatureRuinable">
+			<li Class="GeneticRim.CompProperties_TempRuinableAndDestroy">
 				<minSafeTemperature>0</minSafeTemperature>
 				<maxSafeTemperature>50</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
@@ -53,6 +56,9 @@
 			<Mass>10</Mass>
 			<MarketValue>45</MarketValue>
 		</statBases>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 		<tickerType>Normal</tickerType>
 		<tradeability>None</tradeability>
 		<thingCategories>

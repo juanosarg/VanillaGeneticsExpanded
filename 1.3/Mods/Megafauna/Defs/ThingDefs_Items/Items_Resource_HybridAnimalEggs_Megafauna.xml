@@ -24,6 +24,9 @@
 				<hatcherPawn>GR_Chickenlodon</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- ========= Mantistanis ========= -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -57,5 +60,8 @@
 				<hatcherPawn>GR_Mantistanis</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 </Defs>

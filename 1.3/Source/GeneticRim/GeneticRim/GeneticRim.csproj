@@ -379,6 +379,7 @@
     <Compile Include="Comps\CompProperties\CompProperties_StartCharged.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_TargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompProperties\CompProperties_TargetEffect_Extract.cs" />
+    <Compile Include="Comps\CompProperties\CompProperties_TempRuinableAndDestroy.cs" />
     <Compile Include="Comps\CompRandomHybridSpawner.cs" />
     <Compile Include="Comps\CompRandomItemSpawner.cs" />
     <Compile Include="Comps\CompRegisterMechAntenna.cs" />
@@ -387,6 +388,7 @@
     <Compile Include="Comps\CompStartCharged.cs" />
     <Compile Include="Comps\CompTargetableAnimalOrCorpse.cs" />
     <Compile Include="Comps\CompTargetEffect_Extract.cs" />
+    <Compile Include="Comps\CompTempRuinableAndDestroy.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_BeeExplosion.cs" />
     <Compile Include="DeathActionWorkers\DeathActionWorker_SmallAcidExplosion.cs" />
     <Compile Include="DefExtensions\DefExtension_Paragon.cs" />
@@ -395,6 +397,7 @@
     <Compile Include="Dev Mode\GenerateAbandonedLabQuest.cs" />
     <Compile Include="Game, World and Map Components\GameComponent_ManffaloExperience.cs" />
     <Compile Include="Game, World and Map Components\WorldComponent_LabQuests.cs" />
+    <Compile Include="Game, World and Map Components\WorldComponent_FailuresChecker.cs" />
     <Compile Include="Gas and Liquid\Persistant_Fuel.cs" />
     <Compile Include="Harmony\Building_Trap_CheckSpring.cs" />
     <Compile Include="Harmony\Caravan_NightResting.cs" />

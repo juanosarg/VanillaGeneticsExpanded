@@ -35,6 +35,9 @@
 		<tradeTags>
 			<li>ExoticMisc</li>
 		</tradeTags>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 		
 	</ThingDef>
 </Defs>

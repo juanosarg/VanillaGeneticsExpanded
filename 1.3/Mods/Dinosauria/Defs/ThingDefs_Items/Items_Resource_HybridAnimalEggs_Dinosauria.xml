@@ -36,6 +36,9 @@
 				<hatcherPawn>GR_Spinobear</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- ========= Parasaurolope ========= -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -73,6 +76,9 @@
 				<hatcherPawn>GR_Parasaurolope</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- ========= Chickennathus ========= -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -110,6 +116,9 @@
 				<hatcherPawn>GR_Chickennathus</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- ========= Triceraffalo ========= -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -147,6 +156,9 @@
 				<hatcherPawn>GR_Triceraffalo</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- ========= Raptortoise ========= -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -184,6 +196,9 @@
 				<hatcherPawn>GR_Raptortoise</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- ========= Stegothrumbo ========= -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -221,6 +236,9 @@
 				<hatcherPawn>GR_Stegothrumbo</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 	<!-- ========= Velociwolf ========= -->
 	<ThingDef ParentName="EggUnfertBase">
@@ -258,5 +276,8 @@
 				<hatcherPawn>GR_Velociwolf</hatcherPawn>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 </Defs>

@@ -58,7 +58,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>GR_FossilChemfuel</defName>
 		<label>fossil chemfuel</label>
-		<description>Volatile liquid chemical compound similar to fossil fuels. Can be used to power a fossil chemfuel generator.</description>
+		<description>Deprecated. No hybrid should produce this now.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 
@@ -72,7 +72,7 @@
 		<statBases>
 			<MaxHitPoints>50</MaxHitPoints>
 			<MarketValue>3</MarketValue>
-			<Mass>0.05</Mass>
+			<Mass>100</Mass>
 			<Flammability>1.0</Flammability>
 			<DeteriorationRate>1.0</DeteriorationRate>
 		</statBases>
@@ -93,6 +93,9 @@
 				<wickTicks>70~150</wickTicks>
 			</li>
 		</comps>
+		<thingSetMakerTags>
+			<li>NotForGuests</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 
