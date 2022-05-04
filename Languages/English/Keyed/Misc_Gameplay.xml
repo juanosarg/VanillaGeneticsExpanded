@@ -99,7 +99,7 @@
 	<GR_BeginArchotechCentipedeDesc>Create the Archotech centipede. The process will take about 15 days, and the energy signature will be detectable from a long distance away.</GR_BeginArchotechCentipedeDesc>
 	<GR_BeginArchotechCentipedeText>You are ready to start the archotech centipede project.\n\nThe process will take about 15 days, and the energy signature will be detectable from a long distance away. This sort of energy signature indicates that someone is meddling in technology that is far beyond human understanding, and will attract gangs of desperate raiders and swarms of deadly mechanoids.\n\nYou will be assaulted with an intensity you've never seen. Make sure your defenses are prepared first.</GR_BeginArchotechCentipedeText>
 	<GR_ArchoWombProgress>Archowomb progress: {0}</GR_ArchoWombProgress>
-	<GR_GameOverArchotech>You've activated the Archotech Project! These colonists were present for the archotech awakening:\n\n{0}\n\nThe Archotech Centipede is now under their control, and you are free to decimate your enemies and control the planet unopposed.\n\nCongratulations, you have won the game with the Vanilla Genetics Expanded mod!</GR_GameOverArchotech>	
+	<GR_GameOverArchotech>You've activated the Archotech Project! These colonists were present for the archotech awakening:\n\n{0}\n\nThe Archotech Centipede is now under their control, and you are free to decimate your enemies and control the planet unopposed.\n\nCongratulations, you have won the game with the Vanilla Genetics Expanded mod!</GR_GameOverArchotech>
 	<!-- Biomechanical lab beacon -->
 	<GR_DecodingRadioSignals>Decoding strange radio signals in {0}</GR_DecodingRadioSignals>
 	<!-- Mechahybridizer -->
@@ -195,5 +195,31 @@
 	<GR_DisableMechanoidIFFTooltip>Disable mechanoid hybrids having a need for a mechahybrid antenna. With this setting ON, mechanoid hybrids will always remain tamed (with base game animal trainability mechanics still present) and you won't need to build any mechahybrid antennas, ever.</GR_DisableMechanoidIFFTooltip>
 	<GR_HybridsPerAntenna>Mechanoid hybrids supported per antenna</GR_HybridsPerAntenna>
 	<GR_HybridsPerAntennaTooltip>Choose the amount of hybrids that will be supported for each mechahybrid antenna. Default is five.</GR_HybridsPerAntennaTooltip>
-	
+	<!-- Misc -->
+	<RB_BeeHoneyCombProduction>Honeycomb production</RB_BeeHoneyCombProduction>
+	<!-- Bee Tags -->
+	<RB_Organic_Drone_Tag>Organic Drone</RB_Organic_Drone_Tag>
+	<RB_Hybernating_Drone_Tag>Hybernating Drone</RB_Hybernating_Drone_Tag>
+	<RB_Cattle_Drone_Tag>Cattle Drone</RB_Cattle_Drone_Tag>
+	<RB_Clucking_Drone_Tag>Clucking Drone</RB_Clucking_Drone_Tag>
+	<RB_Exploding_Drone_Tag>Exploding Drone</RB_Exploding_Drone_Tag>
+	<RB_Horned_Drone_Tag>Horned Drone</RB_Horned_Drone_Tag>
+	<RB_Hound_Drone_Tag>Hound Drone</RB_Hound_Drone_Tag>
+	<RB_Mecha_Drone_Tag>Mecha Drone</RB_Mecha_Drone_Tag>
+	<RB_Megaspidery_Drone_Tag>Megaspidery Drone</RB_Megaspidery_Drone_Tag>
+	<RB_Mousy_Drone_Tag>Mousy Drone</RB_Mousy_Drone_Tag>
+	<RB_Purring_Drone_Tag>Purring Drone</RB_Purring_Drone_Tag>
+	<RB_Scaly_Drone_Tag>Scaly Drone</RB_Scaly_Drone_Tag>
+	<RB_Organic_Queen_Tag>Organic Queen</RB_Organic_Queen_Tag>
+	<RB_Hybernating_Queen_Tag>Hybernating Queen</RB_Hybernating_Queen_Tag>
+	<RB_Cattle_Queen_Tag>Cattle Queen</RB_Cattle_Queen_Tag>
+	<RB_Clucking_Queen_Tag>Clucking Queen</RB_Clucking_Queen_Tag>
+	<RB_Exploding_Queen_Tag>Exploding Queen</RB_Exploding_Queen_Tag>
+	<RB_Horned_Queen_Tag>Horned Queen</RB_Horned_Queen_Tag>
+	<RB_Hound_Queen_Tag>Hound Queen</RB_Hound_Queen_Tag>
+	<RB_Mecha_Queen_Tag>Mecha Queen</RB_Mecha_Queen_Tag>
+	<RB_Megaspidery_Queen_Tag>Megaspidery Queen</RB_Megaspidery_Queen_Tag>
+	<RB_Mousy_Queen_Tag>Mousy Queen</RB_Mousy_Queen_Tag>
+	<RB_Purring_Queen_Tag>Purring Queen</RB_Purring_Queen_Tag>
+	<RB_Scaly_Queen_Tag>Scaly Queen</RB_Scaly_Queen_Tag>
 </LanguageData>
