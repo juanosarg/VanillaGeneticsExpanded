@@ -32,7 +32,8 @@ namespace GeneticRim
                                 if (pawn.def != InternalDefOf.GR_Boomsnake && pawn.def != InternalDefOf.GR_ParagonIguana)
                                 {
                                     if (pawn.GetStatValue(StatDefOf.ToxicSensitivity) > 0) {
-                                        pawn.health.AddHediff(HediffDefOf.ToxicBuildup);
+                                        HealthUtility.AdjustSeverity(pawn, HediffDefOf.ToxicBuildup, (float)0.1);
+                                        //pawn.health.AddHediff(HediffDefOf.ToxicBuildup);
 
                                     }
                                    
