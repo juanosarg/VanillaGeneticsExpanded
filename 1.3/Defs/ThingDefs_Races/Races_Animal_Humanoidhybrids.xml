@@ -398,6 +398,7 @@
 			<useLeatherFrom>Chicken</useLeatherFrom>
 			<useMeatFrom>Chicken</useMeatFrom>
 			<wildness>0.36</wildness>
+			<gestationPeriodDays>7</gestationPeriodDays>
 			<trainability>None</trainability>
 			<roamMtbDays>8</roamMtbDays>
 			<lifeStageAges>
