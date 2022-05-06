@@ -31,6 +31,7 @@ namespace GeneticRim
         public override void CompTick()
         {
             base.CompTick();
+          
             if (!manhunter && parent.Map!=null)
             {
                 tickCounter++;

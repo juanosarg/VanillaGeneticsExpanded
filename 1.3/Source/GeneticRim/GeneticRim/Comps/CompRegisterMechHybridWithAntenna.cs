@@ -40,8 +40,10 @@ namespace GeneticRim
                 bool alreadyRegistered = false;
                 foreach (Building_MechahybridAntenna antenna in StaticCollectionsClass.mech_antennas)
                 {
+                    //Log.Message("checking antenna "+antenna.LabelCap);
                     if (antenna.assignedMechs.Contains((Pawn)pawn))
                     {
+                        //Log.Message(antenna.LabelCap+" contains this mech");
                         alreadyRegistered = true;
                     }
                 }
@@ -50,8 +52,10 @@ namespace GeneticRim
                 {
                     foreach (Building_MechahybridAntenna antenna in StaticCollectionsClass.mech_antennas)
                     {
+                        //Log.Message("Trying to add mech to "+antenna.LabelCap);
                         if (antenna.AddMechToList((Pawn)pawn))
                         {
+                            //Log.Message("Mech added");
                             break;
                         }
                     }
@@ -61,17 +65,7 @@ namespace GeneticRim
 
         }
 
-        public override void PostDeSpawn(Map map)
-        {
-          
-            foreach (Building_MechahybridAntenna antenna in StaticCollectionsClass.mech_antennas)
-            {
-               antenna.RemoveMechFromList((Pawn)this.parent);
-               
-            }
-
-            
-        }
+       
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
         {
