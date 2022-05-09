@@ -1050,7 +1050,7 @@
 		<comps>
 			<li Class="CompProperties_EggLayer">
 				<eggUnfertilizedDef>GR_StegothrumboEggUnfertilized</eggUnfertilizedDef>
-				<eggFertilizedDef>GR_StegothrumboEggUnfertilized</eggFertilizedDef>
+				<eggFertilizedDef>GR_StegothrumboEggFertilized</eggFertilizedDef>
 				<eggFertilizationCountMax>1</eggFertilizationCountMax>
 				<eggLayIntervalDays>20</eggLayIntervalDays>
 				<eggCountRange>1</eggCountRange>
