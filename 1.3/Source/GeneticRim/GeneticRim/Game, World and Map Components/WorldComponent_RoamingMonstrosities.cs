@@ -41,12 +41,17 @@ namespace GeneticRim
                         if (Find.FactionManager.FirstFactionOfDef(InternalDefOf.GR_RoamingMonstrosities) != null)
                         {
                             IncidentParms parms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, this.world);
-                            parms.target = Find.AnyPlayerHomeMap;
-                            IncidentDef def = InternalDefOf.GR_ManhunterMonstrosities;
-                            def.Worker.TryExecute(parms);
+                            Map map = Find.AnyPlayerHomeMap;
+                            if (map != null && map.Biome.defName!= "OuterSpaceBiome") {
+                                parms.target = map;
+
+                                IncidentDef def = InternalDefOf.GR_ManhunterMonstrosities;
+                                def.Worker.TryExecute(parms);
+
+                                ticksToNextAssault = (int)(60000 * Rand.RangeInclusive(10, 30) * GeneticRim_Mod.settings.GR_RaidsRate);
+                                tickCounter = 0;
+                            }
                             
-                            ticksToNextAssault = (int)(60000 * Rand.RangeInclusive(10, 30) * GeneticRim_Mod.settings.GR_RaidsRate);
-                            tickCounter = 0;
                         }
 
 
