@@ -39,6 +39,10 @@
 				<compClass>GeneticRim.CompGrowthCell</compClass>
 			</li>
 		</comps>
+		<tradeTags>
+			
+			<li>NonContractable</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<ThingDef ParentName="ResourceBase">
@@ -71,5 +75,9 @@
 				<compClass>GeneticRim.CompArchotechGrowthCell</compClass>
 			</li>
 		</comps>
+		<tradeTags>
+			
+			<li>NonContractable</li>
+		</tradeTags>
 	</ThingDef>
 </Defs>
