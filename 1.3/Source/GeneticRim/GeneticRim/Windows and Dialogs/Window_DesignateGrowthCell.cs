@@ -395,9 +395,9 @@ namespace GeneticRim
 
             if (timeMultiplier != null&& timeMultiplier != 0)
             {
-                this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, (int)(GenDate.TicksPerHour * this.comp.Props.hoursProcess * timeMultiplier),this.mainResult);
+                this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, (int)(GenDate.TicksPerHour * this.comp.Props.hoursProcess * timeMultiplier * GeneticRim_Mod.settings.GR_GenomorpherSpeedMultiplier),this.mainResult);
             }
-            else { this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster, GenDate.TicksPerHour * this.comp.Props.hoursProcess, this.mainResult); }
+            else { this.comp.Initialize(this.genomeDominant, this.genomeSecondary, this.genoframe, this.booster,(int)( GenDate.TicksPerHour * this.comp.Props.hoursProcess * GeneticRim_Mod.settings.GR_GenomorpherSpeedMultiplier), this.mainResult); }
             
             this.Close();
         }

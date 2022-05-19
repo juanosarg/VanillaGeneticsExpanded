@@ -23,7 +23,19 @@ namespace GeneticRim
             CompRottable comp = this.parent.pawn.Corpse.GetComp<CompRottable>();
             if (comp != null)
             {
-                comp.RotImmediately();
+                if (!GeneticRim_Mod.settings.GR_DisableGreaterScariaRotting)
+                {
+                    comp.RotImmediately();
+
+                }
+                else
+                {
+                    if (Rand.Chance(Find.Storyteller.difficulty.scariaRotChance))
+                    {
+                        comp.RotImmediately();
+                    }
+
+                }
             }
 
         }

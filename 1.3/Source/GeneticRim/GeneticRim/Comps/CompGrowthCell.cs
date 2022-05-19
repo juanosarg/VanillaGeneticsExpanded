@@ -19,27 +19,32 @@
             foreach (FloatMenuOption option in base.CompFloatMenuOptions(selPawn)) 
                 yield return option;
 
-            foreach (Building building in this.parent?.Map?.listerBuildings?.allBuildingsColonist)
-            {
-                if (building.TryGetComp<CompElectroWomb>()?.Free ?? false)
+            List<Building> list = this?.parent?.Map?.listerBuildings?.allBuildingsColonist;
+            if (list != null) {
+                foreach (Building building in list)
                 {
-                    yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap,mainResult.LabelCap,mainResult?.race?.race?.baseBodySize.ToString()), () =>
-                                                                                                                       {
+                    if (building.TryGetComp<CompElectroWomb>()?.Free ?? false)
+                    {
+                        yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap, mainResult.LabelCap, mainResult?.race?.race?.baseBodySize.ToString()), () =>
+                        {
 
-                                                                                                                           if (selPawn.CanReserveAndReach(building, PathEndMode.OnCell, Danger.Deadly)&&
-                                                                                                                           selPawn.CanReserveAndReach(this.parent, PathEndMode.OnCell, Danger.Deadly)) {
-                                                                                                                               Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertGrowthCell, building,
-                                                                                                                                  this.parent);
-                                                                                                                               makeJob.haulMode = HaulMode.ToCellNonStorage;
-                                                                                                                               makeJob.count = 1;
-                                                                                                                               selPawn.jobs.TryTakeOrderedJob(makeJob);
+                            if (selPawn.CanReserveAndReach(building, PathEndMode.OnCell, Danger.Deadly) &&
+                            selPawn.CanReserveAndReach(this.parent, PathEndMode.OnCell, Danger.Deadly))
+                            {
+                                Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertGrowthCell, building,
+                                   this.parent);
+                                makeJob.haulMode = HaulMode.ToCellNonStorage;
+                                makeJob.count = 1;
+                                selPawn.jobs?.TryTakeOrderedJob(makeJob);
 
 
-                                                                                                                           }
-                                                                                                                           
-                                                                                                                       });
+                            }
+
+                        });
+                    }
                 }
             }
+            
         }
 
         public override string CompInspectStringExtra()

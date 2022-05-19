@@ -40,7 +40,7 @@ namespace GeneticRim
             if (this.parent.IsHashIntervalTick(500))
             {
 
-                int num = GenRadial.NumCellsInRadius(12);
+                int num = GenRadial.NumCellsInRadius(GeneticRim_Mod.settings.GR_HybridSpawnerRadius);
                 for (int i = 0; i < num; i++)
                 {
                     IntVec3 current = this.parent.Position + GenRadial.RadialPattern[i];

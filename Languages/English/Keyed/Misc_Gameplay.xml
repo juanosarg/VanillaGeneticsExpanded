@@ -195,6 +195,10 @@
 	<GR_DisableMechanoidIFFTooltip>Disable mechanoid hybrids having a need for a mechahybrid antenna. With this setting ON, mechanoid hybrids will always remain tamed (with base game animal trainability mechanics still present) and you won't need to build any mechahybrid antennas, ever.</GR_DisableMechanoidIFFTooltip>
 	<GR_HybridsPerAntenna>Mechanoid hybrids supported per antenna</GR_HybridsPerAntenna>
 	<GR_HybridsPerAntennaTooltip>Choose the amount of hybrids that will be supported for each mechahybrid antenna. Default is five.</GR_HybridsPerAntennaTooltip>
+	<GR_DisableGreaterScariaRotting>Disable Greater Scaria's 100% rotting</GR_DisableGreaterScariaRotting>
+	<GR_DisableGreaterScariaRottingTooltip>By default, greater scaria will rot corpses 100% of the time. With this setting on, it will instead rot corpses at the same rate as normal scaria, which is a storyteller setting. Bear in mind this means the player will just get meat and leather from the extra raids.</GR_DisableGreaterScariaRottingTooltip>
+	<GR_HybridSpawnerRadius>Random hybrid spawner radius</GR_HybridSpawnerRadius>
+	<GR_HybridSpawnerRadiusTooltip>Defines the radius that "Abandoned Lab" quests' random hybrid spawners use to detect player around them and spawn a random hostile hybrid. Default is 12 tiles. WARNING: Cranking this up to 40 is laggy, as the number of tiles in a circle raises exponentially by radius, not linearly.</GR_HybridSpawnerRadiusTooltip>
 	<!-- Misc -->
 	<RB_BeeHoneyCombProduction>Honeycomb production</RB_BeeHoneyCombProduction>
 	<!-- Bee Tags -->

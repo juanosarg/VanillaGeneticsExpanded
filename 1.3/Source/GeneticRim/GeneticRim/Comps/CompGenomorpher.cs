@@ -58,22 +58,25 @@ namespace GeneticRim
         public void StartGrowthProcess()
         {
             this.growthCell = ThingMaker.MakeThing(InternalDefOf.GR_GrowthCell);
-            CompGrowthCell cell = this.growthCell.TryGetComp<CompGrowthCell>();
-            cell.genomeDominant  = this.genomeDominant.def;
-            cell.genomeSecondary = this.genomeSecondary.def;
-            cell.genoframe       = this.frame.def;
-            cell.booster         = this.booster?.def;
-            cell.mainResult = this.mainResult;
+            CompGrowthCell cell = this.growthCell?.TryGetComp<CompGrowthCell>();
+            if (cell != null) {
+                cell.genomeDominant = this.genomeDominant?.def;
+                cell.genomeSecondary = this.genomeSecondary?.def;
+                cell.genoframe = this.frame?.def;
+                cell.booster = this.booster?.def;
+                cell.mainResult = this.mainResult;
 
-            
 
-            this.genomeDominant  = null;
-            this.genomeSecondary = null;
-            this.frame           = null;
-            this.booster         = null;
-            this.mainResult = null;
 
-            this.progress = 0f;
+                this.genomeDominant = null;
+                this.genomeSecondary = null;
+                this.frame = null;
+                this.booster = null;
+                this.mainResult = null;
+
+                this.progress = 0f;
+            }
+          
         }
 
         public override void CompTick()

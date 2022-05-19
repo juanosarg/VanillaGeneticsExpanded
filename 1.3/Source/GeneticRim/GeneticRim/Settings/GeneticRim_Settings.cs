@@ -32,6 +32,9 @@ namespace GeneticRim
         public const int GR_HybridsPerAntennaBase = 5;
         public int GR_HybridsPerAntenna = GR_HybridsPerAntennaBase;
 
+        public const int GR_HybridSpawnerRadiusBase = 12;
+        public int GR_HybridSpawnerRadius = GR_HybridSpawnerRadiusBase;
+
         public bool GR_DisableOldAgeDiseases = false;
         public bool GR_DisableHybridRaids = false;
         public bool GR_MakeAllHybridsFertile = false;
@@ -39,6 +42,7 @@ namespace GeneticRim
         public bool GR_DisableGrowthCellAlerts = false;
         public bool GR_DisableWombAlerts = false;
         public bool GR_DisableMechanoidIFF = false;
+        public bool GR_DisableGreaterScariaRotting = false;
 
 
         private static Vector2 scrollPosition = Vector2.zero;
@@ -58,6 +62,7 @@ namespace GeneticRim
             Scribe_Values.Look(ref GR_QuestRate, "GR_QuestRate", GR_QuestRateBase);
             Scribe_Values.Look(ref GR_RaidsRate, "GR_RaidsRate", GR_RaidsRateBase);
             Scribe_Values.Look(ref GR_HybridsPerAntenna, "GR_HybridsPerAntenna", GR_HybridsPerAntennaBase);
+            Scribe_Values.Look(ref GR_HybridSpawnerRadius, "GR_HybridSpawnerRadius", GR_HybridSpawnerRadiusBase);
 
 
 
@@ -68,6 +73,7 @@ namespace GeneticRim
             Scribe_Values.Look(ref GR_DisableGrowthCellAlerts, "GR_DisableGrowthCellAlerts", false);
             Scribe_Values.Look(ref GR_DisableWombAlerts, "GR_DisableWombAlerts", false);
             Scribe_Values.Look(ref GR_DisableMechanoidIFF, "GR_DisableMechanoidIFF", false);
+            Scribe_Values.Look(ref GR_DisableGreaterScariaRotting, "GR_DisableGreaterScariaRotting", false);
 
 
 
@@ -96,7 +102,7 @@ namespace GeneticRim
 
             
 
-            contentRect.height = 800f;
+            contentRect.height = 950f;
 
            
             Widgets.BeginScrollView(frameRect, ref scrollPosition, contentRect, true);
@@ -111,6 +117,8 @@ namespace GeneticRim
             listingStandard.CheckboxLabeled("GR_DisableGrowthCellAlerts".Translate(), ref GR_DisableGrowthCellAlerts, "GR_DisableGrowthCellAlertsTooltip".Translate());
             listingStandard.CheckboxLabeled("GR_DisableWombAlerts".Translate(), ref GR_DisableWombAlerts, "GR_DisableWombAlertsTooltip".Translate());
             listingStandard.CheckboxLabeled("GR_DisableMechanoidIFF".Translate(), ref GR_DisableMechanoidIFF, "GR_DisableMechanoidIFFTooltip".Translate());
+            listingStandard.CheckboxLabeled("GR_DisableGreaterScariaRotting".Translate(), ref GR_DisableGreaterScariaRotting, "GR_DisableGreaterScariaRottingTooltip".Translate());
+
 
             listingStandard.GapLine();
             var GenomorpherSpeedMultiplierLabel = listingStandard.LabelPlusButton("GR_GenomorpherSpeedMultiplier".Translate() + ": " + GR_GenomorpherSpeedMultiplier, "GR_GenomorpherSpeedMultiplierTooltip".Translate());
@@ -153,6 +161,13 @@ namespace GeneticRim
             if (listingStandard.Settings_Button("GR_Reset".Translate(), new Rect(0f, HybridsPerAntennaLabel.position.y + 35, 180f, 29f)))
             {
                 GR_HybridsPerAntenna = GR_HybridsPerAntennaBase;
+            }
+
+            var HybridSpawnerRadiusLabel = listingStandard.LabelPlusButton("GR_HybridSpawnerRadius".Translate() + ": " + GR_HybridSpawnerRadius, "GR_HybridSpawnerRadiusTooltip".Translate());
+            GR_HybridSpawnerRadius = (int)(listingStandard.Slider(GR_HybridSpawnerRadius, 5f, 40f));
+            if (listingStandard.Settings_Button("GR_Reset".Translate(), new Rect(0f, HybridSpawnerRadiusLabel.position.y + 35, 180f, 29f)))
+            {
+                GR_HybridSpawnerRadius = GR_HybridSpawnerRadiusBase;
             }
 
 

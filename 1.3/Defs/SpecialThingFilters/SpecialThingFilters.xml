@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <SpecialThingFilterDef>
+    <defName>GR_AllowUnextracted</defName>
+    <label>allow unextracted</label>
+    <description>Allow corpses that haven't had their genomes extracted by a genome excavator.</description>
+    <parentCategory>Root</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>GR_AllowUnextracted</saveKey>
+    <workerClass>GeneticRim.SpecialThingFilterWorker_Unextracted</workerClass>
+  </SpecialThingFilterDef>
+
+  <SpecialThingFilterDef>
+    <defName>GR_AllowExtracted</defName>
+    <label>allow extracted</label>
+    <description>Allow corpses that have had their genomes extracted by a genome excavator.</description>
+    <parentCategory>Root</parentCategory>
+    <allowedByDefault>true</allowedByDefault>
+    <saveKey>GR_AllowExtracted</saveKey>
+    <workerClass>GeneticRim.SpecialThingFilterWorker_Extracted</workerClass>
+  </SpecialThingFilterDef>
+
+ 
+
+</Defs>

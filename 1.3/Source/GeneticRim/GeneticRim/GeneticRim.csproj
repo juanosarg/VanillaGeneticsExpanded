@@ -410,6 +410,8 @@
     <Compile Include="Projectiles\Projectile_Distortion.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="ThingFilters\SpecialThingFilterWorker_Extracted.cs" />
+    <Compile Include="ThingFilters\SpecialThingFilterWorker_Unextracted.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Mansquirrel.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Manwolf.cs" />
     <Compile Include="ThinkNodes\ThinkNode_Manbear.cs" />
