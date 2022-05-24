@@ -140,9 +140,7 @@
 			<color>(0,116,6)</color>
 
 		</stuffProps>
-		<thingCategories>
-			<li>Textiles</li>
-		</thingCategories>
+		
 	</ThingDef>
 	
 	

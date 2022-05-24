@@ -16,7 +16,7 @@ namespace GeneticRim
 
         public bool readyToStart = false;
         public float wombProgress = -1;
-        public const int wombDuration = 359; //in hours, almost 15 days. A bit less so the spaceship letter won't pop up
+        public const int wombDuration = 355; //in hours, almost 15 days. A bit less so the spaceship letter won't pop up
         Graphic usedGraphic;
 
         public override void ExposeData()
