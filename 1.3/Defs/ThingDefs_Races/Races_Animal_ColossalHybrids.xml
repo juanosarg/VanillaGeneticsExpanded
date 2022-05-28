@@ -1702,6 +1702,10 @@
 			<herdMigrationAllowed>false</herdMigrationAllowed>
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<wildness>0.7</wildness>
+			<willNeverEat>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+			</willNeverEat>
 			<useLeatherFrom>Thrumbo</useLeatherFrom>
 			<useMeatFrom>Thrumbo</useMeatFrom>
 			<trainability>Advanced</trainability>
