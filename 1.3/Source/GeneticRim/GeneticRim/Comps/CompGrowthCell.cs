@@ -29,24 +29,27 @@
             if (list != null) {
                 foreach (Building building in list)
                 {
-                    if (building.TryGetComp<CompElectroWomb>()?.Free ?? false)
+                    if (building?.TryGetComp<CompElectroWomb>()?.Free ?? false)
                     {
-                        yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap, mainResult.LabelCap, mainResult?.race?.race?.baseBodySize.ToString()), () =>
-                        {
-
-                            if (selPawn.CanReserveAndReach(building, PathEndMode.OnCell, Danger.Deadly) &&
-                            selPawn.CanReserveAndReach(this.parent, PathEndMode.OnCell, Danger.Deadly))
+                        if(selPawn!=null && mainResult!=null && mainResult?.race?.race?.baseBodySize != null) {
+                            yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap, mainResult.LabelCap, mainResult?.race?.race?.baseBodySize.ToString()), () =>
                             {
-                                Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertGrowthCell, building,
-                                   this.parent);
-                                makeJob.haulMode = HaulMode.ToCellNonStorage;
-                                makeJob.count = 1;
-                                selPawn.jobs?.TryTakeOrderedJob(makeJob);
+
+                                if (selPawn.CanReserveAndReach(building, PathEndMode.OnCell, Danger.Deadly) &&
+                                selPawn.CanReserveAndReach(this.parent, PathEndMode.OnCell, Danger.Deadly))
+                                {
+                                    Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertGrowthCell, building,
+                                       this.parent);
+                                    makeJob.haulMode = HaulMode.ToCellNonStorage;
+                                    makeJob.count = 1;
+                                    selPawn.jobs?.TryTakeOrderedJob(makeJob);
 
 
-                            }
+                                }
 
-                        });
+                            });
+                        }
+                        
                     }
                 }
             }

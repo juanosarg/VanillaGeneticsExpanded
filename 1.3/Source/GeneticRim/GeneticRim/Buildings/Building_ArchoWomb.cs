@@ -147,7 +147,6 @@ namespace GeneticRim
                     diaNode.options.Add(diaOption2);
                     Find.WindowStack.Add(new Dialog_NodeTree(diaNode, true, false, null));
 
-                    readyToStart = false;
 
                 };
                 if (!readyToStart)
