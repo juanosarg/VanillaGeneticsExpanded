@@ -16,13 +16,7 @@
 
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn selPawn)
         {
-            foreach (FloatMenuOption option in base.CompFloatMenuOptions(selPawn))
-            {
-                if (option != null)
-                {
-                    yield return option;
-                }
-            }
+           
                 
 
             List<Building> list = this?.parent?.Map?.listerBuildings?.allBuildingsColonist;
