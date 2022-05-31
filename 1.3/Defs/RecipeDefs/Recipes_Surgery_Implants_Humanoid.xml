@@ -8,7 +8,7 @@
 		<defName>GR_InstallBearClaws</defName>
 		<label>&lt;color=#E89D1B&gt;install bear claws&lt;/color&gt;</label>
 		<description>Installs bear claws.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing bear claws.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -61,7 +61,7 @@
 		<defName>GR_InstallDiggingBearClaws</defName>
 		<label>&lt;color=#E89D1B&gt;install digging mole claws&lt;/color&gt;</label>
 		<description>Installs digging mole claws.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing digging mole claws.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -114,7 +114,7 @@
 		<defName>GR_InstallBearMuscleTissue</defName>
 		<label>&lt;color=#E89D1B&gt;install bear muscle tissue&lt;/color&gt;</label>
 		<description>Installs bear muscle tissue.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing bear muscle tissue.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -167,7 +167,7 @@
 		<defName>GR_InstallHibernationModule</defName>
 		<label>&lt;color=#E89D1B&gt;install hibernation module&lt;/color&gt;</label>
 		<description>Installs hibernation module.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing hibernation module.</jobString>
 		<workAmount>2000</workAmount>
 		<skillRequirements>
@@ -223,7 +223,7 @@
 		<defName>GR_InstallOvipositor</defName>
 		<label>&lt;color=#E89D1B&gt;install ovipositor&lt;/color&gt;</label>
 		<description>Installs ovipositor.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing ovipositor.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -275,7 +275,7 @@
 		<defName>GR_InstallMuffaloMuscles</defName>
 		<label>&lt;color=#E89D1B&gt;install muffalo strengthened muscles&lt;/color&gt;</label>
 		<description>Installs muffalo strengthened muscles.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing muffalo strengthened muscles.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -328,7 +328,7 @@
 		<defName>GR_InstallMuffaloMammaries</defName>
 		<label>&lt;color=#E89D1B&gt;install muffalo mammaries&lt;/color&gt;</label>
 		<description>Installs muffalo mammaries.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing muffalo mammaries.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -381,7 +381,7 @@
 		<defName>GR_InstallMuffaloSkin</defName>
 		<label>&lt;color=#E89D1B&gt;install muffalo skin&lt;/color&gt;</label>
 		<description>Installs muffalo skin.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing muffalo skin.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -435,7 +435,7 @@
 		<defName>GR_InstallBoomalopeNodules</defName>
 		<label>&lt;color=#E89D1B&gt;install boomalope nodules&lt;/color&gt;</label>
 		<description>Installs boomalope nodules.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing boomalope nodules.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -488,7 +488,7 @@
 		<defName>GR_InstallChemfuelStomach</defName>
 		<label>&lt;color=#E89D1B&gt;install chemfuel stomach&lt;/color&gt;</label>
 		<description>Installs chemfuel stomach.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing chemfuel stomach.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -541,7 +541,7 @@
 		<defName>GR_InstallChemfuelHeart</defName>
 		<label>&lt;color=#E89D1B&gt;install chemfuel heart&lt;/color&gt;</label>
 		<description>Installs chemfuel heart.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing chemfuel heart.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -594,7 +594,7 @@
 		<defName>GR_InstallWolfMuscularFibers</defName>
 		<label>&lt;color=#E89D1B&gt;install wolf muscular fibers&lt;/color&gt;</label>
 		<description>Installs wolf muscular fibers.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing wolf muscular fibers.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -647,7 +647,7 @@
 		<defName>GR_InstallDevouringJaws</defName>
 		<label>&lt;color=#E89D1B&gt;install devouring jaws&lt;/color&gt;</label>
 		<description>Installs devouring jaws.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing devouring jaws.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -700,7 +700,7 @@
 		<defName>GR_InstallNeuronReinforcement</defName>
 		<label>&lt;color=#E89D1B&gt;install neuron reinforcement&lt;/color&gt;</label>
 		<description>Installs neuron reinforcement.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing neuron reinforcement.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -756,7 +756,7 @@
 		<defName>GR_InstallMousePheromones</defName>
 		<label>&lt;color=#E89D1B&gt;install mouse pheromones&lt;/color&gt;</label>
 		<description>Installs mouse pheromones.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing mouse pheromones.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -809,7 +809,7 @@
 		<defName>GR_InstallMoleratNerveDampener</defName>
 		<label>&lt;color=#E89D1B&gt;install mole-rat nerve dampener&lt;/color&gt;</label>
 		<description>Installs mole-rat nerve dampener.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing mole-rat nerve dampener.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -862,7 +862,7 @@
 		<defName>GR_InstallBunnyEars</defName>
 		<label>&lt;color=#E89D1B&gt;install bunny ear&lt;/color&gt;</label>
 		<description>Installs bunny ear.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing bunny ear.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -916,7 +916,7 @@
 		<defName>GR_InstallCompoundEye</defName>
 		<label>&lt;color=#E89D1B&gt;install compound eye&lt;/color&gt;</label>
 		<description>Installs compound eye.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing compound eye.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -970,7 +970,7 @@
 		<defName>GR_InstallCatEye</defName>
 		<label>&lt;color=#E89D1B&gt;install cat eye&lt;/color&gt;</label>
 		<description>Installs cat eye.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing cat eye.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -1025,7 +1025,7 @@
 		<defName>GR_InstallInsectoidAntennae</defName>
 		<label>&lt;color=#E89D1B&gt;install insectoid antennae&lt;/color&gt;</label>
 		<description>Installs insectoid antennae.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing insectoid antennae.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -1079,7 +1079,7 @@
 		<defName>GR_InstallPsychicDampeners</defName>
 		<label>&lt;color=#E89D1B&gt;install psychic dampeners&lt;/color&gt;</label>
 		<description>Installs psychic dampeners.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing psychic dampeners.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -1132,7 +1132,7 @@
 		<defName>GR_InstallKidneyToxicFilters</defName>
 		<label>&lt;color=#E89D1B&gt;install kidney toxic filters&lt;/color&gt;</label>
 		<description>Installs kidney toxic filters.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing kidney toxic filters.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -1185,7 +1185,7 @@
 		<defName>GR_InstallHumanThrumboHorn</defName>
 		<label>&lt;color=#E89D1B&gt;install thrumbo horn&lt;/color&gt;</label>
 		<description>Installs thrumbo horn.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing thrumbo horn.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -1238,7 +1238,7 @@
 		<defName>GR_InstallThrumboSkin</defName>
 		<label>&lt;color=#E89D1B&gt;install thrumbo skin&lt;/color&gt;</label>
 		<description>Installs thrumbo skin.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing thrumbo skin.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -1291,7 +1291,7 @@
 		<defName>GR_InstallVenomousFangs</defName>
 		<label>&lt;color=#E89D1B&gt;install venomous fangs&lt;/color&gt;</label>
 		<description>Installs venomous fangs.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing venomous fangs.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>
@@ -1344,7 +1344,7 @@
 		<defName>GR_InstallIguanaScales</defName>
 		<label>&lt;color=#E89D1B&gt;install iguana scales&lt;/color&gt;</label>
 		<description>Installs iguana scales.</description>
-		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<workerClass>GeneticRim.Recipe_InstallGeneticBodyPart</workerClass>
 		<jobString>Installing iguana scales.</jobString>
 		<workAmount>2000</workAmount>
 		<recipeUsers>

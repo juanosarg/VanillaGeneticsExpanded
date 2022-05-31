@@ -402,12 +402,14 @@
     <Compile Include="Harmony\Building_Trap_CheckSpring.cs" />
     <Compile Include="Harmony\Caravan_NightResting.cs" />
     <Compile Include="Harmony\ExecutionUtility_ExecutionInt.cs" />
+    <Compile Include="Harmony\Recipe_InstallArtificialBodyPart_ApplyOnPawn.cs" />
     <Compile Include="Harmony\Thing_ButcherProducts.cs" />
     <Compile Include="Harmony\Verb_CastAbility_DrawRadius.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_AnimalSpeak.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_UWUSpeak.cs" />
     <Compile Include="PlaceWorkers\PlacementWorker_MustBeRoofed.cs" />
     <Compile Include="Projectiles\Projectile_Distortion.cs" />
+    <Compile Include="Recipes\Recipe_InstallGeneticBodyPart.cs" />
     <Compile Include="Settings\GeneticRim_SettingsController.cs" />
     <Compile Include="Settings\SettingsHelper.cs" />
     <Compile Include="ThingFilters\SpecialThingFilterWorker_Extracted.cs" />
@@ -465,7 +467,6 @@
     <Compile Include="Harmony\Patch_HungerRate.cs" />
     <Compile Include="Harmony\Patch_PawnLabel.cs" />
     <Compile Include="Harmony\Patch_StatValueUnfinalized.cs" />
-    <Compile Include="Harmony\Recipe_InstallArtificialBodyPart_ApplyOnPawn.cs" />
     <Compile Include="Harmony\Recipe_RemoveImplant_ApplyOnPawn.cs" />
     <Compile Include="Harmony\Root_Play_Update.cs" />
     <Compile Include="Harmony\MapParent_RecalculateHibernatableIncidentTargets.cs" />
