@@ -13,9 +13,9 @@ using UnityEngine;
 namespace GeneticRim
 {
 
-    [HarmonyPatch(typeof(Recipe_RemoveBodyPart))]
+    [HarmonyPatch(typeof(Recipe_RemoveImplant))]
     [HarmonyPatch("ApplyOnPawn")]
-    public static class VanillaGeneticsExpanded_Recipe_RemoveBodyPart_ApplyOnPawn_Prefix
+    public static class VanillaGeneticsExpanded_Recipe_RemoveImplant_ApplyOnPawn_Prefix
     {
 
         public static Pair<ThingDef, QualityCategory> implantQuality;
@@ -57,11 +57,11 @@ namespace GeneticRim
     {
         public static void Postfix(ThingWithComps __instance)
         {
-            if (__instance.def == VanillaGeneticsExpanded_Recipe_RemoveBodyPart_ApplyOnPawn_Prefix.implantQuality.First) {
+            if (__instance.def == VanillaGeneticsExpanded_Recipe_RemoveImplant_ApplyOnPawn_Prefix.implantQuality.First) {
                 var comp = __instance.TryGetComp<CompQuality>();
                 if (comp != null)
                 {
-                    comp.SetQuality(VanillaGeneticsExpanded_Recipe_RemoveBodyPart_ApplyOnPawn_Prefix.implantQuality.Second, ArtGenerationContext.Colony);
+                    comp.SetQuality(VanillaGeneticsExpanded_Recipe_RemoveImplant_ApplyOnPawn_Prefix.implantQuality.Second, ArtGenerationContext.Colony);
 
                 }
             }

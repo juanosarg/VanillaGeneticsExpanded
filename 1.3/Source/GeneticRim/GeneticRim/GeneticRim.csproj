@@ -466,7 +466,7 @@
     <Compile Include="Harmony\Patch_PawnLabel.cs" />
     <Compile Include="Harmony\Patch_StatValueUnfinalized.cs" />
     <Compile Include="Harmony\Recipe_InstallArtificialBodyPart_ApplyOnPawn.cs" />
-    <Compile Include="Harmony\Recipe_RemoveBodyPart_ApplyOnPawn.cs" />
+    <Compile Include="Harmony\Recipe_RemoveImplant_ApplyOnPawn.cs" />
     <Compile Include="Harmony\Root_Play_Update.cs" />
     <Compile Include="Harmony\MapParent_RecalculateHibernatableIncidentTargets.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
