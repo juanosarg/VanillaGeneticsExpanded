@@ -16,9 +16,8 @@
 
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn selPawn)
         {
-           
-                
 
+           
             List<Building> list = this?.parent?.Map?.listerBuildings?.allBuildingsColonist;
             if (list != null) {
                 foreach (Building building in list)
@@ -47,7 +46,7 @@
                     }
                 }
             }
-            
+
         }
 
         public override string CompInspectStringExtra()
@@ -71,7 +70,7 @@
             Scribe_Defs.Look(ref this.genomeSecondary, nameof(this.genomeSecondary));
             Scribe_Defs.Look(ref this.genoframe, nameof(this.genoframe));
             Scribe_Defs.Look(ref this.booster, nameof(this.booster));
-            Scribe_Defs.Look(ref this.mainResult, nameof(this.mainResult));
+            Scribe_Deep.Look(ref this.mainResult, nameof(this.mainResult));
         }
     }
 }
