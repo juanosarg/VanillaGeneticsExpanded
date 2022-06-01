@@ -61,6 +61,7 @@ namespace GeneticRim
         public static ThingDef GR_ElectroWomb;
         public static ThingDef GR_LargeElectroWomb;
         public static ThingDef GR_FleshGrowth_Building;
+       
         public static EffecterDef GR_FleshFliesEffecter;
        
 

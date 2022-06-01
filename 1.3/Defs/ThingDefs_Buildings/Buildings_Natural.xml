@@ -16,9 +16,7 @@
 			<Flammability>2.0</Flammability>
 		</statBases>
 		<comps>
-			<li Class="GeneticRim.CompProperties_GeneticFailure">
-				
-			</li>
+			
 			<li Class="GeneticRim.CompProperties_FleshGrowth">
 				
 			</li>

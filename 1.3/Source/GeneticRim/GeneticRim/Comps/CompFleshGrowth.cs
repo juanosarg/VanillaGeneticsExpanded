@@ -103,17 +103,23 @@ namespace GeneticRim
             if (this.parent.IsHashIntervalTick(30000))
             {
 
-                Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(InternalDefOf.GR_FleshFlies, null, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
-                                                                                           newborn: false, forceGenerateNewPawn: true));
-                IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 1f);
-
-                if (near.InBounds(parent.Map))
+                if (this.parent.Map.listerThings.ThingsOfDef(InternalDefOf.GR_FleshFlies.race).Count < 40)
                 {
-                    GenSpawn.Spawn(pawn, near, this.parent.Map);
+                    Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(InternalDefOf.GR_FleshFlies, null, fixedBiologicalAge: 1, fixedChronologicalAge: 1,
+                                                                                           newborn: false, forceGenerateNewPawn: true));
+                    IntVec3 near = CellFinder.StandableCellNear(this.parent.Position, this.parent.Map, 1f);
 
-                    pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
-                    pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
+                    if (near.InBounds(parent.Map))
+                    {
+                        GenSpawn.Spawn(pawn, near, this.parent.Map);
+
+                        pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, true, false, null, false);
+                        pawn.health.AddHediff(InternalDefOf.GR_GreaterScaria);
+                    }
+
                 }
+
+                
 
 
 
