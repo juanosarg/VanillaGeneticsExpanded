@@ -12,7 +12,8 @@
         public ThingDef genomeSecondary;
         public ThingDef genoframe;
         public ThingDef booster;
-        public PawnKindDef mainResult;
+        public string mainResult;
+        public float bodySize;
 
         public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn selPawn)
         {
@@ -24,8 +25,8 @@
                 {
                     if (building?.TryGetComp<CompElectroWomb>()?.Free ?? false)
                     {
-                        if(selPawn!=null && mainResult!=null && mainResult?.race?.race?.baseBodySize != null) {
-                            yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap, mainResult.LabelCap, mainResult?.race?.race?.baseBodySize.ToString()), () =>
+                        if(selPawn!=null && mainResult!=null) {
+                            yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap, mainResult, bodySize.ToString()), () =>
                             {
 
                                 if (selPawn.CanReserveAndReach(building, PathEndMode.OnCell, Danger.Deadly) &&
@@ -41,6 +42,24 @@
                                 }
 
                             });
+                        }
+                        else
+                        {
+                            yield return new FloatMenuOption("GR_GrowthCell_InsertInElectroWomb".Translate(building.LabelCap), () =>
+                            {
+                                if (selPawn.CanReserveAndReach(building, PathEndMode.OnCell, Danger.Deadly) &&
+                                 selPawn.CanReserveAndReach(this.parent, PathEndMode.OnCell, Danger.Deadly))
+                                {
+                                    Job makeJob = JobMaker.MakeJob(InternalDefOf.GR_InsertGrowthCell, building,
+                                       this.parent);
+                                    makeJob.haulMode = HaulMode.ToCellNonStorage;
+                                    makeJob.count = 1;
+                                    selPawn.jobs?.TryTakeOrderedJob(makeJob);
+
+
+                                }
+                            });
+
                         }
                         
                     }
@@ -70,7 +89,9 @@
             Scribe_Defs.Look(ref this.genomeSecondary, nameof(this.genomeSecondary));
             Scribe_Defs.Look(ref this.genoframe, nameof(this.genoframe));
             Scribe_Defs.Look(ref this.booster, nameof(this.booster));
-            Scribe_Deep.Look(ref this.mainResult, nameof(this.mainResult));
+            Scribe_Values.Look(ref this.mainResult, nameof(this.mainResult));
+            Scribe_Values.Look(ref this.bodySize, nameof(this.bodySize));
+
         }
     }
 }

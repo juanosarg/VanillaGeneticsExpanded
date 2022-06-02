@@ -149,7 +149,7 @@ namespace GeneticRim
                             compHybrid.quality = this.genoframe?.GetModExtension<DefExtension_Quality>()?.quality ?? QualityCategory.Awful;
 
                         }
-                        if (failureResult == InternalDefOf.GR_FleshGrowth) { this.parent.Destroy(); }
+                        if (failureResult == InternalDefOf.GR_FleshGrowth && failure) { this.parent.Destroy(); }
 
 
 

@@ -64,7 +64,8 @@ namespace GeneticRim
                 cell.genomeSecondary = this.genomeSecondary?.def;
                 cell.genoframe = this.frame?.def;
                 cell.booster = this.booster?.def;
-                cell.mainResult = this.mainResult;
+                cell.mainResult = this.mainResult?.LabelCap ?? "";
+                cell.bodySize = this.mainResult?.RaceProps?.baseBodySize ?? 1;
 
 
 
