@@ -38,7 +38,12 @@ namespace GeneticRim
 					return;
 				}
 				TaleRecorder.RecordTale(TaleDefOf.DidSurgery, billDoer, pawn);
-				
+
+				if (!pawn.health.hediffSet.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined, null, null).Contains(part))//Making it only happen when missing part. Unsure if necessary 				
+				{
+					pawn.health.RestorePart(part); //Added to see if it fixes issue with missing part
+				}
+
 				if (flag && flag2 && part.def.spawnThingOnRemoved != null)
 				{
 					ThoughtUtility.GiveThoughtsForPawnOrganHarvested(pawn, billDoer);
