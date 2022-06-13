@@ -605,8 +605,7 @@
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_ChemfuelStomach</defName>
 		<description>A reinforced bionic stomach that uses a combination of gastric acid and chemfuel to efficiently digest food.</description>
-		<label>humanoid implant: chemfuel stomach</label>
-		<hediffClass>Hediff_Implant</hediffClass>
+		<label>humanoid implant: chemfuel stomach</label>		
 		<stages>
 			<li>
 				<minSeverity>0</minSeverity>
@@ -699,8 +698,7 @@
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_ChemfuelHeart</defName>
 		<description>A reinforced bionic heart that acts like a miniature 4-stroke internal combustion engine powered by chemfuel to pump blood through the body.</description>
-		<label>humanoid implant: chemfuel heart</label>
-		<hediffClass>Hediff_Implant</hediffClass>
+		<label>humanoid implant: chemfuel heart</label>		
 		<stages>
 		<li>
 				<minSeverity>0</minSeverity>
@@ -871,8 +869,7 @@
 		<spawnThingOnRemoved>GR_WolfMuscularFibers</spawnThingOnRemoved>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
-		<defName>GR_DevouringJaws</defName>
-		<hediffClass>Hediff_Implant</hediffClass>
+		<defName>GR_DevouringJaws</defName>		
 		<description>A set of improved teeth designed to rapidly chew and ingest any kind of food. Leaves kind of a mess, though...</description>
 		<label>humanoid implant: devouring jaws</label>
 		<stages>
@@ -1073,8 +1070,7 @@
 		<spawnThingOnRemoved>GR_NeuronReinforcement</spawnThingOnRemoved>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
-		<defName>GR_MousePheromones</defName>
-		<hediffClass>Hediff_Implant</hediffClass>
+		<defName>GR_MousePheromones</defName>		
 		<description>A bionic vomeronasal organ that allows the subject pheromonal communication with other animals, increasing the chance of taming and training them successfully.</description>
 		<addedPartProps>
 			<partEfficiency>1.1</partEfficiency>
@@ -1141,8 +1137,7 @@
 		<spawnThingOnRemoved>GR_MousePheromones</spawnThingOnRemoved>
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
-		<defName>GR_MoleratNerveDampener</defName>
-		<hediffClass>Hediff_Implant</hediffClass>
+		<defName>GR_MoleratNerveDampener</defName>		
 		<description>A biochip that reduces pain sensitivity, allowing the subject to survive pain shock.</description>
 		<addedPartProps>
 			<partEfficiency>1.1</partEfficiency>
@@ -1601,8 +1596,7 @@
 	</HediffDef>
 	<HediffDef ParentName="GR_HybridPartsBase">
 		<defName>GR_HumanThrumboHorn</defName>
-		<description>A genetically modified thrumbo horn that can be implanted in a subject's forehead. Nasty.</description>
-		<hediffClass>Hediff_Implant</hediffClass>
+		<description>A genetically modified thrumbo horn that can be implanted in a subject's forehead. Nasty.</description>		
 		<label>humanoid implant: thrumbo horn</label>
 		<addedPartProps>
 			<partEfficiency>1.2</partEfficiency>

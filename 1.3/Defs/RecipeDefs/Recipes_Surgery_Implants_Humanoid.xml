@@ -45,17 +45,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_BearClaws</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveBearClawsImplant</defName>
-		<label>remove bear claws implant</label>
-		<description>Remove bear claws implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_BearClaws</ThingDef>
-			<HediffDef>GR_BearClaws</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing bear claws implant.</jobString>
-		<removesHediff>GR_BearClaws</removesHediff>
-	</RecipeDef>
+	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallDiggingBearClaws</defName>
@@ -98,17 +88,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_DiggingBearClaws</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveDiggingBearClawsImplant</defName>
-		<label>remove digging mole claws implant</label>
-		<description>Remove digging mole claws implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_DiggingBearClaws</ThingDef>
-			<HediffDef>GR_DiggingBearClaws</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing digging mole claws implant.</jobString>
-		<removesHediff>GR_DiggingBearClaws</removesHediff>
-	</RecipeDef>
+	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallBearMuscleTissue</defName>
@@ -525,17 +505,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_ChemfuelStomach</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveChemfuelStomachImplant</defName>
-		<label>remove chemfuel stomach implant</label>
-		<description>Remove chemfuel stomach implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_ChemfuelStomach</ThingDef>
-			<HediffDef>GR_ChemfuelStomach</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing chemfuel stomach implant.</jobString>
-		<removesHediff>GR_ChemfuelStomach</removesHediff>
-	</RecipeDef>
+	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallChemfuelHeart</defName>
@@ -577,17 +547,6 @@
 			<li>Heart</li> 
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_ChemfuelHeart</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveChemfuelHeartImplant</defName>
-		<label>remove chemfuel heart implant</label>
-		<description>Remove chemfuel heart implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_ChemfuelHeart</ThingDef>
-			<HediffDef>GR_ChemfuelHeart</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing chemfuel heart implant.</jobString>
-		<removesHediff>GR_ChemfuelHeart</removesHediff>
 	</RecipeDef>
 
 	<RecipeDef ParentName="SurgeryFlesh">
@@ -683,18 +642,8 @@
 			<li>Jaw</li> 
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_DevouringJaws</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveDevouringJawsImplant</defName>
-		<label>remove devouring jaws implant</label>
-		<description>Remove devouring jaws implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_DevouringJaws</ThingDef>
-			<HediffDef>GR_DevouringJaws</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing devouring jaws implant.</jobString>
-		<removesHediff>GR_DevouringJaws</removesHediff>
-	</RecipeDef>
+	</RecipeDef>	
+	
 
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallNeuronReinforcement</defName>
@@ -792,18 +741,7 @@
 			<li>Nose</li> 
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_MousePheromones</addsHediff>
-	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveMousePheromonesImplant</defName>
-		<label>remove mouse pheromones implant</label>
-		<description>Remove mouse pheromones implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_MousePheromones</ThingDef>
-			<HediffDef>GR_MousePheromones</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing mouse pheromones implant.</jobString>
-		<removesHediff>GR_MousePheromones</removesHediff>
-	</RecipeDef>
+	</RecipeDef>	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallMoleratNerveDampener</defName>
@@ -846,17 +784,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_MoleratNerveDampener</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveMoleratNerveDampenerImplant</defName>
-		<label>remove mole-rat nerve dampener implant</label>
-		<description>Remove mole-rat nerve dampener implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_MoleratNerveDampener</ThingDef>
-			<HediffDef>GR_MoleratNerveDampener</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing mole-rat nerve dampener implant.</jobString>
-		<removesHediff>GR_MoleratNerveDampener</removesHediff>
-	</RecipeDef>
+	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallBunnyEars</defName>
@@ -899,17 +827,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_BunnyEars</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveBunnyEarsImplant</defName>
-		<label>remove bunny ear implant</label>
-		<description>Remove bunny ear implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_BunnyEars</ThingDef>
-			<HediffDef>GR_BunnyEars</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing bunny ear implant.</jobString>
-		<removesHediff>GR_BunnyEars</removesHediff>
-	</RecipeDef>
+
 
 	
 	<RecipeDef ParentName="SurgeryFlesh">
@@ -954,18 +872,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_CompoundEye</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveCompoundEyeImplant</defName>
-		<label>remove compound eye implant</label>
-		<description>Remove compound eye implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_CompoundEye</ThingDef>
-			<HediffDef>GR_CompoundEye</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing compound eye implant.</jobString>
-		<removesHediff>GR_CompoundEye</removesHediff>
-	</RecipeDef>
-	
+
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallCatEye</defName>
 		<label>&lt;color=#E89D1B&gt;install cat eye&lt;/color&gt;</label>
@@ -1008,17 +915,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_CatEye</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveCatEyeImplant</defName>
-		<label>remove cat eye implant</label>
-		<description>Remove cat eye implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_CatEye</ThingDef>
-			<HediffDef>GR_CatEye</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing cat eye implant.</jobString>
-		<removesHediff>GR_CatEye</removesHediff>
-	</RecipeDef>
+	
 	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
@@ -1063,17 +960,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_InsectoidAntennae</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveInsectoidAntennaeImplant</defName>
-		<label>remove insectoid antennae implant</label>
-		<description>Remove insectoid antennae implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_InsectoidAntennae</ThingDef>
-			<HediffDef>GR_InsectoidAntennae</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing insectoid antennae implant.</jobString>
-		<removesHediff>GR_InsectoidAntennae</removesHediff>
-	</RecipeDef>
+	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallPsychicDampeners</defName>
@@ -1169,17 +1056,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_KidneyToxicFilters</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveKidneyToxicFiltersImplant</defName>
-		<label>remove kidney toxic filters implant</label>
-		<description>Remove kidney toxic filters implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_KidneyToxicFilters</ThingDef>
-			<HediffDef>GR_KidneyToxicFilters</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing kidney toxic filters implant.</jobString>
-		<removesHediff>GR_KidneyToxicFilters</removesHediff>
-	</RecipeDef>
+	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallHumanThrumboHorn</defName>
@@ -1222,17 +1099,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_HumanThrumboHorn</addsHediff>
 	</RecipeDef>
-	<RecipeDef ParentName="SurgeryRemoveImplantBase">
-		<defName>GR_RemoveHumanThrumboHornImplant</defName>
-		<label>remove thrumbo horn implant</label>
-		<description>Remove thrumbo horn implant.</description>
-		<descriptionHyperlinks>
-			<ThingDef>GR_HumanThrumboHorn</ThingDef>
-			<HediffDef>GR_HumanThrumboHorn</HediffDef>
-		</descriptionHyperlinks>
-		<jobString>Removing thrumbo horn implant.</jobString>
-		<removesHediff>GR_HumanThrumboHorn</removesHediff>
-	</RecipeDef>
+	
 	
 	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>GR_InstallThrumboSkin</defName>
@@ -1328,6 +1195,7 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>GR_VenomousFangs</addsHediff>
 	</RecipeDef>
+	
 	<RecipeDef ParentName="SurgeryRemoveImplantBase">
 		<defName>GR_RemoveVenomousFangsImplant</defName>
 		<label>remove venomous fangs implant</label>
