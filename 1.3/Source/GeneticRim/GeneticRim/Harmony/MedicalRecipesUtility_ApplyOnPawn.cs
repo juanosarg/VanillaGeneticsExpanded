@@ -18,8 +18,7 @@ namespace GeneticRim
 
         [HarmonyPrefix]
         public static void AddQualityToImplant(Pawn pawn, BodyPartRecord part)
-        {
-            Log.Message("Got to Here for" + part.Label);
+        {           
             foreach (Hediff hediff in from x in pawn.health.hediffSet.hediffs
             where x.Part == part
             select x)
