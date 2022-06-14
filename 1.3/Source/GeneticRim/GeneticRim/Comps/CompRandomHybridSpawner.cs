@@ -22,12 +22,12 @@ namespace GeneticRim
 
             if (StaticCollectionsClass.AnyMechAntennas())
             {
-                hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race.tradeTags?.Contains("AnimalGenetic") == true) && x.race.tradeTags?.Contains("AnimalGeneticCentipede") == false).ToHashSet();
+                hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race?.tradeTags?.Contains("AnimalGenetic") == true) && x != InternalDefOf.GR_FleshGrowth && x.race?.tradeTags?.Contains("AnimalGeneticCentipede") == false).ToHashSet();
 
             }
             else
             {
-                hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race.tradeTags?.Contains("AnimalGenetic") == true) && x.race.tradeTags?.Contains("AnimalGeneticMechanoid") == false).ToHashSet();
+                hybridsList = DefDatabase<PawnKindDef>.AllDefsListForReading.Where(x => (x.race?.tradeTags?.Contains("AnimalGenetic") == true) && x != InternalDefOf.GR_FleshGrowth && x.race?.tradeTags?.Contains("AnimalGeneticMechanoid") == false).ToHashSet();
 
             }
 
