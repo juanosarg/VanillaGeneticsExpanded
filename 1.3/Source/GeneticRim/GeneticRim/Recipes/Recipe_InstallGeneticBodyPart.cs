@@ -38,7 +38,9 @@ namespace GeneticRim
 					return;
 				}
 				TaleRecorder.RecordTale(TaleDefOf.DidSurgery, billDoer, pawn);
+				MedicalRecipesUtility.RestorePartAndSpawnAllPreviousParts(pawn, part, billDoer.Position, billDoer.Map); //Adding this back as I believe infinite part issues will be resolved.
 				
+
 				if (flag && flag2 && part.def.spawnThingOnRemoved != null)
 				{
 					ThoughtUtility.GiveThoughtsForPawnOrganHarvested(pawn, billDoer);
