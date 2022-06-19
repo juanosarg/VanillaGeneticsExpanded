@@ -1,5 +1,6 @@
 ﻿namespace GeneticRim
 {
+    using System.Linq;
     using HarmonyLib;
     using Verse;
 
@@ -8,6 +9,6 @@
     {
         [HarmonyPostfix]
         public static void Postfix(ref float __result, Pawn __instance) =>
-            __result *= __instance?.TryGetComp<CompHybrid>()?.GetBodySizeFactor() ?? 1f;
+            __result *= Core.hybridPawnKinds.Contains(__instance.kindDef) ? __instance.TryGetComp<CompHybrid>().GetBodySizeFactor() : 1f;
     }
 }

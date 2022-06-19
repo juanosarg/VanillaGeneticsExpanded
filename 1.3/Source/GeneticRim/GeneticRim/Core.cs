@@ -8,11 +8,12 @@
     [StaticConstructorOnStartup]
     public static class Core
     {
-        public static List<ThingDef> genomes;
-        public static List<ThingDef> boosters;
-        public static List<ThingDef> genoframes;
+        public static List<ThingDef>                                          genomes;
+        public static List<ThingDef>                                          boosters;
+        public static List<ThingDef>                                          genoframes;
         public static Dictionary<ThingDef, Dictionary<ThingDef, PawnKindDef>> hybrids;
-        public static List<PawnKindDef> failures;
+        public static HashSet<PawnKindDef>                                    hybridPawnKinds;
+        public static List<PawnKindDef>                                       failures;
 
         static Core()
         {
@@ -22,7 +23,8 @@
             failures = DefDatabase<PawnKindDef>.AllDefs.Where(x => x.HasModExtension<DefExtension_HybridFailure>()).ToList();
 
             { // Hybrids
-                hybrids = new Dictionary<ThingDef, Dictionary<ThingDef, PawnKindDef>>();
+                hybrids         = new Dictionary<ThingDef, Dictionary<ThingDef, PawnKindDef>>();
+                hybridPawnKinds = new HashSet<PawnKindDef>();
 
                 foreach (PawnKindDef pawnKindDef in DefDatabase<PawnKindDef>.AllDefsListForReading)
                 {
@@ -39,6 +41,8 @@
 
                         if (!pawnKindDef.race.HasComp(typeof(CompApplyAgeDiseases)))
                             pawnKindDef.race.comps.Add(new CompProperties(typeof(CompApplyAgeDiseases)));
+
+                        hybridPawnKinds.Add(pawnKindDef);
                     }
 
                     if (pawnKindDef.race.tradeTags?.Contains("AnimalGeneticMechanoid") == true)
