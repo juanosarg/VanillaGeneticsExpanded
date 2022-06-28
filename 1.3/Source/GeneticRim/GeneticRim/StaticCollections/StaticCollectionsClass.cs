@@ -138,7 +138,19 @@ namespace GeneticRim
             }
 
         }
-
-
+        //Adding this as a way for AlphaMemes Rituals to get genome without too much annoying harmony/Digging
+        public static ThingDef GenomeForPawn(Pawn pawn)
+        {   
+            ThingDef thingDef = null;
+            HashSet<ExtractableAnimalsList> allLists = DefDatabase<ExtractableAnimalsList>.AllDefsListForReading.ToHashSet();
+            foreach (ExtractableAnimalsList individualList in allLists)
+            {
+                if ((individualList.needsHumanLike && pawn.def.race.Humanlike) || (individualList.extractableAnimals?.Contains(pawn.def) == true))
+                {
+                    thingDef = individualList.itemProduced;
+                }
+            }
+            return thingDef;
+        }
     }
 }
