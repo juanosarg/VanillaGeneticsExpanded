@@ -1,25 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-
-  
-
-  
-  <DamageDef>
-    <defName>GR_PsionicExplosion</defName>
-    <label>psionic explosion</label>
-	<externalViolence>false</externalViolence>	
-    <makesBlood>false</makesBlood>
-    <harmsHealth>false</harmsHealth>	
-	<hediff>ROM_Psionic</hediff>
-    <impactSoundType>Electric</impactSoundType>
-    <armorCategory>Heat</armorCategory>
-	<workerClass>CosmicHorror.DamageWorker_CranialPressure</workerClass>
-	<deathMessage>{0} has died from psychic shock.</deathMessage>
-  </DamageDef>
-  
-  
-
- 
-
+	<DamageDef>
+		<defName>GR_PsionicExplosion</defName>
+		<label>psionic explosion</label>
+		<externalViolence>false</externalViolence>
+		<makesBlood>false</makesBlood>
+		<harmsHealth>false</harmsHealth>
+		<hediff>ROM_Psionic</hediff>
+		<impactSoundType>Electric</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<workerClass>CosmicHorror.DamageWorker_CranialPressure</workerClass>
+		<deathMessage>{0} has died from psychic shock.</deathMessage>
+	</DamageDef>
+	
+	<DamageDef ParentName="Bite">
+		<defName>GR_MaddeningHairballBite</defName>
+		<label>suffocating maddening attack</label>
+		<additionalHediffs>
+			<li>
+				<hediff>GR_HairballDamage</hediff>
+				<severityPerDamageDealt>0.075</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+			<li>
+				<hediff>ROM_SanityLoss</hediff>
+				<severityPerDamageDealt>0.075</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
 </Defs>

@@ -18,6 +18,7 @@
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 
@@ -33,6 +34,7 @@
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 
@@ -46,6 +48,7 @@
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -66,6 +69,7 @@
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 
@@ -79,6 +83,7 @@
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -100,6 +105,7 @@
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 
@@ -113,6 +119,7 @@
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 
@@ -123,6 +130,7 @@
 						<li>GR_EldritchMuffalo</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 
@@ -138,6 +146,7 @@
 						<li>GR_EldritchMuffalo</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -163,6 +172,7 @@
 						<li>GR_EldritchMuffalo</li>
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 
@@ -177,6 +187,7 @@
 						<li>GR_EldritchReptile</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -194,6 +205,7 @@
 					<value>
 						<li>GR_EldritchMuffalo</li>
 						<li>GR_EldritchThrumbo</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -226,6 +238,7 @@
 						<li>GR_EldritchMuffalo</li>
 						<li>GR_EldritchThrumbo</li>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -249,7 +262,9 @@
 					<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
 					<value>
 						<li>GR_EldritchWolf</li>
+						<li>GR_Cathulhu</li>
 					</value>
+					
 				</li>
 
 

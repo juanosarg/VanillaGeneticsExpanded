@@ -10,6 +10,7 @@
 			<li>GR_EldritchReptile</li>
 			<li>GR_EldritchThrumbo</li>
 			<li>GR_EldritchWolf</li>
+			<li>GR_Cathulhu</li>
 		</disabledFromQuestsPawns>
 	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
 </Defs>

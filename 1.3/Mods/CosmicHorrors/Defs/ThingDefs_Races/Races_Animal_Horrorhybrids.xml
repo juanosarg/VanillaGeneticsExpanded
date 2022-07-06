@@ -1594,4 +1594,207 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+	<!-- Feline -->
+	<ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
+		<defName>GR_Cathulhu</defName>
+		<label>cathulhu</label>
+		<description>A dark brown, leopard looking creature with bat-like wings and a fearsome cephalopoid head. It lacks the capacity to purr, instead nuzzling with its many tentacles and slowly eroding your sanity.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. Its bites cause suffocation and sanity loss.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+			<MarketValue>1500</MarketValue>
+			<MeatAmount>20</MeatAmount>
+			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<FilthRate>2</FilthRate>
+		</statBases>
+		<tools>
+			<li>
+				<label>rending tentacles</label>
+				<capacities>
+					<li>GR_MaddeningHairballBite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			</li>
+			
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+				
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+				
+			</li>
+		</tools>
+		<comps>
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>GR_MeleeDodge</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+		</comps>
+		<race>
+			<bloodDef>ROM_Filth_BloodCosmicHorror</bloodDef>
+			<useLeatherFrom>Panther</useLeatherFrom>
+			<useMeatFrom>Panther</useMeatFrom>
+			<herdAnimal>false</herdAnimal>
+			<body>QuadrupedAnimalWithPawsAndTail</body>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>1.3</baseHealthScale>
+			<predator>true</predator>
+			<maxPreyBodySize>1.0</maxPreyBodySize>
+			<foodType>CarnivoreAnimal</foodType>
+			<gestationPeriodDays>10</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<trainability>Advanced</trainability>
+			<wildness>0.85</wildness>
+			<lifeExpectancy>4</lifeExpectancy>
+			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>GR_ROM_Spawn</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>GR_ROM_FullyFormed</def>
+					<minAge>.45</minAge>
+					<soundWounded>Pawn_ROM_Shoggoth_Wounded</soundWounded>
+					<soundDeath>Pawn_ROM_Shoggoth_Death</soundDeath>
+					<soundCall>Pawn_ROM_Shoggoth_Call</soundCall>
+				</li>
+				<li>
+					<def>GR_ROM_Ancient</def>
+					<minAge>2</minAge>
+					<soundWounded>Pawn_ROM_Shoggoth_Wounded</soundWounded>
+					<soundDeath>Pawn_ROM_Shoggoth_Death</soundDeath>
+					<soundCall>Pawn_ROM_Shoggoth_Call</soundCall>
+				</li>
+				<li>
+					<def>GR_ROM_Eldritch</def>
+					<minAge>6</minAge>
+					<soundWounded>Pawn_ROM_Shoggoth_Wounded</soundWounded>
+					<soundDeath>Pawn_ROM_Shoggoth_Death</soundDeath>
+					<soundCall>Pawn_ROM_Shoggoth_Call</soundCall>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalGenetic</li>
+			<li>NonContractable</li>
+		</tradeTags>
+		<butcherProducts>
+			<ROM_RawCHFood_CthulhidMeat>30</ROM_RawCHFood_CthulhidMeat>
+		</butcherProducts>
+		<modExtensions>
+			<li Class="CosmicHorror.PawnExtension">
+				<invisible>false</invisible>
+				<regenRate>0</regenRate>
+				<regenInterval>1000</regenInterval>
+				<sanityLossRate>0.0</sanityLossRate>
+				<painFactor>0.3</painFactor>
+			</li>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+				<statToAdd>
+					<li>GR_HybridRole</li>
+				</statToAdd>
+				<statValues>
+					<li>GR_HybridRoleCombat</li>
+				</statValues>
+				<statDescriptions>
+					<li>GR_HybridRoleCombatDesc</li>
+				</statDescriptions>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>GR_Cathulhu</defName>
+		<label>cathulhu</label>
+		<race>GR_Cathulhu</race>
+		<combatPower>170</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>1</ecoSystemWeight>
+		<aiAvoidCover>true</aiAvoidCover>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Eldritch/Feline/GR_Cathulhu</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Eldritch/Feline/GR_Dessicated_Cathulhu</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Eldritch/Feline/GR_Cathulhu</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Eldritch/Feline/GR_Dessicated_Cathulhu</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Eldritch/Feline/GR_Cathulhu</texPath>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Eldritch/Feline/GR_Dessicated_Cathulhu</texPath>
+					<drawSize>3</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Eldritch/Feline/GR_Cathulhu</texPath>
+					<drawSize>3.5</drawSize>
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Eldritch/Feline/GR_Dessicated_Cathulhu</texPath>
+					<drawSize>3.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+		<modExtensions>
+			<li Class="GeneticRim.DefExtension_Hybrid">
+				<dominantGenome>GR_EldritchGenetic</dominantGenome>
+				<secondaryGenome>GR_FelineGenetic</secondaryGenome>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 </Defs>
