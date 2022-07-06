@@ -1598,7 +1598,7 @@
 	<ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
 		<defName>GR_Cathulhu</defName>
 		<label>cathulhu</label>
-		<description>A dark brown, leopard looking creature with bat-like wings and a fearsome cephalopoid head. It lacks the capacity to purr, instead nuzzling with its many tentacles and slowly eroding your sanity.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. Its bites cause suffocation and sanity loss.</description>
+		<description>You seriously have to wonder who comes up with ideas to play with things beyond their understanding. Have you ever had an octopus attach itself to your face and try to climb down your throat? Well now you can find out, with an extra helping of teeth, claws and furballs.\n\nA feline hybrid with recessive Eldritch genes. Comparable to a regular big cat, such as a panther, however its bite not only causes blindness but also inflicts bouts of insanity from the lingering touch of the tentacles. Oddly enough it also enjoys fondling its master with those same tentacles, notably without its teeth out. Oh, did I not mention the fact it has teeth along those tentacles?\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; Like all cat hybrids, they have an improved melee dodge ability and a short nuzzle period. Its bites cause suffocation and sanity loss.</description>
 		<statBases>
 			<MoveSpeed>5</MoveSpeed>
 			<ComfyTemperatureMin>-15</ComfyTemperatureMin>
