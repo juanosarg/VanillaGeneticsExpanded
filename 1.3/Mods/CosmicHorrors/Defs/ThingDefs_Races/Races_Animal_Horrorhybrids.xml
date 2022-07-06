@@ -1660,6 +1660,7 @@
 			<foodType>CarnivoreAnimal</foodType>
 			<gestationPeriodDays>10</gestationPeriodDays>
 			<nameOnTameChance>1</nameOnTameChance>
+			<nuzzleMtbHours>12</nuzzleMtbHours>
 			<trainability>Advanced</trainability>
 			<wildness>0.85</wildness>
 			<lifeExpectancy>4</lifeExpectancy>
