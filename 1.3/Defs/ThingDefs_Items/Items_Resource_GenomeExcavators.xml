@@ -29,7 +29,7 @@
 			<texPath>Things/Item/GR_GenomeExcavator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<stackLimit>10</stackLimit>
+		<stackLimit>1</stackLimit>
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>100</MarketValue>
@@ -59,7 +59,7 @@
 			<texPath>Things/Item/GR_GenomeExcavatorArchotech</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<stackLimit>10</stackLimit>
+		<stackLimit>1</stackLimit>
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>100</MarketValue>
